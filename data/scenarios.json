@@ -2,7 +2,7 @@
   "globals": {
     "world_oil_demand_mbd": 104,
     "iea_emergency_stocks_mb": 1200,
-    "note": "Illustrative model. Hormuz uses IEA 2025 figures (Kpler ship-tracking); other chokepoints use 1H 2025 tanker-tracking flows published by EIA (Vortexa-based) until independent equivalents are added. Flows passing more than one chokepoint are counted at each, so combined totals are an upper bound.",
+    "note": "Illustrative model. Hormuz uses IEA 2025 figures (Kpler ship-tracking); other chokepoints use 1H 2025 tanker-tracking flows (Vortexa data, published by EIA). Flows passing more than one chokepoint are counted at each, so combined totals are an upper bound.",
     "sources": [
       {
         "name": "EIA — World Oil Transit Chokepoints",
@@ -143,8 +143,7 @@
           "url": "https://www.eia.gov/todayinenergy/detail.php?id=62263",
           "date": "2024"
         }
-      ],
-      "baseline_interim": true
+      ]
     },
     "suez-canal": {
       "portwatch": "Suez Canal",
@@ -185,8 +184,7 @@
           "url": "https://www.eia.gov/todayinenergy/detail.php?id=61025",
           "date": "2023-12-04"
         }
-      ],
-      "baseline_interim": true
+      ]
     },
     "turkish-straits": {
       "portwatch": "Bosporus Strait",
@@ -227,8 +225,7 @@
           "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
           "date": "2024"
         }
-      ],
-      "baseline_interim": true
+      ]
     },
     "strait-of-malacca": {
       "portwatch": "Malacca Strait",
@@ -271,8 +268,7 @@
           "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
           "date": "2024"
         }
-      ],
-      "baseline_interim": true
+      ]
     },
     "panama-canal": {
       "portwatch": "Panama Canal",
@@ -313,8 +309,7 @@
           "url": "https://www.eia.gov/todayinenergy/detail.php?id=62408",
           "date": "2024"
         }
-      ],
-      "baseline_interim": true
+      ]
     }
   }
 }

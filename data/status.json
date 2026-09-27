@@ -241,7 +241,7 @@
   },
   "ras-tanura-terminal": {
    "status": "reduced",
-   "summary": "Loadings are constrained by the Hormuz situation; Ras Tanura and Ju'aymah loaded ~12 mb on 21 Sep, the busiest day since before the war, as Saudi Arabia pushed exports back through the Gulf.",
+   "summary": "Loadings are constrained by the Hormuz situation. Ship-tracking (MarineTraffic, TankerTrackers.com) showed Ras Tanura and Ju'aymah loading ~12–14 mb on 21 Sep, the busiest day since before the war.",
    "since": "2026-03-02",
    "updated": "2026-09-21",
    "confidence": "reported",
@@ -260,7 +260,7 @@
   },
   "fujairah": {
    "status": "disrupted",
-   "summary": "The UAE's main outlet outside Hormuz, fed by the Habshan-Fujairah pipeline (~1.5 mb/d), has been attacked repeatedly (14 and 16 Mar, 4 May). Exports rose to 1.62 mb/d in March as volumes were rerouted there. Status after May not verified.",
+   "summary": "The UAE's main outlet outside Hormuz, fed by the Habshan-Fujairah pipeline (~1.5 mb/d), has been attacked repeatedly (14 and 16 Mar, 4 May). Kpler data showed exports rising to 1.62 mb/d in March from 1.17 mb/d in February as volumes were rerouted there. Status after May not verified.",
    "since": "2026-03-14",
    "updated": "2026-05-05",
    "confidence": "confirmed",

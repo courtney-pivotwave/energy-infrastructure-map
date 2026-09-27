@@ -26,14 +26,13 @@ const today = new Date(Date.now() + 86400000).toISOString().slice(0, 10); // all
 const isDate = d => typeof d === 'string' && DATE.test(d) && !isNaN(Date.parse(d));
 const isCoord = c => Array.isArray(c) && c.length === 2 && c.every(n => typeof n === 'number') && Math.abs(c[0]) <= 90 && Math.abs(c[1]) <= 360;
 
-// Source policy (agent/UPDATE_AGENT.md): US government sources must not back conflict-period data
+// Source policy (agent/UPDATE_AGENT.md): a claim resting only on belligerent-government sources (detectable here:
+// US .gov/.mil) must be labelled unverified. Statistical series (fuel, scenario baselines) are exempt.
 const US_GOV = /^https?:\/\/([a-z0-9-]+\.)*(gov|mil)(\/|$)/i;
-function checkSources(where, sources, required = true) {
+function checkSources(where, sources, required = true, confidence = null) {
   if (!Array.isArray(sources) || (required && !sources.length)) { err(`${where}: needs at least one source`); return; }
-  const gov = sources.filter(s => US_GOV.test(s?.url || ''));
-  if (gov.length && gov.length === sources.length && !/^(fuel\.|interim:)/.test(where)) err(`${where}: backed only by US government sources — see source policy`);
-  else if (gov.length && /^interim:/.test(where)) warn(`${where}: interim baseline sourced to US government — replace with an independent source`);
-  else if (gov.length && !/^fuel\./.test(where)) warn(`${where}: cites a US government source (${gov.map(s => new URL(s.url).host).join(', ')}) — allowed only for a US announcement of its own action`);
+  if (confidence && confidence !== 'unverified' && sources.every(s => US_GOV.test(s?.url || '')))
+    err(`${where}: rests only on US government sources — needs independent verification or confidence "unverified"`);
   sources.forEach((s, i) => {
     if (!s?.name) err(`${where}: source ${i} missing name`);
     if (!/^https?:\/\//.test(s?.url || '')) err(`${where}: source ${i} url must be http(s)`);
@@ -77,7 +76,7 @@ if (status) {
     if (s.since && !isDate(s.since)) err(`${w}: since must be YYYY-MM-DD`);
     if (!isDate(s.updated)) err(`${w}: updated must be YYYY-MM-DD`);
     if (!CONF.includes(s.confidence)) err(`${w}: confidence must be ${CONF.join('|')}`);
-    checkSources(w, s.sources);
+    checkSources(w, s.sources, true, s.confidence);
   }
 }
 
@@ -99,7 +98,7 @@ if (ev) {
     if (e.coords !== null && e.coords !== undefined && !isCoord(e.coords)) err(`${w}: coords must be [lat,lng] or null`);
     (e.assets || []).forEach(a => { if (!ids.has(a)) err(`${w}: unknown asset "${a}"`); });
     if (!CONF.includes(e.confidence)) err(`${w}: confidence must be ${CONF.join('|')}`);
-    checkSources(w, e.sources);
+    checkSources(w, e.sources, true, e.confidence);
   });
 }
 
@@ -129,7 +128,7 @@ if (sc) {
       if (b.outlet && !ids.has(b.outlet)) err(`${w}: bypass outlet "${b.outlet}" unknown`);
     });
     (c.stranded || []).forEach(a => { if (!ids.has(a)) err(`${w}: stranded asset "${a}" unknown`); });
-    checkSources(c.baseline_interim ? `interim:${w}` : w, c.sources);
+    checkSources(w, c.sources);
   }
 }
 

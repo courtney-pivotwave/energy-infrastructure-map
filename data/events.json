@@ -89,7 +89,7 @@
    "id": "2026-09-25-kpler-hormuz-crude-flows",
    "date": "2026-09-25",
    "title": "Independent ship-tracking shows Hormuz crude flows at a fraction of pre-war levels",
-   "summary": "Preliminary Kpler data showed 33.7 million barrels of crude leaving the Strait of Hormuz in the week starting 20 September, against roughly 105 million barrels a week before the war (about 15 mb/d of crude in 2025, per IEA analysis of Kpler data). Many tankers now transit with transponders off, so AIS-based counts are partial. US officials have publicly claimed far higher flows; those claims are not independently corroborated and are not used on this map.",
+   "summary": "Preliminary Kpler data showed 33.7 million barrels of crude leaving the Strait of Hormuz in the week starting 20 September, against roughly 105 million barrels a week before the war (about 15 mb/d of crude in 2025, per IEA analysis of Kpler data). Many tankers now transit with transponders off, so ship-tracking figures are likely to understate actual flows.",
    "category": "shipping",
    "severity": "high",
    "coords": [
@@ -110,11 +110,6 @@
      "name": "IEA — Strait of Hormuz Factsheet (Feb 2026, based on Kpler)",
      "url": "https://iea.blob.core.windows.net/assets/c8248eba-8689-46d9-ae4b-b858b59c0f1c/StraitofHormuz2026-Factsheet.pdf",
      "date": "2026-02"
-    },
-    {
-     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
-     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
-     "date": "2026-09-27"
     }
    ]
   },
@@ -228,7 +223,7 @@
    "id": "2026-09-21-saudi-gulf-loadings-surge",
    "date": "2026-09-21",
    "title": "Saudi Gulf terminals load ~12 million barrels in a day, pushing exports back through Hormuz",
-   "summary": "Six to seven VLCCs loaded roughly 12-14 million barrels at Ras Tanura and Ju'aymah on 21 September, the busiest day since before the war (MarineTraffic, TankerTrackers). With the East-West pipeline down and the Red Sea hostile, Saudi exports fell from ~7.5 mb/d in Jan-Feb to ~2.1 mb/d in mid-September before Kpler provisional data showed a September recovery to more than 4 mb/d; much Gulf-side loading moves on AIS-dark tankers and ship-to-ship transfers off Sohar, Oman.",
+   "summary": "Six to seven VLCCs loaded roughly 12–14 million barrels at Ras Tanura and Ju'aymah on 21 September, the busiest day since before the war (MarineTraffic, TankerTrackers.com). Provisional Kpler data showed Saudi crude exports recovering to more than 4 mb/d so far in September, from about 2.4 mb/d in August, the lowest since at least 2013. Much Gulf-side loading moves on AIS-dark tankers, so tracked figures may be incomplete.",
    "category": "shipping",
    "severity": "high",
    "coords": [
@@ -257,7 +252,7 @@
    "id": "2026-09-21-qatar-lng-hormuz-ramp",
    "date": "2026-09-21",
    "title": "Qatar steps up LNG tanker movements through Hormuz",
-   "summary": "At least four Qatari LNG carriers moved through Hormuz in a week (two laden outbound), the most sustained activity since Qatar largely halted exports via the strait in early July after one of its tankers was attacked. Energy Minister al-Kaabi said on 21 September undamaged parts of Ras Laffan could restart within a couple of weeks of the strait reopening; about 17% of capacity (two trains) remains destroyed.",
+   "summary": "Bloomberg ship-tracking showed at least four Qatari LNG carriers moving through Hormuz in a week (two laden outbound), the most sustained activity since Qatar largely halted exports via the strait in early July after one of its tankers was attacked. Energy Minister al-Kaabi said on 21 September undamaged parts of Ras Laffan could restart within a couple of weeks of the strait reopening; about 17% of capacity (two trains) remains destroyed.",
    "category": "shipping",
    "severity": "medium",
    "coords": [
@@ -638,7 +633,7 @@
    "id": "2026-08-19-uae-halts-iran-trade",
    "date": "2026-08-19",
    "title": "UAE suspends all trade and financial dealings with Iran",
-   "summary": "The UAE suspended all trade, commercial exchanges and financial transactions with Iran after two Iranian ballistic missiles fell into the sea on 18 August, one in Emirati waters. Euronews notes Hormuz oil flows averaged 4.9 mb/d in Q2 2026 versus 21.6 mb/d in Q4 2025.",
+   "summary": "The UAE suspended all trade, commercial exchanges and financial transactions with Iran after two Iranian ballistic missiles fell into the sea on 18 August, one in Emirati waters.",
    "category": "policy",
    "severity": "medium",
    "coords": [
@@ -969,7 +964,7 @@
    "id": "2026-06-25-oil-back-to-prewar",
    "date": "2026-06-25",
    "title": "Oil falls back to pre-war levels as Hormuz traffic resumes after MoU",
-   "summary": "Brent settled at $72.68 and WTI at $69.58 on 25 June, the lowest since 27 February, as Hormuz traffic partly resumed after the 17 June MoU. Vessel data showed an average of 28 transits a day from 18 June to 5 July, against about 100 before the war.",
+   "summary": "Brent settled at $72.68 and WTI at $69.58 on 25 June, the lowest since 27 February, as Hormuz traffic partly resumed after the 17 June MoU. IMF PortWatch data showed 513 ships transiting between 18 June and 5 July, an average of 28 a day, against about 100 a day before the war.",
    "category": "market",
    "severity": "medium",
    "coords": null,

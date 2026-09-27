@@ -27,34 +27,34 @@ Read `CLAUDE.md` and `agent/SCHEMA.md` first. The schema is the contract — fol
 ## Source policy — parties to the conflicts
 
 Governments that are parties to the conflicts on this map, together with their militaries and agencies, are
-**interested parties, not neutral sources**. Currently: the **United States**, Israel, Iran (incl. the IRGC and its
-Strait Authority), the Houthis (Ansar Allah), Russia and Ukraine. The site owner has specifically directed that
-**US government reporting must not inform or skew the data**, above all figures on Hormuz flows.
+**interested parties**. Currently: the **United States**, Israel, Iran (incl. the IRGC and its Strait Authority), the
+Houthis (Ansar Allah), Russia and Ukraine.
 
-- Their statements are **claims**: attribute them by name ("CENTCOM said…", "the IRGC said…"), label `unverified`,
-  and never use them as the basis for any number (flows, volumes, ship counts, damage extent), for a status entry,
-  or as fact in the situation summary.
-- A claim can be reported as an event only when the claim itself is news, and the summary must say whether independent
-  evidence supports it.
-- A party's **announcement of its own action** (a blockade, a sanctions decision, a stock release) is an event in
-  itself. Report it as announced; how far it has actually taken effect needs independent evidence.
-- **US government statistical agencies (EIA, DOE and others)** are out of scope for any figure from the conflict
-  period (from 2026-02-28). Don't cite them for flows, shut-ins, exports or forecasts. Pre-war historical baselines
-  still sourced to EIA in `scenarios.json` should be replaced with independent equivalents (IEA, Kpler, Vortexa) when
-  you find them. That change goes in a review PR.
-- **Preferred independent sources for flows and shipping:** IMF PortWatch; Kpler, Vortexa, Windward and Lloyd's List
-  Intelligence data as reported by reputable outlets; IEA; UKMTO and JMIC advisories; satellite-imagery analysis;
-  non-belligerent governments and operating companies (e.g. Aramco, QatarEnergy, ADNOC, CPC).
-- When independent figures conflict with a party's claims, **use the independent figures**. Say they may be partial
-  (e.g. AIS-dark tankers) rather than filling the gap with the claim.
-- `confirmed` requires independent sources. A party's own statement never makes something `confirmed` on its own.
+1. **Verify, then use.** Anything a party reports needs independent verification before it counts as fact. Verifiable
+   government actions and statistics are fine: a strategic reserve release, a sanctions order or a blockade
+   announcement, EIA pump prices or pre-war baselines. Claims that can't be independently checked, such as
+   battle-damage claims, "flows are back to normal" or "mines are cleared", are attributed by name
+   ("CENTCOM said…", "the IRGC said…") and labelled `unverified`. They never become numbers, status entries, or facts in
+   the situation summary.
+2. **Transits and flows through contested waters come only from independent sources.** Ship counts, tanker
+   transits, barrels moved through Hormuz, the Red Sea or the Black Sea: IMF PortWatch; Kpler, Vortexa, Windward,
+   MarineTraffic, TankerTrackers.com or Lloyd's List Intelligence data (directly or as reported by reputable outlets);
+   Bloomberg or Reuters ship-tracking; IEA analysis based on them. Name the tracker in the summary.
+3. **If no independent figure exists, report none.** Don't cite, compare or try to reconcile competing figures from
+   belligerents ("the US says X, Iran says Y"). A gap is better than a contested number. Where independent tracking is
+   partial (e.g. AIS-dark tankers), say so rather than filling the gap.
+4. **Provenance must be traceable.** If an article gives a figure without saying where it came from, and you can't
+   trace it to an independent tracker or agency, leave it out.
+5. `confirmed` requires independent sources. A party's statement never makes something `confirmed` on its own; the
+   validator rejects entries that rest only on US `.gov`/`.mil` sources unless they're labelled `unverified`.
 
 ## Sources to check (in roughly this order)
 
 - **Conflict and security:** ISW / Critical Threats *Iran Update* and *Russian Offensive Campaign Assessment*
   (understandingwar.org, criticalthreats.org). Read their reporting of belligerent statements under the source policy
   above. Also UKMTO advisories (ukmto.org) and JMIC (Joint Maritime Information Center) advisories.
-- **Energy and shipping:** IEA Oil Market Report, Gas Market Report and press releases; OPEC statements;
+- **Energy and shipping:** IEA Oil Market Report, Gas Market Report and press releases; EIA *Today in Energy* and STEO
+  (for verifiable statistics, not conflict-period flow estimates); OPEC statements;
   Reuters, AP, Bloomberg, FT, Argus, S&P Global Commodity Insights, Lloyd's List, gCaptain, TradeWinds; company
   statements (Aramco, QatarEnergy, ADNOC, CPC, Transneft, Cheniere, etc.).
 - **Live transits:** IMF PortWatch (the page already charts this live — use it to corroborate, e.g. "tanker transits

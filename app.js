@@ -287,11 +287,12 @@ function confHTML(c) { return c ? `<span class="conf ${esc(c)}">${esc(c)}</span>
 
 // ── Latest tab ──
 const evFilter = { window: 30, category: 'all' };
+let situationOpen = false;
 function renderLatest() {
   const cats = ['all', ...new Set(events.map(e => e.category))];
   const list = events.filter(e => (evFilter.window === 0 || daysAgo(e.date) <= evFilter.window) && (evFilter.category === 'all' || e.category === evFilter.category));
   const situation = eventsData.situation_summary
-    ? `<div class="situation"><b>Situation${eventsData.updated ? ' · ' + esc(fmtDate(eventsData.updated)) : ''}</b>${esc(eventsData.situation_summary)}</div>` : '';
+    ? `<details class="situation"${situationOpen ? ' open' : ''}><summary><b>Situation${eventsData.updated ? ' · ' + esc(fmtDate(eventsData.updated)) : ''}</b><span class="clamp">${esc(eventsData.situation_summary)}</span></summary><div class="full">${esc(eventsData.situation_summary)}</div></details>` : '';
   $('#tab-latest').innerHTML = situation + `
     <div class="filters">${[[7, '7 days'], [30, '30 days'], [90, '90 days'], [0, 'All']].map(([v, l]) =>
       `<button class="chip ${evFilter.window === v ? 'on' : ''}" data-window="${v}">${l}</button>`).join('')}</div>
@@ -306,6 +307,7 @@ function eventHTML(e) {
     ${sourcesHTML(e.sources)}
   </div>`;
 }
+$('#tab-latest').addEventListener('toggle', e => { if (e.target.matches('.situation')) situationOpen = e.target.open; }, true);
 $('#tab-latest').addEventListener('click', e => {
   const t = e.target;
   if (t.dataset.window !== undefined) { evFilter.window = +t.dataset.window; renderLatest(); return; }
@@ -448,10 +450,11 @@ function scenarioResult() {
     if (c.reroute === 'none') { stranded += c.oil_mbd || 0; lng += c.lng_share_pct || 0; }
     else { rerouted += c.oil_mbd || 0; maxDays = Math.max(maxDays, c.reroute_days || 0); }
     (c.bypass || []).forEach(b => {
-      const st = statusOf(b.asset);
-      const impaired = st && ['offline', 'damaged', 'closed'].includes(st.status);
-      if (impaired) bypassImpaired.push({ ...b, st });
-      else if (b.spare_mbd) { bypass += b.spare_mbd; bypassUsed.push(b); }
+      // A bypass is only as good as the pipeline and the terminal it exports through
+      const checks = [[b.asset, statusOf(b.asset)], [b.outlet, b.outlet && statusOf(b.outlet)]].filter(([, st]) => st);
+      const down = checks.find(([, st]) => ['offline', 'damaged', 'closed'].includes(st.status));
+      if (down) bypassImpaired.push({ ...b, where: down[0], st: down[1] });
+      else if (b.spare_mbd) { bypass += b.spare_mbd; bypassUsed.push({ ...b, degraded: checks.map(([id, st]) => ({ id, st })) }); }
     });
     (c.exposed || []).forEach(x => { if (!exposed.has(x.country)) exposed.set(x.country, x.note); });
     (c.stranded || []).forEach(a => strandedAssets.add(a));
@@ -527,8 +530,9 @@ function renderScenario() {
     </div>`;
     if (r.stockDays) html += `<p class="note">IEA emergency stocks (~${(g.iea_emergency_stocks_mb / 1000).toFixed(1)} bn bbl) would cover this gap for roughly <b>${Math.round(r.stockDays)} days</b>, if they could be released that fast. In practice, maximum release rates are well below most Hormuz-scale gaps.</p>`;
     if (r.bypassUsed.length || r.bypassImpaired.length) html += `<div class="sc-section"><h5>Bypass infrastructure</h5><ul>
-      ${r.bypassUsed.map(b => `<li><a href="#" data-asset="${esc(b.asset)}">${esc(REG[b.asset]?.data.name || b.asset)}</a> — ~${b.spare_mbd} mb/d spare. ${esc(b.note)}</li>`).join('')}
-      ${r.bypassImpaired.map(b => `<li class="warn"><a href="#" data-asset="${esc(b.asset)}">${esc(REG[b.asset]?.data.name || b.asset)}</a> — <b>currently ${esc(STATUS[b.st.status]?.label.toLowerCase())}</b>, not counted. ${esc(b.st.summary)}</li>`).join('')}
+      ${r.bypassUsed.map(b => `<li><a href="#" data-asset="${esc(b.asset)}">${esc(REG[b.asset]?.data.name || b.asset)}</a> — ~${b.spare_mbd} mb/d spare. ${esc(b.note)}
+        ${b.degraded.map(d => `<div class="warn">⚠ ${esc(REG[d.id]?.data.name || d.id)} is currently <b>${esc(STATUS[d.st.status]?.label.toLowerCase())}</b> — real bypass capacity is likely lower.</div>`).join('')}</li>`).join('')}
+      ${r.bypassImpaired.map(b => `<li class="warn"><a href="#" data-asset="${esc(b.asset)}">${esc(REG[b.asset]?.data.name || b.asset)}</a> — not counted: ${esc(REG[b.where]?.data.name || b.where)} is currently <b>${esc(STATUS[b.st.status]?.label.toLowerCase())}</b>. ${esc(b.st.summary)}</li>`).join('')}
     </ul></div>`;
     closed.forEach(id => { const n = scenarios.chokepoints[id].bypass_note; if (n) html += `<p class="note">${esc(REG[id].data.name)}: ${esc(n)}</p>`; });
     html += `<div class="sc-section"><h5>Most exposed</h5><ul>${[...r.exposed].map(([c, n]) => `<li><b>${esc(c)}</b> — ${esc(n)}</li>`).join('')}</ul></div>`;
@@ -656,6 +660,8 @@ function priceChart(hist, ref) {
 // ── Init ──
 renderFuel();
 renderFuelLayer();
+const fuelCount = document.querySelector('[data-layer="fuel"]')?.closest('.layer-row')?.querySelector('.count');
+if (fuelCount) fuelCount.textContent = groups.fuel.getLayers().length;
 renderLatest();
 renderScenario();
 renderChokepoints();

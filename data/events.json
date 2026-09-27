@@ -1,1 +1,1702 @@
-{ "updated": null, "events": [] }
+{
+ "updated": "2026-09-27",
+ "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September), which restarted at reduced rates around 22 September. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 25 September Brent was $104.32 (pre-crisis ~$72.5) and TTF ~€72/MWh (pre-crisis ~€32). On 26 September Trump rejected Iran's proposal to reopen the strait.",
+ "events": [
+  {
+   "id": "2026-09-27-qeshm-explosions-after-rejection",
+   "date": "2026-09-27",
+   "title": "Explosions near Qeshm Island after Trump rejects Iran's Hormuz proposal",
+   "summary": "Explosions were reported near Qeshm Island on 27 September, with anti-ship missiles and drones allegedly fired at transiting vessels, hours after President Trump rejected Iran's proposal to reopen the strait. Iran's Persian Gulf Strait Authority has instructed shippers to use an Iranian-approved temporary route and pay fees, threatening to blacklist charterers using other routes.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    26.85,
+    55.9
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-26-trump-rejects-iran-hormuz-plan",
+   "date": "2026-09-26",
+   "title": "Trump rejects Iran's seven-condition plan to reopen Hormuz within a week",
+   "summary": "At the UN General Assembly Iran offered to reopen the Strait of Hormuz within a week if seven conditions were met, including lifting the US blockade, releasing frozen funds and ending attacks on all fronts; Trump rejected it on 26 September. Reuters had reported US and Iranian negotiators in New York exploring a phased deal (strait reopening in exchange for lifting the blockade), which briefly pushed oil prices lower.",
+   "category": "diplomatic",
+   "severity": "high",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz",
+    "kharg-island"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war",
+     "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-25-houthi-missiles-yanbu-riyadh",
+   "date": "2026-09-25",
+   "title": "Houthis fire missiles at Yanbu and Riyadh; Saudi Arabia intercepts six",
+   "summary": "Saudi forces said they intercepted six ballistic missiles aimed at Yanbu and Taif on 24 September; on 25 September the Houthis claimed missile and drone strikes on Aramco facilities in Yanbu and a 'sensitive target' in Riyadh. No damage was confirmed. Yanbu is Saudi Arabia's main Red Sea export outlet and the terminus of the East-West pipeline.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    24.09,
+    38.06
+   ],
+   "assets": [
+    "yanbu-terminal",
+    "east-west-pipeline"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
+     "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "CTP-ISW Iran Update, September 25, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-september-25-2026",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "The National — Oil prices waver in face of Iran war truce and Houthi attacks",
+     "url": "https://www.thenationalnews.com/business/energy/2026/09/25/oil-prices-waver-in-face-of-iran-war-truce-and-houthi-attacks/",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-24-france-air-defence-yanbu",
+   "date": "2026-09-24",
+   "title": "France to deploy troops, radars and air defences to protect Yanbu",
+   "summary": "President Macron announced France will send soldiers, radar and defence systems to protect energy infrastructure at Yanbu. CTP-ISW reports the US, UK and other partners are also flying air-defence missions over Saudi oil infrastructure; Pakistan and Turkey called military chiefs' meetings under a joint defence agreement.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": [
+    24.09,
+    38.06
+   ],
+   "assets": [
+    "yanbu-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "CTP-ISW Iran Update, September 25, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-september-25-2026",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
+     "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-24-indian-cargo-ship-attacked-hormuz",
+   "date": "2026-09-24",
+   "title": "Indian cargo ship attacked in Hormuz, one sailor killed",
+   "summary": "An Indian cargo ship was attacked in the Strait of Hormuz, killing a sailor, as attacks on shipping continued despite US assertions that the waterway is open.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-23-us-weighs-diesel-export-curbs",
+   "date": "2026-09-23",
+   "title": "US weighs diesel export curbs as retail diesel hits record ~$6.53/gal",
+   "summary": "US retail diesel reached a record of about $6.53/gal (AAA, 21-22 Sep), up nearly $1 in a month. Trump said 'let's not send out the diesel' and officials examined export restrictions; by 25 September no policy had been announced and Energy Secretary Wright was gauging refiners' interest in voluntary curbs. The US exports diesel equal to ~40% of domestic consumption, supplying Europe and Latin America.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "houston-refining-hub",
+    "port-arthur-refining-hub"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "OilPrice.com — White House Rules Out Diesel Export Ban as Prices Surge Above $6.50",
+     "url": "https://oilprice.com/Energy/Energy-General/White-House-Rules-Out-Diesel-Export-Ban-as-Prices-Surge-Above-650.html",
+     "date": "2026-09-23"
+    },
+    {
+     "name": "Al Jazeera — What would a US diesel export ban mean for global fuel prices?",
+     "url": "https://www.aljazeera.com/economy/2026/9/25/what-would-a-us-diesel-export-ban-mean-for-global-fuel-prices",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-22-east-west-pipeline-restart",
+   "date": "2026-09-22",
+   "title": "Saudi East-West pipeline restarts at reduced rate; Yanbu loadings to resume",
+   "summary": "Saudi Arabia restarted the East-West pipeline after drone damage to pumping stations, with flows at a reduced rate and Yanbu crude exports expected to resume on 22-23 September, according to sources briefed by Reuters. Aramco and the energy ministry did not comment.",
+   "category": "infrastructure",
+   "severity": "high",
+   "coords": [
+    24.5,
+    40.5
+   ],
+   "assets": [
+    "east-west-pipeline",
+    "yanbu-terminal"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "CDM (citing Reuters) — Saudi Arabia restarts East-West oil pipeline; Yanbu exports set to resume",
+     "url": "https://cdm.press/news/middle-east/2026/09/22/saudi-arabia-restarts-east-west-oil-pipeline-after-houthi-strikes-yanbu-exports-set-to-resume-tuesday/",
+     "date": "2026-09-22"
+    },
+    {
+     "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
+     "url": "https://gulfnews.com/business/energy/saudi-arabia-loads-nearly-12-million-barrels-in-one-day-as-hormuz-tanker-traffic-adapts-1.500684479",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-21-saudi-gulf-loadings-surge",
+   "date": "2026-09-21",
+   "title": "Saudi Gulf terminals load ~12 million barrels in a day, pushing exports back through Hormuz",
+   "summary": "Six to seven VLCCs loaded roughly 12-14 million barrels at Ras Tanura and Ju'aymah on 21 September, the busiest day since before the war (MarineTraffic, TankerTrackers). With the East-West pipeline down and the Red Sea hostile, Saudi exports fell from ~7.5 mb/d in Jan-Feb to ~2.1 mb/d in mid-September before Kpler provisional data showed a September recovery to more than 4 mb/d; much Gulf-side loading moves on AIS-dark tankers and ship-to-ship transfers off Sohar, Oman.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    26.64,
+    50.16
+   ],
+   "assets": [
+    "ras-tanura-terminal",
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
+     "url": "https://gulfnews.com/business/energy/saudi-arabia-loads-nearly-12-million-barrels-in-one-day-as-hormuz-tanker-traffic-adapts-1.500684479",
+     "date": "2026-09"
+    },
+    {
+     "name": "Al Jazeera — From Yanbu to Sohar: Tracking Saudi Arabia's alternative oil routes",
+     "url": "https://www.aljazeera.com/news/2026/9/17/from-yanbu-to-sohar-tracking-saudi-arabias-alternative-oil-routes",
+     "date": "2026-09-17"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-21-qatar-lng-hormuz-ramp",
+   "date": "2026-09-21",
+   "title": "Qatar steps up LNG tanker movements through Hormuz",
+   "summary": "At least four Qatari LNG carriers moved through Hormuz in a week (two laden outbound), the most sustained activity since Qatar largely halted exports via the strait in early July after one of its tankers was attacked. Energy Minister al-Kaabi said on 21 September undamaged parts of Ras Laffan could restart within a couple of weeks of the strait reopening; about 17% of capacity (two trains) remains destroyed.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    25.9,
+    51.55
+   ],
+   "assets": [
+    "ras-laffan-lng",
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Rigzone (Bloomberg wire) — Qatar ramps up LNG shipping via Hormuz",
+     "url": "https://www.rigzone.com/news/wire/qatar_ramps_up_lng_shipping_via_hormuz-24-sep-2026-184690-article/",
+     "date": "2026-09-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-20-moscow-refinery-strike",
+   "date": "2026-09-20",
+   "title": "Ukrainian drones hit Moscow oil refinery, pausing refining",
+   "summary": "Overnight 19-20 September Ukrainian forces struck the Gazpromneft Moscow refinery in Kapotnya, damaging its AVT-6 primary unit and other units and forcing a pause in refining; CTP-ISW estimates offline Russian refining capacity rose from 10% to 14%. Moscow's mayor claimed over 1,600 drones were downed since 19 September.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    55.645,
+    37.8
+   ],
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "CTP-ISW Russian Offensive Campaign Assessment, September 20, 2026",
+     "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-september-20-2026",
+     "date": "2026-09-20"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-19-us-claims-hormuz-flows",
+   "date": "2026-09-19",
+   "title": "US officials claim large crude flows via Hormuz; independent counts far lower",
+   "summary": "CENTCOM said on 19 September over one billion barrels had moved out of the Gulf in roughly two months and Energy Secretary Wright cited a ~13 mb/d running average of crude transits. Reuters-cited data showed 33.7 million barrels of crude flows in the week from 20 September (~4.8 mb/d), and AIS-based vessel counts remain far below the pre-war ~100 ships/day; many tankers transit with transponders off.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war",
+     "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-15-ttf-annual-high-storage-low",
+   "date": "2026-09-15",
+   "title": "TTF hits 2026 high near €84/MWh as EU storage lags at ~68%",
+   "summary": "Dutch TTF front-month reached €83.97/MWh on 15 September, the highest since late 2022, with EU storage at 68.5% versus 80.8% a year earlier (Germany 55.9%). Asian JKM reached its highest in about 2.5 years on 10 September. Prices eased later in the month on US-Iran talk reports.",
+   "category": "market",
+   "severity": "high",
+   "coords": [
+    52.37,
+    4.9
+   ],
+   "assets": [
+    "ras-laffan-lng"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "AleaSoft — Winter 2026-2027 in Europe: gas at highs and reserves at lows",
+     "url": "https://aleasoft.com/winter-2026-2027-gas-highs-reserves-lows/",
+     "date": "2026-09-16"
+    },
+    {
+     "name": "Global LNG Hub — Natural gas prices weekly update (14 September 2026)",
+     "url": "https://globallnghub.com/natural-gas-prices-weekly-update-jkm-ttf-and-henry-hub-14-september-2026/",
+     "date": "2026-09-14"
+    },
+    {
+     "name": "Trading Economics — EU Natural Gas (TTF)",
+     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-11-east-west-pipeline-shut",
+   "date": "2026-09-11",
+   "title": "Saudi Arabia shuts East-West pipeline after drone strikes from Iraq",
+   "summary": "Drones launched from Iraq (reportedly Maysan province) struck East-West pipeline pumping infrastructure in Riyadh and Medina provinces on 10-11 September; the energy ministry closed the line 'as a precaution'. The pipeline had been carrying ~4-5 mb/d of Hormuz-bypass crude to Yanbu. No group claimed it; analysts point to Iran-aligned Iraqi militias, while some reports blame the Houthis. Brent briefly hit ~$110.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    24.5,
+    40.5
+   ],
+   "assets": [
+    "east-west-pipeline",
+    "yanbu-terminal",
+    "abqaiq-oil"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Saudi Arabia shuts critical oil pipeline after drone attack: What it means",
+     "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened",
+     "date": "2026-09-12"
+    },
+    {
+     "name": "FDD Long War Journal analysis — Saudi Arabia closes its East-West pipeline after attacks from Iraq",
+     "url": "https://www.fdd.org/analysis/2026/09/13/saudi-arabia-closes-its-east-west-pipeline-after-attacks-from-iraq/",
+     "date": "2026-09-13"
+    },
+    {
+     "name": "Wikipedia — 2026 East–West Crude Oil Pipeline attack (compiled)",
+     "url": "https://en.wikipedia.org/wiki/2026_East%E2%80%93West_Crude_Oil_Pipeline_attack",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-11-iea-saudi-supply-three-decade-low",
+   "date": "2026-09-11",
+   "title": "IEA: Saudi crude supply fell to 6 mb/d in August, lowest in over three decades",
+   "summary": "The IEA's September Oil Market Report said Saudi crude supply fell 2.3 mb/d month on month to 6 mb/d in August, citing Houthi-linked strikes on Bab el-Mandeb shipping, the Jazan refinery and shipping near Yanbu, and Iraqi militia drone strikes on Abqaiq. Saudi loadings fell 1.1 mb/d to 3.5 mb/d; the IEA cut its 2026 Saudi supply forecast to 7.6 mb/d and deferred full Gulf recovery to 2027.",
+   "category": "market",
+   "severity": "high",
+   "coords": null,
+   "assets": [
+    "ghawar-oil",
+    "abqaiq-oil",
+    "yanbu-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
+     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
+     "date": "2026-09-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-10-houthis-seize-mocha",
+   "date": "2026-09-10",
+   "title": "Houthis seize Mocha and Red Sea islands, tightening grip on Bab el-Mandeb",
+   "summary": "Houthi forces captured the port city of Mocha on 10 September, according to Yemeni government military sources cited by Reuters, and subsequently several Red Sea islands; government forces fell back to Dhubab opposite Perim Island. The advance gives the group more leverage over the Bab el-Mandeb strait as it enforces a declared blockade on Saudi-linked shipping.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    13.32,
+    43.25
+   ],
+   "assets": [
+    "bab-el-mandeb"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Times of Israel (Reuters) — Yemen's Houthis seize port city of Mocha, closing in on Bab el-Mandeb",
+     "url": "https://www.timesofisrael.com/yemens-houthis-seize-port-city-of-mocha-closing-in-on-strategic-bab-el-mandeb-strait/",
+     "date": "2026-09-10"
+    },
+    {
+     "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
+     "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-09-eia-steo-shut-ins",
+   "date": "2026-09-09",
+   "title": "EIA: Gulf crude shut-ins averaged 6.7 mb/d in August; constraints seen through Q4",
+   "summary": "EIA's September STEO estimated Middle East crude shut-ins at 6.7 mb/d in August (from 5.0 mb/d in July), assumed 5.7 mb/d shut in during Q4 2026, and said Yanbu exports were down by about half from July. It forecast Brent near $90/b in 2H26 and expects most flows to return to pre-conflict levels by 2Q27 (forecast).",
+   "category": "market",
+   "severity": "high",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz",
+    "bab-el-mandeb",
+    "yanbu-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "EIA Short-Term Energy Outlook — Global oil markets (September 2026)",
+     "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+     "date": "2026-09-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-09-novorossiysk-terminal-strike",
+   "date": "2026-09-09",
+   "title": "Ukraine says it hit Novorossiysk oil terminal and 13 shadow-fleet vessels",
+   "summary": "Ukraine's General Staff and President Zelensky said drones struck Novorossiysk's naval base and a seaport fuel/oil terminal overnight on 9 September, with fires reported, and that 13 shadow-fleet vessels were hit in the Black Sea. The Saratov refinery was reportedly struck on 8 September. Loading impacts were not reported.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    44.72,
+    37.79
+   ],
+   "assets": [
+    "novorossiysk",
+    "turkish-straits"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Kyiv Independent — Ukrainian drones strike naval base, oil terminal in Russia's Novorossiysk",
+     "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-oil-terminal-in-russias-novorossiysk/",
+     "date": "2026-09-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-08-tmx-full-asia-pivot",
+   "date": "2026-09-08",
+   "title": "Trans Mountain at full 890 kb/d as Asian demand for Canadian crude rises",
+   "summary": "Trans Mountain ran at full capacity for the first time in June and remains full; about two-thirds of Westridge cargoes go to Asia. The operator plans +90 kb/d in Q4 2026 and +210 kb/d by 2028, citing demand driven by Middle East supply disruption.",
+   "category": "infrastructure",
+   "severity": "low",
+   "coords": [
+    49.29,
+    -122.95
+   ],
+   "assets": [
+    "trans-mountain"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "EnergyNow (Reuters) — Asia is poised to take up 70% of Canadian oil exports, pipeline executive says",
+     "url": "https://energynow.ca/2026/09/asia-is-poised-to-take-up-70-of-canadian-oil-exports-pipeline-executive-says/",
+     "date": "2026-09-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-06-opec-plus-holds-october",
+   "date": "2026-09-06",
+   "title": "OPEC+ holds October output steady; says it has limited sway over physical market",
+   "summary": "The seven core OPEC+ members (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, Oman) kept September production levels for October, after completing the rollback of the 1.65 mb/d 2023 cut. Many members cannot reach quotas because of Hormuz disruption. Next meeting 4 October.",
+   "category": "policy",
+   "severity": "low",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Energy Connects — OPEC+ keeps output policy unchanged for October",
+     "url": "https://www.energyconnects.com/news/oil/2026/september/opecplus-keeps-output-policy-unchanged-for-october",
+     "date": "2026-09-06"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-05-us-strikes-iranian-tankers",
+   "date": "2026-09-05",
+   "title": "US strikes three Iranian vessels including tanker off Kharg; Iran fires missiles at US carrier",
+   "summary": "US forces struck three Iranian vessels on 5 September, including a tanker off Kharg Island and another near Jask, after Iran fired ballistic missiles at a US aircraft carrier and destroyer (no US injuries). Iran said it targeted tankers using an 'unauthorised route'. Vessel counts averaged ~13/day over the prior 10 days versus ~100 pre-war.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    29.23,
+    50.32
+   ],
+   "assets": [
+    "kharg-island",
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — US, Iran engaged in tanker war: Where is the months-long conflict headed?",
+     "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed",
+     "date": "2026-09-06"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-02-chevron-venezuela-expansion",
+   "date": "2026-09-02",
+   "title": "Chevron commits $7bn to double Venezuelan output to ~600 kb/d",
+   "summary": "Chevron said it will invest $7 billion over five years to raise Venezuelan production to about 600,000 b/d, taking on Carabobo 1 and Carabobo-2-South-A in the Orinoco Belt. It follows a 28 August US deal granting a private venture (NABEP) 100-year concessions over 17 fields. Analysts say meaningful new barrels are years away.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": [
+    8.5,
+    -64.0
+   ],
+   "assets": [
+    "orinoco-belt",
+    "jose-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "CBS News — Chevron plans to double oil production in Venezuela with $7 billion investment",
+     "url": "https://www.cbsnews.com/news/chevron-venezuela-7-billion-oil-investment/",
+     "date": "2026-09-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-01-us-strikes-iran-radars",
+   "date": "2026-09-01",
+   "title": "US strikes Iranian radars and mine-laying sites after new tanker attacks",
+   "summary": "CENTCOM struck Iranian radars, air defences, maritime and mine-laying assets on 30 Aug-1 Sep after projectiles hit tankers including the VLCC Senegal Prosperity on 30-31 August; Iran retaliated against US and allied bases. US officials said escorted transits on a southern route had restored shipping to about half of pre-war levels, a figure not borne out by AIS-based counts.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "CTP-ISW Iran Update, September 1, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-september-1-2026",
+     "date": "2026-09-01"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-28-corpus-christi-stage3-complete",
+   "date": "2026-08-28",
+   "title": "Cheniere completes Corpus Christi Stage 3; US LNG exports up 23% in H1",
+   "summary": "Cheniere completed the final Corpus Christi Stage 3 train on 28 August, taking the site above 25 mtpa. US LNG exports averaged 17.4 Bcf/d in H1 2026, up 23% year on year, with Plaquemines at full capacity and Golden Pass Train 1 ramping; Asian shipments more than doubled.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    27.88,
+    -97.25
+   ],
+   "assets": [
+    "corpus-christi-lng",
+    "plaquemines-lng",
+    "golden-pass-lng"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "WorkBoat — US LNG exports jump as new Gulf terminals ramp up",
+     "url": "https://www.workboat.com/us-lng-exports-jump-as-new-gulf-terminals-ramp-up",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-25-hormuz-mines-cleared-claim",
+   "date": "2026-08-25",
+   "title": "Trump says Navy cleared all mines from Hormuz lanes; JMIC keeps threat 'severe'",
+   "summary": "Trump said all mines in international waters of the strait had been removed or detonated and that new minelayers would be destroyed; US officials said over 100 suspected mines had been found over preceding months. JMIC's advisory the same day warned of continued risk from drifting or uncharted mines and kept the threat level at SEVERE.",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain — Trump says U.S. Navy has cleared all mines from Strait of Hormuz",
+     "url": "https://gcaptain.com/trump-says-u-s-navy-has-cleared-all-mines-from-strait-of-hormuz/",
+     "date": "2026-08-25"
+    },
+    {
+     "name": "Wikipedia — 2026 Strait of Hormuz campaign (compiled timeline)",
+     "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-24-houthis-hit-bahri-vlcc-yanbu",
+   "date": "2026-08-24",
+   "title": "Houthis hit Bahri VLCC 'Amzan' off Yanbu",
+   "summary": "A Bahri-owned VLCC was hit by a ballistic missile about 63 nm west of Yanbu, starting a fire; crew were unharmed. The Houthis said it enforced their ban on Saudi shipping. Lloyd's List Intelligence reported no further Red Sea attacks through early September, with the threat focused on Saudi-linked tonnage.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    24.1,
+    37.0
+   ],
+   "assets": [
+    "yanbu-terminal",
+    "bab-el-mandeb"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Yemen's Houthis report attack on Saudi oil tanker in Red Sea",
+     "url": "https://www.aljazeera.com/news/2026/8/24/yemens-houthis-report-attack-on-saudi-ship",
+     "date": "2026-08-24"
+    },
+    {
+     "name": "Lloyd's List Intelligence — Red Sea Brief: 3 September 2026",
+     "url": "https://www.lloydslistintelligence.com/resources/blog/red-sea-brief-3-september-2026",
+     "date": "2026-09-03"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-19-uae-halts-iran-trade",
+   "date": "2026-08-19",
+   "title": "UAE suspends all trade and financial dealings with Iran",
+   "summary": "The UAE suspended all trade, commercial exchanges and financial transactions with Iran after two Iranian ballistic missiles fell into the sea on 18 August, one in Emirati waters. Euronews notes Hormuz oil flows averaged 4.9 mb/d in Q2 2026 versus 21.6 mb/d in Q4 2025.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": [
+    25.2,
+    55.3
+   ],
+   "assets": [
+    "jebel-ali-dubai",
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Euronews — UAE halts all trade and financial dealings with Iran",
+     "url": "https://www.euronews.com/2026/08/19/uae-halts-all-trade-and-financial-dealings-with-iran",
+     "date": "2026-08-19"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-12-houthi-attack-tihamah-bab-el-mandeb",
+   "date": "2026-08-12",
+   "title": "Houthi missile strike on ship in Bab el-Mandeb kills six",
+   "summary": "The Houthis hit the Egyptian-owned cargo ship Tihamah in Bab el-Mandeb with three ballistic missiles and a follow-up strike, killing at least six, the first shipping deaths linked to the group since the war began. The Houthis had declared a naval blockade of Saudi Arabia after Saudi airstrikes ended the 2022 truce on 13 July.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    12.6,
+    43.3
+   ],
+   "assets": [
+    "bab-el-mandeb"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Six killed in Houthi attack on Bab al-Mandeb ship, Yemen's government says",
+     "url": "https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says",
+     "date": "2026-08-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-09-jazan-refinery-fire",
+   "date": "2026-08-09",
+   "title": "Fire at Aramco's Jazan refinery after Houthi drone claim",
+   "summary": "Saudi Arabia's energy ministry reported a fire early on 9 August at the Jazan refinery on the Red Sea, since extinguished with no casualties; the Houthis claimed a drone strike. The Houthis claimed further strikes on the refinery on 13 and 18 August (not independently confirmed). The IEA later cited attacks on Jazan among causes of Saudi supply losses.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    16.73,
+    42.6
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Houthi attacks kill seven in Yemen, refinery targeted in Saudi Arabia",
+     "url": "https://www.aljazeera.com/news/2026/8/9/saudi-arabia-says-fire-extinguished-at-aramco-facility-in-jizan",
+     "date": "2026-08-09"
+    },
+    {
+     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
+     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
+     "date": "2026-09-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-08-turkey-restricts-black-sea-transits",
+   "date": "2026-08-08",
+   "title": "Turkey stops issuing transit permits for Novorossiysk-bound ships",
+   "summary": "Turkey's coastal safety directorate stopped issuing Dardanelles transit permits for commercial ships bound for Novorossiysk (and reportedly Ukrainian ports) after attacks on two Turkish-owned vessels; traffic to Bulgarian and Turkish ports continued. The move compounds Black Sea export disruption.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    40.2,
+    26.4
+   ],
+   "assets": [
+    "turkish-straits",
+    "novorossiysk",
+    "cpc-pipeline"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Turkey restricts Black Sea ship traffic after surge in attacks",
+     "url": "https://gcaptain.com/turkey-restricts-black-sea-ship-traffic-after-surge-in-attacks/",
+     "date": "2026-08-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-08-08-ukraine-halts-cpc-strikes",
+   "date": "2026-08-08",
+   "title": "Ukraine agrees with US to stop strikes on CPC-linked tankers",
+   "summary": "After a request from VP Vance on 31 July, Ukraine agreed to halt attacks on non-Russian tankers and infrastructure serving the CPC terminal, provided vessels carry no Russian cargo, are not Russian-owned and are not under Ukrainian sanctions. CPC shipments had resumed but remained below normal.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": [
+    44.66,
+    37.65
+   ],
+   "assets": [
+    "cpc-pipeline",
+    "tengiz-oil",
+    "kashagan-oil"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Ukrainska Pravda (citing Bloomberg) — Ukraine refrains from attacking CPC vessels following agreement with US",
+     "url": "https://www.pravda.com.ua/eng/news/2026/08/08/8047874/",
+     "date": "2026-08-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-07-27-abqaiq-drone-attack",
+   "date": "2026-07-27",
+   "title": "Drones from Iraq hit Saudi Abqaiq processing plant",
+   "summary": "Saudi Arabia said Iran-backed Iraqi militias launched drones at oil facilities in the Eastern Province and Riyadh; imagery showed damage and smoke at Aramco's Abqaiq processing facility (~7 mb/d capacity). US and Saudi aircraft struck militia sites in Iraq on 28 July. The IEA later cited the Abqaiq strikes among causes of Saudi supply losses.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    25.93,
+    49.67
+   ],
+   "assets": [
+    "abqaiq-oil",
+    "ghawar-oil"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Times of Israel — Israel, Saudi Arabia, Jordan, Iraq attacked by drones despite lull in US-Iran fighting",
+     "url": "https://www.timesofisrael.com/israel-saudi-arabia-jordan-iraq-attacked-by-drones-despite-lull-in-us-iran-fighting/",
+     "date": "2026-07-27"
+    },
+    {
+     "name": "FDD Long War Journal analysis — Saudi Arabia closes its East-West pipeline after attacks from Iraq",
+     "url": "https://www.fdd.org/analysis/2026/09/13/saudi-arabia-closes-its-east-west-pipeline-after-attacks-from-iraq/",
+     "date": "2026-09-13"
+    },
+    {
+     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
+     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
+     "date": "2026-09-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-07-20-houthi-saudi-shipping-ban",
+   "date": "2026-07-20",
+   "title": "Houthis impose 'ban' on Saudi ports and shipping in the Red Sea",
+   "summary": "The Houthis declared all vessels loading or discharging at Saudi ports prohibited from 20 July. Bab el-Mandeb transits fell 24% to 269 in the week of 20 July (354 the week before) and mainstream tanker transits fell 42% to 53, before stabilising. Saudi tankers turned back and the group later claimed attacks on Yanbu installations.",
+   "category": "shipping",
+   "severity": "critical",
+   "coords": [
+    12.6,
+    43.3
+   ],
+   "assets": [
+    "bab-el-mandeb",
+    "yanbu-terminal",
+    "suez-canal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Lloyd's List — The Week in Charts: Red Sea shipping stabilises after July's Houthi blockade shock",
+     "url": "https://www.lloydslist.com/LL1158141/The-Week-in-Charts-Red-Sea-shipping-stabilises-after-Julys-Houthi-blockade-shock--War-disruption-and-rerouting-fail-to-derail-container-demand",
+     "date": "2026-08"
+    },
+    {
+     "name": "Al Jazeera — Six killed in Houthi attack on Bab al-Mandeb ship, Yemen's government says",
+     "url": "https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says",
+     "date": "2026-08-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-07-20-cpc-tanker-attacks-loadings-halted",
+   "date": "2026-07-20",
+   "title": "Drone strikes on tankers halt CPC loadings; Kazakhstan cuts output",
+   "summary": "Four tankers heading to or loading at the CPC terminal near Novorossiysk (Nordic Zenith, Asia, Nissos Ios, Nelsa) were hit by drones on 17-20 July. CPC suspended loadings on 22 July as storage filled and Kazakhstan announced temporary output cuts on 23 July. Russia blamed Ukraine; Kazakhstan called the attacks unacceptable. CPC carries ~80% of Kazakh exports.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    44.66,
+    37.65
+   ],
+   "assets": [
+    "cpc-pipeline",
+    "novorossiysk",
+    "tengiz-oil",
+    "kashagan-oil"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Euronews — Four drone strikes in four days hit tankers carrying Kazakhstan's oil",
+     "url": "https://www.euronews.com/2026/07/21/four-drone-strikes-in-four-days-hit-tankers-carrying-kazakhstans-oil",
+     "date": "2026-07-21"
+    },
+    {
+     "name": "The Moscow Times — Kazakhstan cuts oil production following drone strikes on Black Sea tankers",
+     "url": "https://www.themoscowtimes.com/2026/07/23/kazakhstan-cuts-oil-production-following-drone-strikes-on-black-sea-tankers-a93325",
+     "date": "2026-07-23"
+    }
+   ]
+  },
+  {
+   "id": "2026-07-17-kuwait-power-desalination-hit",
+   "date": "2026-07-17",
+   "title": "Iranian strike damages Kuwaiti power and desalination plant",
+   "summary": "Kuwait said an Iranian attack caused a fire and damaged several power-generation units at a combined power and water desalination plant, urging residents to conserve power and water. War-risk premiums for Hormuz transits were quoted at 3-10% of hull value, versus ~0.25% pre-war (Marsh).",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    29.37,
+    47.98
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al-Monitor — Iran strike damages Kuwait power, desalination plant",
+     "url": "https://www.al-monitor.com/originals/2026/07/iran-strike-damages-kuwait-power-desalination-plant-what-know",
+     "date": "2026-07-17"
+    },
+    {
+     "name": "The National — Shipping insurance surges again as attacks intensify over Strait of Hormuz",
+     "url": "https://www.thenationalnews.com/business/2026/07/17/war-risk-shipping-premium-surges-again-as-tensions-escalate-at-strait-of-hormuz/",
+     "date": "2026-07-17"
+    }
+   ]
+  },
+  {
+   "id": "2026-07-14-us-reinstates-blockade",
+   "date": "2026-07-14",
+   "title": "US reinstates naval blockade of Iranian ports",
+   "summary": "CENTCOM confirmed the blockade of Iranian ports was reinstated on 14 July after the June truce collapsed. By late September the US said 122 commercial vessels had been redirected and all Iranian crude exports halted.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    27.18,
+    56.27
+   ],
+   "assets": [
+    "kharg-island",
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Wikipedia — 2026 Strait of Hormuz campaign (compiled timeline)",
+     "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
+     "date": "2026-09"
+    },
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-07-08-truce-collapses-us-strikes",
+   "date": "2026-07-08",
+   "title": "US-Iran truce collapses after tanker attacks; US strikes Iran",
+   "summary": "Following attacks on commercial ships, the US struck Iranian territory and Iran retaliated against US Gulf bases; Trump declared the truce over. The US revoked a 60-day waiver on Iranian oil sales, effective 17 July. Brent rose over 3% from near pre-war levels; one analyst said transits had stayed below 50% of pre-war levels for months.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz",
+    "kharg-island"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Oil surges as US strikes Iran, reversing return to pre-war prices",
+     "url": "https://www.aljazeera.com/news/2026/7/8/oil-prices-surge-as-us-strikes-iran-reversing-fall-to-pre-war-levels",
+     "date": "2026-07-08"
+    },
+    {
+     "name": "Al Jazeera — Strait of Hormuz: What has happened since the US-Iran MoU on June 17?",
+     "url": "https://www.aljazeera.com/news/2026/7/9/strait-of-hormuz-what-has-happened-since-the-us-iran-mou-on-june-17",
+     "date": "2026-07-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-07-07-al-rekayyat-wedyan-attacked",
+   "date": "2026-07-07",
+   "title": "Qatari LNG carrier Al Rekayyat and Saudi VLCC Wedyan hit near Hormuz",
+   "summary": "The Qatari LNG tanker Al Rekayyat caught fire after being hit off Limah, Oman, the first Qatari LNG ship struck in the war, and the Saudi supertanker Wedyan was damaged. Qatar and Saudi Arabia held Iran responsible. Qatar then largely halted LNG exports through the strait.",
+   "category": "shipping",
+   "severity": "critical",
+   "coords": [
+    25.95,
+    56.4
+   ],
+   "assets": [
+    "strait-of-hormuz",
+    "ras-laffan-lng"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Saudi, Qatari tankers hit as Strait of Hormuz risks worsen",
+     "url": "https://www.aljazeera.com/news/2026/7/7/tanker-on-fire-off-coast-of-oman-after-being-hit-by-projectile",
+     "date": "2026-07-07"
+    },
+    {
+     "name": "Rigzone (Bloomberg wire) — Qatar ramps up LNG shipping via Hormuz",
+     "url": "https://www.rigzone.com/news/wire/qatar_ramps_up_lng_shipping_via_hormuz-24-sep-2026-184690-article/",
+     "date": "2026-09-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-06-25-oil-back-to-prewar",
+   "date": "2026-06-25",
+   "title": "Oil falls back to pre-war levels as Hormuz traffic resumes after MoU",
+   "summary": "Brent settled at $72.68 and WTI at $69.58 on 25 June, the lowest since 27 February, as Energy Secretary Wright said Hormuz flows were close to pre-war levels. Vessel data showed an average of 28 transits/day from 18 June to 5 July versus ~100 pre-war.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Oil prices back to pre-war levels on rising Middle East supply",
+     "url": "https://www.aljazeera.com/news/2026/6/25/oil-prices-back-to-pre-war-levels-on-rising-middle-east-supply",
+     "date": "2026-06-25"
+    },
+    {
+     "name": "Al Jazeera — Strait of Hormuz: What has happened since the US-Iran MoU on June 17?",
+     "url": "https://www.aljazeera.com/news/2026/7/9/strait-of-hormuz-what-has-happened-since-the-us-iran-mou-on-june-17",
+     "date": "2026-07-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-06-22-ras-laffan-barzan-explosion",
+   "date": "2026-06-22",
+   "title": "Explosion at Barzan gas facility in Ras Laffan kills at least 13",
+   "summary": "An explosion at the Barzan gas facility in Ras Laffan Industrial City killed at least 13 workers two days after restart operations began. Qatar's energy minister blamed a technical malfunction, ruled out sabotage and said exports would not be affected.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    25.9,
+    51.55
+   ],
+   "assets": [
+    "ras-laffan-lng",
+    "north-field-south-pars-gas"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Explosion at Qatar's Ras Laffan LNG facility kills at least 13",
+     "url": "https://www.aljazeera.com/economy/2026/6/22/qatar-lng-factory-explosion-injures-54-leaves-18-missing-govt-says",
+     "date": "2026-06-22"
+    }
+   ]
+  },
+  {
+   "id": "2026-06-17-us-iran-mou",
+   "date": "2026-06-17",
+   "title": "US and Iran sign memorandum to end war and reopen Hormuz",
+   "summary": "Trump and Iranian President Pezeshkian signed a memorandum of understanding to end the war and restore shipping; Pakistan, the main mediator, said Iran would reopen the strait and the US blockade would end. Traffic recovered only partially, and five commercial vessels were attacked between 25 June and 7 July.",
+   "category": "diplomatic",
+   "severity": "high",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz",
+    "kharg-island"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Strait of Hormuz: What has happened since the US-Iran MoU on June 17?",
+     "url": "https://www.aljazeera.com/news/2026/7/9/strait-of-hormuz-what-has-happened-since-the-us-iran-mou-on-june-17",
+     "date": "2026-07-09"
+    },
+    {
+     "name": "Wikipedia — 2026 Strait of Hormuz campaign (compiled timeline)",
+     "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-05-21-panama-canal-near-capacity",
+   "date": "2026-05-21",
+   "title": "Panama Canal near capacity as US energy exports to Asia surge",
+   "summary": "Canal transits averaged 38/day, up 8% year on year and 16% over five weeks, near the 36-40 daily limit, driven by US tanker, LPG and LNG shipments to Asia; waiting times rose to 47 hours.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    9.08,
+    -79.68
+   ],
+   "assets": [
+    "panama-canal"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain — Panama Canal near capacity as Hormuz crisis drives surge in U.S. energy exports",
+     "url": "https://gcaptain.com/panama-canal-near-capacity-as-hormuz-crisis-drives-surge-in-u-s-energy-exports/",
+     "date": "2026-05-21"
+    }
+   ]
+  },
+  {
+   "id": "2026-05-18-iran-strait-authority-tolls",
+   "date": "2026-05-18",
+   "title": "Iran launches Persian Gulf Strait Authority to permit and toll Hormuz transits",
+   "summary": "Iran set up the Persian Gulf Strait Authority, requiring vessels to declare ownership, insurance, crew and cargo and pay fees for transit permits; some ships reportedly paid ~$2 million per transit. Israeli-linked ships are banned. OFAC warned that payments could expose firms to sanctions.",
+   "category": "policy",
+   "severity": "high",
+   "coords": [
+    27.18,
+    56.27
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Jerusalem Post — Iran imposes tolls as new Persian Gulf Strait Authority takes control",
+     "url": "https://www.jpost.com/middle-east/iran-news/article-896582",
+     "date": "2026-05"
+    }
+   ]
+  },
+  {
+   "id": "2026-05-12-us-spr-exchange",
+   "date": "2026-05-12",
+   "title": "DOE awards 53.3 million barrel SPR emergency exchange",
+   "summary": "The Department of Energy began moving 53.3 million barrels from the SPR under exchange contracts with nine companies (largest: Trafigura, Marathon, ExxonMobil), on top of the 172 million barrels ordered in March. Brent was above $105 at the time.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": [
+    29.9,
+    -93.9
+   ],
+   "assets": [
+    "us-spr"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — US moves to release more oil stockpiles under IEA agreement",
+     "url": "https://www.aljazeera.com/economy/2026/5/12/us-moves-to-release-more-oil-stockpiles-under-iea-agreement",
+     "date": "2026-05-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-05-04-fujairah-refinery-fire",
+   "date": "2026-05-04",
+   "title": "Iranian barrage sets Fujairah refinery ablaze during Project Freedom",
+   "summary": "The UAE said it engaged 12 ballistic missiles, 3 cruise missiles and 4 drones; a large fire broke out in the Fujairah Petroleum Industries Zone, injuring three, and an ADNOC-linked empty tanker was targeted. The attacks, the first since the 8 April ceasefire, came as the US launched the 'Project Freedom' tanker escort operation (paused 6 May). Brent rose 5.8% to $114.44.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    25.17,
+    56.36
+   ],
+   "assets": [
+    "fujairah",
+    "habshan-fujairah-pipeline"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — UAE accuses Iran of attacks as 'large fire' breaks out at oil refinery",
+     "url": "https://www.aljazeera.com/news/2026/5/4/uae-reports-missile-and-drone-strikes-incoming-from-iran",
+     "date": "2026-05-04"
+    },
+    {
+     "name": "Outlook Business — Drone strike hits UAE's Fujairah; why it matters for global oil supply",
+     "url": "https://www.outlookbusiness.com/news/drone-strike-hits-uaes-fujairah-why-it-matters-for-global-oil-supply",
+     "date": "2026-05-05"
+    },
+    {
+     "name": "Wikipedia — 2026 Strait of Hormuz campaign (compiled timeline)",
+     "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-05-01-uae-exits-opec",
+   "date": "2026-05-01",
+   "title": "UAE leaves OPEC and OPEC+",
+   "summary": "The UAE's exit, announced 28 April, took effect on 1 May. EIA estimates the UAE held ~4.2 mb/d of effective crude capacity in 2025 and that OPEC+'s share of global crude output falls from ~46% to ~42% without it.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "zakum-oil"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "EIA Today in Energy — UAE's exit from OPEC+ reduced the group's share of crude oil production and capacity",
+     "url": "https://www.eia.gov/todayinenergy/detail.php?id=67804",
+     "date": "2026-06-23"
+    }
+   ]
+  },
+  {
+   "id": "2026-04-23-druzhba-south-resumes",
+   "date": "2026-04-23",
+   "title": "Druzhba resumes Russian crude flows to Slovakia and Hungary",
+   "summary": "Oil flows through the southern Druzhba leg resumed on 23 April after a halt since January that Kyiv attributed to Russian strike damage near Brody; Slovakia's economy ministry confirmed receipt. Hungary then lifted its veto on a €90bn EU loan to Ukraine.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    50.08,
+    25.15
+   ],
+   "assets": [
+    "druzhba-south"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Pipeline Technology Journal — Druzhba pipeline resumes operation, sending oil to Slovakia and Hungary",
+     "url": "https://www.pipeline-journal.net/news/druzhba-pipeline-resumes-operation-sending-oil-slovakia-and-hungary",
+     "date": "2026-04-23"
+    }
+   ]
+  },
+  {
+   "id": "2026-04-22-golden-pass-first-cargo",
+   "date": "2026-04-22",
+   "title": "Golden Pass LNG ships first cargo, becoming 9th US export terminal",
+   "summary": "Golden Pass (QatarEnergy 70%, ExxonMobil 30%) shipped its first cargo on 22 April after first LNG in late March. Its three trains total 2.0 Bcf/d nominal; Train 2 is due 2H26 and Train 3 1H27.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    29.76,
+    -93.93
+   ],
+   "assets": [
+    "golden-pass-lng"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "EIA Today in Energy — The 9th U.S. LNG export terminal, Golden Pass, ships first cargo",
+     "url": "https://www.eia.gov/todayinenergy/detail.php?id=67564",
+     "date": "2026-04-23"
+    }
+   ]
+  },
+  {
+   "id": "2026-04-13-us-blockade-iranian-ports",
+   "date": "2026-04-13",
+   "title": "US begins naval blockade of Iranian ports after Islamabad talks fail",
+   "summary": "After 21 hours of Pakistan-mediated talks ended without a deal, CENTCOM began blockading all maritime traffic to and from Iranian ports at 10:00 ET on 13 April, saying it would not impede transits to non-Iranian ports. More than 90% of Iran's seaborne trade moves through Hormuz.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    27.18,
+    56.27
+   ],
+   "assets": [
+    "kharg-island",
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "FDD — U.S. blockading ships entering or exiting Iranian ports along Strait of Hormuz",
+     "url": "https://www.fdd.org/analysis/2026/04/13/u-s-blockading-ships-entering-or-exiting-iranian-ports-along-strait-of-hormuz/",
+     "date": "2026-04-13"
+    },
+    {
+     "name": "Wikipedia — 2026 Strait of Hormuz campaign (compiled timeline)",
+     "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-04-08-us-iran-ceasefire",
+   "date": "2026-04-08",
+   "title": "Two-week US-Iran ceasefire announced; oil posts record one-day fall",
+   "summary": "A temporary US-Iran ceasefire was agreed on 8 April and oil posted its largest daily drop since April 2020. Hormuz traffic stayed far below pre-war levels; about 14 LNG cargoes were trapped in the Gulf.",
+   "category": "diplomatic",
+   "severity": "high",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — UAE accuses Iran of attacks as 'large fire' breaks out at oil refinery",
+     "url": "https://www.aljazeera.com/news/2026/5/4/uae-reports-missile-and-drone-strikes-incoming-from-iran",
+     "date": "2026-05-04"
+    },
+    {
+     "name": "The National — Qatar's Ras Laffan LNG site may not be fully back online for months",
+     "url": "https://www.thenationalnews.com/business/energy/2026/04/09/months-expected-until-qatars-ras-laffan-lng-site-resumes-full-operations/",
+     "date": "2026-04-09"
+    },
+    {
+     "name": "Wikipedia — 2026–present world oil market chronology (compiled)",
+     "url": "https://en.wikipedia.org/wiki/2026%E2%80%93present_world_oil_market_chronology",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-04-06-novorossiysk-cpc-sheskharis-strike",
+   "date": "2026-04-06",
+   "title": "Ukraine hits CPC and Sheskharis terminals at Novorossiysk",
+   "summary": "A Ukrainian strike damaged a CPC mooring-point pipeline and loading facilities and set four storage tanks ablaze at the Sheskharis terminal, which handles roughly 20% of Russian seaborne crude exports. CPC carries ~1% of world oil supply and ~80% of Kazakh exports.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    44.72,
+    37.79
+   ],
+   "assets": [
+    "novorossiysk",
+    "cpc-pipeline"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "The Moscow Times — Ukraine hits major oil terminal in southern Russia",
+     "url": "https://www.themoscowtimes.com/2026/04/06/ukraine-hits-major-oil-terminal-in-southern-russia-moscow-a92430",
+     "date": "2026-04-06"
+    }
+   ]
+  },
+  {
+   "id": "2026-04-02-leviathan-restarts",
+   "date": "2026-04-02",
+   "title": "Israel's Leviathan gas field restarts after five-week war shutdown",
+   "summary": "Israel's energy ministry said Leviathan would return to operation after being shut on 28 February, when Leviathan and Karish were halted as a precaution, cutting exports to Egypt and Jordan. Tamar was the only producing field during the shutdown.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    33.0,
+    34.0
+   ],
+   "assets": [
+    "leviathan-gas",
+    "tamar-gas",
+    "arab-gas-pipeline",
+    "eastern-mediterranean-energy-zone"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "BOE Report (Reuters) — Israel's Leviathan gas field to resume operations after war shutdown",
+     "url": "https://boereport.com/2026/04/02/israels-leviathan-gas-field-to-resume-operations-after-war-shutdown-energy-ministry-says/",
+     "date": "2026-04-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-25-baltic-ports-loadings-halted",
+   "date": "2026-03-25",
+   "title": "Drone strikes halt loadings at Primorsk and Ust-Luga",
+   "summary": "Loadings at Russia's two largest Baltic oil ports were suspended after repeated drone strikes started fires; Reuters estimated ~40% of Russian oil export capacity (~2 mb/d) was offline, with at least 50 tankers waiting. Novorossiysk was also behind schedule after earlier attacks. Druzhba exports to Hungary and Slovakia had been halted since January.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    60.0,
+    28.6
+   ],
+   "assets": [
+    "novorossiysk",
+    "druzhba-south"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "The Moscow Times (citing Reuters) — Ukrainian drone strikes halt at least 40% of Russia's oil export capacity",
+     "url": "https://www.themoscowtimes.com/2026/03/25/ukrainian-drone-strikes-halt-at-least-40-of-russias-oil-export-capacity-reuters-a92339",
+     "date": "2026-03-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-24-qatarenergy-force-majeure",
+   "date": "2026-03-24",
+   "title": "QatarEnergy declares long-term force majeure; 17% of capacity out for 3-5 years",
+   "summary": "QatarEnergy declared force majeure on long-term LNG contracts with buyers in Italy, Belgium, South Korea and China. The 19 March strikes damaged two of 14 LNG trains and a GTL plant, removing 12.8 mtpa (~17% of export capacity); repairs are estimated at 3-5 years and lost revenue at ~$20bn a year.",
+   "category": "infrastructure",
+   "severity": "critical",
+   "coords": [
+    25.9,
+    51.55
+   ],
+   "assets": [
+    "ras-laffan-lng"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — QatarEnergy declares force majeure on some LNG contracts due to Iran war",
+     "url": "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts",
+     "date": "2026-03-24"
+    },
+    {
+     "name": "Fox Business — QatarEnergy declares force majeure after Iran strikes on Ras Laffan facility",
+     "url": "https://www.foxbusiness.com/economy/iranian-strikes-cut-17-qatar-lng-output-threatening-global-supply",
+     "date": "2026-03"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-20-iraq-force-majeure",
+   "date": "2026-03-20",
+   "title": "Iraq declares force majeure on foreign-operated fields as Basra exports halt",
+   "summary": "Iraq's oil ministry declared force majeure on 20 March on fields operated by foreign companies after ordering shutdowns on 17 March; Basra Oil Company cut output from ~3.3 mb/d to ~0.9 mb/d with southern exports halted by the Hormuz closure. Rumaila had already cut up to 700 kb/d.",
+   "category": "infrastructure",
+   "severity": "critical",
+   "coords": [
+    30.5,
+    47.3
+   ],
+   "assets": [
+    "rumaila-oil",
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Middle East Forum — What does Iraq's force majeure declaration mean for energy markets?",
+     "url": "https://www.meforum.org/mef-observer/what-does-iraqs-force-majeure-declaration-mean-for-energy-markets",
+     "date": "2026-03"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-19-iran-retaliates-gulf-energy",
+   "date": "2026-03-19",
+   "title": "Iran strikes Ras Laffan, SAMREF, Habshan and Kuwaiti refineries",
+   "summary": "In retaliation for the South Pars strike, Iran hit Qatar's Ras Laffan complex (extensive damage), UAE's Habshan gas facility and Bab field, Saudi Arabia's SAMREF refinery at Yanbu, and Kuwait's Mina al-Ahmadi and Mina Abdullah refineries (Mina al-Ahmadi was hit again on 20 March). Brent rose above $110.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    25.9,
+    51.55
+   ],
+   "assets": [
+    "ras-laffan-lng",
+    "yanbu-terminal",
+    "mina-al-ahmadi",
+    "habshan-fujairah-pipeline"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "OPB/NPR — Israel and Iran attack gas facilities in a major escalation that rattles markets",
+     "url": "https://www.opb.org/article/2026/03/19/israel-and-iran-attack-gas-facilities-rattling-markets/",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "Al Jazeera — QatarEnergy declares force majeure on some LNG contracts due to Iran war",
+     "url": "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts",
+     "date": "2026-03-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-19-haifa-bazan-refinery-hit",
+   "date": "2026-03-19",
+   "title": "Iranian missile damages infrastructure serving Haifa's Bazan refinery",
+   "summary": "An Iranian missile hit the Haifa Bay area, damaging third-party infrastructure essential to the Bazan refinery; most production remained active and restoration was expected to take a few days.",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    32.8,
+    35.05
+   ],
+   "assets": [
+    "eastern-mediterranean-energy-zone"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Times of Israel — Haifa refinery says more missile attack damage found near site, but most production online",
+     "url": "https://www.timesofisrael.com/haifa-refinery-says-more-missile-attack-damage-found-near-site-but-most-production-online/",
+     "date": "2026-03-20"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-18-south-pars-strike",
+   "date": "2026-03-18",
+   "title": "Israel strikes South Pars gas processing at Asaluyeh",
+   "summary": "Israel struck gas treatment facilities at Asaluyeh serving the South Pars field, which supplies about 70% of Iran's domestic gas, triggering Iranian retaliation against Gulf energy infrastructure. Trump said the US 'knew nothing' in advance and threatened South Pars if attacks on Qatar continued.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    27.48,
+    52.6
+   ],
+   "assets": [
+    "north-field-south-pars-gas",
+    "south-pars-oil-layer-oil"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "OPB/NPR — Israel and Iran attack gas facilities in a major escalation that rattles markets",
+     "url": "https://www.opb.org/article/2026/03/19/israel-and-iran-attack-gas-facilities-rattling-markets/",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "Al Jazeera — QatarEnergy declares force majeure on some LNG contracts due to Iran war",
+     "url": "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts",
+     "date": "2026-03-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-18-kirkuk-ceyhan-restart",
+   "date": "2026-03-18",
+   "title": "Iraq restarts crude exports via Kirkuk-Ceyhan pipeline",
+   "summary": "Iraq and the Kurdistan Regional Government resumed exports through the Kirkuk-Ceyhan pipeline to Turkey on 18 March at ~250 kb/d, with up to 200 kb/d more possible. Iraqi output had fallen to ~1.4 mb/d from ~4.2 mb/d and southern exports (3.4 mb/d pre-war) were halted.",
+   "category": "infrastructure",
+   "severity": "high",
+   "coords": [
+    36.88,
+    35.93
+   ],
+   "assets": [
+    "kirkuk-ceyhan-pipeline",
+    "ceyhan-terminal",
+    "kirkuk-oil"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "The National — Iraq resumes crude oil exports to Turkey's Ceyhan port through pipeline",
+     "url": "https://www.thenationalnews.com/business/energy/2026/03/18/iraq-to-resume-oil-exports-via-turkeys-ceyhan-port-amid-regional-tensions/",
+     "date": "2026-03-18"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-14-fujairah-loadings-suspended",
+   "date": "2026-03-14",
+   "title": "Drone strikes halt ADNOC crude loadings at Fujairah; Shah gas field shut",
+   "summary": "Drone strikes and fires at Fujairah on 14 and 16 March halted loadings of ADNOC Murban crude (normally over 1 mb/d) at the UAE's only export outlet outside Hormuz; the port kept operating at reduced capacity. A drone attack also shut the Shah sour-gas field, which supplies at least 500 MMcf/d.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    25.17,
+    56.36
+   ],
+   "assets": [
+    "fujairah",
+    "habshan-fujairah-pipeline"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Cyprus Mail (Reuters) — Attacks on UAE's Fujairah port, Shah gas field add to energy disruptions",
+     "url": "https://cyprus-mail.com/2026/03/17/attacks-on-uaes-fujairah-port-shah-gas-field-add-to-energy-disruptions",
+     "date": "2026-03-17"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-14-us-strikes-kharg-military",
+   "date": "2026-03-14",
+   "title": "US strikes 90 military targets on Kharg Island, spares oil terminal",
+   "summary": "CENTCOM struck about 90 military targets on Kharg Island, including mine and missile storage, while deliberately sparing the terminal that handles ~90% of Iran's crude exports. Iran warned it would destroy regional oil and gas infrastructure if its own were hit.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    29.23,
+    50.32
+   ],
+   "assets": [
+    "kharg-island"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "NBC News — U.S. bombing of Kharg Island, Iran's critical oil hub, sparks new threats",
+     "url": "https://www.nbcnews.com/world/iran/iran-threatens-strike-oil-facilities-us-hits-military-targets-kharg-is-rcna263453",
+     "date": "2026-03-14"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-11-iea-400mb-release",
+   "date": "2026-03-11",
+   "title": "IEA agrees record 400 mb emergency stock release; US to release 172 mb",
+   "summary": "All 32 IEA members agreed a 400 million barrel collective release, the largest ever and the sixth in IEA history; the US committed 172 million barrels from the SPR over ~120 days and Japan ~80 million barrels. The IEA has called the disruption the largest in the history of the oil market.",
+   "category": "policy",
+   "severity": "high",
+   "coords": null,
+   "assets": [
+    "us-spr"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "U.S. Department of Energy — United States to release 172 million barrels of oil from the SPR",
+     "url": "https://www.energy.gov/articles/united-states-release-172-million-barrels-oil-strategic-petroleum-reserve",
+     "date": "2026-03-11"
+    },
+    {
+     "name": "Hydrocarbon Processing — IEA announces record release of strategic stocks",
+     "url": "https://www.hydrocarbonprocessing.com/news/2026/03/iea-announces-record-release-of-strategic-stocks-in-response-to-iran-war-oil-price-surge/",
+     "date": "2026-03-11"
+    },
+    {
+     "name": "IEA — Member countries to carry out largest ever oil stock release (news release; page title seen via search, direct fetch blocked)",
+     "url": "https://www.iea.org/news/iea-member-countries-to-carry-out-largest-ever-oil-stock-release-amid-market-disruptions-from-middle-east-conflict",
+     "date": "2026-03-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-02-qatar-halts-lng",
+   "date": "2026-03-02",
+   "title": "QatarEnergy halts LNG production after attacks; TTF jumps 46%",
+   "summary": "QatarEnergy halted production after military attacks on Ras Laffan and Mesaieed industrial cities. Qatar supplies about 20% of world LNG. Dutch TTF front-month rose €14.52 to €46.52/MWh on 2 March from about €32 the previous Friday.",
+   "category": "infrastructure",
+   "severity": "critical",
+   "coords": [
+    25.9,
+    51.55
+   ],
+   "assets": [
+    "ras-laffan-lng",
+    "north-field-south-pars-gas"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — QatarEnergy declares force majeure on some LNG contracts due to Iran war",
+     "url": "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts",
+     "date": "2026-03-24"
+    },
+    {
+     "name": "RTÉ — European gas prices surge by 46% after QatarEnergy move",
+     "url": "https://www.rte.ie/news/business/2026/0302/1561275-gas-prices/",
+     "date": "2026-03-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-03-02-ras-tanura-refinery-shut",
+   "date": "2026-03-02",
+   "title": "Aramco shuts Ras Tanura refinery after drone attack",
+   "summary": "Aramco shut its 550 kb/d Ras Tanura refinery after a drone attack caused a fire, with a temporary halt in loadings reported; the Saudi energy ministry said the damage came from debris of intercepted drones. Brent rose to about $80.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    26.64,
+    50.16
+   ],
+   "assets": [
+    "ras-tanura-refinery",
+    "ras-tanura-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "The National — Saudi Aramco shuts down Ras Tanura refinery due to 'drone attack'",
+     "url": "https://www.thenationalnews.com/business/2026/03/02/saudi-aramco-shuts-down-ras-tanura-refinery-following-drone-attack/",
+     "date": "2026-03-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-02-28-hormuz-closed-war-begins",
+   "date": "2026-02-28",
+   "title": "US-Israeli strikes on Iran; IRGC declares Strait of Hormuz closed",
+   "summary": "After US-Israeli strikes that killed Supreme Leader Ali Khamenei, the IRGC broadcast that no ship may pass the strait; by 2 March it limited passage to Iran-approved vessels. Major carriers suspended transits and war-risk premiums jumped. Pre-war, Hormuz carried ~20 mb/d of oil (about 20% of consumption) and ~20% of LNG trade. Israel shut the Leviathan and Karish gas fields as a precaution.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz",
+    "leviathan-gas"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "NPR — Iran's supreme leader, Ayatollah Ali Khamenei, has been killed",
+     "url": "https://www.npr.org/2026/02/28/nx-s1-5730158/israel-iran-strikes-trump-us",
+     "date": "2026-02-28"
+    },
+    {
+     "name": "PBS NewsHour — Trump says Iranian supreme leader Ali Khamenei killed in U.S.-Israeli strikes",
+     "url": "https://www.pbs.org/newshour/world/trump-says-iranian-supreme-leader-ali-khamenei-killed-in-u-s-israeli-strikes",
+     "date": "2026-02-28"
+    },
+    {
+     "name": "Wikipedia — 2026 Strait of Hormuz campaign (compiled timeline)",
+     "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_campaign",
+     "date": "2026-09"
+    },
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "Trading Economics — Brent news item (Feb 28, 2026)",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/529247",
+     "date": "2026-02-28"
+    },
+    {
+     "name": "BOE Report (Reuters) — Israel's Leviathan gas field to resume operations after war shutdown",
+     "url": "https://boereport.com/2026/04/02/israels-leviathan-gas-field-to-resume-operations-after-war-shutdown-energy-ministry-says/",
+     "date": "2026-04-02"
+    }
+   ]
+  }
+ ]
+}

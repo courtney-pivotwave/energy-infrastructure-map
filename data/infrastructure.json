@@ -1779,6 +1779,150 @@
    "size": 5,
    "details": "Venezuela (Anzoátegui). PDVSA's main crude export terminal and upgrader complex for Orinoco Belt extra-heavy crude blends.",
    "geo": "Venezuela's exports have been shaped by US sanctions since 2019, with licenses for Chevron and a few others turning flows on and off as Washington's policy toward Caracas shifted. Much of the rest has moved to China through intermediaries and ship-to-ship transfers."
+  },
+  {
+   "id": "abqaiq-processing-plant",
+   "name": "Abqaiq oil processing facility",
+   "kind": "hub",
+   "coords": [
+    25.93,
+    49.67
+   ],
+   "size": 5,
+   "details": "Aramco's main crude stabilisation plant, ~7 mb/d capacity, processing Ghawar and other Eastern Province crude before export or shipment on the East-West pipeline.",
+   "geo": "Hit by drones from Iraq on 27 Jul 2026 (IEA-cited). Only the field id abqaiq-oil exists today."
+  },
+  {
+   "id": "jazan-refinery",
+   "name": "Aramco Jazan refinery",
+   "kind": "refinery",
+   "coords": [
+    16.73,
+    42.6
+   ],
+   "size": 5,
+   "details": "Red Sea coastal refinery in southwest Saudi Arabia, ~400 kb/d per press reports.",
+   "geo": "Fire after a Houthi drone claim on 9 Aug 2026, with further claimed strikes 13 and 18 Aug; cited by the IEA."
+  },
+  {
+   "id": "samref-refinery",
+   "name": "SAMREF refinery (Yanbu)",
+   "kind": "refinery",
+   "coords": [
+    23.98,
+    38.24
+   ],
+   "size": 5,
+   "details": "Aramco-ExxonMobil refinery at Yanbu on the Red Sea.",
+   "geo": "Hit by Iranian drone on 19 Mar 2026 (OPB/NPR); Yanbu is now the key bypass hub."
+  },
+  {
+   "id": "ras-al-juaymah-terminal",
+   "name": "Ras al-Ju'aymah crude/LPG terminal",
+   "kind": "hub",
+   "coords": [
+    26.9,
+    50.0
+   ],
+   "size": 5,
+   "details": "Saudi Gulf crude and LPG export terminal near Ras Tanura.",
+   "geo": "Main Saudi loading point in the September 2026 Gulf export surge."
+  },
+  {
+   "id": "mesaieed-industrial-city",
+   "name": "Mesaieed Industrial City (Qatar)",
+   "kind": "hub",
+   "coords": [
+    24.99,
+    51.55
+   ],
+   "size": 5,
+   "details": "Qatari petrochemical, fertiliser and export hub.",
+   "geo": "Attacked on 2 Mar 2026 alongside Ras Laffan, prompting QatarEnergy's production halt."
+  },
+  {
+   "id": "basra-oil-terminal",
+   "name": "Basra Oil Terminal (Al Basrah / Khor al-Amaya)",
+   "kind": "hub",
+   "coords": [
+    29.68,
+    48.81
+   ],
+   "size": 5,
+   "details": "Iraq's southern offshore crude export terminals, ~3.3-3.5 mb/d pre-war.",
+   "geo": "Exports halted in March 2026 (force majeure) and partially recovered to ~2 mb/d by August 2026."
+  },
+  {
+   "id": "primorsk-terminal",
+   "name": "Primorsk oil terminal",
+   "kind": "hub",
+   "coords": [
+    60.34,
+    28.72
+   ],
+   "size": 5,
+   "details": "Russia's largest Baltic crude export port.",
+   "geo": "Loadings suspended after drone strikes in March 2026; ~40% of Russian export capacity was offline (Reuters)."
+  },
+  {
+   "id": "ust-luga-terminal",
+   "name": "Ust-Luga port (oil and products)",
+   "kind": "hub",
+   "coords": [
+    59.68,
+    28.4
+   ],
+   "size": 5,
+   "details": "Baltic crude and product export port.",
+   "geo": "Repeatedly struck in March 2026 with loadings halted."
+  },
+  {
+   "id": "tuapse-refinery",
+   "name": "Tuapse refinery and oil terminal",
+   "kind": "refinery",
+   "coords": [
+    44.1,
+    39.07
+   ],
+   "size": 5,
+   "details": "Rosneft Black Sea refinery and export terminal.",
+   "geo": "Operations suspended indefinitely after April-May 2026 strikes."
+  },
+  {
+   "id": "moscow-refinery",
+   "name": "Gazpromneft Moscow refinery (Kapotnya)",
+   "kind": "refinery",
+   "coords": [
+    55.645,
+    37.8
+   ],
+   "size": 5,
+   "details": "~12 Mt/yr refinery supplying the Moscow region.",
+   "geo": "Refining paused after the 19-20 Sep 2026 strike (CTP-ISW)."
+  },
+  {
+   "id": "bazan-haifa-refinery",
+   "name": "Bazan refinery (Haifa)",
+   "kind": "refinery",
+   "coords": [
+    32.8,
+    35.05
+   ],
+   "size": 5,
+   "details": "Israel's largest refinery.",
+   "geo": "Supporting infrastructure damaged by an Iranian missile on 19 Mar 2026."
+  },
+  {
+   "id": "mina-abdullah-refinery",
+   "name": "Mina Abdullah refinery (Kuwait)",
+   "kind": "refinery",
+   "coords": [
+    29.0,
+    48.16
+   ],
+   "size": 5,
+   "details": "Kuwait National Petroleum Co. refinery south of Kuwait City.",
+   "geo": "Targeted on 19 Mar 2026 with Mina al-Ahmadi (OPB/NPR)."
   }
  ],
  "chokepoints": [
@@ -2619,6 +2763,18 @@
    "size": 12,
    "details": "Argentina (Neuquén). Shale oil and gas; oil output passed ~400,000 bpd in 2024–25 and is growing fast. New export pipelines to the Atlantic coast underway.",
    "geo": null
+  },
+  {
+   "id": "shah-gas-field",
+   "name": "Shah sour gas field and plant (Abu Dhabi)",
+   "commodity": "gas",
+   "coords": [
+    23.05,
+    53.65
+   ],
+   "size": 9,
+   "details": "Ultra-sour gas development supplying at least 500 MMcf/d to the UAE grid.",
+   "geo": "Shut after a drone attack in mid-March 2026 (Reuters via Cyprus Mail)."
   }
  ],
  "routes": [

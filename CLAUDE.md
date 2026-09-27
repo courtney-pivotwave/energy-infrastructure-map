@@ -21,3 +21,4 @@ then open http://localhost:8765.
 - Asset ids are stable kebab-case; `status.json`, `events.json`, `scenarios.json` reference them. Never rename an id without updating every reference.
 - All text rendered from data goes through `esc()` in `app.js`; source links through `safeUrl()`. Keep it that way — the data is written from web research.
 - Pre-crisis reference week is 2026-02-23 (`fuel.json → pre_crisis_date`, `market.json → pre_crisis`, PortWatch baseline window in `app.js`).
+- When you change `app.js` or `styles.css`, bump the `?v=` query on their tags in `index.html` so browsers don't serve a stale copy.

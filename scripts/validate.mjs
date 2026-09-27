@@ -118,7 +118,10 @@ if (sc) {
     if (!ids.has(id)) err(`${w}: unknown chokepoint id`);
     if (typeof c.oil_mbd !== 'number') err(`${w}: oil_mbd must be a number`);
     if (!['none', 'cape', 'lombok'].includes(c.reroute)) err(`${w}: reroute must be none|cape|lombok`);
-    (c.bypass || []).forEach(b => { if (!ids.has(b.asset)) err(`${w}: bypass asset "${b.asset}" unknown`); });
+    (c.bypass || []).forEach(b => {
+      if (!ids.has(b.asset)) err(`${w}: bypass asset "${b.asset}" unknown`);
+      if (b.outlet && !ids.has(b.outlet)) err(`${w}: bypass outlet "${b.outlet}" unknown`);
+    });
     (c.stranded || []).forEach(a => { if (!ids.has(a)) err(`${w}: stranded asset "${a}" unknown`); });
     checkSources(w, c.sources);
   }

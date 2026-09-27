@@ -1,1 +1,377 @@
-{ "updated": null, "assets": {} }
+{
+ "updated": "2026-09-27",
+ "assets": {
+  "strait-of-hormuz": {
+   "status": "closed",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees via its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue (latest reported 24-27 Sep). A reduced, largely AIS-dark and escorted flow persists (Reuters-cited 33.7 mb in week of 20 Sep; US claims of ~13 mb/d are unverified). US-Iran talks stalled after Trump rejected Iran's plan on 26 Sep.",
+   "since": "2026-02-28",
+   "updated": "2026-09-27",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war",
+     "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "gCaptain — Trump says U.S. Navy has cleared all mines from Strait of Hormuz",
+     "url": "https://gcaptain.com/trump-says-u-s-navy-has-cleared-all-mines-from-strait-of-hormuz/",
+     "date": "2026-08-25"
+    },
+    {
+     "name": "Euronews — UAE halts all trade and financial dealings with Iran",
+     "url": "https://www.euronews.com/2026/08/19/uae-halts-all-trade-and-financial-dealings-with-iran",
+     "date": "2026-08-19"
+    }
+   ]
+  },
+  "bab-el-mandeb": {
+   "status": "disrupted",
+   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August.",
+   "since": "2026-07-20",
+   "updated": "2026-09-25",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Lloyd's List Intelligence — Red Sea Brief: 3 September 2026",
+     "url": "https://www.lloydslistintelligence.com/resources/blog/red-sea-brief-3-september-2026",
+     "date": "2026-09-03"
+    },
+    {
+     "name": "Times of Israel (Reuters) — Yemen's Houthis seize port city of Mocha, closing in on Bab el-Mandeb",
+     "url": "https://www.timesofisrael.com/yemens-houthis-seize-port-city-of-mocha-closing-in-on-strategic-bab-el-mandeb-strait/",
+     "date": "2026-09-10"
+    },
+    {
+     "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
+     "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "Lloyd's List — The Week in Charts: Red Sea shipping stabilises after July's Houthi blockade shock",
+     "url": "https://www.lloydslist.com/LL1158141/The-Week-in-Charts-Red-Sea-shipping-stabilises-after-Julys-Houthi-blockade-shock--War-disruption-and-rerouting-fail-to-derail-container-demand",
+     "date": "2026-08"
+    }
+   ]
+  },
+  "suez-canal": {
+   "status": "reduced",
+   "summary": "Suez transits were about 36% below normal in late August but 30% higher year on year and recovering, with some VLCCs rerouting via Suez/SUMED.",
+   "updated": "2026-09-03",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Lloyd's List Intelligence — Red Sea Brief: 3 September 2026",
+     "url": "https://www.lloydslistintelligence.com/resources/blog/red-sea-brief-3-september-2026",
+     "date": "2026-09-03"
+    },
+    {
+     "name": "Lloyd's List — The Week in Charts: Red Sea shipping stabilises after July's Houthi blockade shock",
+     "url": "https://www.lloydslist.com/LL1158141/The-Week-in-Charts-Red-Sea-shipping-stabilises-after-Julys-Houthi-blockade-shock--War-disruption-and-rerouting-fail-to-derail-container-demand",
+     "date": "2026-08"
+    }
+   ]
+  },
+  "turkish-straits": {
+   "status": "disrupted",
+   "summary": "Since 8 Aug Turkey has not issued Dardanelles transit permits for commercial ships bound for Novorossiysk (and reportedly Ukraine), after attacks on Turkish-owned vessels in the Black Sea; traffic to Bulgarian and Turkish ports continues.",
+   "since": "2026-08-08",
+   "updated": "2026-08-08",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Turkey restricts Black Sea ship traffic after surge in attacks",
+     "url": "https://gcaptain.com/turkey-restricts-black-sea-ship-traffic-after-surge-in-attacks/",
+     "date": "2026-08-08"
+    }
+   ]
+  },
+  "east-west-pipeline": {
+   "status": "reduced",
+   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep at a reduced rate, per sources cited by Reuters. Pre-attack it carried ~4-5 mb/d of Hormuz-bypass crude to Yanbu.",
+   "since": "2026-09-10",
+   "updated": "2026-09-22",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "CDM (citing Reuters) — Saudi Arabia restarts East-West oil pipeline; Yanbu exports set to resume",
+     "url": "https://cdm.press/news/middle-east/2026/09/22/saudi-arabia-restarts-east-west-oil-pipeline-after-houthi-strikes-yanbu-exports-set-to-resume-tuesday/",
+     "date": "2026-09-22"
+    },
+    {
+     "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
+     "url": "https://gulfnews.com/business/energy/saudi-arabia-loads-nearly-12-million-barrels-in-one-day-as-hormuz-tanker-traffic-adapts-1.500684479",
+     "date": "2026-09"
+    },
+    {
+     "name": "Al Jazeera — Saudi Arabia shuts critical oil pipeline after drone attack: What it means",
+     "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened",
+     "date": "2026-09-12"
+    }
+   ]
+  },
+  "yanbu-terminal": {
+   "status": "disrupted",
+   "summary": "Saudi Arabia's main Hormuz-bypass outlet is under Houthi missile and drone threat (intercepts on 24 Sep) and is subject to a declared Houthi shipping ban; exports were down about half from July (EIA) and dropped further while the East-West pipeline was shut. France is sending air defences.",
+   "since": "2026-07-20",
+   "updated": "2026-09-25",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "EIA Short-Term Energy Outlook — Global oil markets (September 2026)",
+     "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+     "date": "2026-09-09"
+    },
+    {
+     "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
+     "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "CTP-ISW Iran Update, September 25, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-september-25-2026",
+     "date": "2026-09-25"
+    }
+   ]
+  },
+  "ras-laffan-lng": {
+   "status": "damaged",
+   "summary": "Two of 14 LNG trains and a GTL plant were destroyed on 19 Mar (12.8 mtpa, ~17% of capacity, 3-5 years to repair). The rest of the plant runs at minimum because exports depend on Hormuz; Qatar resumed limited tanker movements in September.",
+   "since": "2026-03-19",
+   "updated": "2026-09-24",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — QatarEnergy declares force majeure on some LNG contracts due to Iran war",
+     "url": "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts",
+     "date": "2026-03-24"
+    },
+    {
+     "name": "Rigzone (Bloomberg wire) — Qatar ramps up LNG shipping via Hormuz",
+     "url": "https://www.rigzone.com/news/wire/qatar_ramps_up_lng_shipping_via_hormuz-24-sep-2026-184690-article/",
+     "date": "2026-09-24"
+    }
+   ]
+  },
+  "north-field-south-pars-gas": {
+   "status": "damaged",
+   "summary": "Israel struck South Pars processing at Asaluyeh on 18 Mar; Qatar's side of the shared field is constrained by the Ras Laffan damage and export limits.",
+   "since": "2026-03-18",
+   "updated": "2026-09-24",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "OPB/NPR — Israel and Iran attack gas facilities in a major escalation that rattles markets",
+     "url": "https://www.opb.org/article/2026/03/19/israel-and-iran-attack-gas-facilities-rattling-markets/",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "Al Jazeera — QatarEnergy declares force majeure on some LNG contracts due to Iran war",
+     "url": "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts",
+     "date": "2026-03-24"
+    },
+    {
+     "name": "Rigzone (Bloomberg wire) — Qatar ramps up LNG shipping via Hormuz",
+     "url": "https://www.rigzone.com/news/wire/qatar_ramps_up_lng_shipping_via_hormuz-24-sep-2026-184690-article/",
+     "date": "2026-09-24"
+    }
+   ]
+  },
+  "kharg-island": {
+   "status": "offline",
+   "summary": "The terminal was intact after US strikes on military targets (14 Mar), but Iranian crude exports are halted by the US naval blockade, reinstated 14 Jul; the US struck an Iranian tanker off Kharg on 5 Sep.",
+   "since": "2026-07-14",
+   "updated": "2026-09-27",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "Al Jazeera — US, Iran engaged in tanker war: Where is the months-long conflict headed?",
+     "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed",
+     "date": "2026-09-06"
+    },
+    {
+     "name": "NBC News — U.S. bombing of Kharg Island, Iran's critical oil hub, sparks new threats",
+     "url": "https://www.nbcnews.com/world/iran/iran-threatens-strike-oil-facilities-us-hits-military-targets-kharg-is-rcna263453",
+     "date": "2026-03-14"
+    }
+   ]
+  },
+  "abqaiq-oil": {
+   "status": "damaged",
+   "summary": "Drone strikes from Iraq on 27 Jul damaged the Abqaiq processing plant (~7 mb/d), which handles Ghawar crude; the IEA cited them among causes of Saudi supply falling to 6 mb/d in August. Current repair status not verified.",
+   "since": "2026-07-27",
+   "updated": "2026-09-11",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Times of Israel — Israel, Saudi Arabia, Jordan, Iraq attacked by drones despite lull in US-Iran fighting",
+     "url": "https://www.timesofisrael.com/israel-saudi-arabia-jordan-iraq-attacked-by-drones-despite-lull-in-us-iran-fighting/",
+     "date": "2026-07-27"
+    },
+    {
+     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
+     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
+     "date": "2026-09-11"
+    }
+   ]
+  },
+  "ghawar-oil": {
+   "status": "reduced",
+   "summary": "Saudi crude supply was 6.0 mb/d in August (IEA), the lowest in over three decades, as exports are squeezed by Hormuz, the Red Sea blockade and attacks. September exports were recovering via Gulf terminals (>4 mb/d provisional, Kpler).",
+   "since": "2026-03-01",
+   "updated": "2026-09-21",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
+     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
+     "date": "2026-09-11"
+    },
+    {
+     "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
+     "url": "https://gulfnews.com/business/energy/saudi-arabia-loads-nearly-12-million-barrels-in-one-day-as-hormuz-tanker-traffic-adapts-1.500684479",
+     "date": "2026-09"
+    }
+   ]
+  },
+  "ras-tanura-terminal": {
+   "status": "reduced",
+   "summary": "Loadings are constrained by the Hormuz situation; Ras Tanura and Ju'aymah loaded ~12 mb on 21 Sep, the busiest day since before the war, as Saudi Arabia pushed exports back through the Gulf.",
+   "since": "2026-03-02",
+   "updated": "2026-09-21",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
+     "url": "https://gulfnews.com/business/energy/saudi-arabia-loads-nearly-12-million-barrels-in-one-day-as-hormuz-tanker-traffic-adapts-1.500684479",
+     "date": "2026-09"
+    },
+    {
+     "name": "Al Jazeera — From Yanbu to Sohar: Tracking Saudi Arabia's alternative oil routes",
+     "url": "https://www.aljazeera.com/news/2026/9/17/from-yanbu-to-sohar-tracking-saudi-arabias-alternative-oil-routes",
+     "date": "2026-09-17"
+    }
+   ]
+  },
+  "fujairah": {
+   "status": "disrupted",
+   "summary": "The UAE's main outlet outside Hormuz, fed by the Habshan-Fujairah pipeline (~1.5 mb/d), has been attacked repeatedly (14 and 16 Mar, 4 May). Exports rose to 1.62 mb/d in March as volumes were rerouted there. Status after May not verified.",
+   "since": "2026-03-14",
+   "updated": "2026-05-05",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Cyprus Mail (Reuters) — Attacks on UAE's Fujairah port, Shah gas field add to energy disruptions",
+     "url": "https://cyprus-mail.com/2026/03/17/attacks-on-uaes-fujairah-port-shah-gas-field-add-to-energy-disruptions",
+     "date": "2026-03-17"
+    },
+    {
+     "name": "Al Jazeera — UAE accuses Iran of attacks as 'large fire' breaks out at oil refinery",
+     "url": "https://www.aljazeera.com/news/2026/5/4/uae-reports-missile-and-drone-strikes-incoming-from-iran",
+     "date": "2026-05-04"
+    },
+    {
+     "name": "Al Jazeera — What's the significance of UAE's Fujairah, hit on Monday?",
+     "url": "https://www.aljazeera.com/news/2026/5/5/whats-the-significance-of-uaes-fujairah-hit-on-monday",
+     "date": "2026-05-05"
+    }
+   ]
+  },
+  "rumaila-oil": {
+   "status": "reduced",
+   "summary": "Southern Iraqi output was slashed in March (Basra Oil Co. ~3.3 to ~0.9 mb/d; force majeure 20 Mar). Iraq said exports reached ~2 mb/d in August, the highest since the war began, mostly via Hormuz and partly via Ceyhan.",
+   "since": "2026-03-17",
+   "updated": "2026-08-26",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Middle East Forum — What does Iraq's force majeure declaration mean for energy markets?",
+     "url": "https://www.meforum.org/mef-observer/what-does-iraqs-force-majeure-declaration-mean-for-energy-markets",
+     "date": "2026-03"
+    },
+    {
+     "name": "Arab News — Iraqi daily oil exports in August highest since start of war: minister",
+     "url": "https://www.arabnews.com/node/2654700/amp",
+     "date": "2026-08"
+    }
+   ]
+  },
+  "mina-al-ahmadi": {
+   "status": "damaged",
+   "summary": "Hit by Iranian drones on 19-20 Mar (fires, units shut as a precaution). Kuwait's power and desalination plants were also hit on 17 Jul. Current refinery status not verified.",
+   "since": "2026-03-19",
+   "updated": "2026-07-17",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "OPB/NPR — Israel and Iran attack gas facilities in a major escalation that rattles markets",
+     "url": "https://www.opb.org/article/2026/03/19/israel-and-iran-attack-gas-facilities-rattling-markets/",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "Al-Monitor — Iran strike damages Kuwait power, desalination plant",
+     "url": "https://www.al-monitor.com/originals/2026/07/iran-strike-damages-kuwait-power-desalination-plant-what-know",
+     "date": "2026-07-17"
+    }
+   ]
+  },
+  "cpc-pipeline": {
+   "status": "reduced",
+   "summary": "Drone attacks on tankers at the CPC terminal (17-20 Jul) halted loadings on 22 Jul and forced Kazakh output cuts. Loadings resumed but were below normal as of 8 Aug; Ukraine has since agreed with the US not to target CPC-linked shipping. Turkish permit limits on Novorossiysk-bound ships add risk.",
+   "since": "2026-07-17",
+   "updated": "2026-08-08",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Euronews — Four drone strikes in four days hit tankers carrying Kazakhstan's oil",
+     "url": "https://www.euronews.com/2026/07/21/four-drone-strikes-in-four-days-hit-tankers-carrying-kazakhstans-oil",
+     "date": "2026-07-21"
+    },
+    {
+     "name": "The Moscow Times — Kazakhstan cuts oil production following drone strikes on Black Sea tankers",
+     "url": "https://www.themoscowtimes.com/2026/07/23/kazakhstan-cuts-oil-production-following-drone-strikes-on-black-sea-tankers-a93325",
+     "date": "2026-07-23"
+    },
+    {
+     "name": "Ukrainska Pravda (citing Bloomberg) — Ukraine refrains from attacking CPC vessels following agreement with US",
+     "url": "https://www.pravda.com.ua/eng/news/2026/08/08/8047874/",
+     "date": "2026-08-08"
+    }
+   ]
+  },
+  "novorossiysk": {
+   "status": "disrupted",
+   "summary": "Repeated Ukrainian strikes (Sheskharis/CPC on 6 Apr; oil terminal and naval base on 9 Sep, per Ukraine), plus Turkey's halt on Dardanelles permits for Novorossiysk-bound ships since 8 Aug.",
+   "since": "2026-04-06",
+   "updated": "2026-09-09",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "The Moscow Times — Ukraine hits major oil terminal in southern Russia",
+     "url": "https://www.themoscowtimes.com/2026/04/06/ukraine-hits-major-oil-terminal-in-southern-russia-moscow-a92430",
+     "date": "2026-04-06"
+    },
+    {
+     "name": "Kyiv Independent — Ukrainian drones strike naval base, oil terminal in Russia's Novorossiysk",
+     "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-oil-terminal-in-russias-novorossiysk/",
+     "date": "2026-09-09"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Turkey restricts Black Sea ship traffic after surge in attacks",
+     "url": "https://gcaptain.com/turkey-restricts-black-sea-ship-traffic-after-surge-in-attacks/",
+     "date": "2026-08-08"
+    }
+   ]
+  }
+ }
+}

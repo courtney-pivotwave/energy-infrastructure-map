@@ -1,3 +1,5 @@
 .DS_Store
 data/research/
 .claude/settings.local.json
+.vercel
+.env*.local

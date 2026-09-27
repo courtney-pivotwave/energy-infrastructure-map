@@ -1,10 +1,8 @@
 {
   "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "energy-infrastructure-map.vercel.app" }],
-      "destination": "https://strategicenergymap.org/:path*",
-      "permanent": true
-    }
+    { "source": "/:path*", "has": [{ "type": "host", "value": "energy-infrastructure-map.vercel.app" }], "destination": "https://strategicenergymap.org/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.strategicenergymap.org" }], "destination": "https://strategicenergymap.org/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "strategicenergymap.com" }], "destination": "https://strategicenergymap.org/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.strategicenergymap.com" }], "destination": "https://strategicenergymap.org/:path*", "permanent": true }
   ]
 }

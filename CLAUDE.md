@@ -25,4 +25,4 @@ then open http://localhost:8765.
 - Pre-crisis reference week is 2026-02-23 (`fuel.json → pre_crisis_date`, `market.json → pre_crisis`, PortWatch baseline window in `app.js`).
 - When you change `app.js` or `styles.css`, bump the `?v=` query on their tags in `index.html` so browsers don't serve a stale copy.
 - Goal: a free, ad-free public resource. No ads, no cookies, no trackers beyond Vercel Web Analytics.
-- Primary domain is strategicenergymap.org. `vercel.json` 301-redirects the old energy-infrastructure-map.vercel.app host; strategicenergymap.com and www hosts redirect via Vercel project domain settings.
+- Primary domain is strategicenergymap.org. `vercel.json` 301-redirects the old energy-infrastructure-map.vercel.app host; www and .com hosts are attached to the project and redirect via the same `vercel.json` rules.

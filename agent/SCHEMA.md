@@ -9,6 +9,7 @@ Nothing about the map's content lives in the HTML — to change what the map say
 | `data/status.json` | Current operating status of any asset that is **not** running normally. | Update agent, every run. |
 | `data/events.json` | Dated feed of developments (strikes, closures, sanctions, restarts, deals). | Update agent, every run (append; edit only to correct). |
 | `data/market.json` | Latest benchmark prices with a pre-crisis reference. | Update agent, every run. |
+| `data/changelog.json` | Public changelog shown on the About page. | Update agent appends one entry per run with material changes; humans for site changes. |
 | `data/scenarios.json` | Baseline flows through each chokepoint, bypass capacity, and most-exposed importers — used by the "what-if" closure mode. | Humans; agent may refresh figures when an authoritative source (EIA, IEA) publishes new numbers. |
 
 Every asset has a stable `id` (kebab-case). `status.json`, `events.json` and `scenarios.json` refer to assets by that id.
@@ -122,3 +123,15 @@ Countries with no open feed are added by the update agent with `"feed": "agent"`
 }
 ```
 Target set for agent entries: Japan, South Korea, China, India, Canada, Australia, Brazil, South Africa. Use national official series where they exist (e.g. METI/ANRE weekly survey for Japan, Opinet for Korea, NDRC price adjustments for China, PPAC for India, Statistics Canada / NRCan weekly, Australian Institute of Petroleum, ANP for Brazil, South Africa DMRE monthly adjustments). `pre_crisis` = the value closest to, and not after, `fuel.json → pre_crisis_date`.
+
+## changelog.json
+
+```jsonc
+{
+  "entries": [                       // newest first
+    { "date": "2026-09-28", "kind": "data",          // data | site | policy
+      "headline": "Plain-language summary, max ~90 chars",
+      "changes": ["Short bullet", "Another"] }         // 1–6 bullets, for a general reader
+  ]
+}
+```

@@ -1,0 +1,56 @@
+{
+ "entries": [
+  {
+   "date": "2026-09-27",
+   "kind": "site",
+   "headline": "About page, credits, link previews and public changelog",
+   "changes": [
+    "New About & methods page explaining sources, the sourcing rule, the update agent and the what-if model",
+    "Link previews for LinkedIn, Slack and messaging apps",
+    "Embeddable map view (add ?embed=1 to the URL)",
+    "Privacy-friendly, cookie-free visitor counts"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "kind": "policy",
+   "headline": "Sourcing rule for parties to the conflicts",
+   "changes": [
+    "Claims by governments that are parties to the conflicts (including the US) are attributed and marked unverified unless independently verified",
+    "Ship transits and flows through Hormuz and other contested waters now come only from independent trackers, named in the text",
+    "Hormuz what-if model rebased on the IEA's February 2026 factsheet (Kpler data)"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "kind": "data",
+   "headline": "Catch-up: February–September 2026",
+   "changes": [
+    "63 sourced events covering the Iran war and Hormuz closure, the Red Sea and the Black Sea",
+    "17 facilities marked as not operating normally",
+    "13 newly relevant facilities added (e.g. Abqaiq plant, Jazan, SAMREF, Basra terminal, Primorsk, Ust-Luga)",
+    "Benchmark prices as of 25 September"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "kind": "site",
+   "headline": "Version 2: Americas, live data, pump prices and what-if mode",
+   "changes": [
+    "Americas added: US Gulf Coast LNG, Permian, Guyana, Brazil pre-salt, Venezuela, Canadian oil sands, Panama Canal",
+    "Live chokepoint ship traffic from IMF PortWatch",
+    "Weekly pump prices for the US, EU and UK from official sources",
+    "Chokepoint closure what-if mode",
+    "Daily automated update agent with a sourcing policy and validation checks"
+   ]
+  },
+  {
+   "date": "2026-03-22",
+   "kind": "site",
+   "headline": "First version published",
+   "changes": [
+    "Map of pipelines, fields, refineries, ports and chokepoints across Europe, the Middle East and Asia, with geopolitical context"
+   ]
+  }
+ ]
+}

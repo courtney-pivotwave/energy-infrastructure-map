@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About & methods — Strategic Energy Infrastructure Map</title>
+<meta name="description" content="How the Strategic Energy Infrastructure Map works: data sources, sourcing rules, the daily update agent, the what-if model, and its limits.">
+<link rel="canonical" href="https://energy-infrastructure-map.vercel.app/about.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Strategic Energy Infrastructure Map">
+<meta property="og:title" content="About & methods — Strategic Energy Infrastructure Map">
+<meta property="og:description" content="Data sources, sourcing rules, the daily update agent and the what-if model behind a free, ad-free map of global energy infrastructure.">
+<meta property="og:url" content="https://energy-infrastructure-map.vercel.app/about.html">
+<meta property="og:image" content="https://energy-infrastructure-map.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=5" />
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="doc">
+<main class="doc-wrap">
+  <a class="doc-back" href="./">← Back to the map</a>
+  <h1>About & methods</h1>
+  <p class="lede">A free, ad-free map of the world's oil and gas infrastructure: the pipelines, fields, refineries, terminals, shipping routes and chokepoints that move energy, and what is happening to them now.</p>
+  <div class="doc-stats" id="stats"></div>
+
+  <nav class="doc-toc" aria-label="On this page">
+    <a href="#use">How to use it</a><a href="#sources">Data sources</a><a href="#rule">Sourcing rule</a>
+    <a href="#agent">How it stays current</a><a href="#whatif">The what-if model</a><a href="#limits">Limits</a>
+    <a href="#privacy">Privacy</a><a href="#builder">Who built this</a><a href="#updates">Recent updates</a>
+  </nav>
+
+  <section id="use">
+    <h2>How to use it</h2>
+    <ul>
+      <li><b>Layers</b> (left): switch pipelines, fields, refineries, LNG terminals, ports, chokepoints, shipping routes, recent events and pump prices on or off. Click anything on the map for details, geopolitical context and related developments.</li>
+      <li><b>Ringed markers</b> show facilities that are not operating normally: reduced, disrupted, offline, damaged or closed. Each status lists its sources and when it was last checked.</li>
+      <li><b>Latest</b>: a dated, sourced feed of developments, filterable by time and category.</li>
+      <li><b>Chokepoints</b>: daily ship traffic through the key straits and canals, compared with the six months before the crisis.</li>
+      <li><b>Pump prices</b>: weekly petrol and diesel prices by country, with the change since February 2026.</li>
+      <li><b>What-if</b>: close one or more chokepoints to see which flows are cut, what can be rerouted or bypassed, and who is most exposed.</li>
+    </ul>
+  </section>
+
+  <section id="sources">
+    <h2>Data sources</h2>
+    <table class="doc-table">
+      <thead><tr><th>What</th><th>Source</th><th>Refreshed</th></tr></thead>
+      <tbody>
+        <tr><td>Infrastructure (locations, capacities, context)</td><td>Compiled from company, government and industry sources; each description is maintained in the open repository</td><td>As needed</td></tr>
+        <tr><td>Chokepoint ship traffic</td><td><a href="https://portwatch.imf.org/" target="_blank" rel="noopener">IMF PortWatch</a> (satellite AIS vessel tracking), loaded live in your browser</td><td>Daily, ~1 week lag</td></tr>
+        <tr><td>Events and facility status</td><td>Independent reporting and analysis, e.g. Reuters, AP, Al Jazeera, Lloyd's List, gCaptain, ISW / Critical Threats, IEA, UKMTO and JMIC advisories. Every item links its sources.</td><td>Daily</td></tr>
+        <tr><td>Hormuz and contested-waters flows</td><td>Independent ship-tracking only: Kpler, Vortexa, MarineTraffic, TankerTrackers.com, Bloomberg, IMF PortWatch, IEA analysis</td><td>As published</td></tr>
+        <tr><td>Benchmark prices (Brent, WTI, TTF, JKM, Henry Hub)</td><td>Exchange settlements as reported by Reuters and other market sources</td><td>Daily</td></tr>
+        <tr><td>Pump prices</td><td>US EIA weekly retail survey; European Commission Weekly Oil Bulletin; UK DESNZ weekly road fuel prices; ECB reference rates for US$ conversion</td><td>Weekly</td></tr>
+        <tr><td>What-if baselines</td><td>IEA Strait of Hormuz factsheet (Feb 2026, Kpler data); EIA chokepoint analysis (1H 2025, Vortexa data)</td><td>When updated</td></tr>
+        <tr><td>Basemap</td><td>Esri World Light Gray Canvas; map library <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a></td><td>—</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="rule">
+    <h2>Sourcing rule</h2>
+    <p>Several of the conflicts on this map involve governments whose statements are part of the conflict itself. The map follows one rule for all of them: currently the United States, Israel, Iran, the Houthis, Russia and Ukraine.</p>
+    <ul>
+      <li><b>Verify, then use.</b> What a party to a conflict reports is used as fact only when it can be independently verified. Verifiable actions and statistics, such as a strategic reserve release or official price surveys, are used normally.</li>
+      <li><b>Unverifiable claims are labelled.</b> They appear only when the claim is itself news. They are attributed by name and marked <i>unverified</i>, and never become numbers, statuses or facts in the situation summary.</li>
+      <li><b>Ship traffic through contested waters comes only from independent trackers</b>, and the tracker is named. If no independent figure exists, the map shows none rather than weighing competing claims from the parties.</li>
+      <li><b>Every figure must be traceable.</b> A number whose origin can't be found is left out.</li>
+    </ul>
+    <p>Confidence labels: <b>confirmed</b> means two or more independent sources, <b>reported</b> means one reputable independent source, and <b>unverified</b> means a claim by a party to the conflict.</p>
+  </section>
+
+  <section id="agent">
+    <h2>How it stays current</h2>
+    <p>An automated research agent (Claude, by Anthropic) runs every morning. It reviews independent reporting since its last run, updates events, facility status and prices, and refreshes pump prices from the official feeds. Every item it writes must cite a source it opened that day.</p>
+    <ul>
+      <li><b>Routine updates</b> (new events, price refreshes, status notes) are published automatically.</li>
+      <li><b>Bigger changes wait for human review</b>: new facilities, critical-severity events, a chokepoint changing status, and corrections to earlier items.</li>
+      <li><b>Automated checks</b> validate every change before it is published, including the sourcing rule above.</li>
+      <li>Every change is public in the project's <a href="https://github.com/courtney-pivotwave/energy-infrastructure-map/commits/main/data" target="_blank" rel="noopener">history on GitHub</a>.</li>
+    </ul>
+  </section>
+
+  <section id="whatif">
+    <h2>The what-if model</h2>
+    <p>Closing a chokepoint in the What-if tab estimates the immediate, physical effect on oil flows. It is deliberately simple:</p>
+    <ul>
+      <li><b>Flows</b> are pre-crisis baselines: Hormuz from the IEA's 2025 figures (19.9 mb/d, about a quarter of seaborne oil trade), other chokepoints from 1H 2025 tanker-tracking.</li>
+      <li><b>Bypass pipelines</b> count only their spare capacity, at the low end of published ranges. A pipeline or export terminal that is currently offline or damaged is excluded, and the model warns when one is running reduced.</li>
+      <li><b>Rerouting</b>: where ships can sail around (the Cape of Good Hope, Indonesian straits), flows count as delayed, not lost.</li>
+      <li><b>Net shortfall</b> = flows with no alternative route, minus usable bypass capacity. It is compared with world demand (~104 mb/d) and IEA emergency stocks (~1.2 bn barrels).</li>
+    </ul>
+    <p>It does not model price responses, demand destruction, production shut-ins, insurance, or how long stocks can actually be drawn. Flows through more than one chokepoint are counted at each, so combined scenarios are an upper bound. Treat it as a way to understand exposure, not a forecast.</p>
+  </section>
+
+  <section id="limits">
+    <h2>Limits and corrections</h2>
+    <ul>
+      <li>Locations are indicative. Pipeline routes are simplified and not survey-accurate.</li>
+      <li>Many tankers in the Gulf are sailing with transponders off, so ship-tracking figures there understate actual traffic.</li>
+      <li>Pump prices include taxes, which vary widely between countries. Much of the difference between countries comes from policy, not crude costs.</li>
+      <li>This is an independent project, not investment, trading or security advice.</li>
+    </ul>
+    <p>Spotted an error or a missing source? <a href="https://github.com/courtney-pivotwave/energy-infrastructure-map/issues/new" target="_blank" rel="noopener">Open an issue on GitHub</a>.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy</h2>
+    <p>No ads, no cookies, no sign-in and no tracking across sites. The site counts visits anonymously with Vercel Web Analytics, which stores no cookies or personal data. Ship-traffic data loads directly from the IMF's public service, and map tiles from Esri.</p>
+  </section>
+
+  <section id="builder">
+    <h2>Who built this</h2>
+    <p>Designed and built by <a href="https://www.linkedin.com/in/courtneyhwilson/" target="_blank" rel="noopener"><b>Courtney Wilson</b></a> as an independent project, using Claude Code for development and a scheduled Claude agent for daily research. The code, data and agent instructions are open on <a href="https://github.com/courtney-pivotwave/energy-infrastructure-map" target="_blank" rel="noopener">GitHub</a>. Feedback and ideas are welcome on <a href="https://www.linkedin.com/in/courtneyhwilson/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </section>
+
+  <section id="updates">
+    <h2>Recent updates</h2>
+    <div id="changelog"><p class="empty">Loading…</p></div>
+    <p class="note"><a href="https://github.com/courtney-pivotwave/energy-infrastructure-map/commits/main" target="_blank" rel="noopener">Full change history on GitHub →</a></p>
+  </section>
+
+  <footer class="doc-foot">Basemap © Esri, HERE, Garmin, © OpenStreetMap contributors · Ship transits: IMF PortWatch · Built by <a href="https://www.linkedin.com/in/courtneyhwilson/" target="_blank" rel="noopener">Courtney Wilson</a></footer>
+</main>
+
+<script>
+(async function () {
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmt = d => d ? new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }) : '';
+  const get = p => fetch(p, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+  const [infra, events, status, fuel, log] = await Promise.all(['infrastructure', 'events', 'status', 'fuel', 'changelog'].map(f => get(`data/${f}.json`)));
+
+  if (infra) {
+    const assets = ['pipelines', 'sites', 'fields', 'chokepoints'].reduce((n, k) => n + (infra[k]?.length || 0), 0);
+    const stat = (v, k) => `<div class="kpi"><div class="v">${esc(v)}</div><div class="k">${esc(k)}</div></div>`;
+    document.getElementById('stats').innerHTML =
+      stat(assets, 'facilities mapped') + stat(events?.events?.length ?? '—', 'sourced events') +
+      stat(Object.keys(status?.assets || {}).length, 'not running normally') + stat(fuel?.entries?.length ?? '—', 'pump price series') +
+      (status?.updated ? `<p class="note" style="grid-column:1/-1">Last news scan ${esc(fmt(status.updated))}.</p>` : '');
+  }
+  const el = document.getElementById('changelog');
+  const entries = (log?.entries || []).slice().sort((a, b) => b.date.localeCompare(a.date)).slice(0, 15);
+  el.innerHTML = entries.length ? entries.map(e => `
+    <div class="log-entry"><div class="log-meta">${esc(fmt(e.date))} · <span class="log-kind ${esc(e.kind)}">${esc(e.kind)}</span></div>
+    <div class="log-head">${esc(e.headline)}</div>
+    ${e.changes?.length ? `<ul>${e.changes.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}</div>`).join('')
+    : '<p class="empty">No updates logged yet.</p>';
+})();
+</script>
+</body>
+</html>

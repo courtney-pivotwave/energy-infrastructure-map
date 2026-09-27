@@ -79,8 +79,11 @@ Houthis (Ansar Allah), Russia and Ukraine.
    `data/fuel.json` — append a history point, update `now`/`week_ago`/`usd_per_litre`/`date`/sources.
 8. If an authoritative source publishes new baseline flow figures (e.g. EIA chokepoint update), refresh
    `data/scenarios.json` — cite it.
-9. Run `node scripts/validate.mjs`. Fix every error. Do not publish with errors.
-10. Publish (see below). If nothing material changed, still commit the fuel/price refresh with a short message.
+9. Add one entry to the top of `data/changelog.json` for this run (`kind: "data"`): a plain-language headline and
+   2–5 short bullet changes a general reader would care about. Skip it if the run only refreshed prices. The entry is
+   public on the About page, so write for the public, not for maintainers.
+10. Run `node scripts/validate.mjs`. Fix every error. Do not publish with errors.
+11. Publish (see below). If nothing material changed, still commit the fuel/price refresh with a short message.
 
 ## Publishing — routine changes go live, big changes wait for review
 

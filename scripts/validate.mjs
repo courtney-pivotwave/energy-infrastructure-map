@@ -154,6 +154,20 @@ if (fuel) {
   });
 }
 
+// ── changelog ──
+const log = load('changelog.json');
+if (log) {
+  (log.entries || []).forEach((e, i) => {
+    const w = `changelog[${i}]`;
+    if (!isDate(e.date)) err(`${w}: bad date`);
+    if (!['data', 'site', 'policy'].includes(e.kind)) err(`${w}: kind must be data|site|policy`);
+    if (!e.headline) err(`${w}: missing headline`);
+    if (!Array.isArray(e.changes) || !e.changes.length) err(`${w}: changes must be a non-empty array`);
+  });
+  const dates = (log.entries || []).map(e => e.date);
+  if (dates.some((d, i) => i && d > dates[i - 1])) err('changelog: entries must be newest first');
+}
+
 warnings.forEach(w => console.warn('warn:', w));
 if (errors.length) {
   errors.forEach(e => console.error('ERROR:', e));

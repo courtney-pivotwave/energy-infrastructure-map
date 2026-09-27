@@ -55,6 +55,19 @@ const [infra, statusData, eventsData, market, scenarios, fuel] = await Promise.a
 const statusOf = id => statusData.assets?.[id] || null;
 const events = (eventsData.events || []).slice().sort((a, b) => b.date.localeCompare(a.date));
 
+// ── Embed mode (?embed=1): map only, for iframes and link-preview images ──
+const params = new URLSearchParams(location.search);
+const EMBED = params.get('embed') === '1';
+if (EMBED) {
+  document.body.classList.add('embed');
+  if (!params.has('bare')) {
+    const a = document.createElement('a');
+    a.className = 'embed-badge'; a.href = 'https://energy-infrastructure-map.vercel.app/'; a.target = '_blank'; a.rel = 'noopener';
+    a.innerHTML = 'Strategic Energy Infrastructure Map <span>↗</span>';
+    document.body.appendChild(a);
+  }
+}
+
 // ── Map ──
 const map = L.map('map', { center: [30, 40], zoom: 3, minZoom: 2, maxZoom: 10, zoomControl: false, worldCopyJump: true });
 L.control.zoom({ position: 'topright' }).addTo(map);
@@ -229,9 +242,9 @@ $('#regions').addEventListener('click', e => {
   if (b) map.flyToBounds(b, { ...panelPadding(), duration: 0.8 });
 });
 function panelPadding() { // keep regions clear of the side panels on wide screens
-  return window.innerWidth > 1000 ? { paddingTopLeft: [240, 70], paddingBottomRight: [390, 10] } : { paddingTopLeft: [0, 60], paddingBottomRight: [0, 10] };
+  return !EMBED && window.innerWidth > 1000 ? { paddingTopLeft: [240, 70], paddingBottomRight: [390, 10] } : { paddingTopLeft: [0, 60], paddingBottomRight: [0, 10] };
 }
-map.fitBounds(REGIONS.world, panelPadding());
+map.fitBounds(REGIONS[params.get('region')] || REGIONS.world, EMBED ? {} : panelPadding());
 
 // ── Top bar: freshness + market ticker ──
 function renderFreshness(pwDate) {

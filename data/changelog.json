@@ -3,6 +3,16 @@
   {
    "date": "2026-09-27",
    "kind": "site",
+   "headline": "Answer pages for every chokepoint, major facility and pump-price series",
+   "changes": [
+    "130 readable pages generated from the map's data, e.g. 'Is the Strait of Hormuz open?' and diesel prices in each EU country",
+    "Events archive with an RSS feed",
+    "Pages refresh automatically with each daily update"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "kind": "site",
    "headline": "New permanent address: strategicenergymap.org",
    "changes": [
     "The map moves to strategicenergymap.org; old links redirect automatically"

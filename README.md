@@ -17,7 +17,7 @@ A free, ad-free map of the world's oil and gas infrastructure — pipelines, fie
 
 ## How it's built
 
-No framework and no build step: a static page that renders JSON.
+No framework and no dependencies. The map is a static page that renders JSON; a small build script (`scripts/build.mjs`) also generates ~150 crawlable answer pages from the same data: one per chokepoint, major facility and pump-price series, plus hubs, an events archive, an RSS feed, `sitemap.xml` and `robots.txt`.
 
 ```
 index.html, styles.css, app.js   the map (Leaflet 1.9.4); renders everything from data/
@@ -54,7 +54,7 @@ A Claude Code cloud routine runs every morning and follows [`agent/UPDATE_AGENT.
 `fetch()` doesn't work from `file://`, so serve the folder:
 
 ```bash
-python3 -m http.server 8765
+node scripts/build.mjs && python3 -m http.server 8765 -d dist
 ```
 
 Then open http://localhost:8765. After editing anything in `data/`:

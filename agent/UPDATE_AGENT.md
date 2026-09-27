@@ -77,13 +77,17 @@ Houthis (Ansar Allah), Russia and Ukraine.
 6. Update `data/market.json`: latest value, `week_ago`, keep `pre_crisis` fixed, `as_of`, a sourced one-line `note`.
 7. Once a week (or when a national price change is announced), refresh the `"feed": "agent"` entries in
    `data/fuel.json` — append a history point, update `now`/`week_ago`/`usd_per_litre`/`date`/sources.
-8. If an authoritative source publishes new baseline flow figures (e.g. EIA chokepoint update), refresh
+8. **Backlog, when a run is quiet:** facilities with a status or events but only a one-line description (under 250
+   characters, no `geo`) don't get their own public page. Expand one or two per run with a sourced `details` paragraph
+   (capacity, operator, role) and a `geo` paragraph. That's an `infrastructure.json` edit, so it goes in the review PR.
+   Run `node scripts/build.mjs` to see which facilities have pages.
+9. If an authoritative source publishes new baseline flow figures (e.g. EIA chokepoint update), refresh
    `data/scenarios.json` — cite it.
-9. Add one entry to the top of `data/changelog.json` for this run (`kind: "data"`): a plain-language headline and
+10. Add one entry to the top of `data/changelog.json` for this run (`kind: "data"`): a plain-language headline and
    2–5 short bullet changes a general reader would care about. Skip it if the run only refreshed prices. The entry is
    public on the About page, so write for the public, not for maintainers.
-10. Run `node scripts/validate.mjs`. Fix every error. Do not publish with errors.
-11. Publish (see below). If nothing material changed, still commit the fuel/price refresh with a short message.
+11. Run `node scripts/validate.mjs`, then `node scripts/build.mjs` (it must finish without errors; it generates the public answer pages). Fix every error. Do not publish with errors.
+12. Publish (see below). If nothing material changed, still commit the fuel/price refresh with a short message.
 
 ## Publishing — routine changes go live, big changes wait for review
 
@@ -108,6 +112,8 @@ Then:
    `Review: <headline>` explaining each item and why it needs a human look. If the situation summary references a
    review item, keep the routine summary neutral and put the fuller version in the PR.
 3. If nothing material changed, still publish the price/fuel refresh as a routine commit.
+4. After the routine push, wait ~3 minutes for Vercel to deploy, then run `node scripts/indexnow.mjs` so Bing
+   re-crawls the changed pages. A failure here is not fatal — note it in the summary.
 
 Every run ends with a summary (in the routine commit body, and in the PR body if one was opened):
 

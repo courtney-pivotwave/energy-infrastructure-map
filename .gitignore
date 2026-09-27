@@ -3,3 +3,4 @@ data/research/
 .claude/settings.local.json
 .vercel
 .env*.local
+dist/

@@ -52,6 +52,8 @@ const [infra, statusData, eventsData, market, scenarios, fuel] = await Promise.a
   loadJSON('data/scenarios.json', { chokepoints: {}, globals: {} }),
   loadJSON('data/fuel.json', { entries: [] }),
 ]);
+const pageIndex = await loadJSON('pages.json', { facilities: [], chokepoints: [], fuel: [] });
+const pageUrl = id => pageIndex.chokepoints.includes(id) ? `/chokepoints/${id}/` : pageIndex.facilities.includes(id) ? `/facilities/${id}/` : null;
 const statusOf = id => statusData.assets?.[id] || null;
 const events = (eventsData.events || []).slice().sort((a, b) => b.date.localeCompare(a.date));
 
@@ -360,6 +362,7 @@ function showDetail(id, fly = false) {
     <div class="detail">
       <span class="tag">${esc(a.tag)}</span>
       <h3>${esc(d.name)}</h3>
+      ${pageUrl(id) ? `<p class="note" style="margin:0 0 6px"><a href="${pageUrl(id)}">Full page with sources and FAQ →</a></p>` : ''}
       ${statusBox(statusOf(id))}
       ${a.type === 'chokepoint' ? `<div id="cpLive"></div>` : ''}
       ${sc ? `<div class="btn-row"><button class="btn primary" data-simulate="${esc(id)}">${closed.has(id) ? 'Remove from scenario' : 'Simulate closure'}</button></div>` : ''}
@@ -654,6 +657,7 @@ function showFuel(id, fly = false) {
   };
   $('#tab-detail').innerHTML = `<button class="back" data-back>← Back</button><div class="detail">
     <span class="tag">Pump prices</span><h3>${esc(e.name)}</h3>
+    ${pageIndex.fuel.includes(e.id) ? `<p class="note" style="margin:0 0 6px"><a href="/fuel-prices/${esc(e.id)}/">Full page with history →</a></p>` : ''}
     ${row('petrol', e.currency === 'USD' ? 'Regular gasoline' : 'Petrol (Euro-super 95)')}${row('diesel', 'Diesel')}
     <p class="note">Week of ${esc(fmtDate(e.date))}.</p>${sourcesHTML(e.sources || [e.source])}</div>`;
   lastListTab = 'fuel';
@@ -671,6 +675,7 @@ function priceChart(hist, ref) {
 }
 
 // ── Init ──
+if (params.get('focus') && REG[params.get('focus')]) showDetail(params.get('focus'), true);
 renderFuel();
 renderFuelLayer();
 const fuelCount = document.querySelector('[data-layer="fuel"]')?.closest('.layer-row')?.querySelector('.count');

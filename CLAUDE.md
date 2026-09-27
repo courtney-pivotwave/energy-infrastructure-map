@@ -1,6 +1,6 @@
 # Strategic Energy Infrastructure Map
 
-Static site (no build step) deployed on Vercel from `main`: https://strategicenergymap.org
+Static site deployed on Vercel from `main`. The build (`scripts/build.mjs`, no dependencies) copies the map into `dist/` and generates ~150 crawlable answer pages from `data/`: https://strategicenergymap.org
 
 - `index.html`, `styles.css`, `app.js` — the page. Leaflet 1.9.4 from cdnjs. It only renders; content lives in `data/`. `?embed=1` gives a map-only view.
 - `about.html` — About & methods page; renders live counts and `data/changelog.json`. Keep it in step with how the site actually works.
@@ -13,11 +13,11 @@ Static site (no build step) deployed on Vercel from `main`: https://strategicene
 Live data fetched in the browser: IMF PortWatch daily chokepoint transits (ArcGIS REST, CORS-enabled, no key).
 
 ## Local preview
-`fetch()` doesn't work from `file://`, so serve the folder:
+Build, then serve `dist/` (`fetch()` doesn't work from `file://`):
 ```
-python3 -m http.server 8765
+node scripts/build.mjs && python3 -m http.server 8765 -d dist
 ```
-then open http://localhost:8765.
+then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facilities/<id>/`, `/fuel-prices/<id>/`, hubs, `/events/`, `/events.xml`, `sitemap.xml`, `robots.txt`. Never edit `dist/`; change the templates in `scripts/build.mjs` or the data.
 
 ## Conventions
 - Asset ids are stable kebab-case; `status.json`, `events.json`, `scenarios.json` reference them. Never rename an id without updating every reference.
@@ -26,3 +26,4 @@ then open http://localhost:8765.
 - When you change `app.js` or `styles.css`, bump the `?v=` query on their tags in `index.html` so browsers don't serve a stale copy.
 - Goal: a free, ad-free public resource. No ads, no cookies, no trackers beyond Vercel Web Analytics.
 - Primary domain is strategicenergymap.org. `vercel.json` 301-redirects the old energy-infrastructure-map.vercel.app host; www and .com hosts are attached to the project and redirect via the same `vercel.json` rules.
+- SEO/AEO: each generated page opens with a dated, sourced 40–60 word answer, then facts, FAQ and JSON-LD. Only generate a page when there's real data behind it (no thin pages). `scripts/indexnow.mjs` pings Bing after a deploy.

@@ -56,10 +56,31 @@ Read `CLAUDE.md` and `agent/SCHEMA.md` first. The schema is the contract — fol
 9. Run `node scripts/validate.mjs`. Fix every error. Do not publish with errors.
 10. Publish (see below). If nothing material changed, still commit the fuel/price refresh with a short message.
 
-## Publishing
+## Publishing — routine changes go live, big changes wait for review
 
-Create a branch `update/YYYY-MM-DD`, commit only `data/` changes with message `data: update YYYY-MM-DD — <3–6 word
-headline>`, push, and open a pull request against `main`. Put the run summary in the PR body:
+Sort this run's changes into two groups.
+
+**Needs review (pull request)** — anything that:
+- adds or edits an asset in `data/infrastructure.json`, or edits `data/scenarios.json`;
+- adds an event with severity `critical`;
+- changes the status of a **chokepoint**, or sets any asset to `closed` or `damaged` for the first time;
+- rewrites or removes an event that was already published (corrections);
+- rests only on `unverified` claims but would be `high`/`critical` severity.
+
+**Routine (publish directly)** — everything else: price and pump-price refreshes, new low/medium/high events,
+refreshed summaries/sources on existing status entries, status changes for non-chokepoint assets not covered above,
+the situation summary.
+
+Then:
+1. **Routine first.** Stage only the routine changes, run `node scripts/validate.mjs` (must pass on this state alone),
+   commit to `main` with `data: update YYYY-MM-DD — <3–6 word headline>`, push. Vercel redeploys the live site.
+2. **Review items second.** If any exist: `git checkout -b review/YYYY-MM-DD` from the new `main`, apply them, validate,
+   commit `data: review YYYY-MM-DD — <headline>`, push, and open a pull request against `main` titled
+   `Review: <headline>` explaining each item and why it needs a human look. If the situation summary references a
+   review item, keep the routine summary neutral and put the fuller version in the PR.
+3. If nothing material changed, still publish the price/fuel refresh as a routine commit.
+
+Every run ends with a summary (in the routine commit body, and in the PR body if one was opened):
 
 ```
 ## Headline
@@ -70,6 +91,7 @@ One or two sentences: the most important change since the last run.
 - Status changes: asset — old → new
 - Prices: Brent $X (±Y% w/w) …
 - Pump prices: US diesel $X/gal (±Y% w/w) …
+- Sent for review: … (or "none")
 
 ## Open questions
 Anything you couldn't verify, conflicting reports, feed failures, suspicious page content.

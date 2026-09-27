@@ -1,0 +1,3092 @@
+{
+ "pipelines": [
+  {
+   "id": "nord-stream-1-2",
+   "name": "Nord Stream 1 & 2",
+   "commodity": "gas",
+   "coords": [
+    [
+     59.95,
+     30.3
+    ],
+    [
+     59.8,
+     28.5
+    ],
+    [
+     59.5,
+     25
+    ],
+    [
+     58.5,
+     21
+    ],
+    [
+     56.5,
+     16
+    ],
+    [
+     55.5,
+     13.5
+    ],
+    [
+     54.5,
+     12.1
+    ],
+    [
+     54.2,
+     11.5
+    ]
+   ],
+   "details": "Russia to Germany via Baltic Sea. ~1,224 km. Combined capacity ~110 bcm/yr. NS1 commissioned 2011, NS2 completed 2021 but never entered regular service. Both severely damaged by explosions in Sept 2022.",
+   "geo": "Centerpiece of Germany's decades-long Ostpolitik energy relationship with Russia. NS2 became a flashpoint between the US and Germany — Washington sanctioned construction firms, arguing it deepened European dependence on Moscow. The Sept 2022 sabotage (widely attributed to a state actor, investigations ongoing) effectively severed the Russia-Germany gas axis. Accelerated Europe's pivot to LNG imports (US, Qatar, Norway) and forced Germany into an emergency energy transition. The pipelines symbolize the collapse of the post-Cold War assumption that trade interdependence guarantees peace."
+  },
+  {
+   "id": "turkstream",
+   "name": "TurkStream",
+   "commodity": "gas",
+   "coords": [
+    [
+     44.6,
+     37.8
+    ],
+    [
+     43.5,
+     35.5
+    ],
+    [
+     42.5,
+     33
+    ],
+    [
+     41.8,
+     31.5
+    ],
+    [
+     41.5,
+     30.5
+    ],
+    [
+     41.2,
+     29.5
+    ],
+    [
+     41,
+     28.5
+    ]
+   ],
+   "details": "Russia to Turkey via Black Sea. ~930 km. Capacity ~31.5 bcm/yr (2 lines). Commissioned Jan 2020. Replaced cancelled South Stream project. One line serves Turkey, one transits to Southern/Southeastern Europe.",
+   "geo": "After the EU blocked South Stream (which would have landed in Bulgaria), Russia rerouted through Turkey — a NATO member that has consistently maintained an independent energy relationship with Moscow. Turkey positions itself as Europe's energy gateway, gaining leverage with both sides. The second line supplies Hungary, Serbia, and other SE European states, giving Russia continued market access that bypasses Ukraine. Turkey's role as a transit state strengthens Ankara's bargaining position with the EU on issues beyond energy."
+  },
+  {
+   "id": "yamal-europe-pipeline",
+   "name": "Yamal-Europe Pipeline",
+   "commodity": "gas",
+   "coords": [
+    [
+     67.5,
+     72
+    ],
+    [
+     64,
+     60
+    ],
+    [
+     61,
+     50
+    ],
+    [
+     58,
+     44
+    ],
+    [
+     55.5,
+     37.5
+    ],
+    [
+     54.5,
+     33
+    ],
+    [
+     53.5,
+     28
+    ],
+    [
+     52.5,
+     24
+    ],
+    [
+     52,
+     21
+    ],
+    [
+     52.3,
+     17
+    ],
+    [
+     52.5,
+     14.5
+    ]
+   ],
+   "details": "Russia (Yamal Peninsula) through Belarus and Poland to Germany. ~4,107 km. Capacity ~33 bcm/yr. Commissioned 1999. Key northern transit route; flows reversed/halted amid Russia-Europe tensions post-2022.",
+   "geo": "Transits Belarus, tying Minsk's economy to Russian energy infrastructure and reinforcing the Russia-Belarus political union. Poland, despite being a transit state, has been one of the most aggressive EU members in seeking alternatives — commissioning the Baltic Pipe from Norway (2022) and expanding its LNG terminal at Świnoujście. Russia halted westward flows in 2022; Poland and Germany have since used the pipeline in reverse mode to distribute non-Russian gas. Demonstrates how pipeline infrastructure built for one geopolitical era can be repurposed when alliances shift."
+  },
+  {
+   "id": "brotherhood-pipeline-system",
+   "name": "Brotherhood Pipeline System",
+   "commodity": "gas",
+   "coords": [
+    [
+     61,
+     50
+    ],
+    [
+     58,
+     46
+    ],
+    [
+     55.5,
+     40
+    ],
+    [
+     53,
+     36
+    ],
+    [
+     51.5,
+     34
+    ],
+    [
+     50,
+     32
+    ],
+    [
+     49,
+     30
+    ],
+    [
+     48.5,
+     26
+    ],
+    [
+     48.2,
+     22.5
+    ],
+    [
+     47.8,
+     19
+    ],
+    [
+     47.5,
+     16.5
+    ]
+   ],
+   "details": "Russia through Ukraine to Central Europe. Multiple parallel lines totaling ~28,000 km of pipe. Capacity ~100+ bcm/yr. Built 1967-1988. Transit through Ukraine has been the primary route for Russian gas to Europe. Transit agreement expired end of 2024.",
+   "geo": "The original artery of Soviet-European gas trade. Ukraine's role as primary transit state gave Kyiv leverage but also made it a target — Russia's 2006 and 2009 gas cutoffs to Ukraine disrupted European supply and accelerated EU diversification policies. Transit fees (~$1-2B/yr) were a significant revenue source for Ukraine. The transit agreement expired Dec 31, 2024, and Ukraine declined renewal, ending the last major Russia-to-Europe gas flow through its territory. This represents the final dismantling of the Cold War energy architecture and eliminates a key Russian economic lever over Central Europe."
+  },
+  {
+   "id": "southern-gas-corridor",
+   "name": "Southern Gas Corridor (SCP → TANAP → TAP)",
+   "commodity": "gas",
+   "coords": [
+    [
+     41.5,
+     49.9
+    ],
+    [
+     41,
+     48.5
+    ],
+    [
+     40.5,
+     46
+    ],
+    [
+     40,
+     44
+    ],
+    [
+     39.5,
+     42
+    ],
+    [
+     39,
+     40
+    ],
+    [
+     38.5,
+     37
+    ],
+    [
+     37.5,
+     34
+    ],
+    [
+     37,
+     31
+    ],
+    [
+     37.5,
+     28
+    ],
+    [
+     38.5,
+     26.5
+    ],
+    [
+     39.5,
+     24
+    ],
+    [
+     40,
+     22
+    ],
+    [
+     40.5,
+     20.5
+    ],
+    [
+     40.8,
+     19.8
+    ]
+   ],
+   "details": "Azerbaijan (Shah Deniz) through Georgia, Turkey, Greece to Italy. ~3,500 km total. Capacity expanding to ~20+ bcm/yr. Fully operational 2020. Strategic alternative to Russian gas for Europe. Shah Deniz Phase 2 is the anchor supply.",
+   "geo": "A flagship EU diversification project designed to reduce dependence on Russian gas. Deliberately routes through Georgia (not Russia or Iran), reinforcing Tbilisi's Western alignment and its role as a Caucasus energy corridor. Turkey benefits as the primary transit state — TANAP's 16 bcm/yr capacity includes 6 bcm for Turkish domestic use. Since Russia's 2022 invasion of Ukraine, Europe has pushed to double capacity. Azerbaijan's leverage has grown considerably; Baku signed expanded gas supply deals with the EU in 2022. However, the Nagorno-Karabakh conflict and Azerbaijan's human rights record create diplomatic tension with EU values commitments."
+  },
+  {
+   "id": "tap",
+   "name": "TAP (Trans-Adriatic Pipeline)",
+   "commodity": "gas",
+   "coords": [
+    [
+     40.8,
+     19.8
+    ],
+    [
+     40.5,
+     19
+    ],
+    [
+     40,
+     18.8
+    ]
+   ],
+   "details": "Greece through Albania and Adriatic Sea to southern Italy. ~878 km. Capacity 10 bcm/yr (expandable to 20). Final segment of Southern Gas Corridor. Commissioned 2020.",
+   "geo": "Faced significant local opposition in Puglia (southern Italy) during construction — environmental and land-use concerns delayed the project and became a political issue. Despite this, TAP is now seen as strategically vital for Italian and broader European supply diversification. Italy became the first major EU economy to receive Caspian gas, reducing its historically heavy dependence on Algerian and Russian pipeline gas. Expansion discussions accelerated after 2022."
+  },
+  {
+   "id": "blue-stream",
+   "name": "Blue Stream",
+   "commodity": "gas",
+   "coords": [
+    [
+     44.7,
+     37.8
+    ],
+    [
+     43.5,
+     36.5
+    ],
+    [
+     42.5,
+     35
+    ],
+    [
+     42,
+     34
+    ],
+    [
+     41.5,
+     33
+    ],
+    [
+     41,
+     32.5
+    ]
+   ],
+   "details": "Russia (Beregovaya) to Turkey (Samsun) via Black Sea. ~1,213 km. Capacity ~16 bcm/yr. Commissioned 2005. One of the deepest subsea pipelines globally (~2,150m depth).",
+   "geo": "An early example of Russia's strategy to build direct bilateral pipelines, bypassing transit states. Deepened the Russia-Turkey energy relationship that Ankara maintains despite NATO membership and periodic diplomatic crises (including Turkey's 2015 shoot-down of a Russian jet). Turkey imports ~45% of its gas from Russia across Blue Stream and TurkStream combined. This dependency gives Moscow influence but also gives Ankara leverage — Turkey has consistently refused to join Western sanctions on Russian energy."
+  },
+  {
+   "id": "power-of-siberia",
+   "name": "Power of Siberia",
+   "commodity": "gas",
+   "coords": [
+    [
+     62.5,
+     130
+    ],
+    [
+     58,
+     128
+    ],
+    [
+     54,
+     127
+    ],
+    [
+     50,
+     127.5
+    ],
+    [
+     48.5,
+     128
+    ],
+    [
+     47,
+     130
+    ],
+    [
+     45.5,
+     131
+    ],
+    [
+     43.5,
+     130.5
+    ],
+    [
+     42,
+     128
+    ],
+    [
+     40.5,
+     122
+    ]
+   ],
+   "details": "Russia (Chayandinskoye/Kovyktinskoye fields) to China. ~3,000 km. Capacity 38 bcm/yr at full ramp. Commissioned Dec 2019. 30-year supply contract between Gazprom and CNPC. Key vector in Russia's pivot to Asian markets.",
+   "geo": "Signed in 2014 after decades of failed negotiations — the deal crystallized only after Russia's annexation of Crimea made the \"pivot to Asia\" an urgent strategic necessity rather than a long-term aspiration. China negotiated from a position of strength, securing favorable pricing. The pipeline physically binds Russian gas infrastructure eastward and represents a structural reorientation of Russian energy exports. Power of Siberia 2 (via Mongolia) is under negotiation and would connect West Siberian fields to China, potentially replacing lost European volumes. Beijing sees the relationship as access to discounted energy; Moscow sees it as proof of alternatives to Western markets."
+  },
+  {
+   "id": "central-asia-china-gas-pipeline",
+   "name": "Central Asia–China Gas Pipeline",
+   "commodity": "gas",
+   "coords": [
+    [
+     37.5,
+     62
+    ],
+    [
+     39,
+     63.5
+    ],
+    [
+     40.5,
+     65
+    ],
+    [
+     41.5,
+     66
+    ],
+    [
+     42,
+     68
+    ],
+    [
+     42.5,
+     71
+    ],
+    [
+     43,
+     75
+    ],
+    [
+     43.5,
+     78
+    ],
+    [
+     44,
+     81
+    ],
+    [
+     44.5,
+     84
+    ],
+    [
+     44,
+     87
+    ],
+    [
+     43.5,
+     90
+    ],
+    [
+     42,
+     93
+    ],
+    [
+     40.5,
+     96
+    ],
+    [
+     38,
+     100
+    ],
+    [
+     36,
+     103
+    ],
+    [
+     35,
+     105
+    ]
+   ],
+   "details": "Turkmenistan through Uzbekistan and Kazakhstan to China (Xinjiang). ~1,833 km (Line A/B/C). Capacity ~55 bcm/yr. Commissioned 2009. China's largest source of piped gas imports. Line D under construction will add capacity via Tajikistan and Kyrgyzstan.",
+   "geo": "The defining infrastructure of China's expanding influence in Central Asia. Broke Russia's monopoly on Central Asian gas exports — until 2009, Turkmen gas could only reach markets through Russian-controlled pipelines. Turkmenistan's near-total economic dependence on gas exports to China (90%+ of exports) gives Beijing extraordinary leverage over Ashgabat. Line D, routing through Tajikistan and Kyrgyzstan, would deepen Chinese infrastructure presence in countries that host Russian military bases, creating a complex overlay of Russian security and Chinese economic influence. This pipeline is the physical backbone of the Belt and Road Initiative's energy dimension in Central Asia."
+  },
+  {
+   "id": "iran-turkey-gas-pipeline",
+   "name": "Iran–Turkey Gas Pipeline (Tabriz–Ankara)",
+   "commodity": "gas",
+   "coords": [
+    [
+     38.1,
+     46.3
+    ],
+    [
+     38.5,
+     44
+    ],
+    [
+     39,
+     42
+    ],
+    [
+     39.5,
+     40
+    ],
+    [
+     39.8,
+     37.5
+    ],
+    [
+     39.9,
+     34
+    ],
+    [
+     39.9,
+     32.9
+    ]
+   ],
+   "details": "Iran (Tabriz) to Turkey (Ankara). ~2,577 km. Capacity ~14 bcm/yr. Commissioned 2001. Frequent disruptions from Kurdish militant attacks on Turkish section and pricing disputes.",
+   "geo": "One of the few functioning energy links between Iran and a NATO state. Operates despite US secondary sanctions on Iran's energy sector — Turkey has repeatedly sought and sometimes received US waivers. Pricing disputes have led to international arbitration (Turkey won a ~$1.9B rebate in 2016). The PKK/Kurdish insurgency along the Turkish section has caused dozens of supply disruptions. The pipeline represents Turkey's strategy of maintaining energy relationships across geopolitical lines (Russia, Iran, Azerbaijan) to avoid dependence on any single supplier. Iran's ability to export gas via pipeline remains limited by sanctions, underinvestment, and high domestic consumption."
+  },
+  {
+   "id": "dolphin-gas-pipeline",
+   "name": "Dolphin Gas Pipeline",
+   "commodity": "gas",
+   "coords": [
+    [
+     26,
+     51.5
+    ],
+    [
+     25.5,
+     52
+    ],
+    [
+     25.2,
+     53
+    ],
+    [
+     24.8,
+     54
+    ],
+    [
+     24.5,
+     55
+    ],
+    [
+     24,
+     55.5
+    ],
+    [
+     23.5,
+     56.5
+    ]
+   ],
+   "details": "Qatar (North Field) to UAE and Oman. ~364 km. Capacity ~33 bcm/yr. Commissioned 2007. Only cross-border gas pipeline in the Gulf. Supplies ~30% of UAE gas demand.",
+   "geo": "The only cross-border pipeline in the GCC — remarkable given the Gulf states' vast hydrocarbon wealth. Continued operating during the 2017-2021 Qatar diplomatic crisis (Saudi Arabia, UAE, Bahrain, and Egypt severed ties with Doha), demonstrating that energy infrastructure can transcend political ruptures when the dependency is mutual. UAE's growing gas demand and inability to self-supply makes this pipeline strategically vital for Abu Dhabi despite periodic tensions with Doha. The pipeline also symbolizes the limits of Gulf economic integration — despite decades of GCC cooperation, this remains the only gas pipeline connecting member states."
+  },
+  {
+   "id": "arab-gas-pipeline",
+   "name": "Arab Gas Pipeline",
+   "commodity": "gas",
+   "coords": [
+    [
+     31.3,
+     32.3
+    ],
+    [
+     30.8,
+     33.5
+    ],
+    [
+     30.5,
+     34.5
+    ],
+    [
+     31,
+     35.5
+    ],
+    [
+     32,
+     36
+    ],
+    [
+     33,
+     36
+    ],
+    [
+     33.5,
+     35.8
+    ],
+    [
+     34.5,
+     36
+    ]
+   ],
+   "details": "Egypt (El-Arish) to Jordan, Syria, and Lebanon. ~1,200 km. Capacity ~10 bcm/yr. Commissioned 2003 (Phase 1). Frequently sabotaged in Sinai. Largely underutilized due to Egypt's domestic demand and regional instability.",
+   "geo": "A case study in how regional instability undermines energy integration. The Sinai section was bombed 15+ times between 2011-2014 by Islamist militants. The Syrian civil war made the northern segments inoperable. In 2021-2022, the US facilitated a deal to send Egyptian gas to Lebanon via Jordan and Syria (the \"gas for electricity\" arrangement), requiring a US sanctions waiver since Syrian territory was involved. Lebanon's economic collapse made it desperate for any energy supply. The pipeline illustrates how energy infrastructure designed for one regional order (pre-Arab Spring) becomes a tool of crisis diplomacy in the next."
+  },
+  {
+   "id": "druzhba-north",
+   "name": "Druzhba Pipeline (Northern Branch)",
+   "commodity": "oil",
+   "coords": [
+    [
+     54,
+     46
+    ],
+    [
+     53,
+     40
+    ],
+    [
+     52.5,
+     36
+    ],
+    [
+     52,
+     33
+    ],
+    [
+     51.5,
+     30.5
+    ],
+    [
+     51,
+     28
+    ],
+    [
+     50.5,
+     24
+    ],
+    [
+     50,
+     21
+    ],
+    [
+     49.5,
+     18
+    ],
+    [
+     49,
+     16.5
+    ]
+   ],
+   "details": "Russia (Samara) through Belarus and Poland to Germany (Schwedt). World's longest oil pipeline network. ~5,500 km total. Capacity ~60 million tonnes/yr. Built 1964. Northern branch continues to operate, supplying the Schwedt refinery.",
+   "geo": "Named \"Friendship\" in Russian — built to bind Eastern Bloc economies to Soviet energy. The Schwedt refinery in eastern Germany was purpose-built for Urals crude and is extremely difficult to switch to alternative grades. Germany has had to broker complex arrangements (Kazakh crude via Druzhba, tanker deliveries to Rostock) to keep it running under EU sanctions. Poland has fully pivoted to non-Russian supply via Gdańsk port. The pipeline's continued partial operation illustrates how legacy infrastructure creates lock-in that outlasts the political relationships it was built to serve."
+  },
+  {
+   "id": "druzhba-south",
+   "name": "Druzhba Pipeline (Southern Branch)",
+   "commodity": "oil",
+   "coords": [
+    [
+     52,
+     33
+    ],
+    [
+     51,
+     31
+    ],
+    [
+     49.5,
+     29.5
+    ],
+    [
+     48.5,
+     27.5
+    ],
+    [
+     48,
+     24
+    ],
+    [
+     47.5,
+     21.5
+    ],
+    [
+     47,
+     19
+    ],
+    [
+     47.5,
+     18
+    ]
+   ],
+   "details": "Southern branch: Belarus through Ukraine to Czech Republic, Slovakia, and Hungary. Supplies Slovnaft (Bratislava), MOL (Százhalombatta), and Litvinov refineries. Partially subject to EU sanctions waivers for landlocked countries.",
+   "geo": "Landlocked Hungary, Slovakia, and Czech Republic received EU sanctions exemptions specifically because their refineries cannot be economically supplied by any other route. Hungary's Orbán government has used this energy dependency as justification for maintaining closer ties with Moscow than other EU members. Slovakia's Slovnaft refinery (MOL-owned) is a strategic asset that constrains Bratislava's foreign policy options. The southern branch is a case study in how geography creates divergent threat perceptions within an alliance."
+  },
+  {
+   "id": "btc-pipeline",
+   "name": "BTC Pipeline (Baku–Tbilisi–Ceyhan)",
+   "commodity": "oil",
+   "coords": [
+    [
+     40.5,
+     50
+    ],
+    [
+     40.8,
+     48.5
+    ],
+    [
+     41.5,
+     46
+    ],
+    [
+     41.7,
+     44.8
+    ],
+    [
+     41.3,
+     43.5
+    ],
+    [
+     40.5,
+     42
+    ],
+    [
+     39.5,
+     40
+    ],
+    [
+     38.5,
+     37.5
+    ],
+    [
+     37.5,
+     36
+    ],
+    [
+     36.8,
+     35.5
+    ]
+   ],
+   "details": "Azerbaijan (Sangachal) through Georgia to Turkey (Ceyhan). ~1,768 km. Capacity ~1.2 million bpd. Commissioned 2006. Strategically designed to bypass both Russia and Iran. Backed by BP and a major US/EU energy security priority.",
+   "geo": "One of the most deliberately geopolitical pipelines ever built. The route through Georgia was chosen specifically to avoid Russian and Iranian territory, despite being more expensive and technically difficult. US diplomatic cables (released by WikiLeaks) showed extensive State Department involvement in route selection. The pipeline anchors Georgia's Western orientation and was a target during the 2008 Russia-Georgia war (a section in Turkey was attacked, though attribution is disputed). BP's operatorship makes it a joint UK-Azerbaijani-Turkish strategic asset. The pipeline established the template for the Southern Gas Corridor that followed the same route."
+  },
+  {
+   "id": "kirkuk-ceyhan-pipeline",
+   "name": "Kirkuk–Ceyhan Pipeline",
+   "commodity": "oil",
+   "coords": [
+    [
+     35.5,
+     44.4
+    ],
+    [
+     36,
+     43.5
+    ],
+    [
+     36.5,
+     42.5
+    ],
+    [
+     37,
+     41.5
+    ],
+    [
+     37,
+     40
+    ],
+    [
+     36.8,
+     38
+    ],
+    [
+     36.8,
+     36
+    ],
+    [
+     36.8,
+     35.5
+    ]
+   ],
+   "details": "Iraq (Kirkuk) to Turkey (Ceyhan). ~970 km. Capacity ~1.65 million bpd. Commissioned 1977. Primary export route for Iraqi Kurdistan oil. Frequently disrupted by conflict and political disputes between Baghdad, Erbil, and Ankara.",
+   "geo": "Entangled in the Baghdad-Erbil-Ankara triangle. The Kurdistan Regional Government (KRG) exported oil independently through this pipeline from ~2014, generating revenues that funded its quasi-independent state-building — Baghdad viewed this as unconstitutional. In March 2023, an international arbitration ruling in Baghdad's favor led Turkey to shut the pipeline, halting ~450,000 bpd of Kurdish exports and costing Iraq billions. The shutdown also serves Turkey's interest in pressuring the KRG on Kurdish militant issues. As of 2025, restart negotiations continue to stall. The pipeline demonstrates how a single piece of infrastructure can become hostage to three-way sovereignty disputes."
+  },
+  {
+   "id": "espo-pipeline",
+   "name": "ESPO Pipeline (Eastern Siberia–Pacific Ocean)",
+   "commodity": "oil",
+   "coords": [
+    [
+     56,
+     107
+    ],
+    [
+     54,
+     110
+    ],
+    [
+     52,
+     115
+    ],
+    [
+     50,
+     120
+    ],
+    [
+     48.5,
+     125
+    ],
+    [
+     47,
+     130
+    ],
+    [
+     45.5,
+     133
+    ],
+    [
+     43.5,
+     132.5
+    ]
+   ],
+   "details": "Russia (Taishet) to Kozmino Bay (Pacific coast). ~4,857 km. Capacity ~1.6 million bpd. ESPO-1 commissioned 2009, ESPO-2 in 2012. Spur to Daqing feeds China. Key infrastructure for Russia's oil pivot to Asia-Pacific markets.",
+   "geo": "Russia's most important post-Soviet pipeline project. Gives Moscow its first direct Pacific export capacity, enabling sales to China, Japan, South Korea, and India without transiting any other country. After 2022 Western sanctions, ESPO blend became Russia's primary mechanism for redirecting oil from European to Asian buyers — often at discounts of $20-30/bbl below Brent. ESPO crude trades above the G7 price cap, testing enforcement mechanisms. Japan has maintained stakes in Sakhalin projects that feed ESPO despite Western pressure, reflecting Tokyo's energy security pragmatism. The pipeline fundamentally altered the Asian crude pricing landscape."
+  },
+  {
+   "id": "espo-china-spur",
+   "name": "ESPO–China Spur (Skovorodino–Daqing)",
+   "commodity": "oil",
+   "coords": [
+    [
+     50,
+     120
+    ],
+    [
+     48.5,
+     120
+    ],
+    [
+     47,
+     123
+    ],
+    [
+     46.5,
+     124.8
+    ]
+   ],
+   "details": "Spur from ESPO mainline (Skovorodino) to Daqing, China. ~1,030 km. Capacity ~600,000 bpd. Commissioned 2011. Supplies China under long-term \"loans for oil\" agreements.",
+   "geo": "Built under \"loans for oil\" deals where China Development Bank provided ~$25B in financing to Rosneft and Transneft in exchange for guaranteed 20-year supply contracts. This financial structure — Chinese capital for locked-in Russian supply — has been replicated across Belt and Road energy projects. The spur terminates at Daqing, China's oldest major oilfield (now declining), connecting Russian supply to China's existing refining infrastructure. Since 2022, flows have increased as China became Russia's top oil customer, purchasing ~2 million bpd total (pipeline + tanker)."
+  },
+  {
+   "id": "kazakhstan-china-oil-pipeline",
+   "name": "Kazakhstan–China Oil Pipeline",
+   "commodity": "oil",
+   "coords": [
+    [
+     47.1,
+     51.9
+    ],
+    [
+     46.5,
+     55
+    ],
+    [
+     45.5,
+     59
+    ],
+    [
+     44.5,
+     64
+    ],
+    [
+     44.5,
+     68
+    ],
+    [
+     44.5,
+     73
+    ],
+    [
+     44.5,
+     78
+    ],
+    [
+     44.5,
+     82.5
+    ]
+   ],
+   "details": "Kazakhstan (Atyrau) to China (Alashankou/Xinjiang). ~2,228 km. Capacity ~400,000 bpd. Commissioned in phases 2006-2009. Operated by CNPC/KazMunayGas JV. Carries Kazakh and some Russian-origin crude.",
+   "geo": "Part of China's strategy to secure overland energy supply that cannot be interdicted by naval power in the Strait of Malacca. CNPC's 50% ownership gives China direct operational control over a key supply artery. Kazakhstan carefully balances between Russia (CPC pipeline to Black Sea) and China (this pipeline) to avoid dependency on either. Some Russian crude has been re-exported through this pipeline to China, creating a sanctions gray zone. The pipeline enters China through Xinjiang, where Beijing has concentrated strategic infrastructure and industrial development alongside its security operations in the region."
+  },
+  {
+   "id": "east-west-pipeline",
+   "name": "East-West Pipeline (Petroline)",
+   "commodity": "oil",
+   "coords": [
+    [
+     25.9,
+     49.7
+    ],
+    [
+     25.5,
+     48
+    ],
+    [
+     25,
+     46
+    ],
+    [
+     24.5,
+     43
+    ],
+    [
+     24,
+     41
+    ],
+    [
+     24.2,
+     38.5
+    ]
+   ],
+   "details": "Saudi Arabia: Abqaiq (Eastern Province) to Yanbu (Red Sea). ~1,200 km. Capacity ~5 million bpd. Provides strategic bypass of the Strait of Hormuz for Saudi crude exports via the Red Sea.",
+   "geo": "Saudi Arabia's primary insurance policy against a Hormuz closure. If Iran ever blocked the strait (threatened during 1980s tanker wars, 2012 nuclear tensions, and 2019 incidents), this pipeline could reroute ~5 million bpd to Red Sea tankers. The Sept 2019 drone/missile attack on Abqaiq (attributed to Iran/Houthis) temporarily knocked out ~5.7 million bpd of Saudi processing capacity — the single largest supply disruption in history. This demonstrated that even bypass infrastructure remains vulnerable to precision-strike capabilities now available to non-state actors and regional militaries."
+  },
+  {
+   "id": "sumed-pipeline",
+   "name": "SUMED Pipeline",
+   "commodity": "oil",
+   "coords": [
+    [
+     29.8,
+     32.6
+    ],
+    [
+     30,
+     31.5
+    ],
+    [
+     30.5,
+     30.5
+    ],
+    [
+     31,
+     30
+    ]
+   ],
+   "details": "Egypt: Ain Sukhna (Red Sea) to Sidi Kerir (Mediterranean). ~320 km. Capacity ~2.5 million bpd. Commissioned 1977. Bypass route for tankers too large for the Suez Canal. Critical chokepoint alternative.",
+   "geo": "Owned jointly by Egypt, Saudi Arabia, UAE, Kuwait, and Qatar — a rare example of Arab state energy cooperation in shared infrastructure. Provides a critical backup if the Suez Canal is blocked (as demonstrated by the 2021 Ever Given incident). Since late 2023, Houthi attacks on Red Sea shipping have diverted significant tanker traffic around the Cape of Good Hope, but SUMED volumes have also been affected since fewer tankers are transiting the Red Sea at all. Egypt earns ~$300M/yr in transit fees. The pipeline's ownership structure gives Gulf states a direct stake in Egyptian stability."
+  },
+  {
+   "id": "habshan-fujairah-pipeline",
+   "name": "Habshan–Fujairah Pipeline",
+   "commodity": "oil",
+   "coords": [
+    [
+     24,
+     54
+    ],
+    [
+     24.2,
+     55
+    ],
+    [
+     25,
+     56
+    ],
+    [
+     25.1,
+     56.3
+    ]
+   ],
+   "details": "UAE: Habshan (onshore Abu Dhabi) to Fujairah (Gulf of Oman). ~370 km. Capacity ~1.5 million bpd. Commissioned 2012. Allows UAE crude exports to bypass Strait of Hormuz entirely.",
+   "geo": "The UAE's Hormuz insurance policy. Fujairah sits outside the strait on the Gulf of Oman coast, enabling UAE crude to reach tankers without entering the Persian Gulf. Abu Dhabi has also built massive crude storage at Fujairah (~42 million barrels capacity). The US Navy's nearby presence and bilateral defense agreements with the UAE add a security dimension. Fujairah has emerged as the region's second-largest bunkering hub (after Singapore), and ADNOC has expanded the terminal into a major trading and storage complex."
+  },
+  {
+   "id": "cpc-pipeline",
+   "name": "CPC Pipeline (Caspian Pipeline Consortium)",
+   "commodity": "oil",
+   "coords": [
+    [
+     47.1,
+     51.9
+    ],
+    [
+     46,
+     50.5
+    ],
+    [
+     45.5,
+     48
+    ],
+    [
+     45,
+     46
+    ],
+    [
+     44.8,
+     43.5
+    ],
+    [
+     44.6,
+     41
+    ],
+    [
+     44.5,
+     39
+    ],
+    [
+     44.6,
+     37.8
+    ]
+   ],
+   "details": "Kazakhstan (Tengiz) to Russia (Novorossiysk, Black Sea). ~1,510 km. Capacity ~1.4 million bpd. Commissioned 2001. Primary export route for Kazakh crude. Consortium includes Chevron, ExxonMobil, Shell, KazMunayGas, and Lukoil.",
+   "geo": "Kazakhstan's most important export route — and its biggest strategic vulnerability. The pipeline transits Russia and terminates at a Russian port, giving Moscow potential leverage over Kazakh oil revenues. In 2022, Russian courts briefly ordered CPC operations suspended (officially for environmental reasons), widely interpreted as political pressure on Kazakhstan for insufficient support of Russia's war in Ukraine. Western majors (Chevron holds 15%) have a direct operational stake, creating a complex situation where US corporate interests depend on Russian territorial cooperation. Kazakhstan has accelerated exploration of trans-Caspian export alternatives to reduce this dependency."
+  },
+  {
+   "id": "trans-mountain",
+   "name": "Trans Mountain Pipeline (TMX)",
+   "commodity": "oil",
+   "coords": [
+    [
+     53.54,
+     -113.49
+    ],
+    [
+     53.4,
+     -116.5
+    ],
+    [
+     52.9,
+     -118.1
+    ],
+    [
+     52.1,
+     -119.3
+    ],
+    [
+     50.7,
+     -120.3
+    ],
+    [
+     49.4,
+     -121.4
+    ],
+    [
+     49.2,
+     -122.3
+    ],
+    [
+     49.29,
+     -122.95
+    ]
+   ],
+   "details": "Canada: Edmonton, Alberta to Burnaby (Westridge terminal), British Columbia. ~1,150 km. Capacity ~890,000 bpd after the expansion entered service in May 2024 (from ~300,000). Owned by the Government of Canada.",
+   "geo": "Ottawa bought the pipeline in 2018 (C$4.5B) when Kinder Morgan threatened to walk away over BC opposition and Indigenous legal challenges; the expansion ultimately cost ~C$34B. It is Canada's only large route to tidewater on the Pacific, reducing Alberta's historic dependence on US buyers and the discount that came with it. Since 2024 growing volumes have gone to China and other Asian buyers, and US tariff threats in 2025 made export diversification an explicit Canadian national priority."
+  },
+  {
+   "id": "keystone",
+   "name": "Keystone Pipeline System",
+   "commodity": "oil",
+   "coords": [
+    [
+     52.67,
+     -111.3
+    ],
+    [
+     50.9,
+     -106.0
+    ],
+    [
+     49.9,
+     -101.5
+    ],
+    [
+     49.0,
+     -97.5
+    ],
+    [
+     46.9,
+     -97.2
+    ],
+    [
+     44.0,
+     -97.3
+    ],
+    [
+     40.0,
+     -97.0
+    ],
+    [
+     36.0,
+     -96.8
+    ],
+    [
+     33.0,
+     -95.5
+    ],
+    [
+     29.9,
+     -94.0
+    ]
+   ],
+   "details": "Canada (Hardisty, Alberta) to US refineries at Patoka, Cushing and the Texas Gulf Coast. ~4,300 km. Capacity ~620,000 bpd of heavy Canadian crude. Operated by South Bow (spun off from TC Energy in 2024).",
+   "geo": "The system became a symbol of US climate politics: the Keystone XL expansion was rejected by Obama, revived by Trump, and permanently cancelled on Biden's first day in 2021. The existing line still ties Alberta oil sands to Gulf Coast refineries that were built to run heavy crude. That integration gives the US access to secure heavy barrels, and gives Canada a reason to seek alternatives (TMX) whenever US trade policy turns hostile."
+  },
+  {
+   "id": "colonial-pipeline",
+   "name": "Colonial Pipeline",
+   "commodity": "oil",
+   "coords": [
+    [
+     29.75,
+     -95.1
+    ],
+    [
+     30.2,
+     -93.2
+    ],
+    [
+     30.4,
+     -91.2
+    ],
+    [
+     31.0,
+     -89.5
+    ],
+    [
+     32.4,
+     -86.7
+    ],
+    [
+     33.6,
+     -84.4
+    ],
+    [
+     35.2,
+     -80.8
+    ],
+    [
+     36.1,
+     -79.8
+    ],
+    [
+     37.5,
+     -77.4
+    ],
+    [
+     38.9,
+     -77.0
+    ],
+    [
+     39.9,
+     -75.2
+    ],
+    [
+     40.63,
+     -74.25
+    ]
+   ],
+   "details": "Refined products (gasoline, diesel, jet fuel): Houston, Texas to Linden, New Jersey. ~8,850 km. Capacity ~2.5 million bpd. Supplies ~45% of the US East Coast's fuel.",
+   "geo": "The May 2021 ransomware attack that shut Colonial for six days triggered panic buying and fuel shortages across the Southeast, and made the pipeline the reference case for cyber risk to energy infrastructure. It led directly to TSA's first mandatory cybersecurity rules for pipelines. The East Coast's reliance on a single product line from the Gulf Coast is also why New England still imports fuel and LNG by sea."
+  }
+ ],
+ "sites": [
+  {
+   "id": "ghawar-field",
+   "name": "Ghawar Field",
+   "kind": "production",
+   "coords": [
+    25.5,
+    49.5
+   ],
+   "size": 7,
+   "details": "Saudi Arabia. World's largest conventional oil field. ~3.8 million bpd. Discovered 1948, production since 1951. ~280 km long.",
+   "geo": null
+  },
+  {
+   "id": "north-field-south-pars",
+   "name": "North Field / South Pars",
+   "kind": "production",
+   "coords": [
+    26,
+    51.5
+   ],
+   "size": 7,
+   "details": "Qatar / Iran. World's largest natural gas field. Qatar's North Field: ~77 bcm/yr. Iran's South Pars: ~200+ bcm/yr (gas) + condensate. Feeds Qatar's LNG and Iran's domestic supply.",
+   "geo": null
+  },
+  {
+   "id": "tengiz-field",
+   "name": "Tengiz Field",
+   "kind": "production",
+   "coords": [
+    43.5,
+    51
+   ],
+   "size": 6,
+   "details": "Kazakhstan. Giant oil field. ~600,000+ bpd. Operated by Tengizchevroil (Chevron 50%). Expansion (FGP-WPMP) boosting capacity significantly.",
+   "geo": null
+  },
+  {
+   "id": "acg",
+   "name": "ACG (Azeri-Chirag-Deepwater Gunashli)",
+   "kind": "production",
+   "coords": [
+    41.5,
+    50
+   ],
+   "size": 5,
+   "details": "Azerbaijan (offshore Caspian). ~500,000+ bpd. Operated by BP. Feeds BTC pipeline. \"Contract of the Century\" signed 1994.",
+   "geo": null
+  },
+  {
+   "id": "west-siberian-basin",
+   "name": "West Siberian Basin",
+   "kind": "production",
+   "coords": [
+    61.5,
+    73
+   ],
+   "size": 8,
+   "details": "Russia. Massive oil and gas producing region. ~6 million bpd of oil equivalent. Includes Samotlor, Priobskoye, and hundreds of fields. Russia's hydrocarbon heartland.",
+   "geo": null
+  },
+  {
+   "id": "yamal-peninsula-gas-fields",
+   "name": "Yamal Peninsula Gas Fields",
+   "kind": "production",
+   "coords": [
+    71,
+    72
+   ],
+   "size": 6,
+   "details": "Russia. Bovanenkovo, Kharasavey and other fields. Anchors Yamal-Europe pipeline and Yamal LNG plant. ~115+ bcm/yr gas.",
+   "geo": null
+  },
+  {
+   "id": "chayandinskoye-field",
+   "name": "Chayandinskoye Field",
+   "kind": "production",
+   "coords": [
+    62,
+    130
+   ],
+   "size": 5,
+   "details": "Russia (Yakutia). Gas and condensate. Anchor field for Power of Siberia pipeline to China. Reserves ~1.2 tcm gas.",
+   "geo": null
+  },
+  {
+   "id": "galkynysh-gas-field",
+   "name": "Galkynysh Gas Field",
+   "kind": "production",
+   "coords": [
+    37.5,
+    62
+   ],
+   "size": 6,
+   "details": "Turkmenistan. World's second-largest gas field. Reserves ~21.2 tcm. Feeds Central Asia-China pipeline. Potential future supply for TAPI pipeline.",
+   "geo": null
+  },
+  {
+   "id": "burgan-field",
+   "name": "Burgan Field",
+   "kind": "production",
+   "coords": [
+    28,
+    48.5
+   ],
+   "size": 5,
+   "details": "Kuwait. World's second-largest oil field. ~1.5 million bpd. Discovered 1938.",
+   "geo": null
+  },
+  {
+   "id": "strait-of-hormuz-offshore-fields",
+   "name": "Strait of Hormuz Offshore Fields",
+   "kind": "production",
+   "coords": [
+    27.5,
+    56
+   ],
+   "size": 5,
+   "details": "Iran (offshore). Major fields include Salman, Sirri, Reshadat. Key Iranian offshore oil production zone.",
+   "geo": null
+  },
+  {
+   "id": "pdo-block-6",
+   "name": "PDO Block 6 (Oman)",
+   "kind": "production",
+   "coords": [
+    23.5,
+    57
+   ],
+   "size": 5,
+   "details": "Oman. Petroleum Development Oman's main concession. ~600,000+ bpd. Includes Yibal, Fahud, Lekhwair fields.",
+   "geo": null
+  },
+  {
+   "id": "kashagan-field",
+   "name": "Kashagan Field",
+   "kind": "production",
+   "coords": [
+    46.8,
+    51.8
+   ],
+   "size": 6,
+   "details": "Kazakhstan (offshore Caspian). Giant oil field with ~380,000+ bpd. One of the world's most technically challenging developments. Phase 2 expansion planned.",
+   "geo": null
+  },
+  {
+   "id": "kirkuk-oil-field",
+   "name": "Kirkuk Oil Field",
+   "kind": "production",
+   "coords": [
+    35.5,
+    44.4
+   ],
+   "size": 5,
+   "details": "Iraq. One of the world's oldest and largest fields. Discovered 1927. Historically ~450,000 bpd. Source for Kirkuk-Ceyhan pipeline.",
+   "geo": null
+  },
+  {
+   "id": "rumaila-field",
+   "name": "Rumaila Field",
+   "kind": "production",
+   "coords": [
+    30.5,
+    47.5
+   ],
+   "size": 6,
+   "details": "Iraq. Supergiant field. ~1.5 million bpd. Operated by BP/PetroChina JV. Iraq's largest producing field.",
+   "geo": null
+  },
+  {
+   "id": "kovyktinskoye-field",
+   "name": "Kovyktinskoye Field",
+   "kind": "production",
+   "coords": [
+    63,
+    143
+   ],
+   "size": 5,
+   "details": "Russia (Irkutsk). Major gas field. Reserves ~1.8 tcm. Second anchor field for Power of Siberia pipeline.",
+   "geo": null
+  },
+  {
+   "id": "jamnagar-refinery",
+   "name": "Jamnagar Refinery",
+   "kind": "refinery",
+   "coords": [
+    22.4,
+    69.7
+   ],
+   "size": 7,
+   "details": "India (Gujarat). Reliance Industries. World's largest refining complex. ~1.24 million bpd. Major processor of Middle Eastern crude.",
+   "geo": "Reliance's Jamnagar complex has become a key node in the post-2022 energy trade reconfiguration. India has dramatically increased purchases of discounted Russian crude, processing it at Jamnagar and other refineries, then re-exporting refined products (diesel, jet fuel) to Europe and the US. This \"crude laundering\" (critics' term) effectively allows Russian oil to reach Western markets in refined form — a gray zone in the sanctions architecture. Reliance founder Mukesh Ambani's relationship with both Western and Gulf governments makes Jamnagar a fulcrum of India's energy diplomacy."
+  },
+  {
+   "id": "ruwais-refinery",
+   "name": "Ruwais Refinery",
+   "kind": "refinery",
+   "coords": [
+    24.1,
+    52.6
+   ],
+   "size": 6,
+   "details": "UAE (Abu Dhabi). ADNOC. ~922,000 bpd after expansion. One of the largest integrated refining and petrochemical complexes globally.",
+   "geo": null
+  },
+  {
+   "id": "ras-tanura-refinery",
+   "name": "Ras Tanura Refinery",
+   "kind": "refinery",
+   "coords": [
+    26.6,
+    50.1
+   ],
+   "size": 6,
+   "details": "Saudi Arabia. Saudi Aramco. ~550,000 bpd. Also one of world's largest crude oil export terminals.",
+   "geo": null
+  },
+  {
+   "id": "rotterdam-refining-hub",
+   "name": "Rotterdam Refining Hub",
+   "kind": "refinery",
+   "coords": [
+    51.9,
+    4.5
+   ],
+   "size": 7,
+   "details": "Netherlands. Multiple refineries (Shell Pernis ~404,000 bpd is Europe's largest). Rotterdam is Europe's #1 refining and oil trading hub.",
+   "geo": "Rotterdam is Europe's energy gateway — the continent's largest port, primary crude import terminal, and home to its biggest refining cluster. Post-2022, Rotterdam became the primary receiving point for US LNG and non-Russian crude replacing pipeline flows. Shell's Pernis refinery (Europe's largest) has historically processed significant Russian Urals crude and has had to adapt to alternative grades. Rotterdam's ARA (Amsterdam-Rotterdam-Antwerp) hub sets the benchmark pricing for European refined products. The Dutch government's decision to close the Groningen gas field (2024) has further increased Europe's import dependency through Rotterdam."
+  },
+  {
+   "id": "jurong-island-refining-complex",
+   "name": "Jurong Island Refining Complex",
+   "kind": "refinery",
+   "coords": [
+    1.3,
+    103.7
+   ],
+   "size": 7,
+   "details": "Singapore. Multiple operators (ExxonMobil, Shell, others). ~1.5 million bpd combined. Asia's refining and trading hub.",
+   "geo": "Singapore's position at the Strait of Malacca makes Jurong Island the nexus of Asian energy trading. The island's refining complex processes crude from the Middle East, Africa, and increasingly Russia, distributing refined products across Asia-Pacific. Singapore's status as Asia's pricing benchmark (MOPS — Mean of Platts Singapore) gives it outsized influence over regional fuel costs. Post-2022, Singapore has become a key hub for trading Russian crude and refined products, with ship-to-ship transfers occurring in nearby Malaysian and Indonesian waters."
+  },
+  {
+   "id": "ulsan-refinery",
+   "name": "Ulsan Refinery",
+   "kind": "refinery",
+   "coords": [
+    35.5,
+    129.4
+   ],
+   "size": 6,
+   "details": "South Korea. SK Energy. ~840,000 bpd. World's third-largest single refinery.",
+   "geo": null
+  },
+  {
+   "id": "negishi-yokohama-refineries",
+   "name": "Negishi / Yokohama Refineries",
+   "kind": "refinery",
+   "coords": [
+    35,
+    136.9
+   ],
+   "size": 5,
+   "details": "Japan. ENEOS. Major refining hub for Japan's energy supply.",
+   "geo": null
+  },
+  {
+   "id": "jubail-industrial-complex",
+   "name": "Jubail Industrial Complex",
+   "kind": "refinery",
+   "coords": [
+    26.2,
+    50.5
+   ],
+   "size": 6,
+   "details": "Saudi Arabia. SATORP (Saudi Aramco/Total JV). ~400,000 bpd. Major export-oriented refinery.",
+   "geo": null
+  },
+  {
+   "id": "gelsenkirchen-refinery",
+   "name": "Gelsenkirchen Refinery",
+   "kind": "refinery",
+   "coords": [
+    51.5,
+    6.7
+   ],
+   "size": 5,
+   "details": "Germany. BP. ~260,000 bpd. One of Germany's largest refineries.",
+   "geo": null
+  },
+  {
+   "id": "aspropyrgos-refinery",
+   "name": "Aspropyrgos Refinery",
+   "kind": "refinery",
+   "coords": [
+    37.8,
+    24
+   ],
+   "size": 4,
+   "details": "Greece. Hellenic Petroleum. ~148,000 bpd. Greece's largest refinery.",
+   "geo": null
+  },
+  {
+   "id": "tupras-izmit-refinery",
+   "name": "Tupras Izmit Refinery",
+   "kind": "refinery",
+   "coords": [
+    40.7,
+    29.5
+   ],
+   "size": 5,
+   "details": "Turkey. Tupras. ~226,000 bpd. Turkey's largest refinery.",
+   "geo": null
+  },
+  {
+   "id": "mumbai-refining-hub",
+   "name": "Mumbai Refining Hub",
+   "kind": "refinery",
+   "coords": [
+    19,
+    72.8
+   ],
+   "size": 5,
+   "details": "India. BPCL/HPCL refineries. Combined ~500,000+ bpd. Key Indian west coast refining center.",
+   "geo": null
+  },
+  {
+   "id": "tianjin-hebei-refining-hub",
+   "name": "Tianjin / Hebei Refining Hub",
+   "kind": "refinery",
+   "coords": [
+    39,
+    117
+   ],
+   "size": 6,
+   "details": "China. Multiple large refineries. Key refining cluster for northern China.",
+   "geo": null
+  },
+  {
+   "id": "zhoushan-ningbo-refining-hub",
+   "name": "Zhoushan / Ningbo Refining Hub",
+   "kind": "refinery",
+   "coords": [
+    30.5,
+    122
+   ],
+   "size": 6,
+   "details": "China (Zhejiang). Multiple mega-refineries including Zhejiang Petrochemical (~800,000 bpd). China's newest mega-refining zone.",
+   "geo": null
+  },
+  {
+   "id": "fujairah",
+   "name": "Fujairah",
+   "kind": "hub",
+   "coords": [
+    25.1,
+    56.3
+   ],
+   "size": 6,
+   "details": "UAE. World's second-largest bunkering port. Major oil storage hub outside Strait of Hormuz. ~9 million cubic meters of storage capacity.",
+   "geo": null
+  },
+  {
+   "id": "singapore",
+   "name": "Singapore",
+   "kind": "hub",
+   "coords": [
+    1.3,
+    103.8
+   ],
+   "size": 7,
+   "details": "World's busiest transshipment port. ~5 million bpd of oil passes through. Major oil trading, storage, and refining center.",
+   "geo": null
+  },
+  {
+   "id": "rotterdam",
+   "name": "Rotterdam",
+   "kind": "hub",
+   "coords": [
+    51.9,
+    4.5
+   ],
+   "size": 7,
+   "details": "Netherlands. Europe's largest port. Major crude oil import and petroleum product distribution hub. ~100+ million tonnes of oil throughput/yr.",
+   "geo": null
+  },
+  {
+   "id": "ceyhan-terminal",
+   "name": "Ceyhan Terminal",
+   "kind": "hub",
+   "coords": [
+    36.8,
+    35.5
+   ],
+   "size": 6,
+   "details": "Turkey. Mediterranean terminal for BTC and Kirkuk-Ceyhan pipelines. ~3+ million bpd combined capacity. Major crude export point.",
+   "geo": null
+  },
+  {
+   "id": "novorossiysk",
+   "name": "Novorossiysk",
+   "kind": "hub",
+   "coords": [
+    44.6,
+    37.8
+   ],
+   "size": 6,
+   "details": "Russia (Black Sea). Largest Russian oil export terminal. Handles CPC blend and Urals crude. ~1.5+ million bpd.",
+   "geo": null
+  },
+  {
+   "id": "ras-tanura-terminal",
+   "name": "Ras Tanura Terminal",
+   "kind": "hub",
+   "coords": [
+    26.6,
+    50.1
+   ],
+   "size": 7,
+   "details": "Saudi Arabia. World's largest offshore oil loading facility. ~6+ million bpd capacity. Saudi Aramco's primary export terminal.",
+   "geo": null
+  },
+  {
+   "id": "mina-al-ahmadi",
+   "name": "Mina al-Ahmadi",
+   "kind": "hub",
+   "coords": [
+    29,
+    48.2
+   ],
+   "size": 5,
+   "details": "Kuwait. Kuwait's main oil export terminal. ~2+ million bpd capacity.",
+   "geo": null
+  },
+  {
+   "id": "kharg-island",
+   "name": "Kharg Island",
+   "kind": "hub",
+   "coords": [
+    30.4,
+    49.3
+   ],
+   "size": 6,
+   "details": "Iran. Iran's largest oil export terminal. ~5 million bpd capacity. Handles ~90% of Iranian crude exports.",
+   "geo": null
+  },
+  {
+   "id": "kozmino-bay",
+   "name": "Kozmino Bay (ESPO Terminal)",
+   "kind": "hub",
+   "coords": [
+    43.5,
+    132.5
+   ],
+   "size": 5,
+   "details": "Russia (Pacific). Terminal for ESPO pipeline crude. ~1.6 million bpd. Key export point for Russia-to-Asia oil flows.",
+   "geo": null
+  },
+  {
+   "id": "yanbu-terminal",
+   "name": "Yanbu Terminal",
+   "kind": "hub",
+   "coords": [
+    24.2,
+    38.5
+   ],
+   "size": 5,
+   "details": "Saudi Arabia (Red Sea). Terminal for East-West/Petroline crude. Provides Hormuz bypass. Also major NGL and refining hub.",
+   "geo": null
+  },
+  {
+   "id": "sidi-kerir-terminal",
+   "name": "Sidi Kerir Terminal",
+   "kind": "hub",
+   "coords": [
+    31,
+    30
+   ],
+   "size": 5,
+   "details": "Egypt (Mediterranean). SUMED pipeline terminus. Handles ~1.5 million bpd of crude that bypasses Suez.",
+   "geo": null
+  },
+  {
+   "id": "jebel-ali-dubai",
+   "name": "Jebel Ali / Dubai",
+   "kind": "hub",
+   "coords": [
+    25,
+    55.2
+   ],
+   "size": 6,
+   "details": "UAE. Major trading and logistics hub. Dubai Mercantile Exchange sets Oman crude benchmark. ~15 million TEU container throughput.",
+   "geo": null
+  },
+  {
+   "id": "hong-kong-south-china-sea-hub",
+   "name": "Hong Kong / South China Sea Hub",
+   "kind": "hub",
+   "coords": [
+    22.3,
+    114.2
+   ],
+   "size": 5,
+   "details": "Major LNG and crude transshipment corridor. Gateway for energy imports into southern China.",
+   "geo": null
+  },
+  {
+   "id": "djibouti",
+   "name": "Djibouti",
+   "kind": "hub",
+   "coords": [
+    12.6,
+    43.1
+   ],
+   "size": 5,
+   "details": "Strategic port at Bab el-Mandeb entrance. Military bases from US, China, France, Japan. Key chokepoint anchorage.",
+   "geo": null
+  },
+  {
+   "id": "ras-laffan-lng",
+   "name": "Ras Laffan LNG",
+   "kind": "lng",
+   "coords": [
+    25.9,
+    51.55
+   ],
+   "size": 8,
+   "details": "Qatar. QatarEnergy LNG. World's largest LNG export complex, ~77 MTPA across 14 trains, expanding toward ~142 MTPA with the North Field East and South projects. Every cargo must exit through the Strait of Hormuz.",
+   "geo": "Qatar's entire LNG export capacity sits behind Hormuz, with no pipeline bypass — unlike Saudi or Emirati crude. That makes Ras Laffan the single largest point of LNG exposure in the world: roughly a fifth of global LNG supply. Long-term contracts with China, India, Japan, Korea, and (since 2022) Germany and other European buyers mean a Hormuz disruption hits Asian and European gas markets at the same time."
+  },
+  {
+   "id": "sabine-pass-lng",
+   "name": "Sabine Pass LNG",
+   "kind": "lng",
+   "coords": [
+    29.74,
+    -93.87
+   ],
+   "size": 7,
+   "details": "Louisiana, USA. Cheniere Energy. ~30 MTPA across 6 trains. The first Lower 48 LNG export terminal (first cargo Feb 2016).",
+   "geo": "Sabine Pass turned the US from an expected LNG importer into an exporter, and launched a shale-gas-to-global-market pipeline that made the US the world's largest LNG exporter by 2023. Its flexible, destination-free contracts let cargoes go wherever prices are highest — which in 2022 meant Europe, replacing Russian pipeline gas."
+  },
+  {
+   "id": "corpus-christi-lng",
+   "name": "Corpus Christi LNG",
+   "kind": "lng",
+   "coords": [
+    27.88,
+    -97.26
+   ],
+   "size": 6,
+   "details": "Texas, USA. Cheniere Energy. ~15 MTPA from 3 trains, plus Stage 3 midscale trains adding >10 MTPA from 2025. Port of Corpus Christi is also the largest US crude export port.",
+   "geo": null
+  },
+  {
+   "id": "freeport-lng",
+   "name": "Freeport LNG",
+   "kind": "lng",
+   "coords": [
+    28.94,
+    -95.31
+   ],
+   "size": 6,
+   "details": "Texas, USA. ~15 MTPA across 3 trains. A June 2022 fire shut the plant until early 2023, removing ~17% of US LNG export capacity during the European gas crisis.",
+   "geo": "Freeport's 2022 outage showed how a single US plant going down could move European and Asian gas prices. It is a reminder that the US LNG buildout concentrates global supply risk in a few hurricane-exposed square miles of the Texas–Louisiana coast."
+  },
+  {
+   "id": "cameron-lng",
+   "name": "Cameron LNG",
+   "kind": "lng",
+   "coords": [
+    30.04,
+    -93.33
+   ],
+   "size": 6,
+   "details": "Louisiana, USA. Sempra (with TotalEnergies, Mitsui, Japan LNG Investment). ~12 MTPA across 3 trains. Exports began 2019; fourth-train expansion approved.",
+   "geo": null
+  },
+  {
+   "id": "calcasieu-pass-lng",
+   "name": "Calcasieu Pass LNG",
+   "kind": "lng",
+   "coords": [
+    29.77,
+    -93.34
+   ],
+   "size": 5,
+   "details": "Louisiana, USA. Venture Global. ~10 MTPA of modular midscale trains. First cargo 2022.",
+   "geo": "Venture Global sold commissioning cargoes on the spot market for over two years before declaring commercial operations, prompting arbitration from long-term buyers such as Shell and BP — a dispute that raised questions about how firm US LNG contracts really are."
+  },
+  {
+   "id": "plaquemines-lng",
+   "name": "Plaquemines LNG",
+   "kind": "lng",
+   "coords": [
+    29.62,
+    -89.86
+   ],
+   "size": 6,
+   "details": "Louisiana, USA. Venture Global. ~20 MTPA nameplate (27+ MTPA peak) of modular trains. First cargo Dec 2024; ramped rapidly through 2025.",
+   "geo": null
+  },
+  {
+   "id": "golden-pass-lng",
+   "name": "Golden Pass LNG",
+   "kind": "lng",
+   "coords": [
+    29.76,
+    -93.93
+   ],
+   "size": 6,
+   "details": "Texas, USA. QatarEnergy (70%) / ExxonMobil (30%). ~18 MTPA across 3 trains. Start-up of the first train expected around 2025–26 after contractor bankruptcy delays.",
+   "geo": "Golden Pass is majority-owned by Qatar, giving Doha LNG supply outside the Strait of Hormuz for the first time. It hedges Qatar's single-chokepoint exposure and ties Qatari capital to US energy policy."
+  },
+  {
+   "id": "loop-terminal",
+   "name": "LOOP (Louisiana Offshore Oil Port)",
+   "kind": "hub",
+   "coords": [
+    28.88,
+    -90.02
+   ],
+   "size": 6,
+   "details": "Offshore Louisiana (Gulf of Mexico). The only US port able to fully load and unload VLCC supertankers. ~1.2 million bpd import capacity; now also exports crude. Connected to Gulf Coast refineries and Strategic Petroleum Reserve sites.",
+   "geo": null
+  },
+  {
+   "id": "us-spr",
+   "name": "US Strategic Petroleum Reserve",
+   "kind": "hub",
+   "coords": [
+    29.8,
+    -93.6
+   ],
+   "size": 6,
+   "details": "Four salt-cavern storage sites in Texas and Louisiana (Bryan Mound, Big Hill, West Hackberry, Bayou Choctaw). Authorized capacity ~714 million barrels. Maximum drawdown rate ~4.4 million bpd.",
+   "geo": "Created after the 1973 Arab oil embargo as insurance against supply shocks. The 2022 record sale of ~180 million barrels, in response to Russia's invasion of Ukraine, took inventory to a 40-year low. How full the reserve is — and how fast it can be drawn — sets how long the US can cushion a Hormuz-scale disruption."
+  },
+  {
+   "id": "houston-refining-hub",
+   "name": "Houston / Texas City Refining Hub",
+   "kind": "refinery",
+   "coords": [
+    29.73,
+    -95.05
+   ],
+   "size": 7,
+   "details": "Texas, USA. ExxonMobil Baytown (~560,000 bpd), Marathon Galveston Bay (~590,000 bpd) and others. Part of the Gulf Coast cluster that holds ~half of US refining capacity.",
+   "geo": null
+  },
+  {
+   "id": "port-arthur-refining-hub",
+   "name": "Port Arthur / Beaumont Refining Hub",
+   "kind": "refinery",
+   "coords": [
+    29.87,
+    -93.93
+   ],
+   "size": 7,
+   "details": "Texas, USA. Motiva Port Arthur (~630,000 bpd, largest refinery in the US), plus Valero and ExxonMobil Beaumont. Built to run heavy sour crude from Canada, Venezuela and the Middle East.",
+   "geo": null
+  },
+  {
+   "id": "jose-terminal",
+   "name": "Jose Terminal",
+   "kind": "hub",
+   "coords": [
+    10.1,
+    -64.83
+   ],
+   "size": 5,
+   "details": "Venezuela (Anzoátegui). PDVSA's main crude export terminal and upgrader complex for Orinoco Belt extra-heavy crude blends.",
+   "geo": "Venezuela's exports have been shaped by US sanctions since 2019, with licenses for Chevron and a few others turning flows on and off as Washington's policy toward Caracas shifted. Much of the rest has moved to China through intermediaries and ship-to-ship transfers."
+  }
+ ],
+ "chokepoints": [
+  {
+   "id": "strait-of-hormuz",
+   "name": "Strait of Hormuz",
+   "coords": [
+    26.5,
+    56.3
+   ],
+   "details": "Connects Persian Gulf to Gulf of Oman. ~21 km at narrowest. ~21 million bpd of oil transits daily (~20% of global supply). Most critical energy chokepoint in the world. Bordered by Iran and Oman.",
+   "geo": "Iran's primary source of strategic leverage. Tehran has repeatedly threatened to close the strait during confrontations with the US (1988 tanker war, 2012 nuclear sanctions, 2019-2020 tensions). The US Fifth Fleet (based in Bahrain) maintains a permanent carrier presence specifically to guarantee freedom of navigation. In 2019, Iran seized tankers and attacked others with limpet mines, demonstrating capability without full closure. Saudi Arabia, UAE, and Iraq have invested billions in bypass pipelines (Petroline, Habshan-Fujairah) as insurance. A full closure would trigger a global energy crisis — oil prices could spike to $200+/bbl. The strait's narrow shipping lanes technically pass through Omani and Iranian territorial waters, making the legal framework complex."
+  },
+  {
+   "id": "turkish-straits",
+   "name": "Turkish Straits (Bosphorus & Dardanelles)",
+   "coords": [
+    41.1,
+    29
+   ],
+   "details": "Connects Black Sea to Mediterranean. Bosphorus is ~700m at narrowest. ~3.5 million bpd of oil transits. Governed by 1936 Montreux Convention. Key route for Russian/Kazakh crude exports.",
+   "geo": "The 1936 Montreux Convention gives Turkey sovereign control over the straits while guaranteeing civilian maritime passage — and allowing Turkey to restrict military vessel transit during wartime. Turkey has used Montreux to block Russian and other warships from entering the Black Sea since the 2022 Ukraine invasion. Istanbul's 15 million residents live alongside one of the world's busiest oil tanker corridors; a major accident could close the strait and disrupt CPC and other Black Sea crude exports. Turkey's proposed Istanbul Canal (a parallel artificial waterway) would allow Ankara to bypass Montreux restrictions, though the project faces cost and environmental hurdles."
+  },
+  {
+   "id": "suez-canal",
+   "name": "Suez Canal",
+   "coords": [
+    30,
+    32.5
+   ],
+   "details": "Connects Mediterranean to Red Sea. ~193 km long. ~5-6 million bpd of oil and refined products. ~12% of global trade. 2021 Ever Given blockage demonstrated fragility. 2024 Houthi attacks diverted significant traffic.",
+   "geo": "Egypt's most important strategic asset and revenue source (~$9B/yr in fees). Nationalized by Nasser in 1956, triggering the Suez Crisis — the event that marked the end of British and French imperial power projection. The canal was closed 1967-1975 after the Six-Day War. The 2021 Ever Given blockage (6 days) cost global trade an estimated $54B and exposed the fragility of just-in-time supply chains. Since late 2023, Houthi attacks on Red Sea shipping have diverted 50%+ of Suez traffic around the Cape of Good Hope, adding 10-14 days and ~$1M per voyage. Egypt's canal revenues dropped ~40-50%, creating fiscal stress for an already pressured Egyptian economy."
+  },
+  {
+   "id": "bab-el-mandeb",
+   "name": "Bab el-Mandeb",
+   "coords": [
+    12.6,
+    43.3
+   ],
+   "details": "Connects Red Sea to Gulf of Aden. ~29 km wide. ~6-7 million bpd of oil. Gateway to/from Suez Canal from the south. Houthi attacks since late 2023 have forced major rerouting around Cape of Good Hope.",
+   "geo": "The Houthi campaign against Red Sea shipping (beginning Nov 2023, citing solidarity with Gaza) has demonstrated how a non-state actor with relatively low-cost anti-ship missiles and drones can disrupt a critical global trade artery. The US-UK Operation Prosperity Guardian has conducted strikes against Houthi positions but has not stopped attacks. Major container lines (Maersk, MSC, Hapag-Lloyd) rerouted around Africa. Insurance premiums for Red Sea transit spiked 10x. Djibouti, on the strait's western shore, hosts military bases from the US, China, France, Japan, and Italy — making it the most concentrated point of great-power military presence globally. The strait's vulnerability has accelerated interest in rail and pipeline alternatives."
+  },
+  {
+   "id": "strait-of-malacca",
+   "name": "Strait of Malacca",
+   "coords": [
+    1.3,
+    104
+   ],
+   "details": "Connects Indian Ocean to South China Sea. ~2.5 km at narrowest (Phillips Channel). ~16 million bpd of oil. ~25% of global trade. Critical for China, Japan, South Korea energy imports. Piracy risk.",
+   "geo": "China's \"Malacca Dilemma\" (coined by Hu Jintao in 2003): ~80% of China's oil imports transit this strait, which is patrolled by the US Navy and bordered by US allies Singapore and Malaysia. In any conflict scenario, a US blockade here could strangle China's energy supply. This vulnerability drives China's massive investment in overland pipelines (Central Asia-China, Myanmar-China), domestic renewables, strategic petroleum reserves (~950 million barrels), and naval expansion. Japan and South Korea face the same dependency. Singapore's position at the strait's southern end underpins its status as Asia's energy trading hub. Piracy, while reduced from its 2000s peak, remains a concern — the strait's shallow, narrow waters make supertankers especially vulnerable."
+  },
+  {
+   "id": "eastern-mediterranean-energy-zone",
+   "name": "Eastern Mediterranean Energy Zone",
+   "coords": [
+    35,
+    33
+   ],
+   "details": "Emerging gas province. Leviathan (Israel), Zohr (Egypt), Aphrodite (Cyprus) fields. Potential pipeline routes (EastMed) to Europe. Geopolitical tensions between Turkey, Greece, Cyprus, Lebanon, Israel.",
+   "geo": "Overlapping maritime claims and unresolved conflicts make this one of the world's most contested energy zones. Turkey disputes Greek and Cypriot exclusive economic zones and has sent drilling ships into disputed waters escorted by naval vessels. Israel and Lebanon resolved their maritime border dispute in 2022 (US-brokered), enabling development of the Qana prospect. The proposed EastMed Pipeline (Israel-Cyprus-Greece-Italy) was backed by the US until 2022, when Washington withdrew support citing cost and feasibility concerns, favoring LNG exports instead. Egypt's Zohr field has made Cairo a potential regional gas hub via its existing LNG liquefaction plants. The Israel-Gaza war has raised security concerns for offshore platforms and complicated regional energy diplomacy."
+  },
+  {
+   "id": "panama-canal",
+   "name": "Panama Canal",
+   "coords": [
+    9.08,
+    -79.68
+   ],
+   "details": "Connects Atlantic (Caribbean) to Pacific. ~82 km. Neopanamax locks (2016) accept most LNG carriers. Key route for US Gulf Coast LNG and LPG to Northeast Asia; saves ~2 weeks versus sailing around Africa or Cape Horn.",
+   "geo": "The 2023–24 drought forced the Panama Canal Authority to cut daily transits sharply, and US LNG cargoes to Asia almost entirely abandoned the canal for the Cape of Good Hope — showing that climate, not only conflict, can close a chokepoint. Panama returned the canal to full draft in 2024, but capacity depends on Gatun Lake water levels. Washington has pressed Panama over Chinese-linked port concessions at both ends of the canal, making it a front in US–China competition. For US LNG, the canal decides whether cargoes compete in Asia or default to Europe."
+  },
+  {
+   "id": "cape-of-good-hope",
+   "name": "Cape of Good Hope",
+   "coords": [
+    -34.36,
+    18.47
+   ],
+   "details": "Southern tip of Africa. Not a chokepoint but the default detour when Suez/Bab el-Mandeb are unsafe or the Panama Canal is restricted. Adds ~10–14 days Asia–Europe and ~3,500 nautical miles.",
+   "geo": "Traffic around the Cape surged after Houthi attacks began in late 2023, effectively making South Africa a transit state for Asia–Europe trade. Longer voyages absorb tanker capacity, raise freight and insurance costs, and increase bunker demand at Cape Town, Durban, Port Louis and the Canary Islands. South African ports have struggled with congestion. The Cape route cannot be closed, but it is slower and more exposed to severe weather."
+  }
+ ],
+ "fields": [
+  {
+   "id": "ghawar-oil",
+   "name": "Ghawar",
+   "commodity": "oil",
+   "coords": [
+    25.4,
+    49.4
+   ],
+   "size": 18,
+   "details": "Saudi Arabia. World's largest conventional oil field. ~3.8M bpd. ~280 km long. Discovered 1948. Contains ~75+ billion barrels remaining recoverable reserves.",
+   "geo": "The field that underwrites Saudi Arabia's global influence. Ghawar's spare capacity allows Riyadh to function as the world's swing producer within OPEC+, unilaterally capable of crashing or spiking oil prices. This gives Saudi Arabia leverage that extends far beyond energy — into US defense relationships, Middle East diplomacy, and climate negotiations. Aramco's 2019 IPO valued the company at $2T, making it the world's most valuable, but also exposed Ghawar's declining natural pressure to investor scrutiny."
+  },
+  {
+   "id": "burgan-oil",
+   "name": "Burgan",
+   "commodity": "oil",
+   "coords": [
+    28,
+    48.3
+   ],
+   "size": 14,
+   "details": "Kuwait. World's second-largest oil field. ~1.7M bpd. Discovered 1938. Greater Burgan area includes Magwa and Ahmadi fields. ~70 billion barrels original reserves.",
+   "geo": "Iraq's 1990 invasion of Kuwait was substantially motivated by control of Burgan and Kuwait's broader oil reserves. Retreating Iraqi forces set 600+ Kuwaiti oil wells on fire in 1991 — one of the largest environmental disasters in history. Kuwait's reconstruction and the US military's permanent Gulf presence both trace directly to the strategic importance of these reserves. Kuwait maintains a conservative production policy within OPEC, preferring long-term revenue stability."
+  },
+  {
+   "id": "rumaila-oil",
+   "name": "Rumaila",
+   "commodity": "oil",
+   "coords": [
+    30.6,
+    47.6
+   ],
+   "size": 14,
+   "details": "Iraq. Supergiant field. ~1.5M bpd. Operated by BP/PetroChina JV. ~17 billion barrels remaining. Iraq's single largest producing field.",
+   "geo": "Iraq's post-2003 oil development has been dominated by Technical Service Contracts (TSCs) that give international oil companies fees rather than equity — a model designed to preserve Iraqi sovereignty over resources. The BP/PetroChina JV operating Rumaila is a notable example of UK-Chinese commercial cooperation in a US-liberated territory. Rumaila sits near the Kuwait border in the same geological formation as Burgan, and border disputes over the field were part of Iraq's 1990 justification for invading Kuwait."
+  },
+  {
+   "id": "west-qurna-1-2-oil",
+   "name": "West Qurna 1 & 2",
+   "commodity": "oil",
+   "coords": [
+    31.5,
+    47
+   ],
+   "size": 12,
+   "details": "Iraq. Combined ~900,000+ bpd. West Qurna-2 operated by Lukoil. Combined reserves ~20+ billion barrels. Among the last undeveloped supergiant fields globally.",
+   "geo": "Lukoil's operation of West Qurna-2 represents one of Russia's largest overseas energy investments and a source of revenue that complicates Iraq's alignment between Western and Russian interests. ExxonMobil operated West Qurna-1 but reduced its stake amid security and political frustrations. These fields represent Iraq's future production growth potential and are central to Baghdad's ambitions to reach 6M bpd — which would reshape OPEC dynamics."
+  },
+  {
+   "id": "majnoon-oil",
+   "name": "Majnoon",
+   "commodity": "oil",
+   "coords": [
+    30,
+    49
+   ],
+   "size": 10,
+   "details": "Iraq. ~230,000 bpd. Reserves ~13 billion barrels. Near Iranian border. Discovered 1976, development delayed by decades of conflict.",
+   "geo": null
+  },
+  {
+   "id": "kirkuk-oil",
+   "name": "Kirkuk",
+   "commodity": "oil",
+   "coords": [
+    35.3,
+    44.3
+   ],
+   "size": 12,
+   "details": "Iraq. One of world's oldest supergiant fields. Discovered 1927. Historically ~450,000 bpd. Feeds Kirkuk-Ceyhan pipeline. Contested between Baghdad and KRG.",
+   "geo": "Kirkuk is arguably the most politically contested oil field on earth. Control has shifted between the Iraqi central government and the Kurdistan Regional Government, most dramatically when Peshmerga forces seized it during the 2014 ISIS advance, then lost it when Iraqi forces retook it in 2017 after the Kurdish independence referendum. The city's mixed Arab-Kurdish-Turkmen demographics make it a microcosm of Iraq's ethnic fault lines. Kirkuk oil revenues remain a central issue in Baghdad-Erbil negotiations."
+  },
+  {
+   "id": "zakum-oil",
+   "name": "Zakum (Upper & Lower)",
+   "commodity": "oil",
+   "coords": [
+    24,
+    54.5
+   ],
+   "size": 13,
+   "details": "UAE (offshore Abu Dhabi). Upper Zakum: ~750,000 bpd. Lower Zakum also significant. Combined reserves ~50+ billion barrels. ADNOC-operated.",
+   "geo": null
+  },
+  {
+   "id": "bu-hasa-oil",
+   "name": "Bu Hasa",
+   "commodity": "oil",
+   "coords": [
+    25,
+    53
+   ],
+   "size": 10,
+   "details": "UAE (onshore Abu Dhabi). ~550,000 bpd. ADNOC-operated. One of the largest onshore fields in the UAE.",
+   "geo": null
+  },
+  {
+   "id": "yibal-fahud-lekhwair-oil",
+   "name": "Yibal / Fahud / Lekhwair",
+   "commodity": "oil",
+   "coords": [
+    23,
+    57
+   ],
+   "size": 12,
+   "details": "Oman. PDO Block 6 cluster. Combined ~600,000+ bpd. Oman's primary producing complex. Enhanced oil recovery extensively deployed.",
+   "geo": null
+  },
+  {
+   "id": "shaybah-oil",
+   "name": "Shaybah",
+   "commodity": "oil",
+   "coords": [
+    22.5,
+    55.5
+   ],
+   "size": 13,
+   "details": "Saudi Arabia (Rub al-Khali / Empty Quarter). ~1M bpd. Remote desert location. Saudi Aramco's flagship deep desert development. Arab Extra Light crude.",
+   "geo": null
+  },
+  {
+   "id": "safaniyah-oil",
+   "name": "Safaniyah",
+   "commodity": "oil",
+   "coords": [
+    27,
+    50
+   ],
+   "size": 14,
+   "details": "Saudi Arabia (offshore). World's largest offshore oil field. ~1.5M bpd capacity. Arabian Heavy crude. Discovered 1951.",
+   "geo": null
+  },
+  {
+   "id": "abqaiq-oil",
+   "name": "Abqaiq",
+   "commodity": "oil",
+   "coords": [
+    26,
+    50.8
+   ],
+   "size": 12,
+   "details": "Saudi Arabia. Major processing and field complex. ~1M bpd processing capacity. Drone/missile attack in Sept 2019 briefly knocked out ~5.7M bpd.",
+   "geo": "The Sept 2019 attack on Abqaiq was a watershed moment in energy security. Houthi rebels (with alleged Iranian support) used low-cost drones and cruise missiles to temporarily disable ~5% of global oil supply — the single largest disruption in history. It demonstrated that precision-guided munitions available to non-state actors can threaten even the most heavily defended energy infrastructure. Saudi Arabia's $100B+ defense budget could not prevent the attack. Oil spiked 15% overnight. The incident accelerated Saudi investment in air defense and redundancy."
+  },
+  {
+   "id": "khafji-oil",
+   "name": "Khafji (Partitioned Neutral Zone)",
+   "commodity": "oil",
+   "coords": [
+    27.8,
+    51.5
+   ],
+   "size": 9,
+   "details": "Saudi Arabia / Kuwait shared zone. ~300,000 bpd potential. Shut-in 2014-2020 due to diplomatic dispute. Restarted 2020.",
+   "geo": null
+  },
+  {
+   "id": "tengiz-oil",
+   "name": "Tengiz",
+   "commodity": "oil",
+   "coords": [
+    43.3,
+    51.2
+   ],
+   "size": 14,
+   "details": "Kazakhstan. Supergiant field. ~600,000+ bpd, expanding to ~850,000 bpd with FGP project. Discovered 1979. Chevron-led Tengizchevroil. High H₂S content.",
+   "geo": "Chevron's 50% stake in Tengiz (~$40B+ invested) is one of the largest single US corporate investments in the former Soviet Union. The expansion project (FGP) is the most expensive oil project currently under construction globally. Kazakhstan has periodically pressured Chevron on environmental and tax issues, but the relationship endures because neither side has an alternative — Kazakhstan needs Chevron's technology for the field's extreme H₂S conditions, and Chevron needs Tengiz for its production growth. All exports transit Russia via the CPC pipeline, creating a three-way dependency."
+  },
+  {
+   "id": "kashagan-oil",
+   "name": "Kashagan",
+   "commodity": "oil",
+   "coords": [
+    46.8,
+    51.5
+   ],
+   "size": 13,
+   "details": "Kazakhstan (offshore Caspian). ~400,000+ bpd. One of world's most technically challenging and expensive developments. ~$55B invested. Phase 2 planned. ~13 billion barrels reserves.",
+   "geo": "The most expensive oil field development in history. A consortium including Shell, Total, Eni, ExxonMobil, CNPC, and KazMunayGas has invested ~$55B with multiple delays and cost overruns. The extreme conditions (shallow water, high H₂S, sub-zero temperatures, environmental sensitivity of the Caspian) have made it a cautionary tale for mega-project investment. China's CNPC acquired a stake in 2013, gaining access to one of the world's last undeveloped super-giant reserves."
+  },
+  {
+   "id": "acg-oil",
+   "name": "ACG (Azeri-Chirag-Deepwater Gunashli)",
+   "commodity": "oil",
+   "coords": [
+    41.3,
+    49.8
+   ],
+   "size": 12,
+   "details": "Azerbaijan (offshore Caspian). ~500,000+ bpd. BP-operated. \"Contract of the Century\" (1994). Feeds BTC pipeline. ~5 billion barrels remaining.",
+   "geo": "The 1994 \"Contract of the Century\" was the foundational deal of post-Soviet Caspian energy development. It brought Western majors (BP, Amoco, Unocal, others) into Azerbaijan, established BP as the dominant operator, and set the stage for the BTC pipeline. The deal was as much about geopolitics as oil — anchoring Azerbaijan's Western orientation and reducing Russia's monopoly over Caspian export routes. BP's continued operatorship gives the UK significant influence in Azerbaijani affairs."
+  },
+  {
+   "id": "karachaganak-oil",
+   "name": "Karachaganak",
+   "commodity": "oil",
+   "coords": [
+    44,
+    50.8
+   ],
+   "size": 11,
+   "details": "Kazakhstan. Giant oil and gas condensate field. ~300,000 bpd oil + ~16 bcm/yr gas. Shell/Eni JV. Feeds CPC pipeline and Orenburg gas plant.",
+   "geo": null
+  },
+  {
+   "id": "samotlor-oil",
+   "name": "Samotlor",
+   "commodity": "oil",
+   "coords": [
+    61,
+    73.5
+   ],
+   "size": 15,
+   "details": "Russia (West Siberia). Once world's largest producing field. Peak ~3.4M bpd in 1980. Now ~300,000+ bpd. Discovered 1965. ~28 billion barrels produced to date.",
+   "geo": "Samotlor's production trajectory is a parable of Soviet-era resource extraction: aggressive development produced extraordinary output but damaged the reservoir, and post-Soviet underinvestment accelerated decline. Rosneft (state-controlled since the Yukos seizure) now operates the field. The broader West Siberian basin's maturity is why Russia has had to develop increasingly challenging East Siberian and Arctic fields to maintain output — a trajectory that Western sanctions on drilling technology are designed to disrupt."
+  },
+  {
+   "id": "priobskoye-oil",
+   "name": "Priobskoye",
+   "commodity": "oil",
+   "coords": [
+    61.5,
+    72
+   ],
+   "size": 12,
+   "details": "Russia (West Siberia). ~700,000+ bpd. Rosneft-operated. One of Russia's top producing fields. Khanty-Mansiysk region.",
+   "geo": null
+  },
+  {
+   "id": "vankor-oil",
+   "name": "Vankor",
+   "commodity": "oil",
+   "coords": [
+    68.5,
+    76
+   ],
+   "size": 11,
+   "details": "Russia (East Siberia). ~400,000+ bpd. Rosneft-operated. Discovered 1988. Feeds ESPO pipeline. India's ONGC holds partial stake.",
+   "geo": "India's ONGC acquired a 26% stake in 2016, later reduced. This investment exemplifies India's strategy of securing upstream equity oil globally, and its willingness to do deals with Russia that the West views skeptically. Vankor's crude feeds the ESPO pipeline to Asia, making it part of Russia's eastward energy pivot. India has been one of the largest buyers of Russian crude since 2022 — often purchasing at significant discounts and re-exporting refined products to Europe."
+  },
+  {
+   "id": "verkhnechonskoye-oil",
+   "name": "Verkhnechonskoye",
+   "commodity": "oil",
+   "coords": [
+    56,
+    107.5
+   ],
+   "size": 9,
+   "details": "Russia (East Siberia / Irkutsk). ~120,000+ bpd. Rosneft-operated. Feeds ESPO pipeline. Key East Siberian field.",
+   "geo": null
+  },
+  {
+   "id": "ahvaz-oil",
+   "name": "Ahvaz",
+   "commodity": "oil",
+   "coords": [
+    31.5,
+    49.5
+   ],
+   "size": 13,
+   "details": "Iran (Khuzestan). ~750,000 bpd. One of Iran's largest onshore fields. Part of the greater Marun-Ahvaz-Aghajari complex. Discovered 1958.",
+   "geo": "Khuzestan province — where Ahvaz and most of Iran's onshore oil sits — has an ethnic Arab minority population. Saddam Hussein's 1980 invasion of Iran targeted Khuzestan specifically to seize these oil fields, triggering the 8-year Iran-Iraq War (~1 million casualties). The province has seen periodic unrest over water shortages and environmental degradation from oil operations. Iran's inability to attract foreign investment due to US sanctions has left these mature fields underperforming their potential — Iran produces ~3.2M bpd vs. a theoretical 5M+ capacity."
+  },
+  {
+   "id": "marun-oil",
+   "name": "Marun",
+   "commodity": "oil",
+   "coords": [
+    30.5,
+    50.5
+   ],
+   "size": 11,
+   "details": "Iran (Khuzestan). ~500,000 bpd. Part of the Dezful Embayment super-province. Discovered 1963. ~22 billion barrels original oil in place.",
+   "geo": null
+  },
+  {
+   "id": "aghajari-oil",
+   "name": "Aghajari",
+   "commodity": "oil",
+   "coords": [
+    30,
+    50
+   ],
+   "size": 10,
+   "details": "Iran (Khuzestan). ~200,000 bpd. Historically one of Iran's most productive. Discovered 1938. Feeds Abadan refinery.",
+   "geo": null
+  },
+  {
+   "id": "south-pars-oil-layer-oil",
+   "name": "South Pars Oil Layer",
+   "commodity": "oil",
+   "coords": [
+    27,
+    52.5
+   ],
+   "size": 10,
+   "details": "Iran (offshore). Oil layer beneath the giant South Pars gas field. ~300,000+ bpd potential. Technically complex development.",
+   "geo": null
+  },
+  {
+   "id": "daqing-oil",
+   "name": "Daqing",
+   "commodity": "oil",
+   "coords": [
+    46.6,
+    124.8
+   ],
+   "size": 14,
+   "details": "China (Heilongjiang). China's largest oil field. Peaked at ~1.1M bpd (1976). Now ~600,000 bpd after decades of EOR. Discovered 1959. National symbol of industrial self-reliance.",
+   "geo": "Daqing's discovery in 1959 enabled Mao to declare China self-sufficient in oil — \"learn from Daqing\" became a national industrial slogan. The \"Iron Man\" Wang Jinxi, a Daqing driller, is a communist folk hero. The field's decline since the 1990s parallels China's transition from oil self-sufficiency to becoming the world's largest importer (~11M bpd). This import dependency is the foundational driver of China's overland pipeline strategy, strategic petroleum reserve build-out, and naval modernization to protect sea lanes."
+  },
+  {
+   "id": "changqing-oil",
+   "name": "Changqing",
+   "commodity": "oil",
+   "coords": [
+    37.5,
+    109
+   ],
+   "size": 13,
+   "details": "China (Ordos Basin, Shaanxi/Inner Mongolia). China's top producing oil & gas region. ~500,000+ bpd oil + significant gas. PetroChina. Tight oil and gas play.",
+   "geo": null
+  },
+  {
+   "id": "tarim-basin-fields-oil",
+   "name": "Tarim Basin Fields",
+   "commodity": "oil",
+   "coords": [
+    40.5,
+    83
+   ],
+   "size": 12,
+   "details": "China (Xinjiang). Multiple fields including Tahe, Lunnan. Combined ~250,000+ bpd. Ultra-deep drilling (7,000m+). PetroChina.",
+   "geo": "Located in Xinjiang, where China has concentrated strategic energy infrastructure alongside its security operations. The West-East Gas Pipeline also originates here. Beijing views Xinjiang's energy resources as critical to national development, adding an economic dimension to the region's complex security and demographic politics. The basin also receives Central Asian pipeline gas and Kazakh oil, making Xinjiang China's energy gateway to the west."
+  },
+  {
+   "id": "north-field-south-pars-gas",
+   "name": "North Field / South Pars",
+   "commodity": "gas",
+   "coords": [
+    26.5,
+    52
+   ],
+   "size": 20,
+   "details": "Qatar / Iran. World's largest natural gas field. Shared structure: Qatar's North Field (~24.7 tcm reserves) and Iran's South Pars (~14 tcm). Feeds Qatar's LNG empire and Iran's domestic supply. ~200+ bcm/yr combined output.",
+   "geo": "The single most strategically important gas structure on Earth. Qatar's side generates ~$40B+/yr in LNG revenues, funding a sovereign wealth fund (~$450B) that gives Doha outsized global influence. Qatar supplies ~30% of global LNG and can swing spot markets. Iran's inability to fully develop South Pars (due to sanctions, technology gaps, and capital constraints) represents one of the largest \"stranded\" resource bases globally — Tehran produces far less from its side despite comparable reserves. The shared geological structure creates an implicit race: every molecule Qatar extracts potentially reduces Iran's recoverable reserves, adding an unseen competitive tension beneath the diplomatic surface."
+  },
+  {
+   "id": "kish-gas-field-gas",
+   "name": "Kish Gas Field",
+   "commodity": "gas",
+   "coords": [
+    26,
+    55.5
+   ],
+   "size": 9,
+   "details": "Iran (offshore). ~1.3 tcm reserves. Under development. Near Kish Island.",
+   "geo": null
+  },
+  {
+   "id": "dome-gas",
+   "name": "Dome (North Dome Extension)",
+   "commodity": "gas",
+   "coords": [
+    25.5,
+    52.5
+   ],
+   "size": 12,
+   "details": "Qatar. NFE & NFS expansion projects adding ~64 MTPA LNG capacity by 2027-2028. World's largest LNG expansion ever undertaken. QatarEnergy-led.",
+   "geo": "Qatar lifted its self-imposed moratorium on North Field development in 2017 after concluding that competitors (US shale gas, Australia, Mozambique) threatened its market dominance. The NFE/NFS expansion will increase Qatar's LNG capacity by ~60%, with TotalEnergies, Shell, ConocoPhillips, ExxonMobil, and Eni as minority partners — giving five Western majors a direct stake in Qatari stability. Qatar signed 27-year supply deals with China, ensuring long-term demand lock-in. This expansion will make Qatar the world's undisputed LNG superpower well into the 2050s."
+  },
+  {
+   "id": "galkynysh-gas",
+   "name": "Galkynysh (formerly South Yolotan)",
+   "commodity": "gas",
+   "coords": [
+    37,
+    62
+   ],
+   "size": 16,
+   "details": "Turkmenistan. World's second-largest gas field. ~21.2 tcm reserves. Feeds Central Asia-China pipeline. Potential anchor for TAPI pipeline. CNPC involved in development.",
+   "geo": "Turkmenistan's reserves are enormous but effectively captive to a single buyer — China, which takes ~90% of exports via the Central Asia-China pipeline. This gives Beijing extraordinary leverage over Ashgabat's economy and foreign policy. The TAPI pipeline (Turkmenistan-Afghanistan-Pakistan-India) has been proposed for decades but Afghanistan's instability prevents construction. If TAPI were built, it would diversify Turkmen export options and provide Pakistan/India with a non-maritime gas supply — but the Taliban governance and India-Pakistan tensions make it improbable near-term. Russia previously bought Turkmen gas cheaply and resold it to Europe; Moscow cut purchases in 2009, pushing Ashgabat toward China."
+  },
+  {
+   "id": "dauletabad-gas",
+   "name": "Dauletabad",
+   "commodity": "gas",
+   "coords": [
+    38.5,
+    55
+   ],
+   "size": 10,
+   "details": "Turkmenistan. Major gas field. ~1.7 tcm reserves. One of Turkmenistan's oldest producing gas fields. Historically fed Soviet pipeline system.",
+   "geo": null
+  },
+  {
+   "id": "karabogaz-gas-fields-gas",
+   "name": "Karabogaz Gas Fields",
+   "commodity": "gas",
+   "coords": [
+    42,
+    53
+   ],
+   "size": 9,
+   "details": "Turkmenistan (Caspian coast). Multiple gas fields in western Turkmenistan. Feed domestic and potential trans-Caspian exports.",
+   "geo": null
+  },
+  {
+   "id": "shah-deniz-gas",
+   "name": "Shah Deniz",
+   "commodity": "gas",
+   "coords": [
+    41.5,
+    50
+   ],
+   "size": 12,
+   "details": "Azerbaijan (offshore Caspian). ~1.2 tcm reserves. BP-operated. Anchor supply for Southern Gas Corridor (SCP → TANAP → TAP). Phase 2 added ~16 bcm/yr capacity.",
+   "geo": "The anchor field for Europe's most important gas diversification project. BP's operatorship (with SOCAR, TPAO, Petronas, Lukoil, and NICO as partners) makes this a multinational strategic asset. Shah Deniz Phase 2's Final Investment Decision in 2013 was a milestone — it committed the gas to Europe rather than to Russia, which had lobbied hard to buy the volumes. The field gives Azerbaijan leverage in EU diplomacy that far exceeds its size, and ensures Baku's Western alignment has a durable commercial foundation."
+  },
+  {
+   "id": "karachaganak-gas",
+   "name": "Karachaganak",
+   "commodity": "gas",
+   "coords": [
+    44.5,
+    50.5
+   ],
+   "size": 11,
+   "details": "Kazakhstan. Giant gas-condensate field. ~16 bcm/yr gas + 300K bpd condensate/oil. Shell/Eni-operated. Feeds Orenburg processing plant in Russia.",
+   "geo": null
+  },
+  {
+   "id": "bovanenkovo-gas",
+   "name": "Bovanenkovo",
+   "commodity": "gas",
+   "coords": [
+    71,
+    72
+   ],
+   "size": 16,
+   "details": "Russia (Yamal Peninsula). ~4.9 tcm reserves. Gazprom's flagship Arctic gas development. ~115 bcm/yr capacity. Feeds Yamal-Europe pipeline. Extreme Arctic conditions.",
+   "geo": "Developed at enormous cost in extreme Arctic conditions (permafrost, -50°C winters, no existing infrastructure). Bovanenkovo represents Gazprom's bet that European gas demand would continue growing — a bet that has been disrupted by sanctions and Europe's accelerated energy transition. The field now faces the question of where its gas goes if European pipeline markets remain closed. Potential outlets include LNG (though Gazprom lacks Novatek's LNG expertise) or new pipelines to China (Power of Siberia 2 negotiations)."
+  },
+  {
+   "id": "urengoy-gas",
+   "name": "Urengoy",
+   "commodity": "gas",
+   "coords": [
+    66.5,
+    78
+   ],
+   "size": 17,
+   "details": "Russia (West Siberia). One of world's largest gas fields. ~10 tcm original reserves. Discovered 1966. Heart of Soviet/Russian gas industry. Feeds Brotherhood pipeline system.",
+   "geo": "Urengoy's development in the 1970s was the foundation of the Soviet-European gas trade that persisted for 50 years. The Reagan administration tried to block European participation in Urengoy pipeline construction (1982 sanctions on Dresser Industries), but failed — Europe chose energy supply over alliance solidarity. The field's declining output parallels the broader maturation of West Siberian production that has driven Russia's need for new frontier developments."
+  },
+  {
+   "id": "yamburg-gas",
+   "name": "Yamburg",
+   "commodity": "gas",
+   "coords": [
+    68,
+    75.5
+   ],
+   "size": 14,
+   "details": "Russia (West Siberia). ~5.2 tcm original reserves. Discovered 1969. Gazprom's second-largest producing field. ~170+ bcm/yr.",
+   "geo": null
+  },
+  {
+   "id": "zapolyarnoye-gas",
+   "name": "Zapolyarnoye",
+   "commodity": "gas",
+   "coords": [
+    67,
+    73
+   ],
+   "size": 12,
+   "details": "Russia (West Siberia). ~3.5 tcm reserves. Discovered 1965. ~130 bcm/yr. Gazprom-operated. Key source for Russian pipeline gas.",
+   "geo": null
+  },
+  {
+   "id": "medvezhye-gas",
+   "name": "Medvezhye",
+   "commodity": "gas",
+   "coords": [
+    68,
+    72.5
+   ],
+   "size": 11,
+   "details": "Russia (West Siberia). ~2.3 tcm original reserves. One of the earliest giant Siberian gas fields developed. Declining but still producing.",
+   "geo": null
+  },
+  {
+   "id": "chayandinskoye-gas",
+   "name": "Chayandinskoye",
+   "commodity": "gas",
+   "coords": [
+    62,
+    130
+   ],
+   "size": 12,
+   "details": "Russia (Yakutia). ~1.2 tcm gas + oil/condensate. Gazprom. Anchor field for Power of Siberia pipeline to China. Production ramping up.",
+   "geo": null
+  },
+  {
+   "id": "kovyktinskoye-gas",
+   "name": "Kovyktinskoye",
+   "commodity": "gas",
+   "coords": [
+    63.5,
+    143
+   ],
+   "size": 12,
+   "details": "Russia (Irkutsk). ~1.8 tcm reserves. Second anchor for Power of Siberia. Connected to pipeline 2022. Gazprom-operated. Helium-rich.",
+   "geo": null
+  },
+  {
+   "id": "yamal-lng-arctic-lng-2-zone-gas",
+   "name": "Yamal LNG / Arctic LNG-2 Zone",
+   "commodity": "gas",
+   "coords": [
+    71.5,
+    68.5
+   ],
+   "size": 14,
+   "details": "Russia (Yamal/Gydan Peninsulas). Novatek-led LNG projects. Yamal LNG: ~16.5 MTPA (Sabetta port). Arctic LNG-2: ~19.8 MTPA (under sanctions pressure). South Tambey field.",
+   "geo": "Novatek's LNG projects represent Russia's only globally competitive LNG capability. Yamal LNG was built with significant Chinese financing, French technology (TotalEnergies), and Japanese engineering. Arctic LNG-2, however, has been severely impacted by US/EU sanctions — Western contractors withdrew, and specialized ice-class LNG carriers cannot be sourced. China's CNOOC and CNPC hold stakes. The projects use the Northern Sea Route (Arctic shipping lane) which Russia is developing as a strategic alternative to the Suez Canal, linking Asian and European markets across its northern coast."
+  },
+  {
+   "id": "zohr-gas",
+   "name": "Zohr",
+   "commodity": "gas",
+   "coords": [
+    31.5,
+    32.5
+   ],
+   "size": 13,
+   "details": "Egypt (offshore Mediterranean). ~850 bcm reserves. Largest gas discovery in Mediterranean. ENI-operated. Discovered 2015. ~28+ bcm/yr. Transformed Egypt from gas importer to potential exporter.",
+   "geo": "Zohr's discovery by Italy's ENI transformed Egypt's energy calculus. Cairo went from being a net gas importer (requiring expensive LNG cargoes) to approaching self-sufficiency and restarting its idled LNG export plants at Idku and Damietta. Egypt now positions itself as a regional gas hub, receiving Israeli and potentially Cypriot gas for re-export as LNG to Europe — giving Cairo a new source of strategic relevance post-Arab Spring. The field also deepened Italy-Egypt ties; ENI's role survived the diplomatic crisis over the 2016 murder of Italian researcher Giulio Regeni."
+  },
+  {
+   "id": "leviathan-gas",
+   "name": "Leviathan",
+   "commodity": "gas",
+   "coords": [
+    32,
+    34.5
+   ],
+   "size": 11,
+   "details": "Israel (offshore Mediterranean). ~605 bcm reserves. Chevron-operated (acquired Noble Energy). ~12 bcm/yr. Exports to Egypt and Jordan. Discovered 2010.",
+   "geo": "Leviathan transformed Israel from an energy-dependent state into a gas exporter, fundamentally altering its regional relationships. Gas exports to Egypt and Jordan created the first significant commercial ties between Israel and Arab states — predating and arguably enabling the Abraham Accords (2020). Chevron's operatorship (via its Noble Energy acquisition) gives the US major direct commercial interest in Eastern Mediterranean stability. Gas export revenues reduce Israel's current account deficit and provide diplomatic leverage. The Israel-Gaza war has raised security concerns about offshore platforms, and Hezbollah has threatened to target energy infrastructure."
+  },
+  {
+   "id": "tamar-gas",
+   "name": "Tamar",
+   "commodity": "gas",
+   "coords": [
+    32.5,
+    34
+   ],
+   "size": 10,
+   "details": "Israel (offshore Mediterranean). ~300 bcm reserves. Chevron-operated. ~10.5 bcm/yr. Israel's primary domestic gas source. Discovered 2009.",
+   "geo": null
+  },
+  {
+   "id": "aphrodite-gas",
+   "name": "Aphrodite",
+   "commodity": "gas",
+   "coords": [
+    34.5,
+    32.5
+   ],
+   "size": 9,
+   "details": "Cyprus (offshore). ~140 bcm reserves. Discovered 2011. Development stalled by Turkey-Cyprus tensions. Potential tie-in to Egypt LNG infrastructure.",
+   "geo": "Aphrodite's development is hostage to the unresolved Cyprus division. Turkey, which does not recognize the Republic of Cyprus, disputes its right to exploit offshore resources without including the Turkish Cypriot community. Ankara has sent drilling ships and naval escorts into disputed Cypriot waters. The EU has issued sanctions warnings but taken limited action. If developed, the most likely export route would be a subsea pipeline to Egypt's LNG plants — avoiding a direct pipeline to Europe that would cross Turkish-claimed waters."
+  },
+  {
+   "id": "kangan-nar-dalan-gas",
+   "name": "Kangan / Nar / Dalan",
+   "commodity": "gas",
+   "coords": [
+    33,
+    52.5
+   ],
+   "size": 10,
+   "details": "Iran (onshore Fars). Major gas-producing complex feeding South Iran gas pipelines. ~20+ bcm/yr combined. Key domestic supply source.",
+   "geo": null
+  },
+  {
+   "id": "assaluyeh-complex-fields-gas",
+   "name": "Assaluyeh Complex Fields",
+   "commodity": "gas",
+   "coords": [
+    28.5,
+    52
+   ],
+   "size": 10,
+   "details": "Iran (Bushehr). Onshore processing hub for South Pars gas. Multiple gathering fields. ~10 bcm/yr. Also major petrochemical feedstock.",
+   "geo": null
+  },
+  {
+   "id": "natuna-d-alpha-gas",
+   "name": "Natuna D-Alpha",
+   "commodity": "gas",
+   "coords": [
+    6,
+    106.5
+   ],
+   "size": 11,
+   "details": "Indonesia (South China Sea). ~1.3 tcm reserves but extremely high CO₂ content (~71%). Technically challenging. Contested waters. Under slow development.",
+   "geo": "Located in waters that overlap with China's \"nine-dash line\" claim. Chinese coast guard and fishing militia vessels regularly enter what Indonesia considers its exclusive economic zone around Natuna. Jakarta renamed the area the \"North Natuna Sea\" in 2017 to assert sovereignty. The field's extreme CO₂ content (requiring expensive carbon sequestration) combined with sovereignty risks have deterred investment — making it a case where geological and geopolitical challenges compound to strand significant reserves."
+  },
+  {
+   "id": "malaysia-offshore-gas-fields-gas",
+   "name": "Malaysia Offshore Gas Fields",
+   "commodity": "gas",
+   "coords": [
+    5,
+    108
+   ],
+   "size": 12,
+   "details": "Malaysia (Sarawak/Sabah offshore). Multiple giant fields (Jintan, Helang, Kebabangan). Combined ~30+ bcm/yr. Feed Bintulu LNG and Petronas FLNG.",
+   "geo": null
+  },
+  {
+   "id": "yacheng-lingshui-gas",
+   "name": "Yacheng / Lingshui",
+   "commodity": "gas",
+   "coords": [
+    20,
+    109
+   ],
+   "size": 10,
+   "details": "China (South China Sea). CNOOC-operated. ~10+ bcm/yr combined. Feeds Hainan and mainland via subsea pipeline. Strategic deepwater development zone.",
+   "geo": "China's deepwater gas development in the South China Sea serves both energy and sovereignty objectives — operating rigs and subsea infrastructure reinforces Beijing's territorial claims. CNOOC's ultra-deepwater capabilities have advanced rapidly, reducing dependence on Western drilling technology. The Lingshui fields represent China's ability to develop resources in contested waters unilaterally, a precedent that concerns Vietnam, the Philippines, and Malaysia, all of which have overlapping claims."
+  },
+  {
+   "id": "sulige-gas",
+   "name": "Sulige",
+   "commodity": "gas",
+   "coords": [
+    38,
+    118
+   ],
+   "size": 13,
+   "details": "China (Ordos Basin). China's largest gas field. ~30+ bcm/yr. PetroChina. Tight gas development at scale. Discovered 2000.",
+   "geo": null
+  },
+  {
+   "id": "permian-basin",
+   "name": "Permian Basin",
+   "commodity": "oil",
+   "coords": [
+    31.9,
+    -102.3
+   ],
+   "size": 20,
+   "details": "West Texas / New Mexico, USA. World's most productive oil basin, ~6+ million bpd of crude plus large associated gas output. Driven by shale (horizontal drilling and fracking).",
+   "geo": "The Permian shale boom made the US the world's largest oil producer and shifted global market power away from OPEC. US crude exports, legal again since 2015, now reach Europe and Asia. Shale's quick response to prices makes it a de facto swing supplier, though consolidation and investor discipline have slowed its response to price spikes. Permian associated gas also feeds Gulf Coast LNG export terminals."
+  },
+  {
+   "id": "haynesville-gas",
+   "name": "Haynesville Shale",
+   "commodity": "gas",
+   "coords": [
+    32.3,
+    -93.7
+   ],
+   "size": 13,
+   "details": "Louisiana / East Texas, USA. ~15+ bcf/d of gas. Located next to the Gulf Coast LNG export terminals, it is the main feedgas source for new US LNG capacity.",
+   "geo": null
+  },
+  {
+   "id": "marcellus-gas",
+   "name": "Marcellus / Utica Shale",
+   "commodity": "gas",
+   "coords": [
+    41.3,
+    -77.0
+   ],
+   "size": 15,
+   "details": "Pennsylvania / West Virginia / Ohio, USA. Largest US gas-producing region, ~35 bcf/d. Pipeline limits mean most of its gas serves domestic demand rather than LNG exports.",
+   "geo": null
+  },
+  {
+   "id": "gulf-of-mexico-offshore",
+   "name": "US Gulf Deepwater",
+   "commodity": "oil",
+   "coords": [
+    27.5,
+    -90.5
+   ],
+   "size": 14,
+   "details": "Offshore Louisiana/Texas. ~1.8 million bpd from deepwater platforms (Mars, Thunder Horse, Atlantis and others). Exposed to hurricanes.",
+   "geo": null
+  },
+  {
+   "id": "athabasca-oil-sands",
+   "name": "Alberta Oil Sands",
+   "commodity": "oil",
+   "coords": [
+    57.0,
+    -111.5
+   ],
+   "size": 17,
+   "details": "Canada (Athabasca, Cold Lake, Peace River). ~3.5 million bpd of bitumen and synthetic crude. Third-largest proven reserves globally (~165 bn bbl). Exported via Enbridge Mainline, Keystone and TMX.",
+   "geo": "Canada supplies ~60% of US crude imports, nearly all of it from the oil sands. That dependence runs both ways — Alberta historically had no alternative buyer — which is why the TMX expansion to the Pacific coast became a matter of national sovereignty for Ottawa, especially after the 2025 tariff disputes with Washington."
+  },
+  {
+   "id": "orinoco-belt",
+   "name": "Orinoco Belt",
+   "commodity": "oil",
+   "coords": [
+    8.5,
+    -64.0
+   ],
+   "size": 16,
+   "details": "Venezuela. World's largest oil reserves (~300 bn bbl of extra-heavy crude). Venezuela's output fell from ~3 million bpd (late 1990s) to under 1 million bpd, due to underinvestment, mismanagement and US sanctions.",
+   "geo": "Venezuela holds the world's largest proven reserves but produces a fraction of its potential. US sanctions (2017–19) cut PDVSA off from US markets and diluent supplies; China became the main buyer through intermediaries. Chevron's US Treasury license has been granted, restricted and modified repeatedly as Washington's Venezuela policy changed. Any lasting political change in Caracas could reopen one of the few places able to add large volumes of heavy crude."
+  },
+  {
+   "id": "stabroek",
+   "name": "Stabroek Block (Guyana)",
+   "commodity": "oil",
+   "coords": [
+    8.0,
+    -56.9
+   ],
+   "size": 13,
+   "details": "Guyana (offshore). ExxonMobil (45%, operator), Chevron (30%, via its 2025 acquisition of Hess), CNOOC (25%). ~900,000 bpd capacity from four FPSOs by late 2025; >11 bn bbl discovered. The fastest-growing oil province outside the Middle East.",
+   "geo": "Guyana went from zero to one of the world's highest per-capita oil producers in five years. Venezuela claims the Essequibo region (two-thirds of Guyana's territory) and held a referendum on annexing it in 2023. The Stabroek shares that Chevron won in arbitration against ExxonMobil in 2025 give two US majors and a Chinese state firm a stake in keeping the region stable."
+  },
+  {
+   "id": "santos-presal",
+   "name": "Santos Basin Pre-Salt (Brazil)",
+   "commodity": "oil",
+   "coords": [
+    -25.0,
+    -43.0
+   ],
+   "size": 16,
+   "details": "Brazil (offshore). Petrobras-led, including Búzios, Tupi and Mero. Pre-salt is ~75–80% of Brazil's ~3.5+ million bpd output. Brazil is now a top-10 global producer and a major crude exporter to China.",
+   "geo": "Pre-salt made Brazil a swing exporter outside OPEC+ (it joined the OPEC+ Charter of Cooperation in 2025 without production quotas). Its output depends on no chokepoint: cargoes sail directly to China, Europe and the US, making Brazil a strategic hedge for importers exposed to Hormuz."
+  },
+  {
+   "id": "vaca-muerta",
+   "name": "Vaca Muerta (Argentina)",
+   "commodity": "oil",
+   "coords": [
+    -38.5,
+    -69.0
+   ],
+   "size": 12,
+   "details": "Argentina (Neuquén). Shale oil and gas; oil output passed ~400,000 bpd in 2024–25 and is growing fast. New export pipelines to the Atlantic coast underway.",
+   "geo": null
+  }
+ ],
+ "routes": [
+  {
+   "id": "gulf-asia",
+   "name": "Persian Gulf → Asia (tanker route)",
+   "commodity": "oil",
+   "coords": [
+    [
+     26.5,
+     56.5
+    ],
+    [
+     22.0,
+     65.0
+    ],
+    [
+     15.0,
+     75.0
+    ],
+    [
+     5.0,
+     90.0
+    ],
+    [
+     1.3,
+     104.0
+    ]
+   ],
+   "via": [
+    "strait-of-hormuz",
+    "strait-of-malacca"
+   ],
+   "volume_mbd": 14.5,
+   "alternative": false
+  },
+  {
+   "id": "gulf-europe-suez",
+   "name": "Persian Gulf → Europe via Suez (tanker route)",
+   "commodity": "oil",
+   "coords": [
+    [
+     26.5,
+     56.5
+    ],
+    [
+     20.0,
+     60.0
+    ],
+    [
+     12.6,
+     43.3
+    ],
+    [
+     30.0,
+     32.5
+    ],
+    [
+     35.0,
+     20.0
+    ],
+    [
+     37.0,
+     5.0
+    ]
+   ],
+   "via": [
+    "strait-of-hormuz",
+    "bab-el-mandeb",
+    "suez-canal"
+   ],
+   "volume_mbd": 2.0,
+   "alternative": false
+  },
+  {
+   "id": "qatar-lng-asia",
+   "name": "Qatar LNG → Asia",
+   "commodity": "lng",
+   "coords": [
+    [
+     25.9,
+     51.6
+    ],
+    [
+     26.5,
+     56.5
+    ],
+    [
+     22.0,
+     65.0
+    ],
+    [
+     15.0,
+     75.0
+    ],
+    [
+     5.0,
+     90.0
+    ],
+    [
+     1.3,
+     104.0
+    ],
+    [
+     10.0,
+     112.0
+    ],
+    [
+     22.0,
+     117.0
+    ],
+    [
+     31.0,
+     122.0
+    ]
+   ],
+   "via": [
+    "strait-of-hormuz",
+    "strait-of-malacca"
+   ],
+   "alternative": false
+  },
+  {
+   "id": "qatar-lng-europe",
+   "name": "Qatar LNG → Europe via Suez",
+   "commodity": "lng",
+   "coords": [
+    [
+     25.9,
+     51.6
+    ],
+    [
+     26.5,
+     56.5
+    ],
+    [
+     20.0,
+     60.0
+    ],
+    [
+     12.6,
+     43.3
+    ],
+    [
+     27.0,
+     34.0
+    ],
+    [
+     30.0,
+     32.5
+    ],
+    [
+     33.0,
+     28.0
+    ],
+    [
+     36.0,
+     15.0
+    ],
+    [
+     37.0,
+     5.0
+    ],
+    [
+     36.0,
+     -6.0
+    ],
+    [
+     43.0,
+     -9.5
+    ],
+    [
+     48.0,
+     -6.0
+    ],
+    [
+     51.9,
+     4.0
+    ]
+   ],
+   "via": [
+    "strait-of-hormuz",
+    "bab-el-mandeb",
+    "suez-canal"
+   ],
+   "alternative": false
+  },
+  {
+   "id": "black-sea-crude",
+   "name": "Black Sea crude (Novorossiysk / CPC) → Mediterranean",
+   "commodity": "oil",
+   "coords": [
+    [
+     44.6,
+     37.8
+    ],
+    [
+     43.0,
+     33.0
+    ],
+    [
+     41.2,
+     29.1
+    ],
+    [
+     40.2,
+     26.4
+    ],
+    [
+     38.0,
+     25.0
+    ],
+    [
+     36.0,
+     20.0
+    ]
+   ],
+   "via": [
+    "turkish-straits"
+   ],
+   "volume_mbd": 2.2,
+   "alternative": false
+  },
+  {
+   "id": "us-lng-europe",
+   "name": "US Gulf LNG → Europe",
+   "commodity": "lng",
+   "coords": [
+    [
+     29.7,
+     -93.9
+    ],
+    [
+     25.5,
+     -86.0
+    ],
+    [
+     23.8,
+     -82.0
+    ],
+    [
+     25.5,
+     -79.5
+    ],
+    [
+     32.0,
+     -70.0
+    ],
+    [
+     42.0,
+     -45.0
+    ],
+    [
+     48.0,
+     -15.0
+    ],
+    [
+     50.0,
+     -3.0
+    ],
+    [
+     51.9,
+     4.0
+    ]
+   ],
+   "via": [],
+   "alternative": false
+  },
+  {
+   "id": "us-lng-asia-panama",
+   "name": "US Gulf LNG → Asia via Panama",
+   "commodity": "lng",
+   "coords": [
+    [
+     29.7,
+     -93.9
+    ],
+    [
+     25.0,
+     -88.0
+    ],
+    [
+     21.0,
+     -86.0
+    ],
+    [
+     15.0,
+     -81.0
+    ],
+    [
+     9.3,
+     -79.9
+    ],
+    [
+     8.9,
+     -79.5
+    ],
+    [
+     7.0,
+     -82.0
+    ],
+    [
+     15.0,
+     -110.0
+    ],
+    [
+     25.0,
+     -140.0
+    ],
+    [
+     30.0,
+     -165.0
+    ]
+   ],
+   "via": [
+    "panama-canal"
+   ],
+   "note": "Continues across the Pacific to Japan, Korea, China",
+   "alternative": false
+  },
+  {
+   "id": "us-lng-asia-cape",
+   "name": "US Gulf LNG → Asia via Cape of Good Hope",
+   "commodity": "lng",
+   "coords": [
+    [
+     29.7,
+     -93.9
+    ],
+    [
+     23.8,
+     -82.0
+    ],
+    [
+     20.0,
+     -60.0
+    ],
+    [
+     0.0,
+     -25.0
+    ],
+    [
+     -20.0,
+     0.0
+    ],
+    [
+     -35.5,
+     19.0
+    ],
+    [
+     -30.0,
+     40.0
+    ],
+    [
+     -10.0,
+     65.0
+    ],
+    [
+     0.0,
+     85.0
+    ],
+    [
+     1.3,
+     104.0
+    ]
+   ],
+   "via": [
+    "cape-of-good-hope",
+    "strait-of-malacca"
+   ],
+   "alternative": true
+  },
+  {
+   "id": "asia-europe-cape",
+   "name": "Asia/Gulf → Europe via Cape of Good Hope (diversion route)",
+   "commodity": "oil",
+   "coords": [
+    [
+     1.3,
+     104.0
+    ],
+    [
+     -5.0,
+     80.0
+    ],
+    [
+     -25.0,
+     50.0
+    ],
+    [
+     -35.5,
+     19.0
+    ],
+    [
+     -20.0,
+     5.0
+    ],
+    [
+     5.0,
+     -15.0
+    ],
+    [
+     20.0,
+     -20.0
+    ],
+    [
+     36.0,
+     -10.0
+    ],
+    [
+     43.0,
+     -9.0
+    ],
+    [
+     48.0,
+     -6.0
+    ],
+    [
+     51.9,
+     4.0
+    ]
+   ],
+   "via": [
+    "cape-of-good-hope"
+   ],
+   "alternative": true
+  },
+  {
+   "id": "us-crude-exports",
+   "name": "US Gulf crude exports → Europe",
+   "commodity": "oil",
+   "coords": [
+    [
+     27.8,
+     -97.0
+    ],
+    [
+     25.5,
+     -88.0
+    ],
+    [
+     23.8,
+     -82.0
+    ],
+    [
+     25.5,
+     -79.5
+    ],
+    [
+     33.0,
+     -65.0
+    ],
+    [
+     40.0,
+     -40.0
+    ],
+    [
+     45.0,
+     -15.0
+    ],
+    [
+     51.9,
+     4.0
+    ]
+   ],
+   "via": [],
+   "volume_mbd": 1.8,
+   "alternative": false
+  }
+ ]
+}

@@ -1,0 +1,281 @@
+{
+  "globals": {
+    "world_oil_demand_mbd": 104,
+    "iea_emergency_stocks_mb": 1200,
+    "note": "Illustrative model using pre-crisis baselines. Flows through more than one chokepoint are counted at each one, so combined totals are an upper bound.",
+    "sources": [
+      {
+        "name": "EIA — World Oil Transit Chokepoints",
+        "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+        "date": "2024"
+      },
+      {
+        "name": "EIA — Today in Energy: Strait of Hormuz",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=65504",
+        "date": "2025-06-16"
+      }
+    ]
+  },
+  "chokepoints": {
+    "strait-of-hormuz": {
+      "portwatch": "Strait of Hormuz",
+      "oil_mbd": 20.0,
+      "lng_share_pct": 20,
+      "reroute": "none",
+      "reroute_days": 0,
+      "bypass": [
+        {
+          "asset": "east-west-pipeline",
+          "spare_mbd": 2.0,
+          "note": "Saudi Abqaiq→Yanbu, 5 mb/d capacity (EIA). Barrels then load at Yanbu on the Red Sea, where they are exposed to Bab el-Mandeb risk."
+        },
+        {
+          "asset": "habshan-fujairah-pipeline",
+          "spare_mbd": 0.6,
+          "note": "UAE Habshan→Fujairah, ~1.5–1.8 mb/d capacity, loads outside the strait."
+        },
+        {
+          "asset": "kirkuk-ceyhan-pipeline",
+          "spare_mbd": null,
+          "note": "Iraq→Turkey, ~1.6 mb/d nameplate but largely idle since 2023; usable volume depends on repairs and Baghdad–Erbil–Ankara politics. Not counted."
+        }
+      ],
+      "bypass_note": "EIA estimates ~2.6 mb/d of Saudi (East-West, 5 mb/d) and UAE (Habshan–Fujairah) pipeline capacity could bypass Hormuz; the split shown is approximate. Kuwait, Qatar, Bahrain and Iraq's Basra exports, and all Gulf LNG (~one-fifth of global LNG trade), have no bypass. 84% of Hormuz crude and 83% of its LNG went to Asia in 2024.",
+      "stranded": [
+        "kharg-island",
+        "ras-tanura-terminal",
+        "mina-al-ahmadi",
+        "ras-laffan-lng",
+        "ras-tanura-refinery",
+        "ruwais-refinery",
+        "jubail-industrial-complex",
+        "jebel-ali-dubai",
+        "burgan-oil",
+        "rumaila-oil",
+        "west-qurna-1-2-oil",
+        "majnoon-oil",
+        "zakum-oil",
+        "safaniyah-oil",
+        "khafji-oil",
+        "north-field-south-pars-gas",
+        "dome-gas",
+        "ahvaz-oil",
+        "marun-oil",
+        "aghajari-oil"
+      ],
+      "exposed": [
+        {
+          "country": "China",
+          "note": "Top destination for Hormuz crude. China, India, Japan and South Korea together took 69% of Hormuz crude and condensate in 2024 (EIA)."
+        },
+        {
+          "country": "India",
+          "note": "~half of crude imports and most LPG/LNG imports come from the Gulf."
+        },
+        {
+          "country": "Japan",
+          "note": "~90%+ of crude imports from the Middle East."
+        },
+        {
+          "country": "South Korea",
+          "note": "~70% of crude imports from the Middle East; major Qatari LNG buyer."
+        },
+        {
+          "country": "Europe",
+          "note": "Qatari LNG and Middle East diesel/jet fuel; indirect exposure through global prices."
+        }
+      ],
+      "sources": [
+        {
+          "name": "EIA — Today in Energy: Amid regional conflict, the Strait of Hormuz remains critical",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=65504",
+          "date": "2025-06-16"
+        }
+      ]
+    },
+    "bab-el-mandeb": {
+      "portwatch": "Bab el-Mandeb Strait",
+      "oil_mbd": 8.7,
+      "lng_share_pct": 8,
+      "reroute": "cape",
+      "reroute_days": 12,
+      "bypass": [],
+      "bypass_note": "No pipeline bypass. Traffic reroutes around the Cape of Good Hope. The 8.7 mb/d baseline is 1H 2023, before the Houthi campaign; flows fell to ~4 mb/d in 2024.",
+      "stranded": [
+        "yanbu-terminal",
+        "djibouti"
+      ],
+      "exposed": [
+        {
+          "country": "Europe",
+          "note": "Middle East crude, diesel and jet fuel via Suez; longer voyages raise delivered costs."
+        },
+        {
+          "country": "Egypt",
+          "note": "Suez Canal and SUMED revenues collapse when traffic diverts."
+        },
+        {
+          "country": "Saudi Arabia",
+          "note": "Yanbu exports (the Hormuz bypass outlet) sit inside the Red Sea."
+        }
+      ],
+      "sources": [
+        {
+          "name": "EIA — Red Sea chokepoints",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=61025",
+          "date": "2023-12-04"
+        },
+        {
+          "name": "EIA — Red Sea disruptions increase oil flows around Cape of Good Hope",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=62263",
+          "date": "2024"
+        }
+      ]
+    },
+    "suez-canal": {
+      "portwatch": "Suez Canal",
+      "oil_mbd": 7.5,
+      "lng_share_pct": 8,
+      "reroute": "cape",
+      "reroute_days": 12,
+      "bypass": [
+        {
+          "asset": "sumed-pipeline",
+          "spare_mbd": 1.0,
+          "note": "Ain Sukhna→Sidi Kerir, ~2.5 mb/d capacity. Only helps if tankers can still reach the Red Sea side."
+        }
+      ],
+      "bypass_note": "Baseline is Suez Canal + SUMED combined flow, 1H 2023.",
+      "stranded": [
+        "sidi-kerir-terminal"
+      ],
+      "exposed": [
+        {
+          "country": "Europe",
+          "note": "Main route for Gulf and Asian oil products and LNG into the Mediterranean and NW Europe."
+        },
+        {
+          "country": "Egypt",
+          "note": "Canal fees are one of the state's largest sources of foreign currency."
+        }
+      ],
+      "sources": [
+        {
+          "name": "EIA — Red Sea chokepoints",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=61025",
+          "date": "2023-12-04"
+        }
+      ]
+    },
+    "turkish-straits": {
+      "portwatch": "Bosporus Strait",
+      "oil_mbd": 3.4,
+      "lng_share_pct": 0,
+      "reroute": "none",
+      "reroute_days": 0,
+      "bypass": [],
+      "bypass_note": "The Black Sea has no other exit. BTC (Azerbaijan→Ceyhan) is unaffected because it loads on the Mediterranean.",
+      "stranded": [
+        "novorossiysk",
+        "cpc-pipeline",
+        "tengiz-oil",
+        "kashagan-oil"
+      ],
+      "exposed": [
+        {
+          "country": "Kazakhstan",
+          "note": "CPC carries ~80% of Kazakh crude exports to Novorossiysk."
+        },
+        {
+          "country": "Russia",
+          "note": "Black Sea crude and product exports."
+        },
+        {
+          "country": "Mediterranean refiners",
+          "note": "Italy, Greece, Spain and Turkey rely on CPC Blend and Black Sea barrels."
+        }
+      ],
+      "sources": [
+        {
+          "name": "EIA — World Oil Transit Chokepoints",
+          "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+          "date": "2024"
+        }
+      ]
+    },
+    "strait-of-malacca": {
+      "portwatch": "Malacca Strait",
+      "oil_mbd": 23.7,
+      "lng_share_pct": 25,
+      "reroute": "lombok",
+      "reroute_days": 3,
+      "bypass": [],
+      "bypass_note": "Ships can divert via the Lombok/Makassar or Sunda straits at the cost of ~2–3 extra days. China's overland pipelines (Central Asia, Russia, Myanmar) cover only a small share of its imports.",
+      "stranded": [
+        "singapore",
+        "jurong-island-refining-complex"
+      ],
+      "exposed": [
+        {
+          "country": "China",
+          "note": "~80% of oil imports (\"Malacca Dilemma\")."
+        },
+        {
+          "country": "Japan",
+          "note": "Nearly all Gulf crude and LNG passes Malacca or nearby straits."
+        },
+        {
+          "country": "South Korea",
+          "note": "Same exposure as Japan."
+        },
+        {
+          "country": "Taiwan",
+          "note": "Almost entirely dependent on seaborne energy imports."
+        }
+      ],
+      "sources": [
+        {
+          "name": "EIA — World Oil Transit Chokepoints",
+          "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+          "date": "2024"
+        }
+      ]
+    },
+    "panama-canal": {
+      "portwatch": "Panama Canal",
+      "oil_mbd": 0.9,
+      "lng_share_pct": 4,
+      "reroute": "cape",
+      "reroute_days": 14,
+      "bypass": [],
+      "bypass_note": "US Gulf LNG to Asia diverts via the Cape of Good Hope or Cape Horn, adding ~2 weeks. That ties up LNG carrier capacity and raises Asian spot prices. Oil figure is approximate.",
+      "stranded": [],
+      "exposed": [
+        {
+          "country": "Japan / Korea / China",
+          "note": "US LNG and LPG cargoes to Northeast Asia."
+        },
+        {
+          "country": "US LNG exporters",
+          "note": "Longer voyages make Asian sales less competitive; more cargoes default to Europe."
+        },
+        {
+          "country": "West coast of South America",
+          "note": "Refined product imports from the US Gulf Coast."
+        }
+      ],
+      "sources": [
+        {
+          "name": "EIA — Drought at the Panama Canal delays energy shipments",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=60842",
+          "date": "2023"
+        },
+        {
+          "name": "EIA — Panama Canal traffic to increase as drought conditions ease",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=62408",
+          "date": "2024"
+        }
+      ]
+    }
+  }
+}

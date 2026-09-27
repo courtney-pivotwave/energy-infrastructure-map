@@ -86,6 +86,39 @@
    ]
   },
   {
+   "id": "2026-09-25-kpler-hormuz-crude-flows",
+   "date": "2026-09-25",
+   "title": "Independent ship-tracking shows Hormuz crude flows at a fraction of pre-war levels",
+   "summary": "Preliminary Kpler data showed 33.7 million barrels of crude leaving the Strait of Hormuz in the week starting 20 September, against roughly 105 million barrels a week before the war (about 15 mb/d of crude in 2025, per IEA analysis of Kpler data). Many tankers now transit with transponders off, so AIS-based counts are partial. US officials have publicly claimed far higher flows; those claims are not independently corroborated and are not used on this map.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war (Kpler data)",
+     "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "IEA — Strait of Hormuz Factsheet (Feb 2026, based on Kpler)",
+     "url": "https://iea.blob.core.windows.net/assets/c8248eba-8689-46d9-ae4b-b858b59c0f1c/StraitofHormuz2026-Factsheet.pdf",
+     "date": "2026-02"
+    },
+    {
+     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
+     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
+     "date": "2026-09-27"
+    }
+   ]
+  },
+  {
    "id": "2026-09-24-france-air-defence-yanbu",
    "date": "2026-09-24",
    "title": "France to deploy troops, radars and air defences to protect Yanbu",
@@ -266,34 +299,6 @@
    ]
   },
   {
-   "id": "2026-09-19-us-claims-hormuz-flows",
-   "date": "2026-09-19",
-   "title": "US officials claim large crude flows via Hormuz; independent counts far lower",
-   "summary": "CENTCOM said on 19 September over one billion barrels had moved out of the Gulf in roughly two months and Energy Secretary Wright cited a ~13 mb/d running average of crude transits. Reuters-cited data showed 33.7 million barrels of crude flows in the week from 20 September (~4.8 mb/d), and AIS-based vessel counts remain far below the pre-war ~100 ships/day; many tankers transit with transponders off.",
-   "category": "shipping",
-   "severity": "medium",
-   "coords": [
-    26.57,
-    56.25
-   ],
-   "assets": [
-    "strait-of-hormuz"
-   ],
-   "confidence": "unverified",
-   "sources": [
-    {
-     "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
-     "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
-     "date": "2026-09-27"
-    },
-    {
-     "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war",
-     "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
-     "date": "2026-09-25"
-    }
-   ]
-  },
-  {
    "id": "2026-09-15-ttf-annual-high-storage-low",
    "date": "2026-09-15",
    "title": "TTF hits 2026 high near €84/MWh as EU storage lags at ~68%",
@@ -408,28 +413,6 @@
      "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
      "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
      "date": "2026-09-25"
-    }
-   ]
-  },
-  {
-   "id": "2026-09-09-eia-steo-shut-ins",
-   "date": "2026-09-09",
-   "title": "EIA: Gulf crude shut-ins averaged 6.7 mb/d in August; constraints seen through Q4",
-   "summary": "EIA's September STEO estimated Middle East crude shut-ins at 6.7 mb/d in August (from 5.0 mb/d in July), assumed 5.7 mb/d shut in during Q4 2026, and said Yanbu exports were down by about half from July. It forecast Brent near $90/b in 2H26 and expects most flows to return to pre-conflict levels by 2Q27 (forecast).",
-   "category": "market",
-   "severity": "high",
-   "coords": null,
-   "assets": [
-    "strait-of-hormuz",
-    "bab-el-mandeb",
-    "yanbu-terminal"
-   ],
-   "confidence": "confirmed",
-   "sources": [
-    {
-     "name": "EIA Short-Term Energy Outlook — Global oil markets (September 2026)",
-     "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
-     "date": "2026-09-09"
     }
    ]
   },
@@ -550,7 +533,7 @@
    "id": "2026-09-01-us-strikes-iran-radars",
    "date": "2026-09-01",
    "title": "US strikes Iranian radars and mine-laying sites after new tanker attacks",
-   "summary": "CENTCOM struck Iranian radars, air defences, maritime and mine-laying assets on 30 Aug-1 Sep after projectiles hit tankers including the VLCC Senegal Prosperity on 30-31 August; Iran retaliated against US and allied bases. US officials said escorted transits on a southern route had restored shipping to about half of pre-war levels, a figure not borne out by AIS-based counts.",
+   "summary": "After projectiles hit tankers including the VLCC Senegal Prosperity on 30–31 August, US forces struck Iranian radars, air defences, maritime and mine-laying sites on 30 August–1 September (per CENTCOM, reported by CTP-ISW); Iran retaliated against US and allied bases.",
    "category": "military",
    "severity": "high",
    "coords": [
@@ -597,8 +580,8 @@
   {
    "id": "2026-08-25-hormuz-mines-cleared-claim",
    "date": "2026-08-25",
-   "title": "Trump says Navy cleared all mines from Hormuz lanes; JMIC keeps threat 'severe'",
-   "summary": "Trump said all mines in international waters of the strait had been removed or detonated and that new minelayers would be destroyed; US officials said over 100 suspected mines had been found over preceding months. JMIC's advisory the same day warned of continued risk from drifting or uncharted mines and kept the threat level at SEVERE.",
+   "title": "JMIC keeps Hormuz mine threat 'severe' despite US clearance claim",
+   "summary": "A Joint Maritime Information Center advisory on 25 August kept the mine threat in the Strait of Hormuz at SEVERE, warning of drifting or uncharted mines. The same day President Trump claimed all mines in international waters had been cleared; that claim has not been independently verified.",
    "category": "military",
    "severity": "medium",
    "coords": [
@@ -899,7 +882,7 @@
    "id": "2026-07-14-us-reinstates-blockade",
    "date": "2026-07-14",
    "title": "US reinstates naval blockade of Iranian ports",
-   "summary": "CENTCOM confirmed the blockade of Iranian ports was reinstated on 14 July after the June truce collapsed. By late September the US said 122 commercial vessels had been redirected and all Iranian crude exports halted.",
+   "summary": "The US naval blockade of Iranian ports was reimposed on 14 July after the June truce collapsed. Independent data on how far it has cut Iranian exports is limited; US figures on vessels redirected are not used here.",
    "category": "military",
    "severity": "critical",
    "coords": [
@@ -986,7 +969,7 @@
    "id": "2026-06-25-oil-back-to-prewar",
    "date": "2026-06-25",
    "title": "Oil falls back to pre-war levels as Hormuz traffic resumes after MoU",
-   "summary": "Brent settled at $72.68 and WTI at $69.58 on 25 June, the lowest since 27 February, as Energy Secretary Wright said Hormuz flows were close to pre-war levels. Vessel data showed an average of 28 transits/day from 18 June to 5 July versus ~100 pre-war.",
+   "summary": "Brent settled at $72.68 and WTI at $69.58 on 25 June, the lowest since 27 February, as Hormuz traffic partly resumed after the 17 June MoU. Vessel data showed an average of 28 transits a day from 18 June to 5 July, against about 100 before the war.",
    "category": "market",
    "severity": "medium",
    "coords": null,
@@ -1164,7 +1147,7 @@
    "id": "2026-05-01-uae-exits-opec",
    "date": "2026-05-01",
    "title": "UAE leaves OPEC and OPEC+",
-   "summary": "The UAE's exit, announced 28 April, took effect on 1 May. EIA estimates the UAE held ~4.2 mb/d of effective crude capacity in 2025 and that OPEC+'s share of global crude output falls from ~46% to ~42% without it.",
+   "summary": "The UAE announced on 28 April that it would leave OPEC and OPEC+ from 1 May, ending 59 years of membership. It cited its national interest and its goal of 5 mb/d of production capacity by 2027.",
    "category": "policy",
    "severity": "medium",
    "coords": null,
@@ -1174,9 +1157,19 @@
    "confidence": "confirmed",
    "sources": [
     {
-     "name": "EIA Today in Energy — UAE's exit from OPEC+ reduced the group's share of crude oil production and capacity",
-     "url": "https://www.eia.gov/todayinenergy/detail.php?id=67804",
-     "date": "2026-06-23"
+     "name": "NPR — The UAE is leaving OPEC on Friday",
+     "url": "https://www.npr.org/2026/04/28/nx-s1-5802735/uae-leaves-opec-oil",
+     "date": "2026-04-28"
+    },
+    {
+     "name": "Khaleej Times — UAE announces decision to withdraw from Opec, Opec+ from May 1",
+     "url": "https://www.khaleejtimes.com/uae/uae-announces-decision-to-withdraw-from-opec-opec-from-may-1",
+     "date": "2026-04-28"
+    },
+    {
+     "name": "Al Jazeera — What are OPEC and OPEC+, and why has the UAE quit?",
+     "url": "https://www.aljazeera.com/news/2026/4/28/what-are-opec-and-opec-and-why-has-the-uae-quit",
+     "date": "2026-04-28"
     }
    ]
   },
@@ -1207,7 +1200,7 @@
    "id": "2026-04-22-golden-pass-first-cargo",
    "date": "2026-04-22",
    "title": "Golden Pass LNG ships first cargo, becoming 9th US export terminal",
-   "summary": "Golden Pass (QatarEnergy 70%, ExxonMobil 30%) shipped its first cargo on 22 April after first LNG in late March. Its three trains total 2.0 Bcf/d nominal; Train 2 is due 2H26 and Train 3 1H27.",
+   "summary": "Golden Pass LNG in Texas (QatarEnergy 70%, ExxonMobil 30%) loaded its first export cargo onto QatarEnergy's new carrier Al-Qaiyyah, weeks after first LNG production in late March. It gives Qatar LNG supply outside the Strait of Hormuz while its own plants are offline.",
    "category": "infrastructure",
    "severity": "medium",
    "coords": [
@@ -1220,9 +1213,14 @@
    "confidence": "confirmed",
    "sources": [
     {
-     "name": "EIA Today in Energy — The 9th U.S. LNG export terminal, Golden Pass, ships first cargo",
-     "url": "https://www.eia.gov/todayinenergy/detail.php?id=67564",
-     "date": "2026-04-23"
+     "name": "Energy Connects — QatarEnergy loads first LNG cargo from Golden Pass project",
+     "url": "https://www.energyconnects.com/opinion/features/2026/april/qatarenergy-loads-first-lng-cargo-from-golden-pass-project/",
+     "date": "2026-04"
+    },
+    {
+     "name": "Upstream — QatarEnergy and ExxonMobil begin LNG exports from new US facility as Qatar LNG still offline",
+     "url": "https://www.upstreamonline.com/lng/qatarenergy-and-exxonmobil-begin-lng-exports-from-new-us-facility-as-qatar-lng-still-offline/2-1-1979482",
+     "date": "2026-04"
     }
    ]
   },
@@ -1570,7 +1568,7 @@
    "id": "2026-03-11-iea-400mb-release",
    "date": "2026-03-11",
    "title": "IEA agrees record 400 mb emergency stock release; US to release 172 mb",
-   "summary": "All 32 IEA members agreed a 400 million barrel collective release, the largest ever and the sixth in IEA history; the US committed 172 million barrels from the SPR over ~120 days and Japan ~80 million barrels. The IEA has called the disruption the largest in the history of the oil market.",
+   "summary": "All 32 IEA members agreed a 400 million barrel collective stock release, the largest ever and the sixth in IEA history. The US announced a 172 million barrel contribution from its Strategic Petroleum Reserve and Japan about 80 million barrels. The IEA has called the disruption the largest in the history of the oil market.",
    "category": "policy",
    "severity": "high",
    "coords": null,
@@ -1653,7 +1651,7 @@
    "id": "2026-02-28-hormuz-closed-war-begins",
    "date": "2026-02-28",
    "title": "US-Israeli strikes on Iran; IRGC declares Strait of Hormuz closed",
-   "summary": "After US-Israeli strikes that killed Supreme Leader Ali Khamenei, the IRGC broadcast that no ship may pass the strait; by 2 March it limited passage to Iran-approved vessels. Major carriers suspended transits and war-risk premiums jumped. Pre-war, Hormuz carried ~20 mb/d of oil (about 20% of consumption) and ~20% of LNG trade. Israel shut the Leviathan and Karish gas fields as a precaution.",
+   "summary": "After US-Israeli strikes that killed Supreme Leader Ali Khamenei, the IRGC broadcast that no ship may pass the strait; by 2 March it limited passage to Iran-approved vessels. Major carriers suspended transits and war-risk premiums jumped. Before the war about 20 mb/d of oil (around a quarter of seaborne oil trade) and almost 20% of global LNG trade passed through Hormuz (IEA, based on Kpler). Israel shut the Leviathan and Karish gas fields as a precaution.",
    "category": "military",
    "severity": "critical",
    "coords": [
@@ -1695,6 +1693,11 @@
      "name": "BOE Report (Reuters) — Israel's Leviathan gas field to resume operations after war shutdown",
      "url": "https://boereport.com/2026/04/02/israels-leviathan-gas-field-to-resume-operations-after-war-shutdown-energy-ministry-says/",
      "date": "2026-04-02"
+    },
+    {
+     "name": "IEA — Strait of Hormuz Factsheet (Feb 2026, based on Kpler)",
+     "url": "https://iea.blob.core.windows.net/assets/c8248eba-8689-46d9-ae4b-b858b59c0f1c/StraitofHormuz2026-Factsheet.pdf",
+     "date": "2026-02"
     }
    ]
   }

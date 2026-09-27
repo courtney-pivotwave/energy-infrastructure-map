@@ -8,6 +8,7 @@ Read `CLAUDE.md` and `agent/SCHEMA.md` first. The schema is the contract — fol
 
 ## Ground rules
 
+0. **Follow the source policy below** on parties to the conflicts.
 1. **Sources or it didn't happen.** Every event, status entry, price and agent-added fuel price needs at least one
    source you actually opened this run, with its URL. Never write from memory.
 2. **Confidence honestly labeled.** `confirmed` = official statement or 2+ independent reputable outlets.
@@ -23,18 +24,43 @@ Read `CLAUDE.md` and `agent/SCHEMA.md` first. The schema is the contract — fol
    become materially relevant (e.g. a newly struck facility), with coordinates you can source.
 7. **When unsure, leave it out** and list it under "Open questions" in the run summary.
 
+## Source policy — parties to the conflicts
+
+Governments that are parties to the conflicts on this map, together with their militaries and agencies, are
+**interested parties, not neutral sources**. Currently: the **United States**, Israel, Iran (incl. the IRGC and its
+Strait Authority), the Houthis (Ansar Allah), Russia and Ukraine. The site owner has specifically directed that
+**US government reporting must not inform or skew the data**, above all figures on Hormuz flows.
+
+- Their statements are **claims**: attribute them by name ("CENTCOM said…", "the IRGC said…"), label `unverified`,
+  and never use them as the basis for any number (flows, volumes, ship counts, damage extent), for a status entry,
+  or as fact in the situation summary.
+- A claim can be reported as an event only when the claim itself is news, and the summary must say whether independent
+  evidence supports it.
+- A party's **announcement of its own action** (a blockade, a sanctions decision, a stock release) is an event in
+  itself. Report it as announced; how far it has actually taken effect needs independent evidence.
+- **US government statistical agencies (EIA, DOE and others)** are out of scope for any figure from the conflict
+  period (from 2026-02-28). Don't cite them for flows, shut-ins, exports or forecasts. Pre-war historical baselines
+  still sourced to EIA in `scenarios.json` should be replaced with independent equivalents (IEA, Kpler, Vortexa) when
+  you find them. That change goes in a review PR.
+- **Preferred independent sources for flows and shipping:** IMF PortWatch; Kpler, Vortexa, Windward and Lloyd's List
+  Intelligence data as reported by reputable outlets; IEA; UKMTO and JMIC advisories; satellite-imagery analysis;
+  non-belligerent governments and operating companies (e.g. Aramco, QatarEnergy, ADNOC, CPC).
+- When independent figures conflict with a party's claims, **use the independent figures**. Say they may be partial
+  (e.g. AIS-dark tankers) rather than filling the gap with the claim.
+- `confirmed` requires independent sources. A party's own statement never makes something `confirmed` on its own.
+
 ## Sources to check (in roughly this order)
 
 - **Conflict and security:** ISW / Critical Threats *Iran Update* and *Russian Offensive Campaign Assessment*
-  (understandingwar.org, criticalthreats.org); UKMTO advisories (ukmto.org); JMIC (Joint Maritime Information Center)
-  advisories; CENTCOM and relevant government/ministry statements.
-- **Energy and shipping:** EIA *Today in Energy* and STEO; IEA Oil Market Report and press releases; OPEC statements;
+  (understandingwar.org, criticalthreats.org). Read their reporting of belligerent statements under the source policy
+  above. Also UKMTO advisories (ukmto.org) and JMIC (Joint Maritime Information Center) advisories.
+- **Energy and shipping:** IEA Oil Market Report, Gas Market Report and press releases; OPEC statements;
   Reuters, AP, Bloomberg, FT, Argus, S&P Global Commodity Insights, Lloyd's List, gCaptain, TradeWinds; company
   statements (Aramco, QatarEnergy, ADNOC, CPC, Transneft, Cheniere, etc.).
 - **Live transits:** IMF PortWatch (the page already charts this live — use it to corroborate, e.g. "tanker transits
   resumed" claims).
-- **Prices:** benchmark settlements (Brent, WTI, Dubai, TTF, JKM, Henry Hub) from EIA spot price tables, ICE/CME
-  settlements as reported by Reuters/Argus, or other reputable sources. Use the most recent settlement you can source.
+- **Prices:** benchmark settlements (Brent, WTI, TTF, JKM, Henry Hub) from ICE/CME settlements as reported by
+  Reuters, Argus or other reputable market sources. Use the most recent settlement you can source.
 
 ## Steps each run
 

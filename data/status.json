@@ -3,7 +3,7 @@
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
-   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees via its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue (latest reported 24-27 Sep). A reduced, largely AIS-dark and escorted flow persists (Reuters-cited 33.7 mb in week of 20 Sep; US claims of ~13 mb/d are unverified). US-Iran talks stalled after Trump rejected Iran's plan on 26 Sep.",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. Independent Kpler data showed 33.7 mb of crude leaving the strait in the week from 20 Sep, against ~105 mb a week before the war. Many tankers sail with transponders off, so independent counts are partial.",
    "since": "2026-02-28",
    "updated": "2026-09-27",
    "confidence": "confirmed",
@@ -19,14 +19,14 @@
      "date": "2026-09-25"
     },
     {
-     "name": "gCaptain — Trump says U.S. Navy has cleared all mines from Strait of Hormuz",
-     "url": "https://gcaptain.com/trump-says-u-s-navy-has-cleared-all-mines-from-strait-of-hormuz/",
-     "date": "2026-08-25"
-    },
-    {
      "name": "Euronews — UAE halts all trade and financial dealings with Iran",
      "url": "https://www.euronews.com/2026/08/19/uae-halts-all-trade-and-financial-dealings-with-iran",
      "date": "2026-08-19"
+    },
+    {
+     "name": "IEA — Strait of Hormuz Factsheet (Feb 2026, based on Kpler)",
+     "url": "https://iea.blob.core.windows.net/assets/c8248eba-8689-46d9-ae4b-b858b59c0f1c/StraitofHormuz2026-Factsheet.pdf",
+     "date": "2026-02"
     }
    ]
   },
@@ -117,16 +117,11 @@
   },
   "yanbu-terminal": {
    "status": "disrupted",
-   "summary": "Saudi Arabia's main Hormuz-bypass outlet is under Houthi missile and drone threat (intercepts on 24 Sep) and is subject to a declared Houthi shipping ban; exports were down about half from July (EIA) and dropped further while the East-West pipeline was shut. France is sending air defences.",
+   "summary": "Saudi Arabia's main Hormuz-bypass outlet is under Houthi missile and drone threat (intercepts on 24 Sep) and subject to a declared Houthi ban on Saudi-linked shipping. Exports dropped while the East-West pipeline was shut (11–22 Sep). France is sending air defences.",
    "since": "2026-07-20",
    "updated": "2026-09-25",
    "confidence": "confirmed",
    "sources": [
-    {
-     "name": "EIA Short-Term Energy Outlook — Global oil markets (September 2026)",
-     "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
-     "date": "2026-09-09"
-    },
     {
      "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
      "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
@@ -183,8 +178,8 @@
    ]
   },
   "kharg-island": {
-   "status": "offline",
-   "summary": "The terminal was intact after US strikes on military targets (14 Mar), but Iranian crude exports are halted by the US naval blockade, reinstated 14 Jul; the US struck an Iranian tanker off Kharg on 5 Sep.",
+   "status": "disrupted",
+   "summary": "The terminal was intact after US strikes on military targets (14 Mar). Iranian exports have been under a US naval blockade since 14 July, and the US struck an Iranian tanker off Kharg on 5 Sep. Independent data on remaining Iranian loadings is limited.",
    "since": "2026-07-14",
    "updated": "2026-09-27",
    "confidence": "reported",

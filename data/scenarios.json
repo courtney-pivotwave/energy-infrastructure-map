@@ -2,7 +2,7 @@
   "globals": {
     "world_oil_demand_mbd": 104,
     "iea_emergency_stocks_mb": 1200,
-    "note": "Illustrative model using EIA 1H 2025 baseline flows. Flows that pass more than one chokepoint are counted at each, so combined totals are an upper bound.",
+    "note": "Illustrative model. Hormuz uses IEA 2025 figures (Kpler ship-tracking); other chokepoints use 1H 2025 tanker-tracking flows published by EIA (Vortexa-based) until independent equivalents are added. Flows passing more than one chokepoint are counted at each, so combined totals are an upper bound.",
     "sources": [
       {
         "name": "EIA — World Oil Transit Chokepoints",
@@ -19,22 +19,22 @@
   "chokepoints": {
     "strait-of-hormuz": {
       "portwatch": "Strait of Hormuz",
-      "oil_mbd": 20.9,
+      "oil_mbd": 19.9,
       "lng_share_pct": 20,
       "reroute": "none",
       "reroute_days": 0,
       "bypass": [
         {
           "asset": "east-west-pipeline",
-          "spare_mbd": 2.0,
-          "note": "Saudi Abqaiq→Yanbu, 5 mb/d capacity (EIA). Barrels then load at Yanbu on the Red Sea, where they are exposed to Bab el-Mandeb risk.",
-          "outlet": "yanbu-terminal"
+          "outlet": "yanbu-terminal",
+          "spare_mbd": 3.0,
+          "note": "Saudi Abqaiq→Yanbu, 5 mb/d design (Aramco reports 7). ~2 mb/d was in use in early 2026, leaving 3–5 mb/d spare depending on Red Sea export capacity (IEA). Low end counted."
         },
         {
           "asset": "habshan-fujairah-pipeline",
-          "spare_mbd": 0.6,
-          "note": "UAE Habshan→Fujairah, ~1.5–1.8 mb/d capacity, loads outside the strait.",
-          "outlet": "fujairah"
+          "outlet": "fujairah",
+          "spare_mbd": 0.5,
+          "note": "UAE Habshan→Fujairah (ADCOP), ~1.8 mb/d; ~1.1 mb/d already used, leaving up to 0.7 mb/d (IEA). Low end counted."
         },
         {
           "asset": "kirkuk-ceyhan-pipeline",
@@ -42,7 +42,7 @@
           "note": "Iraq→Turkey, ~1.6 mb/d nameplate. Restarted 18 Mar 2026 at ~250 kb/d; usable volume depends on Baghdad–Erbil–Ankara politics. Not counted."
         }
       ],
-      "bypass_note": "EIA estimates ~2.6 mb/d of spare Saudi (East-West, 5 mb/d) and UAE (Habshan–Fujairah, 1.8 mb/d) pipeline capacity could bypass Hormuz; the split shown is approximate. Iran's Goreh–Jask line adds ~0.3 mb/d. Kuwait, Qatar, Bahrain and Iraq's Basra exports and all Gulf LNG (~one-fifth of global LNG trade) have no bypass. 84% of Hormuz crude and 83% of its LNG went to Asia in 2024.",
+      "bypass_note": "IEA estimates 3.5–5.5 mb/d of Saudi and UAE pipeline capacity could bypass Hormuz; the model counts the low end. Iran's Goreh–Jask line is effectively non-operational. Iraq's Basra, Kuwait, Qatar and Bahrain exports and all Qatari/UAE LNG (just over 112 bcm, almost 20% of global LNG trade) have no bypass. Most of the world's spare crude capacity (>4 mb/d, mainly Saudi) also sits behind the strait.",
       "stranded": [
         "kharg-island",
         "ras-tanura-terminal",
@@ -72,35 +72,30 @@
       "exposed": [
         {
           "country": "China",
-          "note": "Top destination for Hormuz crude. China, India, Japan and South Korea together took 69% of Hormuz crude and condensate in 2024 (EIA)."
+          "note": "4.6 mb/d of Hormuz crude in 2025, the largest single destination (IEA/Kpler)."
         },
         {
           "country": "India",
-          "note": "~half of crude imports and most LPG/LNG imports come from the Gulf."
+          "note": "2.1 mb/d of Hormuz crude; with Bangladesh and Pakistan, received almost two-thirds of its LNG via Hormuz."
         },
         {
-          "country": "Japan",
-          "note": "~90%+ of crude imports from the Middle East."
+          "country": "Japan & South Korea",
+          "note": "Part of 6.2 mb/d of crude to 'other Asia'; IEA calls both particularly reliant on Hormuz flows."
         },
         {
-          "country": "South Korea",
-          "note": "~70% of crude imports from the Middle East; major Qatari LNG buyer."
+          "country": "Bangladesh & Pakistan",
+          "note": "Gas is 50% and 25% of their power mix; LNG shortfalls hit electricity supply directly."
         },
         {
           "country": "Europe",
-          "note": "Qatari LNG and Middle East diesel/jet fuel; indirect exposure through global prices."
+          "note": "Only ~0.6 mb/d of crude and ~7% of its LNG came via Hormuz, but exposed through global prices."
         }
       ],
       "sources": [
         {
-          "name": "EIA — World Oil Transit Chokepoints (1H 2025 flows)",
-          "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-          "date": "2026-03-03"
-        },
-        {
-          "name": "EIA — Today in Energy: Amid regional conflict, the Strait of Hormuz remains critical",
-          "url": "https://www.eia.gov/todayinenergy/detail.php?id=65504",
-          "date": "2025-06-16"
+          "name": "IEA — Strait of Hormuz Factsheet (Feb 2026, based on Kpler)",
+          "url": "https://iea.blob.core.windows.net/assets/c8248eba-8689-46d9-ae4b-b858b59c0f1c/StraitofHormuz2026-Factsheet.pdf",
+          "date": "2026-02"
         }
       ]
     },
@@ -148,7 +143,8 @@
           "url": "https://www.eia.gov/todayinenergy/detail.php?id=62263",
           "date": "2024"
         }
-      ]
+      ],
+      "baseline_interim": true
     },
     "suez-canal": {
       "portwatch": "Suez Canal",
@@ -189,7 +185,8 @@
           "url": "https://www.eia.gov/todayinenergy/detail.php?id=61025",
           "date": "2023-12-04"
         }
-      ]
+      ],
+      "baseline_interim": true
     },
     "turkish-straits": {
       "portwatch": "Bosporus Strait",
@@ -230,7 +227,8 @@
           "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
           "date": "2024"
         }
-      ]
+      ],
+      "baseline_interim": true
     },
     "strait-of-malacca": {
       "portwatch": "Malacca Strait",
@@ -273,7 +271,8 @@
           "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
           "date": "2024"
         }
-      ]
+      ],
+      "baseline_interim": true
     },
     "panama-canal": {
       "portwatch": "Panama Canal",
@@ -314,7 +313,8 @@
           "url": "https://www.eia.gov/todayinenergy/detail.php?id=62408",
           "date": "2024"
         }
-      ]
+      ],
+      "baseline_interim": true
     }
   }
 }

@@ -535,6 +535,8 @@ function renderScenario() {
       ${r.bypassImpaired.map(b => `<li class="warn"><a href="#" data-asset="${esc(b.asset)}">${esc(REG[b.asset]?.data.name || b.asset)}</a> — not counted: ${esc(REG[b.where]?.data.name || b.where)} is currently <b>${esc(STATUS[b.st.status]?.label.toLowerCase())}</b>. ${esc(b.st.summary)}</li>`).join('')}
     </ul></div>`;
     closed.forEach(id => { const n = scenarios.chokepoints[id].bypass_note; if (n) html += `<p class="note">${esc(REG[id].data.name)}: ${esc(n)}</p>`; });
+    const interim = [...closed].filter(id => scenarios.chokepoints[id].baseline_interim);
+    if (interim.length) html += `<p class="note warn">⚠ Interim baseline for ${interim.map(id => esc(REG[id].data.name)).join(', ')}: pre-war tanker-tracking flows published by the US EIA, pending an independent source.</p>`;
     html += `<div class="sc-section"><h5>Most exposed</h5><ul>${[...r.exposed].map(([c, n]) => `<li><b>${esc(c)}</b> — ${esc(n)}</li>`).join('')}</ul></div>`;
     const stranded = [...r.strandedAssets].filter(id => REG[id]);
     if (stranded.length) html += `<div class="sc-section"><h5>Assets cut off (${stranded.length})</h5><div>${stranded.map(id => `<a href="#" data-asset="${id}">${esc(REG[id].data.name)}</a>`).join(', ')}</div></div>`;

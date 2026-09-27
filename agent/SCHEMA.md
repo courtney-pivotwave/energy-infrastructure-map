@@ -21,9 +21,10 @@ Run `node scripts/validate.mjs` after any edit — it checks shape, enums, dates
 { "name": "ISW Iran Update", "url": "https://...", "date": "2026-09-26" }
 
 // Confidence
-"confirmed"   // official statement, or 2+ independent reputable outlets
-"reported"    // one reputable outlet / think tank
-"unverified"  // claims by a party to the conflict, not independently confirmed
+"confirmed"   // 2+ independent reputable sources, or an official statement from a non-belligerent party
+"reported"    // one reputable independent outlet / think tank / data provider
+"unverified"  // a claim by a party to the conflict (incl. the US government) not independently confirmed
+// See "Source policy" in agent/UPDATE_AGENT.md: belligerent-government figures never feed numbers or statuses.
 ```
 
 ## status.json
@@ -38,6 +39,7 @@ Run `node scripts/validate.mjs` after any edit — it checks shape, enums, dates
       "since": "2026-03-01",          // when this status began (best known)
       "updated": "2026-09-27",        // when this entry was last verified
       "confidence": "confirmed",
+      "baseline_interim": false,                // true = baseline still sourced to a US government agency; page shows a warning
       "sources": [ /* Source */ ]
     }
   }

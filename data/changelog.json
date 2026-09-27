@@ -3,6 +3,14 @@
   {
    "date": "2026-09-27",
    "kind": "site",
+   "headline": "New permanent address: strategicenergymap.org",
+   "changes": [
+    "The map moves to strategicenergymap.org; old links redirect automatically"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "kind": "site",
    "headline": "About page, credits, link previews and public changelog",
    "changes": [
     "New About & methods page explaining sources, the sourcing rule, the update agent and the what-if model",

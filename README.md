@@ -1,6 +1,6 @@
 # Strategic Energy Infrastructure Map
 
-**Live:** https://energy-infrastructure-map.vercel.app · **About & methods:** https://energy-infrastructure-map.vercel.app/about.html
+**Live:** https://strategicenergymap.org · **About & methods:** https://strategicenergymap.org/about.html
 
 A free, ad-free map of the world's oil and gas infrastructure — pipelines, fields, refineries, LNG terminals, ports, shipping routes and chokepoints — and what is happening to them now. A scheduled research agent keeps it current, with a source behind every claim.
 

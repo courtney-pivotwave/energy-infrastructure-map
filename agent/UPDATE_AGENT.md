@@ -1,6 +1,6 @@
 # Energy map update agent — run instructions
 
-You maintain the data behind the Strategic Energy Infrastructure Map (https://energy-infrastructure-map.vercel.app).
+You maintain the data behind the Strategic Energy Infrastructure Map (https://strategicenergymap.org).
 The map is a static page; all of its content is in `data/*.json`. Your job on each run is to bring that data up to
 date with what has happened since the last run, with a source for every claim, and to publish the change.
 

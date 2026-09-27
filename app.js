@@ -62,7 +62,7 @@ if (EMBED) {
   document.body.classList.add('embed');
   if (!params.has('bare')) {
     const a = document.createElement('a');
-    a.className = 'embed-badge'; a.href = 'https://energy-infrastructure-map.vercel.app/'; a.target = '_blank'; a.rel = 'noopener';
+    a.className = 'embed-badge'; a.href = 'https://strategicenergymap.org/'; a.target = '_blank'; a.rel = 'noopener';
     a.innerHTML = 'Strategic Energy Infrastructure Map <span>↗</span>';
     document.body.appendChild(a);
   }

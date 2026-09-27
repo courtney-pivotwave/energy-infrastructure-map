@@ -1,6 +1,6 @@
 # Strategic Energy Infrastructure Map
 
-Static site (no build step) deployed on Vercel from `main`: https://energy-infrastructure-map.vercel.app
+Static site (no build step) deployed on Vercel from `main`: https://strategicenergymap.org
 
 - `index.html`, `styles.css`, `app.js` — the page. Leaflet 1.9.4 from cdnjs. It only renders; content lives in `data/`. `?embed=1` gives a map-only view.
 - `about.html` — About & methods page; renders live counts and `data/changelog.json`. Keep it in step with how the site actually works.
@@ -25,3 +25,4 @@ then open http://localhost:8765.
 - Pre-crisis reference week is 2026-02-23 (`fuel.json → pre_crisis_date`, `market.json → pre_crisis`, PortWatch baseline window in `app.js`).
 - When you change `app.js` or `styles.css`, bump the `?v=` query on their tags in `index.html` so browsers don't serve a stale copy.
 - Goal: a free, ad-free public resource. No ads, no cookies, no trackers beyond Vercel Web Analytics.
+- Primary domain is strategicenergymap.org. `vercel.json` 301-redirects the old energy-infrastructure-map.vercel.app host; strategicenergymap.com and www hosts redirect via Vercel project domain settings.

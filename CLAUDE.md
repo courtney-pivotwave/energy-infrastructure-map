@@ -27,3 +27,4 @@ then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facili
 - Goal: a free, ad-free public resource. No ads, no cookies, no trackers beyond Vercel Web Analytics.
 - Primary domain is strategicenergymap.org. `vercel.json` 301-redirects the old energy-infrastructure-map.vercel.app host; www and .com hosts are attached to the project and redirect via the same `vercel.json` rules.
 - SEO/AEO: each generated page opens with a dated, sourced 40–60 word answer, then facts, FAQ and JSON-LD. Only generate a page when there's real data behind it (no thin pages). `scripts/indexnow.mjs` pings Bing after a deploy.
+- Do not set `trailingSlash` in `vercel.json`: it 308-redirects `/_vercel/insights/*` and breaks Vercel Web Analytics. Canonical tags already point at trailing-slash URLs.

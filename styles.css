@@ -48,7 +48,16 @@ a { color: var(--accent); }
 .panel.left { top: 76px; left: 10px; width: 230px; max-height: calc(100vh - 96px); overflow-y: auto; padding: 12px 14px; }
 .panel.right { top: 76px; right: 10px; width: 380px; bottom: 20px; display: flex; flex-direction: column; overflow: hidden; }
 .panel h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ink-2); margin-bottom: 6px; }
-.panel-toggle { display: none; }
+/* Collapsible panels: sidebar toggles on desktop, bottom sheet on phones */
+.icon-btn { flex-shrink: 0; width: 32px; height: 32px; border: none; background: none; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; color: var(--ink-2); }
+.icon-btn:hover { background: #eef1f5; color: var(--ink); }
+.icon-btn:focus-visible, .sheet-handle:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.panel { transition: transform 0.25s ease, opacity 0.2s ease; }
+body.left-collapsed .panel.left { transform: translateX(calc(-100% - 24px)); opacity: 0; pointer-events: none; }
+body.right-collapsed .panel.right { transform: translateX(calc(100% + 24px)); opacity: 0; pointer-events: none; }
+body.right-collapsed .leaflet-control-zoom { margin-right: 10px !important; }
+.sheet-handle { display: none; }
+@media (prefers-reduced-motion: reduce) { .panel, .scenario-bar { transition: none; } }
 
 .layer-row { display: flex; align-items: center; gap: 8px; padding: 2px 0; cursor: pointer; line-height: 1.6; }
 .layer-row input { accent-color: var(--accent); }
@@ -127,7 +136,7 @@ a { color: var(--accent); }
 .statusbox { border-radius: 8px; padding: 8px 10px; margin: 6px 0 10px; font-size: 12px; border-left: 4px solid; background: #fafafa; }
 
 /* Scenario bar */
-.scenario-bar { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 1001; background: var(--crit); color: #fff; padding: 8px 14px; border-radius: 8px; box-shadow: var(--shadow); font-size: 12.5px; display: flex; gap: 12px; align-items: center; }
+.scenario-bar { transition: bottom 0.25s ease; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 1001; background: var(--crit); color: #fff; padding: 8px 14px; border-radius: 8px; box-shadow: var(--shadow); font-size: 12.5px; display: flex; gap: 12px; align-items: center; }
 .scenario-bar button { background: rgba(255,255,255,0.2); color: #fff; border: none; border-radius: 5px; padding: 3px 8px; }
 
 /* Map marker animations */
@@ -146,13 +155,22 @@ a { color: var(--accent); }
   .topbar { flex-wrap: wrap; gap: 6px; padding: 6px 10px; }
   .brand-title { font-size: 13px; }
   .ticker { order: 3; flex-basis: 100%; }
-  .panel.left { top: auto; bottom: calc(45vh + 16px); width: auto; max-height: 40vh; padding: 0; }
-  .panel.left .panel-body { display: none; padding: 10px 12px; }
-  .panel.left.open .panel-body { display: block; }
-  .panel-toggle { display: block; background: none; border: none; padding: 6px 12px; font-weight: 600; font-size: 12px; }
-  .panel.right { top: auto; left: 10px; right: 10px; width: auto; height: 45vh; bottom: 10px; }
+  .topbar { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; column-gap: 6px; row-gap: 4px; padding: 6px 8px 6px 4px; }
+  .topbar .brand { min-width: 0; }
+  .brand-title, .brand-sub { overflow: hidden; text-overflow: ellipsis; }
+  .topbar .ticker { grid-column: 1 / -1; }
+  .topbar .about-link { align-self: center; }
+  #toggleRight { display: none; }
+  .panel.left { top: 104px; left: 10px; width: min(300px, calc(100vw - 20px)); max-height: 62vh; z-index: 1002; }
+  .panel.right { top: auto; left: 0; right: 0; bottom: 0; width: auto; height: 58vh; border-radius: 14px 14px 0 0; border-bottom: none; z-index: 1003; touch-action: pan-y; }
+  body.right-collapsed .panel.right { transform: translateY(calc(100% - 62px)); opacity: 1; pointer-events: auto; }
+  .sheet-handle { display: flex; justify-content: center; align-items: center; width: 100%; height: 18px; border: none; background: none; padding: 0; flex-shrink: 0; cursor: pointer; }
+  .sheet-handle span { width: 38px; height: 4px; border-radius: 2px; background: #c5cad3; }
+  .tabs button { padding: 8px 0 10px; }
   .leaflet-control-zoom { display: none; }
-  .scenario-bar { bottom: calc(45vh + 20px); }
+  .leaflet-bottom.leaflet-right { bottom: 62px; }
+  .scenario-bar { left: 10px; right: 10px; transform: none; bottom: calc(58vh + 10px); flex-wrap: wrap; justify-content: center; }
+  body.right-collapsed .scenario-bar { bottom: 72px; }
 }
 
 /* Pump prices */

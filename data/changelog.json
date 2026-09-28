@@ -3,6 +3,16 @@
   {
    "date": "2026-09-27",
    "kind": "site",
+   "headline": "Collapsible panels and a better phone layout",
+   "changes": [
+    "Hide or show the Layers and feed panels with the buttons at either end of the top bar; the map remembers your choice",
+    "On phones the feed is a bottom sheet: tap or swipe the handle to expand or minimise it, and the map opens full-screen",
+    "Selecting an item centres it in the visible part of the map"
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "kind": "site",
    "headline": "Answer pages for every chokepoint, major facility and pump-price series",
    "changes": [
     "130 readable pages generated from the map's data, e.g. 'Is the Strait of Hormuz open?' and diesel prices in each EU country",

@@ -236,15 +236,77 @@ $('#layerList').addEventListener('change', e => {
   const g = groups[e.target.dataset.layer];
   if (g) e.target.checked ? map.addLayer(g) : map.removeLayer(g);
 });
-$('#leftToggle').addEventListener('click', () => $('#leftPanel').classList.toggle('open'));
+// ── Collapsible panels: sidebar toggles on desktop (state remembered), bottom sheet on phones ──
+const mobileQuery = window.matchMedia('(max-width: 760px)');
+const isMobile = () => mobileQuery.matches;
+const store = {
+  get: k => { try { return localStorage.getItem(k); } catch { return null; } },
+  set: (k, v) => { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
+};
+const panels = { left: true, right: true };
+function initPanels() {
+  if (isMobile()) { panels.left = false; panels.right = false; }
+  else { panels.left = store.get('sem.left') !== '0'; panels.right = store.get('sem.right') !== '0'; }
+  applyPanels();
+}
+function applyPanels() {
+  document.body.classList.toggle('left-collapsed', !panels.left);
+  document.body.classList.toggle('right-collapsed', !panels.right);
+  const l = $('#toggleLeft'), r = $('#toggleRight'), h = $('#sheetHandle');
+  l.setAttribute('aria-expanded', String(panels.left)); l.title = panels.left ? 'Hide layers' : 'Show layers';
+  r.setAttribute('aria-expanded', String(panels.right)); r.title = panels.right ? 'Hide panel' : 'Show panel';
+  h.setAttribute('aria-expanded', String(panels.right));
+  $('#leftPanel').inert = !panels.left;
+  $('#leftPanel').style.top = isMobile() ? `${$('.topbar').getBoundingClientRect().bottom + 8}px` : '';
+  $('#rightPanel').inert = !panels.right && !isMobile(); // the phone sheet keeps its tab row usable when minimised
+}
+function setPanel(side, open) {
+  if (panels[side] === open) return;
+  panels[side] = open;
+  if (!isMobile()) store.set(`sem.${side}`, open ? '1' : '0');
+  applyPanels();
+}
+$('#toggleLeft').addEventListener('click', () => setPanel('left', !panels.left));
+$('#toggleRight').addEventListener('click', () => setPanel('right', !panels.right));
+$('#sheetHandle').addEventListener('click', () => setPanel('right', !panels.right));
+map.on('click', () => { if (isMobile()) setPanel('left', false); });
+// Phone sheet: swipe the handle or tab row up to expand, down to minimise
+{
+  let startY = null;
+  const zone = [$('#sheetHandle'), $('.tabs')];
+  zone.forEach(el => {
+    el.addEventListener('touchstart', e => { startY = e.touches[0].clientY; }, { passive: true });
+    el.addEventListener('touchend', e => {
+      if (startY == null || !isMobile()) return;
+      const dy = e.changedTouches[0].clientY - startY; startY = null;
+      if (dy > 40) setPanel('right', false); else if (dy < -40) setPanel('right', true);
+    }, { passive: true });
+  });
+}
+mobileQuery.addEventListener('change', initPanels);
+initPanels();
+
+// Centre a point in the part of the map not covered by panels
+function focusMap(latlng, zoom) {
+  let dx = 0, dy = 0;
+  if (isMobile()) { if (panels.right) dy = $('#rightPanel').offsetHeight / 2; }
+  else {
+    if (panels.right) dx += ($('#rightPanel').offsetWidth + 10) / 2;
+    if (panels.left) dx -= ($('#leftPanel').offsetWidth + 10) / 2;
+  }
+  const target = map.unproject(map.project(latlng, zoom).add([dx, dy]), zoom);
+  map.flyTo(target, zoom, { duration: 0.8 });
+}
 
 // ── Regions ──
 $('#regions').addEventListener('click', e => {
   const b = REGIONS[e.target.dataset.region];
   if (b) map.flyToBounds(b, { ...panelPadding(), duration: 0.8 });
 });
-function panelPadding() { // keep regions clear of the side panels on wide screens
-  return !EMBED && window.innerWidth > 1000 ? { paddingTopLeft: [240, 70], paddingBottomRight: [390, 10] } : { paddingTopLeft: [0, 60], paddingBottomRight: [0, 10] };
+function panelPadding() { // keep regions clear of whichever panels are open
+  if (EMBED) return {};
+  if (typeof panels === 'undefined' || isMobile()) return { paddingTopLeft: [0, 100], paddingBottomRight: [0, 70] };
+  return { paddingTopLeft: [panels.left ? 240 : 0, 70], paddingBottomRight: [panels.right ? 390 : 0, 10] };
 }
 map.fitBounds(REGIONS[params.get('region')] || REGIONS.world, EMBED ? {} : panelPadding());
 
@@ -276,6 +338,7 @@ $('#ticker').innerHTML = [...(market.benchmarks || []), ...pumpTicks].map(b => {
 let currentTab = 'latest';
 function setTab(t) {
   currentTab = t;
+  if (typeof panels !== 'undefined') setPanel('right', true); // opening a tab reveals a minimised or hidden panel
   document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === t));
   ['latest', 'chokepoints', 'fuel', 'scenario', 'detail'].forEach(k => $('#tab-' + k).classList.toggle('hidden', k !== t));
 }
@@ -334,8 +397,8 @@ $('#tab-latest').addEventListener('click', e => {
 function showEvent(id, openPanel = true) {
   const e = events.find(x => x.id === id);
   if (!e) return;
-  if (e.coords) map.flyTo(e.coords, Math.max(map.getZoom(), 5), { duration: 0.8 });
-  else if (e.assets?.[0] && REG[e.assets[0]]) map.flyTo(REG[e.assets[0]].center, Math.max(map.getZoom(), 5), { duration: 0.8 });
+  if (e.coords) focusMap(e.coords, Math.max(map.getZoom(), 5));
+  else if (e.assets?.[0] && REG[e.assets[0]]) focusMap(REG[e.assets[0]].center, Math.max(map.getZoom(), 5));
   if (openPanel) {
     if (e.assets?.length && REG[e.assets[0]]) showDetail(e.assets[0], false);
     else { evFilter.window = 0; setTab('latest'); renderLatest(); }
@@ -353,7 +416,7 @@ function statusBox(st) {
 function showDetail(id, fly = false) {
   const a = REG[id];
   if (!a) return;
-  if (fly) map.flyTo(a.center, Math.max(map.getZoom(), 5), { duration: 0.8 });
+  if (fly) focusMap(a.center, Math.max(map.getZoom(), 5));
   const d = a.data;
   const related = events.filter(e => e.assets?.includes(id));
   const sc = scenarios.chokepoints?.[id];
@@ -645,7 +708,7 @@ $('#tab-fuel').addEventListener('click', e => {
 });
 function showFuel(id, fly = false) {
   const e = fuelEntries.find(x => x.id === id); if (!e) return;
-  if (fly && e.coords) map.flyTo(e.coords, Math.max(map.getZoom(), 4), { duration: 0.8 });
+  if (fly && e.coords) focusMap(e.coords, Math.max(map.getZoom(), 4));
   const row = (k, word) => {
     const b = e[k]; if (!b) return '';
     const pct = pctChange(b), wk = b.week_ago ? (b.now - b.week_ago) / b.week_ago * 100 : null;

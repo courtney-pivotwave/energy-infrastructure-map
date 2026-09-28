@@ -181,7 +181,7 @@ for (const f of ['about.html', 'styles.css', 'app.js', 'favicon.svg', 'og.png'])
 cpSync(join(ROOT, 'data'), join(DIST, 'data'), { recursive: true, filter: s => !s.includes(`${'data'}/research`) });
 writeFileSync(join(DIST, `${INDEXNOW_KEY}.txt`), INDEXNOW_KEY);
 // Local only: the link-preview card template (tools/ is excluded from Vercel uploads via .vercelignore)
-if (existsSync(join(ROOT, 'tools/og-card.html'))) cpSync(join(ROOT, 'tools/og-card.html'), join(DIST, 'tools/og-card.html'));
+if (existsSync(join(ROOT, 'tools'))) cpSync(join(ROOT, 'tools'), join(DIST, 'tools'), { recursive: true });
 
 const pw = {};
 await Promise.all(Object.entries(scenarios.chokepoints || {}).filter(([, c]) => c.portwatch).map(async ([id, c]) => { pw[id] = await portwatch(c.portwatch); }));

@@ -1,7 +1,72 @@
 {
- "updated": "2026-09-27",
- "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September), which restarted at reduced rates around 22 September. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 25 September Brent was $104.32 (pre-crisis ~$72.5) and TTF ~€72/MWh (pre-crisis ~€32). On 26 September Trump rejected Iran's proposal to reopen the strait.",
+ "updated": "2026-09-28",
+ "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September), which restarted at reduced rates around 22 September; Saudi Arabia has offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 25 September Brent was $104.32 (pre-crisis ~$72.5) and TTF ~€72/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September but told Axios on 27 September that he expects US-Iran talks, mediated by Qatar, to resume as soon as this week.",
  "events": [
+  {
+   "id": "2026-09-27-trump-expects-iran-talks-this-week",
+   "date": "2026-09-27",
+   "title": "Trump says he expects US-Iran talks to resume this week despite rejecting Hormuz proposal",
+   "summary": "A day after rejecting Iran's seven-condition plan to reopen the Strait of Hormuz, President Trump told Axios he expects renewed US-Iran negotiations this week, with Qatari mediators expected to meet both sides as early as Monday. He said Iran wants a deal the US might have accepted about a year ago and has 'overplayed its hand'; US and Iranian positions remain far apart on the naval blockade, strait reopening and Iran's nuclear program.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Bloomberg — Trump Says He Expects Renewed Iran Talks This Week, Axios Says",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-27/trump-says-he-expects-renewed-iran-talks-this-week-axios-says",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "Axios — After nixing Iran proposal, Trump tells Axios he expects talks this week",
+     "url": "https://www.axios.com/2026/09/27/trump-iran-war-hormuz-blockade-negotiations",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "The Peninsula Qatar — Trump expects talks with Iran to resume in coming week",
+     "url": "http://thepeninsulaqatar.com/article/27/09/2026/trump-expects-talks-with-iran-to-resume-in-coming-week",
+     "date": "2026-09-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-24-sohar-sts-relay",
+   "date": "2026-09-24",
+   "title": "Saudi Arabia sells ~60 million barrels for ship-to-ship relay at Sohar, Oman",
+   "summary": "With the East-West pipeline and Yanbu export route constrained since the 11 September pipeline shutdown, Saudi Aramco has sold roughly 60 million barrels of Ras Tanura crude for ship-to-ship transfer at Sohar, Oman this month and next, moved out through the Strait of Hormuz by shuttle tanker and transferred onto other vessels for delivery, mainly to Chinese, South Korean, Indian and Japanese refiners. The extra volume has pushed Sohar and Fujairah STS operations close to their capacity limits and tightened the VLCC market; analysts estimate the higher Saudi flows require 36-40 additional VLCCs.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    24.35,
+    56.71
+   ],
+   "assets": [
+    "ras-tanura-terminal",
+    "yanbu-terminal",
+    "east-west-pipeline"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Gulf of Oman Ship-to-ship Oil Transfers Reach Limit as Saudi Exports Surge",
+     "url": "https://gcaptain.com/gulf-of-oman-ship-to-ship-oil-transfers-reach-limit-as-saudi-exports-surge/",
+     "date": "2026-09-24"
+    },
+    {
+     "name": "MarineLink — Saudi Oil Surge Pushes Gulf of Oman Transfers to Capacity",
+     "url": "https://www.marinelink.com/news/saudi-oil-surge-pushes-gulf-oman-543259",
+     "date": "2026-09-24"
+    },
+    {
+     "name": "BOE Report — Gulf of Oman ship-to-ship oil transfers reach limit as Saudi exports surge",
+     "url": "https://boereport.com/2026/09/24/gulf-of-oman-ship-to-ship-oil-transfers-reach-limit-as-saudi-exports-surge/",
+     "date": "2026-09-24"
+    }
+   ]
+  },
   {
    "id": "2026-09-27-qeshm-explosions-after-rejection",
    "date": "2026-09-27",

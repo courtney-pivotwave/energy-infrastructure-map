@@ -18,6 +18,27 @@
    "url": "https://strategicenergymap.org/fuel-prices/",
    "image": "fuel-weekly",
    "alt": "Bar chart of the change in diesel prices since the week of 23 February 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland."
+  },
+  {
+   "id": "2026-09-28-sohar-sts-relay",
+   "created": "2026-09-28",
+   "type": "event",
+   "text": "Saudi Arabia has sold ~60 million barrels of Ras Tanura crude for ship-to-ship transfer at Sohar, Oman, bypassing the shut Yanbu route — the relay is now near capacity, per gCaptain and MarineLink.",
+   "url": "https://strategicenergymap.org/facilities/ras-tanura-terminal/",
+   "event_id": "2026-09-24-sohar-sts-relay",
+   "image": null,
+   "alt": null,
+   "reply_to": null
+  },
+  {
+   "id": "2026-09-28-digest",
+   "created": "2026-09-28",
+   "type": "digest",
+   "text": "New this run: Saudi Arabia is routing ~60m barrels via a Sohar, Oman ship-to-ship relay to bypass the shut Yanbu route, and Trump says US-Iran talks may resume this week. Brent remains near $104/bbl, up ~44% since the pre-crisis week.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "reply_to": null
   }
  ]
 }

@@ -2,6 +2,16 @@
  "entries": [
   {
    "date": "2026-09-28",
+   "kind": "data",
+   "headline": "Saudi Arabia's 60-million-barrel Sohar workaround, and Trump-Iran talks may resume this week",
+   "changes": [
+    "New: Saudi Arabia has sold ~60 million barrels of Ras Tanura crude for ship-to-ship transfer at Sohar, Oman, to offset the Yanbu/East-West pipeline outage — the relay is now near capacity",
+    "New: Trump told Axios he expects US-Iran talks, mediated by Qatar, to resume as soon as this week, a day after rejecting Iran's plan to reopen the Strait of Hormuz",
+    "Updated the Ras Tanura terminal and Strait of Hormuz situation summaries"
+   ]
+  },
+  {
+   "date": "2026-09-28",
    "kind": "site",
    "headline": "Automated updates on X and Bluesky (coming soon)",
    "changes": [

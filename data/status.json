@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-27",
+ "updated": "2026-09-28",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -241,10 +241,10 @@
   },
   "ras-tanura-terminal": {
    "status": "reduced",
-   "summary": "Loadings are constrained by the Hormuz situation. Ship-tracking (MarineTraffic, TankerTrackers.com) showed Ras Tanura and Ju'aymah loading ~12–14 mb on 21 Sep, the busiest day since before the war.",
+   "summary": "Loadings are constrained by the Hormuz situation but have partly offset the Yanbu/East-West pipeline outage: Aramco has sold ~60 million barrels of Ras Tanura crude for ship-to-ship transfer at Sohar, Oman this month and next, shipped out via Hormuz by shuttle tanker. Ship-tracking (MarineTraffic, TankerTrackers.com) showed Ras Tanura and Ju'aymah loading ~12–14 mb on 21 Sep, the busiest day since before the war, and the Sohar/Fujairah STS relay is now near capacity.",
    "since": "2026-03-02",
-   "updated": "2026-09-21",
-   "confidence": "reported",
+   "updated": "2026-09-28",
+   "confidence": "confirmed",
    "sources": [
     {
      "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
@@ -255,6 +255,16 @@
      "name": "Al Jazeera — From Yanbu to Sohar: Tracking Saudi Arabia's alternative oil routes",
      "url": "https://www.aljazeera.com/news/2026/9/17/from-yanbu-to-sohar-tracking-saudi-arabias-alternative-oil-routes",
      "date": "2026-09-17"
+    },
+    {
+     "name": "gCaptain — Gulf of Oman Ship-to-ship Oil Transfers Reach Limit as Saudi Exports Surge",
+     "url": "https://gcaptain.com/gulf-of-oman-ship-to-ship-oil-transfers-reach-limit-as-saudi-exports-surge/",
+     "date": "2026-09-24"
+    },
+    {
+     "name": "MarineLink — Saudi Oil Surge Pushes Gulf of Oman Transfers to Capacity",
+     "url": "https://www.marinelink.com/news/saudi-oil-surge-pushes-gulf-oman-543259",
+     "date": "2026-09-24"
     }
    ]
   },

@@ -105,7 +105,7 @@ function duotoneFilter(id, stops) { // grey level → colour, via an SVG table t
     <feFuncR type="table" tableValues="${ch[0].join(' ')}"/><feFuncG type="table" tableValues="${ch[1].join(' ')}"/><feFuncB type="table" tableValues="${ch[2].join(' ')}"/></feComponentTransfer></filter>`;
   document.body.appendChild(svg);
 }
-const BASEMAP = BASEMAPS[params.get('basemap')] || BASEMAPS.gray;
+const BASEMAP = BASEMAPS[params.get('basemap')] || BASEMAPS.paper; // default: paper & slate
 if (BASEMAP.dark) document.body.classList.add('basemap-dark');
 const baseLayer = L.tileLayer(BASEMAP.base, { attribution: `${BASEMAP.attr} · Transits: IMF PortWatch`, maxZoom: 16, subdomains: 'abcd', className: 'base-tiles' }).addTo(map);
 if (BASEMAP.duotone) { duotoneFilter('basemap-duotone', BASEMAP.duotone); baseLayer.getContainer().style.filter = 'url(#basemap-duotone)'; }
@@ -115,8 +115,8 @@ const LAYERS = [
   { key: 'gas',        label: 'Gas pipelines',         sw: `<span class="sw-line" style="background:${COLORS.gas}"></span>` },
   { key: 'oil',        label: 'Oil pipelines',         sw: `<span class="sw-dash" style="border-color:${COLORS.oil}"></span>` },
   { key: 'routes',     label: 'Tanker & LNG routes',   sw: `<span class="sw-dash" style="border-color:#777;border-top-width:2px"></span>` },
-  { key: 'oilfield',   label: 'Oil fields',            sw: `<span class="sw-field" style="border-color:#c0641e;background:rgba(192,100,30,.25)"></span>` },
-  { key: 'gasfield',   label: 'Gas fields',            sw: `<span class="sw-field" style="border-color:${COLORS.gas};background:rgba(26,107,181,.2)"></span>` },
+  { key: 'oilfield',   label: 'Oil fields',            sw: `<span class="sw-field" style="border-color:#c0641e;background:rgba(192,100,30,.12)"></span>` },
+  { key: 'gasfield',   label: 'Gas fields',            sw: `<span class="sw-field" style="border-color:${COLORS.gas};background:rgba(26,107,181,.10)"></span>` },
   { key: 'production', label: 'Production sites',      sw: `<span class="sw-circle" style="background:${COLORS.production}"></span>` },
   { key: 'refinery',   label: 'Refineries',            sw: `<span class="sw-diamond" style="background:${COLORS.refinery}"></span>` },
   { key: 'lng',        label: 'LNG terminals',         sw: `<span class="sw-hex" style="background:${COLORS.lng}"></span>` },
@@ -175,8 +175,8 @@ infra.pipelines.forEach(p => {
 });
 
 infra.routes.forEach(r => {
-  const color = r.commodity === 'lng' ? '#0b7f89' : '#666';
-  const line = L.polyline(r.coords, { color, weight: 1.6, opacity: r.alternative ? 0.25 : 0.45, dashArray: r.alternative ? '2 8' : '4 8' });
+  const color = r.commodity === 'lng' ? '#0b7f89' : '#4d5866';
+  const line = L.polyline(r.coords, { color, weight: 1.6, opacity: r.alternative ? 0.35 : 0.6, dashArray: r.alternative ? '2 8' : '4 8' });
   line.bindTooltip(r.name + (r.note ? ` — ${r.note}` : ''), { sticky: true });
   groups.routes.addLayer(line);
   arrows(r.coords, color, groups.routes, 8, 2);
@@ -189,12 +189,12 @@ infra.sites.forEach(s => {
   let m;
   if (s.kind === 'refinery') {
     m = L.marker(s.coords, { icon: L.divIcon({ className: '', iconSize: [14, 14], iconAnchor: [7, 7],
-      html: `<svg width="14" height="14" viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" rx="1.5" transform="rotate(45 7 7)" fill="${COLORS.refinery}" fill-opacity="0.85" stroke="#333" stroke-opacity="0.4"/></svg>` }) });
+      html: `<svg width="14" height="14" viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" rx="1.5" transform="rotate(45 7 7)" fill="${COLORS.refinery}" fill-opacity="0.95" stroke="#fff" stroke-width="1.3"/></svg>` }) });
   } else if (s.kind === 'lng') {
     m = L.marker(s.coords, { icon: L.divIcon({ className: '', iconSize: [16, 16], iconAnchor: [8, 8],
       html: `<svg width="16" height="16" viewBox="0 0 16 16"><polygon points="4,1 12,1 15,8 12,15 4,15 1,8" fill="${COLORS.lng}" fill-opacity="0.9" stroke="#fff" stroke-width="1.2"/></svg>` }) });
   } else {
-    m = L.circleMarker(s.coords, { radius: s.size || 5, fillColor: COLORS[s.kind] || '#999', color: '#333', weight: 1.5, opacity: 0.5, fillOpacity: 0.8 });
+    m = L.circleMarker(s.coords, { radius: s.size || 5, fillColor: COLORS[s.kind] || '#999', color: '#fff', weight: 1.5, opacity: 1, fillOpacity: 0.95 });
   }
   m.bindTooltip(s.name);
   m.on('click', () => showDetail(s.id));
@@ -206,13 +206,13 @@ infra.sites.forEach(s => {
 infra.fields.forEach(f => {
   const isOil = f.commodity === 'oil';
   const m = L.circleMarker(f.coords, {
-    radius: f.size || 10, color: isOil ? '#c0641e' : COLORS.gas, weight: 1.5, opacity: 0.7, dashArray: '4 3',
-    fillColor: isOil ? 'rgba(192,100,30,0.25)' : 'rgba(26,107,181,0.2)', fillOpacity: 1,
+    radius: f.size || 10, color: isOil ? '#c0641e' : COLORS.gas, weight: 1.4, opacity: 0.8, dashArray: '4 3',
+    fillColor: isOil ? 'rgba(192,100,30,0.12)' : 'rgba(26,107,181,0.10)', fillOpacity: 1,
   });
   m.bindTooltip(f.name);
   m.on('click', () => showDetail(f.id));
   m.on('mouseover', () => m.setStyle({ weight: 2.5, opacity: 1 }));
-  m.on('mouseout', () => m.setStyle({ weight: 1.5, opacity: 0.7 }));
+  m.on('mouseout', () => m.setStyle({ weight: 1.4, opacity: 0.8 }));
   groups[isOil ? 'oilfield' : 'gasfield'].addLayer(m);
   register(f.id, { type: 'field', data: f, center: f.coords, tag: isOil ? 'Oil field' : 'Gas field' });
   bump(isOil ? 'oilfield' : 'gasfield');
@@ -220,7 +220,7 @@ infra.fields.forEach(f => {
 
 infra.chokepoints.forEach(c => {
   const m = L.marker(c.coords, { zIndexOffset: 500, icon: L.divIcon({ className: '', iconSize: [22, 22], iconAnchor: [11, 17],
-    html: `<svg width="22" height="22" viewBox="0 0 20 20"><polygon points="10,2 18,16 2,16" fill="#c0392b" fill-opacity="0.9" stroke="#333" stroke-opacity="0.4"/></svg>` }) });
+    html: `<svg width="22" height="22" viewBox="0 0 20 20"><polygon points="10,2 18,16 2,16" fill="#c0392b" fill-opacity="0.95" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"/></svg>` }) });
   m.bindTooltip(c.name);
   m.on('click', () => showDetail(c.id));
   groups.choke.addLayer(m);

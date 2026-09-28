@@ -1,6 +1,15 @@
 {
  "entries": [
   {
+   "date": "2026-09-28",
+   "kind": "site",
+   "headline": "Clearer map style",
+   "changes": [
+    "New 'paper and slate' basemap: warm land and slate-blue water, so coastlines and chokepoints read clearly",
+    "Crisper markers with white outlines, lighter oil and gas field shading, and stronger shipping routes"
+   ]
+  },
+  {
    "date": "2026-09-27",
    "kind": "site",
    "headline": "Collapsible panels and a better phone layout",

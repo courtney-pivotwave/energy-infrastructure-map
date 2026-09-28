@@ -80,9 +80,9 @@ body.embed .edge-tab { display: none !important; }
 .sw { width: 22px; display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; }
 .sw-line { width: 22px; height: 3px; border-radius: 2px; }
 .sw-dash { width: 22px; height: 0; border-top: 3px dashed; }
-.sw-circle { width: 11px; height: 11px; border-radius: 50%; border: 1.5px solid rgba(0,0,0,0.25); }
+.sw-circle { width: 11px; height: 11px; border-radius: 50%; border: 1.5px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.18); }
 .sw-field { width: 13px; height: 13px; border-radius: 50%; border: 2px dashed; }
-.sw-diamond { width: 10px; height: 10px; transform: rotate(45deg); border: 1.5px solid rgba(0,0,0,0.25); }
+.sw-diamond { width: 10px; height: 10px; transform: rotate(45deg); border: 1.5px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.18); }
 .sw-hex { width: 12px; height: 12px; clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%); }
 .sw-tri { width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 11px solid var(--crit); }
 .status-legend .row { display: flex; align-items: center; gap: 8px; line-height: 1.7; }

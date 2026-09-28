@@ -71,7 +71,7 @@ python3 scripts/update_fuel.py
 
 ### Link-preview image
 
-`og.png` is rendered from `tools/og-card.html` with headless Chrome while the local server is running:
+`og.png` is rendered from `tools/og-card.html` (copied into `dist/tools/` by the local build) with headless Chrome while the local server is serving `dist/`:
 
 ```bash
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --user-data-dir="$(mktemp -d)" --hide-scrollbars --window-size=1200,630 --virtual-time-budget=12000 --screenshot="$PWD/og.png" http://localhost:8765/tools/og-card.html

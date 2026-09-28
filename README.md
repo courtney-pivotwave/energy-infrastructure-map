@@ -49,6 +49,13 @@ A Claude Code cloud routine runs every morning and follows [`agent/UPDATE_AGENT.
 
 **Sourcing rule.** Governments that are parties to the conflicts on the map (the US, Israel, Iran, the Houthis, Russia and Ukraine) are treated alike. Their statements count as fact only when they can be independently verified; otherwise they are attributed and marked *unverified*. Ship transits and flows through contested waters come only from independent trackers. If there's no independent figure, the map shows none. The validator enforces part of this automatically.
 
+## Social posts
+
+The agent also drafts short posts in `data/social.json`, checked by the validator (length, sourcing, no unverified
+claims). A GitHub Action (`.github/workflows/social.yml`) posts them to X and Bluesky with repository secrets and
+records what went out in `data/social-log.json`. Drafts tied to review items only post once a human merges them.
+Set `"enabled": false` to pause everything. Weekly chart images are rendered from `dist/social/*.html`.
+
 ## Run locally
 
 `fetch()` doesn't work from `file://`, so serve the folder:

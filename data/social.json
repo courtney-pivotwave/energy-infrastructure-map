@@ -1,0 +1,23 @@
+{
+ "enabled": true,
+ "dry_run": true,
+ "max_per_day": 6,
+ "posts": [
+  {
+   "id": "2026-09-28-launch",
+   "created": "2026-09-28",
+   "type": "announcement",
+   "text": "Strategic Energy Map is live: a free, ad-free map of global oil and gas infrastructure. Chokepoint ship traffic, facility status, pump prices and what-if scenarios, updated daily with every item sourced.",
+   "url": "https://strategicenergymap.org/"
+  },
+  {
+   "id": "2026-09-28-fuel-weekly",
+   "created": "2026-09-28",
+   "type": "chart",
+   "text": "Diesel since the Strait of Hormuz closed: US +71%, EU average +40%, UK +38% (week of 21 Sep vs week of 23 Feb). Weekly prices by country:",
+   "url": "https://strategicenergymap.org/fuel-prices/",
+   "image": "fuel-weekly",
+   "alt": "Bar chart of the change in diesel prices since the week of 23 February 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland."
+  }
+ ]
+}

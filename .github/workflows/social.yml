@@ -1,0 +1,68 @@
+# Posts queued drafts from data/social.json to X and Bluesky.
+# The research agent writes drafts; only this workflow holds the credentials (repository secrets).
+name: Social posts
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/social.json']
+  schedule:
+    - cron: '45 13 * * *'   # daily retry for anything a platform rejected earlier
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run: show what would be posted, post nothing'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-posts
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate data and drafts
+        run: node scripts/validate.mjs
+
+      - name: Build site (for chart images)
+        run: node scripts/build.mjs
+
+      - name: Serve built site locally
+        run: |
+          python3 -m http.server 8765 -d dist >/dev/null 2>&1 &
+          sleep 1
+
+      - name: Post
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '' }}
+          LOCAL_SITE: http://localhost:8765
+        run: node scripts/social_post.mjs
+
+      - name: Save post log
+        run: |
+          if [ -n "$(git status --porcelain data/social-log.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/social-log.json
+            git commit -m "social: update post log [skip ci]"
+            git pull --rebase --quiet origin main
+            git push origin HEAD:main
+          fi

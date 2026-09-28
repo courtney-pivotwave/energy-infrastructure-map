@@ -86,8 +86,36 @@ Houthis (Ansar Allah), Russia and Ukraine.
 10. Add one entry to the top of `data/changelog.json` for this run (`kind: "data"`): a plain-language headline and
    2–5 short bullet changes a general reader would care about. Skip it if the run only refreshed prices. The entry is
    public on the About page, so write for the public, not for maintainers.
-11. Run `node scripts/validate.mjs`, then `node scripts/build.mjs` (it must finish without errors; it generates the public answer pages). Fix every error. Do not publish with errors.
-12. Publish (see below). If nothing material changed, still commit the fuel/price refresh with a short message.
+11. **Draft social posts** in `data/social.json` (see "Social posts" below).
+12. Run `node scripts/validate.mjs`, then `node scripts/build.mjs` (it must finish without errors; it generates the public answer pages). Fix every error. Do not publish with errors.
+13. Publish (see below). If nothing material changed, still commit the fuel/price refresh with a short message.
+
+## Social posts (X and Bluesky)
+
+You draft; you never post. A GitHub Action posts drafts from `data/social.json` once they reach `main`, using
+credentials you don't have. Drafts follow the same review split as the data: a draft about a review item goes in the
+review PR, so it's only posted if a human merges it. Append new drafts to the end of `posts`; never edit or delete a
+post that has an entry in `data/social-log.json` (it has already gone out). Fix mistakes with a `correction`.
+
+**Each run, draft at most:**
+- **0–3 `event` posts**, only for new events with severity `high` or `critical` and confidence `confirmed` or
+  `reported`. Never `unverified`. Set `event_id`. Skip if nothing meets the bar; silence is fine.
+- **1 `digest`** summarising the run: number of new events, the biggest change, and one or two numbers taken from the
+  data files (Brent, a chokepoint's tanker count, US diesel). Skip on quiet days with no new events.
+- **Mondays: 1 `chart`**, alternating `"image": "fuel-weekly"` (pump prices) and `"image": "chokepoints-weekly"`
+  (tanker traffic), with alt text and a caption quoting 2–3 figures from the chart's data.
+- **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
+
+**Writing rules**
+- One or two plain sentences. Lead with the fact, then why it matters for energy flows. No hype, no adjectives like
+  "massive" or "shocking", no speculation, no emojis, no @mentions, at most one or two hashtags (prefer none).
+- The source policy applies in full: attribute claims ("Kpler data showed…", "per UKMTO"). If an event is `reported`
+  (single source), say "(reported)". Never post belligerent claims, even labelled.
+- Figures must match the data files exactly and carry their date ("week of 21 Sep").
+- `url` is the most specific page: a chokepoint or facility page, `/fuel-prices/…`, or `/events/#<event-id>`.
+  Don't put links in `text`.
+- `id`: `YYYY-MM-DD-short-slug`; `created`: today. Length limits are checked by the validator (X counts the link as
+  23 characters; Bluesky allows 300 including it).
 
 ## Publishing — routine changes go live, big changes wait for review
 

@@ -1,6 +1,7 @@
 {
   "buildCommand": "node scripts/build.mjs",
   "outputDirectory": "dist",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)data/social-log.json'",
   "redirects": [
     {
       "source": "/(.*)",

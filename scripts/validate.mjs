@@ -168,6 +168,42 @@ if (log) {
   if (dates.some((d, i) => i && d > dates[i - 1])) err('changelog: entries must be newest first');
 }
 
+// ── social queue (data/social.json) — rules the posting Action relies on ──
+const social = load('social.json');
+if (social) {
+  if (typeof social.enabled !== 'boolean' || typeof social.dry_run !== 'boolean') err('social.json: enabled and dry_run must be booleans');
+  if (!Number.isInteger(social.max_per_day) || social.max_per_day < 1 || social.max_per_day > 10) err('social.json: max_per_day must be 1–10');
+  const eventsById = new Map((ev?.events || []).map(e => [e.id, e]));
+  const seen = new Set();
+  const graphemes = t => [...new Intl.Segmenter('en', { granularity: 'grapheme' }).segment(t)].length;
+  (social.posts || []).forEach((p, i) => {
+    const w = `social.posts[${i}] (${p.id})`;
+    if (!/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(p.id || '')) err(`${w}: id must be YYYY-MM-DD-slug`);
+    if (seen.has(p.id)) err(`${w}: duplicate id`);
+    if (!isDate(p.created) || p.created > today) err(`${w}: created must be a past or current YYYY-MM-DD`);
+    if (!['event', 'digest', 'chart', 'correction', 'announcement'].includes(p.type)) err(`${w}: type must be event|digest|chart|correction|announcement`);
+    if (!p.text?.trim()) err(`${w}: missing text`);
+    if (!/^https:\/\/strategicenergymap\.org\//.test(p.url || '')) err(`${w}: url must be a strategicenergymap.org page`);
+    const text = p.text || '';
+    if ([...text].length + 2 + 23 > 280) err(`${w}: too long for X (text + link must fit 280; links count as 23)`);
+    if (graphemes(`${text}\n\n${p.url || ''}`) > 300) err(`${w}: too long for Bluesky (300 characters including the link)`);
+    if (/(^|\s)@\w/.test(text)) err(`${w}: no @mentions in automated posts`);
+    if ((text.match(/#\w/g) || []).length > 2) err(`${w}: at most 2 hashtags`);
+    if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
+    if (p.image && !['fuel-weekly', 'chokepoints-weekly'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
+    if (p.image && !p.alt) err(`${w}: images need alt text`);
+    if (p.event_id) {
+      const e = eventsById.get(p.event_id);
+      if (!e) err(`${w}: event_id "${p.event_id}" not found in events.json`);
+      else if (e.confidence === 'unverified') err(`${w}: never post unverified events`);
+    }
+    if (p.type === 'event' && !p.event_id) err(`${w}: event posts need an event_id`);
+    if (p.type === 'correction' && !seen.has(p.reply_to)) err(`${w}: corrections must reply_to an earlier post id`);
+    if (p.reply_to && !seen.has(p.reply_to)) err(`${w}: reply_to must reference an earlier post`);
+    seen.add(p.id);
+  });
+}
+
 warnings.forEach(w => console.warn('warn:', w));
 if (errors.length) {
   errors.forEach(e => console.error('ERROR:', e));

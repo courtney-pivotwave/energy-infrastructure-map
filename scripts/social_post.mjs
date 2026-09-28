@@ -1,0 +1,177 @@
+#!/usr/bin/env node
+// Posts queued items from data/social.json to X and Bluesky, and records results in data/social-log.json.
+// Runs in GitHub Actions (.github/workflows/social.yml) with credentials from repository secrets.
+// The research agent only drafts posts; it never sees these credentials.
+//
+// Usage: node scripts/social_post.mjs [--dry-run]
+//   Env: X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET, BSKY_HANDLE, BSKY_APP_PASSWORD,
+//        DRY_RUN=1, LOCAL_SITE (e.g. http://localhost:8765, serving dist/ — needed for chart images), CHROME
+import crypto from 'node:crypto';
+import { readFileSync, writeFileSync, existsSync, mkdtempSync, rmSync } from 'node:fs';
+import { spawn } from 'node:child_process';
+import { tmpdir } from 'node:os';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const QUEUE = join(ROOT, 'data/social.json');
+const LOG = join(ROOT, 'data/social-log.json');
+const FRESH_HOURS = 48;       // never post a draft older than this (stale news)
+const MAX_ATTEMPTS = 3;       // per platform, then give up on that post
+
+// ── OAuth 1.0a (X) ──
+const pct = s => encodeURIComponent(s).replace(/[!'()*]/g, c => '%' + c.charCodeAt(0).toString(16).toUpperCase());
+export function oauthHeader(method, url, params, creds, { nonce = crypto.randomBytes(16).toString('hex'), timestamp = Math.floor(Date.now() / 1000).toString() } = {}) {
+  const oauth = { oauth_consumer_key: creds.key, oauth_nonce: nonce, oauth_signature_method: 'HMAC-SHA1', oauth_timestamp: timestamp, oauth_token: creds.token, oauth_version: '1.0' };
+  const all = { ...params, ...oauth };
+  const paramStr = Object.keys(all).map(k => [pct(k), pct(all[k])]).sort(([a, x], [b, y]) => a === b ? (x < y ? -1 : 1) : (a < b ? -1 : 1)).map(([k, v]) => `${k}=${v}`).join('&');
+  const base = [method.toUpperCase(), pct(url), pct(paramStr)].join('&');
+  oauth.oauth_signature = crypto.createHmac('sha1', `${pct(creds.secret)}&${pct(creds.tokenSecret)}`).update(base).digest('base64');
+  return 'OAuth ' + Object.keys(oauth).sort().map(k => `${pct(k)}="${pct(oauth[k])}"`).join(', ');
+}
+
+// ── Bluesky rich-text link facet (byte offsets in UTF-8) ──
+export function linkFacet(text, url) {
+  const i = text.lastIndexOf(url);
+  if (i < 0) return [];
+  const byteStart = Buffer.byteLength(text.slice(0, i), 'utf8');
+  return [{ index: { byteStart, byteEnd: byteStart + Buffer.byteLength(url, 'utf8') }, features: [{ $type: 'app.bsky.richtext.facet#link', uri: url }] }];
+}
+
+// ── Chart images: headless Chrome screenshot of dist/social/<key>.html ──
+function findChrome() {
+  if (process.env.CHROME) return process.env.CHROME;
+  const paths = ['/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'];
+  return paths.find(existsSync) || 'google-chrome';
+}
+async function renderImage(key) {
+  const site = process.env.LOCAL_SITE;
+  if (!site) { console.log(`  (no LOCAL_SITE; posting without the ${key} image)`); return null; }
+  const out = join(tmpdir(), `social-${key}-${Date.now()}.png`);
+  const profile = mkdtempSync(join(tmpdir(), 'chrome-'));
+  const chrome = spawn(findChrome(), ['--headless=new', `--user-data-dir=${profile}`, '--no-first-run', '--disable-gpu', ...(process.platform === 'linux' ? ['--no-sandbox'] : []), '--hide-scrollbars',
+    '--window-size=1200,675', '--virtual-time-budget=4000', `--screenshot=${out}`, `${site}/social/${key}.html`], { stdio: 'ignore' });
+  for (let i = 0; i < 60 && !(existsSync(out) && readFileSync(out).length > 1000); i++) await new Promise(r => setTimeout(r, 500));
+  chrome.kill('SIGKILL'); chrome.unref(); // Chrome can ignore SIGTERM in headless mode
+  await new Promise(r => setTimeout(r, 300));
+  rmSync(profile, { recursive: true, force: true });
+  if (!existsSync(out)) { console.log(`  image ${key}: render failed, posting without it`); return null; }
+  console.log(`  rendered ${key} → ${out}`);
+  return readFileSync(out);
+}
+
+// ── X ──
+async function postX(p, img, replyToId, creds) {
+  let mediaId = null;
+  if (img) {
+    try {
+      const url = 'https://api.x.com/2/media/upload';
+      const form = new FormData();
+      form.append('media', new Blob([img], { type: 'image/png' }), 'chart.png');
+      form.append('media_category', 'tweet_image');
+      const r = await fetch(url, { method: 'POST', headers: { Authorization: oauthHeader('POST', url, {}, creds) }, body: form });
+      const j = await r.json().catch(() => ({}));
+      mediaId = j?.data?.id || j?.media_id_string || null;
+      if (!mediaId) console.log(`  X media upload failed (${r.status}); posting text only`);
+      else {
+        const meta = 'https://api.x.com/2/media/metadata';
+        await fetch(meta, { method: 'POST', headers: { Authorization: oauthHeader('POST', meta, {}, creds), 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: mediaId, metadata: { alt_text: { text: p.alt.slice(0, 1000) } } }) }).catch(() => {});
+      }
+    } catch (e) { console.log(`  X media upload error: ${e.message}; posting text only`); }
+  }
+  const url = 'https://api.x.com/2/tweets';
+  const body = { text: `${p.text}\n\n${p.url}` };
+  if (mediaId) body.media = { media_ids: [mediaId] };
+  if (replyToId) body.reply = { in_reply_to_tweet_id: replyToId };
+  const r = await fetch(url, { method: 'POST', headers: { Authorization: oauthHeader('POST', url, {}, creds), 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || !j?.data?.id) throw new Error(`X ${r.status}: ${JSON.stringify(j).slice(0, 300)}`);
+  return { id: j.data.id };
+}
+
+// ── Bluesky ──
+const BSKY = 'https://bsky.social/xrpc';
+let bskySession = null;
+async function bsky(method, body, { raw = null, type = 'application/json' } = {}) {
+  const r = await fetch(`${BSKY}/${method}`, { method: 'POST', headers: { 'Content-Type': raw ? type : 'application/json', ...(bskySession ? { Authorization: `Bearer ${bskySession.accessJwt}` } : {}) }, body: raw || JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(`Bluesky ${method} ${r.status}: ${JSON.stringify(j).slice(0, 300)}`);
+  return j;
+}
+async function pageCard(url) { // title/description for the link card, from the page itself
+  try {
+    const html = await (await fetch(url, { signal: AbortSignal.timeout(15000) })).text();
+    const get = re => (html.match(re) || [])[1] || '';
+    const dec = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    return { title: dec(get(/<title>([^<]*)<\/title>/)).slice(0, 300), description: dec(get(/<meta name="description" content="([^"]*)"/)).slice(0, 1000) };
+  } catch { return { title: 'Strategic Energy Map', description: '' }; }
+}
+async function postBluesky(p, img, replyRef, creds) {
+  if (!bskySession) bskySession = await bsky('com.atproto.server.createSession', { identifier: creds.handle, password: creds.password });
+  const text = `${p.text}\n\n${p.url}`;
+  const record = { $type: 'app.bsky.feed.post', text, createdAt: new Date().toISOString(), langs: ['en'], facets: linkFacet(text, p.url) };
+  if (img) {
+    const { blob } = await bsky('com.atproto.repo.uploadBlob', null, { raw: img, type: 'image/png' });
+    record.embed = { $type: 'app.bsky.embed.images', images: [{ image: blob, alt: p.alt || '', aspectRatio: { width: 1200, height: 675 } }] };
+  } else {
+    const card = await pageCard(p.url);
+    const external = { uri: p.url, title: card.title, description: card.description };
+    try {
+      const thumb = await (await fetch('https://strategicenergymap.org/og.png')).arrayBuffer();
+      external.thumb = (await bsky('com.atproto.repo.uploadBlob', null, { raw: Buffer.from(thumb), type: 'image/png' })).blob;
+    } catch { /* card without thumbnail */ }
+    record.embed = { $type: 'app.bsky.embed.external', external };
+  }
+  if (replyRef) record.reply = { root: replyRef.root || { uri: replyRef.uri, cid: replyRef.cid }, parent: { uri: replyRef.uri, cid: replyRef.cid } };
+  const j = await bsky('com.atproto.repo.createRecord', { repo: bskySession.did, collection: 'app.bsky.feed.post', record });
+  return { uri: j.uri, cid: j.cid, root: record.reply?.root || { uri: j.uri, cid: j.cid } };
+}
+
+// ── Main ──
+async function main() {
+  const queue = JSON.parse(readFileSync(QUEUE, 'utf8'));
+  const log = existsSync(LOG) ? JSON.parse(readFileSync(LOG, 'utf8')) : { posted: {} };
+  const dry = process.argv.includes('--dry-run') || process.env.DRY_RUN === '1' || queue.dry_run === true;
+  if (!queue.enabled) { console.log('Social posting is paused (data/social.json → enabled: false).'); return; }
+
+  const creds = {
+    x: process.env.X_API_KEY && process.env.X_ACCESS_TOKEN ? { key: process.env.X_API_KEY, secret: process.env.X_API_SECRET, token: process.env.X_ACCESS_TOKEN, tokenSecret: process.env.X_ACCESS_SECRET } : null,
+    bluesky: process.env.BSKY_HANDLE && process.env.BSKY_APP_PASSWORD ? { handle: process.env.BSKY_HANDLE, password: process.env.BSKY_APP_PASSWORD } : null,
+  };
+  const platforms = ['x', 'bluesky'];
+  const today = new Date().toISOString().slice(0, 10);
+  const postedToday = () => Object.values(log.posted).filter(e => platforms.some(pl => (e[pl]?.at || '').startsWith(today))).length;
+  const fresh = p => (Date.now() - Date.parse(p.created + 'T00:00:00Z')) / 36e5 < FRESH_HOURS;
+  const done = (p, pl) => !!(log.posted[p.id]?.[pl]?.id || log.posted[p.id]?.[pl]?.uri);
+  const images = {};
+
+  console.log(`${dry ? 'DRY RUN — ' : ''}queue: ${queue.posts.length} post(s); X ${creds.x ? 'configured' : 'not configured'}; Bluesky ${creds.bluesky ? 'configured' : 'not configured'}; posted today: ${postedToday()}/${queue.max_per_day}`);
+  for (const p of queue.posts) {
+    if (!fresh(p)) continue;
+    const todo = platforms.filter(pl => !done(p, pl) && (log.posted[p.id]?.[pl]?.attempts || 0) < MAX_ATTEMPTS && (dry || creds[pl]));
+    if (!todo.length) continue;
+    const isNewPost = !platforms.some(pl => done(p, pl));
+    if (isNewPost && postedToday() >= queue.max_per_day) { console.log(`Daily limit reached; holding ${p.id}`); break; }
+    if (p.image && !(p.image in images)) images[p.image] = await renderImage(p.image);
+    const img = p.image ? images[p.image] : null;
+    const parent = p.reply_to ? log.posted[p.reply_to] : null;
+    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${p.image}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  ${p.text}\n  ${p.url}`);
+    if (dry) { console.log(`  would post to: ${todo.join(', ')}`); continue; }
+    log.posted[p.id] ||= {};
+    for (const pl of todo) {
+      const prev = log.posted[p.id][pl] || {};
+      try {
+        const res = pl === 'x' ? await postX(p, img, parent?.x?.id, creds.x) : await postBluesky(p, img, parent?.bluesky, creds.bluesky);
+        log.posted[p.id][pl] = { ...res, at: new Date().toISOString() };
+        console.log(`  ✓ ${pl}: ${res.id || res.uri}`);
+      } catch (e) {
+        log.posted[p.id][pl] = { attempts: (prev.attempts || 0) + 1, error: String(e.message).slice(0, 300), last_try: new Date().toISOString() };
+        console.log(`  ✗ ${pl}: ${e.message}`);
+      }
+    }
+  }
+  if (!dry) writeFileSync(LOG, JSON.stringify(log, null, 1) + '\n');
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) main().then(() => process.exit(0), e => { console.error(e); process.exit(1); });

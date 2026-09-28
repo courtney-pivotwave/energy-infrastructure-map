@@ -3,6 +3,15 @@
   {
    "date": "2026-09-28",
    "kind": "site",
+   "headline": "Automated updates on X and Bluesky (coming soon)",
+   "changes": [
+    "Significant developments, a daily digest and weekly charts will be posted automatically, with the same sourcing rules as the map",
+    "Posts about items that need human review only go out once they're approved"
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "kind": "site",
    "headline": "Clearer map style",
    "changes": [
     "New 'paper and slate' basemap: warm land and slate-blue water, so coastlines and chokepoints read clearly",

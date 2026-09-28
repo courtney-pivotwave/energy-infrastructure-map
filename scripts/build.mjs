@@ -428,12 +428,52 @@ ${events.slice(0, 50).map(e => `<item><title>${esc(e.title)}</title><link>${SITE
   pages.push({ path: '/', lastmod: eventsData.updated }, { path: '/about.html', lastmod: null });
 }
 
+// ── Social chart cards (1200×675, rendered to PNG by scripts/social_post.mjs; not indexed) ──
+function chartCard({ title, subtitle, rows, source }) {
+  return `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><style>
+  * { margin: 0; box-sizing: border-box; } body { width: 1200px; height: 675px; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f4f1e8; color: #1a2332; position: relative; overflow: hidden; }
+  .head { padding: 40px 56px 18px; } h1 { font-size: 38px; letter-spacing: -0.4px; } .sub { font-size: 20px; color: #4a5568; margin-top: 6px; }
+  .rows { padding: 0 56px; height: 470px; display: flex; flex-direction: column; justify-content: center; } .row { display: grid; grid-template-columns: 250px 1fr 210px; align-items: center; height: 44px; font-size: 20px; }
+  .name { font-weight: 600; } .track { position: relative; height: 24px; } .bar { position: absolute; top: 0; height: 24px; border-radius: 4px; }
+  .zero { position: absolute; top: -6px; bottom: -6px; width: 2px; background: #8a94a6; } .val { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; } .val small { font-weight: 500; color: #4a5568; font-size: 16px; }
+  .foot { position: absolute; left: 0; right: 0; bottom: 0; height: 58px; background: #1a2332; color: #c9d3e0; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; font-size: 16px; }
+  .foot b { color: #fff; font-size: 18px; }
+</style></head><body><div class="head"><h1>${esc(title)}</h1><div class="sub">${esc(subtitle)}</div></div>
+<div class="rows">${rows}</div><div class="foot"><span>${esc(source)}</span><b>strategicenergymap.org</b></div></body></html>`;
+}
+{
+  mkdirSync(join(DIST, 'social'), { recursive: true });
+  // Pump prices: diesel change since the pre-crisis week
+  const ids = ['us', 'uk', 'eu', 'de', 'fr', 'it', 'es', 'nl', 'pl'];
+  const list = ids.map(id => fuelEntries.find(e => e.id === id)).filter(e => e?.diesel?.pre_crisis)
+    .map(e => ({ e, p: pct(e.diesel.now, e.diesel.pre_crisis) })).sort((a, b) => b.p - a.p);
+  const maxP = Math.max(...list.map(x => x.p), 1);
+  const fuelRows = list.map(({ e, p }) => `<div class="row"><span class="name">${esc(e.name)}</span><div class="track"><div class="bar" style="left:0;width:${(p / maxP * 100).toFixed(1)}%;background:#b3261e"></div></div><span class="val">${signed(p)} <small>${esc(money(e, e.diesel.now))}${e.unit === '$/gal' ? '/gal' : '/L'}</small></span></div>`).join('');
+  writeFileSync(join(DIST, 'social', 'fuel-weekly.html'), chartCard({
+    title: 'Diesel prices since the Strait of Hormuz closed', subtitle: `Change since the week of ${PRE}, as of the week of ${fmtDate(fuel.as_of)}`,
+    rows: fuelRows, source: 'Sources: US EIA · EU Weekly Oil Bulletin · UK DESNZ' }));
+  // Chokepoints: tanker traffic vs pre-crisis baseline (diverging bars around zero)
+  const cps = Object.keys(pw).filter(id => pw[id]).map(id => ({ id, d: pw[id], p: pct(pw[id].now, pw[id].base) })).sort((a, b) => a.p - b.p);
+  const span = Math.max(100, ...cps.map(x => Math.abs(x.p)));
+  const zero = 70; // % of track width where zero sits (most changes are negative)
+  const cpRows = cps.map(({ id, d, p }) => {
+    const w = Math.abs(p) / span * (p < 0 ? zero : 100 - zero);
+    const left = p < 0 ? zero - w : zero;
+    return `<div class="row"><span class="name">${esc(REG[id].name.replace(/ \(.*\)/, ''))}</span><div class="track"><div class="zero" style="left:${zero}%"></div><div class="bar" style="left:${left.toFixed(1)}%;width:${w.toFixed(1)}%;background:${p < 0 ? '#b3261e' : '#1e8a4c'}"></div></div><span class="val">${signed(p)} <small>${n(d.now)}/day</small></span></div>`;
+  }).join('');
+  const last = cps.map(x => x.d.lastDate).sort().pop();
+  writeFileSync(join(DIST, 'social', 'chokepoints-weekly.html'), chartCard({
+    title: 'Tanker traffic through energy chokepoints', subtitle: `7-day average to ${fmtDate(last)} vs ${BASELINE.label}`,
+    rows: cpRows, source: 'Source: IMF PortWatch (satellite AIS). Ships sailing with transponders off are not counted.' }));
+}
+
 // ── Pages index for the map, robots.txt, sitemap ──
 writeFileSync(join(DIST, 'pages.json'), JSON.stringify({
   facilities: facilityIds.filter(hasPage), chokepoints: chokeIds, fuel: fuelEntries.map(e => e.id) }));
 writeFileSync(join(DIST, 'robots.txt'), `# Search engines and AI assistants are welcome to crawl and cite this site.
 User-agent: *
 Allow: /
+Disallow: /social/
 
 User-agent: GPTBot
 Allow: /

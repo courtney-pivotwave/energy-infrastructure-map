@@ -9,6 +9,8 @@ Nothing about the map's content lives in the HTML — to change what the map say
 | `data/status.json` | Current operating status of any asset that is **not** running normally. | Update agent, every run. |
 | `data/events.json` | Dated feed of developments (strikes, closures, sanctions, restarts, deals). | Update agent, every run (append; edit only to correct). |
 | `data/market.json` | Latest benchmark prices with a pre-crisis reference. | Update agent, every run. |
+| `data/social.json` | Draft posts for X and Bluesky, plus the kill switch. | Update agent appends drafts; humans set `enabled` / `dry_run`. |
+| `data/social-log.json` | What was posted where (post IDs). | The posting GitHub Action only. Never edit. |
 | `data/changelog.json` | Public changelog shown on the About page. | Update agent appends one entry per run with material changes; humans for site changes. |
 | `data/scenarios.json` | Baseline flows through each chokepoint, bypass capacity, and most-exposed importers — used by the "what-if" closure mode. | Humans; agent may refresh figures when an authoritative source (EIA, IEA) publishes new numbers. |
 
@@ -135,3 +137,23 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   ]
 }
 ```
+
+## social.json
+
+```jsonc
+{
+  "enabled": true,        // kill switch: false pauses all posting immediately
+  "dry_run": false,       // true: the Action only prints what it would post
+  "max_per_day": 6,
+  "posts": [
+    { "id": "2026-09-28-east-west-restart", "created": "2026-09-28",
+      "type": "event",                      // event | digest | chart | correction | announcement
+      "text": "Saudi Arabia restarted the East-West pipeline at reduced rates after drone strikes shut it on 11 Sep (reported).",
+      "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+      "event_id": "2026-09-22-east-west-pipeline-restart",   // required for event posts
+      "image": null, "alt": null,           // image: fuel-weekly | chokepoints-weekly (alt text required)
+      "reply_to": null }                    // earlier post id (required for corrections)
+  ]
+}
+```
+Drafts older than 48 hours are never posted. The Action retries a failed platform up to 3 times.

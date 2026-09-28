@@ -208,9 +208,9 @@
   },
   {
    "id": "2026-09-24-indian-cargo-ship-attacked-hormuz",
-   "date": "2026-09-24",
-   "title": "Indian cargo ship attacked in Hormuz, one sailor killed",
-   "summary": "An Indian cargo ship was attacked in the Strait of Hormuz, killing a sailor, as attacks on shipping continued despite US assertions that the waterway is open.",
+   "date": "2026-09-23",
+   "title": "Bulk carrier Cape Dao attacked near Strait of Hormuz, Indian seafarer killed",
+   "summary": "Correction: the vessel was the Antigua and Barbuda-flagged bulk carrier Cape Dao, bound for India, struck by an unidentified projectile around 0630 UTC on 23 September about 2.5 nautical miles off Oman's Musandam Governorate (UKMTO; Oman Maritime Security Center). The ship caught fire and was abandoned; Oman evacuated 27 crew and one Indian seafarer was killed. No party has claimed responsibility.",
    "category": "shipping",
    "severity": "medium",
    "coords": [
@@ -226,6 +226,16 @@
      "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
      "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
      "date": "2026-09-27"
+    },
+    {
+     "name": "Arab News — One Indian killed in attack on ship heading toward India, says embassy in Oman",
+     "url": "https://www.arabnews.com/middle-east/one-indian-killed-in-attack-on-ship-heading-toward-india-says-embassy-in-oman-says-3002803",
+     "date": "2026-09-24"
+    },
+    {
+     "name": "gCaptain — Seafarer Killed in Hormuz Attack as Trump Pushes Iran Deal at UN",
+     "url": "https://gcaptain.com/seafarer-killed-in-hormuz-attack-as-trump-pushes-iran-deal-at-un/",
+     "date": "2026-09-24"
     }
    ]
   },

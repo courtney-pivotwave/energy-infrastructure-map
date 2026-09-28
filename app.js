@@ -73,10 +73,43 @@ if (EMBED) {
 // ── Map ──
 const map = L.map('map', { center: [30, 40], zoom: 3, minZoom: 2, maxZoom: 10, zoomControl: false, worldCopyJump: true });
 L.control.zoom({ position: 'topright' }).addTo(map);
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-  attribution: '&copy; Esri, HERE, Garmin &copy; OpenStreetMap contributors · Transits: IMF PortWatch', maxZoom: 16,
-}).addTo(map);
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }).addTo(map);
+// Basemap styles (?basemap=<key> while we compare options)
+const ESRI = p => `https://server.arcgisonline.com/ArcGIS/rest/services/${p}/MapServer/tile/{z}/{y}/{x}`;
+const ESRI_ATTR = '&copy; Esri, HERE, Garmin &copy; OpenStreetMap contributors';
+const CARTO_ATTR = '&copy; OpenStreetMap contributors &copy; CARTO';
+const BASEMAPS = {
+  gray:    { base: ESRI('Canvas/World_Light_Gray_Base'), labels: ESRI('Canvas/World_Light_Gray_Reference'), attr: ESRI_ATTR },
+  voyager: { base: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', labels: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', attr: CARTO_ATTR },
+  ocean:   { base: ESRI('Ocean/World_Ocean_Base'), labels: ESRI('Ocean/World_Ocean_Reference'), attr: ESRI_ATTR + ', GEBCO, NOAA' },
+  terrain: { base: ESRI('World_Terrain_Base'), labels: ESRI('Canvas/World_Light_Gray_Reference'), attr: ESRI_ATTR + ', USGS, NOAA' },
+  dark:    { base: ESRI('Canvas/World_Dark_Gray_Base'), labels: ESRI('Canvas/World_Dark_Gray_Reference'), attr: ESRI_ATTR, dark: true },
+  // Custom duotones: recolour Esri's grey tiles (light: water 208, land 239; dark: water 35, land 63)
+  paper:   { base: ESRI('Canvas/World_Light_Gray_Base'), labels: ESRI('Canvas/World_Light_Gray_Reference'), attr: ESRI_ATTR,
+             duotone: [[0, '#4a5a6b'], [0.72, '#8d9dae'], [0.78, '#c2d1de'], [0.855, '#c2d1de'], [0.90, '#f1ede3'], [0.97, '#f4f1e8'], [1, '#faf8f2']] },
+  navy:    { base: ESRI('Canvas/World_Dark_Gray_Base'), labels: ESRI('Canvas/World_Dark_Gray_Reference'), attr: ESRI_ATTR, dark: true,
+             duotone: [[0, '#08111c'], [0.10, '#0d1a2a'], [0.18, '#0d1a2a'], [0.215, '#1f2d3d'], [0.29, '#223142'], [1, '#8a98a8']] },
+};
+function duotoneFilter(id, stops) { // grey level → colour, via an SVG table transfer
+  const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+  const N = 128, ch = [[], [], []];
+  for (let i = 0; i < N; i++) {
+    const v = i / (N - 1);
+    let k = 0; while (k < stops.length - 2 && v > stops[k + 1][0]) k++;
+    const [a, b] = [stops[k], stops[k + 1]], t = Math.max(0, Math.min(1, (v - a[0]) / (b[0] - a[0] || 1)));
+    const [ca, cb] = [hex(a[1]), hex(b[1])];
+    for (let c = 0; c < 3; c++) ch[c].push(((ca[c] + (cb[c] - ca[c]) * t) / 255).toFixed(4));
+  }
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', '0'); svg.setAttribute('height', '0'); svg.style.position = 'absolute';
+  svg.innerHTML = `<filter id="${id}" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer>
+    <feFuncR type="table" tableValues="${ch[0].join(' ')}"/><feFuncG type="table" tableValues="${ch[1].join(' ')}"/><feFuncB type="table" tableValues="${ch[2].join(' ')}"/></feComponentTransfer></filter>`;
+  document.body.appendChild(svg);
+}
+const BASEMAP = BASEMAPS[params.get('basemap')] || BASEMAPS.gray;
+if (BASEMAP.dark) document.body.classList.add('basemap-dark');
+const baseLayer = L.tileLayer(BASEMAP.base, { attribution: `${BASEMAP.attr} · Transits: IMF PortWatch`, maxZoom: 16, subdomains: 'abcd', className: 'base-tiles' }).addTo(map);
+if (BASEMAP.duotone) { duotoneFilter('basemap-duotone', BASEMAP.duotone); baseLayer.getContainer().style.filter = 'url(#basemap-duotone)'; }
+L.tileLayer(BASEMAP.labels, { maxZoom: 16, subdomains: 'abcd' }).addTo(map);
 
 const LAYERS = [
   { key: 'gas',        label: 'Gas pipelines',         sw: `<span class="sw-line" style="background:${COLORS.gas}"></span>` },

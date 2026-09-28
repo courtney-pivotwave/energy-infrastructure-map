@@ -23,6 +23,10 @@ Read `CLAUDE.md` and `agent/SCHEMA.md` first. The schema is the contract — fol
 6. **Small, reviewable diffs.** Only edit `data/`. Never delete from `infrastructure.json`; add an asset only when it has
    become materially relevant (e.g. a newly struck facility), with coordinates you can source.
 7. **When unsure, leave it out** and list it under "Open questions" in the run summary.
+8. **Read the sources, not the search snippets.** If you can't open source pages (fetch errors, blocked network), don't
+   add or change events or statuses on the strength of search-result summaries. Refresh only what you could actually
+   reach, and put the network problem at the top of the run summary.
+9. **No names of private individuals** (crew, casualties, bystanders). Officials acting in a public role are fine.
 
 ## Source policy — parties to the conflicts
 
@@ -45,7 +49,10 @@ Houthis (Ansar Allah), Russia and Ukraine.
    partial (e.g. AIS-dark tankers), say so rather than filling the gap.
 4. **Provenance must be traceable.** If an article gives a figure without saying where it came from, and you can't
    trace it to an independent tracker or agency, leave it out.
-5. `confirmed` requires independent sources. A party's statement never makes something `confirmed` on its own; the
+5. **Confidence describes the substance, not the quote.** "Trump says talks will resume" or "the IRGC says the strait
+   is open" is `unverified` however many outlets confirm the words were said, because the claim itself can't be
+   checked. Only the underlying fact, independently shown, earns `reported` or `confirmed`.
+6. `confirmed` requires independent sources. A party's statement never makes something `confirmed` on its own; the
    validator rejects entries that rest only on US `.gov`/`.mil` sources unless they're labelled `unverified`.
 
 ## Sources to check (in roughly this order)
@@ -112,6 +119,10 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
 - The source policy applies in full: attribute claims ("Kpler data showed…", "per UKMTO"). If an event is `reported`
   (single source), say "(reported)". Never post belligerent claims, even labelled.
 - Figures must match the data files exactly and carry their date ("week of 21 Sep").
+- Every fact in a draft must agree with the current data files (statuses, events). Before writing "shut", "closed" or
+  "reopened", check the asset's entry in `data/status.json`. When sources disagree, use the more cautious word
+  ("disrupted", "reduced").
+- Digests follow the same rules as event posts: no belligerent statements, even attributed ones.
 - `url` is the most specific page: a chokepoint or facility page, `/fuel-prices/…`, or `/events/#<event-id>`.
   Don't put links in `text`.
 - `id`: `YYYY-MM-DD-short-slug`; `created`: today. Length limits are checked by the validator (X counts the link as

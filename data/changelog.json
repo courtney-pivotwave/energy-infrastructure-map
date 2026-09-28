@@ -5,7 +5,7 @@
    "kind": "site",
    "headline": "Collapsible panels and a better phone layout",
    "changes": [
-    "Hide or show the Layers and feed panels with the buttons at either end of the top bar; the map remembers your choice",
+    "Hide a side panel with the « or » button in its header; a labelled tab at the edge of the map brings it back, and the map remembers your choice",
     "On phones the feed is a bottom sheet: tap or swipe the handle to expand or minimise it, and the map opens full-screen",
     "Selecting an item centres it in the visible part of the map"
    ]

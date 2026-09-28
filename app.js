@@ -252,10 +252,11 @@ function initPanels() {
 function applyPanels() {
   document.body.classList.toggle('left-collapsed', !panels.left);
   document.body.classList.toggle('right-collapsed', !panels.right);
-  const l = $('#toggleLeft'), r = $('#toggleRight'), h = $('#sheetHandle');
-  l.setAttribute('aria-expanded', String(panels.left)); l.title = panels.left ? 'Hide layers' : 'Show layers';
-  r.setAttribute('aria-expanded', String(panels.right)); r.title = panels.right ? 'Hide panel' : 'Show panel';
-  h.setAttribute('aria-expanded', String(panels.right));
+  $('#toggleLeft').setAttribute('aria-expanded', String(panels.left));
+  $('#toggleLeft').title = panels.left ? 'Hide layers' : 'Show layers';
+  $('#edgeLeft').setAttribute('aria-expanded', String(panels.left));
+  $('#edgeRight').setAttribute('aria-expanded', String(panels.right));
+  $('#sheetHandle').setAttribute('aria-expanded', String(panels.right));
   $('#leftPanel').inert = !panels.left;
   $('#leftPanel').style.top = isMobile() ? `${$('.topbar').getBoundingClientRect().bottom + 8}px` : '';
   $('#rightPanel').inert = !panels.right && !isMobile(); // the phone sheet keeps its tab row usable when minimised
@@ -266,8 +267,13 @@ function setPanel(side, open) {
   if (!isMobile()) store.set(`sem.${side}`, open ? '1' : '0');
   applyPanels();
 }
-$('#toggleLeft').addEventListener('click', () => setPanel('left', !panels.left));
-$('#toggleRight').addEventListener('click', () => setPanel('right', !panels.right));
+// Controls live on the panels: collapse buttons in each panel header, labelled edge tabs to reopen.
+// Focus follows so keyboard users can always get the panel back.
+$('#collapseLeft').addEventListener('click', () => { setPanel('left', false); if (!isMobile()) $('#edgeLeft').focus(); });
+$('#collapseRight').addEventListener('click', () => { setPanel('right', false); $('#edgeRight').focus(); });
+$('#edgeLeft').addEventListener('click', () => { setPanel('left', true); $('#collapseLeft').focus(); });
+$('#edgeRight').addEventListener('click', () => { setPanel('right', true); $('#collapseRight').focus(); });
+$('#toggleLeft').addEventListener('click', () => setPanel('left', !panels.left)); // phones: labelled top-bar button
 $('#sheetHandle').addEventListener('click', () => setPanel('right', !panels.right));
 map.on('click', () => { if (isMobile()) setPanel('left', false); });
 // Phone sheet: swipe the handle or tab row up to expand, down to minimise

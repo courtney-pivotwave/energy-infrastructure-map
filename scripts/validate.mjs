@@ -84,6 +84,10 @@ if (status) {
 // ── events ──
 const ev = load('events.json');
 if (ev) {
+  if (ev.situation_headline !== undefined) {
+    if (typeof ev.situation_headline !== 'string' || !ev.situation_headline.trim()) err('events.json: situation_headline must be non-empty text');
+    else if (ev.situation_headline.length > 320) err('events.json: situation_headline over 320 characters; keep it to 1–2 sentences');
+  } else warn('events.json: no situation_headline; the map will lead with the background summary');
   const seen = new Set();
   (ev.events || []).forEach((e, i) => {
     const w = `events[${i}] (${e.id})`;

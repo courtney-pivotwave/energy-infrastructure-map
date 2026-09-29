@@ -54,6 +54,8 @@ Status meanings: **reduced** = running below normal; **disrupted** = intermitten
 ```jsonc
 {
   "updated": "2026-09-27",
+  "situation_headline": "1–2 sentences: what changed since the last run (shown first on the map)",
+  "situation_summary": "5–8 sentences of background for first-time visitors (collapsed; revised only when the big picture changes)",
   "events": [
     {
       "id": "2026-09-26-kharg-strike",          // YYYY-MM-DD-short-slug, unique

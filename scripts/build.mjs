@@ -400,10 +400,11 @@ ${sourcesHTML([...new Map(fuelEntries.map(e => [e.source.url, e.source])).values
   write('/events/', layout({
     path: '/events/', lastmod: eventsData.updated,
     title: 'Energy infrastructure news: strikes, closures and disruptions (sourced log) | Strategic Energy Map',
-    description: (eventsData.situation_summary || '').slice(0, 300),
+    description: (eventsData.situation_headline || eventsData.situation_summary || '').slice(0, 300),
     crumbs: [{ name: 'Events', url: '/events/' }],
     body: `<h1>Energy infrastructure events</h1>
-${eventsData.situation_summary ? `<div class="answer"><p class="q">Situation as of ${esc(fmtDate(eventsData.updated))}</p><p>${esc(eventsData.situation_summary)}</p></div>` : ''}
+${eventsData.situation_headline ? `<div class="answer"><p class="q">Latest, ${esc(fmtDate(eventsData.updated))}</p><p>${esc(eventsData.situation_headline)}</p></div>` : ''}
+${eventsData.situation_summary ? `<details class="doc-bg"><summary>Background: how we got here</summary><p>${esc(eventsData.situation_summary)}</p></details>` : ''}
 <p>A dated log of developments affecting energy infrastructure, flows and prices. Each entry links its sources and carries a confidence label. <a href="/events.xml">RSS feed</a>.</p>
 <nav class="doc-toc">${Object.keys(byMonth).map(m => `<a href="#m-${m}">${esc(fmtMonth(m))} (${byMonth[m].length})</a>`).join('')}</nav>
 ${Object.entries(byMonth).map(([m, list]) => `<section id="m-${m}"><h2>${esc(fmtMonth(m))}</h2>${list.map(e => eventItem(e)).join('')}</section>`).join('')}`,
@@ -421,7 +422,9 @@ ${events.slice(0, 50).map(e => `<item><title>${esc(e.title)}</title><link>${SITE
 // ── Homepage: ship the latest situation and events as real HTML (app.js re-renders the same panel) ──
 {
   const latest = events.slice(0, 8).map(e => `<div class="event" data-event="${esc(e.id)}"><div class="ev-meta">${esc(fmtDate(e.date))} · ${esc(e.category)} ${confChip(e.confidence)}</div><div class="ev-title">${esc(e.title)}</div><div class="ev-sum">${esc(e.summary)}</div>${sourcesHTML(e.sources)}</div>`).join('');
-  const pre = `${eventsData.situation_summary ? `<details class="situation"><summary><b>Situation · ${esc(fmtDate(eventsData.updated))}</b><span class="clamp">${esc(eventsData.situation_summary)}</span></summary><div class="full">${esc(eventsData.situation_summary)}</div></details>` : ''}${latest}<p class="note"><a href="/events/">All events →</a></p>`;
+  const d = eventsData;
+  const card = (d.situation_headline || d.situation_summary) ? `<div class="situation"><b>Latest · ${esc(fmtDate(d.updated))}</b>${d.situation_headline ? `<p class="lead">${esc(d.situation_headline)}</p>` : ''}${d.situation_summary ? `<details class="bg"><summary>Background: how we got here</summary><p>${esc(d.situation_summary)}</p></details>` : ''}</div>` : '';
+  const pre = `${card}${latest}<p class="note"><a href="/events/">All events →</a></p>`;
   let html = indexHtml.replace('<div class="tab-body" id="tab-latest"></div>', `<div class="tab-body" id="tab-latest">${pre}</div>`);
   if (html === indexHtml) throw new Error('index.html: #tab-latest placeholder not found');
   writeFileSync(join(DIST, 'index.html'), html);

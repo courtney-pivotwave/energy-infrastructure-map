@@ -404,12 +404,12 @@ function confHTML(c) { return c ? `<span class="conf ${esc(c)}">${esc(c)}</span>
 
 // ── Latest tab ──
 const evFilter = { window: 30, category: 'all' };
-let situationOpen = false;
+let situationOpen = false; // background stays collapsed: lead with what's new
+const situationCard = (d, open) => (d.situation_headline || d.situation_summary) ? `<div class="situation"><b>Latest${d.updated ? ' · ' + esc(fmtDate(d.updated)) : ''}</b>${d.situation_headline ? `<p class="lead">${esc(d.situation_headline)}</p>` : ''}${d.situation_summary ? `<details class="bg"${open ? ' open' : ''}><summary>Background: how we got here</summary><p>${esc(d.situation_summary)}</p></details>` : ''}</div>` : '';
 function renderLatest() {
   const cats = ['all', ...new Set(events.map(e => e.category))];
   const list = events.filter(e => (evFilter.window === 0 || daysAgo(e.date) <= evFilter.window) && (evFilter.category === 'all' || e.category === evFilter.category));
-  const situation = eventsData.situation_summary
-    ? `<details class="situation"${situationOpen ? ' open' : ''}><summary><b>Situation${eventsData.updated ? ' · ' + esc(fmtDate(eventsData.updated)) : ''}</b><span class="clamp">${esc(eventsData.situation_summary)}</span></summary><div class="full">${esc(eventsData.situation_summary)}</div></details>` : '';
+  const situation = situationCard(eventsData, situationOpen);
   $('#tab-latest').innerHTML = situation + `
     <div class="filters">${[[7, '7 days'], [30, '30 days'], [90, '90 days'], [0, 'All']].map(([v, l]) =>
       `<button class="chip ${evFilter.window === v ? 'on' : ''}" data-window="${v}">${l}</button>`).join('')}</div>
@@ -424,7 +424,7 @@ function eventHTML(e) {
     ${sourcesHTML(e.sources)}
   </div>`;
 }
-$('#tab-latest').addEventListener('toggle', e => { if (e.target.matches('.situation')) situationOpen = e.target.open; }, true);
+$('#tab-latest').addEventListener('toggle', e => { if (e.target.matches('.situation .bg')) situationOpen = e.target.open; }, true);
 $('#tab-latest').addEventListener('click', e => {
   const t = e.target;
   if (t.dataset.window !== undefined) { evFilter.window = +t.dataset.window; renderLatest(); return; }

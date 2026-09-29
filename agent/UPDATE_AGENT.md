@@ -77,8 +77,14 @@ Houthis (Ansar Allah), Russia and Ukraine.
 3. Note the last run date = `data/status.json → updated`. Research everything energy-relevant **since that date**
    (overlap by one day).
 4. Update `data/events.json`: add new events (newest first, unique ids `YYYY-MM-DD-slug`). Correct earlier events if new
-   information contradicts them — update the summary and add the new source; don't silently delete. Refresh
-   `situation_summary` (5–8 sentences, neutral, current as of today) and set `updated`.
+   information contradicts them — update the summary and add the new source; don't silently delete. Set `updated`.
+   - **`situation_headline` (every run):** 1–2 sentences, max ~250 characters, on what changed since the last run: the
+     one or two developments a returning reader most needs. This is the first thing visitors see, so lead with the
+     news, not the backstory. Same sourcing rules as events: independently verifiable facts only, no belligerent
+     claims. If nothing material changed, say so plainly (e.g. "No major change since 28 Sep: Hormuz remains closed…").
+   - **`situation_summary` (only when the big picture changes):** the collapsed background for first-time visitors,
+     5–8 neutral sentences on how the crisis got here and where it stands. Don't rewrite it daily; revise it when a
+     new phase begins (a ceasefire, a reopening, a new front).
 5. Update `data/status.json`: for each affected asset set/refresh status, summary, `updated`, sources. When an asset
    returns to normal, delete its entry and log an event saying so. Set top-level `updated` to today.
 6. Update `data/market.json`: latest value, `week_ago`, keep `pre_crisis` fixed, `as_of`, a sourced one-line `note`.

@@ -4,18 +4,45 @@
    "x": {
     "id": "2104761102697631907",
     "at": "2026-09-29T02:32:06.278Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnhp6l42y",
+    "cid": "bafyreihj4dkokgofzbmnzpw4hx64kywz7jxf3m5l4nyz5gslgq3aesdjku",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnhp6l42y",
+     "cid": "bafyreihj4dkokgofzbmnzpw4hx64kywz7jxf3m5l4nyz5gslgq3aesdjku"
+    },
+    "at": "2026-09-29T11:40:39.775Z"
    }
   },
   "2026-09-28-fuel-weekly": {
    "x": {
     "id": "2104761138827399222",
     "at": "2026-09-29T02:32:14.936Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnrvhtd2h",
+    "cid": "bafyreibez7mktd3vrrzd5ytdwb5phsyp7z6xmiv5ms2eykim2ifi76qtqa",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnrvhtd2h",
+     "cid": "bafyreibez7mktd3vrrzd5ytdwb5phsyp7z6xmiv5ms2eykim2ifi76qtqa"
+    },
+    "at": "2026-09-29T11:40:50.543Z"
    }
   },
   "2026-09-29-digest": {
    "x": {
     "id": "2104887197598109869",
     "at": "2026-09-29T10:53:09.635Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnteba32y",
+    "cid": "bafyreiaeyxp5avkvgcq3po5xmska7gsofuqsmez3n6dczogaitfx42rxvi",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnteba32y",
+     "cid": "bafyreiaeyxp5avkvgcq3po5xmska7gsofuqsmez3n6dczogaitfx42rxvi"
+    },
+    "at": "2026-09-29T11:40:51.486Z"
    }
   }
  }

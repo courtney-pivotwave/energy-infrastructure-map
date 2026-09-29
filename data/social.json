@@ -61,6 +61,21 @@
    "url": "https://strategicenergymap.org/fuel-prices/",
    "image": "fuel-weekly",
    "alt": "Bar chart of the change in diesel prices since the week of 23 February 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland."
+  },
+  {
+   "id": "2026-09-29-digest",
+   "created": "2026-09-29",
+   "type": "digest",
+   "text": "2 new developments today: Saudi Arabia's East-West pipeline has recovered to ~3.5 million b/d (about half capacity), and Kpler data show Hormuz crude exports averaging 7.4 million b/d in September (reported). Brent held near $105/bbl.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Oil",
+    "OOTT"
+   ],
+   "reply_to": null
   }
  ]
 }

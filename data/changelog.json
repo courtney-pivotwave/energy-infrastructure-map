@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-09-29",
+   "kind": "data",
+   "headline": "East-West pipeline ramps to 3.5 mb/d; Hormuz tanker traffic picks up",
+   "changes": [
+    "Saudi Arabia's East-West pipeline has recovered to roughly 3.5 million b/d, about half its capacity, after last month's drone strikes; full resumption is expected in about six weeks",
+    "Kpler ship-tracking data show Strait of Hormuz crude exports recovering to a 7.4 million b/d September average, with Gulf-wide exports at their highest since the war began — though the strait remains formally closed to normal traffic",
+    "Updated Brent, WTI, TTF, JKM and Henry Hub benchmark prices",
+    "Refreshed pump prices from official EIA/EU/UK feeds"
+   ]
+  },
+  {
    "date": "2026-09-28",
    "kind": "data",
    "headline": "Saudi Arabia's 60-million-barrel Sohar workaround, and Trump-Iran talks may resume this week",

@@ -1,8 +1,55 @@
 {
- "updated": "2026-09-28",
- "situation_headline": "Saudi Arabia is moving ~60 million barrels of Ras Tanura crude through a ship-to-ship relay off Sohar, Oman, with exports via Yanbu disrupted. The Strait of Hormuz remains closed to normal traffic.",
- "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September), which restarted at reduced rates around 22 September; Saudi Arabia has offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 25 September Brent was $104.32 (pre-crisis ~$72.5) and TTF ~€72/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September but told Axios on 27 September that he expects US-Iran talks, mediated by Qatar, to resume as soon as this week.",
+ "updated": "2026-09-29",
+ "situation_headline": "Saudi Arabia's East-West pipeline has ramped to ~3.5 mb/d and Kpler data show Hormuz crude exports recovering to a 7.4 mb/d September average, though the strait remains formally closed and US-Iran talks are stalled.",
+ "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 29 September Brent was around $105 (pre-crisis ~$72.5) and TTF ~€70/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September, and Bloomberg reported on 29 September that Iranian officials were privately pessimistic about a deal before the US midterm elections in November.",
  "events": [
+  {
+   "id": "2026-09-28-kpler-hormuz-flows-recover",
+   "date": "2026-09-28",
+   "title": "Kpler data: Hormuz crude exports recover to 7.4 mb/d September average",
+   "summary": "Preliminary Kpler ship-tracking data showed Strait of Hormuz crude exports averaging 7.4 million b/d in September, with 19 tankers — including 17 VLCCs — transiting in the week to 27 September, and combined Gulf-state crude exports (Saudi Arabia, UAE, Iraq, Oman, Qatar, Kuwait and Iran) at 12.8 million b/d, the highest since the war began. The strait remains formally closed to normal commercial shipping under Iran's permit regime and a US naval blockade; tankers move mainly under naval escort or shuttle arrangements.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Iran touts Hormuz attacks as oil flows increase despite tensions (Kpler data)",
+     "url": "https://www.aljazeera.com/news/2026/9/28/iran-touts-hormuz-attacks-as-oil-flows-increase-despite-tensions",
+     "date": "2026-09-28"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-28-east-west-pipeline-3-5mbd",
+   "date": "2026-09-28",
+   "title": "Saudi East-West pipeline flows reach ~3.5 million b/d after repairs",
+   "summary": "Bloomberg reported that flows through Saudi Arabia's East-West pipeline to Yanbu have reached about 3.5 million b/d, roughly half of its 7 million b/d capacity and up from the low rate seen at its 22 September restart, citing people familiar with the matter. A full return to normal operations is expected to take about six weeks; Aramco is aiming to restore pumping to around 4 million b/d.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    24.5,
+    40.5
+   ],
+   "assets": [
+    "east-west-pipeline",
+    "yanbu-terminal"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Rigzone (Bloomberg) — Saudi Arabia's Key Oil Pipeline Starts Exports After Repairs",
+     "url": "https://www.rigzone.com/news/wire/saudi_arabias_key_oil_pipeline_starts_exports-28-sep-2026-184718-article/",
+     "date": "2026-09-28"
+    }
+   ]
+  },
   {
    "id": "2026-09-27-trump-expects-iran-talks-this-week",
    "date": "2026-09-27",

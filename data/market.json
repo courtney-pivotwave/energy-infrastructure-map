@@ -1,33 +1,29 @@
 {
- "as_of": "2026-09-25",
+ "as_of": "2026-09-29",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 104.32,
-   "week_ago": 103.87,
+   "value": 104.95,
+   "week_ago": 103.08,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
+   "note": "Week-ago is the Wikipedia-chronology close for 23 Sep (6 days prior), the closest dated figure available.",
    "source": {
-    "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war",
-    "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
-    "date": "2026-09-25"
+    "name": "Trading Economics — Brent Crude Oil",
+    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "date": "2026-09-29"
    },
    "extra_sources": [
     {
-     "name": "The National — Oil prices waver in face of Iran war truce and Houthi attacks",
-     "url": "https://www.thenationalnews.com/business/energy/2026/09/25/oil-prices-waver-in-face-of-iran-war-truce-and-houthi-attacks/",
-     "date": "2026-09-25"
-    },
-    {
-     "name": "Wikipedia — 2026–present world oil market chronology (compiled)",
-     "url": "https://en.wikipedia.org/wiki/2026%E2%80%93present_world_oil_market_chronology",
-     "date": "2026-09"
+     "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
+     "url": "https://en.wikipedia.org/wiki/2026%E2%80%932028_world_oil_market_chronology",
+     "date": "2026-09-23"
     },
     {
      "name": "FRED / EIA — Brent spot price (DCOILBRENTEU)",
@@ -40,29 +36,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 92.41,
-   "week_ago": 100.3,
+   "value": 92.21,
+   "week_ago": 92.16,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
+   "note": "Week-ago is the Wikipedia-chronology close for 23 Sep (6 days prior), the closest dated figure available.",
    "source": {
-    "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war",
-    "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
-    "date": "2026-09-25"
+    "name": "Trading Economics — Crude Oil (WTI)",
+    "url": "https://tradingeconomics.com/commodity/crude-oil",
+    "date": "2026-09-29"
    },
    "extra_sources": [
     {
-     "name": "The National — Oil prices waver in face of Iran war truce and Houthi attacks",
-     "url": "https://www.thenationalnews.com/business/energy/2026/09/25/oil-prices-waver-in-face-of-iran-war-truce-and-houthi-attacks/",
-     "date": "2026-09-25"
-    },
-    {
-     "name": "Wikipedia — 2026–present world oil market chronology (compiled)",
-     "url": "https://en.wikipedia.org/wiki/2026%E2%80%93present_world_oil_market_chronology",
-     "date": "2026-09"
+     "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
+     "url": "https://en.wikipedia.org/wiki/2026%E2%80%932028_world_oil_market_chronology",
+     "date": "2026-09-23"
     },
     {
      "name": "FRED / EIA — WTI spot price (DCOILWTICO)",
@@ -75,19 +67,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 71.89,
-   "week_ago": null,
+   "value": 70.23,
+   "week_ago": 71.89,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Week-ago value not verified; Trading Economics says TTF fell more than 8% on the week, implying roughly €78. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Week-ago reuses the prior run's 25 Sep value (4 days earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-09-25"
+    "date": "2026-09-29"
    },
    "extra_sources": [
     {
@@ -106,19 +98,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 25.82,
-   "week_ago": 27.0,
+   "value": 26.08,
+   "week_ago": 25.82,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
     "date": "2026-09-14",
     "note": "Assessed at 'high-USD 29s', the highest in about 2.5 years (Global LNG Hub)."
    },
-   "note": "Week-ago value is approximate ('low-USD 27s' on 18 Sep). Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Week-ago reuses the prior run's 25 Sep value (3 days earlier, not a full week) — the closest dated figure available. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-09-25"
+    "date": "2026-09-28"
    },
    "extra_sources": [
     {
@@ -137,14 +129,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.196,
-   "week_ago": 2.9,
+   "value": 3.08,
+   "week_ago": 3.196,
    "pre_crisis": 2.99,
-   "note": "Value is the NYMEX front-month on 25 Sep (Trading Economics); week-ago is the October contract on 18 Sep (Global LNG Hub); pre-crisis is the EIA spot price on 27 Feb (FRED). EIA spot was $2.90 on 22 Sep. US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "Value is the NYMEX front-month on 29 Sep (Trading Economics); week-ago reuses the prior run's 25 Sep front-month value (4 days earlier, not a full week); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-09-25"
+    "date": "2026-09-29"
    },
    "extra_sources": [
     {
@@ -160,22 +152,22 @@
    ]
   }
  ],
- "note": "Brent held above $100 in late September as the East-West pipeline outage and Houthi attacks on Saudi Arabia offset hopes of a phased US-Iran deal. WTI fell about 8% on the week on talk of a US diesel export ban, widening the Brent-WTI spread to about $12.7, the widest since May.",
+ "note": "Brent held near $105 and WTI near $92 into 29 September as markets weighed a partial recovery in Hormuz tanker traffic (Kpler) and Saudi East-West pipeline flows reaching ~3.5 mb/d, against continued deadlock in US-Iran talks.",
  "note_sources": [
   {
-   "name": "Reuters via Yahoo Finance — Oil prices slide about 2% as US, Iran explore path out of war",
-   "url": "https://finance.yahoo.com/news/oil-prices-fall-markets-look-011125829.html",
-   "date": "2026-09-25"
+   "name": "Trading Economics — Brent Crude Oil",
+   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "date": "2026-09-29"
   },
   {
-   "name": "The National — Oil prices waver in face of Iran war truce and Houthi attacks",
-   "url": "https://www.thenationalnews.com/business/energy/2026/09/25/oil-prices-waver-in-face-of-iran-war-truce-and-houthi-attacks/",
-   "date": "2026-09-25"
+   "name": "Al Jazeera — Iran touts Hormuz attacks as oil flows increase despite tensions (Kpler data)",
+   "url": "https://www.aljazeera.com/news/2026/9/28/iran-touts-hormuz-attacks-as-oil-flows-increase-despite-tensions",
+   "date": "2026-09-28"
   },
   {
-   "name": "EIA Short-Term Energy Outlook — Global oil markets (September 2026)",
-   "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
-   "date": "2026-09-09"
+   "name": "Rigzone (Bloomberg) — Saudi Arabia's Key Oil Pipeline Starts Exports After Repairs",
+   "url": "https://www.rigzone.com/news/wire/saudi_arabias_key_oil_pipeline_starts_exports-28-sep-2026-184718-article/",
+   "date": "2026-09-28"
   }
  ]
 }

@@ -1,13 +1,18 @@
 {
- "updated": "2026-09-28",
+ "updated": "2026-09-29",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
-   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. Independent Kpler data showed 33.7 mb of crude leaving the strait in the week from 20 Sep, against ~105 mb a week before the war. Many tankers sail with transponders off, so independent counts are partial.",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. Preliminary Kpler data showed crude exports recovering to a 7.4 mb/d September average, with 19 tankers (17 VLCCs) transiting the week to 27 Sep, mainly under naval escort or shuttle arrangements rather than normal free transit. Many tankers sail with transponders off, so independent counts are partial.",
    "since": "2026-02-28",
-   "updated": "2026-09-27",
+   "updated": "2026-09-28",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "Al Jazeera — Iran touts Hormuz attacks as oil flows increase despite tensions (Kpler data)",
+     "url": "https://www.aljazeera.com/news/2026/9/28/iran-touts-hormuz-attacks-as-oil-flows-increase-despite-tensions",
+     "date": "2026-09-28"
+    },
     {
      "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
      "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",
@@ -93,11 +98,16 @@
   },
   "east-west-pipeline": {
    "status": "reduced",
-   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep at a reduced rate, per sources cited by Reuters. Pre-attack it carried ~4-5 mb/d of Hormuz-bypass crude to Yanbu.",
+   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep at a low rate and had recovered to roughly 3.5 mb/d by 28 Sep, about half of its 7 mb/d capacity, per people familiar with the matter cited by Bloomberg. Full resumption is expected to take about six weeks; Aramco is aiming to restore pumping to ~4 mb/d.",
    "since": "2026-09-10",
-   "updated": "2026-09-22",
+   "updated": "2026-09-28",
    "confidence": "reported",
    "sources": [
+    {
+     "name": "Rigzone (Bloomberg) — Saudi Arabia's Key Oil Pipeline Starts Exports After Repairs",
+     "url": "https://www.rigzone.com/news/wire/saudi_arabias_key_oil_pipeline_starts_exports-28-sep-2026-184718-article/",
+     "date": "2026-09-28"
+    },
     {
      "name": "CDM (citing Reuters) — Saudi Arabia restarts East-West oil pipeline; Yanbu exports set to resume",
      "url": "https://cdm.press/news/middle-east/2026/09/22/saudi-arabia-restarts-east-west-oil-pipeline-after-houthi-strikes-yanbu-exports-set-to-resume-tuesday/",

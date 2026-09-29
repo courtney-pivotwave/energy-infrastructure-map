@@ -115,7 +115,7 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
 
 **Writing rules**
 - One or two plain sentences. Lead with the fact, then why it matters for energy flows. No hype, no adjectives like
-  "massive" or "shocking", no speculation, no emojis, no @mentions, at most one or two hashtags (prefer none).
+  "massive" or "shocking", no speculation, no emojis, no @mentions.
 - The source policy applies in full: attribute claims ("Kpler data showed…", "per UKMTO"). If an event is `reported`
   (single source), say "(reported)". Never post belligerent claims, even labelled.
 - Figures must match the data files exactly and carry their date ("week of 21 Sep").
@@ -126,6 +126,12 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
 - On X, only the post types listed in `x_links` (announcement, digest, correction) carry the link; X charges more for
   links and gives them less reach. So **event and chart text must read as complete on its own**: no trailing colon,
   no "see link", no domain names (X auto-links them). Bluesky always gets the link.
+- **Hashtags go in `tags`, never in `text`.** Give every event, digest and chart post 1–3 tags from
+  `social.json → hashtags`, most specific first; X shows only the first two. Order: the place or chokepoint
+  (#Hormuz, #RedSea, #BlackSea), then the commodity or market (#Oil, #LNG, #Diesel), then #OOTT for oil-market posts
+  (it's the tag oil analysts follow on X). Use a country tag only when the post is about that country's own
+  infrastructure, never to ride a political trend. Don't invent tags; if one is missing from the list, suggest it
+  under Open questions.
 - `url` is the most specific page: a chokepoint or facility page, `/fuel-prices/…`, or `/events/#<event-id>`.
   Don't put links in `text`.
 - `id`: `YYYY-MM-DD-short-slug`; `created`: today. Length limits are checked by the validator (X counts the link as

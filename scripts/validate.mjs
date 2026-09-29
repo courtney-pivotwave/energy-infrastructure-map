@@ -4,6 +4,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { composeText, TAG_LIMIT } from './social_post.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [], warnings = [];
@@ -178,6 +179,7 @@ if (social) {
   if (!Array.isArray(xLinks) || xLinks.some(t => !TYPES.includes(t))) err(`social.json: x_links must list post types from ${TYPES.join('|')}`);
   const eventsById = new Map((ev?.events || []).map(e => [e.id, e]));
   const seen = new Set();
+  const seenIds = new Set(Object.keys((existsSync(join(root, 'data', 'social-log.json')) ? JSON.parse(readFileSync(join(root, 'data', 'social-log.json'), 'utf8')) : { posted: {} }).posted));
   const graphemes = t => [...new Intl.Segmenter('en', { granularity: 'grapheme' }).segment(t)].length;
   (social.posts || []).forEach((p, i) => {
     const w = `social.posts[${i}] (${p.id})`;
@@ -188,10 +190,19 @@ if (social) {
     if (!p.text?.trim()) err(`${w}: missing text`);
     if (!/^https:\/\/strategicenergymap\.org\//.test(p.url || '')) err(`${w}: url must be a strategicenergymap.org page`);
     const text = p.text || '';
-    if ([...text].length + 2 + 23 > 280) err(`${w}: too long for X (text + link must fit 280; links count as 23)`);
-    if (graphemes(`${text}\n\n${p.url || ''}`) > 300) err(`${w}: too long for Bluesky (300 characters including the link)`);
+    // Lengths are checked on the text as actually posted (hashtags appended; X counts any link as 23 characters)
+    const xLink = xLinks.includes(p.type);
+    if ([...composeText(p, 'x', false)].length + (xLink ? 2 + 23 : 0) > 280) err(`${w}: too long for X once hashtags${xLink ? ' and link' : ''} are added (280)`);
+    if (graphemes(composeText(p, 'bluesky', true)) > 300) err(`${w}: too long for Bluesky once hashtags and link are added (300)`);
+    const allowed = social.hashtags || [];
+    if (p.tags !== undefined && !Array.isArray(p.tags)) err(`${w}: tags must be an array`);
+    const tags = p.tags || [];
+    if (tags.length > TAG_LIMIT.bluesky) err(`${w}: at most ${TAG_LIMIT.bluesky} tags (X uses the first ${TAG_LIMIT.x})`);
+    tags.forEach(t => { if (!allowed.includes(t)) err(`${w}: tag "${t}" is not in social.json → hashtags`); });
+    if (new Set(tags).size !== tags.length) err(`${w}: duplicate tags`);
+    if (['event', 'digest', 'chart'].includes(p.type) && !tags.length && !seenIds.has(p.id)) warn(`${w}: no hashtags; posts are hard to discover without one`);
     if (/(^|\s)@\w/.test(text)) err(`${w}: no @mentions in automated posts`);
-    if ((text.match(/#\w/g) || []).length > 2) err(`${w}: at most 2 hashtags`);
+    if (/(^|\s)#\w/.test(text)) err(`${w}: put hashtags in "tags", not in the text`);
     if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
     if (p.image && !['fuel-weekly', 'chokepoints-weekly'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
     if (p.image && !p.alt) err(`${w}: images need alt text`);

@@ -146,6 +146,7 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   "dry_run": false,       // true: the Action only prints what it would post
   "max_per_day": 6,
   "x_links": ["announcement", "digest", "correction"],   // post types that include the link on X (Bluesky: always)
+  "hashtags": ["OOTT", "Oil", "LNG", "Hormuz", "..."],     // approved tags; posts may only use these
   "posts": [
     { "id": "2026-09-28-east-west-restart", "created": "2026-09-28",
       "type": "event",                      // event | digest | chart | correction | announcement
@@ -153,6 +154,7 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
       "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
       "event_id": "2026-09-22-east-west-pipeline-restart",   // required for event posts
       "image": null, "alt": null,           // image: fuel-weekly | chokepoints-weekly (alt text required)
+      "tags": ["Hormuz", "OOTT"],           // 1–3 from hashtags, most specific first; X uses the first 2
       "reply_to": null }                    // earlier post id (required for corrections)
   ]
 }

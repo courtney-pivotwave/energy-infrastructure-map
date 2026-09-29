@@ -38,6 +38,22 @@ export function linkFacet(text, url) {
   return [{ index: { byteStart, byteEnd: byteStart + Buffer.byteLength(url, 'utf8') }, features: [{ $type: 'app.bsky.richtext.facet#link', uri: url }] }];
 }
 
+// ── Post text: body + hashtags (X: first 2, Bluesky: up to 3) + optional link. Shared with validate.mjs ──
+export const TAG_LIMIT = { x: 2, bluesky: 3 };
+export function composeText(p, platform, withLink = true) {
+  const tags = (p.tags || []).slice(0, TAG_LIMIT[platform]).map(t => `#${t}`).join(' ');
+  return [p.text + (tags ? ` ${tags}` : ''), withLink ? p.url : null].filter(Boolean).join('\n\n');
+}
+export function tagFacets(text) { // Bluesky: make #tags clickable
+  const out = [], re = /(^|\s)#([A-Za-z][A-Za-z0-9_]*)/g;
+  let m;
+  while ((m = re.exec(text))) {
+    const byteStart = Buffer.byteLength(text.slice(0, m.index + m[1].length), 'utf8');
+    out.push({ index: { byteStart, byteEnd: byteStart + Buffer.byteLength(`#${m[2]}`, 'utf8') }, features: [{ $type: 'app.bsky.richtext.facet#tag', tag: m[2] }] });
+  }
+  return out;
+}
+
 // ── Chart images: headless Chrome screenshot of dist/social/<key>.html ──
 function findChrome() {
   if (process.env.CHROME) return process.env.CHROME;
@@ -83,7 +99,7 @@ async function postX(p, img, replyToId, creds) {
   }
   const url = 'https://api.x.com/2/tweets';
   // X charges more for posts with links; only some post types carry one there (data/social.json → x_links)
-  const body = { text: xLinkTypes.has(p.type) ? `${p.text}\n\n${p.url}` : p.text };
+  const body = { text: composeText(p, 'x', xLinkTypes.has(p.type)) };
   if (mediaId) body.media = { media_ids: [mediaId] };
   if (replyToId) body.reply = { in_reply_to_tweet_id: replyToId };
   const r = await fetch(url, { method: 'POST', headers: { Authorization: oauthHeader('POST', url, {}, creds), 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -111,8 +127,8 @@ async function pageCard(url) { // title/description for the link card, from the 
 }
 async function postBluesky(p, img, replyRef, creds) {
   if (!bskySession) bskySession = await bsky('com.atproto.server.createSession', { identifier: creds.handle, password: creds.password });
-  const text = `${p.text}\n\n${p.url}`;
-  const record = { $type: 'app.bsky.feed.post', text, createdAt: new Date().toISOString(), langs: ['en'], facets: linkFacet(text, p.url) };
+  const text = composeText(p, 'bluesky', true);
+  const record = { $type: 'app.bsky.feed.post', text, createdAt: new Date().toISOString(), langs: ['en'], facets: [...tagFacets(text), ...linkFacet(text, p.url)] };
   if (img) {
     const { blob } = await bsky('com.atproto.repo.uploadBlob', null, { raw: img, type: 'image/png' });
     record.embed = { $type: 'app.bsky.embed.images', images: [{ image: blob, alt: p.alt || '', aspectRatio: { width: 1200, height: 675 } }] };
@@ -177,7 +193,8 @@ async function main() {
     if (p.image && !(p.image in images)) images[p.image] = await renderImage(p.image);
     const img = p.image ? images[p.image] : null;
     const parent = p.reply_to ? log.posted[p.reply_to] : null;
-    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${p.image}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  ${p.text}\n  ${p.url}${xLinkTypes.has(p.type) ? '' : '  (Bluesky only; X posts without the link)'}`);
+    const indent = t => t.replace(/\n/g, '\n     ');
+    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${p.image}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  X:   ${indent(composeText(p, 'x', xLinkTypes.has(p.type)))}\n  Bsky: ${indent(composeText(p, 'bluesky', true))}`);
     if (dry) { console.log(`  would post to: ${todo.join(', ')}`); continue; }
     log.posted[p.id] ||= {};
     for (const pl of todo) {

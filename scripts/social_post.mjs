@@ -128,6 +128,23 @@ async function postBluesky(p, img, replyRef, creds) {
   return { uri: j.uri, cid: j.cid, root: record.reply?.root || { uri: j.uri, cid: j.cid } };
 }
 
+// ── Login check: confirms each configured account's credentials without posting ──
+async function checkLogins(creds) {
+  let failed = false;
+  if (creds.x) {
+    const url = 'https://api.x.com/2/users/me';
+    const r = await fetch(url, { headers: { Authorization: oauthHeader('GET', url, {}, creds.x) } });
+    const j = await r.json().catch(() => ({}));
+    if (r.ok && j?.data?.username) console.log(`X: signed in as @${j.data.username} ✓`);
+    else { failed = true; console.log(`X: login failed (HTTP ${r.status}): ${JSON.stringify(j).slice(0, 300)}`); }
+  } else console.log('X: not configured (missing X_* secrets)');
+  if (creds.bluesky) {
+    try { const s = await bsky('com.atproto.server.createSession', { identifier: creds.bluesky.handle, password: creds.bluesky.password }); console.log(`Bluesky: signed in as @${s.handle} ✓`); }
+    catch (e) { failed = true; console.log(`Bluesky: login failed: ${e.message}`); }
+  } else console.log('Bluesky: not configured (missing BSKY_* secrets)');
+  if (failed) process.exitCode = 1;
+}
+
 // ── Main ──
 async function main() {
   const queue = JSON.parse(readFileSync(QUEUE, 'utf8'));
@@ -139,6 +156,7 @@ async function main() {
     x: process.env.X_API_KEY && process.env.X_ACCESS_TOKEN ? { key: process.env.X_API_KEY, secret: process.env.X_API_SECRET, token: process.env.X_ACCESS_TOKEN, tokenSecret: process.env.X_ACCESS_SECRET } : null,
     bluesky: process.env.BSKY_HANDLE && process.env.BSKY_APP_PASSWORD ? { handle: process.env.BSKY_HANDLE, password: process.env.BSKY_APP_PASSWORD } : null,
   };
+  if (process.argv.includes('--check') || process.env.CHECK === '1') return checkLogins(creds);
   const platforms = ['x', 'bluesky'];
   const today = new Date().toISOString().slice(0, 10);
   const postedToday = () => Object.values(log.posted).filter(e => platforms.some(pl => (e[pl]?.at || '').startsWith(today))).length;
@@ -174,4 +192,4 @@ async function main() {
   if (!dry) writeFileSync(LOG, JSON.stringify(log, null, 1) + '\n');
 }
 
-if (process.argv[1] === fileURLToPath(import.meta.url)) main().then(() => process.exit(0), e => { console.error(e); process.exit(1); });
+if (process.argv[1] === fileURLToPath(import.meta.url)) main().then(() => process.exit(process.exitCode ?? 0), e => { console.error(e); process.exit(1); });

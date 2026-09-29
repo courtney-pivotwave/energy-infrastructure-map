@@ -10,10 +10,11 @@ on:
     - cron: '45 13 * * *'   # daily retry for anything a platform rejected earlier
   workflow_dispatch:
     inputs:
-      dry_run:
-        description: 'Dry run: show what would be posted, post nothing'
-        type: boolean
-        default: true
+      mode:
+        description: 'check = test logins only; dry-run = show what would be posted; post = post queued drafts'
+        type: choice
+        options: [check, dry-run, post]
+        default: check
 
 permissions:
   contents: write
@@ -52,7 +53,8 @@ jobs:
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
-          DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '' }}
+          CHECK: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'check') && '1' || '' }}
+          DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run') && '1' || '' }}
           LOCAL_SITE: http://localhost:8765
         run: node scripts/social_post.mjs
 

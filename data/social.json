@@ -1,7 +1,12 @@
 {
  "enabled": true,
- "dry_run": true,
+ "dry_run": false,
  "max_per_day": 6,
+ "x_links": [
+  "announcement",
+  "digest",
+  "correction"
+ ],
  "posts": [
   {
    "id": "2026-09-28-launch",
@@ -14,31 +19,10 @@
    "id": "2026-09-28-fuel-weekly",
    "created": "2026-09-28",
    "type": "chart",
-   "text": "Diesel since the Strait of Hormuz closed: US +71%, EU average +40%, UK +38% (week of 21 Sep vs week of 23 Feb). Weekly prices by country:",
+   "text": "Diesel prices since the Strait of Hormuz closed: US +71%, EU average +40%, UK +38% (week of 21 Sep vs week of 23 Feb).",
    "url": "https://strategicenergymap.org/fuel-prices/",
    "image": "fuel-weekly",
    "alt": "Bar chart of the change in diesel prices since the week of 23 February 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland."
-  },
-  {
-   "id": "2026-09-28-sohar-sts-relay",
-   "created": "2026-09-28",
-   "type": "event",
-   "text": "Saudi Arabia has sold ~60 million barrels of Ras Tanura crude for ship-to-ship transfer off Sohar, Oman, as exports via Yanbu remain disrupted. Transfers there are near capacity, per gCaptain and MarineLink.",
-   "url": "https://strategicenergymap.org/facilities/ras-tanura-terminal/",
-   "event_id": "2026-09-24-sohar-sts-relay",
-   "image": null,
-   "alt": null,
-   "reply_to": null
-  },
-  {
-   "id": "2026-09-28-digest",
-   "created": "2026-09-28",
-   "type": "digest",
-   "text": "Energy map update: Saudi Arabia is moving ~60m barrels through a ship-to-ship relay off Sohar, Oman, with Yanbu exports disrupted. Brent is near $104/bbl, up ~44% since the pre-crisis week.",
-   "url": "https://strategicenergymap.org/",
-   "image": null,
-   "alt": null,
-   "reply_to": null
   }
  ]
 }

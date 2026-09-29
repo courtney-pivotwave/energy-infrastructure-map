@@ -123,6 +123,9 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   "reopened", check the asset's entry in `data/status.json`. When sources disagree, use the more cautious word
   ("disrupted", "reduced").
 - Digests follow the same rules as event posts: no belligerent statements, even attributed ones.
+- On X, only the post types listed in `x_links` (announcement, digest, correction) carry the link; X charges more for
+  links and gives them less reach. So **event and chart text must read as complete on its own**: no trailing colon,
+  no "see link", no domain names (X auto-links them). Bluesky always gets the link.
 - `url` is the most specific page: a chokepoint or facility page, `/fuel-prices/…`, or `/events/#<event-id>`.
   Don't put links in `text`.
 - `id`: `YYYY-MM-DD-short-slug`; `created`: today. Length limits are checked by the validator (X counts the link as

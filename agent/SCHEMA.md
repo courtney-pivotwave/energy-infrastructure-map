@@ -145,6 +145,7 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   "enabled": true,        // kill switch: false pauses all posting immediately
   "dry_run": false,       // true: the Action only prints what it would post
   "max_per_day": 6,
+  "x_links": ["announcement", "digest", "correction"],   // post types that include the link on X (Bluesky: always)
   "posts": [
     { "id": "2026-09-28-east-west-restart", "created": "2026-09-28",
       "type": "event",                      // event | digest | chart | correction | announcement

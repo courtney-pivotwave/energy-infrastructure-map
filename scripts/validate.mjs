@@ -173,6 +173,9 @@ const social = load('social.json');
 if (social) {
   if (typeof social.enabled !== 'boolean' || typeof social.dry_run !== 'boolean') err('social.json: enabled and dry_run must be booleans');
   if (!Number.isInteger(social.max_per_day) || social.max_per_day < 1 || social.max_per_day > 10) err('social.json: max_per_day must be 1–10');
+  const TYPES = ['event', 'digest', 'chart', 'correction', 'announcement'];
+  const xLinks = social.x_links ?? ['announcement', 'digest', 'correction'];
+  if (!Array.isArray(xLinks) || xLinks.some(t => !TYPES.includes(t))) err(`social.json: x_links must list post types from ${TYPES.join('|')}`);
   const eventsById = new Map((ev?.events || []).map(e => [e.id, e]));
   const seen = new Set();
   const graphemes = t => [...new Intl.Segmenter('en', { granularity: 'grapheme' }).segment(t)].length;
@@ -192,6 +195,11 @@ if (social) {
     if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
     if (p.image && !['fuel-weekly', 'chokepoints-weekly'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
     if (p.image && !p.alt) err(`${w}: images need alt text`);
+    // Posts that go to X without a link must read as complete, and bare domains would be auto-linked (and charged)
+    if (!xLinks.includes(p.type)) {
+      if (/[:→]\s*$/.test(text)) err(`${w}: posted to X without a link, so the text must not end with ':' or an arrow`);
+      if (/\b[\w-]+\.(org|com|net|io|gov|info)\b/i.test(text)) err(`${w}: no domain names in text (X would auto-link and charge for them)`);
+    }
     if (p.event_id) {
       const e = eventsById.get(p.event_id);
       if (!e) err(`${w}: event_id "${p.event_id}" not found in events.json`);

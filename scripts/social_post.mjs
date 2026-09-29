@@ -61,6 +61,7 @@ async function renderImage(key) {
 }
 
 // ── X ──
+let xLinkTypes = new Set(['announcement', 'digest', 'correction']);
 async function postX(p, img, replyToId, creds) {
   let mediaId = null;
   if (img) {
@@ -81,7 +82,8 @@ async function postX(p, img, replyToId, creds) {
     } catch (e) { console.log(`  X media upload error: ${e.message}; posting text only`); }
   }
   const url = 'https://api.x.com/2/tweets';
-  const body = { text: `${p.text}\n\n${p.url}` };
+  // X charges more for posts with links; only some post types carry one there (data/social.json → x_links)
+  const body = { text: xLinkTypes.has(p.type) ? `${p.text}\n\n${p.url}` : p.text };
   if (mediaId) body.media = { media_ids: [mediaId] };
   if (replyToId) body.reply = { in_reply_to_tweet_id: replyToId };
   const r = await fetch(url, { method: 'POST', headers: { Authorization: oauthHeader('POST', url, {}, creds), 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -157,6 +159,7 @@ async function main() {
     bluesky: process.env.BSKY_HANDLE && process.env.BSKY_APP_PASSWORD ? { handle: process.env.BSKY_HANDLE, password: process.env.BSKY_APP_PASSWORD } : null,
   };
   if (process.argv.includes('--check') || process.env.CHECK === '1') return checkLogins(creds);
+  if (Array.isArray(queue.x_links)) xLinkTypes = new Set(queue.x_links);
   const platforms = ['x', 'bluesky'];
   const today = new Date().toISOString().slice(0, 10);
   const postedToday = () => Object.values(log.posted).filter(e => platforms.some(pl => (e[pl]?.at || '').startsWith(today))).length;
@@ -174,7 +177,7 @@ async function main() {
     if (p.image && !(p.image in images)) images[p.image] = await renderImage(p.image);
     const img = p.image ? images[p.image] : null;
     const parent = p.reply_to ? log.posted[p.reply_to] : null;
-    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${p.image}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  ${p.text}\n  ${p.url}`);
+    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${p.image}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  ${p.text}\n  ${p.url}${xLinkTypes.has(p.type) ? '' : '  (Bluesky only; X posts without the link)'}`);
     if (dry) { console.log(`  would post to: ${todo.join(', ')}`); continue; }
     log.posted[p.id] ||= {};
     for (const pl of todo) {

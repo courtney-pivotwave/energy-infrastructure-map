@@ -23,7 +23,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <link rel="stylesheet" href="styles.css?v=13" />
-<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+// Owner opt-out: visit any page with ?notrack=1 to stop counting this browser (?notrack=0 undoes it).
+try { const n = new URLSearchParams(location.search).get('notrack'); if (n === '1') localStorage.setItem('va-disable', '1'); if (n === '0') localStorage.removeItem('va-disable'); } catch (e) {}
+window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) return null; } catch (e) {} return ev; });</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>

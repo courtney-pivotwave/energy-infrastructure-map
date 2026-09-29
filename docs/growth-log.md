@@ -11,7 +11,7 @@ Site live on strategicenergymap.org since 2026-09-27. Distribution started today
 | Crawlable pages | 130 | sitemap.xml; submitted to Google (sitemap) and Bing (IndexNow, HTTP 200) |
 | Google impressions / clicks | 0 / 0 | Search Console (verified 2026-09-27) |
 | Bing impressions / clicks | 0 / 0 | Bing Webmaster Tools (imported 2026-09-29) |
-| Visitors / page views (7 days to 2026-09-29) | 70 / 96, bounce 81% | Vercel Web Analytics. Top pages: / 52, /chokepoints/strait-of-hormuz 7, /facilities 6, /events 4. Referrers: google.com 6, bing.com 1, t.co 1 |
+| Visitors / page views (7 days to 2026-09-29) | 70 / 96, bounce 81% (includes owner's own visits; excluded from 2026-09-29 via ?notrack=1) | Vercel Web Analytics. Top pages: / 52, /chokepoints/strait-of-hormuz 7, /facilities 6, /events 4. Referrers: google.com 6, bing.com 1, t.co 1 |
 | X @StratEnergyMap | 3 posts, 0 followers | x.com |
 | Bluesky @strategicenergymap.org | 3 posts, 1 follower | public API |
 | AI answer engines citing the site | see below | manual check |
@@ -26,7 +26,7 @@ Ask each question in a fresh chat with web search on. Mark ✓ if strategicenerg
 
 | # | Question | ChatGPT | Perplexity | Copilot | Google AI |
 |---|---|---|---|---|---|
-| 1 | Is the Strait of Hormuz open right now? | ✗ (Reuters, AOL, Straits Times) | | | |
+| 1 | Is the Strait of Hormuz open right now? | ✗ (Reuters, AOL, Straits Times) | ✗ (Sky, NBC, KCRA, CNBC, Guardian, global-energy-flow.com) | | |
 | 2 | How many ships are going through the Strait of Hormuz? | | | | |
 | 3 | Which pipelines bypass the Strait of Hormuz? | | | | |
 | 4 | What is the capacity of Saudi Arabia's East-West pipeline? | | | | |

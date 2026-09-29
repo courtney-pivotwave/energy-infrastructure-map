@@ -117,7 +117,10 @@ ${lastmod ? `<meta property="article:modified_time" content="${lastmod}">` : ''}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Energy infrastructure events" href="/events.xml">
 <link rel="stylesheet" href="/${CSS}">
-<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+// Owner opt-out: visit any page with ?notrack=1 to stop counting this browser (?notrack=0 undoes it).
+try { const n = new URLSearchParams(location.search).get('notrack'); if (n === '1') localStorage.setItem('va-disable', '1'); if (n === '0') localStorage.removeItem('va-disable'); } catch (e) {}
+window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) return null; } catch (e) {} return ev; });</script>
 <script defer src="/_vercel/insights/script.js"></script>
 ${ld}
 </head>

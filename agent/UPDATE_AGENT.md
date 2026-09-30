@@ -141,8 +141,8 @@ dropped, and `max_per_day` (6) caps the total.
   "reopened", check the asset's entry in `data/status.json`. When sources disagree, use the more cautious word
   ("disrupted", "reduced").
 - Digests follow the same rules as event posts: no belligerent statements, even attributed ones.
-- On X, only the post types listed in `x_links` (announcement, digest, correction) carry the link; X charges more for
-  links and gives them less reach. So **event, explainer and chart text must read as complete on its own**: no trailing colon,
+- On X, only the post types listed in `x_links` (currently announcement, digest, explainer, correction) carry the
+  link; X charges more for links and gives them less reach. So **event and chart text must read as complete on its own**: no trailing colon,
   no "see link", no domain names (X auto-links them). Bluesky always gets the link.
 - **Hashtags go in `tags`, never in `text`.** Give every event, digest, explainer and chart post 1–3 tags from
   `social.json → hashtags`, most specific first; X shows only the first two. Order: the place or chokepoint

@@ -147,11 +147,12 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   "enabled": true,        // kill switch: false pauses all posting immediately
   "dry_run": false,       // true: the Action only prints what it would post
   "max_per_day": 6,
+  "max_per_run": 1,       // new drafts started per Action run; runs every 2 h 11:15–23:15 UTC, so posts spread out
   "x_links": ["announcement", "digest", "correction"],   // post types that include the link on X (Bluesky: always)
   "hashtags": ["OOTT", "Oil", "LNG", "Hormuz", "..."],     // approved tags; posts may only use these
   "posts": [
     { "id": "2026-09-28-east-west-restart", "created": "2026-09-28",
-      "type": "event",                      // event | digest | chart | correction | announcement
+      "type": "event",                      // event | digest | explainer | chart | correction | announcement
       "text": "Saudi Arabia restarted the East-West pipeline at reduced rates after drone strikes shut it on 11 Sep (reported).",
       "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
       "event_id": "2026-09-22-east-west-pipeline-restart",   // required for event posts
@@ -161,4 +162,4 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   ]
 }
 ```
-Drafts older than 48 hours are never posted. The Action retries a failed platform up to 3 times.
+Explainer posts must link to an existing `/chokepoints/<id>/` or `/facilities/<id>/` page. Drafts go out in queue order, one per run (corrections straight away). Drafts older than 48 hours are never posted. The Action retries a failed platform up to 3 times.

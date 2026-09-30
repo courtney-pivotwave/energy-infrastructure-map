@@ -110,14 +110,26 @@ credentials you don't have. Drafts follow the same review split as the data: a d
 review PR, so it's only posted if a human merges it. Append new drafts to the end of `posts`; never edit or delete a
 post that has an entry in `data/social-log.json` (it has already gone out). Fix mistakes with a `correction`.
 
-**Each run, draft at most:**
-- **0–3 `event` posts**, only for new events with severity `high` or `critical` and confidence `confirmed` or
-  `reported`. Never `unverified`. Set `event_id`. Skip if nothing meets the bar; silence is fine.
-- **1 `digest`** summarising the run: number of new events, the biggest change, and one or two numbers taken from the
-  data files (Brent, a chokepoint's tanker count, US diesel). Skip on quiet days with no new events.
-- **Mondays: 1 `chart`**, alternating `"image": "fuel-weekly"` (pump prices) and `"image": "chokepoints-weekly"`
-  (tanker traffic), with alt text and a caption quoting 2–3 figures from the chart's data.
+**Each run, aim for 3–5 posts** (the account should be worth following every day, not only on big news days):
+- **1 `digest`, every run, first in the queue.** The biggest change since yesterday, then one or two current numbers
+  from the data files (Brent, a chokepoint's tanker count, US diesel). On a quiet day say so plainly ("No major
+  changes in the past 24 hours.") and give the numbers; don't pad.
+- **0–3 `event` posts** for new events that bear directly on energy flows, facilities or prices: severity `medium`,
+  `high` or `critical`, confidence `confirmed` or `reported`. Never `unverified`. Set `event_id`. Most important first.
+- **1 `explainer`, every run**: one chokepoint, pipeline or facility connected to today's news, with one or two
+  figures from `infrastructure.json` / `status.json` (capacity, current status, what it bypasses or supplies). Example:
+  "Saudi Arabia's East-West pipeline runs 1,200 km from Abqaiq to Yanbu on the Red Sea, the main route for Saudi
+  crude that avoids Hormuz. It's carrying about 3.5 million b/d after repairs." Figures must match the data files. `url` must be that asset's `/chokepoints/<id>/` or
+  `/facilities/<id>/` page (the validator checks it exists). Don't repeat an asset explained in the past 14 days
+  (check earlier `explainer` posts in `social.json`).
+- **Mondays and Thursdays: 1 `chart`**: Monday `"image": "fuel-weekly"` (pump prices), Thursday
+  `"image": "chokepoints-weekly"` (tanker traffic), with alt text and a caption quoting 2–3 figures from the chart's data.
 - **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
+
+**Order matters.** The posting Action sends one new draft per scheduled run, every two hours from 11:15 to 23:15 UTC
+(`max_per_run`), in queue order, so append drafts in the order they should go out: digest, events (most important
+first), explainer, chart. Corrections skip the queue and go out on the next run. Drafts older than 48 hours are
+dropped, and `max_per_day` (6) caps the total.
 
 **Writing rules**
 - One or two plain sentences. Lead with the fact, then why it matters for energy flows. No hype, no adjectives like
@@ -130,9 +142,9 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   ("disrupted", "reduced").
 - Digests follow the same rules as event posts: no belligerent statements, even attributed ones.
 - On X, only the post types listed in `x_links` (announcement, digest, correction) carry the link; X charges more for
-  links and gives them less reach. So **event and chart text must read as complete on its own**: no trailing colon,
+  links and gives them less reach. So **event, explainer and chart text must read as complete on its own**: no trailing colon,
   no "see link", no domain names (X auto-links them). Bluesky always gets the link.
-- **Hashtags go in `tags`, never in `text`.** Give every event, digest and chart post 1–3 tags from
+- **Hashtags go in `tags`, never in `text`.** Give every event, digest, explainer and chart post 1–3 tags from
   `social.json → hashtags`, most specific first; X shows only the first two. Order: the place or chokepoint
   (#Hormuz, #RedSea, #BlackSea), then the commodity or market (#Oil, #LNG, #Diesel), then #OOTT for oil-market posts
   (it's the tag oil analysts follow on X). Use a country tag only when the post is about that country's own

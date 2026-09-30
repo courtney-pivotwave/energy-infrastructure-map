@@ -182,6 +182,10 @@ async function main() {
   const fresh = p => (Date.now() - Date.parse(p.created + 'T00:00:00Z')) / 36e5 < FRESH_HOURS;
   const done = (p, pl) => !!(log.posted[p.id]?.[pl]?.id || log.posted[p.id]?.[pl]?.uri);
   const images = {};
+  // Drip: start at most max_per_run new posts per run, so the queue spreads across the day's scheduled runs.
+  // Corrections and posts already out on one platform don't count; they go straight away.
+  const perRun = queue.max_per_run || Infinity;
+  let startedThisRun = 0;
 
   console.log(`${dry ? 'DRY RUN — ' : ''}queue: ${queue.posts.length} post(s); X ${creds.x ? 'configured' : 'not configured'}; Bluesky ${creds.bluesky ? 'configured' : 'not configured'}; posted today: ${postedToday()}/${queue.max_per_day}`);
   for (const p of queue.posts) {
@@ -190,6 +194,10 @@ async function main() {
     if (!todo.length) continue;
     const isNewPost = !platforms.some(pl => done(p, pl));
     if (isNewPost && postedToday() >= queue.max_per_day) { console.log(`Daily limit reached; holding ${p.id}`); break; }
+    if (isNewPost && p.type !== 'correction') {
+      if (startedThisRun >= perRun) { console.log(`Holding ${p.id} for the next scheduled run (max_per_run ${perRun})`); continue; }
+      startedThisRun++;
+    }
     if (p.image && !(p.image in images)) images[p.image] = await renderImage(p.image);
     const img = p.image ? images[p.image] : null;
     const parent = p.reply_to ? log.posted[p.reply_to] : null;

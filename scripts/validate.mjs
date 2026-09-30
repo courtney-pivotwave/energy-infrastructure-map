@@ -178,7 +178,8 @@ const social = load('social.json');
 if (social) {
   if (typeof social.enabled !== 'boolean' || typeof social.dry_run !== 'boolean') err('social.json: enabled and dry_run must be booleans');
   if (!Number.isInteger(social.max_per_day) || social.max_per_day < 1 || social.max_per_day > 10) err('social.json: max_per_day must be 1–10');
-  const TYPES = ['event', 'digest', 'chart', 'correction', 'announcement'];
+  if (social.max_per_run !== undefined && (!Number.isInteger(social.max_per_run) || social.max_per_run < 1)) err('social.json: max_per_run must be a positive integer');
+  const TYPES = ['event', 'digest', 'explainer', 'chart', 'correction', 'announcement'];
   const xLinks = social.x_links ?? ['announcement', 'digest', 'correction'];
   if (!Array.isArray(xLinks) || xLinks.some(t => !TYPES.includes(t))) err(`social.json: x_links must list post types from ${TYPES.join('|')}`);
   const eventsById = new Map((ev?.events || []).map(e => [e.id, e]));
@@ -190,7 +191,7 @@ if (social) {
     if (!/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(p.id || '')) err(`${w}: id must be YYYY-MM-DD-slug`);
     if (seen.has(p.id)) err(`${w}: duplicate id`);
     if (!isDate(p.created) || p.created > today) err(`${w}: created must be a past or current YYYY-MM-DD`);
-    if (!['event', 'digest', 'chart', 'correction', 'announcement'].includes(p.type)) err(`${w}: type must be event|digest|chart|correction|announcement`);
+    if (!TYPES.includes(p.type)) err(`${w}: type must be ${TYPES.join('|')}`);
     if (!p.text?.trim()) err(`${w}: missing text`);
     if (!/^https:\/\/strategicenergymap\.org\//.test(p.url || '')) err(`${w}: url must be a strategicenergymap.org page`);
     const text = p.text || '';
@@ -204,7 +205,7 @@ if (social) {
     if (tags.length > TAG_LIMIT.bluesky) err(`${w}: at most ${TAG_LIMIT.bluesky} tags (X uses the first ${TAG_LIMIT.x})`);
     tags.forEach(t => { if (!allowed.includes(t)) err(`${w}: tag "${t}" is not in social.json → hashtags`); });
     if (new Set(tags).size !== tags.length) err(`${w}: duplicate tags`);
-    if (['event', 'digest', 'chart'].includes(p.type) && !tags.length && !seenIds.has(p.id)) warn(`${w}: no hashtags; posts are hard to discover without one`);
+    if (['event', 'digest', 'explainer', 'chart'].includes(p.type) && !tags.length && !seenIds.has(p.id)) warn(`${w}: no hashtags; posts are hard to discover without one`);
     if (/(^|\s)@\w/.test(text)) err(`${w}: no @mentions in automated posts`);
     if (/(^|\s)#\w/.test(text)) err(`${w}: put hashtags in "tags", not in the text`);
     if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
@@ -221,6 +222,10 @@ if (social) {
       else if (e.confidence === 'unverified') err(`${w}: never post unverified events`);
     }
     if (p.type === 'event' && !p.event_id) err(`${w}: event posts need an event_id`);
+    if (p.type === 'explainer') {
+      const m = (p.url || '').match(/^https:\/\/strategicenergymap\.org\/(chokepoints|facilities)\/([a-z0-9-]+)\/$/);
+      if (!m || !ids.has(m[2])) err(`${w}: explainers must link to an existing /chokepoints/<id>/ or /facilities/<id>/ page`);
+    }
     if (p.type === 'correction' && !seen.has(p.reply_to)) err(`${w}: corrections must reply_to an earlier post id`);
     if (p.reply_to && !seen.has(p.reply_to)) err(`${w}: reply_to must reference an earlier post`);
     seen.add(p.id);

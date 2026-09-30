@@ -4,7 +4,9 @@ Backlog of content strategy ideas to pick up later. Newest at the top. Nothing h
 
 ## 2026-09-30: Chokepoint pillars and clusters
 
-A pillar-and-cluster structure around the five major chokepoints.
+A pillar-and-cluster structure covering **every chokepoint on the map**, not just the big five: Hormuz,
+Bab el-Mandeb, Suez, Malacca, the Turkish Straits, Panama, the Cape of Good Hope and the Eastern Mediterranean, plus
+any added later.
 
 - **Pillars:** one long-form explainer per chokepoint, covering its history, how much energy moves through it, who
   controls or contests it, past disruptions and where it stands today.
@@ -14,18 +16,30 @@ A pillar-and-cluster structure around the five major chokepoints.
 Notes for when we pick it up:
 - The existing `/chokepoints/<id>/` answer pages are the natural pillar URLs. They'd grow from an answer page into a
   long read, keeping the dated answer at the top.
-- Decide which five chokepoints. The obvious set is Hormuz, Bab el-Mandeb, Suez, Malacca and the Turkish Straits. The map
-  also has Panama, the Cape of Good Hope and the Eastern Mediterranean.
+- Pillar depth can scale with how much is happening: Hormuz and Bab el-Mandeb have far more cluster material right
+  now than Panama or the Cape.
 - Clusters could grow out of `events.json`: a significant event gets an article, and the daily agent keeps its "current
   state" section fresh.
 
-## 2026-09-30: Geopolitical and historical explainers
+## 2026-09-30: Geopolitical and historical explainers, plus corruption and business news
 
 Explainers on key pipelines, energy agreements, business context, corruption, and how energy policy shapes the world.
+**Also aggregate energy-sector corruption and business-conduct news** as an ongoing feed, sourced from reputable
+non-profit investigative journalism.
 
 Notes for when we pick it up:
-- These fit the facility pages and could be a new "Explainers" hub.
-- Corruption and business-conduct topics need a stricter sourcing bar than the news feed: court findings, official
-  investigations and major investigative outlets only, with every claim attributed. Nothing that rests on a party to a
-  conflict.
+- Explainers fit the facility pages and could be a new "Explainers" hub; the news feed could be its own tab/page and
+  link to the assets and companies involved.
+- **Sourcing to work out.** Start from non-profit investigative outlets like OCCRP, Transparency International and
+  ProPublica. Other candidates to vet: Global Witness (energy and extractives), ICIJ (Panama/Pandora Papers), the
+  Natural Resource Governance Institute, Public Eye (commodity traders), The Sentry, Finance Uncovered and Bellingcat.
+  EITI publishes official disclosure data. Global Energy Monitor (non-profit, open data) may also be worth considering
+  as a governing source for asset capacity.
+- Stricter rules than the news feed: court findings, official investigations and these outlets' own reporting only;
+  every claim attributed to the outlet that reported it; allegations, charges and convictions clearly distinguished;
+  nothing that rests on a party to a conflict.
+- The "no private individuals" rule needs a clear line for this feed: executives and officials named in their public or
+  corporate role in published investigations are likely fine; relatives, employees and bystanders are not.
+- Aggregation mechanics: most of these outlets publish RSS feeds, so the daily agent (or a separate one) could scan them,
+  keep only energy-relevant stories and summarise with a link back, never republishing their text.
 - Long-form pieces need a human editorial pass before publishing, not the agent's direct-to-main path.

@@ -839,6 +839,18 @@
    "id": "east-west-pipeline",
    "name": "East-West Pipeline (Petroline)",
    "commodity": "oil",
+   "capacity": {
+    "value": 7,
+    "unit": "mb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Saudi Aramco Q1 2026 results, via Hellenic Shipping News",
+     "url": "https://www.hellenicshippingnews.com/?p=1132970",
+     "date": "2026-05-11"
+    },
+    "as_of": "2026-05-11"
+   },
+   "verified": "2026-09-30",
    "coords": [
     [
      25.9,
@@ -865,8 +877,8 @@
      38.5
     ]
    ],
-   "details": "Saudi Arabia: Abqaiq (Eastern Province) to Yanbu (Red Sea). ~1,200 km. Capacity 7 million bpd since a second line was converted from NGL to crude in 2026 (Aramco; 5 million bpd in 2018). About 2 million bpd of that feeds west-coast refineries. Provides strategic bypass of the Strait of Hormuz for Saudi crude exports via the Red Sea.",
-   "geo": "Saudi Arabia's primary insurance policy against a Hormuz closure. If Iran ever blocked the strait (threatened during 1980s tanker wars, 2012 nuclear tensions, and 2019 incidents), this pipeline could reroute up to 7 million bpd to the Red Sea, minus what west-coast refineries use. The Sept 2019 drone/missile attack on Abqaiq (attributed to Iran/Houthis) temporarily knocked out ~5.7 million bpd of Saudi processing capacity — the single largest supply disruption in history. This demonstrated that even bypass infrastructure remains vulnerable to precision-strike capabilities now available to non-state actors and regional militaries."
+   "details": "Saudi Arabia: Abqaiq (Eastern Province) to Yanbu (Red Sea). ~1,200 km. Capacity 7 million bpd since a second line was converted from NGL to crude in 2026 (Aramco; 5 million bpd in 2018). Provides strategic bypass of the Strait of Hormuz for Saudi crude exports via the Red Sea.",
+   "geo": "Saudi Arabia's primary insurance policy against a Hormuz closure. If Iran ever blocked the strait (threatened during 1980s tanker wars, 2012 nuclear tensions, and 2019 incidents), this pipeline can move up to 7 million bpd to the Red Sea, some of which feeds west-coast refineries rather than export. The Sept 2019 drone/missile attack on Abqaiq (attributed to Iran/Houthis) temporarily knocked out ~5.7 million bpd of Saudi processing capacity — the single largest supply disruption in history. This demonstrated that even bypass infrastructure remains vulnerable to precision-strike capabilities now available to non-state actors and regional militaries."
   },
   {
    "id": "sumed-pipeline",

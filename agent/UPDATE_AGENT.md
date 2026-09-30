@@ -55,6 +55,33 @@ Houthis (Ansar Allah), Russia and Ukraine.
 6. `confirmed` requires independent sources. A party's statement never makes something `confirmed` on its own; the
    validator rejects entries that rest only on US `.gov`/`.mil` sources unless they're labelled `unverified`.
 
+## Governing sources — one per kind of number
+
+No single source covers everything, but each kind of number has one **governing source**. When other credible sources
+differ, show the governing figure; don't average, blend or pick the more dramatic one. If the gap is large and
+newsworthy, add one attributed line ("Reuters, counting total liquids, reports ~10 mb/d"). Most apparent conflicts are
+different definitions (crude vs total liquids, monthly average vs a single day, nameplate vs actual flow) or an old
+figure, not a real disagreement, so always state what a number measures and when.
+
+| Number | Governing source | Check against |
+|---|---|---|
+| Chokepoint ship transits | IMF PortWatch | Lloyd's List, Windward |
+| Oil flows through a chokepoint | Kpler (say crude-only or total liquids) | Vortexa |
+| Asset capacity | The operator's latest official figure (results, filings, press release); for operators owned by a party to the conflict, an independent figure (IEA, trade press) | IEA, reputable trade press |
+| Asset operating status | Operator statement (not a party to the conflict), or 2+ independent outlets | Satellite or ship-tracking reporting |
+| Pump prices | National statistics (`scripts/update_fuel.py` sources) | — |
+| Brent / benchmark prices | Daily settlement as reported by Reuters or Bloomberg | — |
+| Pre-war baselines | EIA / IEA (fixed; don't revise) | — |
+
+**Derived claims come from the data files.** Any ratio or comparison in text ("about half capacity", "up 40%",
+"double last week") must be computed from figures in `data/`, not copied from an article. If the data doesn't hold the
+figure, fix the data first (with its source) or leave the comparison out.
+
+**Reference figures carry their provenance.** When you add or correct an asset's capacity, set its structured
+`capacity` field (value, unit, basis, source, `as_of`; see `agent/SCHEMA.md`) and keep the `details` text consistent
+with it. A capacity figure more than two years old (the validator warns) must be rechecked before it's used in a post
+or a derived claim.
+
 ## Sources to check (in roughly this order)
 
 - **Conflict and security:** ISW / Critical Threats *Iran Update* and *Russian Offensive Campaign Assessment*
@@ -122,6 +149,11 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   crude that avoids Hormuz. It's carrying about 3.5 million b/d after repairs." Figures must match the data files. `url` must be that asset's `/chokepoints/<id>/` or
   `/facilities/<id>/` page (the validator checks it exists). Don't repeat an asset explained in the past 14 days
   (check earlier `explainer` posts in `social.json`).
+  **The explainer doubles as an audit.** Before drafting it, check the asset's figures (capacity, length, operator,
+  role) against its governing source. If they hold, set the asset's `verified` to today. If they're stale, correct
+  `details` and `capacity` with a source, set `verified`, and put that change in the review PR (the explainer draft
+  goes in the same PR, so it only posts once a human merges it). The validator rejects an explainer whose asset
+  wasn't verified in the past 14 days.
 - **Mondays and Thursdays: 1 `chart`**: Monday `"image": "fuel-weekly"` (pump prices), Thursday
   `"image": "chokepoints-weekly"` (tanker traffic), with alt text and a caption quoting 2–3 figures from the chart's data.
 - **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
@@ -160,7 +192,8 @@ dropped, and `max_per_day` (6) caps the total.
 Sort this run's changes into two groups.
 
 **Needs review (pull request)** — anything that:
-- adds or edits an asset in `data/infrastructure.json`, or edits `data/scenarios.json`;
+- adds or edits an asset in `data/infrastructure.json` (setting only an asset's `verified` date after a check that
+  found nothing to change is routine), or edits `data/scenarios.json`;
 - adds an event with severity `critical`;
 - changes the status of a **chokepoint**, or sets any asset to `closed` or `damaged` for the first time;
 - rewrites or removes an event that was already published (corrections);

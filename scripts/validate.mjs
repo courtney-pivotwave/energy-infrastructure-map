@@ -44,6 +44,7 @@ function checkSources(where, sources, required = true, confidence = null) {
 // ── infrastructure ──
 const infra = load('infrastructure.json');
 const ids = new Set();
+const assetsById = new Map();
 if (infra) {
   for (const kind of ['pipelines', 'sites', 'fields', 'chokepoints', 'routes']) {
     if (!Array.isArray(infra[kind])) { err(`infrastructure.json: "${kind}" must be an array`); continue; }
@@ -52,12 +53,24 @@ if (infra) {
       if (!ID.test(a.id || '')) err(`${w}: bad id`);
       if (ids.has(a.id)) err(`${w}: duplicate id`);
       ids.add(a.id);
+      assetsById.set(a.id, a);
       if (!a.name) err(`${w}: missing name`);
       if (kind === 'pipelines' || kind === 'routes') {
         if (!Array.isArray(a.coords) || a.coords.length < 2 || !a.coords.every(isCoord)) err(`${w}: coords must be ≥2 [lat,lng] pairs`);
         if (!['oil', 'gas', 'lng'].includes(a.commodity)) err(`${w}: commodity must be oil|gas|lng`);
       } else if (!isCoord(a.coords)) err(`${w}: coords must be [lat,lng]`);
       if (kind === 'sites' && !['production', 'refinery', 'hub', 'lng'].includes(a.kind)) err(`${w}: kind must be production|refinery|hub|lng`);
+      // Reference figures: one governing source, a stated basis and an as-of date (see "Governing sources" in UPDATE_AGENT.md)
+      if (a.capacity !== undefined) {
+        const c = a.capacity || {};
+        if (typeof c.value !== 'number' || c.value <= 0) err(`${w}: capacity.value must be a positive number`);
+        if (!['mb/d', 'kb/d', 'bcm/y', 'mtpa'].includes(c.unit)) err(`${w}: capacity.unit must be mb/d|kb/d|bcm/y|mtpa`);
+        if (!['nameplate', 'effective'].includes(c.basis)) err(`${w}: capacity.basis must be nameplate|effective`);
+        if (!c.source?.name || !/^https?:\/\//.test(c.source?.url || '')) err(`${w}: capacity.source needs a name and url`);
+        if (!isDate(c.as_of) || c.as_of > today) err(`${w}: capacity.as_of must be a past YYYY-MM-DD`);
+        else if ((Date.parse(today) - Date.parse(c.as_of)) / 864e5 > 730) warn(`${w}: capacity figure is over 2 years old; recheck it before using it in a post`);
+      }
+      if (a.verified !== undefined && (!isDate(a.verified) || a.verified > today)) err(`${w}: verified must be a past YYYY-MM-DD`);
       if (kind !== 'routes' && !a.details) err(`${w}: missing details`);
     });
   }
@@ -225,6 +238,11 @@ if (social) {
     if (p.type === 'explainer') {
       const m = (p.url || '').match(/^https:\/\/strategicenergymap\.org\/(chokepoints|facilities)\/([a-z0-9-]+)\/$/);
       if (!m || !ids.has(m[2])) err(`${w}: explainers must link to an existing /chokepoints/<id>/ or /facilities/<id>/ page`);
+      // The daily explainer doubles as an audit: its asset must have been checked against its governing source recently
+      else if (!seenIds.has(p.id)) {
+        const v = assetsById.get(m[2])?.verified;
+        if (!v || (Date.parse(p.created) - Date.parse(v)) / 864e5 > 14) err(`${w}: check ${m[2]}'s figures against its governing source and set its "verified" date (within 14 days) before explaining it`);
+      }
     }
     if (p.type === 'correction' && !seen.has(p.reply_to)) err(`${w}: corrections must reply_to an earlier post id`);
     if (p.reply_to && !seen.has(p.reply_to)) err(`${w}: reply_to must reference an earlier post`);

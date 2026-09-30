@@ -469,6 +469,7 @@ function showDetail(id, fly = false) {
       ${a.type === 'chokepoint' ? `<div id="cpLive"></div>` : ''}
       ${sc ? `<div class="btn-row"><button class="btn primary" data-simulate="${esc(id)}">${closed.has(id) ? 'Remove from scenario' : 'Simulate closure'}</button></div>` : ''}
       <div class="body">${esc(d.details)}</div>
+      ${d.capacity ? `<p class="note"><b>Capacity:</b> ${esc(d.capacity.value)} ${esc(d.capacity.unit)} (${esc(d.capacity.basis)}) · ${safeUrl(d.capacity.source?.url) ? `<a href="${esc(d.capacity.source.url)}" target="_blank" rel="noopener">${esc(d.capacity.source.name)}</a>` : esc(d.capacity.source?.name)}, as of ${esc(fmtDate(d.capacity.as_of))}</p>` : ''}
       ${d.geo ? `<div class="geo"><b>Geopolitical context</b>${esc(d.geo)}</div>` : ''}
       ${related.length ? `<div class="geo"><b>Related developments</b>${related.slice(0, 8).map(eventHTML).join('')}</div>` : ''}
     </div>`;

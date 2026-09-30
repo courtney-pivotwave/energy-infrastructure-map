@@ -27,6 +27,7 @@ const CSS = (indexHtml.match(/styles\.css\?v=\d+/) || ['styles.css'])[0];
 // ── Helpers ──
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const safeUrl = u => (/^https?:\/\//i.test(u || '') ? u : null);
+const capLine = c => c ? `<p class="note"><b>Capacity:</b> ${esc(c.value)} ${esc(c.unit)} (${esc(c.basis)})${c.note ? `; ${esc(c.note)}` : ''}. Source: ${safeUrl(c.source?.url) ? `<a href="${esc(c.source.url)}" target="_blank" rel="noopener">${esc(c.source.name)}</a>` : esc(c.source?.name)}, as of ${esc(fmtDate(c.as_of))}.</p>` : '';
 const fmtDate = d => d ? new Date(d.length === 7 ? d + '-01T00:00:00Z' : d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }) : '';
 const fmtMonth = d => new Date(d + '-01T00:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
 const n = (v, dp = 1) => (v == null || isNaN(v)) ? '—' : Number(v).toFixed(dp);
@@ -292,7 +293,7 @@ for (const id of facilityIds) {
 <h1>${esc(a.name)}</h1>
 <div class="answer"><p>${esc(lead)}</p><p class="note">${lastmod ? `Updated ${esc(fmtDate(lastmod))} · ` : ''}<a href="/?focus=${id}">View on the live map →</a></p></div>
 ${st ? `${sourcesHTML(st.sources)}` : ''}
-<section><h2>Overview</h2><p>${esc(a.details)}</p></section>
+<section><h2>Overview</h2><p>${esc(a.details)}</p>${capLine(a.capacity)}</section>
 ${a.geo ? `<section><h2>Geopolitical context</h2><p>${esc(a.geo)}</p></section>` : ''}
 ${roles.length ? `<section><h2>Role in chokepoint scenarios</h2><ul>${roles.map(r => `<li>${r}</li>`).join('')}</ul></section>` : ''}
 ${evs.length ? `<section><h2>Recent developments</h2>${evs.slice(0, 10).map(e => eventItem(e, false)).join('')}</section>` : ''}

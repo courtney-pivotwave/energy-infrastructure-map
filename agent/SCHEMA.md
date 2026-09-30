@@ -30,6 +30,27 @@ Run `node scripts/validate.mjs` after any edit — it checks shape, enums, dates
 // See "Source policy" in agent/UPDATE_AGENT.md.
 ```
 
+## infrastructure.json — reference figures
+
+Assets are grouped into `pipelines`, `sites`, `fields`, `chokepoints` and `routes`. Two optional fields record where
+an asset's key figure comes from and when it was last checked:
+
+```jsonc
+{ "id": "east-west-pipeline", "name": "East-West Pipeline (Petroline)", "commodity": "oil",
+  "capacity": {
+    "value": 7, "unit": "mb/d",            // mb/d | kb/d | bcm/y | mtpa
+    "basis": "nameplate",                  // nameplate (design/maximum) | effective (usable after known constraints)
+    "source": { "name": "Saudi Aramco Q1 2026 results, via Hellenic Shipping News", "url": "https://...", "date": "2026-05-11" },
+    "as_of": "2026-05-11",                 // when the source stated it; the validator warns after 2 years
+    "note": "optional one-line qualifier"
+  },
+  "verified": "2026-09-30",                // last date the agent checked this asset's figures against its governing source
+  "details": "…", "geo": "…" }
+```
+`capacity` is shown with its source on the asset's page and in the map's detail panel. The governing source for each
+kind of number is listed under "Governing sources" in `agent/UPDATE_AGENT.md`. Explainer posts require the asset's
+`verified` date to be within the past 14 days.
+
 ## status.json
 
 ```jsonc

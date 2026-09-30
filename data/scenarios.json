@@ -28,7 +28,7 @@
           "asset": "east-west-pipeline",
           "outlet": "yanbu-terminal",
           "spare_mbd": 3.0,
-          "note": "Saudi Abqaiq→Yanbu, 5 mb/d design (Aramco reports 7). ~2 mb/d was in use in early 2026, leaving 3–5 mb/d spare depending on Red Sea export capacity (IEA). Low end counted."
+          "note": "Saudi Abqaiq→Yanbu, 7 mb/d since the 2026 NGL-to-crude conversion (Aramco; 5 mb/d in 2018). ~2 mb/d was in use in early 2026, leaving 3–5 mb/d spare depending on Red Sea export capacity (IEA). Low end counted."
         },
         {
           "asset": "habshan-fujairah-pipeline",

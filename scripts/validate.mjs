@@ -250,6 +250,38 @@ if (social) {
   });
 }
 
+// ── source registry (data/sources.json) — changed only via the monthly source review PR ──
+const sourcesReg = load('sources.json');
+if (sourcesReg) {
+  const SRC_TYPES = ['intergovernmental', 'government-agency', 'tracker', 'exchange', 'wire', 'media', 'trade-press', 'think-tank', 'nonprofit', 'nonprofit-investigative', 'company', 'aggregator', 'reference'];
+  const SRC_STATUS = ['trusted', 'use-with-care', 'candidate', 'avoid', 'retired'];
+  const srcIds = new Set(), srcDomains = new Map();
+  (sourcesReg.sources || []).forEach((s, i) => {
+    const w = `sources[${i}] (${s.id || s.name})`;
+    if (!ID.test(s.id || '')) err(`${w}: bad id`);
+    if (srcIds.has(s.id)) err(`${w}: duplicate id`);
+    srcIds.add(s.id);
+    if (!s.name) err(`${w}: missing name`);
+    if (!SRC_TYPES.includes(s.type)) err(`${w}: type must be ${SRC_TYPES.join('|')}`);
+    if (!SRC_STATUS.includes(s.status)) err(`${w}: status must be ${SRC_STATUS.join('|')}`);
+    if (!Array.isArray(s.domains) || !s.domains.length) err(`${w}: needs at least one domain`);
+    (s.domains || []).forEach(d => {
+      if (!/^[a-z0-9.-]+\.[a-z]{2,}$/.test(d)) err(`${w}: domain "${d}" must be a bare hostname`);
+      if (srcDomains.has(d)) err(`${w}: domain ${d} already belongs to ${srcDomains.get(d)}`);
+      srcDomains.set(d, s.id);
+    });
+    if (!isDate(s.added)) err(`${w}: added must be YYYY-MM-DD`);
+    if (s.last_reviewed !== null && !isDate(s.last_reviewed)) err(`${w}: last_reviewed must be YYYY-MM-DD or null`);
+    if (['avoid', 'retired'].includes(s.status) && !s.notes) err(`${w}: say why in notes when a source is ${s.status}`);
+  });
+  // New citations of "avoid" sources: warn (existing ones are cleaned up through the review)
+  const avoid = (sourcesReg.sources || []).filter(s => s.status === 'avoid').flatMap(s => s.domains);
+  const recent = d => d && (Date.parse(today) - Date.parse(d)) / 864e5 <= 30;
+  for (const e of ev?.events || []) if (recent(e.date)) for (const src of e.sources || []) {
+    try { const h = new URL(src.url).hostname.replace(/^www\./, ''); if (avoid.some(d => h === d || h.endsWith('.' + d))) warn(`events ${e.id}: cites ${h}, which the source registry marks "avoid"`); } catch {}
+  }
+}
+
 warnings.forEach(w => console.warn('warn:', w));
 if (errors.length) {
   errors.forEach(e => console.error('ERROR:', e));

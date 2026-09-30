@@ -1,0 +1,1408 @@
+{
+ "updated": "2026-09-30",
+ "note": "Trusted-source registry. Changed only through the monthly source review (agent/SOURCE_REVIEW.md), via pull request.",
+ "sources": [
+  {
+   "id": "imf-portwatch",
+   "name": "IMF PortWatch",
+   "domains": [
+    "portwatch.imf.org"
+   ],
+   "type": "intergovernmental",
+   "status": "trusted",
+   "covers": [
+    "transits"
+   ],
+   "governs": [
+    "chokepoint-transits"
+   ],
+   "notes": "Daily chokepoint transit counts from AIS; the map's live feed.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "kpler",
+   "name": "Kpler",
+   "domains": [
+    "kpler.com"
+   ],
+   "type": "tracker",
+   "status": "trusted",
+   "covers": [
+    "flows",
+    "shipping"
+   ],
+   "governs": [
+    "chokepoint-flows"
+   ],
+   "notes": "Commercial ship-tracking; usually cited via Reuters/Bloomberg. State crude-only vs total liquids.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "vortexa",
+   "name": "Vortexa",
+   "domains": [
+    "vortexa.com"
+   ],
+   "type": "tracker",
+   "status": "trusted",
+   "covers": [
+    "flows",
+    "shipping"
+   ],
+   "notes": "Cross-check for Kpler flow figures.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "windward",
+   "name": "Windward",
+   "domains": [
+    "windward.ai"
+   ],
+   "type": "tracker",
+   "status": "trusted",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "Maritime AI; dark-fleet and transit analysis.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "marinetraffic",
+   "name": "MarineTraffic",
+   "domains": [
+    "marinetraffic.com"
+   ],
+   "type": "tracker",
+   "status": "trusted",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "AIS vessel positions.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "tankertrackers",
+   "name": "TankerTrackers.com",
+   "domains": [
+    "tankertrackers.com"
+   ],
+   "type": "tracker",
+   "status": "trusted",
+   "covers": [
+    "flows",
+    "shipping"
+   ],
+   "notes": "Satellite and AIS tanker tracking; strong on sanctioned flows.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "lloyds-list",
+   "name": "Lloyd's List / Lloyd's List Intelligence",
+   "domains": [
+    "lloydslist.com",
+    "lloydslistintelligence.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "Shipping news and vessel data.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "global-energy-monitor",
+   "name": "Global Energy Monitor",
+   "domains": [
+    "globalenergymonitor.org",
+    "gem.wiki"
+   ],
+   "type": "nonprofit",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "governs": [
+    "asset-capacity-party-operators"
+   ],
+   "notes": "Open infrastructure trackers (CC BY 4.0). Figures can lag operator announcements; note the tracker's update date.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "iea",
+   "name": "International Energy Agency",
+   "domains": [
+    "iea.org",
+    "iea.blob.core.windows.net"
+   ],
+   "type": "intergovernmental",
+   "status": "trusted",
+   "covers": [
+    "flows",
+    "markets",
+    "baselines"
+   ],
+   "governs": [
+    "baselines"
+   ],
+   "notes": "Oil and Gas Market Reports.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "eia",
+   "name": "US Energy Information Administration",
+   "domains": [
+    "eia.gov"
+   ],
+   "type": "government-agency",
+   "status": "trusted",
+   "covers": [
+    "prices",
+    "baselines",
+    "statistics"
+   ],
+   "governs": [
+    "pump-prices-us",
+    "baselines"
+   ],
+   "affiliation": "US government",
+   "notes": "Statistics agency of a party to the conflict: verifiable statistics are fine; conflict-period estimates need independent verification.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "ec-oil-bulletin",
+   "name": "European Commission Weekly Oil Bulletin",
+   "domains": [
+    "energy.ec.europa.eu"
+   ],
+   "type": "government-agency",
+   "status": "trusted",
+   "covers": [
+    "prices"
+   ],
+   "governs": [
+    "pump-prices-eu"
+   ],
+   "notes": "EU member-state pump prices.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "uk-desnz",
+   "name": "UK DESNZ weekly road fuel prices",
+   "domains": [
+    "gov.uk"
+   ],
+   "type": "government-agency",
+   "status": "trusted",
+   "covers": [
+    "prices"
+   ],
+   "governs": [
+    "pump-prices-uk"
+   ],
+   "notes": "UK pump prices.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "ecb",
+   "name": "European Central Bank reference rates",
+   "domains": [
+    "ecb.europa.eu"
+   ],
+   "type": "government-agency",
+   "status": "trusted",
+   "covers": [
+    "fx"
+   ],
+   "governs": [
+    "fx"
+   ],
+   "notes": "FX for converting pump prices.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "fred",
+   "name": "FRED (St. Louis Fed)",
+   "domains": [
+    "fred.stlouisfed.org"
+   ],
+   "type": "government-agency",
+   "status": "trusted",
+   "covers": [
+    "prices",
+    "statistics"
+   ],
+   "affiliation": "US government",
+   "notes": "Data mirror; prefer the original series publisher where possible.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "us-doe",
+   "name": "US Department of Energy",
+   "domains": [
+    "energy.gov"
+   ],
+   "type": "government-agency",
+   "status": "use-with-care",
+   "covers": [
+    "policy"
+   ],
+   "affiliation": "US government",
+   "notes": "Party to the conflict: policy actions (e.g. SPR releases) are verifiable; claims need independent verification.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "opec",
+   "name": "OPEC",
+   "domains": [
+    "opec.org"
+   ],
+   "type": "intergovernmental",
+   "status": "trusted",
+   "covers": [
+    "markets"
+   ],
+   "notes": "Official statements and Monthly Oil Market Report.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "ice",
+   "name": "ICE",
+   "domains": [
+    "ice.com"
+   ],
+   "type": "exchange",
+   "status": "trusted",
+   "covers": [
+    "prices"
+   ],
+   "governs": [
+    "benchmark-prices"
+   ],
+   "notes": "Brent settlements (usually cited via Reuters/Bloomberg).",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "cme",
+   "name": "CME Group",
+   "domains": [
+    "cmegroup.com"
+   ],
+   "type": "exchange",
+   "status": "trusted",
+   "covers": [
+    "prices"
+   ],
+   "notes": "WTI and Henry Hub settlements.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "isw",
+   "name": "Institute for the Study of War",
+   "domains": [
+    "understandingwar.org"
+   ],
+   "type": "think-tank",
+   "status": "trusted",
+   "covers": [
+    "conflict"
+   ],
+   "notes": "Daily Iran Update and Russia assessments. Their reporting of belligerent statements falls under the source policy.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "critical-threats",
+   "name": "Critical Threats (AEI)",
+   "domains": [
+    "criticalthreats.org"
+   ],
+   "type": "think-tank",
+   "status": "trusted",
+   "covers": [
+    "conflict"
+   ],
+   "notes": "Co-publishes the Iran Update with ISW.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "ukmto",
+   "name": "UKMTO / JMIC advisories",
+   "domains": [
+    "ukmto.org"
+   ],
+   "type": "government-agency",
+   "status": "trusted",
+   "covers": [
+    "shipping",
+    "conflict"
+   ],
+   "notes": "Maritime security advisories; JMIC advisories are also published here.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "reuters",
+   "name": "Reuters",
+   "domains": [
+    "reuters.com"
+   ],
+   "type": "wire",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "markets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "ap",
+   "name": "Associated Press",
+   "domains": [
+    "apnews.com"
+   ],
+   "type": "wire",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "bloomberg",
+   "name": "Bloomberg",
+   "domains": [
+    "bloomberg.com"
+   ],
+   "type": "wire",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "markets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "ft",
+   "name": "Financial Times",
+   "domains": [
+    "ft.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "markets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "aljazeera",
+   "name": "Al Jazeera",
+   "domains": [
+    "aljazeera.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "Qatari state-funded",
+   "notes": "Most-cited outlet in the data so far. Qatari state-funded; corroborate claims about Gulf states and Qatar-involved diplomacy.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "npr",
+   "name": "NPR",
+   "domains": [
+    "npr.org"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "pbs",
+   "name": "PBS",
+   "domains": [
+    "pbs.org"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "opb",
+   "name": "Oregon Public Broadcasting",
+   "domains": [
+    "opb.org"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "Usually syndicating NPR/AP stories; cite the original where possible.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "nbc-news",
+   "name": "NBC News",
+   "domains": [
+    "nbcnews.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "cbs-news",
+   "name": "CBS News",
+   "domains": [
+    "cbsnews.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "axios",
+   "name": "Axios",
+   "domains": [
+    "axios.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "fox-business",
+   "name": "Fox Business",
+   "domains": [
+    "foxbusiness.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "markets"
+   ],
+   "notes": "Corroborate before relying on it.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "rte",
+   "name": "RTÉ",
+   "domains": [
+    "rte.ie"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "Irish public broadcaster.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "euronews",
+   "name": "Euronews",
+   "domains": [
+    "euronews.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "the-national",
+   "name": "The National (UAE)",
+   "domains": [
+    "thenationalnews.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "UAE government-linked",
+   "notes": "Abu Dhabi-owned; good regional access, corroborate claims about the UAE and its neighbours.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "gulf-news",
+   "name": "Gulf News",
+   "domains": [
+    "gulfnews.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "UAE-based",
+   "notes": "Dubai-based; corroborate claims about the UAE.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "khaleej-times",
+   "name": "Khaleej Times",
+   "domains": [
+    "khaleejtimes.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "UAE-based",
+   "notes": "Dubai-based; corroborate claims about the UAE.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "arab-news",
+   "name": "Arab News",
+   "domains": [
+    "arabnews.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "Saudi-owned",
+   "notes": "Saudi-owned; corroborate claims about Saudi Arabia.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "the-peninsula",
+   "name": "The Peninsula (Qatar)",
+   "domains": [
+    "thepeninsulaqatar.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "Qatar-based",
+   "notes": "Qatari daily; corroborate claims about Qatar.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "al-monitor",
+   "name": "Al-Monitor",
+   "domains": [
+    "al-monitor.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "times-of-israel",
+   "name": "The Times of Israel",
+   "domains": [
+    "timesofisrael.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "Israeli outlet",
+   "notes": "Israeli outlet; Israel is a party. Its reporting of Israeli or Iranian government claims falls under the source policy.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "jpost",
+   "name": "The Jerusalem Post",
+   "domains": [
+    "jpost.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "Israeli outlet",
+   "notes": "Israeli outlet; Israel is a party. Corroborate.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "moscow-times",
+   "name": "The Moscow Times",
+   "domains": [
+    "themoscowtimes.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "Independent Russian outlet operating from exile.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "kyiv-independent",
+   "name": "The Kyiv Independent",
+   "domains": [
+    "kyivindependent.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "Ukrainian outlet",
+   "notes": "Independent Ukrainian outlet; Ukraine is a party. Corroborate battle-damage claims.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "ukrainska-pravda",
+   "name": "Ukrainska Pravda",
+   "domains": [
+    "pravda.com.ua"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "Ukrainian outlet",
+   "notes": "Independent Ukrainian outlet; Ukraine is a party. Corroborate battle-damage claims.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "cyprus-mail",
+   "name": "Cyprus Mail",
+   "domains": [
+    "cyprus-mail.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "outlook-business",
+   "name": "Outlook Business",
+   "domains": [
+    "outlookbusiness.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "markets"
+   ],
+   "notes": "Not yet reviewed.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "cdm",
+   "name": "CDM",
+   "domains": [
+    "cdm.press"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "notes": "Not yet reviewed; cited for republished Reuters reporting. Cite the original wire where possible.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "argus",
+   "name": "Argus Media",
+   "domains": [
+    "argusmedia.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "markets",
+    "prices"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "sp-global",
+   "name": "S&P Global Commodity Insights",
+   "domains": [
+    "spglobal.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "markets",
+    "prices"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "gcaptain",
+   "name": "gCaptain",
+   "domains": [
+    "gcaptain.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "tradewinds",
+   "name": "TradeWinds",
+   "domains": [
+    "tradewindsnews.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "upstream",
+   "name": "Upstream",
+   "domains": [
+    "upstreamonline.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "assets",
+    "markets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "rigzone",
+   "name": "Rigzone",
+   "domains": [
+    "rigzone.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "markets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "boe-report",
+   "name": "BOE Report",
+   "domains": [
+    "boereport.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "markets"
+   ],
+   "notes": "Often republishes Reuters/Bloomberg; cite the original where possible.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "energynow",
+   "name": "EnergyNow",
+   "domains": [
+    "energynow.ca"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "markets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "hellenic-shipping-news",
+   "name": "Hellenic Shipping News",
+   "domains": [
+    "hellenicshippingnews.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "shipping",
+    "markets"
+   ],
+   "notes": "Largely republishes wire and company releases; cite the original where possible.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "marinelink",
+   "name": "MarineLink",
+   "domains": [
+    "marinelink.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "workboat",
+   "name": "WorkBoat",
+   "domains": [
+    "workboat.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "hydrocarbon-processing",
+   "name": "Hydrocarbon Processing",
+   "domains": [
+    "hydrocarbonprocessing.com"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "pipeline-journal",
+   "name": "Pipeline Technology Journal",
+   "domains": [
+    "pipeline-journal.net"
+   ],
+   "type": "trade-press",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "global-lng-hub",
+   "name": "Global LNG Hub",
+   "domains": [
+    "globallnghub.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "markets"
+   ],
+   "notes": "Not yet reviewed.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "energy-connects",
+   "name": "Energy Connects",
+   "domains": [
+    "energyconnects.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "markets"
+   ],
+   "notes": "ADIPEC-affiliated news site; mostly republished wire copy.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "aleasoft",
+   "name": "AleaSoft",
+   "domains": [
+    "aleasoft.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "markets"
+   ],
+   "notes": "Energy-forecasting consultancy's news; attribute.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "oilprice",
+   "name": "OilPrice.com",
+   "domains": [
+    "oilprice.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "markets"
+   ],
+   "notes": "Mixed quality; corroborate.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "trading-economics",
+   "name": "Trading Economics",
+   "domains": [
+    "tradingeconomics.com"
+   ],
+   "type": "aggregator",
+   "status": "use-with-care",
+   "covers": [
+    "prices"
+   ],
+   "notes": "Aggregator; fine for a quick price check, but cite settlements as reported by Reuters/Bloomberg.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "yahoo-finance",
+   "name": "Yahoo Finance",
+   "domains": [
+    "finance.yahoo.com"
+   ],
+   "type": "aggregator",
+   "status": "use-with-care",
+   "covers": [
+    "prices",
+    "news"
+   ],
+   "notes": "Aggregator; cite the original publisher.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "wikipedia",
+   "name": "Wikipedia",
+   "domains": [
+    "en.wikipedia.org"
+   ],
+   "type": "reference",
+   "status": "use-with-care",
+   "covers": [
+    "assets"
+   ],
+   "notes": "Tertiary: use it to find sources, then cite those instead.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "fdd",
+   "name": "Foundation for Defense of Democracies",
+   "domains": [
+    "fdd.org"
+   ],
+   "type": "think-tank",
+   "status": "use-with-care",
+   "covers": [
+    "conflict",
+    "analysis"
+   ],
+   "notes": "Advocacy think tank with a hawkish Iran policy stance; attribute analysis, never the sole source for a fact.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "meforum",
+   "name": "Middle East Forum",
+   "domains": [
+    "meforum.org"
+   ],
+   "type": "think-tank",
+   "status": "use-with-care",
+   "covers": [
+    "analysis"
+   ],
+   "notes": "Advocacy organisation; attribute analysis, never the sole source for a fact.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "aramco",
+   "name": "Saudi Aramco",
+   "domains": [
+    "aramco.com"
+   ],
+   "type": "company",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "governs": [
+    "asset-capacity"
+   ],
+   "notes": "Governing for its own capacity figures.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "qatarenergy",
+   "name": "QatarEnergy",
+   "domains": [
+    "qatarenergy.qa"
+   ],
+   "type": "company",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "governs": [
+    "asset-capacity"
+   ],
+   "notes": "Governing for its own capacity figures.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "adnoc",
+   "name": "ADNOC",
+   "domains": [
+    "adnoc.ae"
+   ],
+   "type": "company",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "governs": [
+    "asset-capacity"
+   ],
+   "notes": "Governing for its own capacity figures.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "cheniere",
+   "name": "Cheniere Energy",
+   "domains": [
+    "cheniere.com"
+   ],
+   "type": "company",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "governs": [
+    "asset-capacity"
+   ],
+   "notes": "Governing for its own capacity figures.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "cpc",
+   "name": "Caspian Pipeline Consortium",
+   "domains": [
+    "cpc.ru"
+   ],
+   "type": "company",
+   "status": "use-with-care",
+   "covers": [
+    "assets"
+   ],
+   "affiliation": "Russian state participation",
+   "notes": "Russian-majority consortium; corroborate operational claims with Global Energy Monitor or trade press.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "transneft",
+   "name": "Transneft",
+   "domains": [
+    "transneft.ru"
+   ],
+   "type": "company",
+   "status": "use-with-care",
+   "covers": [
+    "assets"
+   ],
+   "affiliation": "Russian state-owned",
+   "notes": "Russian state-owned: a party-owned operator, so Global Energy Monitor governs its capacity figures.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "occrp",
+   "name": "OCCRP",
+   "domains": [
+    "occrp.org"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "Candidate for the corruption/business feed.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "transparency-international",
+   "name": "Transparency International",
+   "domains": [
+    "transparency.org"
+   ],
+   "type": "nonprofit",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "Candidate for the corruption/business feed.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "propublica",
+   "name": "ProPublica",
+   "domains": [
+    "propublica.org"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "Candidate for the corruption/business feed.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "global-witness",
+   "name": "Global Witness",
+   "domains": [
+    "globalwitness.org"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "Energy and extractives focus.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "icij",
+   "name": "ICIJ",
+   "domains": [
+    "icij.org"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "Panama and Pandora Papers.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "nrgi",
+   "name": "Natural Resource Governance Institute",
+   "domains": [
+    "resourcegovernance.org"
+   ],
+   "type": "nonprofit",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "public-eye",
+   "name": "Public Eye",
+   "domains": [
+    "publiceye.ch"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "Commodity-trader investigations.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "the-sentry",
+   "name": "The Sentry",
+   "domains": [
+    "thesentry.org"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "finance-uncovered",
+   "name": "Finance Uncovered",
+   "domains": [
+    "financeuncovered.org"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "bellingcat",
+   "name": "Bellingcat",
+   "domains": [
+    "bellingcat.com"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "accountability",
+    "conflict"
+   ],
+   "notes": "Open-source investigations; also relevant to conflict verification.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  },
+  {
+   "id": "eiti",
+   "name": "EITI",
+   "domains": [
+    "eiti.org"
+   ],
+   "type": "intergovernmental",
+   "status": "candidate",
+   "covers": [
+    "accountability"
+   ],
+   "notes": "Official extractive-payment disclosure data.",
+   "added": "2026-09-30",
+   "last_reviewed": null
+  }
+ ]
+}

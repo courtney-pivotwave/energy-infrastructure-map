@@ -9,6 +9,7 @@ Static site deployed on Vercel from `main`. The build (`scripts/build.mjs`, no d
 - `scripts/update_fuel.py` — refreshes official pump prices (EIA, EU Weekly Oil Bulletin, UK DESNZ, ECB FX). Stdlib only.
 - `scripts/validate.mjs` — validates `data/`. Run after every data change; must pass before committing.
 - `agent/UPDATE_AGENT.md` — instructions for the scheduled news/conflict update agent.
+- `agent/SOURCE_REVIEW.md` — monthly source-review agent; maintains `data/sources.json` (PR only). `scripts/source_activity.mjs` gives it citation counts and unregistered domains.
 
 Live data fetched in the browser: IMF PortWatch daily chokepoint transits (ArcGIS REST, CORS-enabled, no key).
 

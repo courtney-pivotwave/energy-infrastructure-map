@@ -12,6 +12,7 @@ Nothing about the map's content lives in the HTML — to change what the map say
 | `data/social.json` | Draft posts for X and Bluesky, plus the kill switch. | Update agent appends drafts; humans set `enabled` / `dry_run`. |
 | `data/social-log.json` | What was posted where (post IDs). | The posting GitHub Action only. Never edit. |
 | `data/changelog.json` | Public changelog shown on the About page. | Update agent appends one entry per run with material changes; humans for site changes. |
+| `data/sources.json` | Registry of the sources the map relies on, with status and affiliations. | Monthly source-review agent, via PR only. |
 | `data/scenarios.json` | Baseline flows through each chokepoint, bypass capacity, and most-exposed importers — used by the "what-if" closure mode. | Humans; agent may refresh figures when an authoritative source (EIA, IEA) publishes new numbers. |
 
 Every asset has a stable `id` (kebab-case). `status.json`, `events.json` and `scenarios.json` refer to assets by that id.
@@ -50,6 +51,25 @@ an asset's key figure comes from and when it was last checked:
 `capacity` is shown with its source on the asset's page and in the map's detail panel. The governing source for each
 kind of number is listed under "Governing sources" in `agent/UPDATE_AGENT.md`. Explainer posts require the asset's
 `verified` date to be within the past 14 days.
+
+## sources.json
+
+The registry of sources the map relies on. Changed only by the monthly source review (`agent/SOURCE_REVIEW.md`), via PR.
+
+```jsonc
+{ "updated": "2026-09-30",
+  "sources": [
+    { "id": "aljazeera", "name": "Al Jazeera", "domains": ["aljazeera.com"],   // bare hostnames; subdomains match
+      "type": "media",          // intergovernmental | government-agency | tracker | exchange | wire | media | trade-press |
+                                // think-tank | nonprofit | nonprofit-investigative | company | aggregator | reference
+      "status": "trusted",      // trusted | use-with-care | candidate | avoid | retired (avoid/retired need notes)
+      "covers": ["news"],       // free tags: news, markets, prices, shipping, flows, transits, assets, conflict, accountability…
+      "governs": ["…"],         // optional: numbers this source governs (see "Governing sources" in UPDATE_AGENT.md)
+      "affiliation": "Qatari state-funded",   // optional: state ties or a base in a party to a conflict
+      "notes": "…", "added": "2026-09-30", "last_reviewed": null }
+  ] }
+```
+`node scripts/source_activity.mjs` reports citations per source and cited domains missing from the registry.
 
 ## status.json
 

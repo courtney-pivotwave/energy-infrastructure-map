@@ -82,6 +82,15 @@ figure, fix the data first (with its source) or leave the comparison out.
 with it. A capacity figure more than two years old (the validator warns) must be rechecked before it's used in a post
 or a derived claim.
 
+## Source registry
+
+`data/sources.json` lists the sources the map relies on, each with a status: `trusted` (use freely),
+`use-with-care` (attribute and corroborate; its `notes` say why), `candidate` (not yet used), `avoid` (don't cite) or
+`retired`. `affiliation` flags state ties or a base in a country that's a party to a conflict: corroborate claims
+touching that state. Check the registry before relying on an unfamiliar outlet. Prefer the original publisher over a
+site republishing wire copy. You may cite a credible outlet that isn't registered yet; the monthly source review
+(`agent/SOURCE_REVIEW.md`) will register it. **Don't edit `data/sources.json` yourself.**
+
 ## Sources to check (in roughly this order)
 
 - **Conflict and security:** ISW / Critical Threats *Iran Update* and *Russian Offensive Campaign Assessment*

@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-09-30",
+   "kind": "data",
+   "headline": "Hormuz flows hit 13.2 mb/d as Saudi Red Sea exports rebound; Brent, WTI pull back",
+   "changes": [
+    "Kpler ship-tracking data and satellite imagery show a 'major operational recovery' at Saudi Arabia's Yanbu export terminal, with Strait of Hormuz oil flows averaging 13.2 million b/d (about 77% of Kpler's pre-war baseline) over the week to 29 Sep",
+    "Brent fell 2.6% and WTI 3.5% on 29 Sep as the recovery weighed on prices, before easing further into 30 Sep",
+    "Updated Brent, WTI, TTF, JKM and Henry Hub benchmark prices",
+    "Refreshed pump prices from official EIA/EU/UK feeds"
+   ]
+  },
+  {
    "date": "2026-09-29",
    "kind": "data",
    "headline": "East-West pipeline ramps to 3.5 mb/d; Hormuz tanker traffic picks up",

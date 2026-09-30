@@ -106,6 +106,52 @@
     "Oil",
     "OOTT"
    ]
+  },
+  {
+   "id": "2026-09-30-digest",
+   "created": "2026-09-30",
+   "type": "digest",
+   "text": "Saudi Arabia's Yanbu export terminal shows a 'major operational recovery' (Kpler satellite imagery), with Strait of Hormuz flows at a 13.2 million b/d 7-day average — about 77% of pre-war (reported). Brent $97/bbl, WTI $90/bbl as of 30 Sep.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Oil",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-09-30-hormuz-yanbu-flows-recover",
+   "created": "2026-09-30",
+   "type": "event",
+   "text": "Kpler and satellite imagery show a 'major operational recovery' at Saudi Arabia's Yanbu terminal. Strait of Hormuz flows are now a 13.2 million b/d 7-day average — about 77% of pre-war (reported).",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-09-29-hormuz-flows-13mbd-yanbu-recovery",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Oil",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-09-30-explainer-east-west-pipeline",
+   "created": "2026-09-30",
+   "type": "explainer",
+   "text": "Saudi Arabia's East-West pipeline runs ~1,200 km from Abqaiq to Yanbu, the kingdom's main Hormuz-bypass route. Shut by drone strikes on 11 Sep, it's back to about 3.5 million b/d — half its 7 million b/d capacity.",
+   "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Oil",
+    "OOTT"
+   ],
+   "reply_to": null
   }
  ]
 }

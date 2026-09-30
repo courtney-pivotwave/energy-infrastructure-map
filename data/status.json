@@ -1,13 +1,18 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-09-30",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
-   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. Preliminary Kpler data showed crude exports recovering to a 7.4 mb/d September average, with 19 tankers (17 VLCCs) transiting the week to 27 Sep, mainly under naval escort or shuttle arrangements rather than normal free transit. Many tankers sail with transponders off, so independent counts are partial.",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline) and September crude exports at a 7.4 mb/d average, with 19 tankers (17 VLCCs) transiting the week to 27 Sep, mainly under naval escort or shuttle arrangements rather than normal free transit. Many tankers sail with transponders off, so independent counts are partial.",
    "since": "2026-02-28",
-   "updated": "2026-09-28",
+   "updated": "2026-09-29",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "CNBC — Oil prices fall as crude exports recover at Saudi Arabia's Red Sea ports (Kpler data)",
+     "url": "https://www.cnbc.com/2026/09/29/oil-prices-today-brent-wti-hormuz.html",
+     "date": "2026-09-29"
+    },
     {
      "name": "Al Jazeera — Iran touts Hormuz attacks as oil flows increase despite tensions (Kpler data)",
      "url": "https://www.aljazeera.com/news/2026/9/28/iran-touts-hormuz-attacks-as-oil-flows-increase-despite-tensions",

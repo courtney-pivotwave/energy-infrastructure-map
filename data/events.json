@@ -1,8 +1,33 @@
 {
- "updated": "2026-09-29",
- "situation_headline": "Saudi Arabia's East-West pipeline has ramped to ~3.5 mb/d and Kpler data show Hormuz crude exports recovering to a 7.4 mb/d September average, though the strait remains formally closed and US-Iran talks are stalled.",
+ "updated": "2026-09-30",
+ "situation_headline": "Kpler data and satellite imagery show a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows hitting a 13.2 mb/d 7-day average (about 77% of pre-war); Brent and WTI fell on the news, while the strait stays formally closed and US-Iran talks remain stalled.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 29 September Brent was around $105 (pre-crisis ~$72.5) and TTF ~€70/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September, and Bloomberg reported on 29 September that Iranian officials were privately pessimistic about a deal before the US midterm elections in November.",
  "events": [
+  {
+   "id": "2026-09-29-hormuz-flows-13mbd-yanbu-recovery",
+   "date": "2026-09-29",
+   "title": "Kpler: Hormuz flows hit 13.2 mb/d 7-day average as Saudi Red Sea exports rebound",
+   "summary": "Kpler ship-tracking data cited by CNBC showed oil flows through the Strait of Hormuz averaging 13.2 million b/d over the seven days to 29 September, about 77% of the roughly 17 million b/d Kpler puts as the pre-war baseline (a lower figure than the IEA's ~20 mb/d, reflecting a different measure). Satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu and Mua'jjiz terminals, with nine tankers loading 12.5 million barrels between 26 and 28 September. Brent fell 2.6% to $102.59 and WTI 3.5% to $89.38 on the news.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz",
+    "yanbu-terminal",
+    "east-west-pipeline"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "CNBC — Oil prices fall as crude exports recover at Saudi Arabia's Red Sea ports (Kpler data)",
+     "url": "https://www.cnbc.com/2026/09/29/oil-prices-today-brent-wti-hormuz.html",
+     "date": "2026-09-29"
+    }
+   ]
+  },
   {
    "id": "2026-09-28-kpler-hormuz-flows-recover",
    "date": "2026-09-28",

@@ -3,6 +3,7 @@
  "dry_run": false,
  "max_per_day": 6,
  "max_per_run": 1,
+ "min_gap_minutes": 100,
  "x_links": [
   "announcement",
   "digest",

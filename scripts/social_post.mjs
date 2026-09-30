@@ -186,6 +186,10 @@ async function main() {
   // Corrections and posts already out on one platform don't count; they go straight away.
   const perRun = queue.max_per_run || Infinity;
   let startedThisRun = 0;
+  // Spacing: runs are hourly (GitHub drops some scheduled runs), so a new post waits until min_gap_minutes after the
+  // last one on any platform. A dropped run just means the next hourly run posts it.
+  const gapMs = (queue.min_gap_minutes || 0) * 6e4;
+  const lastPostAt = () => Math.max(0, ...Object.values(log.posted).flatMap(e => platforms.map(pl => Date.parse(e[pl]?.at || 0) || 0)));
 
   console.log(`${dry ? 'DRY RUN — ' : ''}queue: ${queue.posts.length} post(s); X ${creds.x ? 'configured' : 'not configured'}; Bluesky ${creds.bluesky ? 'configured' : 'not configured'}; posted today: ${postedToday()}/${queue.max_per_day}`);
   for (const p of queue.posts) {
@@ -197,6 +201,8 @@ async function main() {
     if (isNewPost && postedToday() >= queue.max_per_day) { console.log(`Daily limit reached; holding ${p.id}`); break; }
     if (isNewPost && p.type !== 'correction') {
       if (startedThisRun >= perRun) { console.log(`Holding ${p.id} for the next scheduled run (max_per_run ${perRun})`); continue; }
+      const wait = lastPostAt() + gapMs - Date.now();
+      if (!dry && wait > 0) { console.log(`Holding ${p.id}: last post was under ${queue.min_gap_minutes} min ago (${Math.ceil(wait / 6e4)} min to go)`); continue; }
       startedThisRun++;
     }
     if (p.image && !(p.image in images)) images[p.image] = await renderImage(p.image);

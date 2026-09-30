@@ -191,6 +191,7 @@ const social = load('social.json');
 if (social) {
   if (typeof social.enabled !== 'boolean' || typeof social.dry_run !== 'boolean') err('social.json: enabled and dry_run must be booleans');
   if (!Number.isInteger(social.max_per_day) || social.max_per_day < 1 || social.max_per_day > 10) err('social.json: max_per_day must be 1–10');
+  if (social.min_gap_minutes !== undefined && (!Number.isInteger(social.min_gap_minutes) || social.min_gap_minutes < 0 || social.min_gap_minutes > 720)) err('social.json: min_gap_minutes must be 0–720');
   if (social.max_per_run !== undefined && (!Number.isInteger(social.max_per_run) || social.max_per_run < 1)) err('social.json: max_per_run must be a positive integer');
   const TYPES = ['event', 'digest', 'explainer', 'chart', 'correction', 'announcement'];
   const xLinks = social.x_links ?? ['announcement', 'digest', 'correction'];

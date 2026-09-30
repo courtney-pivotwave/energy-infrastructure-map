@@ -178,8 +178,8 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   `scenarios.json` and `status.json`.
 - **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
 
-**Order matters.** The posting Action sends one new draft per scheduled run, every two hours from 11:15 to 23:15 UTC
-(`max_per_run`), in queue order, so append drafts in the order they should go out: digest, events (most important
+**Order matters.** The posting Action runs hourly from 11:17 to 23:17 UTC and sends one new draft at a time, in
+queue order, at least `min_gap_minutes` (100) after the previous post, so posts land about every two hours, so append drafts in the order they should go out: digest, events (most important
 first), explainer, chart. Corrections skip the queue and go out on the next run. Drafts older than 48 hours are
 dropped, and `max_per_day` (6) caps the total.
 

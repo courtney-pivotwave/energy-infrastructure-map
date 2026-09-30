@@ -214,6 +214,7 @@ async function main() {
       } catch (e) {
         log.posted[p.id][pl] = { attempts: (prev.attempts || 0) + 1, error: String(e.message).slice(0, 300), last_try: new Date().toISOString() };
         console.log(`  ✗ ${pl}: ${e.message}`);
+        if (log.posted[p.id][pl].attempts >= MAX_ATTEMPTS) { console.log(`  giving up on ${pl} after ${MAX_ATTEMPTS} attempts`); process.exitCode = 1; } // red run → GitHub emails the owner
       }
     }
   }

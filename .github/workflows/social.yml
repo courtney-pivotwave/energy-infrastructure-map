@@ -61,6 +61,7 @@ jobs:
         run: node scripts/social_post.mjs
 
       - name: Save post log
+        if: always()   # keep the log even when a post gave up (that run is marked failed so GitHub emails)
         run: |
           if [ -n "$(git status --porcelain data/social-log.json)" ]; then
             git config user.name "github-actions[bot]"

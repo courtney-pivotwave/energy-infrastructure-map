@@ -1,0 +1,30 @@
+# Daily check for anything that needs a human. It fails (red X) when something does, so GitHub emails
+# the repo owner; the run summary says what to do. Green means nothing needs you.
+name: Needs you
+
+on:
+  schedule:
+    - cron: '30 12 * * *'   # 12:30 UTC, after the 10:30 update agent and the first posting run
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 100
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/health.mjs

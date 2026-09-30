@@ -67,7 +67,7 @@ figure, not a real disagreement, so always state what a number measures and when
 |---|---|---|
 | Chokepoint ship transits | IMF PortWatch | Lloyd's List, Windward |
 | Oil flows through a chokepoint | Kpler (say crude-only or total liquids) | Vortexa |
-| Asset capacity | The operator's latest official figure (results, filings, press release); for operators owned by a party to the conflict, an independent figure (IEA, trade press) | IEA, reputable trade press |
+| Asset capacity | The operator's latest official figure (results, filings, press release); for operators owned by a party to the conflict, Global Energy Monitor | Global Energy Monitor, IEA, reputable trade press |
 | Asset operating status | Operator statement (not a party to the conflict), or 2+ independent outlets | Satellite or ship-tracking reporting |
 | Pump prices | National statistics (`scripts/update_fuel.py` sources) | — |
 | Brent / benchmark prices | Daily settlement as reported by Reuters or Bloomberg | — |
@@ -93,6 +93,12 @@ or a derived claim.
   statements (Aramco, QatarEnergy, ADNOC, CPC, Transneft, Cheniere, etc.).
 - **Live transits:** IMF PortWatch (the page already charts this live — use it to corroborate, e.g. "tanker transits
   resumed" claims).
+- **Asset reference data:** Global Energy Monitor (globalenergymonitor.org), an independent non-profit whose trackers
+  cover pipelines (Global Oil / Gas Infrastructure Trackers), LNG terminals, oil and gas fields and more, with a
+  gem.wiki page per project. Use it to check capacity, length, operator and status when auditing an asset, and as the
+  governing capacity source where the operator is a party to the conflict. Its data is CC BY 4.0: cite it as
+  "Global Energy Monitor, <tracker name>" with the project page URL. Note the tracker's own "last updated" date as
+  `as_of`, since its figures can lag operator announcements.
 - **Prices:** benchmark settlements (Brent, WTI, TTF, JKM, Henry Hub) from ICE/CME settlements as reported by
   Reuters, Argus or other reputable market sources. Use the most recent settlement you can source.
 

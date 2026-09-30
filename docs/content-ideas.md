@@ -33,8 +33,7 @@ Notes for when we pick it up:
 - **Sourcing to work out.** Start from non-profit investigative outlets like OCCRP, Transparency International and
   ProPublica. Other candidates to vet: Global Witness (energy and extractives), ICIJ (Panama/Pandora Papers), the
   Natural Resource Governance Institute, Public Eye (commodity traders), The Sentry, Finance Uncovered and Bellingcat.
-  EITI publishes official disclosure data. Global Energy Monitor (non-profit, open data) may also be worth considering
-  as a governing source for asset capacity.
+  EITI publishes official disclosure data. (Global Energy Monitor was adopted as an asset-data source on 2026-09-30.)
 - Stricter rules than the news feed: court findings, official investigations and these outlets' own reporting only;
   every claim attributed to the outlet that reported it; allegations, charges and convictions clearly distinguished;
   nothing that rests on a party to a conflict.

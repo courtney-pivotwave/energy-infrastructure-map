@@ -4,6 +4,10 @@ Backlog of content strategy ideas to pick up later. Newest at the top. Nothing h
 
 ## 2026-09-30: Data visualizations
 
+**Experiment live 2026-09-30:** [/charts/](https://strategicenergymap.org/charts/) with four charts (oil flows per chokepoint, Hormuz
+bypass capacity, tanker traffic, diesel since the crisis) and two chart posts. Judge at the growth check-in: chart-page
+visits, search impressions for `/charts/`, and Bluesky link clicks and engagement on the chart posts compared with text posts.
+
 A library of charts and interactive visuals built on statistical data: trends, market share, trade flows, consumption,
 and more.
 

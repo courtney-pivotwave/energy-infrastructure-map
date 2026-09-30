@@ -2,6 +2,35 @@
 
 Backlog of content strategy ideas to pick up later. Newest at the top. Nothing here is scheduled yet.
 
+## 2026-09-30: Data visualizations
+
+A library of charts and interactive visuals built on statistical data: trends, market share, trade flows, consumption,
+and more.
+
+Possible data vectors to start from:
+- **Supply and demand:** production and consumption by country and region over time; import dependence (share of a
+  country's oil or gas that's imported, and from where).
+- **Flows:** trade flows between exporters and importers (Sankey or flow maps); share of each importer's supply that
+  passes through each chokepoint; LNG trade routes.
+- **Chokepoints:** transit history from PortWatch against the pre-war baseline; how disruptions compare with past ones
+  (1980s tanker war, 2019, the Red Sea attacks).
+- **Prices:** benchmark history and spreads (Brent–WTI, TTF–JKM); pump prices over time, and how much of the pump price
+  is tax versus crude.
+- **Resilience:** strategic reserves in days of import cover; refinery capacity; spare production capacity and where
+  it sits.
+- **Energy mix and transition:** electricity mix, and how the crisis shifts demand toward other fuels.
+
+Notes for when we pick it up:
+- Candidate open data (check licences; most allow reuse with attribution): Energy Institute Statistical Review of World
+  Energy, JODI, Our World in Data energy dataset (CC BY), Ember (electricity, CC BY), Eurostat, UN Comtrade (trade
+  flows), IMF PortWatch, Global Energy Monitor, EIA international data (statistics are fine under the source policy).
+  Add each to `data/sources.json` through the monthly source review.
+- Formats: interactive chart pages that each open with a dated one-line takeaway (good for search and AI answers, with
+  schema.org `Dataset` markup), static images for social (the pipeline already renders charts from `dist/social/`), and
+  embeddable versions for others to use with credit.
+- Could run as a recurring "chart of the week" feeding the Monday/Thursday chart posts, and link from the chokepoint
+  pillars and facility pages.
+
 ## 2026-09-30: Chokepoint pillars and clusters
 
 A pillar-and-cluster structure covering **every chokepoint on the map**, not just the big five: Hormuz,

@@ -18,7 +18,7 @@ Build, then serve `dist/` (`fetch()` doesn't work from `file://`):
 ```
 node scripts/build.mjs && python3 -m http.server 8765 -d dist
 ```
-then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facilities/<id>/`, `/fuel-prices/<id>/`, hubs, `/events/`, `/events.xml`, `sitemap.xml`, `robots.txt`. Never edit `dist/`; change the templates in `scripts/build.mjs` or the data.
+then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facilities/<id>/`, `/fuel-prices/<id>/`, `/charts/<id>/`, hubs, `/events/`, `/events.xml`, `sitemap.xml`, `robots.txt`. Never edit `dist/`; change the templates in `scripts/build.mjs` or the data.
 
 ## Conventions
 - Asset ids are stable kebab-case; `status.json`, `events.json`, `scenarios.json` reference them. Never rename an id without updating every reference.

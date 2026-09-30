@@ -127,7 +127,7 @@ ${ld}
 </head>
 <body class="doc">
 <header class="site-nav"><a class="brand" href="/">Strategic Energy Map</a>
-<nav aria-label="Site"><a href="/">Live map</a><a href="/chokepoints/">Chokepoints</a><a href="/fuel-prices/">Pump prices</a><a href="/facilities/">Facilities</a><a href="/events/">Events</a><a href="/about.html">About</a></nav></header>
+<nav aria-label="Site"><a href="/">Live map</a><a href="/chokepoints/">Chokepoints</a><a href="/fuel-prices/">Pump prices</a><a href="/facilities/">Facilities</a><a href="/events/">Events</a><a href="/charts/">Charts</a><a href="/about.html">About</a></nav></header>
 <main class="doc-wrap">
 ${crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a>${crumbs.map((c, i) => i < crumbs.length - 1 ? ` › <a href="${c.url}">${esc(c.name)}</a>` : ` › <span>${esc(c.name)}</span>`).join('')}</nav>` : ''}
 ${body}
@@ -448,19 +448,25 @@ function chartCard({ title, subtitle, rows, source }) {
 </style></head><body><div class="head"><h1>${esc(title)}</h1><div class="sub">${esc(subtitle)}</div></div>
 <div class="rows">${rows}</div><div class="foot"><span>${esc(source)}</span><b>strategicenergymap.org</b></div></body></html>`;
 }
+// Chart data shared by the social cards and the /charts/ pages
+const dieselChange = ['us', 'uk', 'eu', 'de', 'fr', 'it', 'es', 'nl', 'pl'].map(id => fuelEntries.find(e => e.id === id))
+  .filter(e => e?.diesel?.pre_crisis).map(e => ({ e, p: pct(e.diesel.now, e.diesel.pre_crisis) })).sort((a, b) => b.p - a.p);
+const tankerChange = Object.keys(pw).filter(id => pw[id]).map(id => ({ id, d: pw[id], p: pct(pw[id].now, pw[id].base) })).sort((a, b) => a.p - b.p);
+const flowRows = Object.entries(scenarios.chokepoints || {}).filter(([id, c]) => REG[id] && c.oil_mbd).map(([id, c]) => ({ id, c })).sort((a, b) => b.c.oil_mbd - a.c.oil_mbd);
+const hormuz = closure('strait-of-hormuz');
+const DEMAND = scenarios.globals?.world_oil_demand_mbd || 104;
+const shortName = id => REG[id].name.replace(/ \(.*\)/, '');
 {
   mkdirSync(join(DIST, 'social'), { recursive: true });
   // Pump prices: diesel change since the pre-crisis week
-  const ids = ['us', 'uk', 'eu', 'de', 'fr', 'it', 'es', 'nl', 'pl'];
-  const list = ids.map(id => fuelEntries.find(e => e.id === id)).filter(e => e?.diesel?.pre_crisis)
-    .map(e => ({ e, p: pct(e.diesel.now, e.diesel.pre_crisis) })).sort((a, b) => b.p - a.p);
+  const list = dieselChange;
   const maxP = Math.max(...list.map(x => x.p), 1);
   const fuelRows = list.map(({ e, p }) => `<div class="row"><span class="name">${esc(e.name)}</span><div class="track"><div class="bar" style="left:0;width:${(p / maxP * 100).toFixed(1)}%;background:#b3261e"></div></div><span class="val">${signed(p)} <small>${esc(money(e, e.diesel.now))}${e.unit === '$/gal' ? '/gal' : '/L'}</small></span></div>`).join('');
   writeFileSync(join(DIST, 'social', 'fuel-weekly.html'), chartCard({
     title: 'Diesel prices since the Strait of Hormuz closed', subtitle: `Change since the week of ${PRE}, as of the week of ${fmtDate(fuel.as_of)}`,
     rows: fuelRows, source: 'Sources: US EIA · EU Weekly Oil Bulletin · UK DESNZ' }));
   // Chokepoints: tanker traffic vs pre-crisis baseline (diverging bars around zero)
-  const cps = Object.keys(pw).filter(id => pw[id]).map(id => ({ id, d: pw[id], p: pct(pw[id].now, pw[id].base) })).sort((a, b) => a.p - b.p);
+  const cps = tankerChange;
   const span = Math.max(100, ...cps.map(x => Math.abs(x.p)));
   const zero = 70; // % of track width where zero sits (most changes are negative)
   const cpRows = cps.map(({ id, d, p }) => {
@@ -472,6 +478,123 @@ function chartCard({ title, subtitle, rows, source }) {
   writeFileSync(join(DIST, 'social', 'chokepoints-weekly.html'), chartCard({
     title: 'Tanker traffic through energy chokepoints', subtitle: `7-day average to ${fmtDate(last)} vs ${BASELINE.label}`,
     rows: cpRows, source: 'Source: IMF PortWatch (satellite AIS). Ships sailing with transponders off are not counted.' }));
+  // Oil flow through each chokepoint before the crisis
+  const maxF = Math.max(...flowRows.map(x => x.c.oil_mbd));
+  writeFileSync(join(DIST, 'social', 'chokepoint-oil-flows.html'), chartCard({
+    title: 'How much oil passes through each chokepoint', subtitle: 'Crude and oil products before the 2026 crisis, million barrels a day',
+    rows: flowRows.map(({ id, c }) => `<div class="row"><span class="name">${esc(shortName(id))}</span><div class="track"><div class="bar" style="left:0;width:${(c.oil_mbd / maxF * 100).toFixed(1)}%;background:#1a6bb5"></div></div><span class="val">${n(c.oil_mbd)} <small>mb/d</small></span></div>`).join(''),
+    source: 'Sources: IEA (Kpler) for Hormuz; EIA (Vortexa, 1H 2025) for the others. Shared flows count at each chokepoint.' }));
+  // Hormuz: flow vs bypass capacity
+  if (hormuz) {
+    const hr = [['Oil through Hormuz before the war', hormuz.stranded, '#1a2332'], ['Spare pipeline capacity around it', hormuz.bypass, '#1e8a4c'], ['No alternative route', hormuz.shortfall, '#b3261e']];
+    writeFileSync(join(DIST, 'social', 'hormuz-bypass.html'), chartCard({
+      title: 'How much Hormuz oil can be rerouted?', subtitle: 'Million barrels a day. Pipelines around the strait can carry only a fraction of its flow.',
+      rows: hr.map(([l, v, col]) => `<div class="row" style="grid-template-columns:430px 1fr 170px;height:92px;font-size:25px"><span class="name">${esc(l)}</span><div class="track" style="height:44px"><div class="bar" style="left:0;height:44px;width:${(v / hormuz.stranded * 100).toFixed(1)}%;background:${col}"></div></div><span class="val" style="font-size:28px">${n(v)} <small style="font-size:18px">mb/d</small></span></div>`).join(''),
+      source: 'Sources: IEA Strait of Hormuz factsheet (Kpler); spare capacity per IEA, low end. Model: strategicenergymap.org' }));
+  }
+}
+
+// ── Charts: one page per chart, each with a dated takeaway, the chart, its data and sources ──
+{
+  const bars = (rows, { unit = '', zero = 0, max = null } = {}) => {
+    const span = max ?? Math.max(...rows.map(r => Math.abs(r.v)), 1);
+    return `<table class="data-table bar-table"><tbody>${rows.map(r => {
+      const w = Math.abs(r.v) / span * (zero ? (r.v < 0 ? zero : 100 - zero) : 100);
+      const left = zero ? (r.v < 0 ? zero - w : zero) : 0;
+      return `<tr><th>${r.label}</th><td class="bar-cell"><span class="bar-track">${zero ? `<i class="bar-zero" style="left:${zero}%"></i>` : ''}<span class="bar" style="left:${left.toFixed(1)}%;width:${w.toFixed(1)}%;background:${r.color}"></span></span></td><td class="bar-val">${r.display}${r.extra ? ` <small>${r.extra}</small>` : ''}</td></tr>`;
+    }).join('')}</tbody></table>`;
+  };
+  const charts = [];
+  // 1. Oil flows through chokepoints
+  const [top1, top2] = flowRows;
+  charts.push({
+    id: 'chokepoint-oil-flows', image: 'chokepoint-oil-flows',
+    title: 'How much oil passes through each chokepoint?',
+    seo: 'How much oil passes through the Strait of Hormuz, Malacca and other chokepoints (chart)',
+    answer: `Before the 2026 crisis, the ${shortName(top1.id)} carried the most oil, about ${n(top1.c.oil_mbd)} million barrels a day, followed by the ${shortName(top2.id)} at ${n(top2.c.oil_mbd)} mb/d. Each is roughly a fifth of world oil demand (${DEMAND} mb/d). Much of the oil through Hormuz then passes Malacca too.`,
+    lastmod: scenarios.chokepoints?.['strait-of-hormuz']?.sources?.[0]?.date?.length === 10 ? scenarios.chokepoints['strait-of-hormuz'].sources[0].date : null,
+    chart: bars(flowRows.map(({ id, c }) => ({ label: link(id), v: c.oil_mbd, color: '#1a6bb5', display: `${n(c.oil_mbd)} mb/d`, extra: c.lng_share_pct ? `~${c.lng_share_pct}% of LNG trade` : '' }))),
+    note: `${scenarios.globals?.note || ''} LNG shares are of global LNG trade.`,
+    sources: [...new Map(flowRows.flatMap(({ c }) => c.sources || []).concat(scenarios.globals?.sources || []).map(s => [s.url, s])).values()],
+    data: '/data/scenarios.json',
+  });
+  // 2. Hormuz bypass
+  if (hormuz) {
+    const sc = hormuz.c;
+    charts.push({
+      id: 'hormuz-bypass', image: 'hormuz-bypass',
+      title: 'How much Hormuz oil can be rerouted?',
+      seo: 'Can oil bypass the Strait of Hormuz? Pipeline capacity vs flow (chart)',
+      answer: `Only a fraction. About ${n(hormuz.stranded)} million barrels a day of oil crossed the Strait of Hormuz before the 2026 crisis, but pipelines around it had only about ${n(hormuz.bypass)} mb/d of spare capacity (IEA, low estimate). That leaves roughly ${n(hormuz.shortfall)} mb/d with no alternative route, about ${n(hormuz.pctDemand, 0)}% of world oil demand.`,
+      lastmod: statusData.updated,
+      chart: bars([
+        { label: 'Oil through Hormuz before the war', v: hormuz.stranded, color: '#1a2332', display: `${n(hormuz.stranded)} mb/d` },
+        ...hormuz.usable.map(b => ({ label: `Spare capacity: ${link(b.asset)}`, v: b.spare_mbd, color: '#1e8a4c', display: `${n(b.spare_mbd)} mb/d` })),
+        { label: '<b>No alternative route</b>', v: hormuz.shortfall, color: '#b3261e', display: `<b>${n(hormuz.shortfall)} mb/d</b>` },
+      ], { max: hormuz.stranded }),
+      note: `${sc.bypass_note || ''}${hormuz.impaired.length ? ` Not counted because an asset is out of service: ${hormuz.impaired.map(b => REG[b.asset]?.name).join(', ')}.` : ''} Bypass capacity reflects the current status of each pipeline and its export terminal on this map.`,
+      sources: [...(sc.sources || []), ...(scenarios.globals?.sources || [])],
+      data: '/data/scenarios.json',
+    });
+  }
+  // 3. Tanker traffic vs baseline (IMF PortWatch, refreshed every build)
+  if (tankerChange.length) {
+    const worst = tankerChange[0], last = tankerChange.map(x => x.d.lastDate).sort().pop();
+    charts.push({
+      id: 'chokepoint-tanker-traffic', image: 'chokepoints-weekly',
+      title: 'Tanker traffic through energy chokepoints',
+      seo: 'Tanker traffic through Hormuz, Suez and other chokepoints this week vs before the crisis (chart)',
+      answer: `In the week to ${fmtDate(last)}, tanker transits through the ${shortName(worst.id)} averaged ${n(worst.d.now)} a day, ${Math.abs(worst.p).toFixed(0)}% ${worst.p < 0 ? 'below' : 'above'} the ${BASELINE.label}, the largest change of any chokepoint tracked. IMF PortWatch counts ships from satellite AIS signals; ships with transponders off are missed.`,
+      lastmod: last,
+      chart: bars(tankerChange.map(({ id, d, p }) => ({ label: link(id), v: p, color: p < 0 ? '#b3261e' : '#1e8a4c', display: signed(p), extra: `${n(d.now)}/day` })), { zero: 70, max: Math.max(100, ...tankerChange.map(x => Math.abs(x.p))) }),
+      note: `7-day average of daily tanker transits vs the ${BASELINE.label}. Data has about a week's lag.`,
+      sources: [{ name: 'IMF PortWatch', url: 'https://portwatch.imf.org/' }],
+      data: null,
+    });
+  }
+  // 4. Diesel prices since the crisis
+  if (dieselChange.length) {
+    const hi = dieselChange[0], lo = dieselChange[dieselChange.length - 1];
+    charts.push({
+      id: 'diesel-prices-since-hormuz', image: 'fuel-weekly',
+      title: 'Diesel prices since the Strait of Hormuz closed',
+      seo: 'How much have diesel prices risen since the Hormuz closure? US, EU and UK (chart)',
+      answer: `Since the week of ${PRE}, before the Strait of Hormuz closed, diesel has risen ${signed(hi.p)} in ${hi.e.name} and ${signed(lo.p)} in ${lo.e.name}, the largest and smallest rises among the markets shown. Figures are for the week of ${fmtDate(fuel.as_of)}, from official weekly price statistics.`,
+      lastmod: fuel.as_of,
+      chart: bars(dieselChange.map(({ e, p }) => ({ label: `<a href="/fuel-prices/${e.id}/">${esc(e.name)}</a>`, v: p, color: '#b3261e', display: signed(p), extra: `${esc(money(e, e.diesel.now))}${e.unit === '$/gal' ? '/gal' : '/L'}` }))),
+      note: `Change in the weekly average retail diesel price, including taxes, since the week of ${PRE}.`,
+      sources: [...new Map(dieselChange.map(({ e }) => [e.source.url, e.source])).values()],
+      data: '/data/fuel.json',
+    });
+  }
+  for (const c of charts) {
+    write(`/charts/${c.id}/`, layout({
+      path: `/charts/${c.id}/`, lastmod: c.lastmod,
+      title: `${c.seo} | Strategic Energy Map`, description: c.answer.slice(0, 300),
+      crumbs: [{ name: 'Charts', url: '/charts/' }, { name: c.title, url: `/charts/${c.id}/` }],
+      jsonld: [{ '@context': 'https://schema.org', '@type': 'Dataset', name: c.title, description: c.answer,
+        creator: { '@type': 'Person', name: 'Courtney Wilson', url: LINKEDIN }, license: 'https://creativecommons.org/licenses/by/4.0/',
+        isBasedOn: c.sources.map(s => s.url).filter(safeUrl),
+        ...(c.data ? { distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: SITE + c.data }] } : {}) }],
+      body: `<p class="kicker">Chart</p>
+<h1>${esc(c.title)}</h1>
+<div class="answer"><p>${esc(c.answer)}</p><p class="note">${c.lastmod ? `Updated ${esc(fmtDate(c.lastmod))} · ` : ''}<a href="/">Explore the live map →</a></p></div>
+<figure class="bar-chart">${c.chart}</figure>
+<p class="note">${esc(c.note)}</p>
+${sourcesHTML(c.sources)}
+<p class="note">Free to reuse with credit to strategicenergymap.org (CC BY 4.0).${c.data ? ` <a href="${c.data}">Download the data (JSON)</a>.` : ''}</p>
+<p class="more">More charts: ${charts.filter(x => x !== c).map(x => `<a href="/charts/${x.id}/">${esc(x.title)}</a>`).join(' · ')}</p>`,
+    }));
+  }
+  write('/charts/', layout({
+    path: '/charts/', lastmod: [...charts.map(c => c.lastmod)].filter(Boolean).sort().pop(),
+    title: 'Energy crisis charts: oil flows, chokepoints and fuel prices | Strategic Energy Map',
+    description: 'Charts on oil flows through chokepoints, how much Hormuz oil can be rerouted, live tanker traffic and diesel prices since the 2026 crisis, each with its data and sources.',
+    crumbs: [{ name: 'Charts', url: '/charts/' }],
+    body: `<h1>Charts</h1>
+<div class="answer"><p>Charts on the 2026 energy crisis: how much oil moves through each chokepoint, how much of it can be rerouted, live tanker traffic and pump prices. Each chart comes with its data, method and sources, and is free to reuse with credit.</p></div>
+${charts.map(c => `<section class="chart-card"><h2><a href="/charts/${c.id}/">${esc(c.title)}</a></h2><p>${esc(c.answer)}</p></section>`).join('')}`,
+  }));
 }
 
 // ── Pages index for the map, robots.txt, sitemap ──

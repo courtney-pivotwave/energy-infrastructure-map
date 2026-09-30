@@ -171,6 +171,11 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   wasn't verified in the past 14 days.
 - **Mondays and Thursdays: 1 `chart`**: Monday `"image": "fuel-weekly"` (pump prices), Thursday
   `"image": "chokepoints-weekly"` (tanker traffic), with alt text and a caption quoting 2–3 figures from the chart's data.
+- **Evergreen charts** from `/charts/`: `"image": "hormuz-bypass"` (Hormuz flow vs bypass capacity) and
+  `"image": "chokepoint-oil-flows"` (oil through each chokepoint). Use one in place of the day's explainer when the news
+  is about chokepoint flows or bypass routes, at most once every 14 days per image. `url` is the chart page
+  (`/charts/hormuz-bypass/`, `/charts/chokepoint-oil-flows/`); figures must match the page, which is built from
+  `scenarios.json` and `status.json`.
 - **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
 
 **Order matters.** The posting Action sends one new draft per scheduled run, every two hours from 11:15 to 23:15 UTC

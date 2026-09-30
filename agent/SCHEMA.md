@@ -197,7 +197,8 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
       "text": "Saudi Arabia restarted the East-West pipeline at reduced rates after drone strikes shut it on 11 Sep (reported).",
       "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
       "event_id": "2026-09-22-east-west-pipeline-restart",   // required for event posts
-      "image": null, "alt": null,           // image: fuel-weekly | chokepoints-weekly (alt text required)
+      "image": null, "alt": null,           // image: fuel-weekly | chokepoints-weekly | hormuz-bypass | chokepoint-oil-flows (alt text required)
+      "not_before": null,                   // optional UTC time ("2026-09-30T15:00Z"): hold the draft until then
       "tags": ["Hormuz", "OOTT"],           // 1–3 from hashtags, most specific first; X uses the first 2
       "reply_to": null }                    // earlier post id (required for corrections)
   ]

@@ -222,7 +222,8 @@ if (social) {
     if (/(^|\s)@\w/.test(text)) err(`${w}: no @mentions in automated posts`);
     if (/(^|\s)#\w/.test(text)) err(`${w}: put hashtags in "tags", not in the text`);
     if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
-    if (p.image && !['fuel-weekly', 'chokepoints-weekly'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
+    if (p.image && !['fuel-weekly', 'chokepoints-weekly', 'chokepoint-oil-flows', 'hormuz-bypass'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
+    if (p.not_before !== undefined && (isNaN(Date.parse(p.not_before)) || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?Z$/.test(p.not_before))) err(`${w}: not_before must be a UTC time like 2026-09-30T15:00Z`);
     if (p.image && !p.alt) err(`${w}: images need alt text`);
     // Posts that go to X without a link must read as complete, and bare domains would be auto-linked (and charged)
     if (!xLinks.includes(p.type)) {

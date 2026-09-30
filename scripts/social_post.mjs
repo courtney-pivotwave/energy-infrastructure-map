@@ -190,6 +190,7 @@ async function main() {
   console.log(`${dry ? 'DRY RUN — ' : ''}queue: ${queue.posts.length} post(s); X ${creds.x ? 'configured' : 'not configured'}; Bluesky ${creds.bluesky ? 'configured' : 'not configured'}; posted today: ${postedToday()}/${queue.max_per_day}`);
   for (const p of queue.posts) {
     if (!fresh(p)) continue;
+    if (p.not_before && Date.parse(p.not_before) > Date.now()) { console.log(`Holding ${p.id} until ${p.not_before}`); continue; }
     const todo = platforms.filter(pl => !done(p, pl) && (log.posted[p.id]?.[pl]?.attempts || 0) < MAX_ATTEMPTS && (dry || creds[pl]));
     if (!todo.length) continue;
     const isNewPost = !platforms.some(pl => done(p, pl));

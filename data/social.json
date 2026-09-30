@@ -78,6 +78,34 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-09-30-chart-hormuz-bypass",
+   "created": "2026-09-30",
+   "type": "chart",
+   "not_before": "2026-09-30T15:00Z",
+   "text": "About 19.9 million b/d of oil crossed the Strait of Hormuz before the war. Pipelines around it had only ~3.5 million b/d of spare capacity (IEA, low estimate), leaving ~16.4 million b/d with no alternative route.",
+   "url": "https://strategicenergymap.org/charts/hormuz-bypass/",
+   "image": "hormuz-bypass",
+   "alt": "Bar chart, million barrels a day: oil through the Strait of Hormuz before the war 19.9; spare pipeline capacity around it 3.5; no alternative route 16.4.",
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ]
+  },
+  {
+   "id": "2026-09-30-chart-chokepoint-flows",
+   "created": "2026-09-30",
+   "type": "chart",
+   "not_before": "2026-09-30T19:00Z",
+   "text": "Before the 2026 crisis, about 23.2 million b/d of oil moved through the Strait of Malacca and 19.9 million b/d through Hormuz, each about a fifth of world demand. Suez, Bab el-Mandeb and the other chokepoints carried far less.",
+   "url": "https://strategicenergymap.org/charts/chokepoint-oil-flows/",
+   "image": "chokepoint-oil-flows",
+   "alt": "Bar chart of oil flows before the 2026 crisis, million barrels a day: Strait of Malacca 23.2, Strait of Hormuz 19.9, Suez Canal 4.9, Bab el-Mandeb 4.2, Turkish Straits 3.7, Panama Canal 2.3.",
+   "tags": [
+    "Oil",
+    "OOTT"
+   ]
   }
  ]
 }

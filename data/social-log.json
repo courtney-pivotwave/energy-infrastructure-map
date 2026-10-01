@@ -134,6 +134,21 @@
     },
     "at": "2026-10-01T17:22:54.955Z"
    }
+  },
+  "2026-10-01-jpmorgan-goldman-flows": {
+   "x": {
+    "id": "2105790443204280505",
+    "at": "2026-10-01T22:42:20.181Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwtwkjopxm2v",
+    "cid": "bafyreibbqyd7mhnykvmqmm3odh2qqusfwznxhyrpwrw44naswlwpbnw3cq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwtwkjopxm2v",
+     "cid": "bafyreibbqyd7mhnykvmqmm3odh2qqusfwznxhyrpwrw44naswlwpbnw3cq"
+    },
+    "at": "2026-10-01T22:42:21.592Z"
+   }
   }
  }
 }

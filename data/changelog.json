@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-01",
+   "kind": "data",
+   "headline": "Banks see Mideast oil flows near pre-war levels; more Hormuz tanker attacks surface",
+   "changes": [
+    "JPMorgan and Goldman Sachs estimate Middle East crude shipments have recovered close to pre-war volumes (Hormuz flows near 13 million b/d), though both banks say this reflects adaptation to risk rather than improved safety",
+    "UKMTO disclosed three more Hormuz tanker attacks via delayed reports, highlighting growing gaps in incident reporting",
+    "Trump denied offering Iran sanctions relief; Iranian officials said reopening the strait would follow a seven-day countdown after any deal",
+    "Brent rose to $99.74/bbl and WTI to $91.45/bbl on 1 Oct as markets weighed the conflicting signals",
+    "Refreshed EU pump prices and FX rates from official feeds"
+   ]
+  },
+  {
    "date": "2026-09-30",
    "kind": "data",
    "headline": "Hormuz flows hit 13.2 mb/d as Saudi Red Sea exports rebound; Brent, WTI pull back",

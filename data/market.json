@@ -1,29 +1,29 @@
 {
- "as_of": "2026-09-30",
+ "as_of": "2026-10-01",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 97.03,
-   "week_ago": 104.95,
+   "value": 99.74,
+   "week_ago": 97.03,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Fell sharply on 29 Sep (Reuters/Bloomberg-reported settle $102.59) as Kpler data and satellite imagery showed a recovery in Saudi Yanbu exports and Hormuz flows, then eased further into 30 Sep. Week-ago reuses the prior run's 29 Sep value (1 day earlier, not a full week) — the closest dated figure available.",
+   "note": "Rose 1.74% on 1 Oct, reversing part of the prior week's drop, as markets weighed JPMorgan/Goldman Sachs reports of Mideast oil flows near pre-war levels against new delayed UKMTO reports of Hormuz tanker attacks and a continued US-Iran impasse over sanctions relief. Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    },
    "extra_sources": [
     {
-     "name": "CNBC — Oil prices fall as crude exports recover at Saudi Arabia's Red Sea ports",
-     "url": "https://www.cnbc.com/2026/09/29/oil-prices-today-brent-wti-hormuz.html",
-     "date": "2026-09-29"
+     "name": "gCaptain (Bloomberg) — JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
+     "url": "https://gcaptain.com/jpmorgan-and-goldman-see-mideast-oil-flows-near-pre-war-levels/",
+     "date": "2026-09-30"
     },
     {
      "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
@@ -41,19 +41,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 90.14,
-   "week_ago": 92.21,
+   "value": 91.45,
+   "week_ago": 90.14,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Fell 3.5% on 29 Sep (Reuters/Bloomberg-reported settle $89.38) on the Hormuz/Yanbu recovery, then edged back above $90 on 30 Sep. Week-ago reuses the prior run's 29 Sep value (1 day earlier, not a full week) — the closest dated figure available.",
+   "note": "Rose above $92 intraday on 1 Oct before easing, 'reversing losses from earlier in the session as investors weighed signs of rising Middle East energy flows against an ongoing impasse in US-Iran negotiations' (Trading Economics). Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    },
    "extra_sources": [
     {
@@ -72,19 +72,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 72.52,
-   "week_ago": 70.23,
+   "value": 73.59,
+   "week_ago": 72.52,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Week-ago reuses the prior run's 29 Sep value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    },
    "extra_sources": [
     {
@@ -103,19 +103,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 25.44,
-   "week_ago": 26.08,
+   "value": 25.74,
+   "week_ago": 25.44,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
     "date": "2026-09-14",
     "note": "Assessed at 'high-USD 29s', the highest in about 2.5 years (Global LNG Hub)."
    },
-   "note": "Week-ago reuses the prior run's 29 Sep value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-09-29"
+    "date": "2026-09-30"
    },
    "extra_sources": [
     {
@@ -134,14 +134,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.04,
-   "week_ago": 3.08,
+   "value": 2.95,
+   "week_ago": 3.04,
    "pre_crisis": 2.99,
-   "note": "Value is the NYMEX front-month on 30 Sep (Trading Economics); week-ago reuses the prior run's 29 Sep front-month value (1 day earlier, not a full week); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "Value is the NYMEX front-month on 1 Oct (Trading Economics); week-ago reuses the prior run's 30 Sep front-month value (1 day earlier, not a full week); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    },
    "extra_sources": [
     {
@@ -157,22 +157,22 @@
    ]
   }
  ],
- "note": "Brent and WTI fell sharply on 29 September as Kpler data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal and Strait of Hormuz flows reaching a 13.2 mb/d 7-day average, before easing further into 30 September; the strait remains formally closed and US-Iran talks remain deadlocked.",
+ "note": "Brent and WTI rose on 1 October as markets weighed JPMorgan and Goldman Sachs reports that Middle East oil flows are nearing pre-war levels against new delayed UKMTO reports of Hormuz tanker attacks and a continued US-Iran impasse over sanctions relief and reopening terms; the strait remains formally closed.",
  "note_sources": [
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "date": "2026-10-01"
+  },
+  {
+   "name": "gCaptain (Bloomberg) — JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
+   "url": "https://gcaptain.com/jpmorgan-and-goldman-see-mideast-oil-flows-near-pre-war-levels/",
    "date": "2026-09-30"
   },
   {
-   "name": "CNBC — Oil prices fall as crude exports recover at Saudi Arabia's Red Sea ports (Kpler data)",
-   "url": "https://www.cnbc.com/2026/09/29/oil-prices-today-brent-wti-hormuz.html",
-   "date": "2026-09-29"
-  },
-  {
-   "name": "Rigzone (Bloomberg) — Saudi Arabia's Key Oil Pipeline Starts Exports After Repairs",
-   "url": "https://www.rigzone.com/news/wire/saudi_arabias_key_oil_pipeline_starts_exports-28-sep-2026-184718-article/",
-   "date": "2026-09-28"
+   "name": "gCaptain — Three More Tanker Attacks Surface in Delayed Hormuz Reports",
+   "url": "https://gcaptain.com/three-more-tanker-attacks-surface-in-delayed-hormuz-reports/",
+   "date": "2026-09-30"
   }
  ]
 }

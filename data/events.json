@@ -1,8 +1,84 @@
 {
- "updated": "2026-09-30",
- "situation_headline": "Kpler data and satellite imagery show a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows hitting a 13.2 mb/d 7-day average (about 77% of pre-war); Brent and WTI fell on the news, while the strait stays formally closed and US-Iran talks remain stalled.",
- "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 29 September Brent was around $105 (pre-crisis ~$72.5) and TTF ~€70/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September, and Bloomberg reported on 29 September that Iranian officials were privately pessimistic about a deal before the US midterm elections in November.",
+ "updated": "2026-10-01",
+ "situation_headline": "JPMorgan and Goldman Sachs estimate Mideast crude flows are near pre-war levels (Hormuz ~13 mb/d) even as UKMTO's delayed reports reveal 3 more Hormuz tanker attacks; US-Iran talks stay deadlocked over sanctions and reopening terms, and Brent rose above $99 on 1 Oct.",
+ "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-09-29-jpmorgan-goldman-mideast-flows-prewar",
+   "date": "2026-09-29",
+   "title": "JPMorgan, Goldman Sachs: Middle East crude flows nearing pre-war levels",
+   "summary": "In notes dated 29 September, JPMorgan estimated regional crude shipments at 17.5 million b/d (98% of its pre-war baseline), with Hormuz flows near 13 million b/d, 'almost returned to late-June highs'; product flows (diesel, gasoline) were put at 3 million b/d, 58% of pre-war. Goldman Sachs estimated total Persian Gulf exports, including clandestine shipments, at 23.3 million b/d for September, matching 2025 averages, with Saudi Arabia's September shipments more than doubling year-on-year. Both banks said higher crossings reflect the industry adapting to sustained risk, not improved safety.",
+   "category": "market",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
+     "url": "https://gcaptain.com/jpmorgan-and-goldman-see-mideast-oil-flows-near-pre-war-levels/",
+     "date": "2026-09-30"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-29-ukmto-delayed-tanker-attacks",
+   "date": "2026-09-29",
+   "title": "UKMTO discloses three more Hormuz tanker attacks via delayed reports",
+   "summary": "UK Maritime Trade Operations issued three delayed warnings (144-26, 145-26, 146-26) on 30 September covering previously unreported attacks from 29 September: tankers struck by unknown projectiles, with times marked 'to be confirmed' and no vessel identities, casualties or pollution given. UKMTO's voluntary reporting system is producing growing gaps, with some incidents surfacing days late. Iran separately claimed it targeted or intercepted 19 vessels over the weekend of 26-27 September but gave no vessel identification or evidence; that broader claim is unverified.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Three More Tanker Attacks Surface in Delayed Hormuz Reports",
+     "url": "https://gcaptain.com/three-more-tanker-attacks-surface-in-delayed-hormuz-reports/",
+     "date": "2026-09-30"
+    },
+    {
+     "name": "gCaptain — Fog of War Deepens in Hormuz as Ship Attacks Go Unreported for Days",
+     "url": "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ship-attacks-go-unreported-for-days/",
+     "date": "2026-09-29"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-29-trump-denies-sanctions-relief-iran-conditions",
+   "date": "2026-09-29",
+   "title": "Trump denies offering Iran sanctions relief; Iran ties Hormuz reopening to its own timeline",
+   "summary": "Trump said on Truth Social 'I offered them NOTHING,' denying reports he would ease sanctions or release frozen funds for nuclear concessions. Iran's President Pezeshkian said Tehran was open to talks on nuclear and other issues but would not accept 'bullying,' while Foreign Minister Araqchi said a deal would start a seven-day countdown to reopening the strait, slower than the immediate reopening set out in June's since-collapsed MOU. These are statements by parties to the conflict and are not independently verifiable.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "gCaptain — Trump Denies Offering Iran Sanctions Relief, Tehran Says it is Ready for Talks",
+     "url": "https://gcaptain.com/trump-denies-offering-iran-sanctions-relief-tehran-says-it-is-ready-for-talks/",
+     "date": "2026-09-29"
+    },
+    {
+     "name": "ISW/Critical Threats Project — Iran Update, September 30, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-september-30-2026",
+     "date": "2026-09-30"
+    }
+   ]
+  },
   {
    "id": "2026-09-29-hormuz-flows-13mbd-yanbu-recovery",
    "date": "2026-09-29",

@@ -153,6 +153,83 @@
     "Oil",
     "OOTT"
    ]
+  },
+  {
+   "id": "2026-10-01-digest",
+   "created": "2026-10-01",
+   "type": "digest",
+   "text": "JPMorgan and Goldman Sachs estimate Middle East crude flows are near pre-war levels, while UKMTO's delayed reports reveal 3 more Hormuz tanker attacks. Brent $99.74/bbl, WTI $91.45/bbl as of 1 Oct.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Oil",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-01-jpmorgan-goldman-flows",
+   "created": "2026-10-01",
+   "type": "event",
+   "text": "JPMorgan estimates Mideast crude shipments at 17.5 million b/d, 98% of pre-war, Hormuz near 13 million b/d. Goldman Sachs puts Gulf exports at 23.3 million b/d in September, matching 2025 — adapting to risk, not safer.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-09-29-jpmorgan-goldman-mideast-flows-prewar",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Oil",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-01-ukmto-delayed-attacks",
+   "created": "2026-10-01",
+   "type": "event",
+   "text": "UKMTO disclosed 3 more Hormuz tanker attacks via delayed warnings, with vessel identities, damage and casualties still unconfirmed days later — a widening gap in incident reporting even as overall traffic recovers.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-09-29-ukmto-delayed-tanker-attacks",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Shipping",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-01-explainer-abqaiq",
+   "created": "2026-10-01",
+   "type": "explainer",
+   "text": "Aramco's Abqaiq plant stabilises up to 7 million b/d of crude, over half of Saudi output, before export on the East-West pipeline. Drones from Iraq hit it 27 Jul 2026; repair status isn't confirmed since.",
+   "url": "https://strategicenergymap.org/facilities/abqaiq-processing-plant/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "Oil",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-01-chart-chokepoints-weekly",
+   "created": "2026-10-01",
+   "type": "chart",
+   "not_before": "2026-10-01T15:00Z",
+   "text": "AIS-tracked traffic through Hormuz averaged 1.3 ships/day in the week to 27 Sep, 97% below baseline — many sail dark, so broader tracking shows higher flows. Turkish Straits -48%, Bab el-Mandeb -22%.",
+   "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
+   "image": "chokepoints-weekly",
+   "alt": "Bar chart of 7-day average tanker transits vs pre-crisis baseline, percent change: Strait of Hormuz -97% (1.3/day), Turkish Straits -48% (11.7/day), Bab el-Mandeb -22% (9.4/day), Strait of Malacca -17% (70.0/day), Panama Canal -10% (11.7/day), Suez Canal -4% (15.0/day).",
+   "tags": [
+    "Hormuz",
+    "Shipping",
+    "OOTT"
+   ]
   }
  ]
 }

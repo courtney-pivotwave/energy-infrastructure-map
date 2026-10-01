@@ -1802,7 +1802,8 @@
    ],
    "size": 5,
    "details": "Aramco's main crude stabilisation plant, ~7 mb/d capacity, processing Ghawar and other Eastern Province crude before export or shipment on the East-West pipeline.",
-   "geo": "Hit by drones from Iraq on 27 Jul 2026 (IEA-cited). Only the field id abqaiq-oil exists today."
+   "geo": "Hit by drones from Iraq on 27 Jul 2026 (IEA-cited). Only the field id abqaiq-oil exists today.",
+   "verified": "2026-10-01"
   },
   {
    "id": "jazan-refinery",

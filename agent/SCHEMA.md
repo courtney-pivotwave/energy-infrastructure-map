@@ -189,6 +189,7 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   "dry_run": false,       // true: the Action only prints what it would post
   "max_per_day": 6,
   "max_per_run": 1,       // new drafts started per Action run (runs hourly 11:17–23:17 UTC)
+  "post_hours_utc": [10, 24], // new posts only between these UTC hours (6am–8pm US Eastern); corrections any time
   "min_gap_minutes": 100, // minimum time between new posts, so they land about every 2 hours even when GitHub drops a run
   "x_links": ["announcement", "digest", "correction"],   // post types that include the link on X (Bluesky: always)
   "hashtags": ["OOTT", "Oil", "LNG", "Hormuz", "..."],     // approved tags; posts may only use these

@@ -4,6 +4,10 @@
  "max_per_day": 6,
  "max_per_run": 1,
  "min_gap_minutes": 100,
+ "post_hours_utc": [
+  10,
+  24
+ ],
  "x_links": [
   "announcement",
   "digest",

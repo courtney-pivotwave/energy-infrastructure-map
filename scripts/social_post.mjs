@@ -189,6 +189,9 @@ async function main() {
   // Spacing: runs are hourly (GitHub drops some scheduled runs), so a new post waits until min_gap_minutes after the
   // last one on any platform. A dropped run just means the next hourly run posts it.
   const gapMs = (queue.min_gap_minutes || 0) * 6e4;
+  // Posting hours: runs triggered by a push (the agent, a manual edit) can fire at any time; new posts wait for these UTC hours.
+  const [h0, h1] = queue.post_hours_utc || [0, 24];
+  const inHours = (h => h >= h0 && h < h1)(new Date().getUTCHours());
   const lastPostAt = () => Math.max(0, ...Object.values(log.posted).flatMap(e => platforms.map(pl => Date.parse(e[pl]?.at || 0) || 0)));
 
   console.log(`${dry ? 'DRY RUN — ' : ''}queue: ${queue.posts.length} post(s); X ${creds.x ? 'configured' : 'not configured'}; Bluesky ${creds.bluesky ? 'configured' : 'not configured'}; posted today: ${postedToday()}/${queue.max_per_day}`);
@@ -200,6 +203,7 @@ async function main() {
     const isNewPost = !platforms.some(pl => done(p, pl));
     if (isNewPost && postedToday() >= queue.max_per_day) { console.log(`Daily limit reached; holding ${p.id}`); break; }
     if (isNewPost && p.type !== 'correction') {
+      if (!dry && !inHours) { console.log(`Holding ${p.id}: outside posting hours (${h0}:00–${h1}:00 UTC)`); continue; }
       if (startedThisRun >= perRun) { console.log(`Holding ${p.id} for the next scheduled run (max_per_run ${perRun})`); continue; }
       const wait = lastPostAt() + gapMs - Date.now();
       if (!dry && wait > 0) { console.log(`Holding ${p.id}: last post was under ${queue.min_gap_minutes} min ago (${Math.ceil(wait / 6e4)} min to go)`); continue; }

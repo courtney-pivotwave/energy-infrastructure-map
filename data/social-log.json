@@ -164,6 +164,21 @@
     },
     "at": "2026-10-02T01:17:21.239Z"
    }
+  },
+  "2026-10-01-explainer-abqaiq": {
+   "x": {
+    "id": "2105983936127992017",
+    "at": "2026-10-02T11:31:12.504Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwvbjffta72k",
+    "cid": "bafyreih3ylthfytie66sgrt4hk2s3paserryyxa24if2j4wfmcq5bcdemy",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwvbjffta72k",
+     "cid": "bafyreih3ylthfytie66sgrt4hk2s3paserryyxa24if2j4wfmcq5bcdemy"
+    },
+    "at": "2026-10-02T11:31:14.437Z"
+   }
   }
  }
 }

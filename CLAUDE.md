@@ -7,6 +7,7 @@ Static site deployed on Vercel from `main`. The build (`scripts/build.mjs`, no d
 - `og.png` — link-preview image, rendered from `tools/og-card.html` (command in README).
 - `data/*.json` — all content. Schema and ownership rules: `agent/SCHEMA.md`.
 - `scripts/update_fuel.py` — refreshes official pump prices (EIA, EU Weekly Oil Bulletin, UK DESNZ, ECB FX). Stdlib only.
+- `tools/video/` — scripted walkthrough videos of the real map (headless Chrome + ffmpeg, own `package.json`). See its README.
 - `scripts/validate.mjs` — validates `data/`. Run after every data change; must pass before committing.
 - `agent/UPDATE_AGENT.md` — instructions for the scheduled news/conflict update agent.
 - `agent/SOURCE_REVIEW.md` — monthly source-review agent; maintains `data/sources.json` (PR only). `scripts/source_activity.mjs` gives it citation counts and unregistered domains.

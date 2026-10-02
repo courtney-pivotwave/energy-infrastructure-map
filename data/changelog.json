@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-02",
+   "kind": "data",
+   "headline": "US sanctions Iran's carmakers and railways; pressure grows on Europe's diesel reserves",
+   "changes": [
+    "US Treasury's \"Operation Economic Outcast\" sanctioned Iran's two biggest automakers, its state railway and a major freight operator, plus foreign parts suppliers, targeting the road and rail routes Iran has used to move oil and goods overland since the Hormuz blockade",
+    "The US pressed Germany and France to release more diesel reserves, saying both have drawn down only a fraction of what they pledged in March's coordinated IEA stock release",
+    "Brent held near $100 and WTI eased to $89.36 on 2 Oct amid the diesel-reserve dispute",
+    "Checked Suez Canal's capacity and trade-share figures against current sources; no change needed",
+    "Refreshed FX rates used for pump-price conversions"
+   ]
+  },
+  {
    "date": "2026-10-01",
    "kind": "data",
    "headline": "Banks see Mideast oil flows near pre-war levels; more Hormuz tanker attacks surface",

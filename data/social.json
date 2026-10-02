@@ -246,6 +246,64 @@
     "Tankers",
     "Shipping"
    ]
+  },
+  {
+   "id": "2026-10-02-digest",
+   "created": "2026-10-02",
+   "type": "digest",
+   "text": "US Treasury sanctioned Iran's carmakers and railways on 1 Oct, targeting overland oil routes used since the Hormuz blockade; Washington pressed Germany and France on diesel reserves. Brent $99.81, WTI $89.36 on 2 Oct.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Iran",
+    "Diesel"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-02-iran-sanctions",
+   "created": "2026-10-02",
+   "type": "event",
+   "text": "US Treasury sanctions targeted Iran Khodro and Saipa, the state railway and a freight operator, saying Tehran has shifted oil and other goods to road and rail since the Hormuz blockade tightened.",
+   "url": "https://strategicenergymap.org/events/#2026-10-01-iran-sanctions",
+   "event_id": "2026-10-01-iran-sanctions",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Geopolitics",
+    "Iran"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-02-diesel-reserves",
+   "created": "2026-10-02",
+   "type": "event",
+   "text": "The US pressed Germany and France to release more diesel reserves, saying both drew down only a fraction of their IEA pledge. Germany won't release 15 million barrels; France released none (reported).",
+   "url": "https://strategicenergymap.org/events/#2026-10-01-diesel-reserves",
+   "event_id": "2026-10-01-diesel-reserves",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Diesel",
+    "Europe"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-02-explainer-suez-canal",
+   "created": "2026-10-02",
+   "type": "explainer",
+   "text": "Egypt's Suez Canal carries ~5-6 million b/d of oil and products, plus cargo worth ~12% of global trade. Houthi attacks diverted over half its traffic around the Cape since late 2023; transits were ~36% below normal in August.",
+   "url": "https://strategicenergymap.org/chokepoints/suez-canal/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Suez",
+    "Shipping"
+   ],
+   "reply_to": null
   }
  ]
 }

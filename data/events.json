@@ -1,8 +1,52 @@
 {
- "updated": "2026-10-01",
- "situation_headline": "JPMorgan and Goldman Sachs estimate Mideast crude flows are near pre-war levels (Hormuz ~13 mb/d) even as UKMTO's delayed reports reveal 3 more Hormuz tanker attacks; US-Iran talks stay deadlocked over sanctions and reopening terms, and Brent rose above $99 on 1 Oct.",
+ "updated": "2026-10-02",
+ "situation_headline": "US Treasury sanctioned Iran's carmakers and railways on 1 Oct, targeting overland oil routes used since the Hormuz blockade, as Washington presses Germany and France over diesel reserves; Brent ~$99.8, WTI ~$89 on 2 Oct.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-01-iran-sanctions",
+   "date": "2026-10-01",
+   "title": "US sanctions hit Iran's carmakers and railways as oil moves overland",
+   "summary": "The US Treasury's \"Operation Economic Outcast\" designated Iran's two largest automakers, Iran Khodro and Saipa (together about 90% of Iran's domestic auto market), the state-owned Islamic Republic of Iran Railway Company, Raja Passenger Trains and a major private freight operator, plus foreign auto-parts suppliers in the UAE, Indonesia and Turkey. Treasury said the action targets the road and rail networks Iran has increasingly used to move petroleum, fertiliser, chemicals and other goods since US restrictions tightened on Iranian oil shipments through the Strait of Hormuz.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": [
+    35.6892,
+    51.389
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "US Treasury — Operation Economic Outcast Targets Iran's Remaining Industrial Lifelines",
+     "url": "https://home.treasury.gov/news/press-releases/sb0643",
+     "date": "2026-10-01"
+    },
+    {
+     "name": "The National — US sanctions Iran's car makers and railway operators as pressure shifts from sea to land",
+     "url": "https://www.thenationalnews.com/business/economy/2026/10/02/us-sanctions-irans-car-makers-and-railway-operators-as-pressure-shifts-from-sea-to-land/",
+     "date": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-diesel-reserves",
+   "date": "2026-10-01",
+   "title": "US presses Germany and France to release more diesel reserves",
+   "summary": "US Energy Secretary Chris Wright said several European countries have released only a fraction of the crude and diesel they pledged under the March IEA-coordinated 400-million-barrel stock release (of which the US contributed 172 million barrels, completing a further 40-million-barrel release on 30 September). Germany's economy ministry said it has no plans to release its remaining 15 million pledged barrels; France's finance minister said France has released none of its stockpile; Spain has released about a third of its 11.6-million-barrel pledge. The European Commission said the bloc would \"take action as necessary.\" Reuters reporting cited by Rigzone said Washington has threatened Germany and France with export curbs if they do not draw down reserves further.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Rigzone — Europe Holds Emergency Diesel Talks",
+     "url": "https://www.rigzone.com/news/europe_holds_emergency_diesel_talks-01-oct-2026-184749-article",
+     "date": "2026-10-01"
+    }
+   ]
+  },
   {
    "id": "2026-09-29-jpmorgan-goldman-mideast-flows-prewar",
    "date": "2026-09-29",

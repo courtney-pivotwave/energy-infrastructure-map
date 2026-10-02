@@ -1,23 +1,23 @@
 {
- "as_of": "2026-10-01",
+ "as_of": "2026-10-02",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 99.74,
-   "week_ago": 97.03,
+   "value": 99.81,
+   "week_ago": 99.74,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Rose 1.74% on 1 Oct, reversing part of the prior week's drop, as markets weighed JPMorgan/Goldman Sachs reports of Mideast oil flows near pre-war levels against new delayed UKMTO reports of Hormuz tanker attacks and a continued US-Iran impasse over sanctions relief. Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available.",
+   "note": "Little changed on 2 Oct (-2.4% intraday) after 1 Oct's rise, as markets weighed new US sanctions on Iran's auto and rail sectors and a US-EU dispute over releasing diesel reserves against the continued US-Iran impasse over sanctions relief. Week-ago reuses the prior run's 1 Oct value (1 day earlier, not a full week) — the closest dated figure available.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
    },
    "extra_sources": [
     {
@@ -41,19 +41,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 91.45,
-   "week_ago": 90.14,
+   "value": 89.36,
+   "week_ago": 91.45,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Rose above $92 intraday on 1 Oct before easing, 'reversing losses from earlier in the session as investors weighed signs of rising Middle East energy flows against an ongoing impasse in US-Iran negotiations' (Trading Economics). Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available.",
+   "note": "Fell nearly 4% on 2 Oct as European governments weighed releasing more strategic reserves to ease the diesel squeeze, per Trading Economics commentary; the US separately pressed Germany and France to draw down pledged stocks. Week-ago reuses the prior run's 1 Oct value (1 day earlier, not a full week) — the closest dated figure available.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
    },
    "extra_sources": [
     {
@@ -72,19 +72,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 73.59,
-   "week_ago": 72.52,
+   "value": 73.04,
+   "week_ago": 73.59,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Week-ago reuses the prior run's 1 Oct value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
    },
    "extra_sources": [
     {
@@ -103,8 +103,8 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 25.74,
-   "week_ago": 25.44,
+   "value": 25.79,
+   "week_ago": 25.74,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
@@ -115,7 +115,7 @@
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-09-30"
+    "date": "2026-10-01"
    },
    "extra_sources": [
     {
@@ -134,14 +134,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.95,
-   "week_ago": 3.04,
+   "value": 2.93,
+   "week_ago": 2.95,
    "pre_crisis": 2.99,
-   "note": "Value is the NYMEX front-month on 1 Oct (Trading Economics); week-ago reuses the prior run's 30 Sep front-month value (1 day earlier, not a full week); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "Value is the NYMEX front-month on 2 Oct (Trading Economics), an over one-week low on stronger production and mild-weather demand forecasts; week-ago reuses the prior run's 1 Oct front-month value (1 day earlier, not a full week); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
    },
    "extra_sources": [
     {
@@ -157,22 +157,22 @@
    ]
   }
  ],
- "note": "Brent and WTI rose on 1 October as markets weighed JPMorgan and Goldman Sachs reports that Middle East oil flows are nearing pre-war levels against new delayed UKMTO reports of Hormuz tanker attacks and a continued US-Iran impasse over sanctions relief and reopening terms; the strait remains formally closed.",
+ "note": "Brent held near $100 and WTI fell on 2 October as the US Treasury sanctioned Iran's carmakers and railways over their use for overland oil, fertiliser and chemical shipments, and Washington pressed Germany and France to release more diesel reserves after both said they'd drawn down little of their pledged stocks; the strait remains formally closed.",
  "note_sources": [
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "date": "2026-10-02"
+  },
+  {
+   "name": "US Treasury — Operation Economic Outcast Targets Iran's Remaining Industrial Lifelines",
+   "url": "https://home.treasury.gov/news/press-releases/sb0643",
    "date": "2026-10-01"
   },
   {
-   "name": "gCaptain (Bloomberg) — JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
-   "url": "https://gcaptain.com/jpmorgan-and-goldman-see-mideast-oil-flows-near-pre-war-levels/",
-   "date": "2026-09-30"
-  },
-  {
-   "name": "gCaptain — Three More Tanker Attacks Surface in Delayed Hormuz Reports",
-   "url": "https://gcaptain.com/three-more-tanker-attacks-surface-in-delayed-hormuz-reports/",
-   "date": "2026-09-30"
+   "name": "Rigzone — Europe Holds Emergency Diesel Talks",
+   "url": "https://www.rigzone.com/news/europe_holds_emergency_diesel_talks-01-oct-2026-184749-article",
+   "date": "2026-10-01"
   }
  ]
 }

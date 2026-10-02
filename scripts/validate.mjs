@@ -247,6 +247,14 @@ if (social) {
       }
     }
     if (p.type === 'correction' && !seen.has(p.reply_to)) err(`${w}: corrections must reply_to an earlier post id`);
+    // Hashtag variety (drafts not yet posted): lead with a different tag than the previous post, and no tag in more
+    // than 2 of the previous 6 posts. Corrections are exempt (they reply in-thread).
+    if (!seenIds.has(p.id) && tags.length && p.type !== 'correction') {
+      const prev = (social.posts || []).slice(Math.max(0, i - 6), i).filter(x => x.type !== 'correction');
+      const lastFirst = prev.filter(x => x.tags?.length).pop()?.tags[0];
+      if (lastFirst && tags[0] === lastFirst) err(`${w}: first tag #${tags[0]} repeats the previous post's; lead with what's distinctive about this one`);
+      tags.forEach(t => { const k = prev.filter(x => x.tags?.includes(t)).length; if (k >= 3) err(`${w}: #${t} is already on ${k} of the previous ${prev.length} posts; pick a more specific tag`); });
+    }
     if (p.reply_to && !seen.has(p.reply_to)) err(`${w}: reply_to must reference an earlier post`);
     seen.add(p.id);
   });

@@ -197,11 +197,19 @@ dropped, and `max_per_day` (6) caps the total.
   link; X charges more for links and gives them less reach. So **event and chart text must read as complete on its own**: no trailing colon,
   no "see link", no domain names (X auto-links them). Bluesky always gets the link.
 - **Hashtags go in `tags`, never in `text`.** Give every event, digest, explainer and chart post 1–3 tags from
-  `social.json → hashtags`, most specific first; X shows only the first two. Order: the place or chokepoint
-  (#Hormuz, #RedSea, #BlackSea), then the commodity or market (#Oil, #LNG, #Diesel), then #OOTT for oil-market posts
-  (it's the tag oil analysts follow on X). Use a country tag only when the post is about that country's own
-  infrastructure, never to ride a political trend. Don't invent tags; if one is missing from the list, suggest it
-  under Open questions.
+  `social.json → hashtags` that say what's distinctive about *this* post, most specific first (X shows only the
+  first two). Vary them: the same three tags on every post reach the same few people.
+  - Lead with the specific angle: the asset or market (#Tankers, #Pipelines, #LNG, #Refining, #Brent, #OilPrices,
+    #Diesel, #SPR), a place other than the usual one (#RedSea, #Suez, #Malacca, #BlackSea, #SaudiArabia), or #DataViz
+    for charts. Broader reach tags (#EnergySecurity, #Commodities, #SupplyChain, #Geopolitics, #EnergyCrisis) fit as a
+    second or third tag.
+  - Use #Hormuz only when the strait itself is the news (transits, a closure or reopening, an attack in it), and #Oil
+    or #Energy only when nothing more specific fits.
+  - #OOTT is the tag oil-market analysts follow on X: use it on price, flow and OPEC posts, not on every post.
+  - The validator enforces variety on new drafts: the first tag must differ from the previous post's, and no tag may
+    appear on more than 2 of the previous 6 posts. Check the end of `posts` before choosing.
+  - Use a country tag only when the post is about that country's own infrastructure, never to ride a political trend.
+    Don't invent tags; if one is missing from the list, suggest it under Open questions.
 - `url` is the most specific page: a chokepoint or facility page, `/fuel-prices/…`, or `/events/#<event-id>`.
   Don't put links in `text`.
 - `id`: `YYYY-MM-DD-short-slug`; `created`: today. Length limits are checked by the validator (X counts the link as

@@ -137,6 +137,17 @@ const v = {
       while (st.moving && frameNo < limit) st = await frame();
     }
   },
+  /** Glide the cursor to an element (or {x, y}) and rest there, so hover effects and tooltips show. */
+  async hover(target, { move = 850 } = {}) {
+    const b = target.x != null ? { ...target, width: 0, height: 0 } : await box(target);
+    const x = b.x + b.width / 2, y = b.y + b.height / 2;
+    await page.evaluate(([x, y, ms]) => window.__vd.cursorTo(x, y, ms), [x, y, move]);
+    await render(move + 50);
+    await page.mouse.move(x, y);
+    await render(100);
+  },
+  /** Screen position of a map coordinate, for clicking or hovering map features. */
+  point: latlng => page.evaluate(ll => { const p = window.__map.latLngToContainerPoint(ll); return { x: p.x, y: p.y }; }, latlng),
   async cursorAway() { await page.evaluate(() => window.__vd.cursorTo(innerWidth * 0.55, innerHeight * 0.55)); },
   /** Pulse a ring around an element so viewers know where to look. */
   async highlight(selector, ms = 2500) {

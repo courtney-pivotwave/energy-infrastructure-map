@@ -10,7 +10,7 @@ brew install ffmpeg              # once
 node record.mjs what-if-hormuz   # builds the site, records, writes out/what-if-hormuz.mp4 + .srt
 ```
 
-Flags: `--no-build` (reuse `dist/`), `--fps 60` (smoother; about twice the render time), `--4k` (3840×2160),
+Flags: `--no-build` (reuse `dist/`), `--draft` (960×540 at 10 fps, to check a storyboard quickly), `--fps 60` (smoother; about twice the render time), `--4k` (3840×2160),
 `--debug` (per-step timings). Other frame rates and 4K get their own filenames (`what-if-hormuz-60fps.mp4`).
 
 - `record.mjs`: serves `dist/`, drives Chrome at 1440×810 CSS px (×4/3 → 1080p), captures CDP screencast

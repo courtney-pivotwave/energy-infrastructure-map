@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* Records a scripted walkthrough of the map as an MP4.
  *
- *   node record.mjs <scene> [--no-build] [--4k] [--fps 60] [--debug]
+ *   node record.mjs <scene> [--no-build] [--draft] [--4k] [--fps 60] [--debug]
  *
  * Builds the site, serves dist/ locally and drives Chrome (playwright-core, system Chrome) through
  * scenes/<scene>.mjs. Rendering is frame by frame: before each screenshot the page's clock, timers and CSS
@@ -31,9 +31,10 @@ const scene = await import(join(HERE, 'scenes', sceneName + '.mjs'));
 
 // 1440×810 CSS px keeps the desktop layout roomy; the scale factor sets the output resolution.
 const VIEW = { width: 1440, height: 810 };
-const SCALE = flag('--4k') ? 8 / 3 : 4 / 3;
+const DRAFT = flag('--draft'); // quick check of a storyboard: 960×540 at 10 fps
+const SCALE = DRAFT ? 2 / 3 : flag('--4k') ? 8 / 3 : 4 / 3;
 const OUT_W = Math.round(VIEW.width * SCALE), OUT_H = Math.round(VIEW.height * SCALE);
-const FPS = Number(opt('--fps', 30));
+const FPS = Number(opt('--fps', DRAFT ? 10 : 30));
 const FRAME_MS = 1000 / FPS;
 const TILE_WAIT_MS = 3000; // give up waiting on a slow tile after this long (real time)
 
@@ -63,7 +64,7 @@ const cdp = await context.newCDPSession(page);
 
 // ── Frame-by-frame capture ──
 mkdirSync(OUT, { recursive: true });
-const base = sceneName + (FPS !== 30 ? `-${FPS}fps` : '') + (flag('--4k') ? '-4k' : '');
+const base = sceneName + (DRAFT ? '-draft' : (FPS !== 30 ? `-${FPS}fps` : '') + (flag('--4k') ? '-4k' : ''));
 const mp4 = join(OUT, base + '.mp4');
 let ff = null, recording = false, frameNo = 0, slowTiles = 0;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -130,6 +131,11 @@ const v = {
     await render(pause);
     await page.evaluate(() => window.__vd.ripple());
     await page.mouse.click(x, y);
+    if (recording) { // if the click moved the camera, let the flight finish
+      let st = await frame();
+      const limit = frameNo + 8 * FPS;
+      while (st.moving && frameNo < limit) st = await frame();
+    }
   },
   async cursorAway() { await page.evaluate(() => window.__vd.cursorTo(innerWidth * 0.55, innerHeight * 0.55)); },
   /** Pulse a ring around an element so viewers know where to look. */

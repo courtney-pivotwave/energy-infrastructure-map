@@ -64,6 +64,15 @@
       try {
         v.Map.addInitHook(function () {
           window.__map = this;
+          // Track camera moves from any source (our scripted flights and the app's own, e.g. clicking a chokepoint)
+          this.on('movestart', () => { moving = true; });
+          this.on('moveend', () => { moving = false; });
+          // The app flies in 0.8 s, too fast to follow on video: stretch its flights while recording
+          const flyTo = this.flyTo;
+          this.flyTo = function (ll, z, o = {}) {
+            if (virtual && window.__vd.minFly) o = { ...o, duration: Math.max(o.duration ?? 0, window.__vd.minFly), easeLinearity: o.easeLinearity ?? 0.2 };
+            return flyTo.call(this, ll, z, o);
+          };
           this.on('move', () => {
             if (!virtual || !this._loaded) return;
             this.eachLayer(l => { if (l instanceof v.Renderer && l._map) l._reset(); });
@@ -121,6 +130,7 @@
   const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
   let cur = { x: 720, y: 520 };
   window.__vd = {
+    minFly: 2.2, // seconds; minimum duration of any flight while recording
     virtualize() {
       vt = vt0 = realNow(); perf0 = realPerf(); virtual = true;
       for (const a of document.getAnimations()) { a.pause(); seen.set(a, a.currentTime ?? 0); } // keep running pulses in phase

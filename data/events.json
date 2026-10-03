@@ -1,8 +1,72 @@
 {
- "updated": "2026-10-02",
- "situation_headline": "US Treasury sanctioned Iran's carmakers and railways on 1 Oct, targeting overland oil routes used since the Hormuz blockade, as Washington presses Germany and France over diesel reserves; Brent ~$99.8, WTI ~$89 on 2 Oct.",
+ "updated": "2026-10-03",
+ "situation_headline": "UKMTO disclosed a sixth Hormuz tanker attack since 28 Sep, officials say Saudi Arabia is preparing a Yemeni-led offensive to retake Bab el-Mandeb from the Houthis, and the UK added 8 more vessels to its Russia shadow-fleet sanctions list.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-02-saudi-houthi-offensive-plan",
+   "date": "2026-10-02",
+   "title": "Officials: Saudi Arabia preparing offensive to retake Bab el-Mandeb from Houthis",
+   "summary": "Six people familiar with the planning, including Gulf, Yemeni and Western officials, said Saudi Arabia is preparing a Yemeni-led ground offensive, backed by Saudi air power, to break Houthi control of the approaches to Bab el-Mandeb. Options range from a narrow coastal assault near the strait to a broader multi-front campaign; estimated timing ranges from within a week to after the US midterm elections in early November. No government has confirmed the plan, and no operation had begun as of this report.",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    12.6,
+    43.3
+   ],
+   "assets": [
+    "bab-el-mandeb"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain — Saudis Plan Assault on Houthis to Break Red Sea Chokehold",
+     "url": "https://gcaptain.com/saudis-plan-assault-on-houthis-to-break-red-sea-chokehold/",
+     "date": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-ukmto-six-vessels-hormuz",
+   "date": "2026-10-02",
+   "title": "UKMTO: six vessels struck in Strait of Hormuz since 28 September",
+   "summary": "UKMTO advisories show at least six merchant vessels have now been hit in or near the Strait of Hormuz since 28 September, extending the pattern of delayed incident disclosures already seen this run. UKMTO reported crews safe and did not attribute responsibility for the strikes.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.5,
+    56.3
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Six Vessels Hit in Strait of Hormuz Since Sunday",
+     "url": "https://gcaptain.com/six-vessels-hit-in-strait-of-hormuz-since-sunday/",
+     "date": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-uk-sanctions",
+   "date": "2026-10-01",
+   "title": "UK sanctions eight more Russian shadow-fleet and LNG-export ships",
+   "summary": "The UK government sanctioned eight more vessels tied to Russia's shadow fleet and LNG exports, including the LNG carriers Chaivo, Portovyy, Aleksey Kosygin, Konstantin Posiet and Pyotr Stolypin, plus bunkering and ice-class vessels. The UK said it has now sanctioned nearly 600 tankers used to move Russian energy around Western restrictions, while keeping an exemption for limited Russian LNG shipments to Japan and South Korea through March 2028.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — UK Hits Eight Russian Ships in New Sanctions Package",
+     "url": "https://gcaptain.com/uk-hits-eight-russian-ships-in-new-sanctions-package/",
+     "date": "2026-10-01"
+    }
+   ]
+  },
   {
    "id": "2026-10-01-iran-sanctions",
    "date": "2026-10-01",

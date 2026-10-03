@@ -102,7 +102,6 @@
    "id": "2026-09-30-chart-hormuz-bypass",
    "created": "2026-09-30",
    "type": "chart",
-   "not_before": "2026-09-30T15:00Z",
    "text": "About 19.9 million b/d of oil crossed the Strait of Hormuz before the war. Pipelines around it had only ~3.5 million b/d of spare capacity (IEA, low estimate), leaving ~16.4 million b/d with no alternative route.",
    "url": "https://strategicenergymap.org/charts/hormuz-bypass/",
    "image": "hormuz-bypass",
@@ -162,7 +161,6 @@
    "id": "2026-09-30-chart-chokepoint-flows",
    "created": "2026-09-30",
    "type": "chart",
-   "not_before": "2026-09-30T19:00Z",
    "text": "Before the 2026 crisis, about 23.2 million b/d of oil moved through the Strait of Malacca and 19.9 million b/d through Hormuz, each about a fifth of world demand. Suez, Bab el-Mandeb and the other chokepoints carried far less.",
    "url": "https://strategicenergymap.org/charts/chokepoint-oil-flows/",
    "image": "chokepoint-oil-flows",
@@ -236,7 +234,6 @@
    "id": "2026-10-01-chart-chokepoints-weekly",
    "created": "2026-10-01",
    "type": "chart",
-   "not_before": "2026-10-01T15:00Z",
    "text": "AIS-tracked tanker traffic through Hormuz averaged 1.3/day in the week to 27 Sep, 97% below baseline — many sail dark, so broader tracking shows higher flows. Turkish Straits -48%, Bab el-Mandeb -22%.",
    "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
    "image": "chokepoints-weekly",
@@ -302,6 +299,81 @@
    "tags": [
     "Suez",
     "Shipping"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-03-digest",
+   "created": "2026-10-03",
+   "type": "digest",
+   "text": "UKMTO now counts six Hormuz tanker strikes since 28 Sep, and officials say Saudi Arabia is preparing an offensive to retake Bab el-Mandeb from the Houthis. Brent held near $100 (2 Oct); US diesel $6.38/gal, week of 28 Sep.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "RedSea"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-03-saudi-houthi-offensive",
+   "created": "2026-10-03",
+   "type": "event",
+   "text": "Six officials say Saudi Arabia is preparing a Yemeni-led offensive, backed by Saudi air power, to retake Bab el-Mandeb from Houthi control. Timing ranges from within a week to after the US midterms (reported).",
+   "url": "https://strategicenergymap.org/chokepoints/bab-el-mandeb/",
+   "event_id": "2026-10-02-saudi-houthi-offensive-plan",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Yemen",
+    "SaudiArabia"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-03-ukmto-six-vessels",
+   "created": "2026-10-03",
+   "type": "event",
+   "text": "UKMTO's delayed disclosures now put at six the number of vessels struck in the Strait of Hormuz since 28 September. No casualties were reported and responsibility wasn't attributed.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-02-ukmto-six-vessels-hormuz",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "Hormuz"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-03-uk-sanctions-shadow-fleet",
+   "created": "2026-10-03",
+   "type": "event",
+   "text": "The UK sanctioned eight more vessels tied to Russia's shadow fleet and LNG exports, including five named LNG carriers, and has now sanctioned nearly 600 tankers moving Russian energy around Western restrictions.",
+   "url": "https://strategicenergymap.org/events/#2026-10-01-uk-sanctions",
+   "event_id": "2026-10-01-uk-sanctions",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Russia",
+    "LNG"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-03-explainer-bab-el-mandeb",
+   "created": "2026-10-03",
+   "type": "explainer",
+   "text": "Bab el-Mandeb, between Yemen and Djibouti, normally carries about 6-7 million b/d of oil toward Suez. Houthi attacks have left it disrupted since 20 July, transits still ~15% below pre-ban levels.",
+   "url": "https://strategicenergymap.org/chokepoints/bab-el-mandeb/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "RedSea",
+    "MaritimeSecurity"
    ],
    "reply_to": null
   }

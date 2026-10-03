@@ -239,6 +239,21 @@
     },
     "at": "2026-10-03T15:08:43.891Z"
    }
+  },
+  "2026-10-02-explainer-suez-canal": {
+   "x": {
+    "id": "2106454558277022041",
+    "at": "2026-10-03T18:41:17.565Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwyjzelrre2s",
+    "cid": "bafyreie3r4qtr5apu3xfp2dj3lhjwdznoebknotszet2dcul535x4n5bye",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwyjzelrre2s",
+     "cid": "bafyreie3r4qtr5apu3xfp2dj3lhjwdznoebknotszet2dcul535x4n5bye"
+    },
+    "at": "2026-10-03T18:41:19.621Z"
+   }
   }
  }
 }

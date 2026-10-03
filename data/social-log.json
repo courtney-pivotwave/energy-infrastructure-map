@@ -224,6 +224,21 @@
     },
     "at": "2026-10-03T10:58:24.554Z"
    }
+  },
+  "2026-10-02-diesel-reserves": {
+   "x": {
+    "id": "2106401060147405050",
+    "at": "2026-10-03T15:08:42.599Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwy657snea2r",
+    "cid": "bafyreiccndluypqkjy2yrfasph6jbham7fsynnpwni6u7u6hi6ngzg24mi",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwy657snea2r",
+     "cid": "bafyreiccndluypqkjy2yrfasph6jbham7fsynnpwni6u7u6hi6ngzg24mi"
+    },
+    "at": "2026-10-03T15:08:43.891Z"
+   }
   }
  }
 }

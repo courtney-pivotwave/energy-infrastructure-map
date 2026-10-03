@@ -154,6 +154,29 @@ const v = {
     if (recording) { const limit = frameNo + (seconds + 3) * FPS; while ((await frame()).moving && frameNo < limit); }
     await render(400);
   },
+  /** Dissolve to another page of the site (through the background colour) and keep recording there. */
+  async goto(path, cursor) {
+    await v.clearCaption();
+    if (recording) { await page.evaluate(() => window.__vd.cover()); await render(700); }
+    await page.goto(new URL(path, SITE).href, { waitUntil: 'networkidle' });
+    await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(([rec, c]) => { window.__vd.cover(true); if (c) window.__vd.cursorTo(c.x, c.y, 0); if (rec) window.__vd.virtualize(); }, [recording, cursor]);
+    await page.evaluate(() => window.__vd.hideCard());
+    await render(700);
+  },
+  /** Glide to a link and follow it (as a dissolve, so the page load never shows). */
+  async clickLink(selector, opts = {}) { // the caption clears at the cut; say the next one on the new page
+    const href = await page.locator(selector).first().getAttribute('href');
+    const b = await box(selector);
+    const x = b.x + b.width / 2, y = b.y + b.height / 2, move = opts.move ?? 850;
+    await page.evaluate(([x, y, ms]) => window.__vd.cursorTo(x, y, ms), [x, y, move]);
+    await render(move + 50);
+    await page.mouse.move(x, y);
+    await render(opts.pause ?? 350);
+    await page.evaluate(() => window.__vd.ripple());
+    await render(250);
+    await v.goto(new URL(href, page.url()).pathname + '?notrack=1', { x, y });
+  },
   text: selector => page.locator(selector).first().innerText(),
 };
 

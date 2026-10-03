@@ -183,6 +183,13 @@
       el.classList.remove('off');
     },
     hideCard() { $('vd-card').classList.add('off'); },
+    /** Blank cover in the site's background colour, for dissolving between pages. instant: no fade. */
+    cover(instant) {
+      const el = $('vd-card');
+      el.innerHTML = '';
+      if (instant) { el.style.transition = 'none'; el.classList.remove('off'); void el.offsetWidth; el.style.transition = ''; }
+      else el.classList.remove('off');
+    },
     cursorTo(x, y, ms = 850) {
       cur = { x, y };
       const c = $('vd-cursor');
@@ -207,8 +214,9 @@
       const el = document.querySelector(selector); if (!el) return;
       let box = el.parentElement;
       while (box && !(box.scrollHeight > box.clientHeight && /auto|scroll/.test(getComputedStyle(box).overflowY))) box = box.parentElement;
-      if (!box) return;
-      const e = el.getBoundingClientRect(), c = box.getBoundingClientRect();
+      box ||= document.scrollingElement; // ordinary pages scroll the document
+      const e = el.getBoundingClientRect();
+      const c = box === document.scrollingElement ? { top: 0, height: innerHeight } : box.getBoundingClientRect();
       const off = block === 'center' ? (c.height - e.height) / 2 : 12;
       const from = box.scrollTop, to = Math.max(0, Math.min(box.scrollHeight - box.clientHeight, from + e.top - c.top - off));
       const start = performance.now();

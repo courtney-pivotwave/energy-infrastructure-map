@@ -46,6 +46,16 @@
       ],
       "destination": "https://strategicenergymap.org/$1",
       "permanent": true
+    },
+    {
+      "source": "/embed",
+      "destination": "/about.html#embed",
+      "permanent": false
+    },
+    {
+      "source": "/embed/",
+      "destination": "/about.html#embed",
+      "permanent": false
     }
   ]
 }

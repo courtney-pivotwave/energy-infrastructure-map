@@ -4,3 +4,5 @@ data/research/
 .vercel
 .env*.local
 dist/
+tools/video/node_modules/
+tools/video/out/

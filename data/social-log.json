@@ -314,6 +314,21 @@
     },
     "at": "2026-10-04T19:38:31.798Z"
    }
+  },
+  "2026-10-03-explainer-bab-el-mandeb": {
+   "x": {
+    "id": "2106885032463994955",
+    "at": "2026-10-04T23:11:50.587Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx3jm2yaa72s",
+    "cid": "bafyreicb7w4oyo2fpno5zsren3ovtrtbdcvuwrxtcmwquvtlaa6t4xieze",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx3jm2yaa72s",
+     "cid": "bafyreicb7w4oyo2fpno5zsren3ovtrtbdcvuwrxtcmwquvtlaa6t4xieze"
+    },
+    "at": "2026-10-04T23:11:52.552Z"
+   }
   }
  }
 }

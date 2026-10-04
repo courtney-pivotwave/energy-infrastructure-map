@@ -13,7 +13,7 @@ A free, ad-free map of the world's oil and gas infrastructure — pipelines, fie
 - **Sourced daily updates**: an event feed and facility status (reduced, disrupted, offline, damaged, closed), each linked to its sources with a confidence label.
 - **Pump prices**: weekly petrol and diesel prices for the US (national and regional), all EU member states and the UK, from official statistics.
 - **What-if mode**: close one or more chokepoints to see cut routes, usable bypass capacity (adjusted for facilities currently impaired), stranded assets, the net oil shortfall and the most exposed importers.
-- **Embeddable**: add `?embed=1` (and optionally `&region=europe|mideast|asia|americas`) for a map-only view. The About page has a ready-made iframe snippet with a copy button ([about.html#embed](https://strategicenergymap.org/about.html#embed)).
+- **Embeddable**: add `?embed=1` (and optionally `&region=europe|mideast|asia|americas`) for a map-only view. The About page has a ready-made iframe snippet with a copy button ([strategicenergymap.org/embed](https://strategicenergymap.org/embed), which redirects to `about.html#embed`).
 
 ## How it's built
 

@@ -1,7 +1,7 @@
 Put the live Strategic Energy Infrastructure Map on your own site: a map-only view for articles, blogs and classrooms, in one line of HTML.
 
 Copy the embed code (with region options) from the About page:
-https://strategicenergymap.org/about.html#embed
+https://strategicenergymap.org/embed
 
 Or paste this into your page:
 

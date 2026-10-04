@@ -83,5 +83,5 @@ export async function run(v) {
   await v.cursorAway();
 
   await v.card('end', 'Embed the live map on your site',
-    'Copy the ready-made code, with region options, from the About page. Free and ad-free.', 7000, 'strategicenergymap.org/about.html#embed');
+    'Copy the ready-made code, with region options, from the About page. Free and ad-free.', 7000, 'strategicenergymap.org/embed');
 }

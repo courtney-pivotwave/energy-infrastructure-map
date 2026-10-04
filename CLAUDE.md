@@ -27,7 +27,7 @@ then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facili
 - Pre-crisis reference week is 2026-02-23 (`fuel.json → pre_crisis_date`, `market.json → pre_crisis`, PortWatch baseline window in `app.js`).
 - When you change `app.js` or `styles.css`, bump the `?v=` query on their tags in `index.html` so browsers don't serve a stale copy.
 - Goal: a free, ad-free public resource. No ads, no cookies, no trackers beyond Vercel Web Analytics.
-- Primary domain is strategicenergymap.org. `vercel.json` 301-redirects the old energy-infrastructure-map.vercel.app host; www and .com hosts are attached to the project and redirect via the same `vercel.json` rules.
+- Primary domain is strategicenergymap.org. `vercel.json` 301-redirects the old energy-infrastructure-map.vercel.app host; www and .com hosts are attached to the project and redirect via the same `vercel.json` rules. `/embed` is a temporary redirect to `about.html#embed` (the embed code), used in videos and posts.
 - SEO/AEO: each generated page opens with a dated, sourced 40–60 word answer, then facts, FAQ and JSON-LD. Only generate a page when there's real data behind it (no thin pages). `scripts/indexnow.mjs` pings Bing after a deploy.
 - Do not set `trailingSlash` in `vercel.json`: it 308-redirects `/_vercel/insights/*` and breaks Vercel Web Analytics. Canonical tags already point at trailing-slash URLs.
 - Owner opt-out: any page with `?notrack=1` sets `localStorage["va-disable"]` and a `beforeSend` hook drops that browser's analytics (`?notrack=0` undoes it). The snippet sits in `index.html`, `about.html` and the page template in `scripts/build.mjs`; keep all three in step.

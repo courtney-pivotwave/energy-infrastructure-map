@@ -4,6 +4,34 @@
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
   {
+   "id": "2026-10-03-riyadh-refinery-fire",
+   "date": "2026-10-03",
+   "title": "Fire reported at Aramco's Riyadh Refinery; Houthis claim missile-and-drone strike",
+   "summary": "Reuters and AFP witnesses saw a large fire and smoke plume at Saudi Aramco's Riyadh Refinery, south of the capital, with fire crews, ambulances and police at the scene. Yemen's Houthi movement claimed a missile-and-drone strike on the facility, calling it retaliation for Saudi strikes on Sanaa. Saudi authorities and Aramco did not confirm the cause or report any damage or output impact.",
+   "category": "infrastructure",
+   "severity": "high",
+   "coords": [
+    24.59,
+    46.75
+   ],
+   "assets": [
+    "riyadh-refinery"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "The Daily Star / AFP — West Asia war: blaze engulfs Riyadh Aramco site after Houthi strike claim",
+     "url": "https://www.businesstoday.in/world/story/west-asia-war-blaze-engulfs-riyadh-aramco-site-after-houthis-claim-missile-drone-strike-559362-2026-10-04",
+     "date": "2026-10-04"
+    },
+    {
+     "name": "Kurdistan24 — Fire erupts near Aramco facility in Riyadh as Saudi-Houthi fighting escalates",
+     "url": "https://www.kurdistan24.net/en/story/943658/fire-erupts-near-aramco-facility-in-riyadh-as-saudi-houthi-fighting-escalates",
+     "date": "2026-10-03"
+    }
+   ]
+  },
+  {
    "id": "2026-10-02-saudi-houthi-offensive-plan",
    "date": "2026-10-02",
    "title": "Officials: Saudi Arabia preparing offensive to retake Bab el-Mandeb from Houthis",

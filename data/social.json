@@ -406,6 +406,21 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-04-riyadh-refinery-fire",
+   "created": "2026-10-04",
+   "type": "event",
+   "text": "Reuters and AFP saw fire and smoke at Aramco's Riyadh Refinery on 3 Oct after Houthis claimed a missile-and-drone strike; Saudi authorities and Aramco have not confirmed the cause or any damage (reported).",
+   "url": "https://strategicenergymap.org/facilities/riyadh-refinery/",
+   "event_id": "2026-10-03-riyadh-refinery-fire",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "Refining"
+   ],
+   "reply_to": null
   }
  ]
 }

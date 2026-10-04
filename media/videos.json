@@ -1,0 +1,101 @@
+{
+  "videos": {
+    "tour": {
+      "title": "A quick tour of the map",
+      "src": "/media/tour.mp4",
+      "poster": "/media/tour.jpg",
+      "duration": 145,
+      "recorded": "2026-10-03",
+      "transcript": [
+        "One map of the world’s oil and gas infrastructure: 26 major pipelines, 64 oil and gas fields, 68 ports, refineries, LNG terminals and production sites, and 8 shipping chokepoints.",
+        "Benchmark prices run along the top, measured against the week before the crisis. Brent is at $99.7, up 38%.",
+        "Every dataset shows how fresh it is.",
+        "Switch layers on and off: pipelines, fields, refineries, LNG terminals, ports and chokepoints.",
+        "Rings mark assets that aren’t operating normally: closed, damaged, offline, disrupted or reduced. 17 are flagged right now.",
+        "Hide the panel whenever you want more room.",
+        "Jump straight to a region…",
+        "…and click any asset.",
+        "Yanbu Terminal: what it does, its current status and related developments, with sources and a confidence label for every claim.",
+        "The Latest tab is a daily, sourced feed of what’s changing, led by a summary of the situation.",
+        "Filter it by time window or category…",
+        "…and click an event to see where it happened.",
+        "Chokepoints shows daily tanker transits from IMF PortWatch satellite data, against the pre-crisis baseline. Counts lag about a week.",
+        "Click one for its full story: here, Strait of Hormuz.",
+        "Pump prices: weekly petrol and diesel prices for the US, every EU country and the UK, from official statistics.",
+        "US gasoline: 4.46 $/gal, up 52% since February.",
+        "Click any country for its price history.",
+        "Updated every day by a research agent, with a source behind every claim. Free, and no ads."
+      ]
+    },
+    "what-if": {
+      "title": "What if the Strait of Hormuz shut completely?",
+      "src": "/media/what-if.mp4",
+      "poster": "/media/what-if.jpg",
+      "duration": 131,
+      "recorded": "2026-10-02",
+      "transcript": [
+        "This map tracks the world’s oil and gas pipelines, export terminals and shipping chokepoints, with sourced daily updates.",
+        "Start by simplifying: switch off the layers this story doesn’t need, like gas pipelines, fields and recent events.",
+        "Then hide the panel to give the map more room.",
+        "In 2025 about 19.9 million barrels a day of oil passed through the Strait of Hormuz: roughly 19% of world demand.",
+        "The What-if tab lets you close any of six major chokepoints, alone or together.",
+        "Close Hormuz. Red dashes are tanker and LNG routes that are cut, and 24 terminals, refineries and other assets are left stranded.",
+        "Green lines are the only bypass routes the model counts: East-West Pipeline and Habshan–Fujairah Pipeline.",
+        "Net result: a 16.4 mb/d oil shortfall, 15.8% of world demand, even after 3.5 mb/d of pipeline bypass.",
+        "And 20% of global LNG trade has no way out at all.",
+        "IEA emergency stocks would cover that gap for about 73 days, if they could be released that fast. In practice, maximum release rates are far below a gap this size.",
+        "It also reads each facility’s live status. Right now East-West Pipeline is reduced and Yanbu Terminal and Fujairah are disrupted, so real bypass capacity is likely lower.",
+        "Most exposed: China, India and Japan & South Korea.",
+        "Closures combine. Add Bab el-Mandeb and Red Sea tankers divert around the Cape of Good Hope, about 12 extra days at sea.",
+        "What-if is an illustrative model of a total shutdown. The real strait’s status is tracked separately, with a source behind every claim."
+      ]
+    },
+    "daily-updates": {
+      "title": "How the map stays current and sourced",
+      "src": "/media/daily-updates.mp4",
+      "poster": "/media/daily-updates.jpg",
+      "duration": 119,
+      "recorded": "2026-10-03",
+      "transcript": [
+        "Every morning an automated research agent reviews independent reporting since its last run, then updates events, facility status and prices.",
+        "The Latest tab leads with the situation in a paragraph, dated Oct 1, 2026.",
+        "Need context? The background explains how we got here.",
+        "Below it, every development gets a date, a category, a severity colour and a confidence label, with links to its sources.",
+        "Confirmed means two or more independent sources. Reported, one reputable source. Unverified, a claim by a party to the conflict.",
+        "Those claims appear only when the claim itself is news: attributed by name, marked unverified, and never turned into facts or figures.",
+        "On the map, recent events pulse, coloured by severity.",
+        "Hover one for the headline…",
+        "…and click it to open the asset it affects.",
+        "Each asset keeps its own status note and history of related developments. This one was last verified Sep 28, 2026.",
+        "Every event is also archived, month by month…",
+        "…with the sources for each one, and an RSS feed to follow along.",
+        "One sourcing rule for every government that is party to a conflict: verify, then use. Ship traffic in contested waters comes only from independent trackers.",
+        "Routine updates publish automatically. Big changes, like a chokepoint changing status, wait for human review.",
+        "Significant developments are also posted to X and Bluesky, under the same rules."
+      ]
+    },
+    "embedding": {
+      "title": "Embed the live map on your site",
+      "src": "/media/embedding.mp4",
+      "poster": "/media/embedding.jpg",
+      "duration": 81,
+      "recorded": "2026-10-04",
+      "transcript": [
+        "Want the map in your own article, blog post or lesson? There’s a view made for that.",
+        "Add ?embed=1 to the address…",
+        "…and you get just the map: no panels, with a small link back to the full site.",
+        "Add &region= to choose where it opens: europe…",
+        "…mideast, asia or americas.",
+        "Then drop it into any page with an iframe.",
+        "It sits in your page like any other element…",
+        "…and readers can pan around it…",
+        "…and hover anything for details.",
+        "It stays current as the map updates every day. Free, with no ads, no cookies and no tracking across sites.",
+        "Get the code from the About page…",
+        "…pick where the map opens…",
+        "…and copy it in one click."
+      ]
+    }
+  },
+  "updated": "2026-10-04"
+}

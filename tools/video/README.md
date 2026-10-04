@@ -10,6 +10,11 @@ brew install ffmpeg              # once
 node record.mjs what-if-hormuz   # builds the site, records, writes out/what-if-hormuz.mp4 + .srt
 ```
 
+To put renders on the website: `node publish.mjs [id ...]` (default: the videos marked `site: true`) writes
+1080p30 web versions, poster frames and `media/videos.json` (title, length, recording date, transcript from the
+captions) to `media/` at the repo root. The About page and the map's Tour button render from `videos.json`, so
+re-record, re-publish and commit `media/` to update the site. Each published video adds ~4–12 MB to the repo.
+
 Flags: `--no-build` (reuse `dist/`), `--draft` (960×540 at 10 fps, to check a storyboard quickly), `--fps 60` (smoother; about twice the render time), `--4k` (3840×2160),
 `--debug` (per-step timings). Other frame rates and 4K get their own filenames (`what-if-hormuz-60fps.mp4`).
 

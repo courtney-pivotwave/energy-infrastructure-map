@@ -22,7 +22,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<link rel="stylesheet" href="styles.css?v=15" />
+<link rel="stylesheet" href="styles.css?v=16" />
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 // Owner opt-out: visit any page with ?notrack=1 to stop counting this browser (?notrack=0 undoes it).
 try { const n = new URLSearchParams(location.search).get('notrack'); if (n === '1') localStorage.setItem('va-disable', '1'); if (n === '0') localStorage.removeItem('va-disable'); } catch (e) {}
@@ -45,7 +45,10 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
     <button data-region="mideast">Middle East</button>
     <button data-region="asia">Asia</button>
   </nav>
-  <a class="about-link" href="about.html">About</a>
+  <div class="top-actions">
+    <button class="about-link tour-btn" id="tourBtn" hidden aria-label="Watch the video tour"><span class="tb-ico" aria-hidden="true">▶</span><span class="tb-lbl" aria-hidden="true"> Tour</span></button>
+    <a class="about-link" href="about.html">About</a>
+  </div>
 </header>
 
 <aside class="panel left" id="leftPanel">
@@ -81,6 +84,15 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
 
 <div id="map"></div>
 
-<script src="app.js?v=15"></script>
+<div class="tour-prompt" id="tourPrompt" hidden></div>
+<div class="video-modal" id="videoModal" hidden role="dialog" aria-modal="true" aria-label="Video tour of the map">
+  <div class="vm-box">
+    <button class="vm-close" id="videoClose" aria-label="Close video"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button>
+    <video controls playsinline preload="none"></video>
+    <div class="vm-cap" id="videoCap"></div>
+  </div>
+</div>
+
+<script src="app.js?v=16"></script>
 </body>
 </html>

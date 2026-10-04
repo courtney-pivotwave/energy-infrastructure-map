@@ -16,7 +16,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=15" />
+<link rel="stylesheet" href="styles.css?v=16" />
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 // Owner opt-out: visit any page with ?notrack=1 to stop counting this browser (?notrack=0 undoes it).
 try { const n = new URLSearchParams(location.search).get('notrack'); if (n === '1') localStorage.setItem('va-disable', '1'); if (n === '0') localStorage.removeItem('va-disable'); } catch (e) {}
@@ -32,10 +32,15 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
   <div class="doc-stats" id="stats"></div>
 
   <nav class="doc-toc" aria-label="On this page">
-    <a href="#use">How to use it</a><a href="#embed">Embed the map</a><a href="#sources">Data sources</a><a href="#rule">Sourcing rule</a>
+    <a href="#tour">Video tour</a><a href="#use">How to use it</a><a href="#embed">Embed the map</a><a href="#sources">Data sources</a><a href="#rule">Sourcing rule</a>
     <a href="#agent">How it stays current</a><a href="#whatif">The what-if model</a><a href="#limits">Limits</a>
     <a href="#privacy">Privacy</a><a href="#builder">Who built this</a><a href="#updates">Recent updates</a>
   </nav>
+
+  <section id="tour">
+    <h2>Video tour</h2>
+    <div class="video-slot" data-video="tour"></div>
+  </section>
 
   <section id="use">
     <h2>How to use it</h2>
@@ -53,6 +58,7 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
   <section id="embed">
     <h2>Embed the map</h2>
     <p>Add the live map to an article, blog post or lesson. The embed shows the map only, with a small link back here, and stays current as the map updates every day. It's free to use.</p>
+    <div class="video-slot" data-video="embedding"></div>
     <div class="embed-opts" role="group" aria-label="Where the map opens">
       <span class="note">Opens on:</span>
       <button class="chip on" data-embed-region="">World</button><button class="chip" data-embed-region="europe">Europe</button><button class="chip" data-embed-region="mideast">Middle East</button><button class="chip" data-embed-region="asia">Asia</button><button class="chip" data-embed-region="americas">Americas</button>
@@ -93,6 +99,7 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
   <section id="agent">
     <h2>How it stays current</h2>
     <p>An automated research agent (Claude, by Anthropic) runs every morning. It reviews independent reporting since its last run, updates events, facility status and prices, and refreshes pump prices from the official feeds. Every item it writes must cite a source it opened that day.</p>
+    <div class="video-slot" data-video="daily-updates"></div>
     <ul>
       <li><b>Routine updates</b> (new events, price refreshes, status notes) are published automatically.</li>
       <li><b>Bigger changes wait for human review</b>: new facilities, critical-severity events, a chokepoint changing status, and corrections to earlier items.</li>
@@ -105,6 +112,7 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
   <section id="whatif">
     <h2>The what-if model</h2>
     <p>Closing a chokepoint in the What-if tab estimates the immediate, physical effect on oil flows. It is deliberately simple:</p>
+    <div class="video-slot" data-video="what-if"></div>
     <ul>
       <li><b>Flows</b> are pre-crisis baselines: Hormuz from the IEA's 2025 figures (19.9 mb/d, about a quarter of seaborne oil trade), other chokepoints from 1H 2025 tanker-tracking.</li>
       <li><b>Bypass pipelines</b> count only their spare capacity, at the low end of published ranges. A pipeline or export terminal that is currently offline or damaged is excluded, and the model warns when one is running reduced.</li>
@@ -144,6 +152,21 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
   <footer class="doc-foot">Basemap © Esri, HERE, Garmin, © OpenStreetMap contributors · Ship transits: IMF PortWatch · Built by <a href="https://www.linkedin.com/in/courtneyhwilson/" target="_blank" rel="noopener">Courtney Wilson</a></footer>
 </main>
 
+<script>
+(async function () { // Video players, from media/videos.json (written by tools/video/publish.mjs)
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmt = d => new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  const len = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+  const v = await fetch('/media/videos.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+  document.querySelectorAll('.video-slot').forEach(slot => {
+    const x = v?.videos?.[slot.dataset.video];
+    if (!x) { slot.remove(); return; }
+    slot.outerHTML = `<figure class="video"><video controls muted preload="none" playsinline poster="${esc(x.poster)}" src="${esc(x.src)}" aria-label="${esc(x.title)}"></video>
+      <figcaption><b>${esc(x.title)}</b> · ${len(x.duration)} · Recorded ${esc(fmt(x.recorded))}. Figures on screen are as of the recording date.
+      ${x.transcript?.length ? `<details><summary>Transcript</summary>${x.transcript.map(t => `<p>${esc(t)}</p>`).join('')}</details>` : ''}</figcaption></figure>`;
+  });
+})();
+</script>
 <script>
 (function () { // Embed the map: build the snippet for the chosen region and copy it
   const code = document.getElementById('embedCode'), copy = document.getElementById('copyEmbed'), link = document.getElementById('embedLink');

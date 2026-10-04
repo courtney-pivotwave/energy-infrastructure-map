@@ -184,8 +184,11 @@ mkdirSync(DIST, { recursive: true });
 for (const f of ['about.html', 'styles.css', 'app.js', 'favicon.svg', 'og.png']) cpSync(join(ROOT, f), join(DIST, f));
 cpSync(join(ROOT, 'data'), join(DIST, 'data'), { recursive: true, filter: s => !s.includes(`${'data'}/research`) });
 writeFileSync(join(DIST, `${INDEXNOW_KEY}.txt`), INDEXNOW_KEY);
-// Local only: the link-preview card template (tools/ is excluded from Vercel uploads via .vercelignore)
-if (existsSync(join(ROOT, 'tools'))) cpSync(join(ROOT, 'tools'), join(DIST, 'tools'), { recursive: true });
+// Walkthrough videos (web versions written by tools/video/publish.mjs)
+if (existsSync(join(ROOT, 'media'))) cpSync(join(ROOT, 'media'), join(DIST, 'media'), { recursive: true });
+// Local only: the link-preview card template (tools/ is excluded from Vercel uploads via .vercelignore).
+// tools/video is left out: it holds the video recorder, its node_modules and full-size renders.
+if (existsSync(join(ROOT, 'tools'))) cpSync(join(ROOT, 'tools'), join(DIST, 'tools'), { recursive: true, filter: s => !s.includes(join('tools', 'video')) });
 
 const pw = {};
 await Promise.all(Object.entries(scenarios.chokepoints || {}).filter(([, c]) => c.portwatch).map(async ([id, c]) => { pw[id] = await portwatch(c.portwatch); }));

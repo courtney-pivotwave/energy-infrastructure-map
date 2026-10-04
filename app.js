@@ -786,4 +786,46 @@ if (fuelCount) fuelCount.textContent = groups.fuel.getLayers().length;
 renderLatest();
 renderScenario();
 renderChokepoints();
+
+// ── Video tour: Tour button, a one-time prompt for new visitors, ?tour=1 opens it directly ──
+const TOUR_SEEN = 'sem.tour';
+const fmtLen = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+loadJSON('media/videos.json', null).then(v => {
+  const t = v?.videos?.tour;
+  if (!t || EMBED) return;
+  const modal = $('#videoModal'), video = $('#videoModal video'), btn = $('#tourBtn'), prompt = $('#tourPrompt');
+  let lastFocus = null;
+  const seen = () => store.set(TOUR_SEEN, '1');
+  const hidePrompt = () => { prompt.hidden = true; };
+  function open() {
+    seen(); hidePrompt();
+    lastFocus = document.activeElement;
+    if (!video.src) { video.poster = t.poster; video.src = t.src; } // nothing downloads until someone asks for it
+    video.muted = true; // the videos are silent (captions are burned in); muted also lets ?tour=1 start without a click
+    $('#videoCap').innerHTML = `<b>${esc(t.title)}</b> · ${fmtLen(t.duration)} · Recorded ${esc(fmtDate(t.recorded))} · <a href="about.html#tour">Transcript and more videos</a>`;
+    modal.hidden = false;
+    $('#videoClose').focus();
+    video.play().catch(() => {});
+  }
+  function close() {
+    video.pause();
+    modal.hidden = true;
+    lastFocus?.focus?.();
+  }
+  btn.hidden = false;
+  btn.addEventListener('click', open);
+  $('#videoClose').addEventListener('click', close);
+  modal.addEventListener('click', e => { if (e.target === modal) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) close(); });
+
+  if (params.get('tour') === '1') { open(); return; }
+  if (store.get(TOUR_SEEN)) return;
+  const mins = Math.max(1, Math.round(t.duration / 60));
+  prompt.innerHTML = `<button class="tp-play"><span class="tp-thumb" style="background-image:url('${esc(t.poster)}')"><span aria-hidden="true">▶</span></span>
+    <span class="tp-text"><b>New here?</b> Watch the ${mins}-minute tour</span></button>
+    <button class="tp-x" aria-label="Dismiss"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button>`;
+  prompt.querySelector('.tp-play').addEventListener('click', open);
+  prompt.querySelector('.tp-x').addEventListener('click', () => { seen(); hidePrompt(); });
+  setTimeout(() => { if (store.get(TOUR_SEEN)) return; prompt.hidden = false; }, 1500);
+});
 })();

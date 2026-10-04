@@ -8,6 +8,7 @@ Static site deployed on Vercel from `main`. The build (`scripts/build.mjs`, no d
 - `data/*.json` — all content. Schema and ownership rules: `agent/SCHEMA.md`.
 - `scripts/update_fuel.py` — refreshes official pump prices (EIA, EU Weekly Oil Bulletin, UK DESNZ, ECB FX). Stdlib only.
 - `tools/video/` — scripted walkthrough videos of the real map (headless Chrome + ffmpeg, own `package.json`). See its README.
+- `media/` — self-hosted web versions of the videos plus `videos.json`, written by `tools/video/publish.mjs` (don't hand-edit). Rendered on the About page (tour, What-if, daily updates, embed sections) and by the map's Tour button, which also shows new visitors a one-time prompt (`localStorage["sem.tour"]`, never in embeds); `?tour=1` opens the tour directly. Self-hosted on purpose: YouTube embeds would add third-party cookies.
 - `scripts/validate.mjs` — validates `data/`. Run after every data change; must pass before committing.
 - `agent/UPDATE_AGENT.md` — instructions for the scheduled news/conflict update agent.
 - `agent/SOURCE_REVIEW.md` — monthly source-review agent; maintains `data/sources.json` (PR only). `scripts/source_activity.mjs` gives it citation counts and unregistered domains.

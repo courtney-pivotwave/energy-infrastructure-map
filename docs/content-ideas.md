@@ -2,6 +2,26 @@
 
 Backlog of content strategy ideas to pick up later. Newest at the top. Nothing here is scheduled yet.
 
+## 2026-10-03: Data dashboard
+
+A very rich, interactive dashboard of every key data point on the site, built as a working resource for reporters,
+non-profits, citizens, content creators and analysts.
+
+Notes for when we pick it up:
+- **What's already in `data/`:** 8 chokepoints with live PortWatch transits against the pre-war baseline; 26 pipelines,
+  68 sites, 64 fields and 10 routes with capacities and current status (`status.json`); 5 market benchmarks; pump
+  prices for 36 country/fuel entries since the 2026-02-23 reference week; 76 dated events; What-if scenarios; 88
+  registered sources. Most of the dashboard is views over this data. The new datasets in the "Data visualizations"
+  entry below would add depth later.
+- **Features for these audiences:** filter, sort and compare across assets, countries and dates; every number dated and
+  linked to its source; CSV/JSON download of each table (an open data API in practice); "cite this" text and
+  permalinks that keep the current filters; embeddable panels with credit, reusing the `?embed=1` pattern.
+- **Fit with the site:** a `/dashboard/` page (or `/data/`) built from the same `data/` files so it stays current with
+  the daily agent. Only show panels with real data behind them. No new trackers or cookies; the `esc()` and `safeUrl()`
+  rules apply to everything rendered.
+- **Overlap to settle:** the `/charts/` experiment (2026-09-30) and the generated answer pages. The dashboard could become
+  the hub that links to both.
+
 ## 2026-09-30: Data visualizations
 
 **Experiment live 2026-09-30:** [/charts/](https://strategicenergymap.org/charts/) with four charts (oil flows per chokepoint, Hormuz

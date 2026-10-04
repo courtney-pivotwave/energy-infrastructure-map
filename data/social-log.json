@@ -269,6 +269,21 @@
     },
     "at": "2026-10-03T22:08:13.359Z"
    }
+  },
+  "2026-10-03-saudi-houthi-offensive": {
+   "x": {
+    "id": "2106700514054361252",
+    "at": "2026-10-04T10:58:37.983Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2amxvrtc2x",
+    "cid": "bafyreidqoaldqron3vr25rxueyjvjaqjet247xcwvrzm66ibcalxai75r4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2amxvrtc2x",
+     "cid": "bafyreidqoaldqron3vr25rxueyjvjaqjet247xcwvrzm66ibcalxai75r4"
+    },
+    "at": "2026-10-04T10:58:39.433Z"
+   }
   }
  }
 }

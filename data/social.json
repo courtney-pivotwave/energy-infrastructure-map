@@ -376,6 +376,36 @@
     "MaritimeSecurity"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-04-digest",
+   "created": "2026-10-04",
+   "type": "digest",
+   "text": "Brent fell to $102.25, WTI to $91.11 on 2 Oct as G7 agreed to release 100m barrels of reserves. Reuters/AFP saw a fire at Aramco's Riyadh refinery on 3 Oct; Houthis claim a strike, unconfirmed by Saudi officials.",
+   "url": "https://strategicenergymap.org/fuel-prices/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Diesel",
+    "SaudiArabia"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-04-explainer-strait-of-hormuz",
+   "created": "2026-10-04",
+   "type": "explainer",
+   "text": "The Strait of Hormuz is the top oil chokepoint, normally ~20m b/d of crude and a fifth of LNG trade. Closed to normal traffic since 28 Feb; flows averaged 13.2 mb/d through 29 Sep, ~77% of pre-war levels, under escort.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Shipping",
+    "OOTT"
+   ],
+   "reply_to": null
   }
  ]
 }

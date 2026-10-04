@@ -5,25 +5,25 @@
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 99.81,
-   "week_ago": 99.74,
+   "value": 102.25,
+   "week_ago": 103.08,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Little changed on 2 Oct (-2.4% intraday) after 1 Oct's rise, as markets weighed new US sanctions on Iran's auto and rail sectors and a US-EU dispute over releasing diesel reserves against the continued US-Iran impasse over sanctions relief. Week-ago reuses the prior run's 1 Oct value (1 day earlier, not a full week) — the closest dated figure available.",
+   "note": "Settled down 6 cents on 2 Oct as G7 nations agreed to release diesel and crude reserves (100 mb over four months, front-loaded diesel in the first 20 days) to ease the fuel squeeze. Week-ago uses 23 Sep (9 days prior, Wikipedia chronology) — the closest dated figure found this run, not a full week.",
    "source": {
-    "name": "Trading Economics — Brent Crude Oil",
-    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "name": "The Daily Star (AFP) — Oil settles lower after Europe agrees to tap diesel reserves",
+    "url": "https://thedailystar.net/business/news/oil-settles-lower-after-europe-agrees-tap-diesel-reserves-4289166",
     "date": "2026-10-02"
    },
    "extra_sources": [
     {
-     "name": "gCaptain (Bloomberg) — JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
-     "url": "https://gcaptain.com/jpmorgan-and-goldman-see-mideast-oil-flows-near-pre-war-levels/",
-     "date": "2026-09-30"
+     "name": "Trading Economics — Brent Crude Oil",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "date": "2026-10-02"
     },
     {
      "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
@@ -41,21 +41,26 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 89.36,
-   "week_ago": 91.45,
+   "value": 91.11,
+   "week_ago": 92.16,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Fell nearly 4% on 2 Oct as European governments weighed releasing more strategic reserves to ease the diesel squeeze, per Trading Economics commentary; the US separately pressed Germany and France to draw down pledged stocks. Week-ago reuses the prior run's 1 Oct value (1 day earlier, not a full week) — the closest dated figure available.",
+   "note": "Fell $1.76 (-1.9%) on 2 Oct as the G7's diesel/crude reserve release plan pointed to refined-product constraints easing rather than crude scarcity, with Middle East flows continuing to recover. Week-ago uses 23 Sep (9 days prior, Wikipedia chronology) — the closest dated figure found this run, not a full week.",
    "source": {
-    "name": "Trading Economics — Crude Oil (WTI)",
-    "url": "https://tradingeconomics.com/commodity/crude-oil",
+    "name": "The Daily Star (AFP) — Oil settles lower after Europe agrees to tap diesel reserves",
+    "url": "https://thedailystar.net/business/news/oil-settles-lower-after-europe-agrees-tap-diesel-reserves-4289166",
     "date": "2026-10-02"
    },
    "extra_sources": [
+    {
+     "name": "Trading Economics — Crude Oil (WTI)",
+     "url": "https://tradingeconomics.com/commodity/crude-oil",
+     "date": "2026-10-02"
+    },
     {
      "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
      "url": "https://en.wikipedia.org/wiki/2026%E2%80%932028_world_oil_market_chronology",
@@ -72,15 +77,15 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 73.04,
-   "week_ago": 73.59,
+   "value": 74.76,
+   "week_ago": 73.04,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Week-ago reuses the prior run's 1 Oct value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Staged a sharp afternoon recovery on 2 Oct, reversing earlier losses to trade near €75.80 intraday before settling at €74.76 (+1.1%). Week-ago reuses the prior run's figure (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
@@ -103,19 +108,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 25.79,
-   "week_ago": 25.74,
+   "value": 25.71,
+   "week_ago": 25.79,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
     "date": "2026-09-14",
     "note": "Assessed at 'high-USD 29s', the highest in about 2.5 years (Global LNG Hub)."
    },
-   "note": "Week-ago reuses the prior run's 30 Sep value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Fell 0.3% on 2 Oct. Week-ago reuses the prior run's 1 Oct value (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
    },
    "extra_sources": [
     {
@@ -134,10 +139,10 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.93,
-   "week_ago": 2.95,
+   "value": 3.04,
+   "week_ago": 2.93,
    "pre_crisis": 2.99,
-   "note": "Value is the NYMEX front-month on 2 Oct (Trading Economics), an over one-week low on stronger production and mild-weather demand forecasts; week-ago reuses the prior run's 1 Oct front-month value (1 day earlier, not a full week); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "Value is the NYMEX front-month on 2 Oct (Trading Economics), up 2.3% d/d; week-ago reuses the prior run's figure (1 day earlier, not a full week); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
@@ -157,22 +162,17 @@
    ]
   }
  ],
- "note": "Brent held near $100 and WTI fell on 2 October as the US Treasury sanctioned Iran's carmakers and railways over their use for overland oil, fertiliser and chemical shipments, and Washington pressed Germany and France to release more diesel reserves after both said they'd drawn down little of their pledged stocks; the strait remains formally closed.",
+ "note": "Brent and WTI settled lower on 2 October after G7 governments agreed to release 100 million barrels of diesel and crude reserves over four months, front-loaded in the first 20 days, to ease Europe's fuel squeeze; the strait remains formally closed. TTF and Henry Hub ticked up on the day.",
  "note_sources": [
+  {
+   "name": "The Daily Star (AFP) — Oil settles lower after Europe agrees to tap diesel reserves",
+   "url": "https://thedailystar.net/business/news/oil-settles-lower-after-europe-agrees-tap-diesel-reserves-4289166",
+   "date": "2026-10-02"
+  },
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
    "date": "2026-10-02"
-  },
-  {
-   "name": "US Treasury — Operation Economic Outcast Targets Iran's Remaining Industrial Lifelines",
-   "url": "https://home.treasury.gov/news/press-releases/sb0643",
-   "date": "2026-10-01"
-  },
-  {
-   "name": "Rigzone — Europe Holds Emergency Diesel Talks",
-   "url": "https://www.rigzone.com/news/europe_holds_emergency_diesel_talks-01-oct-2026-184749-article",
-   "date": "2026-10-01"
   }
  ]
 }

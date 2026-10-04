@@ -3,7 +3,10 @@
  * plus captions, cursor, highlights and title cards.
  */
 (() => {
-  if (window.top !== window) return;
+  // Same-origin iframes (an embedded map) get the clock and Leaflet hooks too, driven by the top page's tick();
+  // only the top page gets the overlay.
+  const TOP = window.top === window;
+  const children = () => [...document.querySelectorAll('iframe')].map(f => { try { return f.contentWindow.__vd; } catch { return null; } }).filter(Boolean);
 
   // ── Virtual clock ──
   // Until virtualize() is called everything runs in real time. After it, time only moves when record.mjs calls
@@ -82,7 +85,11 @@
     },
   });
   let moving = false;
-  const tilesLoading = () => { let n = false; window.__map?.eachLayer(l => { if (l.isLoading?.()) n = true; }); return n; };
+  const tilesLoading = () => {
+    let n = false;
+    window.__map?.eachLayer(l => { if (l.isLoading?.()) n = true; });
+    return n || children().some(c => c.tilesLoading());
+  };
 
   // ── Overlay ──
   const CSS = `
@@ -93,6 +100,15 @@
     opacity: 0; transition: opacity .45s ease, transform .45s ease; text-wrap: balance; }
   #vd-cap.on { opacity: 1; transform: translate(-50%, 0); }
   #vd-cap b { color: #ffc28a; font-weight: 700; }
+  #vd-cap code, #vd-code code { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: .9em; color: #ffc28a;
+    background: rgba(255,255,255,.1); padding: 1px 6px; border-radius: 5px; }
+  #vd-code { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -46%); width: min(980px, 88vw); opacity: 0;
+    transition: opacity .5s ease, transform .5s ease; background: #141c28; color: #e6edf5; border-radius: 14px; padding: 22px 28px 26px;
+    box-shadow: 0 24px 70px rgba(0,0,0,.4); font-family: 'Segoe UI', system-ui, sans-serif; }
+  #vd-code.on { opacity: 1; transform: translate(-50%, -50%); }
+  #vd-code .vd-lbl { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #e67e22; margin-bottom: 12px; }
+  #vd-code pre { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 19px; line-height: 1.6; white-space: pre-wrap; word-break: break-all; }
+  #vd-code .vd-t { color: #7fb4e8; } #vd-code .vd-a { color: #ffc28a; } #vd-code .vd-s { color: #9fe0b0; }
   #vd-cursor { position: absolute; left: 0; top: 0; width: 26px; height: 26px; transform: translate(720px, 520px);
     transition: transform .85s cubic-bezier(.45, .05, .25, 1); filter: drop-shadow(0 2px 3px rgba(0,0,0,.35)); }
   #vd-ripple { position: absolute; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; border: 3px solid #e67e22; opacity: 0; }
@@ -104,14 +120,14 @@
   #vd-card { position: absolute; inset: 0; background: #f5f5f0; display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; color: #1a2332; opacity: 1; transition: opacity .7s ease; padding: 0 120px; }
   #vd-card.off { opacity: 0; }
-  #vd-card .kick { font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #c75000; margin-bottom: 18px;
+  #vd-card .vd-kick { font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #c75000; margin-bottom: 18px;
     display: flex; align-items: center; gap: 10px; }
-  #vd-card .kick img { width: 26px; height: 26px; }
+  #vd-card .vd-kick img { width: 26px; height: 26px; }
   #vd-card h1 { font-size: 54px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02em; max-width: 1000px; text-wrap: balance; }
   #vd-card p { font-size: 22px; color: #4a5568; margin-top: 20px; max-width: 820px; line-height: 1.45; text-wrap: balance; }
-  #vd-card .url { margin-top: 30px; font-size: 26px; font-weight: 700; color: #1a6bb5; }
-  #vd-card .rule { width: 72px; height: 4px; background: #e67e22; border-radius: 2px; margin: 26px auto 0; }
-  #vd-card .follow { margin-top: 14px; font-size: 16px; color: #8a94a6; }
+  #vd-card .vd-url { margin-top: 30px; font-size: 26px; font-weight: 700; color: #1a6bb5; }
+  #vd-card .vd-rule { width: 72px; height: 4px; background: #e67e22; border-radius: 2px; margin: 26px auto 0; }
+  #vd-card .vd-follow { margin-top: 14px; font-size: 16px; color: #8a94a6; }
   `;
 
   const CURSOR = `<svg viewBox="0 0 26 26" width="26" height="26"><path d="M4 2.5l0 19 5.2-4.9 3.6 7.9 3.3-1.5-3.6-7.8 7.1-.4z" fill="#fff" stroke="#1a2332" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
@@ -120,11 +136,11 @@
     if (document.getElementById('vd-root')) return;
     const style = document.createElement('style'); style.textContent = CSS; document.head.appendChild(style);
     const root = document.createElement('div'); root.id = 'vd-root';
-    root.innerHTML = `<div id="vd-cap"></div><div id="vd-ripple"></div><div id="vd-cursor">${CURSOR}</div>
+    root.innerHTML = `<div id="vd-code"></div><div id="vd-cap"></div><div id="vd-ripple"></div><div id="vd-cursor">${CURSOR}</div>
       <div id="vd-card"></div>`; // starts as a blank cover so page loading never shows
     document.body.appendChild(root);
   }
-  document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', mount) : mount();
+  if (TOP) document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', mount) : mount();
 
   const $ = id => document.getElementById(id);
   const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
@@ -134,6 +150,7 @@
     virtualize() {
       vt = vt0 = realNow(); perf0 = realPerf(); virtual = true;
       for (const a of document.getAnimations()) { a.pause(); seen.set(a, a.currentTime ?? 0); } // keep running pulses in phase
+      children().forEach(c => c.virtualize());
     },
     /** Advance virtual time by one frame. Returns what record.mjs needs to know before taking the screenshot. */
     tick(dt) {
@@ -151,9 +168,15 @@
       const ts = performance.now();
       for (const cb of q.values()) { try { cb(ts); } catch (e) { console.error(e); } }
       stepAnimations(dt);
-      return { moving, loading: tilesLoading() };
+      const kids = children().map(c => c.tick(dt));
+      return { moving: moving || kids.some(k => k.moving), loading: tilesLoading() };
     },
     tilesLoading,
+    /** Close any open map tooltips, here and in embedded maps. */
+    closeTooltips() {
+      window.__map?.eachLayer(l => l.closeTooltip?.());
+      children().forEach(c => c.closeTooltips());
+    },
     /** Start a camera move (flyTo / flyToBounds); tick() reports moving until it ends. */
     move(method, args) {
       moving = true;
@@ -173,16 +196,24 @@
       };
       if (el.classList.contains('on')) { el.classList.remove('on'); setTimeout(swap, 380); } else swap();
     },
-    card(kind, title, sub) {
+    // Overlay class names carry a vd- prefix so a host page's own CSS (e.g. a .url class) can't restyle them.
+    card(kind, title, sub, url = 'strategicenergymap.org') {
       const el = $('vd-card');
-      const kick = `<div class="kick"><img src="/favicon.svg" alt="">Strategic Energy Infrastructure Map</div>`;
+      const kick = `<div class="vd-kick"><img src="/favicon.svg" alt="">Strategic Energy Infrastructure Map</div>`;
       el.innerHTML = kind === 'end'
-        ? `${kick}<h1>${title}</h1>${sub ? `<p>${sub}</p>` : ''}<div class="url">strategicenergymap.org</div>
-           <div class="follow">Follow @StratEnergyMap on X · @strategicenergymap.org on Bluesky</div>`
-        : `${kick}<h1>${title}</h1>${sub ? `<p>${sub}</p>` : ''}<div class="rule"></div><div class="url">strategicenergymap.org</div>`;
+        ? `${kick}<h1>${title}</h1>${sub ? `<p>${sub}</p>` : ''}<div class="vd-url">${url}</div>
+           <div class="vd-follow">Follow @StratEnergyMap on X · @strategicenergymap.org on Bluesky</div>`
+        : `${kick}<h1>${title}</h1>${sub ? `<p>${sub}</p>` : ''}<div class="vd-rule"></div><div class="vd-url">${url}</div>`;
       el.classList.remove('off');
     },
     hideCard() { $('vd-card').classList.add('off'); },
+    /** A code card in the middle of the screen (trusted HTML), or hide it with no argument. */
+    code(label, html) {
+      const el = $('vd-code');
+      if (!html) { el.classList.remove('on'); return; }
+      el.innerHTML = `<div class="vd-lbl">${label}</div><pre>${html}</pre>`;
+      el.classList.add('on');
+    },
     /** Blank cover in the site's background colour, for dissolving between pages. instant: no fade. */
     cover(instant) {
       const el = $('vd-card');

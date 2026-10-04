@@ -41,9 +41,12 @@ const TILE_WAIT_MS = 3000; // give up waiting on a slow tile after this long (re
 // ── Build + static server ──
 if (!flag('--no-build')) execFileSync('node', ['scripts/build.mjs'], { cwd: ROOT, stdio: 'inherit' });
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.xml': 'application/xml', '.txt': 'text/plain' };
+const ASSETS = join(HERE, 'assets'); // pages that exist only for videos (e.g. a mock site hosting the embed), served at /_video/
 const server = createServer((req, res) => {
-  let p = join(DIST, decodeURIComponent(new URL(req.url, 'http://x').pathname));
-  if (!p.startsWith(DIST)) { res.writeHead(403).end(); return; }
+  const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
+  const [base, rel] = path.startsWith('/_video/') ? [ASSETS, path.slice(8)] : [DIST, path];
+  let p = join(base, rel);
+  if (!p.startsWith(base)) { res.writeHead(403).end(); return; }
   if (existsSync(p) && statSync(p).isDirectory()) p = join(p, 'index.html');
   if (!existsSync(p)) { res.writeHead(404).end(); return; }
   res.writeHead(200, { 'content-type': TYPES[extname(p)] || 'application/octet-stream' }).end(readFileSync(p));
@@ -55,7 +58,7 @@ const SITE = `http://127.0.0.1:${server.address().port}`;
 const CHROME = ['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/usr/bin/chromium']
   .find(p => existsSync(p));
 const browser = await chromium.launch({ executablePath: CHROME, headless: true, args: ['--hide-scrollbars', '--font-render-hinting=none'] });
-const context = await browser.newContext({ viewport: VIEW, deviceScaleFactor: SCALE, reducedMotion: 'no-preference' });
+const context = await browser.newContext({ viewport: VIEW, deviceScaleFactor: SCALE, reducedMotion: 'no-preference', permissions: ['clipboard-read', 'clipboard-write'] });
 await context.route(/_vercel\/insights/, r => r.abort()); // never count recordings as visits
 await context.addInitScript({ path: join(HERE, 'overlay.js') });
 const page = await context.newPage();
@@ -105,7 +108,7 @@ const v = {
     await v.clearCaption();
     await page.evaluate(t => window.__vd.caption(t), html);
     const text = html.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
-    cues.push({ start: clock(), text });
+    cues.push({ start: clock(), text, html });
     await render(hold ?? Math.max(3000, text.length / 15 * 1000));
   },
   async clearCaption() {
@@ -114,9 +117,9 @@ const v = {
     cues.at(-1).end = clock();
     await render(450);
   },
-  async card(kind, title, sub, hold = 3500) {
+  async card(kind, title, sub, hold = 3500, url) {
     await v.clearCaption();
-    await page.evaluate(([k, t, s]) => window.__vd.card(k, t, s), [kind, title, sub]);
+    await page.evaluate(([k, t, s, u]) => window.__vd.card(k, t, s, u ?? undefined), [kind, title, sub, url ?? null]);
     await render(hold);
   },
   async hideCard() { await page.evaluate(() => window.__vd.hideCard()); await render(700); },
@@ -143,12 +146,37 @@ const v = {
     const x = b.x + b.width / 2, y = b.y + b.height / 2;
     await page.evaluate(([x, y, ms]) => window.__vd.cursorTo(x, y, ms), [x, y, move]);
     await render(move + 50);
-    await page.mouse.move(x, y);
+    await page.mouse.move(x, y, { steps: 12 }); // in steps, so markers passed on the way get their mouseout
     await render(100);
+  },
+  /** Drag from one point to another (e.g. to pan the map), moving a little every frame. */
+  async drag(from, to, { ms = 1400, move = 850, keepCaption = false } = {}) {
+    if (!keepCaption) await v.clearCaption();
+    await page.evaluate(([x, y, ms]) => window.__vd.cursorTo(x, y, ms), [from.x, from.y, move]);
+    await render(move + 50);
+    await page.mouse.move(from.x, from.y);
+    await page.mouse.down();
+    const n = Math.max(2, Math.round(ms / FRAME_MS));
+    for (let i = 1; i <= n; i++) {
+      const t = i / n, e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      const x = from.x + (to.x - from.x) * e, y = from.y + (to.y - from.y) * e;
+      await page.mouse.move(x, y);
+      await page.evaluate(([x, y]) => window.__vd.cursorTo(x, y, 0), [x, y]);
+      if (recording) await frame(); else await sleep(FRAME_MS);
+    }
+    await page.mouse.up();
+    await page.mouse.move(2, 2, { steps: 12 }); // move the real pointer off the map…
+    await page.evaluate(() => window.__vd.closeTooltips()); // …and close any tooltip the moving map opened under it
+    await render(600);
   },
   /** Screen position of a map coordinate, for clicking or hovering map features. */
   point: latlng => page.evaluate(ll => { const p = window.__map.latLngToContainerPoint(ll); return { x: p.x, y: p.y }; }, latlng),
-  async cursorAway() { await page.evaluate(() => window.__vd.cursorTo(innerWidth * 0.55, innerHeight * 0.55)); },
+  /** Move the cursor out of the way (the real pointer too, closing any tooltip it had open). */
+  async cursorAway() {
+    const p = await page.evaluate(() => { const p = { x: innerWidth * 0.55, y: innerHeight * 0.55 }; window.__vd.cursorTo(p.x, p.y); return p; });
+    await page.mouse.move(p.x, p.y, { steps: 12 });
+    await page.evaluate(() => window.__vd.closeTooltips());
+  },
   /** Pulse a ring around an element so viewers know where to look. */
   async highlight(selector, ms = 2500) {
     await page.evaluate(([s, ms]) => window.__vd.highlight(s, ms), [selector, ms]);
@@ -165,13 +193,20 @@ const v = {
     if (recording) { const limit = frameNo + (seconds + 3) * FPS; while ((await frame()).moving && frameNo < limit); }
     await render(400);
   },
-  /** Dissolve to another page of the site (through the background colour) and keep recording there. */
-  async goto(path, cursor) {
-    await v.clearCaption();
+  /** Dissolve to another page of the site (through the background colour) and keep recording there.
+   *  keepCaption carries the current caption across the cut (it is re-shown on the new page under the dissolve). */
+  async goto(path, { cursor, keepCaption = false } = {}) {
+    const carry = keepCaption && cues.at(-1)?.end == null ? cues.at(-1).html : null;
+    if (!carry) await v.clearCaption();
     if (recording) { await page.evaluate(() => window.__vd.cover()); await render(700); }
     await page.goto(new URL(path, SITE).href, { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
-    await page.evaluate(([rec, c]) => { window.__vd.cover(true); if (c) window.__vd.cursorTo(c.x, c.y, 0); if (rec) window.__vd.virtualize(); }, [recording, cursor]);
+    await page.evaluate(([rec, c, cap]) => {
+      window.__vd.cover(true);
+      if (c) window.__vd.cursorTo(c.x, c.y, 0);
+      if (cap) window.__vd.caption(cap);
+      if (rec) window.__vd.virtualize();
+    }, [recording, cursor, carry]);
     await page.evaluate(() => window.__vd.hideCard());
     await render(700);
   },
@@ -186,7 +221,7 @@ const v = {
     await render(opts.pause ?? 350);
     await page.evaluate(() => window.__vd.ripple());
     await render(250);
-    await v.goto(new URL(href, page.url()).pathname + '?notrack=1', { x, y });
+    await v.goto(new URL(href, page.url()).pathname + '?notrack=1', { cursor: { x, y } });
   },
   text: selector => page.locator(selector).first().innerText(),
 };

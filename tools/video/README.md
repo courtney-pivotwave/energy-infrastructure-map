@@ -23,4 +23,7 @@ Flags: `--no-build` (reuse `dist/`), `--draft` (960×540 at 10 fps, to check a s
   `v.flyBounds`, `v.scrollTo`…) rather than real-time sleeps or native smooth scrolling, which don't follow
   the virtual clock.
 
+- `assets/`: pages that exist only for videos, served at `/_video/` (e.g. the mock host page for the embed video).
+- `descriptions/`: YouTube description text, for anything viewers need to copy (like the embed code).
+
 Recordings never count as visits: the analytics script is blocked.

@@ -1,0 +1,16 @@
+Put the live Strategic Energy Infrastructure Map on your own site: a map-only view for articles, blogs and classrooms, in one line of HTML.
+
+Copy the embed code (with region options) from the About page:
+https://strategicenergymap.org/about.html#embed
+
+Or paste this into your page:
+
+<iframe src="https://strategicenergymap.org/?embed=1" width="100%" height="480" style="border:0" title="Strategic Energy Infrastructure Map" loading="lazy"></iframe>
+
+To choose where it opens, add &region=europe, &region=mideast, &region=asia or &region=americas to the address, for example:
+https://strategicenergymap.org/?embed=1&region=mideast
+
+The embedded map stays current as the map updates every day. Free, with no ads, no cookies and no tracking across sites.
+
+Explore the full map: https://strategicenergymap.org
+Follow: @StratEnergyMap on X · @strategicenergymap.org on Bluesky

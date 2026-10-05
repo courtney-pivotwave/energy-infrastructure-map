@@ -344,6 +344,21 @@
     },
     "at": "2026-10-05T11:01:48.519Z"
    }
+  },
+  "2026-10-04-explainer-strait-of-hormuz": {
+   "x": {
+    "id": "2107193551113322817",
+    "at": "2026-10-05T19:37:47.194Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx5o47ta2n2u",
+    "cid": "bafyreif6rafp2sb3vhnadxqswr3ca2l5wsr3rjb2t6j5jis4hx4hcts7xq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx5o47ta2n2u",
+     "cid": "bafyreif6rafp2sb3vhnadxqswr3ca2l5wsr3rjb2t6j5jis4hx4hcts7xq"
+    },
+    "at": "2026-10-05T19:37:48.937Z"
+   }
   }
  }
 }

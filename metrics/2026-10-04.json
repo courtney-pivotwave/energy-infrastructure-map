@@ -3,7 +3,7 @@
   "start": "2026-09-28",
   "end": "2026-10-04"
  },
- "generated": "2026-10-05T01:47:50.974Z",
+ "generated": "2026-10-05T18:21:00.492Z",
  "sources": {
   "repo": "ok",
   "github": "ok",
@@ -14,10 +14,10 @@
   "vercel": "manual: last entered for the week ending 2026-09-29"
  },
  "site": {
-  "pages_in_sitemap": 135,
-  "events_total": 76,
-  "events_dated_this_week": 11,
-  "changelog_entries_this_week": 8
+  "pages_in_sitemap": 136,
+  "events_total": 78,
+  "events_dated_this_week": 13,
+  "changelog_entries_this_week": 9
  },
  "agents": {
   "daily_update_days": [
@@ -81,24 +81,24 @@
     "title": "Source review: October 2026",
     "branch": "review/sources-2026-10",
     "opened": "2026-10-01",
-    "waiting_days": 3,
+    "waiting_days": 4,
     "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/2"
-   },
-   {
-    "number": 4,
-    "title": "Add /dashboard/ with open data downloads (CC BY 4.0)",
-    "branch": "dashboard",
-    "opened": "2026-10-05",
-    "waiting_days": 0,
-    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/4"
    },
    {
     "number": 3,
     "title": "Review: Add Riyadh Refinery after fire, Houthi strike claim",
     "branch": "review/2026-10-04",
     "opened": "2026-10-04",
-    "waiting_days": 0,
+    "waiting_days": 1,
     "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/3"
+   },
+   {
+    "number": 6,
+    "title": "Brief: week of Oct 5, 2026",
+    "branch": "brief/2026-10-05",
+    "opened": "2026-10-05",
+    "waiting_days": 0,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/6"
    }
   ],
   "prs_closed_this_week": [
@@ -676,9 +676,9 @@
   ],
   "failed": [],
   "bluesky": {
-   "followers": 11,
+   "followers": 10,
    "following": 60,
-   "posts_all_time": 22,
+   "posts_all_time": 23,
    "interactions": 11,
    "likes": 6,
    "reposts": 5,

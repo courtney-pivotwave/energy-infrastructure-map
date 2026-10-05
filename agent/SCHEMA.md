@@ -196,7 +196,7 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   "posts": [
     { "id": "2026-09-28-east-west-restart", "created": "2026-09-28",
       "type": "event",                      // event | digest | explainer | chart | correction | announcement
-      "text": "Saudi Arabia restarted the East-West pipeline at reduced rates after drone strikes shut it on 11 Sep (reported).",
+      "text": "Saudi Arabia restarted the East-West pipeline at reduced rates after drone strikes shut it on Sep 11 (reported).",
       "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
       "event_id": "2026-09-22-east-west-pipeline-restart",   // required for event posts
       "image": null, "alt": null,           // image: fuel-weekly | chokepoints-weekly | hormuz-bypass | chokepoint-oil-flows (alt text required)

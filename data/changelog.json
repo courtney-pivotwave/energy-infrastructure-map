@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-10-05",
+   "kind": "data",
+   "headline": "Seventh Hormuz tanker strike logged; Yemeni forces claim Bab el-Mandeb gains",
+   "changes": [
+    "UKMTO reported the Liberian-flagged tanker Lipsi struck by an unknown projectile in the Strait of Hormuz on Oct 4, leaving it disabled; crew safe, no environmental impact",
+    "Saudi-backed Yemeni government forces said they seized Dhubab district near the Bab el-Mandeb strait from the Houthis; Houthi media denied the claim and it remains unconfirmed",
+    "Brent ticked up to $102.80, WTI held near $90.63, and TTF gas eased slightly to €74.43/MWh"
+   ]
+  },
+  {
    "date": "2026-10-04",
    "kind": "site",
    "headline": "New data dashboard, with free downloads",

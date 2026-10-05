@@ -969,7 +969,8 @@
     ]
    ],
    "details": "Kazakhstan (Tengiz) to Russia (Novorossiysk, Black Sea). ~1,510 km. Capacity ~1.4 million bpd. Commissioned 2001. Primary export route for Kazakh crude. Consortium includes Chevron, ExxonMobil, Shell, KazMunayGas, and Lukoil.",
-   "geo": "Kazakhstan's most important export route — and its biggest strategic vulnerability. The pipeline transits Russia and terminates at a Russian port, giving Moscow potential leverage over Kazakh oil revenues. In 2022, Russian courts briefly ordered CPC operations suspended (officially for environmental reasons), widely interpreted as political pressure on Kazakhstan for insufficient support of Russia's war in Ukraine. Western majors (Chevron holds 15%) have a direct operational stake, creating a complex situation where US corporate interests depend on Russian territorial cooperation. Kazakhstan has accelerated exploration of trans-Caspian export alternatives to reduce this dependency."
+   "geo": "Kazakhstan's most important export route — and its biggest strategic vulnerability. The pipeline transits Russia and terminates at a Russian port, giving Moscow potential leverage over Kazakh oil revenues. In 2022, Russian courts briefly ordered CPC operations suspended (officially for environmental reasons), widely interpreted as political pressure on Kazakhstan for insufficient support of Russia's war in Ukraine. Western majors (Chevron holds 15%) have a direct operational stake, creating a complex situation where US corporate interests depend on Russian territorial cooperation. Kazakhstan has accelerated exploration of trans-Caspian export alternatives to reduce this dependency.",
+   "verified": "2026-10-05"
   },
   {
    "id": "trans-mountain",
@@ -1587,7 +1588,7 @@
    "size": 5,
    "details": "Saudi Arabia (Red Sea). Terminal for East-West/Petroline crude. Provides Hormuz bypass. Also major NGL and refining hub.",
    "geo": null,
-   "verified": "2026-10-02"
+   "verified": "2026-10-05"
   },
   {
    "id": "sidi-kerir-terminal",

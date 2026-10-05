@@ -1,29 +1,29 @@
 {
- "as_of": "2026-10-02",
+ "as_of": "2026-10-05",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 102.25,
-   "week_ago": 103.08,
+   "value": 102.80,
+   "week_ago": 102.25,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Settled down 6 cents on 2 Oct as G7 nations agreed to release diesel and crude reserves (100 mb over four months, front-loaded diesel in the first 20 days) to ease the fuel squeeze. Week-ago uses 23 Sep (9 days prior, Wikipedia chronology) — the closest dated figure found this run, not a full week.",
+   "note": "Up 0.54% on 5 Oct as UKMTO logged a seventh Hormuz tanker strike and Saudi-backed Yemeni forces and Houthi media traded claims over Bab el-Mandeb. Week-ago uses 2 Oct (3 days prior) — the closest dated figure found this run, not a full week.",
    "source": {
-    "name": "The Daily Star (AFP) — Oil settles lower after Europe agrees to tap diesel reserves",
-    "url": "https://thedailystar.net/business/news/oil-settles-lower-after-europe-agrees-tap-diesel-reserves-4289166",
-    "date": "2026-10-02"
+    "name": "Trading Economics — Brent Crude Oil",
+    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "date": "2026-10-05"
    },
    "extra_sources": [
     {
      "name": "Trading Economics — Brent Crude Oil",
      "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-     "date": "2026-10-02"
+     "date": "2026-10-05"
     },
     {
      "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
@@ -41,19 +41,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 91.11,
-   "week_ago": 92.16,
+   "value": 90.63,
+   "week_ago": 91.11,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Fell $1.76 (-1.9%) on 2 Oct as the G7's diesel/crude reserve release plan pointed to refined-product constraints easing rather than crude scarcity, with Middle East flows continuing to recover. Week-ago uses 23 Sep (9 days prior, Wikipedia chronology) — the closest dated figure found this run, not a full week.",
+   "note": "Held below $91 on 5 Oct, down 0.53% on the day, as markets balanced easing supply pressures against renewed geopolitical risk from the Hormuz and Bab el-Mandeb incidents. Week-ago uses 2 Oct (3 days prior) — the closest dated figure found this run, not a full week.",
    "source": {
-    "name": "The Daily Star (AFP) — Oil settles lower after Europe agrees to tap diesel reserves",
-    "url": "https://thedailystar.net/business/news/oil-settles-lower-after-europe-agrees-tap-diesel-reserves-4289166",
-    "date": "2026-10-02"
+    "name": "Trading Economics — Crude Oil (WTI)",
+    "url": "https://tradingeconomics.com/commodity/crude-oil",
+    "date": "2026-10-05"
    },
    "extra_sources": [
     {
@@ -77,19 +77,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 74.76,
-   "week_ago": 73.04,
+   "value": 74.43,
+   "week_ago": 74.76,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Staged a sharp afternoon recovery on 2 Oct, reversing earlier losses to trade near €75.80 intraday before settling at €74.76 (+1.1%). Week-ago reuses the prior run's figure (1 day earlier, not a full week) — the closest dated figure available. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Eased slightly to €74.43 on 5 Oct (-0.44% on the day). Week-ago uses 2 Oct (3 days prior) — the closest dated figure found this run, not a full week. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-02"
+    "date": "2026-10-05"
    },
    "extra_sources": [
     {
@@ -162,17 +162,17 @@
    ]
   }
  ],
- "note": "Brent and WTI settled lower on 2 October after G7 governments agreed to release 100 million barrels of diesel and crude reserves over four months, front-loaded in the first 20 days, to ease Europe's fuel squeeze; the strait remains formally closed. TTF and Henry Hub ticked up on the day.",
+ "note": "Brent ticked back up to $102.80 on 5 October and WTI held below $91, with markets balancing the G7 reserve release against renewed geopolitical risk from a seventh Hormuz tanker strike and contested claims over Bab el-Mandeb; the strait remains formally closed. TTF eased slightly on the day.",
  "note_sources": [
-  {
-   "name": "The Daily Star (AFP) — Oil settles lower after Europe agrees to tap diesel reserves",
-   "url": "https://thedailystar.net/business/news/oil-settles-lower-after-europe-agrees-tap-diesel-reserves-4289166",
-   "date": "2026-10-02"
-  },
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "date": "2026-10-02"
+   "date": "2026-10-05"
+  },
+  {
+   "name": "Trading Economics — Crude Oil (WTI)",
+   "url": "https://tradingeconomics.com/commodity/crude-oil",
+   "date": "2026-10-05"
   }
  ]
 }

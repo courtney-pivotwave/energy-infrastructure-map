@@ -1,13 +1,18 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-05",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
-   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue — UKMTO's delayed disclosures put the tally at six vessels struck since 28 Sep. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline). In 29 Sep notes, JPMorgan put regional crude shipments at 17.5 mb/d (98% of pre-war) and Hormuz flows near 13 mb/d, while Goldman Sachs put total Persian Gulf exports, including clandestine shipments, at 23.3 mb/d for September, matching 2025 averages; both banks cautioned this reflects the industry adapting to sustained risk, not improved safety. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue — UKMTO's delayed disclosures and a 4 Oct strike on the tanker Lipsi put the tally at at least seven vessels struck since 28 Sep. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline). In 29 Sep notes, JPMorgan put regional crude shipments at 17.5 mb/d (98% of pre-war) and Hormuz flows near 13 mb/d, while Goldman Sachs put total Persian Gulf exports, including clandestine shipments, at 23.3 mb/d for September, matching 2025 averages; both banks cautioned this reflects the industry adapting to sustained risk, not improved safety. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
    "since": "2026-02-28",
-   "updated": "2026-10-03",
+   "updated": "2026-10-05",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "Cyprus Mail — Prokopiou's six-week-old tanker struck in Strait of Hormuz",
+     "url": "https://cyprus-mail.com/2026/10/05/prokopious-six-week-old-tanker-struck-in-strait-of-hormuz",
+     "date": "2026-10-05"
+    },
     {
      "name": "gCaptain — Six Vessels Hit in Strait of Hormuz Since Sunday",
      "url": "https://gcaptain.com/six-vessels-hit-in-strait-of-hormuz-since-sunday/",
@@ -57,11 +62,16 @@
   },
   "bab-el-mandeb": {
    "status": "disrupted",
-   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August.",
+   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces began a counteroffensive around 3-4 Oct and said they had seized Dhubab district overlooking the strait; Houthi-aligned media denied the advances, and independent confirmation of territorial or shipping-lane control is not yet available, so the status here is unchanged.",
    "since": "2026-07-20",
-   "updated": "2026-09-25",
+   "updated": "2026-10-05",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "The Print (Reuters) — Yemeni government forces seize district by Bab el-Mandeb, military sources say",
+     "url": "https://theprint.in/world/yemeni-government-forces-seize-district-by-bab-el-mandeb-military-sources-say/3062149",
+     "date": "2026-10-05"
+    },
     {
      "name": "Lloyd's List Intelligence — Red Sea Brief: 3 September 2026",
      "url": "https://www.lloydslistintelligence.com/resources/blog/red-sea-brief-3-september-2026",

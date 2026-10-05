@@ -406,6 +406,51 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-05-digest",
+   "created": "2026-10-05",
+   "type": "digest",
+   "text": "UKMTO logged a seventh Hormuz tanker struck in a week (no casualties) as Brent ticked up to $102.80 and WTI held near $90.63. TTF gas eased to €74.43/MWh.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-05-lipsi-tanker-hormuz",
+   "created": "2026-10-05",
+   "type": "event",
+   "text": "UKMTO: an unknown projectile hit tanker Lipsi's engine room in the Strait of Hormuz on Oct 4, leaving it disabled. Crew safe, no environmental impact — at least the seventh vessel hit there since late Sep.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-04-lipsi-tanker-hormuz",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-05-explainer-cpc-pipeline",
+   "created": "2026-10-05",
+   "type": "explainer",
+   "text": "The CPC pipeline moves Kazakh crude 1,510 km from Tengiz to Russia's Novorossiysk terminal, capacity ~1.4m b/d — most of Kazakhstan's oil exports, and a repeated target in the Black Sea war.",
+   "url": "https://strategicenergymap.org/facilities/cpc-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Pipelines",
+    "BlackSea"
+   ],
+   "reply_to": null
   }
  ]
 }

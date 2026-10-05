@@ -1,8 +1,49 @@
 {
- "updated": "2026-10-04",
- "situation_headline": "G7 nations agreed to release 100m barrels of diesel and crude reserves as Brent eased to $102.25 on 2 Oct; Reuters and AFP witnesses reported a fire at Aramco's refinery south of Riyadh on 3 Oct, which Houthis claimed as a strike (unconfirmed by Saudi officials).",
+ "updated": "2026-10-05",
+ "situation_headline": "UKMTO logged a seventh Hormuz tanker struck in a week (the Lipsi, 4 Oct, no casualties) as Brent held near $102.80; Saudi-backed Yemeni forces said they took ground near Bab el-Mandeb's Dhubab district from the Houthis, who denied the claim.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-04-saudi-backed-forces-bab-el-mandeb-claim",
+   "date": "2026-10-04",
+   "title": "Saudi-backed Yemeni forces claim gains near Bab el-Mandeb; Houthi media deny",
+   "summary": "Reuters, citing three military sources and one government source, reported that Saudi-backed Giants Brigades and National Shield forces, with Saudi-led coalition air support, seized large parts of Dhubab district overlooking Bab el-Mandeb and cut the road toward Mokha, a day after Saudi Arabia's offensive to retake the strait from the Houthis was reported to have begun. A Yemeni government spokesman said forces had 'secured' the strait from the Houthis, but Houthi-aligned media denied the advances, and independent confirmation of territorial control was not available. (Yemeni government and military sources' claim, unverified.)",
+   "category": "military",
+   "severity": "medium",
+   "coords": [12.6, 43.3],
+   "assets": ["bab-el-mandeb"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "The Print (Reuters) — Yemeni government forces seize district by Bab el-Mandeb, military sources say",
+     "url": "https://theprint.in/world/yemeni-government-forces-seize-district-by-bab-el-mandeb-military-sources-say/3062149",
+     "date": "2026-10-05"
+    },
+    {
+     "name": "SBS News — Yemeni Forces Claim Control of Bab el-Mandeb Strait in Counteroffensive Against Houthis",
+     "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008783673",
+     "date": "2026-10-05"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-04-lipsi-tanker-hormuz",
+   "date": "2026-10-04",
+   "title": "UKMTO: tanker Lipsi struck and disabled in Strait of Hormuz",
+   "summary": "An unknown projectile struck the engine room of the Liberian-flagged Aframax tanker Lipsi, managed by Dynacom Tankers Management, about 3.9 nautical miles northeast of Jazirat Um Al Fayarin in the Strait of Hormuz, leaving it disabled and adrift. UKMTO said the crew was safe and reported no environmental impact. It is at least the seventh commercial vessel UKMTO has logged struck in or near the strait since 28 September.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [26.5, 56.3],
+   "assets": ["strait-of-hormuz"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Cyprus Mail — Prokopiou's six-week-old tanker struck in Strait of Hormuz",
+     "url": "https://cyprus-mail.com/2026/10/05/prokopious-six-week-old-tanker-struck-in-strait-of-hormuz",
+     "date": "2026-10-05"
+    }
+   ]
+  },
   {
    "id": "2026-10-02-saudi-houthi-offensive-plan",
    "date": "2026-10-02",

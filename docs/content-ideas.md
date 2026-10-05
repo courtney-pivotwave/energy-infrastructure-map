@@ -15,6 +15,12 @@ went to Asian markets in 2024, and many Asian governments set or subsidise pump 
 subsidy bills and sudden official hikes. The mockup's Asia tab lists 12 countries with candidate official sources
 (unvetted) to feed the monthly source review and `scripts/update_fuel.py`.
 
+**Colour direction 2026-10-04:** a dark theme in the **Aubergine** palette at **High** contrast (all text AAA, chart
+colours at least 4.5:1 on the panels). See [`docs/mockups/dashboard-palettes.html`](mockups/dashboard-palettes.html),
+which holds every palette's values and the contrast-tuning code. A bolder "observatory" experiment (one timeline driving
+ridgelines, a price heatmap and an event swarm) was judged too much for this page; individual pieces such as the
+pump-price heatmap could still be reused.
+
 Notes for when we pick it up:
 - **What's already in `data/`:** 8 chokepoints with live PortWatch transits against the pre-war baseline; 26 pipelines,
   68 sites, 64 fields and 10 routes with capacities and current status (`status.json`); 5 market benchmarks; pump

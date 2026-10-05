@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(ROOT, 'dist');
@@ -93,7 +94,8 @@ function haversine(a, b) {
 
 // ── Page shell ──
 const pages = []; // for sitemap
-function layout({ path, title, description, crumbs = [], body, jsonld = [], lastmod = null, type = 'article' }) {
+// Pages use styles.css unless they pass their own stylesheets (`css`) and scripts (`scripts`), as /dashboard/ does.
+function layout({ path, title, description, crumbs = [], body, jsonld = [], lastmod = null, type = 'article', css = [`/${CSS}`], scripts = [], bodyClass = 'doc', mainClass = 'doc-wrap' }) {
   const url = SITE + path;
   const crumbLd = crumbs.length ? [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [{ name: 'Home', url: SITE + '/' }, ...crumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.url.startsWith('http') ? c.url : SITE + c.url })) }] : [];
@@ -117,7 +119,8 @@ function layout({ path, title, description, crumbs = [], body, jsonld = [], last
 ${lastmod ? `<meta property="article:modified_time" content="${lastmod}">` : ''}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Energy infrastructure events" href="/events.xml">
-<link rel="stylesheet" href="/${CSS}">
+${css.map(h => `<link rel="stylesheet" href="${h}">`).join('\n')}
+${scripts.map(h => `<script defer src="${h}"></script>`).join('\n')}
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 // Owner opt-out: visit any page with ?notrack=1 to stop counting this browser (?notrack=0 undoes it).
 try { const n = new URLSearchParams(location.search).get('notrack'); if (n === '1') localStorage.setItem('va-disable', '1'); if (n === '0') localStorage.removeItem('va-disable'); } catch (e) {}
@@ -125,10 +128,10 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
 <script defer src="/_vercel/insights/script.js"></script>
 ${ld}
 </head>
-<body class="doc">
+<body class="${bodyClass}">
 <header class="site-nav"><a class="brand" href="/">Strategic Energy Map</a>
-<nav aria-label="Site"><a href="/">Live map</a><a href="/chokepoints/">Chokepoints</a><a href="/fuel-prices/">Pump prices</a><a href="/facilities/">Facilities</a><a href="/events/">Events</a><a href="/charts/">Charts</a><a href="/about.html">About</a></nav></header>
-<main class="doc-wrap">
+<nav aria-label="Site">${[['/', 'Live map'], ['/dashboard/', 'Dashboard'], ['/chokepoints/', 'Chokepoints'], ['/fuel-prices/', 'Pump prices'], ['/facilities/', 'Facilities'], ['/events/', 'Events'], ['/charts/', 'Charts'], ['/about.html', 'About']].map(([h, l]) => `<a href="${h}"${h === path ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav></header>
+<main class="${mainClass}">
 ${crumbs.length ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a>${crumbs.map((c, i) => i < crumbs.length - 1 ? ` › <a href="${c.url}">${esc(c.name)}</a>` : ` › <span>${esc(c.name)}</span>`).join('')}</nav>` : ''}
 ${body}
 </main>
@@ -160,7 +163,7 @@ async function portwatch(name) {
     const base = rows.filter(x => x.date >= BASELINE.from && x.date <= BASELINE.to);
     const last7 = rows.slice(-7);
     const roll = rows.map((x, i) => [x.date, avg(rows.slice(Math.max(0, i - 6), i + 1), 't')]);
-    return { lastDate: rows[rows.length - 1].date, now: avg(last7, 't'), nowAll: avg(last7, 'all'), base: avg(base, 't'), roll };
+    return { lastDate: rows[rows.length - 1].date, now: avg(last7, 't'), nowAll: avg(last7, 'all'), base: avg(base, 't'), roll, rows };
   } catch (e) { console.warn(`PortWatch unavailable for ${name}: ${e.message}`); return null; }
 }
 
@@ -597,6 +600,209 @@ ${sourcesHTML(c.sources)}
     body: `<h1>Charts</h1>
 <div class="answer"><p>Charts on the 2026 energy crisis: how much oil moves through each chokepoint, how much of it can be rerouted, live tanker traffic and pump prices. Each chart comes with its data, method and sources, and is free to reuse with credit.</p></div>
 ${charts.map(c => `<section class="chart-card"><h2><a href="/charts/${c.id}/">${esc(c.title)}</a></h2><p>${esc(c.answer)}</p></section>`).join('')}`,
+  }));
+}
+
+// ── Data dashboard (/dashboard/) and open data (/data/v1/: CSV + JSON per dataset, plus the dashboard bundle) ──
+{
+  const V1 = join(DIST, 'data', 'v1');
+  mkdirSync(V1, { recursive: true });
+  const LICENSE = 'https://creativecommons.org/licenses/by/4.0/';
+  const cut = (t, k) => { const s = String(t || ''); return s.length > k ? s.slice(0, k).replace(/\s+\S*$/, '') + '…' : s; };
+  const round = (v, dp = 1) => v == null || isNaN(v) ? null : Math.round(v * 10 ** dp) / 10 ** dp;
+  // Spreadsheet-safe CSV: quote when needed, and neutralise text that a spreadsheet would run as a formula
+  const csvCell = v => { if (v == null) return ''; if (typeof v === 'number') return String(v); let t = String(v); if (/^[=+\-@\t\r]/.test(t)) t = `'${t}`; return /[",\r\n]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t; };
+  const ASSET_TYPES = [['chokepoints', 'chokepoint'], ['pipelines', 'pipeline'], ['fields', 'field'], ['sites', 'site'], ['routes', 'route']];
+  const register = ASSET_TYPES.flatMap(([k, type]) => (infra[k] || []).map(a => ({ a, type })));
+  const assetUrl = (id, type) => type === 'route' ? '/' : urlFor(id);
+  const centre = a => Array.isArray(a.coords?.[0]) ? a.coords[Math.floor(a.coords.length / 2)] : a.coords;
+  const srcNames = list => (list || []).map(x => x.name).join(' | ');
+  const srcUrls = list => (list || []).map(x => safeUrl(x.url)).filter(Boolean).join(' | ');
+  const hz = statusOf('strait-of-hormuz');
+
+  const sets = [
+    { k: 'chokepoint-transits', name: 'Chokepoint transits', desc: 'Daily tanker and vessel transits through each chokepoint IMF PortWatch tracks, since September 2025.', freq: 'Daily, about a week behind', source: 'IMF PortWatch (satellite AIS)',
+      cols: ['date', 'chokepoint_id', 'chokepoint', 'tankers', 'all_vessels'],
+      rows: Object.entries(pw).filter(([, d]) => d?.rows).flatMap(([id, d]) => d.rows.map(r => ({ date: r.date, chokepoint_id: id, chokepoint: REG[id]?.name || id, tankers: r.t, all_vessels: r.all }))),
+      updated: Object.values(pw).filter(Boolean).map(d => d.lastDate).sort().pop() },
+    { k: 'pump-prices', name: 'Pump prices', desc: 'Weekly retail petrol and diesel prices, including taxes, for the US and its regions, every EU country, the EU average and the UK.', freq: 'Weekly', source: 'US EIA, EU Weekly Oil Bulletin, UK DESNZ',
+      cols: ['week', 'area_id', 'area', 'group', 'fuel', 'price', 'unit', 'currency', 'change_since_pre_crisis_pct'],
+      rows: fuelEntries.flatMap(e => ['petrol', 'diesel'].filter(f => e[f]?.history).flatMap(f => e[f].history.map(([d, v]) => ({ week: d, area_id: e.id, area: e.name, group: e.group, fuel: f, price: v, unit: e.unit, currency: e.currency, change_since_pre_crisis_pct: round(pct(v, e[f].pre_crisis)) })))),
+      updated: fuel.as_of },
+    { k: 'market-benchmarks', name: 'Market benchmarks', desc: 'Brent, WTI, TTF, JKM and Henry Hub: latest close, a week earlier, the pre-crisis reference and the wartime peak.', freq: 'Daily', source: 'Exchange and market data, cited per row',
+      cols: ['benchmark', 'label', 'unit', 'value', 'as_of', 'week_ago', 'pre_crisis', 'peak', 'peak_date', 'source', 'source_url'],
+      rows: (market.benchmarks || []).map(b => ({ benchmark: b.id, label: b.label, unit: b.unit, value: b.value, as_of: b.source?.date || market.as_of, week_ago: b.week_ago, pre_crisis: b.pre_crisis, peak: b.peak?.value ?? null, peak_date: b.peak?.date || null, source: b.source?.name, source_url: safeUrl(b.source?.url) })),
+      updated: market.as_of },
+    { k: 'infrastructure-status', name: 'Infrastructure status', desc: 'Every mapped asset with a live disruption: status, start date, confidence, summary and sources.', freq: 'Daily', source: 'Sourced per asset',
+      cols: ['asset_id', 'asset', 'status', 'since', 'updated', 'confidence', 'summary', 'sources', 'source_urls'],
+      rows: Object.entries(statusData.assets || {}).map(([id, st]) => ({ asset_id: id, asset: REG[id]?.name || id, status: st.status, since: st.since || null, updated: st.updated || null, confidence: st.confidence || null, summary: st.summary, sources: srcNames(st.sources), source_urls: srcUrls(st.sources) })),
+      updated: statusData.updated },
+    { k: 'asset-register', name: 'Asset register', desc: 'Every pipeline, field, terminal, refinery, chokepoint and tanker route on the map.', freq: 'As assets are added', source: 'Global Energy Monitor, EIA, operators',
+      cols: ['id', 'name', 'type', 'kind', 'lat', 'lon', 'capacity', 'capacity_unit', 'status', 'url', 'description'],
+      rows: register.map(({ a, type }) => { const c = centre(a) || []; return { id: a.id, name: a.name, type, kind: a.commodity || a.kind || null, lat: c[0] ?? null, lon: c[1] ?? null, capacity: a.capacity?.value ?? (a.volume_mbd ?? null), capacity_unit: a.capacity?.unit || (a.volume_mbd != null ? 'mb/d' : null), status: statusOf(a.id)?.status || null, url: SITE + assetUrl(a.id, type), description: a.details || null }; }),
+      updated: statusData.updated },
+    { k: 'events', name: 'Event log', desc: 'Dated, sourced events since 28 February 2026, with category, severity and confidence.', freq: 'Daily', source: 'Sourced per event',
+      cols: ['date', 'id', 'title', 'summary', 'category', 'severity', 'confidence', 'assets', 'sources', 'source_urls'],
+      rows: events.map(e => ({ date: e.date, id: e.id, title: e.title, summary: e.summary, category: e.category, severity: e.severity, confidence: e.confidence, assets: (e.assets || []).join(' '), sources: srcNames(e.sources), source_urls: srcUrls(e.sources) })),
+      updated: eventsData.updated },
+  ].filter(d => d.rows.length);
+  for (const d of sets) {
+    writeFileSync(join(V1, `${d.k}.csv`), [d.cols.join(','), ...d.rows.map(r => d.cols.map(c => csvCell(r[c])).join(','))].join('\n') + '\n');
+    writeFileSync(join(V1, `${d.k}.json`), JSON.stringify({ name: d.name, description: d.desc, source: d.source, updated: d.updated || null, license: LICENSE, attribution: 'Strategic Energy Infrastructure Map (strategicenergymap.org)', columns: d.cols, rows: d.rows }));
+  }
+  const downloads = Object.fromEntries(sets.map(d => [d.k, `/data/v1/${d.k}.csv`]));
+
+  // Bundle the interactive panels read (dashboard.js)
+  const ser = (e, s) => s && { now: s.now, wk: s.week_ago, pre: s.pre_crisis, date: s.date || e.date, h: (s.history || []).filter(x => x[0] >= '2025-12-01') };
+  writeFileSync(join(V1, 'dashboard.json'), JSON.stringify({
+    updated: statusData.updated, fuel_as_of: fuel.as_of, market_as_of: market.as_of, pre_crisis: fuel.pre_crisis_date,
+    fx: { eur: fuel.fx?.usd_per_eur, gbp: fuel.fx?.usd_per_gbp, date: fuel.fx?.date }, world_demand: DEMAND, downloads,
+    reg: register.map(({ a, type }) => ({ id: a.id, name: a.name, type, sub: a.commodity || a.kind || '', d: cut(firstSentences(a.details, 1), 170), vol: a.volume_mbd, u: assetUrl(a.id, type) })),
+    status: Object.entries(statusData.assets || {}).map(([id, st]) => ({ id, status: st.status, since: st.since || null, updated: st.updated || null, conf: st.confidence || null, summary: cut(st.summary, 320),
+      src: (st.sources || []).slice(0, 3).map(x => ({ n: x.name, u: x.url })), nsrc: (st.sources || []).length })),
+    cps: infra.chokepoints.map(c => { const sc = scenarios.chokepoints?.[c.id], cl = closure(c.id); return { id: c.id, name: c.name, oil: sc?.oil_mbd ?? null, bypass: cl ? round(cl.bypass) : 0, pw: pw[c.id]?.rows ? pw[c.id].rows.map(r => [r.date, r.t, r.all]) : null }; }),
+    fuel: fuelEntries.map(e => ({ id: e.id, name: e.name, group: e.group, cur: e.currency, unit: e.unit, petrol: ser(e, e.petrol), diesel: ser(e, e.diesel) })),
+    events: events.map(e => ({ id: e.id, date: e.date, t: e.title, s: cut(e.summary, 260), cat: e.category, sev: e.severity, conf: e.confidence, assets: e.assets || [], src: e.sources?.[0] ? { n: e.sources[0].name, u: e.sources[0].url } : null, nsrc: (e.sources || []).length })),
+    market: (market.benchmarks || []).map(b => ({ id: b.id, label: b.label, unit: b.unit, v: b.value, wk: b.week_ago, pre: b.pre_crisis, peak: b.peak ? { v: b.peak.value ?? null, d: b.peak.date || null } : null, src: b.source ? { n: b.source.name, u: b.source.url, d: b.source.date } : null })),
+  }));
+
+  // Static, crawlable parts of the page; dashboard.js adds the interactive panels
+  const bm = id => (market.benchmarks || []).find(b => b.id === id);
+  const brent = bm('brent'), us = fuelEntries.find(e => e.id === 'us'), eu = fuelEntries.find(e => e.id === 'eu');
+  const hzLive = pw['strait-of-hormuz'];
+  const disrupted = Object.keys(statusData.assets || {}).length;
+  const hzLine = !hz ? 'the Strait of Hormuz has no recorded disruption' : hz.status === 'closed' ? `the Strait of Hormuz has been effectively closed to normal traffic since ${fmtDate(hz.since || '2026-02-28')}` : `traffic through the Strait of Hormuz is ${lower(STATUS_LABEL[hz.status] || hz.status)}`;
+  const answer = `As of ${fmtDate(statusData.updated)}, ${hzLine}. ${disrupted} mapped energy assets are closed, damaged, disrupted or running reduced, and ${events.length} sourced events have been logged since the war began. ${brent ? `Brent closed at $${n(brent.value, 2)} a barrel, ${signed(pct(brent.value, brent.pre_crisis))} on the week of ${PRE}.` : ''}`;
+  const tile = (href, label, date, value, unit, delta) => `<a class="kpi" href="${href}"><div class="kpi-l">${esc(label)} <small>${esc(date)}</small></div><div class="kpi-v">${value}<small>${esc(unit)}</small></div><div class="kpi-d">${delta}</div></a>`;
+  const short = d => d ? new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' }) : '';
+  const deltaSpan = p => `<span class="${p == null ? '' : p > 0.5 ? 'up' : p < -0.5 ? 'down' : ''}">${signed(p)}</span> since 23 Feb`;
+  const kpiTiles = [
+    ...['brent', 'ttf', 'jkm'].map(bm).filter(Boolean).map(b => tile('#prices', b.label, short(b.source?.date || market.as_of), n(b.value, 2), b.unit, deltaSpan(pct(b.value, b.pre_crisis)))),
+    hzLive ? tile('#chokepoints', 'Hormuz tankers per day', `7-day avg to ${short(hzLive.lastDate)}`, n(hzLive.now), `vs ${n(hzLive.base, 0)} before`, `${signed(pct(hzLive.now, hzLive.base))} against the Sep–Feb average`) : '',
+    us?.diesel ? tile('#prices', 'US diesel, national average', short(us.diesel.date || us.date), n(us.diesel.now, 2), us.unit, deltaSpan(pct(us.diesel.now, us.diesel.pre_crisis))) : '',
+    eu?.diesel ? tile('#prices', 'EU diesel, weighted average', short(eu.diesel.date || eu.date), n(eu.diesel.now, 2), eu.unit, deltaSpan(pct(eu.diesel.now, eu.diesel.pre_crisis))) : '',
+    tile('#infrastructure', 'Assets with a live disruption', short(statusData.updated), String(disrupted), `of ${register.length} mapped`, 'closed, damaged, disrupted or reduced'),
+    tile('#events', 'Sourced events logged', 'since 28 Feb', String(events.length), '', `${events.filter(e => e.severity === 'critical').length} critical`),
+  ].join('');
+  const mktRows = (market.benchmarks || []).map(b => { const p = pct(b.value, b.pre_crisis); return `<tr><td><b>${esc(b.label)}</b><span class="sub">${esc(b.unit)}</span></td><td class="n"><b>${n(b.value, 2)}</b></td><td class="n">${n(b.week_ago, 2)}</td><td class="n">${n(b.pre_crisis, 2)}</td><td class="n">${b.peak?.value != null ? `${n(b.peak.value, 2)}<span class="sub">${esc(fmtDate(b.peak.date))}</span>` : '—'}</td><td class="n"><span class="${p > 0.5 ? 'up' : p < -0.5 ? 'down' : ''}">${signed(p)}</span></td><td>${safeUrl(b.source?.url) ? `<a href="${esc(b.source.url)}" target="_blank" rel="noopener">${esc(String(b.source.name).split(' — ')[0])}</a>` : esc(b.source?.name)}<span class="sub">${esc(fmtDate(b.source?.date))}</span></td></tr>`; }).join('');
+  const dsCards = sets.map(d => `<article class="ds"><h3>${esc(d.name)}<span>${d.rows.length.toLocaleString('en-US')} rows</span></h3><p>${esc(d.desc)}</p>
+    <dl><dt>Updated</dt><dd>${esc(fmtDate(d.updated))} · ${esc(d.freq)}</dd><dt>Source</dt><dd>${esc(d.source)}</dd><dt>Columns</dt><dd>${esc(d.cols.join(', '))}</dd></dl>
+    <div class="tools"><a class="tool" href="/data/v1/${d.k}.csv" download>CSV</a><a class="tool" href="/data/v1/${d.k}.json">JSON</a></div></article>`).join('');
+  const cite = `Strategic Energy Infrastructure Map. "The 2026 energy crisis in numbers." Data as of ${fmtDate(statusData.updated)}. ${SITE}/dashboard/. Licensed CC BY 4.0.`;
+  const sourceTypes = (() => { try { const S = read('sources.json'); return { n: (S.sources || []).length, updated: S.updated }; } catch (e) { return null; } })();
+  const qa = [
+    ['Where can I download data on the 2026 energy crisis?', `This page offers ${sets.length} free datasets as CSV and JSON: ${sets.map(d => d.name.toLowerCase()).join(', ')}. They are rebuilt from the site's sourced data on every update and licensed CC BY 4.0, so you can reuse them with credit to strategicenergymap.org.`],
+    ['How much have fuel prices risen since the Strait of Hormuz closed?', `Compared with the week of ${PRE}: ${[us?.diesel && `US diesel ${signed(pct(us.diesel.now, us.diesel.pre_crisis))}`, eu?.diesel && `EU average diesel ${signed(pct(eu.diesel.now, eu.diesel.pre_crisis))}`, brent && `Brent crude ${signed(pct(brent.value, brent.pre_crisis))}`].filter(Boolean).join(', ')}, as of the latest weekly figures (week of ${fmtDate(fuel.as_of)}).`],
+    ...(hzLive ? [['How many tankers are crossing the Strait of Hormuz?', `IMF PortWatch satellite tracking recorded an average of ${n(hzLive.now)} tankers a day in the week to ${fmtDate(hzLive.lastDate)}, against ${n(hzLive.base)} a day in the ${BASELINE.label}. Ships sailing with transponders off are not counted.`]] : []),
+  ];
+  const body = `
+<div class="head">
+  <div class="eyebrow">Data dashboard</div>
+  <h1>The 2026 energy crisis in numbers</h1>
+  <p class="answer">${esc(answer)}</p>
+  <div class="dateline"><span>Updated <b>${esc(fmtDate(statusData.updated))}</b></span><span>Pump prices: week of <b>${esc(fmtDate(fuel.as_of))}</b></span><span>Benchmarks as of <b>${esc(fmtDate(market.as_of))}</b></span><span>Baseline week <b>${esc(PRE)}</b></span></div>
+  ${eventsData.situation_headline ? `<div class="headline"><span>Latest</span>${esc(eventsData.situation_headline)}</div>` : ''}
+</div>
+<nav class="index" aria-label="Sections"><div class="idx">
+  <a href="#overview">Overview</a><a href="#chokepoints">Chokepoints</a><a href="#prices">Prices</a><a href="#infrastructure">Infrastructure</a><a href="#events">Events</a><a href="#exposure">Exposure</a><a href="#data">Data &amp; sources</a>
+  <span class="grow"></span><a class="dl" href="#data">Download the data</a>
+</div></nav>
+<div class="dash-main" id="dash" data-src="/data/v1/dashboard.json?v=${createHash('sha256').update(readFileSync(join(V1, 'dashboard.json'))).digest('hex').slice(0, 10)}">
+
+<section class="panel" id="overview">
+  <div class="ph"><div><h2>Overview</h2><p>Headline figures, each compared with the pre-crisis reference week of ${esc(PRE)}.</p></div><div class="tools" data-tools="market-benchmarks"></div></div>
+  <div class="kpis" id="kpis">${kpiTiles}</div>
+</section>
+
+<section class="panel" id="chokepoints">
+  <div class="ph"><div><h2>Chokepoint traffic</h2><p>Tankers per day (7-day average) against the ${esc(BASELINE.label)}. Select a row to chart it.</p></div><div class="tools" data-tools="chokepoint-transits"></div></div>
+  <div class="split">
+    <div>
+      <div class="cardhead"><h3 id="cpTitle">Strait of Hormuz: tankers per day</h3><div class="seg" id="cpMetric"><button type="button" data-v="1" aria-pressed="true">Tankers</button><button type="button" data-v="2" aria-pressed="false">All vessels</button></div></div>
+      <div class="callout" id="cpCallout"></div>
+      <div class="chart" id="cpChart"><p class="loading">Loading the chart…</p></div>
+    </div>
+    <div class="tablewrap"><table id="cpTable"><thead><tr><th>Chokepoint</th><th class="n">Oil flow</th><th class="n">Now</th><th class="n">vs baseline</th><th>Trend</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <p class="src">Transits: <a href="https://portwatch.imf.org/" target="_blank" rel="noopener">IMF PortWatch</a> (satellite AIS, about a week behind)${hzLive ? `, latest day ${esc(fmtDate(hzLive.lastDate))}` : ''}. Ships sailing with transponders off are not counted. Oil flows: EIA and IEA (<a href="/about.html#whatif">method</a>).</p>
+</section>
+
+<section class="panel" id="prices">
+  <div class="ph"><div><h2>Prices</h2><p>Official weekly pump prices for the US, the EU and the UK (${fuelEntries.length} series), plus oil and gas benchmarks. Asia isn't covered yet; see the Asia tab.</p></div><div class="tools" data-tools="pump-prices"></div></div>
+  <div class="controls">
+    <span><span class="ctl-label">Fuel</span><span class="seg" id="fuelSeg"><button type="button" data-v="diesel" aria-pressed="true">Diesel</button><button type="button" data-v="petrol" aria-pressed="false">Petrol</button></span></span>
+    <span><span class="ctl-label">Show</span><span class="seg" id="measureSeg"><button type="button" data-v="pct" aria-pressed="true">% since 23 Feb</button><button type="button" data-v="usd" aria-pressed="false">US$ per litre</button><button type="button" data-v="local" aria-pressed="false">Local price</button></span></span>
+  </div>
+  <div class="picker">
+    <div class="controls" style="margin-bottom:0"><span class="ctl-label">Compare</span><span class="seg" id="presetSeg"><button type="button" data-v="economies" aria-pressed="true">Largest economies</button><button type="button" data-v="rises" aria-pressed="false">Biggest rises</button><button type="button" data-v="falls" aria-pressed="false">Smallest rises</button><button type="button" data-v="usregions" aria-pressed="false">US regions</button></span></div>
+    <p class="pick-help" id="pickHelp"></p>
+    <div class="controls" style="margin-bottom:0"><div class="chips" id="selChips"></div><select id="addSel" aria-label="Add an area to the chart"></select></div>
+  </div>
+  <div class="split">
+    <div><div class="chart" id="priceChart"><p class="loading">Loading the chart…</p></div><p class="src" id="priceNote"></p></div>
+    <div>
+      <div class="controls" style="margin-bottom:8px"><span class="seg" id="groupSeg"><button type="button" data-v="country" aria-pressed="true">Countries</button><button type="button" data-v="us-region" aria-pressed="false">US regions</button><button type="button" data-v="asia" aria-pressed="false">Asia <span class="gap-dot" aria-label="not covered yet"></span></button></span><input type="search" id="priceSearch" placeholder="Filter countries" aria-label="Filter countries"></div>
+      <div class="tablewrap" id="priceWrap" style="max-height:430px;overflow-y:auto"><table id="priceTable"><thead><tr><th class="cb"><span class="vh">Chart</span></th><th><button type="button" data-k="name">Country</button></th><th class="n"><button type="button" data-k="now">Price</button></th><th class="n"><button type="button" data-k="usd">US$/l</button></th><th><button type="button" data-k="chg" data-dir="desc">Since 23 Feb</button></th></tr></thead><tbody></tbody></table></div>
+      <div id="asiaGap" hidden><div class="gap-box"><b>Not covered yet.</b> The EIA estimates that 84% of the crude oil moving through the Strait of Hormuz in 2024 went to Asian markets, so Asian pump prices are a gap we plan to fill. Many Asian governments set or subsidise fuel prices, which means the strain often shows up as sudden official price changes rather than weekly drift. <a href="https://www.eia.gov/todayinenergy/detail.php?id=65504" target="_blank" rel="noopener">EIA, June 2025</a></div></div>
+    </div>
+  </div>
+  <h3 class="sub-h">Benchmarks</h3>
+  <div class="tablewrap"><table id="mktTable"><thead><tr><th>Benchmark</th><th class="n">Latest</th><th class="n">Week ago</th><th class="n">Pre-crisis</th><th class="n">Wartime peak</th><th class="n">Since 23 Feb</th><th>Source</th></tr></thead><tbody>${mktRows}</tbody></table></div>
+  <p class="src">Pump prices: US EIA, EU Weekly Oil Bulletin, UK DESNZ, including taxes. US$ conversions use ECB reference rates of ${esc(fmtDate(fuel.fx?.date))} for every week.</p>
+</section>
+
+<section class="panel" id="infrastructure">
+  <div class="ph"><div><h2>Infrastructure status</h2><p>Every asset with a live disruption, and the full register of mapped infrastructure.</p></div><div class="tools" data-tools="infrastructure-status"></div></div>
+  <div class="statusbar" id="statusBar"></div>
+  <div class="legend" id="statusLegend"></div>
+  <div class="assets" id="assetCards"><p class="loading">Loading…</p></div>
+  <h3 class="sub-h">Asset register <span class="controls" style="margin:0"><input type="search" id="regSearch" placeholder="Search ${register.length} assets" aria-label="Search assets"><select id="regType" aria-label="Asset type"><option value="">All types</option><option value="chokepoint">Chokepoints</option><option value="pipeline">Pipelines</option><option value="field">Fields</option><option value="site">Sites</option><option value="route">Routes</option></select></span></h3>
+  <div class="tablewrap"><table id="regTable"><thead><tr><th>Asset</th><th>Type</th><th>Status</th><th>Key fact</th></tr></thead><tbody></tbody></table></div>
+  <button class="more" id="regMore" type="button" hidden></button>
+</section>
+
+<section class="panel" id="events">
+  <div class="ph"><div><h2>Event log</h2><p>Every sourced event since the war began, by week and severity. Select a bar to filter to that week.</p></div><div class="tools" data-tools="events"></div></div>
+  <div class="chart" id="evChart"><p class="loading">Loading the chart…</p></div>
+  <div class="legend" id="evLegend" style="margin-top:6px"></div>
+  <div class="controls" style="margin-top:14px"><span class="ctl-label">Category</span><div class="chips" id="catChips"></div></div>
+  <div class="controls"><input type="search" id="evSearch" placeholder="Search events" aria-label="Search events"><span id="evCount" class="kpi-d"></span><span class="chips" id="evActive"></span></div>
+  <div class="evlist" id="evList"></div>
+  <button class="more" id="evMore" type="button" hidden></button>
+  <p class="src">Full archive with every source: <a href="/events/">events</a> · <a href="/events.xml">RSS feed</a>.</p>
+</section>
+
+<section class="panel" id="exposure">
+  <div class="ph"><div><h2>Exposure</h2><p>Oil normally moving through each chokepoint, and how much spare pipeline capacity could route around it.</p></div></div>
+  <div class="legend" style="margin-bottom:12px"><span><i style="background:var(--oil)"></i>Oil flow, mb/d</span><span><i style="background:repeating-linear-gradient(45deg,var(--surface-2),var(--surface-2) 2px,var(--oil) 2px,var(--oil) 4px)"></i>Usable bypass capacity</span></div>
+  <div class="expo" id="expo"><p class="loading">Loading…</p></div>
+  <p class="src">World oil demand ${DEMAND} mb/d. ${esc(scenarios.globals?.note || '')} Bypass excludes pipelines whose route or export terminal is currently out of service. <a href="/about.html#whatif">How the model works</a>.</p>
+</section>
+
+<section class="panel" id="data">
+  <div class="ph"><div><h2>Data &amp; sources</h2><p>Every dataset behind this page, free to download and reuse. Files are rebuilt on every update at stable URLs, so tools and newsrooms can pull them directly.</p></div></div>
+  <div class="datasets">${dsCards}</div>
+  <p class="licence">Licensed <a href="${LICENSE}" target="_blank" rel="noopener">CC BY 4.0</a>: reuse freely, with credit to strategicenergymap.org. Underlying figures come from the sources named in each file. ${sourceTypes ? `${sourceTypes.n} registered sources, reviewed monthly.` : ''} <a href="/about.html#rule">Sourcing rule</a>.</p>
+  <div class="codebox"><div class="row"><h3>Cite this page</h3><button class="tool" type="button" data-copy="citeText" data-label="Citation">Copy</button></div><pre id="citeText">${esc(cite)}</pre></div>
+</section>
+
+<section class="panel faq-panel">${faqHTML(qa)}</section>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>`;
+  const ver = f => createHash('sha256').update(readFileSync(join(ROOT, f))).digest('hex').slice(0, 10);
+  for (const f of ['dashboard.css', 'dashboard.js']) cpSync(join(ROOT, f), join(DIST, f));
+  write('/dashboard/', layout({
+    path: '/dashboard/', lastmod: statusData.updated, type: 'website',
+    title: '2026 energy crisis dashboard: shipping, fuel prices, infrastructure and events data | Strategic Energy Map',
+    description: answer.slice(0, 300),
+    crumbs: [{ name: 'Dashboard', url: '/dashboard/' }],
+    css: [`/dashboard.css?v=${ver('dashboard.css')}`], scripts: [`/dashboard.js?v=${ver('dashboard.js')}`], bodyClass: 'dash', mainClass: 'dash-wrap',
+    jsonld: [faqLd(qa), { '@context': 'https://schema.org', '@type': 'Dataset', name: '2026 energy crisis data: shipping, fuel prices, infrastructure status and events',
+      description: `Open data behind the Strategic Energy Map dashboard: ${sets.map(d => d.name.toLowerCase()).join(', ')}.`, url: `${SITE}/dashboard/`, license: LICENSE,
+      creator: { '@type': 'Person', name: 'Courtney Wilson', url: LINKEDIN }, temporalCoverage: `${BASELINE.from}/${statusData.updated}`, dateModified: statusData.updated,
+      isBasedOn: ['https://portwatch.imf.org/', 'https://www.eia.gov/petroleum/gasdiesel/', 'https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en'],
+      distribution: sets.flatMap(d => [{ '@type': 'DataDownload', name: d.name, encodingFormat: 'text/csv', contentUrl: `${SITE}/data/v1/${d.k}.csv` }, { '@type': 'DataDownload', name: d.name, encodingFormat: 'application/json', contentUrl: `${SITE}/data/v1/${d.k}.json` }]) }],
+    body,
   }));
 }
 

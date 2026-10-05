@@ -25,14 +25,14 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
 </head>
 <body class="doc">
 <header class="site-nav"><a class="brand" href="/">Strategic Energy Map</a>
-<nav aria-label="Site"><a href="/">Live map</a><a href="/chokepoints/">Chokepoints</a><a href="/fuel-prices/">Pump prices</a><a href="/facilities/">Facilities</a><a href="/events/">Events</a><a href="/about.html">About</a></nav></header>
+<nav aria-label="Site"><a href="/">Live map</a><a href="/dashboard/">Dashboard</a><a href="/chokepoints/">Chokepoints</a><a href="/fuel-prices/">Pump prices</a><a href="/facilities/">Facilities</a><a href="/events/">Events</a><a href="/charts/">Charts</a><a href="/about.html">About</a></nav></header>
 <main class="doc-wrap">
   <h1>About & methods</h1>
   <p class="lede">A free, ad-free map of the world's oil and gas infrastructure: the pipelines, fields, refineries, terminals, shipping routes and chokepoints that move energy, and what is happening to them now.</p>
   <div class="doc-stats" id="stats"></div>
 
   <nav class="doc-toc" aria-label="On this page">
-    <a href="#tour">Video tour</a><a href="#use">How to use it</a><a href="#embed">Embed the map</a><a href="#sources">Data sources</a><a href="#rule">Sourcing rule</a>
+    <a href="#tour">Video tour</a><a href="#use">How to use it</a><a href="#embed">Embed the map</a><a href="#sources">Data sources</a><a href="#data">Download the data</a><a href="#rule">Sourcing rule</a>
     <a href="#agent">How it stays current</a><a href="#whatif">The what-if model</a><a href="#limits">Limits</a>
     <a href="#privacy">Privacy</a><a href="#builder">Who built this</a><a href="#updates">Recent updates</a>
   </nav>
@@ -49,6 +49,7 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
       <li><b>Layers</b> (left): switch pipelines, fields, refineries, LNG terminals, ports, chokepoints, shipping routes, recent events and pump prices on or off. Click anything on the map for details, geopolitical context and related developments.</li>
       <li><b>Ringed markers</b> show facilities that are not operating normally: reduced, disrupted, offline, damaged or closed. Each status lists its sources and when it was last checked.</li>
       <li><b>Latest</b>: a dated, sourced feed of developments, filterable by time and category. The full archive is on the <a href="/events/">events page</a> and in an <a href="/events.xml">RSS feed</a>.</li>
+      <li><b><a href="/dashboard/">Dashboard</a></b>: every key figure in one place, with interactive charts of ship traffic, pump prices, facility status and events, and free downloads of the data behind them.</li>
       <li><b><a href="/chokepoints/">Chokepoints</a></b>: daily ship traffic through the key straits and canals, compared with the six months before the crisis.</li>
       <li><b><a href="/fuel-prices/">Pump prices</a></b>: weekly petrol and diesel prices by country, with the change since February 2026.</li>
       <li><b>What-if</b>: close one or more chokepoints to see which flows are cut, what can be rerouted or bypassed, and who is most exposed.</li>
@@ -73,7 +74,7 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
       <thead><tr><th>What</th><th>Source</th><th>Refreshed</th></tr></thead>
       <tbody>
         <tr><td>Infrastructure (locations, capacities, context)</td><td>Compiled from company, government and industry sources; each description is maintained in the open repository</td><td>As needed</td></tr>
-        <tr><td>Chokepoint ship traffic</td><td><a href="https://portwatch.imf.org/" target="_blank" rel="noopener">IMF PortWatch</a> (satellite AIS vessel tracking), loaded live in your browser</td><td>Daily, ~1 week lag</td></tr>
+        <tr><td>Chokepoint ship traffic</td><td><a href="https://portwatch.imf.org/" target="_blank" rel="noopener">IMF PortWatch</a> (satellite AIS vessel tracking), loaded live in your browser on the map; the dashboard and downloads use a copy taken at each update</td><td>Daily, ~1 week lag</td></tr>
         <tr><td>Events and facility status</td><td>Independent reporting and analysis, e.g. Reuters, AP, Al Jazeera, Lloyd's List, gCaptain, ISW / Critical Threats, IEA, UKMTO and JMIC advisories. Every item links its sources.</td><td>Daily</td></tr>
         <tr><td>Hormuz and contested-waters flows</td><td>Independent ship-tracking only: Kpler, Vortexa, MarineTraffic, TankerTrackers.com, Bloomberg, IMF PortWatch, IEA analysis</td><td>As published</td></tr>
         <tr><td>Benchmark prices (Brent, WTI, TTF, JKM, Henry Hub)</td><td>Exchange settlements as reported by Reuters and other market sources</td><td>Daily</td></tr>
@@ -82,6 +83,12 @@ window.va('beforeSend', ev => { try { if (localStorage.getItem('va-disable')) re
         <tr><td>Basemap</td><td>Esri World Light Gray Canvas; map library <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a></td><td>—</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section id="data">
+    <h2>Download the data</h2>
+    <p>The data behind the map is free to reuse under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: use it in articles, research, teaching or your own tools, with credit to strategicenergymap.org. The <a href="/dashboard/#data">dashboard</a> lists each dataset with its columns and date. Six datasets are published as CSV and JSON at stable addresses under <code>/data/v1/</code>, rebuilt every time the site updates: chokepoint transits, pump prices, market benchmarks, infrastructure status, the asset register and the event log.</p>
+    <p class="note">The underlying figures come from the sources named in each file and on this page. Their own terms apply to anything you take from them directly.</p>
   </section>
 
   <section id="rule">

@@ -3,6 +3,7 @@
 Static site deployed on Vercel from `main`. The build (`scripts/build.mjs`, no dependencies) copies the map into `dist/` and generates ~150 crawlable answer pages from `data/`: https://strategicenergymap.org
 
 - `index.html`, `styles.css`, `app.js` — the page. Leaflet 1.9.4 from cdnjs. It only renders; content lives in `data/`. `?embed=1` gives a map-only view.
+- `dashboard.css`, `dashboard.js` — the `/dashboard/` page (dark "Aubergine" high-contrast theme, dashboard only). `scripts/build.mjs` writes the page, `/data/v1/dashboard.json` (the bundle `dashboard.js` renders) and a CSV + JSON per dataset in `/data/v1/` (CC BY 4.0). The page loads its own stylesheet instead of `styles.css`; the build adds `?v=` content hashes itself.
 - `about.html` — About & methods page; renders live counts and `data/changelog.json`. Keep it in step with how the site actually works.
 - `og.png` — link-preview image, rendered from `tools/og-card.html` (command in README).
 - `data/*.json` — all content. Schema and ownership rules: `agent/SCHEMA.md`.
@@ -20,7 +21,7 @@ Build, then serve `dist/` (`fetch()` doesn't work from `file://`):
 ```
 node scripts/build.mjs && python3 -m http.server 8765 -d dist
 ```
-then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facilities/<id>/`, `/fuel-prices/<id>/`, `/charts/<id>/`, hubs, `/events/`, `/events.xml`, `sitemap.xml`, `robots.txt`. Never edit `dist/`; change the templates in `scripts/build.mjs` or the data.
+then open http://localhost:8765. Generated pages: `/dashboard/`, `/data/v1/*.csv|json`, `/chokepoints/<id>/`, `/facilities/<id>/`, `/fuel-prices/<id>/`, `/charts/<id>/`, hubs, `/events/`, `/events.xml`, `sitemap.xml`, `robots.txt`. Never edit `dist/`; change the templates in `scripts/build.mjs` or the data.
 
 ## Conventions
 - Asset ids are stable kebab-case; `status.json`, `events.json`, `scenarios.json` reference them. Never rename an id without updating every reference.

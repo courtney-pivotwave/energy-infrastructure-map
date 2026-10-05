@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-10-04",
+   "kind": "site",
+   "headline": "New data dashboard, with free downloads",
+   "changes": [
+    "A new dashboard brings every key figure together: ship traffic through each chokepoint, pump prices in 36 markets, oil and gas benchmarks, facility status, the event log and how much oil each chokepoint carries",
+    "Charts are interactive: compare pump prices across countries, filter events by week and kind, and search all 176 mapped assets",
+    "Six datasets can be downloaded as CSV or JSON, rebuilt on every update and free to reuse under CC BY 4.0"
+   ]
+  },
+  {
    "date": "2026-10-03",
    "kind": "data",
    "headline": "UKMTO logs a sixth Hormuz tanker attack; Saudi Arabia reportedly readies Houthi offensive",

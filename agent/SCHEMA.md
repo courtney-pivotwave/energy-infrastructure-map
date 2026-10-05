@@ -207,3 +207,15 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
 }
 ```
 Explainer posts must link to an existing `/chokepoints/<id>/` or `/facilities/<id>/` page. Drafts go out in queue order, one per run (corrections straight away). Drafts older than 48 hours are never posted. The Action retries a failed platform up to 3 times.
+
+## Team files outside `data/`
+
+The build doesn't copy these onto the site, but the repository is public.
+
+| File | What it holds | Who edits it |
+|---|---|---|
+| `metrics/<week-ending>.json` | Growth metrics for one Monday–Sunday week (UTC): search, social reach and engagement per post, site and agent activity, open PRs. A `sources` block says what was collected, and why not when it wasn't. | The "Weekly metrics" workflow only (`scripts/metrics.mjs`). Never edit. |
+| `metrics/vercel.json` | Vercel Web Analytics figures for one week, copied by hand (no API for this project). | The owner. |
+| `agent/BRIEF.md` | The weekly brief: priorities, Studio assignments, Newsdesk notes, experiments. | The editor agent (`agent/EDITOR.md`), through a PR; it takes effect when the owner merges it. The daily agent reads its Newsdesk notes. |
+| `docs/growth-log.md` | Baseline, weekly rows, monthly snapshots and the AI citation check. | The editor adds weekly rows; the owner writes the monthly snapshot and citation check. |
+| `docs/content-ideas.md` | The content backlog. | The owner; the editor may add dated notes. |

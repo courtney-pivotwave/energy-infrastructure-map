@@ -32,6 +32,9 @@ data/changelog.json              public changelog
 scripts/update_fuel.py           pulls EIA, EU Weekly Oil Bulletin, UK DESNZ and ECB FX (Python stdlib only)
 scripts/validate.mjs             schema, reference and sourcing checks for data/
 agent/UPDATE_AGENT.md            instructions for the daily update agent
+agent/EDITOR.md                  instructions for the weekly editor agent
+agent/BRIEF.md                   this week's approved brief (written by the editor, merged by a human)
+scripts/metrics.mjs              weekly growth metrics → metrics/<week-ending>.json
 agent/SCHEMA.md                  data contract
 ```
 
@@ -55,6 +58,18 @@ The agent also drafts short posts in `data/social.json`, checked by the validato
 claims). A GitHub Action (`.github/workflows/social.yml`) posts them to X and Bluesky with repository secrets and
 records what went out in `data/social-log.json`. Drafts tied to review items only post once a human merges them.
 Set `"enabled": false` to pause everything. Weekly chart images are rendered from `dist/social/*.html`.
+
+## The weekly editor
+
+Every Monday a GitHub Action (`.github/workflows/metrics.yml`) collects last week's numbers into
+`metrics/<week-ending>.json`: search queries and clicks (Google Search Console, Bing), followers and engagement per post
+(Bluesky, X), pages, daily runs and pull requests waiting. Its read-only keys are repository secrets. Vercel visits are
+copied by hand into `metrics/vercel.json`, because Vercel's analytics API isn't available for this project.
+
+A second cloud routine then follows [`agent/EDITOR.md`](agent/EDITOR.md): it reads the metrics and the week's activity
+and opens a "Brief: week of …" pull request with what worked, one to three priorities, at most two build assignments,
+notes for the daily agent and the experiments under way. Nothing in it takes effect until a human merges it. The daily
+agent then follows the brief's notes within its own rules.
 
 ## Run locally
 

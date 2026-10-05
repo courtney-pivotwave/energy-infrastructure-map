@@ -1,0 +1,10 @@
+{
+ "week_ending": "2026-09-29",
+ "visitors": 70,
+ "page_views": 96,
+ "bounce_rate": 0.81,
+ "top_pages": { "/": 52, "/chokepoints/strait-of-hormuz": 7, "/facilities": 6, "/events": 4 },
+ "referrers": { "google.com": 6, "bing.com": 1, "t.co": 1 },
+ "note": "Sep 29 baseline from docs/growth-log.md (7 days to Sep 29; includes the owner's own visits).",
+ "how": "Vercel → energy-infrastructure-map → Analytics, last 7 days, production. Replace the numbers and set week_ending to the Sunday the week ends on. Copied by hand because Vercel's analytics API isn't available for this project."
+}

@@ -7,6 +7,14 @@ Backlog of content strategy ideas to pick up later. Newest at the top. Nothing h
 A very rich, interactive dashboard of every key data point on the site, built as a working resource for reporters,
 non-profits, citizens, content creators and analysts.
 
+**Mockup 2026-10-03:** [`docs/mockups/dashboard.html`](mockups/dashboard.html), an interactive page built from a snapshot
+of `data/` and PortWatch that day (open it in a browser; "Show design notes" explains each panel). It surfaced four
+gaps to close before building: no reuse licence on the site yet, no stored history for market benchmarks, asset
+capacities only in free text, and **no Asian pump prices**. Asia matters most here: the EIA estimates 84% of Hormuz crude
+went to Asian markets in 2024, and many Asian governments set or subsidise pump prices, so the stress shows up as
+subsidy bills and sudden official hikes. The mockup's Asia tab lists 12 countries with candidate official sources
+(unvetted) to feed the monthly source review and `scripts/update_fuel.py`.
+
 Notes for when we pick it up:
 - **What's already in `data/`:** 8 chokepoints with live PortWatch transits against the pre-war baseline; 26 pipelines,
   68 sites, 64 fields and 10 routes with capacities and current status (`status.json`); 5 market benchmarks; pump

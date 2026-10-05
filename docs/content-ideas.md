@@ -17,8 +17,9 @@ subsidy bills and sudden official hikes. The mockup's Asia tab lists 12 countrie
 
 **Colour direction 2026-10-04:** a dark theme in the **Aubergine** palette at **High** contrast (all text AAA, chart
 colours at least 4.5:1 on the panels). See [`docs/mockups/dashboard-palettes.html`](mockups/dashboard-palettes.html),
-which holds every palette's values and the contrast-tuning code. A bolder "observatory" experiment (one timeline driving
-ridgelines, a price heatmap and an event swarm) was judged too much for this page; individual pieces such as the
+which holds every palette's values and the contrast-tuning code. A bolder "observatory" experiment
+([`docs/mockups/observatory.html`](mockups/observatory.html): one timeline driving ridgelines, a price heatmap and an
+event swarm) was judged too much for this page; individual pieces such as the
 pump-price heatmap could still be reused.
 
 Notes for when we pick it up:

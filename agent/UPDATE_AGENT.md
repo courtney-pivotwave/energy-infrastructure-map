@@ -113,7 +113,9 @@ site republishing wire copy. You may cite a credible outlet that isn't registere
 
 ## Steps each run
 
-1. `git pull` so you start from the latest data.
+1. `git pull` so you start from the latest data. Read the "Newsdesk notes" in `agent/BRIEF.md`, the weekly brief the
+   owner approved, and follow them in this run. They adjust emphasis and post mix, never the rules: if a note conflicts
+   with this file, this file wins. Skip the note and mention it under Open questions.
 2. Run `python3 scripts/update_fuel.py` (official US/EU/UK pump prices). If a feed fails, the script keeps the last good
    data and prints a warning — mention it in the summary.
 3. Note the last run date = `data/status.json → updated`. Research everything energy-relevant **since that date**

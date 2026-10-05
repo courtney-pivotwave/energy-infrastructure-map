@@ -1,0 +1,753 @@
+{
+ "week": {
+  "start": "2026-09-28",
+  "end": "2026-10-04"
+ },
+ "generated": "2026-10-05T01:47:50.974Z",
+ "sources": {
+  "repo": "ok",
+  "github": "ok",
+  "bluesky": "ok",
+  "x": "off: set repository variable X_READS=1 to collect (X bills API reads)",
+  "google": "not configured: add the GSC_SERVICE_ACCOUNT secret",
+  "bing": "not configured: add the BING_WEBMASTER_KEY secret",
+  "vercel": "manual: last entered for the week ending 2026-09-29"
+ },
+ "site": {
+  "pages_in_sitemap": 135,
+  "events_total": 76,
+  "events_dated_this_week": 11,
+  "changelog_entries_this_week": 8
+ },
+ "agents": {
+  "daily_update_days": [
+   "2026-09-28",
+   "2026-09-29",
+   "2026-09-30",
+   "2026-10-01",
+   "2026-10-02",
+   "2026-10-03",
+   "2026-10-04"
+  ],
+  "daily_update_runs": "7/7",
+  "other_commits": [
+   "2026-10-03 Content ideas: data dashboard",
+   "2026-10-03 Videos on the site: About page players, Tour button and new-visitor prompt",
+   "2026-10-03 Add /embed redirect to the About page's embed code",
+   "2026-10-03 About: \"Embed the map\" section with copy button; embedding video",
+   "2026-10-03 Video: daily updates scene",
+   "2026-10-03 Video: pump prices scene, hover and map-point helpers",
+   "2026-10-03 Video: chokepoints scene, page dissolves and document scrolling",
+   "2026-10-03 Video: overview tour scene, draft mode, watchable app-driven flights",
+   "2026-10-02 Video: scripted walkthrough recorder and What-if Hormuz pilot",
+   "2026-10-01 Social: posting hours (10:00–24:00 UTC) so push-triggered runs don't post overnight",
+   "2026-10-01 Social: wider hashtag vocabulary and enforced variety",
+   "2026-09-30 social: send today's event and explainer before the evening chart",
+   "2026-09-30 Social: hourly runs with a 100-minute gap between posts",
+   "2026-09-30 Content ideas: note the charts experiment and how to judge it",
+   "2026-09-30 Charts experiment: /charts/ section and two new chart posts",
+   "2026-09-29 Content ideas: data visualization library",
+   "2026-09-29 Source registry and monthly source review",
+   "2026-09-29 Sources: Global Energy Monitor for asset reference data and party-owned operators' capacity",
+   "2026-09-29 Content ideas: all chokepoints; corruption and business news feed from non-profit investigative outlets",
+   "2026-09-29 Content ideas backlog: chokepoint pillars/clusters, geopolitical explainers",
+   "2026-09-29 \"Needs you\" daily check: email the owner when a human is needed",
+   "2026-09-29 Governing sources: one per kind of number, provenance on capacity, explainer audit",
+   "2026-09-29 data: East-West pipeline capacity 7 mb/d (2026 conversion; was a stale 2018 figure)",
+   "2026-09-29 Social: link explainer posts on X (two-week trial)",
+   "2026-09-29 Social: 3–5 posts a day, dripped every 2 hours",
+   "2026-09-29 Analytics: ?notrack=1 opt-out so the owner's visits aren't counted",
+   "2026-09-29 Growth log: baseline traffic, X followers, first citation check",
+   "2026-09-29 Growth log: baseline snapshot and monthly AI-citation check",
+   "2026-09-29 Link the Bluesky account (@strategicenergymap.org) alongside X",
+   "2026-09-28 Lead with what's new: situation headline + collapsible background",
+   "2026-09-28 Social: curated hashtags (X first 2, Bluesky up to 3, clickable facets)",
+   "2026-09-28 Social: go live on X with launch post and diesel chart",
+   "2026-09-28 Social: login check mode (no posting) and mode choice for manual runs",
+   "2026-09-28 Review: correct 23 Sep Hormuz attack details (Cape Dao) (#1)",
+   "2026-09-28 Fix first agent run: cautious Yanbu wording, belligerent claim out of digest",
+   "2026-09-28 Profile image templates for the social accounts (local-only tools)",
+   "2026-09-27 Social posting to X and Bluesky (dry run until accounts are connected)",
+   "2026-09-27 Paper & slate basemap by default; data-layer tidy-up",
+   "2026-09-27 Basemap switch for comparing styles (?basemap=gray|paper|ocean|terrain|dark|navy)",
+   "2026-09-27 CLAUDE.md: note why trailingSlash must stay off",
+   "2026-09-27 Drop trailingSlash: it 308-redirected Vercel Analytics' /_vercel/insights endpoints",
+   "2026-09-27 Panels: move collapse controls onto the panels, add labelled edge tabs",
+   "2026-09-27 Collapsible panels: sidebar toggles on desktop, bottom sheet on phones"
+  ],
+  "prs_open": [
+   {
+    "number": 2,
+    "title": "Source review: October 2026",
+    "branch": "review/sources-2026-10",
+    "opened": "2026-10-01",
+    "waiting_days": 3,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/2"
+   },
+   {
+    "number": 4,
+    "title": "Add /dashboard/ with open data downloads (CC BY 4.0)",
+    "branch": "dashboard",
+    "opened": "2026-10-05",
+    "waiting_days": 0,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/4"
+   },
+   {
+    "number": 3,
+    "title": "Review: Add Riyadh Refinery after fire, Houthi strike claim",
+    "branch": "review/2026-10-04",
+    "opened": "2026-10-04",
+    "waiting_days": 0,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/3"
+   }
+  ],
+  "prs_closed_this_week": [
+   {
+    "number": 1,
+    "title": "Review: correct 23 Sep Hormuz attack details (Cape Dao)",
+    "merged": true,
+    "hours_open": 2
+   }
+  ],
+  "validator": "pass"
+ },
+ "social": {
+  "drafted_by_type": {
+   "announcement": 1,
+   "chart": 4,
+   "digest": 6,
+   "event": 8,
+   "explainer": 5
+  },
+  "posted": 22,
+  "posted_same_day": 8,
+  "posts": [
+   {
+    "id": "2026-09-28-launch",
+    "type": "announcement",
+    "created": "2026-09-28",
+    "url": "https://strategicenergymap.org/",
+    "tags": [],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2104761102697631907",
+     "posted_at": "2026-09-29T02:32:06.278Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnhp6l42y",
+     "posted_at": "2026-09-29T11:40:39.775Z",
+     "metrics": {
+      "likes": 2,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-09-28-fuel-weekly",
+    "type": "chart",
+    "created": "2026-09-28",
+    "url": "https://strategicenergymap.org/fuel-prices/",
+    "tags": [],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2104761138827399222",
+     "posted_at": "2026-09-29T02:32:14.936Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnrvhtd2h",
+     "posted_at": "2026-09-29T11:40:50.543Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-09-29-digest",
+    "type": "digest",
+    "created": "2026-09-29",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Hormuz",
+     "Oil",
+     "OOTT"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2104887197598109869",
+     "posted_at": "2026-09-29T10:53:09.635Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwnqnteba32y",
+     "posted_at": "2026-09-29T11:40:51.486Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-09-30-digest",
+    "type": "digest",
+    "created": "2026-09-30",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Hormuz",
+     "Oil",
+     "OOTT"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2105249914796102046",
+     "posted_at": "2026-09-30T10:54:28.240Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwq6jumzhs2a",
+     "posted_at": "2026-09-30T10:54:30.486Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-09-30-chart-hormuz-bypass",
+    "type": "chart",
+    "created": "2026-09-30",
+    "url": "https://strategicenergymap.org/charts/hormuz-bypass/",
+    "tags": [
+     "Hormuz",
+     "OOTT"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2105339351454319071",
+     "posted_at": "2026-09-30T16:49:51.582Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwqsfd2rnm2q",
+     "posted_at": "2026-09-30T16:49:53.221Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-09-30-hormuz-yanbu-flows-recover",
+    "type": "event",
+    "created": "2026-09-30",
+    "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+    "tags": [
+     "Hormuz",
+     "Oil",
+     "OOTT"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2105408778778923253",
+     "posted_at": "2026-09-30T21:25:44.259Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwrbso3j4x2a",
+     "posted_at": "2026-09-30T21:25:46.585Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-09-30-explainer-east-west-pipeline",
+    "type": "explainer",
+    "created": "2026-09-30",
+    "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+    "tags": [
+     "Hormuz",
+     "Oil",
+     "OOTT"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2105467455111856191",
+     "posted_at": "2026-10-01T01:18:53.829Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwrotkt6an2h",
+     "posted_at": "2026-10-01T01:18:55.333Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-09-30-chart-chokepoint-flows",
+    "type": "chart",
+    "created": "2026-09-30",
+    "url": "https://strategicenergymap.org/charts/chokepoint-oil-flows/",
+    "tags": [
+     "Oil",
+     "OOTT"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2105612789704216738",
+     "posted_at": "2026-10-01T10:56:24.364Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwsp47outf2l",
+     "posted_at": "2026-10-01T10:56:25.781Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-01-digest",
+    "type": "digest",
+    "created": "2026-10-01",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Hormuz",
+     "Oil",
+     "OOTT"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2105710049251541338",
+     "posted_at": "2026-10-01T17:22:52.759Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwtepcx5tw2h",
+     "posted_at": "2026-10-01T17:22:54.955Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-01-jpmorgan-goldman-flows",
+    "type": "event",
+    "created": "2026-10-01",
+    "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+    "tags": [
+     "Hormuz",
+     "Oil",
+     "OOTT"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2105790443204280505",
+     "posted_at": "2026-10-01T22:42:20.181Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwtwkjopxm2v",
+     "posted_at": "2026-10-01T22:42:21.592Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-01-ukmto-delayed-attacks",
+    "type": "event",
+    "created": "2026-10-01",
+    "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+    "tags": [
+     "Tankers",
+     "Shipping"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2105829446338908277",
+     "posted_at": "2026-10-02T01:17:19.247Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwu77ojj3l2v",
+     "posted_at": "2026-10-02T01:17:21.239Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-01-explainer-abqaiq",
+    "type": "explainer",
+    "created": "2026-10-01",
+    "url": "https://strategicenergymap.org/facilities/abqaiq-processing-plant/",
+    "tags": [
+     "SaudiArabia",
+     "Pipelines"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2105983936127992017",
+     "posted_at": "2026-10-02T11:31:12.504Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwvbjffta72k",
+     "posted_at": "2026-10-02T11:31:14.437Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-01-chart-chokepoints-weekly",
+    "type": "chart",
+    "created": "2026-10-01",
+    "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
+    "tags": [
+     "DataViz",
+     "Tankers",
+     "Shipping"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106061372752851157",
+     "posted_at": "2026-10-02T16:38:54.863Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwvsplywgg2k",
+     "posted_at": "2026-10-02T16:38:56.879Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-02-digest",
+    "type": "digest",
+    "created": "2026-10-02",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Iran",
+     "Diesel"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2106132131143401508",
+     "posted_at": "2026-10-02T21:20:04.952Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwwcgeiusk2s",
+     "posted_at": "2026-10-02T21:20:06.309Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-02-iran-sanctions",
+    "type": "event",
+    "created": "2026-10-02",
+    "url": "https://strategicenergymap.org/events/#2026-10-01-iran-sanctions",
+    "tags": [
+     "Geopolitics",
+     "Iran"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106338065002201517",
+     "posted_at": "2026-10-03T10:58:23.438Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwxq5maru22x",
+     "posted_at": "2026-10-03T10:58:24.554Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-02-diesel-reserves",
+    "type": "event",
+    "created": "2026-10-02",
+    "url": "https://strategicenergymap.org/events/#2026-10-01-diesel-reserves",
+    "tags": [
+     "Diesel",
+     "Europe"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106401060147405050",
+     "posted_at": "2026-10-03T15:08:42.599Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwy657snea2r",
+     "posted_at": "2026-10-03T15:08:43.891Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-02-explainer-suez-canal",
+    "type": "explainer",
+    "created": "2026-10-02",
+    "url": "https://strategicenergymap.org/chokepoints/suez-canal/",
+    "tags": [
+     "Suez",
+     "Shipping"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106454558277022041",
+     "posted_at": "2026-10-03T18:41:17.565Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwyjzelrre2s",
+     "posted_at": "2026-10-03T18:41:19.621Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-03-digest",
+    "type": "digest",
+    "created": "2026-10-03",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Hormuz",
+     "RedSea"
+    ],
+    "days_after_draft": 0,
+    "x": {
+     "id": "2106506625464901913",
+     "posted_at": "2026-10-03T22:08:11.351Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mwyvldbdpj2s",
+     "posted_at": "2026-10-03T22:08:13.359Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-03-saudi-houthi-offensive",
+    "type": "event",
+    "created": "2026-10-03",
+    "url": "https://strategicenergymap.org/chokepoints/bab-el-mandeb/",
+    "tags": [
+     "Yemen",
+     "SaudiArabia"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106700514054361252",
+     "posted_at": "2026-10-04T10:58:37.983Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2amxvrtc2x",
+     "posted_at": "2026-10-04T10:58:39.433Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-03-ukmto-six-vessels",
+    "type": "event",
+    "created": "2026-10-03",
+    "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+    "tags": [
+     "Tankers",
+     "Hormuz"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106773451943874787",
+     "posted_at": "2026-10-04T15:48:27.719Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2qta4acn2n",
+     "posted_at": "2026-10-04T15:48:29.232Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-03-uk-sanctions-shadow-fleet",
+    "type": "event",
+    "created": "2026-10-03",
+    "url": "https://strategicenergymap.org/events/#2026-10-01-uk-sanctions",
+    "tags": [
+     "Russia",
+     "LNG"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106831345259258078",
+     "posted_at": "2026-10-04T19:38:30.571Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx35olaut42r",
+     "posted_at": "2026-10-04T19:38:31.798Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-10-03-explainer-bab-el-mandeb",
+    "type": "explainer",
+    "created": "2026-10-03",
+    "url": "https://strategicenergymap.org/chokepoints/bab-el-mandeb/",
+    "tags": [
+     "RedSea",
+     "MaritimeSecurity"
+    ],
+    "days_after_draft": 1,
+    "x": {
+     "id": "2106885032463994955",
+     "posted_at": "2026-10-04T23:11:50.587Z"
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx3jm2yaa72s",
+     "posted_at": "2026-10-04T23:11:52.552Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   }
+  ],
+  "failed": [],
+  "bluesky": {
+   "followers": 11,
+   "following": 60,
+   "posts_all_time": 22,
+   "interactions": 11,
+   "likes": 6,
+   "reposts": 5,
+   "replies": 0,
+   "quotes": 0,
+   "by_type": {
+    "announcement": {
+     "posts": 1,
+     "likes": 2,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "chart": {
+     "posts": 4,
+     "likes": 1,
+     "reposts": 2,
+     "replies": 0,
+     "quotes": 0
+    },
+    "digest": {
+     "posts": 5,
+     "likes": 0,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    },
+    "event": {
+     "posts": 8,
+     "likes": 3,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    },
+    "explainer": {
+     "posts": 4,
+     "likes": 0,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    }
+   }
+  },
+  "x": null
+ },
+ "search": {
+  "google": null,
+  "bing": null
+ },
+ "traffic": {
+  "vercel": {
+   "week_ending": "2026-09-29",
+   "visitors": 70,
+   "page_views": 96,
+   "bounce_rate": 0.81,
+   "top_pages": {
+    "/": 52,
+    "/chokepoints/strait-of-hormuz": 7,
+    "/facilities": 6,
+    "/events": 4
+   },
+   "referrers": {
+    "google.com": 6,
+    "bing.com": 1,
+    "t.co": 1
+   },
+   "note": "Sep 29 baseline from docs/growth-log.md (7 days to Sep 29; includes the owner's own visits).",
+   "how": "Vercel → energy-infrastructure-map → Analytics, last 7 days, production. Replace the numbers and set week_ending to the Sunday the week ends on. Copied by hand because Vercel's analytics API isn't available for this project.",
+   "current": false
+  }
+ }
+}

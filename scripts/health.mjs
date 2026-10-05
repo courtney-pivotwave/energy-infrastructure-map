@@ -1,21 +1,28 @@
 // Daily "Needs you" check, run by .github/workflows/health.yml.
 // Exits 1 when a human is needed, so GitHub sends its failed-run email; the run summary lists what to do.
-// Checks: review PRs waiting, the daily update agent not having run, posts that failed for good, invalid data.
+// Checks: PRs waiting (oldest first), the daily update agent not having run, posts that failed for good, invalid data,
+// and the weekly loop: the metrics file for last week, and the editor's brief PR for this week.
 // Local: GH_TOKEN=… node scripts/health.mjs   (needs git history and the gh CLI)
 import { execSync } from 'node:child_process';
-import { readFileSync, appendFileSync } from 'node:fs';
+import { readFileSync, appendFileSync, existsSync } from 'node:fs';
 
 const sh = cmd => { try { return execSync(cmd, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim(); } catch (e) { return { error: [e.stdout, e.stderr].filter(Boolean).join('\n').trim() || e.message }; } };
 const REPO = process.env.GITHUB_REPOSITORY || 'courtney-pivotwave/energy-infrastructure-map';
 const MAX_ATTEMPTS = 3; // keep in step with scripts/social_post.mjs
+const DAY = 864e5;
 const needs = [], ok = [];
 
 // 1. Review pull requests waiting for a human
 const prs = sh(`gh pr list --repo ${REPO} --state open --json number,title,url,createdAt,headRefName`);
 if (prs.error) needs.push(`Couldn't list pull requests: ${prs.error}`);
 else {
-  const open = JSON.parse(prs || '[]');
-  open.forEach(p => needs.push(`**Review waiting:** [#${p.number} ${p.title}](${p.url}) — opened ${p.createdAt.slice(0, 10)}. Read it, then merge or close.`));
+  const open = JSON.parse(prs || '[]').sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+  for (const p of open) {
+    const days = Math.floor((Date.now() - Date.parse(p.createdAt)) / DAY);
+    const waiting = days ? `waiting ${days} day${days > 1 ? 's' : ''}${days > 3 ? ' (overdue)' : ''}` : 'opened in the past day';
+    if (p.title.startsWith('Brief: week of')) needs.push(`**Weekly brief ready:** [#${p.number} ${p.title}](${p.url}) — ${waiting}. Merge to approve it, edit any line first, or close it to skip a week.`);
+    else needs.push(`**Review waiting:** [#${p.number} ${p.title}](${p.url}) — ${waiting}. Read it, then merge or close.`);
+  }
   if (!open.length) ok.push('No pull requests waiting for review');
 }
 
@@ -40,6 +47,21 @@ for (const [id, byPlatform] of Object.entries(log)) {
 const v = sh('node scripts/validate.mjs');
 if (v.error) needs.push(`**Data doesn't validate on main**, so posting is blocked:\n\n\`\`\`\n${v.error.slice(0, 1500)}\n\`\`\``);
 else ok.push('Data validates');
+
+// 5. The weekly loop: last week's metrics file, then this week's brief from the editor (Mondays 11:00 UTC).
+// Week = Monday–Sunday UTC; keep in step with weekWindow() in scripts/metrics.mjs.
+const today = Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
+const weekEnd = new Date(today - (new Date(today).getUTCDay() || 7) * DAY).toISOString().slice(0, 10);
+if (existsSync(`metrics/${weekEnd}.json`)) ok.push(`Weekly metrics collected (metrics/${weekEnd}.json)`);
+else needs.push(`**Weekly metrics missing:** no \`metrics/${weekEnd}.json\`. Run the "Weekly metrics" workflow (Actions → Weekly metrics → Run workflow); the editor needs it.`);
+if (existsSync('agent/EDITOR.md')) {
+  const monday = new Date(Date.parse(weekEnd) + DAY).toISOString().slice(0, 10);
+  // Found by title, not branch: the routine may push to a branch of its own rather than brief/<monday>.
+  const brief = sh(`gh pr list --repo ${REPO} --state all --search '"Brief: week of" in:title created:>=${monday}' --json number,url`);
+  if (brief.error) needs.push(`Couldn't look up this week's brief: ${brief.error}`);
+  else if (JSON.parse(brief || '[]').length) ok.push(`Weekly brief opened (${JSON.parse(brief)[0].url})`);
+  else needs.push(`**Weekly brief missing:** no "Brief: week of …" PR opened since ${monday}. Check the "Energy map weekly editor" routine in Claude Code on the web (claude.ai/code) and run it; it stops early if the weekly metrics are missing.`);
+}
 
 const summary = [
   needs.length ? `## You're needed (${needs.length})\n\n${needs.map(n => `- ${n}`).join('\n')}` : '## All clear — nothing needs you today',

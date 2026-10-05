@@ -144,7 +144,9 @@ Write Studio assignments so the owner can paste one into Claude Code as a task.
 
 ## Publishing
 
-1. Work on a branch named `brief/YYYY-MM-DD`, the Monday the brief is for, created from the latest `main`.
+1. Work on a branch named `brief/YYYY-MM-DD`, the Monday the brief is for, created from the latest `main`. If the
+   push is refused because this environment only allows its own branch, push to that branch instead. The PR title is
+   what the owner and the "Needs you" check look for.
 2. Write the outputs. Run `node scripts/validate.mjs`; it must pass. You didn't touch `data/`; it guards against
    accidents.
 3. Commit as `brief: week of <Mon date>`, push, and open a PR titled `Brief: week of <Mon date>`, using the brief as

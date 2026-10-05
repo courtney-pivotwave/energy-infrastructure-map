@@ -20,7 +20,7 @@ else {
   for (const p of open) {
     const days = Math.floor((Date.now() - Date.parse(p.createdAt)) / DAY);
     const waiting = days ? `waiting ${days} day${days > 1 ? 's' : ''}${days > 3 ? ' (overdue)' : ''}` : 'opened in the past day';
-    if (p.headRefName.startsWith('brief/')) needs.push(`**Weekly brief ready:** [#${p.number} ${p.title}](${p.url}) — ${waiting}. Merge to approve it, edit any line first, or close it to skip a week.`);
+    if (p.title.startsWith('Brief: week of')) needs.push(`**Weekly brief ready:** [#${p.number} ${p.title}](${p.url}) — ${waiting}. Merge to approve it, edit any line first, or close it to skip a week.`);
     else needs.push(`**Review waiting:** [#${p.number} ${p.title}](${p.url}) — ${waiting}. Read it, then merge or close.`);
   }
   if (!open.length) ok.push('No pull requests waiting for review');
@@ -56,10 +56,11 @@ if (existsSync(`metrics/${weekEnd}.json`)) ok.push(`Weekly metrics collected (me
 else needs.push(`**Weekly metrics missing:** no \`metrics/${weekEnd}.json\`. Run the "Weekly metrics" workflow (Actions → Weekly metrics → Run workflow); the editor needs it.`);
 if (existsSync('agent/EDITOR.md')) {
   const monday = new Date(Date.parse(weekEnd) + DAY).toISOString().slice(0, 10);
-  const brief = sh(`gh pr list --repo ${REPO} --state all --head brief/${monday} --json number,url`);
+  // Found by title, not branch: the routine may push to a branch of its own rather than brief/<monday>.
+  const brief = sh(`gh pr list --repo ${REPO} --state all --search '"Brief: week of" in:title created:>=${monday}' --json number,url`);
   if (brief.error) needs.push(`Couldn't look up this week's brief: ${brief.error}`);
-  else if (JSON.parse(brief || '[]').length) ok.push(`Weekly brief opened (brief/${monday})`);
-  else needs.push(`**Weekly brief missing:** the editor didn't open \`brief/${monday}\`. Check the "Energy map weekly editor" routine in Claude Code on the web (claude.ai/code) and run it; it stops early if the weekly metrics are missing.`);
+  else if (JSON.parse(brief || '[]').length) ok.push(`Weekly brief opened (${JSON.parse(brief)[0].url})`);
+  else needs.push(`**Weekly brief missing:** no "Brief: week of …" PR opened since ${monday}. Check the "Energy map weekly editor" routine in Claude Code on the web (claude.ai/code) and run it; it stops early if the weekly metrics are missing.`);
 }
 
 const summary = [

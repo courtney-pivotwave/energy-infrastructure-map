@@ -36,3 +36,9 @@ Ask each question in a fresh chat with web search on. Mark ✓ if strategicenerg
 | 8 | What happens to oil supply if Bab el-Mandeb closes too? | | | | |
 | 9 | Is the Red Sea open to tankers? | | | | |
 | 10 | Map of oil and gas infrastructure affected by the Iran war | | | | |
+
+## Weekly
+
+| Week ending | Bluesky followers | X followers | Google clicks / impressions | Bing clicks / impressions | Visitors | Pages | Posts | Daily runs | Note |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 | 11 | — | — | — | — | 135 | 22 | 7/7 | First weekly metrics file. 14 of 22 posts went out a day after drafting; search, X and Vercel not collected |

@@ -374,6 +374,21 @@
     },
     "at": "2026-10-06T11:25:04.332Z"
    }
+  },
+  "2026-10-05-lipsi-tanker-hormuz": {
+   "x": {
+    "id": "2107519267864232268",
+    "at": "2026-10-06T17:12:04.092Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx7wglcihz2u",
+    "cid": "bafyreifu6tlcc5kxyngb73q5wtd43w25joxgl5klumpvieyixlcchmb2ky",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx7wglcihz2u",
+     "cid": "bafyreifu6tlcc5kxyngb73q5wtd43w25joxgl5klumpvieyixlcchmb2ky"
+    },
+    "at": "2026-10-06T17:12:05.920Z"
+   }
   }
  }
 }

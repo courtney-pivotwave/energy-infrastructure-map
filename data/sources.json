@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30",
+ "updated": "2026-10-01",
  "note": "Trusted-source registry. Changed only through the monthly source review (agent/SOURCE_REVIEW.md), via pull request.",
  "sources": [
   {
@@ -18,7 +18,7 @@
    ],
    "notes": "Daily chokepoint transit counts from AIS; the map's live feed.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "kpler",
@@ -35,9 +35,9 @@
    "governs": [
     "chokepoint-flows"
    ],
-   "notes": "Commercial ship-tracking; usually cited via Reuters/Bloomberg. State crude-only vs total liquids.",
+   "notes": "Commercial ship-tracking; usually cited via Reuters/Bloomberg. State crude-only vs total liquids. Sixth Street made a >$1B minority growth-equity investment (June 2026, ~$3.7-4B valuation); Five Arrows exited; Kpler management retains majority control.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "vortexa",
@@ -115,7 +115,7 @@
    ],
    "notes": "Shipping news and vessel data.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "global-energy-monitor",
@@ -134,7 +134,7 @@
    ],
    "notes": "Open infrastructure trackers (CC BY 4.0). Figures can lag operator announcements; note the tracker's update date.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "iea",
@@ -153,9 +153,9 @@
    "governs": [
     "baselines"
    ],
-   "notes": "Oil and Gas Market Reports.",
+   "notes": "Oil and Gas Market Reports, published monthly on schedule. US officials have publicly pressured IEA over its energy-transition forecasts (2026); this is a political dispute over forward-looking analysis, not a factual or editorial-independence finding, and doesn't affect the fixed historical baseline figures the map cites from IEA. Note: iea.org blocks automated fetches (403) for this project's tools; that's an access quirk, not evidence it stopped publishing.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "eia",
@@ -177,7 +177,7 @@
    "affiliation": "US government",
    "notes": "Statistics agency of a party to the conflict: verifiable statistics are fine; conflict-period estimates need independent verification.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "ec-oil-bulletin",
@@ -195,7 +195,7 @@
    ],
    "notes": "EU member-state pump prices.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "uk-desnz",
@@ -213,7 +213,7 @@
    ],
    "notes": "UK pump prices.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "ecb",
@@ -231,7 +231,7 @@
    ],
    "notes": "FX for converting pump prices.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "fred",
@@ -248,7 +248,7 @@
    "affiliation": "US government",
    "notes": "Data mirror; prefer the original series publisher where possible.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "us-doe",
@@ -264,7 +264,7 @@
    "affiliation": "US government",
    "notes": "Party to the conflict: policy actions (e.g. SPR releases) are verifiable; claims need independent verification.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "opec",
@@ -297,7 +297,7 @@
    ],
    "notes": "Brent settlements (usually cited via Reuters/Bloomberg).",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "cme",
@@ -342,7 +342,7 @@
    ],
    "notes": "Co-publishes the Iran Update with ISW.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "ukmto",
@@ -405,7 +405,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "ft",
@@ -437,7 +437,7 @@
    "affiliation": "Qatari state-funded",
    "notes": "Most-cited outlet in the data so far. Qatari state-funded; corroborate claims about Gulf states and Qatar-involved diplomacy.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "npr",
@@ -467,7 +467,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "opb",
@@ -482,7 +482,7 @@
    ],
    "notes": "Usually syndicating NPR/AP stories; cite the original where possible.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "nbc-news",
@@ -497,7 +497,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "cbs-news",
@@ -506,13 +506,14 @@
     "cbsnews.com"
    ],
    "type": "media",
-   "status": "trusted",
+   "status": "use-with-care",
    "covers": [
     "news"
    ],
-   "notes": "",
+   "affiliation": "Owned by Paramount Skydance",
+   "notes": "Owned by Paramount Skydance (2025 merger). CBS News leadership (Bari Weiss, installed Editor-in-Chief Oct 2025) spiked a fully-vetted \"60 Minutes\" investigation (\"Inside CECOT,\" on an El Salvador deportation prison) in Dec 2025, reportedly to avoid friction with the US administration — independently corroborated by NBC News and Fox News; a 20-year correspondent's contract was not renewed after objecting. The segment aired about a month later. Hard-news reporting on markets/energy/shipping is likely unaffected, but corroborate CBS News coverage of US policy touching this map's conflict parties.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "axios",
@@ -527,7 +528,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "fox-business",
@@ -542,7 +543,7 @@
    ],
    "notes": "Corroborate before relying on it.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "rte",
@@ -557,7 +558,7 @@
    ],
    "notes": "Irish public broadcaster.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "euronews",
@@ -570,9 +571,9 @@
    "covers": [
     "news"
    ],
-   "notes": "",
+   "notes": "Portugal-based ALPAC Capital, an investment fund with ties to Hungary's Orbán government, holds an 88% controlling stake (since July 2022). No new editorial-independence incident found this cycle; disclosed here for transparency.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "the-national",
@@ -715,9 +716,9 @@
    "covers": [
     "news"
    ],
-   "notes": "Independent Russian outlet operating from exile.",
+   "notes": "Independent Russian outlet operating from exile. Reader-funded by donation (dropped ad revenue July 2024, running on reader contributions); operates under Russia's \"foreign agent\" (2023) and \"undesirable organization\" (2024) designations. No new restriction specific to this outlet found this cycle, but Russia's crackdown on exiled media is intensifying generally (2026) — worth continued monitoring.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "kyiv-independent",
@@ -766,7 +767,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "outlook-business",
@@ -843,7 +844,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "tradewinds",
@@ -874,7 +875,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "rigzone",
@@ -889,7 +890,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "boe-report",
@@ -902,9 +903,9 @@
    "covers": [
     "markets"
    ],
-   "notes": "Often republishes Reuters/Bloomberg; cite the original where possible.",
+   "notes": "Often republishes Reuters/Bloomberg; cite the original where possible. Acquired by Stack Technologies Ltd. from Grobes Media Inc. (Nov 2022); no further ownership change found.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "energynow",
@@ -919,7 +920,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "hellenic-shipping-news",
@@ -950,7 +951,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "workboat",
@@ -965,7 +966,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "hydrocarbon-processing",
@@ -978,9 +979,9 @@
    "covers": [
     "assets"
    ],
-   "notes": "",
+   "notes": "Trade press on hydrocarbon processing and refining. Tiered paywall: a handful of free technical articles a month, then a paid \"Full Data Access\" plan for the archive — similar to Upstream's model.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "pipeline-journal",
@@ -1132,7 +1133,7 @@
    ],
    "notes": "Advocacy organisation; attribute analysis, never the sole source for a fact.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "aramco",
@@ -1148,9 +1149,9 @@
    "governs": [
     "asset-capacity"
    ],
-   "notes": "Governing for its own capacity figures.",
+   "notes": "Governing for its own capacity figures. Aramco's claimed spare/maximum sustained capacity (~1.5 mb/d spare, 12 mb/d max) is disputed by industry sources, who estimate spare capacity closer to ~1 mb/d; corroborate any surge-capacity claim independently. Nameplate/asset capacity figures for specific facilities are not in question.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "qatarenergy",
@@ -1166,9 +1167,9 @@
    "governs": [
     "asset-capacity"
    ],
-   "notes": "Governing for its own capacity figures.",
+   "notes": "Governing for its own capacity figures. The Washington Post (12 Jun 2026, citing Western intelligence officials) alleged secret Qatar-Iran talks to protect the Ras Laffan complex in exchange for halting gas production; Qatar's government denied this the same day. Unresolved and not corroborated by a second independent source — treat QatarEnergy's stated rationale for operational or force-majeure decisions as an attributed claim needing independent corroboration, separate from its asset-capacity figures (which remain governing).",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "adnoc",
@@ -1184,9 +1185,9 @@
    "governs": [
     "asset-capacity"
    ],
-   "notes": "Governing for its own capacity figures.",
+   "notes": "Governing for its own capacity figures. A Global Witness investigation (reported independently, including by the BBC) found ADNOC's CEO used his COP28 presidency (2023) to pursue ~$100B in oil/gas deals — a conflict-of-interest finding about lobbying conduct, not about the accuracy of ADNOC's asset-capacity figures.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "cheniere",
@@ -1204,7 +1205,7 @@
    ],
    "notes": "Governing for its own capacity figures.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-10-01"
   },
   {
    "id": "cpc",
@@ -1403,6 +1404,102 @@
    "notes": "Official extractive-payment disclosure data.",
    "added": "2026-09-30",
    "last_reviewed": null
+  },
+  {
+   "id": "cnbc",
+   "name": "CNBC",
+   "domains": [
+    "cnbc.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "markets"
+   ],
+   "notes": "US business-news network. As of Jan 2026, spun off from Comcast/NBCUniversal into Versant Media Group (Nasdaq: VSNT), a separate public company; Brian L. Roberts retains ~33% voting control (~1% equity) via dual-class shares but it is no longer a Comcast/NBCUniversal property. Long-criticized for amplifying market cycles and for on-air stock-picking segments (e.g. Jim Cramer) underperforming benchmarks; no record found of fabrication or retraction. Fine for markets/earnings/macro reporting; corroborate opinion and stock-pick segments.",
+   "added": "2026-10-01",
+   "last_reviewed": "2026-10-01"
+  },
+  {
+   "id": "axsmarine",
+   "name": "AXSMarine",
+   "domains": [
+    "axsmarine.com"
+   ],
+   "type": "tracker",
+   "status": "candidate",
+   "covers": [
+    "flows",
+    "shipping"
+   ],
+   "notes": "AIS-based vessel-tracking and cargo intelligence; co-branded on the WTO's real-time Strait of Hormuz Trade Tracker (crude, gas, fertilizer and ag cargo transits), with stated methodology and an AIS-dark-vessel caveat. Acquired by Signal Ocean (Jan 2026); candidate pending a track record under new ownership.",
+   "added": "2026-10-01",
+   "last_reviewed": "2026-10-01"
+  },
+  {
+   "id": "synmax",
+   "name": "SynMax",
+   "domains": [
+    "synmax.com"
+   ],
+   "type": "tracker",
+   "status": "candidate",
+   "covers": [
+    "shipping",
+    "flows"
+   ],
+   "notes": "Satellite-based dark-vessel and AIS-spoofing detection; Lloyd's List Intelligence partnered with SynMax (Jan 2026) to add this to its Seasearcher product. Founded 2021 — candidate pending a longer independent track record.",
+   "added": "2026-10-01",
+   "last_reviewed": "2026-10-01"
+  },
+  {
+   "id": "meduza",
+   "name": "Meduza",
+   "domains": [
+    "meduza.io"
+   ],
+   "type": "media",
+   "status": "candidate",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "Independent Russian outlet (Russia designates it \"foreign agent\"/\"undesirable\")",
+   "notes": "Independent of the Russian state; based in Riga since 2014 specifically to operate outside Russian government control. Reader-crowdfunded and grant-funded; broke the Ivan Golunov fabricated-drug-charge story. Candidate rather than trusted: Proekt (an independent outlet) criticized Meduza in Dec 2022 for running unverified claims from unnamed officials, and no published corrections policy was found.",
+   "added": "2026-10-01",
+   "last_reviewed": "2026-10-01"
+  },
+  {
+   "id": "sanaa-center",
+   "name": "Sana'a Center for Strategic Studies",
+   "domains": [
+    "sanaacenter.org"
+   ],
+   "type": "think-tank",
+   "status": "candidate",
+   "covers": [
+    "conflict",
+    "shipping"
+   ],
+   "notes": "Independent Yemeni think tank, \"fiercely unaligned with any of the belligerent parties\" per independent description; publishes the recurring Yemen Review. Would give the map an independent regional specialist for Houthi/Red Sea reporting, where the registry currently has none. Candidate until its donor roster can be directly verified (its donors page did not load during this review).",
+   "added": "2026-10-01",
+   "last_reviewed": "2026-10-01"
+  },
+  {
+   "id": "zawya",
+   "name": "Zawya",
+   "domains": [
+    "zawya.com"
+   ],
+   "type": "media",
+   "status": "candidate",
+   "covers": [
+    "news",
+    "markets"
+   ],
+   "notes": "Gulf business news; transparently owned by London Stock Exchange Group (via its Refinitiv acquisition), with no Gulf-state ownership stake, unlike other Gulf outlets already in this registry. Candidate rather than trusted: no explicit editorial-standards or corrections policy was found on the site.",
+   "added": "2026-10-01",
+   "last_reviewed": "2026-10-01"
   }
  ]
 }

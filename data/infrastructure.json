@@ -1938,6 +1938,31 @@
    "size": 5,
    "details": "Kuwait National Petroleum Co. refinery south of Kuwait City.",
    "geo": "Targeted on 19 Mar 2026 with Mina al-Ahmadi (OPB/NPR)."
+  },
+  {
+   "id": "riyadh-refinery",
+   "name": "Riyadh Refinery",
+   "kind": "refinery",
+   "coords": [
+    24.59,
+    46.75
+   ],
+   "size": 5,
+   "capacity": {
+    "value": 126,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "MEED — Aramco to upgrade Riyadh refinery",
+     "url": "https://www.meed.com/aramco-to-upgrade-riyadh-refinery/",
+     "date": "2026-10-04"
+    },
+    "as_of": "2026-10-04",
+    "note": "Smallest of Aramco's domestic refineries by throughput; figure as widely reported, not an Aramco filing."
+   },
+   "details": "Wholly owned Saudi Aramco refinery south of the capital (Manfouha area), the only major refinery serving Riyadh and central Saudi Arabia. Fed by the East-West Pipeline (Petroline) rather than a coastal terminal.",
+   "geo": "Previously hit by a Houthi drone in March 2021. On 3 October 2026, Reuters and AFP witnesses saw a large fire and smoke plume at the site; Yemen's Houthis claimed a missile-and-drone strike in retaliation for Saudi strikes on Sanaa. Saudi authorities and Aramco had not confirmed the cause or any output impact as of this check.",
+   "verified": "2026-10-04"
   }
  ],
  "chokepoints": [

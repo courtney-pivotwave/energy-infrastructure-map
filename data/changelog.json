@@ -21,6 +21,15 @@
    ]
   },
   {
+   "date": "2026-10-04",
+   "kind": "data",
+   "headline": "Added Riyadh Refinery after a fire and a Houthi strike claim",
+   "changes": [
+    "Added Saudi Aramco's Riyadh Refinery (126 kb/d, fed by the East-West Pipeline) as a tracked facility",
+    "Reuters and AFP witnesses saw a fire there on Oct 3; Yemen's Houthis claimed a missile-and-drone strike, which Saudi authorities and Aramco have not confirmed"
+   ]
+  },
+  {
    "date": "2026-10-03",
    "kind": "data",
    "headline": "UKMTO logs a sixth Hormuz tanker attack; Saudi Arabia reportedly readies Houthi offensive",

@@ -389,6 +389,21 @@
     },
     "at": "2026-10-06T17:12:05.920Z"
    }
+  },
+  "2026-10-05-explainer-cpc-pipeline": {
+   "x": {
+    "id": "2107586270310379748",
+    "at": "2026-10-06T21:38:18.738Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxafcnqrqb2k",
+    "cid": "bafyreie3hrsxr2xbk5ikusbzjqgatdfafhmrw476rmrduxvcittjavdcr4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxafcnqrqb2k",
+     "cid": "bafyreie3hrsxr2xbk5ikusbzjqgatdfafhmrw476rmrduxvcittjavdcr4"
+    },
+    "at": "2026-10-06T21:38:20.392Z"
+   }
   }
  }
 }

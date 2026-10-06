@@ -381,7 +381,7 @@
    "id": "2026-10-04-digest",
    "created": "2026-10-04",
    "type": "digest",
-   "text": "Brent fell to $102.25, WTI to $91.11 on 2 Oct as G7 agreed to release 100m barrels of reserves. Reuters/AFP saw a fire at Aramco's Riyadh refinery on 3 Oct; Houthis claim a strike, unconfirmed by Saudi officials.",
+   "text": "Brent fell to $102.25, WTI to $91.11 on Oct 2 as G7 agreed to release 100m barrels of reserves. Reuters/AFP saw a fire at Aramco's Riyadh refinery on Oct 3.",
    "url": "https://strategicenergymap.org/fuel-prices/",
    "event_id": null,
    "image": null,
@@ -396,7 +396,7 @@
    "id": "2026-10-04-explainer-strait-of-hormuz",
    "created": "2026-10-04",
    "type": "explainer",
-   "text": "The Strait of Hormuz is the top oil chokepoint, normally ~20m b/d of crude and a fifth of LNG trade. Closed to normal traffic since 28 Feb; flows averaged 13.2 mb/d through 29 Sep, ~77% of pre-war levels, under escort.",
+   "text": "The Strait of Hormuz is the top oil chokepoint, normally ~20m b/d of crude and a fifth of LNG trade. Closed to normal traffic since Feb 28; flows averaged 13.2 mb/d through Sep 29, ~77% of pre-war levels, under escort.",
    "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
    "event_id": null,
    "image": null,
@@ -408,17 +408,47 @@
    "reply_to": null
   },
   {
-   "id": "2026-10-04-riyadh-refinery-fire",
-   "created": "2026-10-04",
-   "type": "event",
-   "text": "Reuters and AFP saw fire and smoke at Aramco's Riyadh Refinery on 3 Oct after Houthis claimed a missile-and-drone strike; Saudi authorities and Aramco have not confirmed the cause or any damage (reported).",
-   "url": "https://strategicenergymap.org/facilities/riyadh-refinery/",
-   "event_id": "2026-10-03-riyadh-refinery-fire",
+   "id": "2026-10-05-digest",
+   "created": "2026-10-05",
+   "type": "digest",
+   "text": "UKMTO logged a seventh Hormuz tanker struck in a week (no casualties) as Brent ticked up to $102.80 and WTI held near $90.63. TTF gas eased to €74.43/MWh.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
    "image": null,
    "alt": null,
    "tags": [
-    "SaudiArabia",
-    "Refining"
+    "Hormuz",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-05-lipsi-tanker-hormuz",
+   "created": "2026-10-05",
+   "type": "event",
+   "text": "UKMTO: an unknown projectile hit tanker Lipsi's engine room in the Strait of Hormuz on Oct 4, leaving it disabled. Crew safe, no environmental impact — at least the seventh vessel hit there since late Sep.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-04-lipsi-tanker-hormuz",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-05-explainer-cpc-pipeline",
+   "created": "2026-10-05",
+   "type": "explainer",
+   "text": "The CPC pipeline moves Kazakh crude 1,510 km from Tengiz to Russia's Novorossiysk terminal, capacity ~1.4m b/d — most of Kazakhstan's oil exports, and a repeated target in the Black Sea war.",
+   "url": "https://strategicenergymap.org/facilities/cpc-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Pipelines",
+    "BlackSea"
    ],
    "reply_to": null
   }

@@ -269,6 +269,96 @@
     },
     "at": "2026-10-03T22:08:13.359Z"
    }
+  },
+  "2026-10-03-saudi-houthi-offensive": {
+   "x": {
+    "id": "2106700514054361252",
+    "at": "2026-10-04T10:58:37.983Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2amxvrtc2x",
+    "cid": "bafyreidqoaldqron3vr25rxueyjvjaqjet247xcwvrzm66ibcalxai75r4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2amxvrtc2x",
+     "cid": "bafyreidqoaldqron3vr25rxueyjvjaqjet247xcwvrzm66ibcalxai75r4"
+    },
+    "at": "2026-10-04T10:58:39.433Z"
+   }
+  },
+  "2026-10-03-ukmto-six-vessels": {
+   "x": {
+    "id": "2106773451943874787",
+    "at": "2026-10-04T15:48:27.719Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2qta4acn2n",
+    "cid": "bafyreifeppaqwzi6qpkizy7qq6efjmiuqkvq3cty3z5p5frdmjoeap3ks4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx2qta4acn2n",
+     "cid": "bafyreifeppaqwzi6qpkizy7qq6efjmiuqkvq3cty3z5p5frdmjoeap3ks4"
+    },
+    "at": "2026-10-04T15:48:29.232Z"
+   }
+  },
+  "2026-10-03-uk-sanctions-shadow-fleet": {
+   "x": {
+    "id": "2106831345259258078",
+    "at": "2026-10-04T19:38:30.571Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx35olaut42r",
+    "cid": "bafyreiesqvv6qbyxkhippfgql7hkgbvbklveauzjyqsu6hkg72jx6plwga",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx35olaut42r",
+     "cid": "bafyreiesqvv6qbyxkhippfgql7hkgbvbklveauzjyqsu6hkg72jx6plwga"
+    },
+    "at": "2026-10-04T19:38:31.798Z"
+   }
+  },
+  "2026-10-03-explainer-bab-el-mandeb": {
+   "x": {
+    "id": "2106885032463994955",
+    "at": "2026-10-04T23:11:50.587Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx3jm2yaa72s",
+    "cid": "bafyreicb7w4oyo2fpno5zsren3ovtrtbdcvuwrxtcmwquvtlaa6t4xieze",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx3jm2yaa72s",
+     "cid": "bafyreicb7w4oyo2fpno5zsren3ovtrtbdcvuwrxtcmwquvtlaa6t4xieze"
+    },
+    "at": "2026-10-04T23:11:52.552Z"
+   }
+  },
+  "2026-10-04-digest": {
+   "x": {
+    "id": "2107063695423484377",
+    "at": "2026-10-05T11:01:47.263Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx4rbjosvv26",
+    "cid": "bafyreif7p4nc7hvrcsffj7xfztre6wmr3lha4q5jfnyijpnk45svdxzvsy",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx4rbjosvv26",
+     "cid": "bafyreif7p4nc7hvrcsffj7xfztre6wmr3lha4q5jfnyijpnk45svdxzvsy"
+    },
+    "at": "2026-10-05T11:01:48.519Z"
+   }
+  },
+  "2026-10-04-explainer-strait-of-hormuz": {
+   "x": {
+    "id": "2107193551113322817",
+    "at": "2026-10-05T19:37:47.194Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx5o47ta2n2u",
+    "cid": "bafyreif6rafp2sb3vhnadxqswr3ca2l5wsr3rjb2t6j5jis4hx4hcts7xq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mx5o47ta2n2u",
+     "cid": "bafyreif6rafp2sb3vhnadxqswr3ca2l5wsr3rjb2t6j5jis4hx4hcts7xq"
+    },
+    "at": "2026-10-05T19:37:48.937Z"
+   }
   }
  }
 }

@@ -1,12 +1,32 @@
 {
  "entries": [
   {
+   "date": "2026-10-05",
+   "kind": "data",
+   "headline": "Seventh Hormuz tanker strike logged; Yemeni forces claim Bab el-Mandeb gains",
+   "changes": [
+    "UKMTO reported the Liberian-flagged tanker Lipsi struck by an unknown projectile in the Strait of Hormuz on Oct 4, leaving it disabled; crew safe, no environmental impact",
+    "Saudi-backed Yemeni government forces said they seized Dhubab district near the Bab el-Mandeb strait from the Houthis; Houthi media denied the claim and it remains unconfirmed",
+    "Brent ticked up to $102.80, WTI held near $90.63, and TTF gas eased slightly to €74.43/MWh"
+   ]
+  },
+  {
+   "date": "2026-10-04",
+   "kind": "site",
+   "headline": "New data dashboard, with free downloads",
+   "changes": [
+    "A new dashboard brings every key figure together: ship traffic through each chokepoint, pump prices in 36 markets, oil and gas benchmarks, facility status, the event log and how much oil each chokepoint carries",
+    "Charts are interactive: compare pump prices across countries, filter events by week and kind, and search all 176 mapped assets",
+    "Six datasets can be downloaded as CSV or JSON, rebuilt on every update and free to reuse under CC BY 4.0"
+   ]
+  },
+  {
    "date": "2026-10-04",
    "kind": "data",
    "headline": "Added Riyadh Refinery after a fire and a Houthi strike claim",
    "changes": [
     "Added Saudi Aramco's Riyadh Refinery (126 kb/d, fed by the East-West Pipeline) as a tracked facility",
-    "Reuters and AFP witnesses saw a fire there on 3 October; Yemen's Houthis claimed a missile-and-drone strike, which Saudi authorities and Aramco have not confirmed"
+    "Reuters and AFP witnesses saw a fire there on Oct 3; Yemen's Houthis claimed a missile-and-drone strike, which Saudi authorities and Aramco have not confirmed"
    ]
   },
   {

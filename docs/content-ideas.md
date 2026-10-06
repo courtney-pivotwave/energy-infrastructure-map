@@ -7,6 +7,21 @@ Backlog of content strategy ideas to pick up later. Newest at the top. Nothing h
 A very rich, interactive dashboard of every key data point on the site, built as a working resource for reporters,
 non-profits, citizens, content creators and analysts.
 
+**Mockup 2026-10-03:** [`docs/mockups/dashboard.html`](mockups/dashboard.html), an interactive page built from a snapshot
+of `data/` and PortWatch that day (open it in a browser; "Show design notes" explains each panel). It surfaced four
+gaps to close before building: no reuse licence on the site yet, no stored history for market benchmarks, asset
+capacities only in free text, and **no Asian pump prices**. Asia matters most here: the EIA estimates 84% of Hormuz crude
+went to Asian markets in 2024, and many Asian governments set or subsidise pump prices, so the stress shows up as
+subsidy bills and sudden official hikes. The mockup's Asia tab lists 12 countries with candidate official sources
+(unvetted) to feed the monthly source review and `scripts/update_fuel.py`.
+
+**Colour direction 2026-10-04:** a dark theme in the **Aubergine** palette at **High** contrast (all text AAA, chart
+colours at least 4.5:1 on the panels). See [`docs/mockups/dashboard-palettes.html`](mockups/dashboard-palettes.html),
+which holds every palette's values and the contrast-tuning code. A bolder "observatory" experiment
+([`docs/mockups/observatory.html`](mockups/observatory.html): one timeline driving ridgelines, a price heatmap and an
+event swarm) was judged too much for this page; individual pieces such as the
+pump-price heatmap could still be reused.
+
 Notes for when we pick it up:
 - **What's already in `data/`:** 8 chokepoints with live PortWatch transits against the pre-war baseline; 26 pipelines,
   68 sites, 64 fields and 10 routes with capacities and current status (`status.json`); 5 market benchmarks; pump
@@ -22,11 +37,15 @@ Notes for when we pick it up:
 - **Overlap to settle:** the `/charts/` experiment (2026-09-30) and the generated answer pages. The dashboard could become
   the hub that links to both.
 
+**2026-10-05 brief:** first version shipped Oct 5 (PR #4). Follow-ups (Asian pump prices, benchmark history) held while two review PRs wait.
+
 ## 2026-09-30: Data visualizations
 
 **Experiment live 2026-09-30:** [/charts/](https://strategicenergymap.org/charts/) with four charts (oil flows per chokepoint, Hormuz
 bypass capacity, tanker traffic, diesel since the crisis) and two chart posts. Judge at the growth check-in: chart-page
 visits, search impressions for `/charts/`, and Bluesky link clicks and engagement on the chart posts compared with text posts.
+
+**2026-10-05 brief:** judge date set for Nov 2; continued (too few chart posts, and visits and search not collected yet).
 
 A library of charts and interactive visuals built on statistical data: trends, market share, trade flows, consumption,
 and more.

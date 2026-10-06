@@ -113,7 +113,9 @@ site republishing wire copy. You may cite a credible outlet that isn't registere
 
 ## Steps each run
 
-1. `git pull` so you start from the latest data.
+1. `git pull` so you start from the latest data. Read the "Newsdesk notes" in `agent/BRIEF.md`, the weekly brief the
+   owner approved, and follow them in this run. They adjust emphasis and post mix, never the rules: if a note conflicts
+   with this file, this file wins. Skip the note and mention it under Open questions.
 2. Run `python3 scripts/update_fuel.py` (official US/EU/UK pump prices). If a feed fails, the script keeps the last good
    data and prints a warning — mention it in the summary.
 3. Note the last run date = `data/status.json → updated`. Research everything energy-relevant **since that date**
@@ -123,7 +125,7 @@ site republishing wire copy. You may cite a credible outlet that isn't registere
    - **`situation_headline` (every run):** 1–2 sentences, max ~250 characters, on what changed since the last run: the
      one or two developments a returning reader most needs. This is the first thing visitors see, so lead with the
      news, not the backstory. Same sourcing rules as events: independently verifiable facts only, no belligerent
-     claims. If nothing material changed, say so plainly (e.g. "No major change since 28 Sep: Hormuz remains closed…").
+     claims. If nothing material changed, say so plainly (e.g. "No major change since Sep 28: Hormuz remains closed…").
    - **`situation_summary` (only when the big picture changes):** the collapsed background for first-time visitors,
      5–8 neutral sentences on how the crisis got here and where it stands. Don't rewrite it daily; revise it when a
      new phase begins (a ceasefire, a reopening, a new front).
@@ -188,7 +190,10 @@ dropped, and `max_per_day` (6) caps the total.
   "massive" or "shocking", no speculation, no emojis, no @mentions.
 - The source policy applies in full: attribute claims ("Kpler data showed…", "per UKMTO"). If an event is `reported`
   (single source), say "(reported)". Never post belligerent claims, even labelled.
-- Figures must match the data files exactly and carry their date ("week of 21 Sep").
+- Figures must match the data files exactly and carry their date ("week of Sep 21").
+- **American English, month-first dates.** Write "July 20", or "Sep 21" when space is tight: month first, no
+  ordinal ("20th"), no year unless it differs from the current one. Never "20 July". Ranges: "Sep 21–28". Use
+  American spelling ("labeled", "center"). The validator rejects day-first dates in drafts that haven't posted.
 - Every fact in a draft must agree with the current data files (statuses, events). Before writing "shut", "closed" or
   "reopened", check the asset's entry in `data/status.json`. When sources disagree, use the more cautious word
   ("disrupted", "reduced").

@@ -1,0 +1,58 @@
+# Weekly growth metrics for the editor agent: writes metrics/<week-ending>.json (scripts/metrics.mjs).
+# Only this workflow holds the read-only analytics credentials; agents read the file. A source that isn't set up
+# yet is recorded in the file's "sources" block, not treated as a failure.
+name: Weekly metrics
+
+on:
+  schedule:
+    - cron: '7 9 * * 1'   # Mondays 09:07 UTC: before the editor routine (11:00) and the "Needs you" check (12:30)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: metrics
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 300
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build site (for the page count)
+        run: node scripts/build.mjs
+
+      - name: Collect
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+          GSC_SITE: ${{ vars.GSC_SITE }}
+          BING_WEBMASTER_KEY: ${{ secrets.BING_WEBMASTER_KEY }}
+          X_READS: ${{ vars.X_READS }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        shell: bash   # pipefail, so a failed run isn't hidden by tee
+        run: node scripts/metrics.mjs | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Save
+        run: |
+          if [ -n "$(git status --porcelain metrics/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add metrics/
+            git commit -m "metrics: weekly snapshot [skip ci]"
+            git pull --rebase --quiet origin main
+            git push origin HEAD:main
+          fi

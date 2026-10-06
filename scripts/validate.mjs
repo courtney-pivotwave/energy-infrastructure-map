@@ -222,6 +222,9 @@ if (social) {
     if (new Set(tags).size !== tags.length) err(`${w}: duplicate tags`);
     if (['event', 'digest', 'explainer', 'chart'].includes(p.type) && !tags.length && !seenIds.has(p.id)) warn(`${w}: no hashtags; posts are hard to discover without one`);
     if (/(^|\s)@\w/.test(text)) err(`${w}: no @mentions in automated posts`);
+    // US audience: month-first dates ("July 20", "Sep 21"), never "20 July". Checked only on drafts not yet posted.
+    const dayFirst = /\b\d{1,2}(?:st|nd|rd|th)?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\b/;
+    if (!seenIds.has(p.id)) for (const f of ['text', 'alt']) { const m = (p[f] || '').match(dayFirst); if (m) err(`${w}: write dates month first ("${m[0]}" → e.g. "July 20" or "Sep 21") in ${f}`); }
     if (/(^|\s)#\w/.test(text)) err(`${w}: put hashtags in "tags", not in the text`);
     if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
     if (p.image && !['fuel-weekly', 'chokepoints-weekly', 'chokepoint-oil-flows', 'hormuz-bypass'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);

@@ -3,6 +3,7 @@
 Static site deployed on Vercel from `main`. The build (`scripts/build.mjs`, no dependencies) copies the map into `dist/` and generates ~150 crawlable answer pages from `data/`: https://strategicenergymap.org
 
 - `index.html`, `styles.css`, `app.js` — the page. Leaflet 1.9.4 from cdnjs. It only renders; content lives in `data/`. `?embed=1` gives a map-only view.
+- `dashboard.css`, `dashboard.js` — the `/dashboard/` page (dark "Aubergine" high-contrast theme, dashboard only). `scripts/build.mjs` writes the page, `/data/v1/dashboard.json` (the bundle `dashboard.js` renders) and a CSV + JSON per dataset in `/data/v1/` (CC BY 4.0). The page loads its own stylesheet instead of `styles.css`; the build adds `?v=` content hashes itself.
 - `about.html` — About & methods page; renders live counts and `data/changelog.json`. Keep it in step with how the site actually works.
 - `og.png` — link-preview image, rendered from `tools/og-card.html` (command in README).
 - `data/*.json` — all content. Schema and ownership rules: `agent/SCHEMA.md`.
@@ -12,6 +13,8 @@ Static site deployed on Vercel from `main`. The build (`scripts/build.mjs`, no d
 - `scripts/validate.mjs` — validates `data/`. Run after every data change; must pass before committing.
 - `agent/UPDATE_AGENT.md` — instructions for the scheduled news/conflict update agent.
 - `agent/SOURCE_REVIEW.md` — monthly source-review agent; maintains `data/sources.json` (PR only). `scripts/source_activity.mjs` gives it citation counts and unregistered domains.
+- `agent/EDITOR.md` — weekly editor agent (Mondays 11:00 UTC): reads `metrics/` and the week's activity, then opens a "Brief: week of …" PR replacing `agent/BRIEF.md` (priorities, Studio assignments, Newsdesk notes, experiments). Merging it approves the brief; the daily agent follows its Newsdesk notes. PR only.
+- `scripts/metrics.mjs` — run by `.github/workflows/metrics.yml` ("Weekly metrics", Mondays 09:07 UTC); writes `metrics/<week-ending>.json` from Bluesky, Search Console, Bing, X (only with repository variable `X_READS=1`), git and GitHub. The read-only analytics keys live only in that workflow's secrets. Vercel figures are copied by hand into `metrics/vercel.json`. `metrics/` stays out of `data/` so it isn't published on the site.
 
 Live data fetched in the browser: IMF PortWatch daily chokepoint transits (ArcGIS REST, CORS-enabled, no key).
 
@@ -20,7 +23,7 @@ Build, then serve `dist/` (`fetch()` doesn't work from `file://`):
 ```
 node scripts/build.mjs && python3 -m http.server 8765 -d dist
 ```
-then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facilities/<id>/`, `/fuel-prices/<id>/`, `/charts/<id>/`, hubs, `/events/`, `/events.xml`, `sitemap.xml`, `robots.txt`. Never edit `dist/`; change the templates in `scripts/build.mjs` or the data.
+then open http://localhost:8765. Generated pages: `/dashboard/`, `/data/v1/*.csv|json`, `/chokepoints/<id>/`, `/facilities/<id>/`, `/fuel-prices/<id>/`, `/charts/<id>/`, hubs, `/events/`, `/events.xml`, `sitemap.xml`, `robots.txt`. Never edit `dist/`; change the templates in `scripts/build.mjs` or the data.
 
 ## Conventions
 - Asset ids are stable kebab-case; `status.json`, `events.json`, `scenarios.json` reference them. Never rename an id without updating every reference.
@@ -33,4 +36,4 @@ then open http://localhost:8765. Generated pages: `/chokepoints/<id>/`, `/facili
 - Do not set `trailingSlash` in `vercel.json`: it 308-redirects `/_vercel/insights/*` and breaks Vercel Web Analytics. Canonical tags already point at trailing-slash URLs.
 - Owner opt-out: any page with `?notrack=1` sets `localStorage["va-disable"]` and a `beforeSend` hook drops that browser's analytics (`?notrack=0` undoes it). The snippet sits in `index.html`, `about.html` and the page template in `scripts/build.mjs`; keep all three in step.
 - Social: the agent drafts posts in `data/social.json`; `.github/workflows/social.yml` posts them to X and Bluesky with repository secrets (`scripts/social_post.mjs`) and writes `data/social-log.json`. Credentials never go to the agent. Kill switch: `enabled: false`. Chart images come from `dist/social/*.html` (built by `scripts/build.mjs`).
-- Human alerts: `.github/workflows/health.yml` ("Needs you", daily 12:30 UTC, `scripts/health.mjs`) fails when a review PR is open, the daily update didn't run, a post gave up after 3 tries, or data on main doesn't validate; GitHub's failed-run email is the alert. The posting workflow also fails (and emails) when a post gives up.
+- Human alerts: `.github/workflows/health.yml` ("Needs you", daily 12:30 UTC, `scripts/health.mjs`) fails when a PR is waiting (oldest first, with its age), the daily update didn't run, a post gave up after 3 tries, data on main doesn't validate, last week's metrics file is missing, or the editor didn't open this week's brief; GitHub's failed-run email is the alert. The posting workflow also fails (and emails) when a post gives up.

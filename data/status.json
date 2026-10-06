@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-06",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -128,9 +128,9 @@
   },
   "east-west-pipeline": {
    "status": "reduced",
-   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep at a low rate and had recovered to roughly 3.5 mb/d by 28 Sep, about half of its 7 mb/d capacity, per people familiar with the matter cited by Bloomberg. Full resumption is expected to take about six weeks; Aramco is aiming to restore pumping to ~4 mb/d.",
+   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep and had risen above 80% of its 7 mb/d capacity — close to 6 mb/d, with about 4.5 mb/d available for export after supplying west-coast refineries — by 2 Oct, per a person familiar with the matter cited by Bloomberg. Aramco and the Saudi energy ministry did not comment.",
    "since": "2026-09-10",
-   "updated": "2026-09-28",
+   "updated": "2026-10-06",
    "confidence": "reported",
    "sources": [
     {
@@ -139,27 +139,17 @@
      "date": "2026-09-28"
     },
     {
-     "name": "CDM (citing Reuters) — Saudi Arabia restarts East-West oil pipeline; Yanbu exports set to resume",
-     "url": "https://cdm.press/news/middle-east/2026/09/22/saudi-arabia-restarts-east-west-oil-pipeline-after-houthi-strikes-yanbu-exports-set-to-resume-tuesday/",
-     "date": "2026-09-22"
-    },
-    {
-     "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
-     "url": "https://gulfnews.com/business/energy/saudi-arabia-loads-nearly-12-million-barrels-in-one-day-as-hormuz-tanker-traffic-adapts-1.500684479",
-     "date": "2026-09"
-    },
-    {
-     "name": "Al Jazeera — Saudi Arabia shuts critical oil pipeline after drone attack: What it means",
-     "url": "https://www.aljazeera.com/news/2026/9/12/saudi-arabia-shuts-critical-oil-pipeline-after-drone-attack-what-happened",
-     "date": "2026-09-12"
+     "name": "Egypt Oil & Gas (Bloomberg) — Saudi Arabia Raises East-West Pipeline Oil Flows Above 80% Capacity",
+     "url": "https://egyptoil-gas.com/news/saudi-arabia-raises-east-west-pipeline-oil-flows-above-80-capacity/",
+     "date": "2026-10-02"
     }
    ]
   },
   "yanbu-terminal": {
    "status": "disrupted",
-   "summary": "Saudi Arabia's main Hormuz-bypass outlet is under Houthi missile and drone threat (intercepts on 24 Sep) and subject to a declared Houthi ban on Saudi-linked shipping. Exports dropped while the East-West pipeline was shut (11–22 Sep). France is sending air defences.",
+   "summary": "Saudi Arabia's main Hormuz-bypass outlet remains under Houthi missile and drone threat and subject to a declared Houthi ban on Saudi-linked shipping. Throughput has recovered with the East-West pipeline: about 4.5 mb/d was available for export via Yanbu as of 2 Oct after the pipeline topped 80% of capacity, per Bloomberg. France is sending air defences.",
    "since": "2026-07-20",
-   "updated": "2026-09-25",
+   "updated": "2026-10-06",
    "confidence": "confirmed",
    "sources": [
     {
@@ -168,9 +158,9 @@
      "date": "2026-09-25"
     },
     {
-     "name": "CTP-ISW Iran Update, September 25, 2026",
-     "url": "https://www.criticalthreats.org/analysis/iran-update-september-25-2026",
-     "date": "2026-09-25"
+     "name": "Egypt Oil & Gas (Bloomberg) — Saudi Arabia Raises East-West Pipeline Oil Flows Above 80% Capacity",
+     "url": "https://egyptoil-gas.com/news/saudi-arabia-raises-east-west-pipeline-oil-flows-above-80-capacity/",
+     "date": "2026-10-02"
     }
    ]
   },

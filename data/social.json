@@ -451,6 +451,34 @@
     "BlackSea"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-06-digest",
+   "created": "2026-10-06",
+   "type": "digest",
+   "text": "Brent fell to $97.95 and WTI to $87.32, a third straight drop, as Saudi Arabia's East-West pipeline topped 80% capacity and forces reported gains toward Bab el-Mandeb while Hormuz stays closed.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "OilPrices",
+    "SaudiArabia"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-06-explainer-riyadh-refinery",
+   "created": "2026-10-06",
+   "type": "explainer",
+   "text": "Riyadh Refinery is Aramco's only refinery serving the Saudi capital: 126,000 b/d, fed by the East-West pipeline, not a coastal terminal. Disrupted since an Oct 3 fire Houthis claimed as a strike (unconfirmed).",
+   "url": "https://strategicenergymap.org/facilities/riyadh-refinery/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "Refining"
+   ],
+   "reply_to": null
   }
  ]
 }

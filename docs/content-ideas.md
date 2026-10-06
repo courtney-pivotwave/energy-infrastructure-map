@@ -37,11 +37,15 @@ Notes for when we pick it up:
 - **Overlap to settle:** the `/charts/` experiment (2026-09-30) and the generated answer pages. The dashboard could become
   the hub that links to both.
 
+**2026-10-05 brief:** first version shipped Oct 5 (PR #4). Follow-ups (Asian pump prices, benchmark history) held while two review PRs wait.
+
 ## 2026-09-30: Data visualizations
 
 **Experiment live 2026-09-30:** [/charts/](https://strategicenergymap.org/charts/) with four charts (oil flows per chokepoint, Hormuz
 bypass capacity, tanker traffic, diesel since the crisis) and two chart posts. Judge at the growth check-in: chart-page
 visits, search impressions for `/charts/`, and Bluesky link clicks and engagement on the chart posts compared with text posts.
+
+**2026-10-05 brief:** judge date set for Nov 2; continued (too few chart posts, and visits and search not collected yet).
 
 A library of charts and interactive visuals built on statistical data: trends, market share, trade flows, consumption,
 and more.

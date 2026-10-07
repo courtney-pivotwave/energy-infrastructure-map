@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-07",
+   "kind": "data",
+   "headline": "Oil rebounds as Hormuz attacks continue and Iran's exports near zero",
+   "changes": [
+    "Brent and WTI rebounded to about $101.9 and $89.98, snapping three days of declines",
+    "A dozen seafarers were injured when the tanker On Peace was struck in the Strait of Hormuz on Oct 5, UKMTO and India's government said",
+    "Tracking group UANI, corroborated by Bloomberg, found Iran loaded no crude at all in September and exports have fallen to about 50,000 b/d from 966,000 b/d in July",
+    "Yemeni government forces claimed full control of Bab el-Mandeb under 'Operation Yemen Dawn'; Houthi media denied it and it remains unconfirmed",
+    "Qatar positioned a dozen empty LNG carriers in the Gulf, signalling a possible export boost"
+   ]
+  },
+  {
    "date": "2026-10-06",
    "kind": "data",
    "headline": "Oil prices fall to multi-week lows as East-West pipeline ramps up",

@@ -1,8 +1,49 @@
 {
- "updated": "2026-10-06",
- "situation_headline": "Brent and WTI fell for a third straight session to $97.95 and $87.32 — WTI's lowest since early September — as Saudi Arabia's East-West pipeline topped 80% of capacity and Saudi-backed forces reported gains toward Bab el-Mandeb, while Hormuz remains formally closed.",
+ "updated": "2026-10-07",
+ "situation_headline": "Brent and WTI rebounded to around $102 and $90 on 7 October as fresh Hormuz tanker attacks (12 seafarers injured 5 Oct) and tracking data showing Iran's oil exports have nearly stopped under the US blockade outweighed Yemeni government forces' unconfirmed claim to have retaken Bab el-Mandeb from the Houthis.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-07-qatar-lng-ships-gulf-boost",
+   "date": "2026-10-07",
+   "title": "Qatar positions a dozen empty LNG carriers in the Gulf for a potential export boost",
+   "summary": "Bloomberg ship-tracking and satellite imagery found Qatar had assembled at least 12 empty LNG carriers, about 1.1 million tonnes of capacity and roughly 2% of the global LNG fleet, in the Gulf, signalling it may be preparing to raise exports. It remained unclear whether the ships would transit the Strait of Hormuz once loaded, given intensified Iranian attacks on vessels there.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [25.9, 51.55],
+   "assets": ["ras-laffan-lng", "strait-of-hormuz"],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Qatar Brings Empty LNG Ships Into Gulf in Potential Export Boost",
+     "url": "https://gcaptain.com/qatar-brings-empty-lng-ships-into-gulf-in-potential-export-boost/",
+     "date": "2026-10-07"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-06-iran-oil-exports-near-standstill",
+   "date": "2026-10-06",
+   "title": "Tracking data: Iran's oil exports near a standstill under US blockade",
+   "summary": "United Against Nuclear Iran (UANI), citing ship-tracking and satellite data corroborated by Bloomberg, said at least 50 Iranian tankers remain backed up along Iran's coast, with 11 laden vessels anchored east of Kharg Island and none seen loading there on 5 October. Iran loaded no crude at all in September, the first such month since the war began, with exports falling from about 966,000 b/d in July to roughly 50,000 b/d, as no new Iranian crude has crossed the US Navy's blockade line since 14 July. Iran's floating storage off Malaysia has fallen to about 10 million barrels after roughly 9 million barrels were moved by ship-to-ship transfer there in September. (UANI tracking data, reported.)",
+   "category": "market",
+   "severity": "medium",
+   "coords": [30.4, 49.3],
+   "assets": ["kharg-island"],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg, citing UANI) — US Blockade Bottles Up Dozens of Iranian Tankers, Nonprofit Says",
+     "url": "https://gcaptain.com/us-blockade-bottles-up-dozens-of-iranian-tankers-nonprofit-says/",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "gCaptain — Iran's Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
+     "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
+     "date": "2026-10-06"
+    }
+   ]
+  },
   {
    "id": "2026-10-06-oil-prices-third-day-fall",
    "date": "2026-10-06",
@@ -31,6 +72,52 @@
     {
      "name": "Mansfield Energy — Oil prices fall as rising Middle East supply outweighs shipping risks",
      "url": "https://mansfield.energy/2026/10/05/oil-prices-fall-as-rising-middle-east-supply-outweighs-shipping-risks/",
+     "date": "2026-10-05"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-on-peace-tanker-hormuz",
+   "date": "2026-10-05",
+   "title": "Tanker On Peace struck in Hormuz; 12 seafarers injured",
+   "summary": "UKMTO reported the Panama-flagged Aframax tanker On Peace was struck by an unknown projectile in the Strait of Hormuz on 5 October at 1637 UTC, sparking an engine-room fire. India's Ministry of External Affairs said 12 of the 19 crew, 11 of them Indian nationals, were injured and evacuated with Omani assistance to Khasab for treatment. No attacker was identified. UKMTO logged four other tanker incidents and an IRGC turn-back order in the Strait between 3 and 5 October.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [26.5, 56.3],
+   "assets": ["strait-of-hormuz"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
+     "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "gCaptain — Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
+     "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+     "date": "2026-10-05"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-saudi-yemen-dawn-bab-el-mandeb",
+   "date": "2026-10-05",
+   "title": "Yemeni government forces claim full control of Bab el-Mandeb under 'Operation Yemen Dawn'; Houthis don't confirm",
+   "summary": "Yemeni government military spokesman Lt Col Majed al-Nuzaili said pro-government Giants Brigades and Nation's Shield forces had taken full control of the Bab el-Mandeb strait, plus Dhubab town and its airport, and cut the road to the port of Mokha, under an offensive named 'Operation Yemen Dawn'. The Saudi-led coalition said it flew 100 fighter jets in round-the-clock support and struck 324 'high-value' Houthi targets. The claims could not be independently verified and were not confirmed by the Houthis, whose media denied the advance. (Yemeni government and Saudi-led coalition claims, unverified.)",
+   "category": "military",
+   "severity": "medium",
+   "coords": [12.6, 43.3],
+   "assets": ["bab-el-mandeb"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "The National (UAE) — Yemen government forces claim Bab al-Mandeb gains as Saudi coalition says 100 jets join Houthi offensive",
+     "url": "https://www.thenationalnews.com/news/mena/2026/10/05/yemen-government-forces-claim-bab-al-mandeb-gains-as-saudi-coalition-says-100-jets-join-houthi-offensive",
+     "date": "2026-10-05"
+    },
+    {
+     "name": "Bol News — Yemen forces make gains near vital Bab el-Mandeb strait",
+     "url": "https://bolnews.com/world/yemen-forces-make-gains-near-vital-bab-el-mandeb-strait",
      "date": "2026-10-05"
     }
    ]

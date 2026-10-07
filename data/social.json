@@ -472,11 +472,42 @@
    "type": "explainer",
    "text": "Riyadh Refinery is Aramco's only refinery serving the Saudi capital: 126,000 b/d, fed by the East-West pipeline, not a coastal terminal. Disrupted since an Oct 3 fire Houthis claimed as a strike (unconfirmed).",
    "url": "https://strategicenergymap.org/facilities/riyadh-refinery/",
+   "event_id": null,
    "image": null,
    "alt": null,
    "tags": [
     "SaudiArabia",
     "Refining"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-07-digest",
+   "created": "2026-10-07",
+   "type": "digest",
+   "text": "Brent rebounded to $101.90 and WTI to $89.98, snapping three days of declines, as a new Hormuz tanker strike injured a dozen seafarers and Iran's oil exports near zero under the US blockade.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Iran"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-07-explainer-ras-laffan-lng",
+   "created": "2026-10-07",
+   "type": "explainer",
+   "text": "Ras Laffan, Qatar's LNG export complex, ships ~77 million tonnes a year with no pipeline bypass of Hormuz. Qatar just parked a dozen empty carriers in the Gulf, hinting it may try to raise exports despite the attack risk.",
+   "url": "https://strategicenergymap.org/facilities/ras-laffan-lng/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "LNG",
+    "Qatar"
    ],
    "reply_to": null
   }

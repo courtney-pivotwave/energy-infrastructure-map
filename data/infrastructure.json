@@ -1588,7 +1588,7 @@
    "size": 5,
    "details": "Saudi Arabia (Red Sea). Terminal for East-West/Petroline crude. Provides Hormuz bypass. Also major NGL and refining hub.",
    "geo": null,
-   "verified": "2026-10-06"
+   "verified": "2026-10-07"
   },
   {
    "id": "sidi-kerir-terminal",
@@ -1648,7 +1648,8 @@
    ],
    "size": 8,
    "details": "Qatar. QatarEnergy LNG. World's largest LNG export complex, ~77 MTPA across 14 trains, expanding toward ~142 MTPA with the North Field East and South projects. Every cargo must exit through the Strait of Hormuz.",
-   "geo": "Qatar's entire LNG export capacity sits behind Hormuz, with no pipeline bypass — unlike Saudi or Emirati crude. That makes Ras Laffan the single largest point of LNG exposure in the world: roughly a fifth of global LNG supply. Long-term contracts with China, India, Japan, Korea, and (since 2022) Germany and other European buyers mean a Hormuz disruption hits Asian and European gas markets at the same time."
+   "geo": "Qatar's entire LNG export capacity sits behind Hormuz, with no pipeline bypass — unlike Saudi or Emirati crude. That makes Ras Laffan the single largest point of LNG exposure in the world: roughly a fifth of global LNG supply. Long-term contracts with China, India, Japan, Korea, and (since 2022) Germany and other European buyers mean a Hormuz disruption hits Asian and European gas markets at the same time.",
+   "verified": "2026-10-07"
   },
   {
    "id": "sabine-pass-lng",

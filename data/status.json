@@ -1,13 +1,23 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
-   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue — UKMTO's delayed disclosures and a 4 Oct strike on the tanker Lipsi put the tally at at least seven vessels struck since 28 Sep. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline). In 29 Sep notes, JPMorgan put regional crude shipments at 17.5 mb/d (98% of pre-war) and Hormuz flows near 13 mb/d, while Goldman Sachs put total Persian Gulf exports, including clandestine shipments, at 23.3 mb/d for September, matching 2025 averages; both banks cautioned this reflects the industry adapting to sustained risk, not improved safety. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue — UKMTO logged at least eight vessels struck since 28 Sep, most recently the Aframax tanker On Peace on 5 Oct, which left 12 of its 19 crew injured. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline). In 29 Sep notes, JPMorgan put regional crude shipments at 17.5 mb/d (98% of pre-war) and Hormuz flows near 13 mb/d, while Goldman Sachs put total Persian Gulf exports, including clandestine shipments, at 23.3 mb/d for September, matching 2025 averages; both banks cautioned this reflects the industry adapting to sustained risk, not improved safety. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
    "since": "2026-02-28",
-   "updated": "2026-10-05",
+   "updated": "2026-10-07",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "gCaptain — A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
+     "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "gCaptain — Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
+     "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+     "date": "2026-10-05"
+    },
     {
      "name": "Cyprus Mail — Prokopiou's six-week-old tanker struck in Strait of Hormuz",
      "url": "https://cyprus-mail.com/2026/10/05/prokopious-six-week-old-tanker-struck-in-strait-of-hormuz",
@@ -62,11 +72,21 @@
   },
   "bab-el-mandeb": {
    "status": "disrupted",
-   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces began a counteroffensive around 3-4 Oct and said they had seized Dhubab district overlooking the strait; Houthi-aligned media denied the advances, and independent confirmation of territorial or shipping-lane control is not yet available, so the status here is unchanged.",
+   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces launched a counteroffensive ('Operation Yemen Dawn') around 3-5 Oct, backed by a reported 100 Saudi-led coalition jets, and said they had taken full control of the strait plus Dhubab town, its airport and the road to Mokha; Houthi-aligned media denied the advances, and independent confirmation of territorial or shipping-lane control is not yet available, so the status here is unchanged.",
    "since": "2026-07-20",
-   "updated": "2026-10-05",
+   "updated": "2026-10-07",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "The National (UAE) — Yemen government forces claim Bab al-Mandeb gains as Saudi coalition says 100 jets join Houthi offensive",
+     "url": "https://www.thenationalnews.com/news/mena/2026/10/05/yemen-government-forces-claim-bab-al-mandeb-gains-as-saudi-coalition-says-100-jets-join-houthi-offensive",
+     "date": "2026-10-05"
+    },
+    {
+     "name": "Bol News — Yemen forces make gains near vital Bab el-Mandeb strait",
+     "url": "https://bolnews.com/world/yemen-forces-make-gains-near-vital-bab-el-mandeb-strait",
+     "date": "2026-10-05"
+    },
     {
      "name": "The Print (Reuters) — Yemeni government forces seize district by Bab el-Mandeb, military sources say",
      "url": "https://theprint.in/world/yemeni-government-forces-seize-district-by-bab-el-mandeb-military-sources-say/3062149",
@@ -209,11 +229,21 @@
   },
   "kharg-island": {
    "status": "disrupted",
-   "summary": "The terminal was intact after US strikes on military targets (14 Mar). Iranian exports have been under a US naval blockade since 14 July, and the US struck an Iranian tanker off Kharg on 5 Sep. Independent data on remaining Iranian loadings is limited.",
+   "summary": "The terminal was intact after US strikes on military targets (14 Mar). Iranian exports have been under a US naval blockade since 14 July, and the US struck an Iranian tanker off Kharg on 5 Sep. Tracking group United Against Nuclear Iran (UANI), corroborated by Bloomberg vessel-tracking, reported at least 50 Iranian tankers backed up along Iran's coast as of early October, 11 of them laden and anchored east of Kharg with none loading there on 5 Oct; Iran loaded no crude at all in September — the first such month since the war began — with exports falling from about 966,000 b/d in July to roughly 50,000 b/d, as no Iranian crude is known to have crossed the blockade line since 14 July.",
    "since": "2026-07-14",
-   "updated": "2026-09-27",
+   "updated": "2026-10-07",
    "confidence": "reported",
    "sources": [
+    {
+     "name": "gCaptain (Bloomberg, citing UANI) — US Blockade Bottles Up Dozens of Iranian Tankers, Nonprofit Says",
+     "url": "https://gcaptain.com/us-blockade-bottles-up-dozens-of-iranian-tankers-nonprofit-says/",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "gCaptain — Iran's Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
+     "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
+     "date": "2026-10-06"
+    },
     {
      "name": "Al Jazeera — Strait of Hormuz tensions linger as Iran and US move further from a deal",
      "url": "https://www.aljazeera.com/economy/2026/9/27/strait-of-hormuz-tensions-linger-as-iran-and-us-move-further-from-a-deal",

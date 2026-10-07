@@ -1,44 +1,34 @@
 {
- "as_of": "2026-10-06",
+ "as_of": "2026-10-07",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 97.95,
-   "week_ago": 102.31,
+   "value": 101.9,
+   "week_ago": 97.95,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Fell for a third straight session to $97.95 on 6 Oct (Trading Economics), as markets weighed a reported Saudi-backed advance toward Bab el-Mandeb/Mocha and Saudi Arabia's East-West pipeline ramping above 80% of capacity against a still-closed Hormuz. Week-ago uses 1 Oct (5 days prior) — the closest dated figure found this run, not a full week.",
+   "note": "Rebounded to about $101.9 on 7 Oct (Trading Economics $102.10, Investing.com $101.84) after three days of declines, as fresh Hormuz tanker attacks and tracking data showing Iran's exports near a standstill outweighed the East-West pipeline ramp-up and the Red Sea advance. Week-ago reuses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-06"
+    "date": "2026-10-07"
    },
    "extra_sources": [
     {
-     "name": "Trading Economics — Brent Crude Oil",
-     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "name": "Investing.com — Brent Oil (LCOZ6)",
+     "url": "https://www.investing.com/commodities/brent-oil",
+     "date": "2026-10-07"
+    },
+    {
+     "name": "gCaptain — Iran's Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
+     "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
      "date": "2026-10-06"
-    },
-    {
-     "name": "The Edge Malaysia — Oil eases as Saudi-backed forces advance on Bab el-Mandeb",
-     "url": "https://theedgemalaysia.com/node/820633",
-     "date": "2026-10-06"
-    },
-    {
-     "name": "Mansfield Energy — Oil prices fall as rising Middle East supply outweighs shipping risks",
-     "url": "https://mansfield.energy/2026/10/05/oil-prices-fall-as-rising-middle-east-supply-outweighs-shipping-risks/",
-     "date": "2026-10-05"
-    },
-    {
-     "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
-     "url": "https://en.wikipedia.org/wiki/2026%E2%80%932028_world_oil_market_chronology",
-     "date": "2026-10-01"
     }
    ]
   },
@@ -46,35 +36,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 87.32,
-   "week_ago": 92.87,
+   "value": 89.98,
+   "week_ago": 87.32,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Fell for a third straight session to $87.32 on 6 Oct, the lowest since early September (Trading Economics), as recovering Saudi Red Sea exports and G7 reserve releases outweighed renewed Hormuz and Bab el-Mandeb risk. Week-ago uses 1 Oct (5 days prior) — the closest dated figure found this run, not a full week.",
+   "note": "Rebounded to $89.98 on 7 Oct (Trading Economics), recovering from the 6 Oct multi-week low, on the same fresh-Hormuz-attacks and Iran-exports-near-zero news moving Brent. Week-ago reuses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-06"
+    "date": "2026-10-07"
    },
    "extra_sources": [
     {
-     "name": "Trading Economics — Crude Oil (WTI)",
-     "url": "https://tradingeconomics.com/commodity/crude-oil",
+     "name": "gCaptain — Iran's Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
+     "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
      "date": "2026-10-06"
-    },
-    {
-     "name": "Mansfield Energy — Oil prices fall as rising Middle East supply outweighs shipping risks",
-     "url": "https://mansfield.energy/2026/10/05/oil-prices-fall-as-rising-middle-east-supply-outweighs-shipping-risks/",
-     "date": "2026-10-05"
-    },
-    {
-     "name": "Wikipedia — 2026–2028 world oil market chronology (compiled)",
-     "url": "https://en.wikipedia.org/wiki/2026%E2%80%932028_world_oil_market_chronology",
-     "date": "2026-10-01"
     }
    ]
   },
@@ -82,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 76.38,
-   "week_ago": 74.43,
+   "value": 76.62,
+   "week_ago": 76.38,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Rose 3.9% to €76.38 on 6 Oct, a two-week high, on continued risk to Hormuz LNG flows (Trading Economics). Week-ago uses 5 Oct (1 day prior) — the closest dated figure found this run, not a full week. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Up slightly to €76.62 on 7 Oct (Trading Economics), extending its two-week high on continued risk to Hormuz LNG flows and Qatar's LNG-carrier positioning amid uncertainty over whether loaded ships will transit the strait. Week-ago uses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-06"
+    "date": "2026-10-07"
    },
    "extra_sources": [
     {
@@ -144,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.08,
-   "week_ago": 3.04,
+   "value": 3.17,
+   "week_ago": 3.08,
    "pre_crisis": 2.99,
-   "note": "NYMEX front-month was $3.08 on 6 Oct (Trading Economics), up on expectations of cooler weather lifting heating demand. Week-ago uses 5 Oct (1 day prior) — the closest dated figure found this run, not a full week; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "NYMEX front-month climbed to $3.17 on 7 Oct (Trading Economics), a fourth straight session of gains and the highest since 25 Sep, on expectations of cooler weather lifting heating demand. Week-ago uses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-06"
+    "date": "2026-10-07"
    },
    "extra_sources": [
     {
@@ -167,16 +147,21 @@
    ]
   }
  ],
- "note": "Brent and WTI fell for a third straight session to $97.95 and $87.32 on 6 October — WTI's lowest since early September — as markets weighed a reported Saudi-backed advance toward Bab el-Mandeb/Mocha and Saudi Arabia's East-West pipeline topping 80% of capacity against a still-closed Strait of Hormuz; G7 emergency-reserve releases added to the pressure. TTF rose on continued risk to Hormuz LNG flows.",
+ "note": "Brent and WTI rebounded to about $101.9 and $89.98 on 7 October, snapping three days of declines, as UKMTO logged a fifth/sixth Hormuz tanker incident in three days (12 seafarers injured on the tanker On Peace, 5 Oct) and tracking group UANI reported Iran's oil exports near a standstill under the US blockade, outweighing the East-West pipeline's ramp-up and Yemeni government forces' unconfirmed claim to have retaken Bab el-Mandeb. TTF and Henry Hub both ticked up.",
  "note_sources": [
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "date": "2026-10-07"
+  },
+  {
+   "name": "gCaptain — A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
+   "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
    "date": "2026-10-06"
   },
   {
-   "name": "The Edge Malaysia — Oil eases as Saudi-backed forces advance on Bab el-Mandeb",
-   "url": "https://theedgemalaysia.com/node/820633",
+   "name": "gCaptain (Bloomberg, citing UANI) — US Blockade Bottles Up Dozens of Iranian Tankers, Nonprofit Says",
+   "url": "https://gcaptain.com/us-blockade-bottles-up-dozens-of-iranian-tankers-nonprofit-says/",
    "date": "2026-10-06"
   }
  ]

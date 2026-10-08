@@ -449,6 +449,21 @@
     },
     "at": "2026-10-07T23:06:15.029Z"
    }
+  },
+  "2026-10-07-explainer-ras-laffan-lng": {
+   "x": {
+    "id": "2108150446988923006",
+    "at": "2026-10-08T11:00:08.918Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxeclf6gua22",
+    "cid": "bafyreiguqukdvrtlcieekmznsrilzozwcezeuomc4zfc2uj2zsh2cqkhyq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxeclf6gua22",
+     "cid": "bafyreiguqukdvrtlcieekmznsrilzozwcezeuomc4zfc2uj2zsh2cqkhyq"
+    },
+    "at": "2026-10-08T11:00:11.135Z"
+   }
   }
  }
 }

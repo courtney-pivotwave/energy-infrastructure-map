@@ -1,34 +1,39 @@
 {
- "as_of": "2026-10-07",
+ "as_of": "2026-10-08",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 101.9,
-   "week_ago": 97.95,
+   "value": 105.2,
+   "week_ago": 101.9,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Rebounded to about $101.9 on 7 Oct (Trading Economics $102.10, Investing.com $101.84) after three days of declines, as fresh Hormuz tanker attacks and tracking data showing Iran's exports near a standstill outweighed the East-West pipeline ramp-up and the Red Sea advance. Week-ago reuses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week.",
+   "note": "Jumped to about $105.2 on 8 Oct (Trading Economics $105.26, Investing.com $105.16-105.26), up roughly 5% on the day, as Hurricane Isaias forced US Gulf of Mexico producers to shut in about a quarter of oil output and the IMO recorded the highest weekly tanker-attack total in the Strait of Hormuz since the war began. Week-ago reuses 7 Oct (1 day prior) — the closest dated figure found this run, not a full week.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-07"
+    "date": "2026-10-08"
    },
    "extra_sources": [
     {
      "name": "Investing.com — Brent Oil (LCOZ6)",
      "url": "https://www.investing.com/commodities/brent-oil",
+     "date": "2026-10-08"
+    },
+    {
+     "name": "Reuters via BOE Report — About 25% of Gulf of Mexico oil output shut in due to Isaias, US agency says",
+     "url": "https://boereport.com/2026/10/07/about-25-of-gulf-of-mexico-oil-output-shut-in-due-to-isaias-us-agency-says/",
      "date": "2026-10-07"
     },
     {
-     "name": "gCaptain — Iran's Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
-     "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
-     "date": "2026-10-06"
+     "name": "Reuters via gCaptain — Attacks on Tankers in Hormuz Hit Highest of Any Week Since Start of Iran War, Sources Say",
+     "url": "https://gcaptain.com/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say/",
+     "date": "2026-10-07"
     }
    ]
   },
@@ -36,25 +41,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 89.98,
-   "week_ago": 87.32,
+   "value": 92.69,
+   "week_ago": 89.98,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Rebounded to $89.98 on 7 Oct (Trading Economics), recovering from the 6 Oct multi-week low, on the same fresh-Hormuz-attacks and Iran-exports-near-zero news moving Brent. Week-ago reuses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week.",
+   "note": "Jumped to $92.69 on 8 Oct (Trading Economics), up about 5%, on the same Hurricane Isaias Gulf shut-ins and record Hormuz attack-week news moving Brent. Week-ago reuses 7 Oct (1 day prior) — the closest dated figure found this run, not a full week.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-07"
+    "date": "2026-10-08"
    },
    "extra_sources": [
     {
-     "name": "gCaptain — Iran's Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
-     "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
-     "date": "2026-10-06"
+     "name": "Reuters via BOE Report — About 25% of Gulf of Mexico oil output shut in due to Isaias, US agency says",
+     "url": "https://boereport.com/2026/10/07/about-25-of-gulf-of-mexico-oil-output-shut-in-due-to-isaias-us-agency-says/",
+     "date": "2026-10-07"
     }
    ]
   },
@@ -62,19 +67,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 76.62,
-   "week_ago": 76.38,
+   "value": 79.56,
+   "week_ago": 76.62,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Up slightly to €76.62 on 7 Oct (Trading Economics), extending its two-week high on continued risk to Hormuz LNG flows and Qatar's LNG-carrier positioning amid uncertainty over whether loaded ships will transit the strait. Week-ago uses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Rose to about €79.56 on 8 Oct (Trading Economics), up almost 2%, extending its multi-week high on continued risk to Hormuz LNG flows and Qatar's LNG-carrier positioning. Week-ago reuses 7 Oct (1 day prior) — the closest dated figure found this run, not a full week. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-07"
+    "date": "2026-10-08"
    },
    "extra_sources": [
     {
@@ -93,19 +98,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 25.72,
-   "week_ago": 25.71,
+   "value": 25.88,
+   "week_ago": 25.72,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
     "date": "2026-09-14",
     "note": "Assessed at 'high-USD 29s', the highest in about 2.5 years (Global LNG Hub)."
    },
-   "note": "Little changed at $25.72 on 5 Oct (Trading Economics, latest available read). Week-ago reuses the prior run's 2 Oct value (3 days earlier, not a full week) — the closest dated figure available. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Little changed at $25.88 on 7 Oct (Trading Economics, latest available read), flat on the week. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-05"
+    "date": "2026-10-07"
    },
    "extra_sources": [
     {
@@ -124,14 +129,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.17,
-   "week_ago": 3.08,
+   "value": 3.27,
+   "week_ago": 3.17,
    "pre_crisis": 2.99,
-   "note": "NYMEX front-month climbed to $3.17 on 7 Oct (Trading Economics), a fourth straight session of gains and the highest since 25 Sep, on expectations of cooler weather lifting heating demand. Week-ago uses 6 Oct (1 day prior) — the closest dated figure found this run, not a full week; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "Climbed to $3.27 on 8 Oct (Trading Economics), a fifth straight session of gains, on expectations of cooler weather lifting heating demand. Week-ago reuses 7 Oct (1 day prior) — the closest dated figure found this run, not a full week; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-07"
+    "date": "2026-10-08"
    },
    "extra_sources": [
     {
@@ -147,22 +152,22 @@
    ]
   }
  ],
- "note": "Brent and WTI rebounded to about $101.9 and $89.98 on 7 October, snapping three days of declines, as UKMTO logged a fifth/sixth Hormuz tanker incident in three days (12 seafarers injured on the tanker On Peace, 5 Oct) and tracking group UANI reported Iran's oil exports near a standstill under the US blockade, outweighing the East-West pipeline's ramp-up and Yemeni government forces' unconfirmed claim to have retaken Bab el-Mandeb. TTF and Henry Hub both ticked up.",
+ "note": "Brent and WTI jumped about 5% to roughly $105 and $93 on 8 October as Hurricane Isaias forced Shell and Chevron to shut in about a quarter of US Gulf of Mexico oil output and evacuate staff from several platforms, while the IMO recorded the highest weekly tanker-attack total in the Strait of Hormuz since the war began. TTF and Henry Hub both rose.",
  "note_sources": [
   {
-   "name": "Trading Economics — Brent Crude Oil",
-   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "name": "Reuters via BOE Report — About 25% of Gulf of Mexico oil output shut in due to Isaias, US agency says",
+   "url": "https://boereport.com/2026/10/07/about-25-of-gulf-of-mexico-oil-output-shut-in-due-to-isaias-us-agency-says/",
    "date": "2026-10-07"
   },
   {
-   "name": "gCaptain — A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
-   "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
-   "date": "2026-10-06"
+   "name": "Reuters via AOL — Shell, Chevron cut Gulf of Mexico output as Tropical Storm Isaias approaches",
+   "url": "https://www.aol.com/articles/shell-chevron-cut-gulf-mexico-002754000.html",
+   "date": "2026-10-07"
   },
   {
-   "name": "gCaptain (Bloomberg, citing UANI) — US Blockade Bottles Up Dozens of Iranian Tankers, Nonprofit Says",
-   "url": "https://gcaptain.com/us-blockade-bottles-up-dozens-of-iranian-tankers-nonprofit-says/",
-   "date": "2026-10-06"
+   "name": "Reuters via gCaptain — Attacks on Tankers in Hormuz Hit Highest of Any Week Since Start of Iran War, Sources Say",
+   "url": "https://gcaptain.com/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say/",
+   "date": "2026-10-07"
   }
  ]
 }

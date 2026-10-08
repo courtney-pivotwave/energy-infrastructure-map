@@ -1,8 +1,82 @@
 {
- "updated": "2026-10-07",
- "situation_headline": "Brent and WTI rebounded to around $102 and $90 on 7 October as fresh Hormuz tanker attacks (12 seafarers injured 5 Oct) and tracking data showing Iran's oil exports have nearly stopped under the US blockade outweighed Yemeni government forces' unconfirmed claim to have retaken Bab el-Mandeb from the Houthis.",
+ "updated": "2026-10-08",
+ "situation_headline": "Brent jumped above $105 and WTI above $92 on 8 October as Hurricane Isaias forced US Gulf of Mexico oil producers to shut in about a quarter of output and attacks on tankers in the Strait of Hormuz hit their highest weekly total since the war began.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-08-hurricane-isaias-gulf-shutins",
+   "date": "2026-10-08",
+   "title": "Hurricane Isaias shuts in about a quarter of US Gulf of Mexico oil output",
+   "summary": "Isaias, the first Atlantic hurricane of the 2026 season, tracked toward the northern Gulf Coast near the Alabama/Mississippi/Florida Panhandle area. Shell shut in production and evacuated all personnel from its Mars, Olympus, Ursa, Vito and Appomattox platforms, and Chevron shut in four Gulf-of-Mexico facilities. The Marine Minerals Administration, the US offshore regulator, said producers had shut in about 25.08% of current Gulf oil output and 16.37% of gas output as of 7 October, with staff evacuated from 8 of the Gulf's 371 manned platforms. The US Gulf normally produces around 1.8 million b/d, so the shut-ins add a temporary, separate supply loss on top of the Middle East disruptions.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    29.0,
+    -89.5
+   ],
+   "assets": [
+    "gulf-of-mexico-offshore"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via BOE Report — About 25% of Gulf of Mexico oil output shut in due to Isaias, US agency says",
+     "url": "https://boereport.com/2026/10/07/about-25-of-gulf-of-mexico-oil-output-shut-in-due-to-isaias-us-agency-says/",
+     "date": "2026-10-07"
+    },
+    {
+     "name": "Reuters via AOL — Shell, Chevron cut Gulf of Mexico output as Tropical Storm Isaias approaches",
+     "url": "https://www.aol.com/articles/shell-chevron-cut-gulf-mexico-002754000.html",
+     "date": "2026-10-07"
+    },
+    {
+     "name": "WLOX (NHC advisory) — Tropical Depression 9 forms, to approach Gulf Coast as hurricane later this week",
+     "url": "https://www.wlox.com/2026/10/06/tropical-depression-9-forms-approach-gulf-coast-hurricane-later-this-week/",
+     "date": "2026-10-06"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-hormuz-attacks-record-week",
+   "date": "2026-10-07",
+   "title": "Tanker attacks in the Strait of Hormuz hit the highest weekly total since the war began",
+   "summary": "The UN's International Maritime Organization recorded 9 attacks on tankers in and around the Strait of Hormuz in the week of 28 September-5 October, more than the 8 it recorded in the previous highest week (mid-July) since the Iran war began on 28 February. Reuters, citing three maritime security sources, put the week's total higher, at least 12 attacks on oil, LNG and LPG tankers; that figure could not be independently verified. The US Navy-led Joint Maritime Information Center separately advised that Iranian Revolutionary Guard vessels continued drone overflights, surveillance and radio hailing of merchant ships through the strait.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Attacks on Tankers in Hormuz Hit Highest of Any Week Since Start of Iran War, Sources Say",
+     "url": "https://gcaptain.com/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say/",
+     "date": "2026-10-07"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-06-gulf-oil-flows-81pct-september",
+   "date": "2026-10-06",
+   "title": "Gulf oil flows excluding Iran averaged 81% of pre-war levels in September",
+   "summary": "Vortexa ship-tracking data showed the seven non-Iranian Gulf producers (Saudi Arabia, Kuwait, Qatar, Oman, Bahrain, Iraq and the UAE) averaged 19.2 million b/d of crude, condensate and refined fuels including LPG in September, about 81% of their roughly 23.6 million b/d pre-war baseline. Crude and condensate alone recovered to 91% of their pre-war rate; refined fuels, including LPG, lagged at 60%. Kpler separately put the group's total September oil exports at 18.6 million b/d. Iran's own exports are excluded from the 81% figure; Kpler says they fell to zero under the US blockade.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Gulf Oil Flows Rise to Average 81% of Pre-war Rate in September",
+     "url": "https://gcaptain.com/gulf-oil-flows-rise-to-average-81-of-pre-war-rate-in-september/",
+     "date": "2026-10-06"
+    }
+   ]
+  },
   {
    "id": "2026-10-07-qatar-lng-ships-gulf-boost",
    "date": "2026-10-07",
@@ -10,8 +84,14 @@
    "summary": "Bloomberg ship-tracking and satellite imagery found Qatar had assembled at least 12 empty LNG carriers, about 1.1 million tonnes of capacity and roughly 2% of the global LNG fleet, in the Gulf, signalling it may be preparing to raise exports. It remained unclear whether the ships would transit the Strait of Hormuz once loaded, given intensified Iranian attacks on vessels there.",
    "category": "shipping",
    "severity": "medium",
-   "coords": [25.9, 51.55],
-   "assets": ["ras-laffan-lng", "strait-of-hormuz"],
+   "coords": [
+    25.9,
+    51.55
+   ],
+   "assets": [
+    "ras-laffan-lng",
+    "strait-of-hormuz"
+   ],
    "confidence": "reported",
    "sources": [
     {
@@ -28,8 +108,13 @@
    "summary": "United Against Nuclear Iran (UANI), citing ship-tracking and satellite data corroborated by Bloomberg, said at least 50 Iranian tankers remain backed up along Iran's coast, with 11 laden vessels anchored east of Kharg Island and none seen loading there on 5 October. Iran loaded no crude at all in September, the first such month since the war began, with exports falling from about 966,000 b/d in July to roughly 50,000 b/d, as no new Iranian crude has crossed the US Navy's blockade line since 14 July. Iran's floating storage off Malaysia has fallen to about 10 million barrels after roughly 9 million barrels were moved by ship-to-ship transfer there in September. (UANI tracking data, reported.)",
    "category": "market",
    "severity": "medium",
-   "coords": [30.4, 49.3],
-   "assets": ["kharg-island"],
+   "coords": [
+    30.4,
+    49.3
+   ],
+   "assets": [
+    "kharg-island"
+   ],
    "confidence": "reported",
    "sources": [
     {
@@ -83,8 +168,13 @@
    "summary": "UKMTO reported the Panama-flagged Aframax tanker On Peace was struck by an unknown projectile in the Strait of Hormuz on 5 October at 1637 UTC, sparking an engine-room fire. India's Ministry of External Affairs said 12 of the 19 crew, 11 of them Indian nationals, were injured and evacuated with Omani assistance to Khasab for treatment. No attacker was identified. UKMTO logged four other tanker incidents and an IRGC turn-back order in the Strait between 3 and 5 October.",
    "category": "shipping",
    "severity": "high",
-   "coords": [26.5, 56.3],
-   "assets": ["strait-of-hormuz"],
+   "coords": [
+    26.5,
+    56.3
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
    "confidence": "confirmed",
    "sources": [
     {
@@ -106,8 +196,13 @@
    "summary": "Yemeni government military spokesman Lt Col Majed al-Nuzaili said pro-government Giants Brigades and Nation's Shield forces had taken full control of the Bab el-Mandeb strait, plus Dhubab town and its airport, and cut the road to the port of Mokha, under an offensive named 'Operation Yemen Dawn'. The Saudi-led coalition said it flew 100 fighter jets in round-the-clock support and struck 324 'high-value' Houthi targets. The claims could not be independently verified and were not confirmed by the Houthis, whose media denied the advance. (Yemeni government and Saudi-led coalition claims, unverified.)",
    "category": "military",
    "severity": "medium",
-   "coords": [12.6, 43.3],
-   "assets": ["bab-el-mandeb"],
+   "coords": [
+    12.6,
+    43.3
+   ],
+   "assets": [
+    "bab-el-mandeb"
+   ],
    "confidence": "unverified",
    "sources": [
     {

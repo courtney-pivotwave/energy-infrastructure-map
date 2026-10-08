@@ -510,6 +510,34 @@
     "Qatar"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-08-digest",
+   "created": "2026-10-08",
+   "type": "digest",
+   "text": "Brent jumped to $105.20 and WTI to $92.69, up about 5%, as Hurricane Isaias forced US Gulf producers to shut in about a quarter of output and Hormuz tanker attacks hit their highest weekly total since the war began.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "OilPrices",
+    "SupplyChain"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-08-explainer-north-field-south-pars",
+   "created": "2026-10-08",
+   "type": "explainer",
+   "text": "Qatar and Iran share the world's largest gas field: Qatar's North Field feeds its LNG exports, Iran's South Pars still limited by Israel's March strike. Qatar just parked a dozen empty LNG carriers in the Gulf.",
+   "url": "https://strategicenergymap.org/facilities/north-field-south-pars-gas/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "NaturalGas",
+    "Qatar"
+   ],
+   "reply_to": null
   }
  ]
 }

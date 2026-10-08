@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-10-08",
+   "kind": "data",
+   "headline": "Hurricane shuts in a quarter of Gulf of Mexico oil output as Hormuz attacks hit a record week",
+   "changes": [
+    "Brent and WTI jumped about 5% to roughly $105 and $93 as Hurricane Isaias approached the US Gulf Coast",
+    "Shell and Chevron shut in production and evacuated staff from Gulf of Mexico platforms; US regulators put the shut-in at about 25% of Gulf oil output",
+    "The UN's IMO recorded 9 tanker attacks in the Strait of Hormuz in the week of Sep 28-Oct 5, the most of any week since the war began",
+    "Vortexa and Kpler data showed non-Iranian Gulf oil flows averaged 81% of their pre-war rate in September, while Iran's own exports stayed near zero"
+   ]
+  },
+  {
    "date": "2026-10-07",
    "kind": "data",
    "headline": "Oil rebounds as Hormuz attacks continue and Iran's exports near zero",

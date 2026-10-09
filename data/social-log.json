@@ -524,6 +524,21 @@
     },
     "at": "2026-10-09T17:27:02.378Z"
    }
+  },
+  "2026-10-09-vlcc-freight-record": {
+   "x": {
+    "id": "2108688844916654570",
+    "at": "2026-10-09T22:39:32.989Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxi24vsysx2k",
+    "cid": "bafyreigaz2ukrdgiyvettcbtrjezqgtxypuheor3jldzsqrx7uzy2dprjq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxi24vsysx2k",
+     "cid": "bafyreigaz2ukrdgiyvettcbtrjezqgtxypuheor3jldzsqrx7uzy2dprjq"
+    },
+    "at": "2026-10-09T22:39:34.253Z"
+   }
   }
  }
 }

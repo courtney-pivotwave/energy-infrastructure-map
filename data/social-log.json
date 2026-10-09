@@ -509,6 +509,21 @@
     },
     "at": "2026-10-09T10:58:43.263Z"
    }
+  },
+  "2026-10-09-tanker-acers-qatar": {
+   "x": {
+    "id": "2108610192396972125",
+    "at": "2026-10-09T17:27:00.759Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxhio2mqqo22",
+    "cid": "bafyreiacbxaxw4x5k2zf27iee3b3zctzrbpy2eqmfyia7kdd4vltgs4jfi",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxhio2mqqo22",
+     "cid": "bafyreiacbxaxw4x5k2zf27iee3b3zctzrbpy2eqmfyia7kdd4vltgs4jfi"
+    },
+    "at": "2026-10-09T17:27:02.378Z"
+   }
   }
  }
 }

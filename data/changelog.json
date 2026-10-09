@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-09",
+   "kind": "data",
+   "headline": "Oil eases on Trump's no-strike pledge as Gulf of Mexico shut-ins deepen to 63%",
+   "changes": [
+    "Brent and WTI eased 1-1.5% after Trump said the US will not attack Iran before November's midterm elections",
+    "US Gulf of Mexico oil shut-ins ahead of Hurricane Isaias deepened to 63% of output, from 25% a day earlier",
+    "A chemical tanker was struck off Qatar, west of the usual Strait of Hormuz attack cluster, and Reuters reported Iran plans to widen threats against ships on 'unauthorized' routes",
+    "Saudi Arabia's energy minister said the East-West pipeline reached 5.8 million b/d (83% of capacity); Saudi Aramco is in talks to formalize long-term Hormuz-bypass shuttle contracts",
+    "Gulf-to-Asia supertanker freight rates hit a record near $1.4 million/day as the Hormuz shuttle system strains vessel supply"
+   ]
+  },
+  {
    "date": "2026-10-08",
    "kind": "data",
    "headline": "Hurricane shuts in a quarter of Gulf of Mexico oil output as Hormuz attacks hit a record week",

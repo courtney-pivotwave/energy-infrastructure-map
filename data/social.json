@@ -538,6 +538,66 @@
     "Qatar"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-09-digest",
+   "created": "2026-10-09",
+   "type": "digest",
+   "text": "Trump: the US won't strike Iran before November's midterms. Oil eased to Brent $102.81, WTI $90.56, even as Gulf of Mexico shut-ins hit 63% of output ahead of Hurricane Isaias, and a tanker was struck off Qatar, west of Hormuz.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Iran",
+    "EnergyCrisis"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-09-tanker-acers-qatar",
+   "created": "2026-10-09",
+   "type": "event",
+   "text": "A chemical tanker was struck by projectiles off Qatar on Oct 7, UKMTO said — about 51 nautical miles offshore, well west of the usual Strait of Hormuz attack cluster. No party has claimed responsibility.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-07-tanker-acers-qatar",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-09-vlcc-freight-record",
+   "created": "2026-10-09",
+   "type": "event",
+   "text": "Gulf-to-Asia supertanker rates hit a record near $1.4 million a day, Signal Ocean data showed, up about 540% since before the war, as owners chase Hormuz-transit fees and shuttle-system demand.",
+   "url": "https://strategicenergymap.org/events/#2026-10-08-vlcc-freight-rates-record",
+   "event_id": "2026-10-08-vlcc-freight-rates-record",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Shipping",
+    "SupplyChain"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-09-explainer-habshan-fujairah",
+   "created": "2026-10-09",
+   "type": "explainer",
+   "text": "The UAE's Hormuz insurance: the Habshan-Fujairah pipeline moves Abu Dhabi crude 370km to the Gulf of Oman, bypassing the strait — about 1.5 million b/d, mirroring Saudi Arabia's East-West pipeline.",
+   "url": "https://strategicenergymap.org/facilities/habshan-fujairah-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Pipelines",
+    "UAE"
+   ],
+   "reply_to": null
   }
  ]
 }

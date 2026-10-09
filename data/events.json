@@ -1,8 +1,161 @@
 {
- "updated": "2026-10-08",
- "situation_headline": "Brent jumped above $105 and WTI above $92 on 8 October as Hurricane Isaias forced US Gulf of Mexico oil producers to shut in about a quarter of output and attacks on tankers in the Strait of Hormuz hit their highest weekly total since the war began.",
+ "updated": "2026-10-09",
+ "situation_headline": "Oil eased after Trump said the US will not strike Iran before November's midterms, even as Gulf of Mexico shut-ins deepened to 63% of oil output ahead of Hurricane Isaias and a tanker was hit off Qatar, west of the usual Hormuz attack zone.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-08-gulf-mexico-shutin-63pct",
+   "date": "2026-10-08",
+   "title": "US Gulf of Mexico shut-ins deepen to 63% of oil output ahead of Isaias landfall",
+   "summary": "The Marine Minerals Administration said producers had shut in about 62.89% of current Gulf oil output and 57.35% of gas output as of 8 October, up sharply from 25.08%/16.37% a day earlier, with personnel evacuated from 121 of the Gulf's 371 manned platforms (up from 8). An Earth Science Associates model put about 9 million barrels of oil output at risk through the storm, versus 7.1 million for Tropical Storm Bertha in July. Isaias was forecast to make landfall near the Mississippi-Alabama-Florida border Friday night, potentially after strengthening further.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    29.0,
+    -89.5
+   ],
+   "assets": [
+    "gulf-of-mexico-offshore"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via BOE Report — About 63% of US Gulf oil production shut in ahead of Isaias, US agency says",
+     "url": "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",
+     "date": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-trump-no-strike-iran-midterms",
+   "date": "2026-10-08",
+   "title": "Trump says US will not strike Iran before November midterm elections",
+   "summary": "In a Truth Social post, President Trump said the US is \"having productive discussions with the Islamic Republic of Iran\" and \"will not be attacking Iran at any time prior to the Midterm Elections.\" He said the US blockade of Iranian ports remains in force and that oil is flowing through the Strait of Hormuz, and has separately said he expects oil prices to fall sharply after the election. Trump rejected Iran's latest proposal to end the war and reopen the strait; talks continue.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via BOE Report — Trump says US will not attack Iran before midterm elections in November",
+     "url": "https://boereport.com/2026/10/08/trump-says-us-will-not-attack-iran-before-midterm-elections-in-november/",
+     "date": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-tanker-acers-qatar",
+   "date": "2026-10-07",
+   "title": "Chemical tanker struck by projectiles off Qatar, west of the usual Hormuz attack zone",
+   "summary": "The Antigua and Barbuda-flagged chemical/oil tanker Acers was struck by several projectiles around 1900 UTC about 51 nautical miles north of Madinat ash Shamal, Qatar, UKMTO said; casualties were reported but not numbered. No party has claimed responsibility. The location is well west of the Strait of Hormuz cluster where most recent attacks occurred, including at least 12 tanker attacks Reuters counted between 28 September and 5 October, the most intense week since the war began.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.3,
+    51.5
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain — Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
+     "url": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
+     "date": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-iran-warns-unauthorized-hormuz-routes",
+   "date": "2026-10-08",
+   "title": "Reuters: Iran plans to widen threats against ships using 'unauthorized' Hormuz-area routes",
+   "summary": "Reuters reported that Iran has warned regional countries that any new oil-export routes it has not authorized would be treated as hostile, citing a senior regional official close to Tehran and a diplomat briefed by Tehran. The sources described a plan — agreed by Iran's political leadership and the Revolutionary Guards — that could involve missile and drone attacks on ships or boats sent to scare vessels away, targeting channels on the Omani side of the strait and Gulf of Oman transfer points used for shuttle cargoes. No Iranian official confirmed this on the record, and the plan itself could not be independently verified.",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    26.6,
+    56.3
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Attack Risks Rise for Tankers as Iran Vows to Block More Hormuz Routes",
+     "url": "https://gcaptain.com/attack-risks-rise-for-tankers-as-iran-vows-to-block-more-hormuz-routes/",
+     "date": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-saudi-aramco-hormuz-shuttle-contracts",
+   "date": "2026-10-08",
+   "title": "Saudi Aramco in talks to formalize long-term Hormuz-bypass shuttle contracts",
+   "summary": "Aramco is discussing offering Asian customers long-term contracts, to be finalized by year-end, built around the ship-to-ship shuttle system it has used during the war — loading via the Strait of Hormuz or Red Sea, then transferring cargo outside the strait to vessels whose owners won't enter it. Talks also cover pricing benchmarks and whether Aramco itself arranges shipping. The UAE, Kuwait and Iraq have used similar shuttle arrangements; Aramco and the Saudi energy ministry did not comment.",
+   "category": "market",
+   "severity": "medium",
+   "coords": [
+    24.2,
+    38.5
+   ],
+   "assets": [
+    "east-west-pipeline",
+    "yanbu-terminal"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
+     "url": "https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/",
+     "date": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-vlcc-freight-rates-record",
+   "date": "2026-10-08",
+   "title": "Gulf-to-Asia supertanker freight rates hit record as Hormuz shuttle system strains vessel supply",
+   "summary": "The assessed VLCC day rate for the Persian Gulf-to-East Asia route hit an all-time high of nearly $1.4 million a day, up about 540% since before the war, as shipowners chase high fees for Hormuz transits and the ship-to-ship shuttle system outside the strait ties up extra tankers, Signal Ocean data showed. Over 40% of the roughly 850-strong global VLCC fleet is now in or within a couple of days of the Persian Gulf, and the number of empty VLCCs heading to Atlantic ports has halved in a month. Moving crude from the Gulf to East Asia now costs more than six times its pre-war level; one VLCC was offered for a US Gulf-to-Japan run at a potential record $82m, more than $40 a barrel.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Supertankers Racing to Middle East Worsen Global Ship Crunch",
+     "url": "https://gcaptain.com/supertankers-racing-to-middle-east-worsen-global-ship-crunch/",
+     "date": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-06-east-west-pipeline-5-8mbd-minister",
+   "date": "2026-10-06",
+   "title": "Saudi energy minister says East-West pipeline pumping 5.8 million b/d",
+   "summary": "Speaking at the GCC 2026 Forum in Manama, Saudi Energy Minister Prince Abdulaziz bin Salman said the East-West Pipeline had reached 5.8 million b/d \"as of this morning\" — about 83% of its 7 million b/d capacity — with roughly 4 million b/d of that being rerouted to the Red Sea port of Yanbu to bypass the Strait of Hormuz, about 4% of global oil supply. Flows had been as low as about 2 million b/d in August, per Kpler, after Houthi attacks on the Red Sea route.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [
+    24.2,
+    38.5
+   ],
+   "assets": [
+    "east-west-pipeline",
+    "yanbu-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Saudi Arabia says East-West pipeline pumping 5.8 million bpd",
+     "url": "https://www.aljazeera.com/news/2026/10/6/saudi-arabia-says-east-west-pipeline-pumping-5-8-million-bpd",
+     "date": "2026-10-06"
+    }
+   ]
+  },
   {
    "id": "2026-10-08-hurricane-isaias-gulf-shutins",
    "date": "2026-10-08",

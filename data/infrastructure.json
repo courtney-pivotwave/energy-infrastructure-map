@@ -850,7 +850,7 @@
     },
     "as_of": "2026-05-11"
    },
-   "verified": "2026-09-30",
+   "verified": "2026-10-09",
    "coords": [
     [
      25.9,
@@ -928,7 +928,8 @@
     ]
    ],
    "details": "UAE: Habshan (onshore Abu Dhabi) to Fujairah (Gulf of Oman). ~370 km. Capacity ~1.5 million bpd. Commissioned 2012. Allows UAE crude exports to bypass Strait of Hormuz entirely.",
-   "geo": "The UAE's Hormuz insurance policy. Fujairah sits outside the strait on the Gulf of Oman coast, enabling UAE crude to reach tankers without entering the Persian Gulf. Abu Dhabi has also built massive crude storage at Fujairah (~42 million barrels capacity). The US Navy's nearby presence and bilateral defense agreements with the UAE add a security dimension. Fujairah has emerged as the region's second-largest bunkering hub (after Singapore), and ADNOC has expanded the terminal into a major trading and storage complex."
+   "geo": "The UAE's Hormuz insurance policy. Fujairah sits outside the strait on the Gulf of Oman coast, enabling UAE crude to reach tankers without entering the Persian Gulf. Abu Dhabi has also built massive crude storage at Fujairah (~42 million barrels capacity). The US Navy's nearby presence and bilateral defense agreements with the UAE add a security dimension. Fujairah has emerged as the region's second-largest bunkering hub (after Singapore), and ADNOC has expanded the terminal into a major trading and storage complex.",
+   "verified": "2026-10-09"
   },
   {
    "id": "cpc-pipeline",
@@ -1588,7 +1589,7 @@
    "size": 5,
    "details": "Saudi Arabia (Red Sea). Terminal for East-West/Petroline crude. Provides Hormuz bypass. Also major NGL and refining hub.",
    "geo": null,
-   "verified": "2026-10-07"
+   "verified": "2026-10-09"
   },
   {
    "id": "sidi-kerir-terminal",

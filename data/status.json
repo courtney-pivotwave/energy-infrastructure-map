@@ -1,13 +1,38 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
-   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. The IMO recorded 9 tanker attacks in the strait in the week of 28 Sep-5 Oct, the highest weekly total since the war began (previous high: 8, mid-July); Reuters sources put the week's toll higher, at 12, a figure that could not be independently verified. The most recent confirmed strike hit the Aframax tanker On Peace on 5 Oct, injuring 12 of its 19 crew. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline); Vortexa separately put non-Iranian Gulf oil flows at 81% of pre-war levels in September. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. The IMO recorded 9 tanker attacks in the strait in the week of 28 Sep-5 Oct, the highest weekly total since the war began; a chemical tanker (Acers) was separately struck by projectiles on 7 Oct about 51 nautical miles off Qatar, west of the usual attack cluster. Reuters reported, citing officials close to Tehran, that Iran plans to widen threats against ships using routes it hasn't authorized, including Omani-side channels and Gulf of Oman transfer points — a plan that could not be independently verified. President Trump said on 8 Oct the US will not attack Iran before November's midterm elections, that the US blockade remains in force, and that oil is flowing through the strait; he rejected Iran's latest proposal to end the war. Saudi Aramco is in talks to formalize long-term shuttle contracts built on the ship-to-ship transfer system that bypasses the strait, and VLCC freight on the Gulf-to-Asia route hit a record near $1.4 million/day as that shuttle system strains vessel supply. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline); Vortexa separately put non-Iranian Gulf oil flows at 81% of pre-war levels in September. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
    "since": "2026-02-28",
-   "updated": "2026-10-08",
+   "updated": "2026-10-09",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "gCaptain (Reuters) — Attack Risks Rise for Tankers as Iran Vows to Block More Hormuz Routes",
+     "url": "https://gcaptain.com/attack-risks-rise-for-tankers-as-iran-vows-to-block-more-hormuz-routes/",
+     "date": "2026-10-08"
+    },
+    {
+     "name": "gCaptain — Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
+     "url": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
+     "date": "2026-10-08"
+    },
+    {
+     "name": "Reuters via BOE Report — Trump says US will not attack Iran before midterm elections in November",
+     "url": "https://boereport.com/2026/10/08/trump-says-us-will-not-attack-iran-before-midterm-elections-in-november/",
+     "date": "2026-10-08"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
+     "url": "https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/",
+     "date": "2026-10-08"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Supertankers Racing to Middle East Worsen Global Ship Crunch",
+     "url": "https://gcaptain.com/supertankers-racing-to-middle-east-worsen-global-ship-crunch/",
+     "date": "2026-10-08"
+    },
     {
      "name": "Reuters via gCaptain — Attacks on Tankers in Hormuz Hit Highest of Any Week Since Start of Iran War, Sources Say",
      "url": "https://gcaptain.com/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say/",
@@ -128,11 +153,21 @@
   },
   "east-west-pipeline": {
    "status": "reduced",
-   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep and had risen above 80% of its 7 mb/d capacity — close to 6 mb/d, with about 4.5 mb/d available for export after supplying west-coast refineries — by 2 Oct, per a person familiar with the matter cited by Bloomberg. Aramco and the Saudi energy ministry did not comment.",
+   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep. Saudi Energy Minister Prince Abdulaziz bin Salman said on 6 Oct that flow had reached 5.8 million bpd — about 83% of its 7 mb/d capacity — with roughly 4 mb/d of that rerouted to Yanbu on the Red Sea to bypass Hormuz, about 4% of global oil supply. Flows were as low as ~2 mb/d in August (Kpler) after Houthi attacks on the Red Sea route. Aramco is also in talks to formalize long-term shuttle contracts built on this bypass system.",
    "since": "2026-09-10",
-   "updated": "2026-10-06",
-   "confidence": "reported",
+   "updated": "2026-10-09",
+   "confidence": "confirmed",
    "sources": [
+    {
+     "name": "Al Jazeera — Saudi Arabia says East-West pipeline pumping 5.8 million bpd",
+     "url": "https://www.aljazeera.com/news/2026/10/6/saudi-arabia-says-east-west-pipeline-pumping-5-8-million-bpd",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
+     "url": "https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/",
+     "date": "2026-10-08"
+    },
     {
      "name": "Rigzone (Bloomberg) — Saudi Arabia's Key Oil Pipeline Starts Exports After Repairs",
      "url": "https://www.rigzone.com/news/wire/saudi_arabias_key_oil_pipeline_starts_exports-28-sep-2026-184718-article/",
@@ -147,11 +182,21 @@
   },
   "yanbu-terminal": {
    "status": "disrupted",
-   "summary": "Saudi Arabia's main Hormuz-bypass outlet remains under Houthi missile and drone threat and subject to a declared Houthi ban on Saudi-linked shipping. Throughput has recovered with the East-West pipeline: about 4.5 mb/d was available for export via Yanbu as of 2 Oct after the pipeline topped 80% of capacity, per Bloomberg. France is sending air defences.",
+   "summary": "Saudi Arabia's main Hormuz-bypass outlet remains under Houthi missile and drone threat and subject to a declared Houthi ban on Saudi-linked shipping. Throughput has recovered with the East-West pipeline: the energy minister said on 6 Oct that pipeline flow reached 5.8 million bpd (83% of capacity), with about 4 million bpd rerouted here to bypass Hormuz. Aramco is in talks to formalize long-term shuttle contracts built on this route. France is sending air defences.",
    "since": "2026-07-20",
-   "updated": "2026-10-06",
+   "updated": "2026-10-09",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "Al Jazeera — Saudi Arabia says East-West pipeline pumping 5.8 million bpd",
+     "url": "https://www.aljazeera.com/news/2026/10/6/saudi-arabia-says-east-west-pipeline-pumping-5-8-million-bpd",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
+     "url": "https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/",
+     "date": "2026-10-08"
+    },
     {
      "name": "Al Jazeera — Saudi Arabia allies line up support as Houthi attacks mount",
      "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount",
@@ -434,6 +479,25 @@
      "name": "Kurdistan24 — Fire erupts near Aramco facility in Riyadh as Saudi-Houthi fighting escalates",
      "url": "https://www.kurdistan24.net/en/story/943658/fire-erupts-near-aramco-facility-in-riyadh-as-saudi-houthi-fighting-escalates",
      "date": "2026-10-03"
+    }
+   ]
+  },
+  "gulf-of-mexico-offshore": {
+   "status": "reduced",
+   "summary": "Hurricane Isaias, the first Atlantic hurricane of the 2026 season, forced a sharp, weather-driven (non-war) shut-in: the Marine Minerals Administration said producers had shut in about 62.89% of current Gulf oil output and 57.35% of gas output as of 8 Oct, up from 25.08%/16.37% a day earlier, with staff evacuated from 121 of the Gulf's 371 manned platforms. Isaias was forecast to make landfall near the Mississippi-Alabama-Florida border Friday night. Expected to be temporary; output should recover once the storm passes and platforms are reinspected.",
+   "since": "2026-10-07",
+   "updated": "2026-10-09",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via BOE Report — About 63% of US Gulf oil production shut in ahead of Isaias, US agency says",
+     "url": "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",
+     "date": "2026-10-08"
+    },
+    {
+     "name": "Reuters via BOE Report — About 25% of Gulf of Mexico oil output shut in due to Isaias, US agency says",
+     "url": "https://boereport.com/2026/10/07/about-25-of-gulf-of-mexico-oil-output-shut-in-due-to-isaias-us-agency-says/",
+     "date": "2026-10-07"
     }
    ]
   }

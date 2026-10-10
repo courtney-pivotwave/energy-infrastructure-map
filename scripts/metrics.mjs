@@ -87,6 +87,8 @@ function socialPosts() {
     const first = Object.values(pl).map(e => e.at).filter(Boolean).sort()[0];
     return {
       id, type: p.type || null, created: p.created || null, url: p.url || null, tags: p.tags || [],
+      // What the post carried: chart, daily-board or asset-card (recorded by social_post.mjs when it posts), else no-image
+      media: pl.x?.media || pl.bluesky?.media || (p.image && p.image !== 'none' ? 'chart' : 'no-image'),
       days_after_draft: p.created ? Math.round((Date.parse(first.slice(0, 10)) - Date.parse(p.created)) / DAY) : null,
       x: pl.x?.id ? { id: pl.x.id, posted_at: pl.x.at } : null,
       bluesky: pl.bluesky?.uri ? { uri: pl.bluesky.uri, posted_at: pl.bluesky.at } : null,
@@ -96,12 +98,12 @@ function socialPosts() {
   return { drafted_by_type: drafted, posted: posts.length, posted_same_day: posts.filter(p => p.days_after_draft === 0).length, posts, failed };
 }
 
-function byType(posts, platform, fields) {
+function byType(posts, platform, fields, key = 'type') {
   const out = {};
   for (const p of posts) {
     const m = p[platform]?.metrics;
     if (!m) continue;
-    const t = (out[p.type || 'unknown'] ||= { posts: 0, ...Object.fromEntries(fields.map(f => [f, 0])) });
+    const t = (out[p[key] || 'unknown'] ||= { posts: 0, ...Object.fromEntries(fields.map(f => [f, 0])) });
     t.posts++;
     for (const f of fields) t[f] += m[f] || 0;
   }
@@ -121,7 +123,7 @@ async function bluesky(social) {
   }
   const fields = ['likes', 'reposts', 'replies', 'quotes'];
   const totals = Object.fromEntries(fields.map(f => [f, withUri.reduce((s, p) => s + (p.bluesky.metrics?.[f] || 0), 0)]));
-  return { followers: profile.followersCount, following: profile.followsCount, posts_all_time: profile.postsCount, interactions: fields.reduce((s, f) => s + totals[f], 0), ...totals, by_type: byType(social.posts, 'bluesky', fields) };
+  return { followers: profile.followersCount, following: profile.followsCount, posts_all_time: profile.postsCount, interactions: fields.reduce((s, f) => s + totals[f], 0), ...totals, by_type: byType(social.posts, 'bluesky', fields), by_media: byType(social.posts, 'bluesky', fields, 'media') };
 }
 
 async function x(social) {
@@ -145,7 +147,7 @@ async function x(social) {
   const fields = ['impressions', 'link_clicks', 'likes', 'reposts', 'replies', 'quotes'];
   const totals = Object.fromEntries(fields.map(f => [f, withId.reduce((s, p) => s + (p.x.metrics?.[f] || 0), 0)]));
   sources.x = 'ok';
-  return { followers: me.data?.public_metrics?.followers_count ?? null, ...totals, by_type: byType(social.posts, 'x', fields) };
+  return { followers: me.data?.public_metrics?.followers_count ?? null, ...totals, by_type: byType(social.posts, 'x', fields), by_media: byType(social.posts, 'x', fields, 'media') };
 }
 
 // ── Search: Google Search Console and Bing Webmaster ──

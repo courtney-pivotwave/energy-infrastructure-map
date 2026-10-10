@@ -306,7 +306,7 @@ ${evs.length ? `<section><h2>Recent developments</h2>${evs.slice(0, 10).map(e =>
 <section><h2>Nearby</h2><ul class="near">${near.map(([x, d]) => `<li>${link(x)} <small>${esc(REG[x].tag)} · ~${Math.round(d)} km</small></li>`).join('')}</ul></section>`;
   write(`/facilities/${id}/`, layout({
     path: `/facilities/${id}/`, lastmod,
-    title: `${a.name}${st ? ` (${STATUS_LABEL[st.status].toLowerCase()})` : ''}: ${a.tag.toLowerCase()} status and context | Strategic Energy Map`,
+    title: `${a.name}${st ? ` (${STATUS_LABEL[st.status].toLowerCase()})` : ''}: ${a.tag === 'LNG terminal' ? a.tag : a.tag.toLowerCase()} status and context | Strategic Energy Map`,
     description: lead.slice(0, 300),
     crumbs: [{ name: 'Facilities', url: '/facilities/' }, { name: a.name, url: `/facilities/${id}/` }],
     jsonld: [placeLd(a.name, a.center, firstSentences(a.details, 1))], body,
@@ -498,6 +498,152 @@ const shortName = id => REG[id].name.replace(/ \(.*\)/, '');
       rows: hr.map(([l, v, col]) => `<div class="row" style="grid-template-columns:430px 1fr 170px;height:92px;font-size:25px"><span class="name">${esc(l)}</span><div class="track" style="height:44px"><div class="bar" style="left:0;height:44px;width:${(v / hormuz.stranded * 100).toFixed(1)}%;background:${col}"></div></div><span class="val" style="font-size:28px">${n(v)} <small style="font-size:18px">mb/d</small></span></div>`).join(''),
       source: 'Sources: IEA Strait of Hormuz factsheet (Kpler); spare capacity per IEA, low end. Model: strategicenergymap.org' }));
   }
+}
+
+// ── Social data cards (dark dashboard look): the daily board for digests and one fact card per asset page for
+// explainers. scripts/social_post.mjs picks the card by post type and takes its alt text from cards.json, so every
+// figure on a card comes from data/ at posting time, never from a draft ──
+{
+  const fmtShort = d => new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  const clip = (t, k) => { const s = String(t || '').trim(); return s.length > k ? s.slice(0, k).replace(/\s+\S*$/, '').replace(/[,;:]$/, '') + '…' : s; };
+  // Sentences, without splitting decimals ("~1.5 million bpd")
+  const sents = t => String(t || '').trim().split(/(?<=[.!?])\s+(?=[A-Z~("'])/).filter(Boolean);
+  // As many whole sentences as fit in k characters; a first sentence longer than that is cut at a word
+  const fit = (list, k) => { let out = ''; for (const x of list) { if ((out + ' ' + x).trim().length > k) break; out = (out + ' ' + x).trim(); } return out || clip(list[0], k); };
+  // Stored summaries still carry some day-first dates ("28 Feb"); cards go to a US audience, month first
+  const usDates = t => String(t || '').replace(/(?<![\d–-])\b(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)([a-z]*)\b/g, '$2$3 $1');
+  const LOGO = '<svg viewBox="0 0 32 32" width="34" height="34"><rect width="32" height="32" rx="7" fill="#2e2940"/><path d="M5 22 C11 12, 17 24, 27 10" fill="none" stroke="#3b8fd9" stroke-width="3" stroke-linecap="round"/><polygon points="16,6 22,17 10,17" fill="#e0493a"/></svg>';
+  // Palette: the dashboard's "Aubergine" (dashboard.css)
+  const darkCard = (body, css = '') => `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><style>
+  :root { --bg:#120f1c; --surface:#1a1628; --surface-2:#2e2940; --ink:#fefeff; --ink-2:#d7d3e1; --ink-3:#b0adbb; --line-2:rgba(254,254,255,.13); --accent:#a98bff; --oil:#ffae5c; --gas:#6fb4ff; --lng:#4fd8d0; --ok:#67d99a;
+    --closed:#ff6680; --damaged:#ff8a7a; --disrupted:#ff9e5c; --reduced:#ffd56b; --offline:#9a95ad; }
+  * { margin:0; box-sizing:border-box; } body { width:1200px; height:675px; position:relative; overflow:hidden; background:var(--bg); color:var(--ink); font-family:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; padding:40px 44px 0; }
+  .top { display:flex; justify-content:space-between; align-items:center; } .brand { display:flex; align-items:center; gap:12px; font-weight:700; font-size:19px; }
+  .kick { font-weight:600; font-size:15px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); }
+  .foot { position:absolute; left:44px; right:44px; bottom:0; height:52px; border-top:1px solid var(--line-2); display:flex; justify-content:space-between; align-items:center; font-size:15px; color:var(--ink-3); } .foot b { color:var(--ink); font-weight:600; }
+  ${css}</style></head><body>${body}</body></html>`;
+  const cards = {}; // key → { alt }, read by the poster
+  mkdirSync(join(DIST, 'social', 'asset'), { recursive: true });
+
+  // 1. Daily board: benchmarks against the pre-crisis week, Hormuz tanker traffic, assets not operating normally
+  {
+    const day = statusData.updated;
+    const hz = statusOf('strait-of-hormuz'), hzPw = pw['strait-of-hormuz'];
+    const dayN = hz?.status === 'closed' && hz.since ? Math.round((Date.parse(day) - Date.parse(hz.since)) / 864e5) : null;
+    const headline = dayN != null ? `Hormuz closed: <em>day ${dayN}</em>` : hz ? `Strait of Hormuz: <em>${esc(lower(STATUS_LABEL[hz.status] || hz.status))}</em>` : 'Energy markets today';
+    const cur = u => (u.match(/^[$€£]/) || [''])[0];
+    const bms = (market.benchmarks || []).filter(b => b.value != null && b.pre_crisis).slice(0, 4);
+    const tiles = bms.map(b => { const wk = pct(b.value, b.week_ago);
+      return `<div class="tile"><div class="t-l">${esc(b.label)}<span>${esc(b.unit)}</span></div><div class="t-v">${cur(b.unit)}${n(b.value, 2)}</div><div class="t-d"><b>${signed(pct(b.value, b.pre_crisis))}</b> since Feb</div>${wk == null ? '' : `<div class="t-w ${wk >= 0 ? 'up' : 'dn'}">${wk >= 0 ? '▲' : '▼'} ${Math.abs(wk).toFixed(1)}% this week</div>`}</div>`; }).join('');
+    let chart = '';
+    if (hzPw) {
+      const W = 664, H = 172, roll = hzPw.roll, max = Math.ceil(Math.max(...roll.map(r => r[1]), hzPw.base) / 10) * 10 || 10;
+      const X = i => i / (roll.length - 1) * W, Y = v => H - v / max * H;
+      const line = roll.map((r, i) => `${i ? 'L' : 'M'}${X(i).toFixed(1)},${Y(r[1]).toFixed(1)}`).join('');
+      const ci = hz?.since ? roll.findIndex(r => r[0] >= hz.since) : -1;
+      chart = `<div class="pan"><h2>Strait of Hormuz: tankers per day <b>${n(hzPw.now)} <i>vs ${n(hzPw.base, 0)} before</i></b></h2>
+      <svg width="${W}" height="${H + 22}" viewBox="0 0 ${W} ${H + 22}">
+        <line x1="0" x2="${W}" y1="${Y(hzPw.base)}" y2="${Y(hzPw.base)}" stroke="#b0adbb" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <text x="${W}" y="${Y(hzPw.base) - 8}" fill="#b0adbb" font-size="13.5" text-anchor="end">${esc(BASELINE.label)}</text>
+        ${ci > 0 ? `<line x1="${X(ci)}" x2="${X(ci)}" y1="0" y2="${H}" stroke="#ff6680" stroke-width="1.5"/><text x="${X(ci) + 8}" y="13" fill="#ff6680" font-size="14" font-weight="600">${esc(STATUS_LABEL[hz.status] || 'Disrupted')} ${esc(fmtShort(hz.since))}</text>` : ''}
+        <path d="${line}L${W},${H}L0,${H}Z" fill="rgba(111,180,255,.14)"/><path d="${line}" fill="none" stroke="#6fb4ff" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="${W}" cy="${Y(roll[roll.length - 1][1])}" r="5" fill="#6fb4ff" stroke="#1a1628" stroke-width="2"/>
+        <line x1="0" x2="${W}" y1="${H}" y2="${H}" stroke="rgba(254,254,255,.26)"/>
+        <text x="0" y="${H + 18}" fill="#b0adbb" font-size="13.5">${esc(fmtMonth(roll[0][0].slice(0, 7)))}</text><text x="${W}" y="${H + 18}" fill="#b0adbb" font-size="13.5" text-anchor="end">${esc(fmtShort(hzPw.lastDate))}</text>
+      </svg></div>`;
+    }
+    const counts = {}; Object.values(statusData.assets || {}).forEach(a => { counts[a.status] = (counts[a.status] || 0) + 1; });
+    const order = Object.keys(STATUS_LABEL).filter(k => counts[k]), total = order.reduce((s, k) => s + counts[k], 0);
+    const pricesAsOf = bms.map(b => b.source?.date).filter(Boolean).sort().pop() || market.as_of;
+    writeFileSync(join(DIST, 'social', 'daily-board.html'), darkCard(`
+  <div class="top"><div class="brand">${LOGO}Strategic Energy Map</div><div class="kick">Daily board · ${esc(fmtShort(day))}, ${day.slice(0, 4)}</div></div>
+  <div class="day"><h1>${headline}</h1><p>Prices against the week before the crisis</p></div>
+  <div class="tiles">${tiles}</div>
+  <div class="row2${chart ? '' : ' solo'}">${chart}
+    <div class="pan"><h2>Assets not operating normally</h2><div class="stat-n">${total}</div><div class="stat-s">pipelines, terminals, refineries and straits</div>
+      <div class="bars">${order.map(k => `<i style="flex:${counts[k]};background:var(--${k})"></i>`).join('')}</div>
+      <div class="leg">${order.map(k => `<span><i style="background:var(--${k})"></i><b>${counts[k]}</b> ${esc(lower(STATUS_LABEL[k]))}</span>`).join('')}</div></div>
+  </div>
+  <div class="foot"><span>Prices: close of ${esc(fmtShort(pricesAsOf))}${chart ? ' · Tankers: IMF PortWatch (ships broadcasting position), 7-day average' : ''}</span><b>strategicenergymap.org</b></div>`, `
+  .day { margin-top:26px; display:flex; align-items:baseline; gap:18px; } .day h1 { font-size:46px; line-height:1; font-weight:700; letter-spacing:-.015em; } .day h1 em { font-style:normal; color:var(--closed); } .day p { font-size:19px; color:var(--ink-2); }
+  .tiles { margin-top:26px; display:grid; grid-template-columns:repeat(${bms.length || 1},1fr); gap:14px; } .tile, .pan { background:var(--surface); border:1px solid var(--line-2); border-radius:10px; padding:16px 18px; }
+  .t-l { font-size:17px; font-weight:600; color:var(--ink-2); display:flex; justify-content:space-between; align-items:baseline; } .t-l span { font:400 13px ui-monospace,Menlo,Consolas,monospace; color:var(--ink-3); }
+  .t-v { font-size:44px; font-weight:700; letter-spacing:-.02em; line-height:1.15; margin-top:4px; font-variant-numeric:tabular-nums; } .t-d { font-size:17px; color:var(--ink-2); } .t-d b { color:var(--oil); }
+  .t-w { font-size:14.5px; margin-top:3px; font-variant-numeric:tabular-nums; } .up { color:var(--disrupted); } .dn { color:var(--ok); }
+  .row2 { margin-top:14px; display:grid; grid-template-columns:1fr 372px; gap:14px; } .row2.solo { grid-template-columns:1fr; }
+  .pan h2 { font-size:17px; font-weight:600; color:var(--ink-2); display:flex; justify-content:space-between; align-items:baseline; } .pan h2 b { color:var(--ink); font-size:19px; font-variant-numeric:tabular-nums; } .pan h2 b i { font-style:normal; color:var(--ink-3); font-weight:400; font-size:15px; }
+  .pan svg { display:block; margin-top:10px; overflow:visible; } .stat-n { font-size:58px; font-weight:700; line-height:1; letter-spacing:-.02em; margin-top:8px; font-variant-numeric:tabular-nums; } .stat-s { font-size:16px; color:var(--ink-2); margin-top:2px; }
+  .bars { display:flex; height:12px; border-radius:6px; overflow:hidden; margin-top:16px; gap:2px; } .leg { display:grid; grid-template-columns:1fr 1fr; gap:5px 10px; margin-top:13px; font-size:15.5px; color:var(--ink-2); } .leg i { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:7px; } .leg b { color:var(--ink); }`));
+    cards['daily-board'] = { alt: clip(`Daily board for ${fmtDate(day)}. ${dayN != null ? `Strait of Hormuz closed, day ${dayN}. ` : ''}${bms.map(b => `${b.label} ${cur(b.unit)}${n(b.value, 2)}, ${signed(pct(b.value, b.pre_crisis))} since the week before the crisis`).join('; ')}. ${hzPw ? `Tankers through Hormuz average ${n(hzPw.now)} a day against ${n(hzPw.base, 0)} before. ` : ''}${total} mapped assets are not operating normally.`, 950) };
+  }
+
+  // 2. Asset fact cards: one per chokepoint or facility page. Headline figures come from structured data, or from
+  // the description only where it states exactly one such figure (two capacities or dates are ambiguous: show none).
+  const one = list => { const u = [...new Set(list)]; return u.length === 1 ? u[0] : null; };
+  const assetFacts = a => {
+    const t = String(a.details || ''), out = [], num = s => parseFloat(s.replace(/,/g, '')), trim = v => String(+v.toFixed(2));
+    const sc = scenarios.chokepoints?.[a.id];
+    if (a.type === 'chokepoint') {
+      if (sc?.oil_mbd) out.push({ v: n(sc.oil_mbd), u: 'mb/d', l: 'Oil before the crisis' }, { v: n(sc.oil_mbd / DEMAND * 100, 0), u: '%', l: 'Of world oil demand' });
+      if (sc?.lng_share_pct) out.push({ v: n(sc.lng_share_pct, 0), u: '%', l: 'Of world LNG trade' });
+      return out;
+    }
+    if (a.capacity) out.push({ v: String(a.capacity.value), u: a.capacity.unit, l: 'Capacity' });
+    else {
+      const c = one([...t.matchAll(/capacity\s+(?:of\s+|is\s+)?~?\s?(\d[\d.,]*)\s*(million bpd|million b\/d|mb\/d|kb\/d|bpd|b\/d|bcm\/yr|bcm\/year|bcm\/y|mtpa)(?![\w/])/gi)].map(m => {
+        const v = num(m[1]), u = m[2].toLowerCase();
+        if (u.startsWith('million b') || u === 'mb/d') return `${trim(v)}|mb/d`;
+        if (u === 'kb/d') return `${trim(v)}|kb/d`;
+        if (u === 'bpd' || u === 'b/d') return v >= 1e6 ? `${trim(v / 1e6)}|mb/d` : v >= 1000 ? `${trim(v / 1000)}|kb/d` : `${trim(v)}|b/d`;
+        return `${trim(v)}|${u.startsWith('bcm') ? 'bcm/y' : 'mtpa'}`; }));
+      if (c) out.push({ v: c.split('|')[0], u: c.split('|')[1], l: 'Capacity' });
+    }
+    if (a.tag.endsWith('pipeline')) {
+      const km = one([...t.matchAll(/(\d[\d,]{1,6})\s*km\b/g)].map(m => m[1]));
+      if (km) out.push({ v: km, u: 'km', l: 'Length' });
+      const yr = one([...t.matchAll(/(?:commissioned|opened|completed|operational since|in service since)\s+(?:in\s+)?(?:[A-Z][a-z]{2,8}\s+)?((?:19|20)\d{2})(?!\s*[-–])/gi)].map(m => m[1]));
+      if (yr) out.push({ v: yr, u: '', l: 'In service' });
+    }
+    return out;
+  };
+  const KICK = { 'Oil pipeline': 'oil', 'Oil field': 'oil', Refinery: 'oil', 'Gas pipeline': 'gas', 'Gas field': 'gas', 'LNG terminal': 'lng', Chokepoint: 'accent' };
+  let assetCards = 0;
+  for (const id of Object.keys(REG)) {
+    if (!hasPage(id)) continue;
+    const a = REG[id], st = statusOf(id), facts = assetFacts(a).slice(0, 3);
+    const name = a.name.replace(/ \(.*\)/, '');
+    // The description minus what the figures row already says. For chokepoints that also drops flow figures in
+    // the text, so the card gives one number for a flow: the governed one from scenarios.json.
+    const shown = new Set(facts.map(f => f.l));
+    const dup = x => a.type === 'chokepoint' ? facts.length && /\b(bpd|b\/d|mb\/d)\b/i.test(x)
+      : x.length < 60 && ((shown.has('Length') && /^~?[\d,]+\s*km\b/.test(x)) || (shown.has('Capacity') && /^(combined )?capacity\b/i.test(x)) || (shown.has('In service') && /^commissioned\b/i.test(x)));
+    const lede = fit(sents(usDates(a.details)).filter(x => !dup(x)), facts.length ? 215 : 300);
+    const stNote = st ? `<p class="why st"><b style="color:var(--${st.status})">${esc(STATUS_LABEL[st.status] || st.status)}${st.since ? ` since ${esc(fmtShort(st.since))}${st.since.slice(0, 4) === TODAY.slice(0, 4) ? '' : `, ${st.since.slice(0, 4)}`}` : ''}:</b> ${esc(fit(sents(usDates(st.summary)), 190))}</p>` : '';
+    const why = a.geo ? `<p class="why"><b>Why it matters:</b> ${esc(fit(sents(usDates(a.geo)), 215))}</p>` : '';
+    // Room for both the live status and the context only when there is no figures row; otherwise the status wins
+    const note = facts.length ? (stNote || why) : stNote + why;
+    writeFileSync(join(DIST, 'social', 'asset', `${id}.html`), darkCard(`
+  <div class="top"><div class="brand">${LOGO}Strategic Energy Map</div><div class="kick" style="color:var(--${KICK[a.tag] || 'ink-3'})">Explainer · ${esc(a.tag)}</div></div>
+  <h1${name.length > 24 ? ' class="long"' : ''}>${esc(name)}</h1>
+  <p class="lede">${esc(lede)}</p>
+  ${facts.length ? `<div class="facts">${facts.map(f => `<div><b>${esc(f.v)}${f.u ? `<small>${esc(f.u)}</small>` : ''}</b><span>${esc(f.l)}</span></div>`).join('')}</div>` : ''}
+  ${note}
+  <div class="foot">${st ? `<span class="chip" style="color:var(--${st.status});border-color:var(--${st.status})"><i style="background:var(--${st.status})"></i>${esc(STATUS_LABEL[st.status] || st.status)}</span>` : `<span>${a.verified ? `Figures checked ${esc(fmtShort(a.verified))}` : ''}</span>`}<span>${st && a.verified ? `Figures checked ${esc(fmtShort(a.verified))} · ` : ''}<b>strategicenergymap.org</b></span></div>
+  <div class="map"><iframe src="/?embed=1&amp;bare&amp;card=${id}" title="" scrolling="no"></iframe><span>Map: Esri, HERE, Garmin, OpenStreetMap</span></div>`, `
+  body { padding-right:514px; } .foot { right:514px; }
+  .map { position:absolute; right:0; top:0; width:470px; height:675px; background:#f1ede3; } .map iframe { width:470px; height:675px; border:0; display:block; }
+  .map::before { content:""; position:absolute; inset:0; pointer-events:none; box-shadow:inset 14px 0 24px -12px rgba(18,15,28,.55); z-index:1; }
+  .map span { position:absolute; right:8px; bottom:8px; z-index:2; font-size:11.5px; color:#4a5568; background:rgba(255,255,255,.78); padding:2px 6px; border-radius:3px; }
+  h1 { font-size:54px; line-height:1.05; font-weight:700; letter-spacing:-.02em; margin-top:30px; text-wrap:balance; } h1.long { font-size:44px; }
+  .lede { font-size:${facts.length ? 21 : 24}px; line-height:1.4; color:var(--ink-2); margin-top:14px; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:${facts.length ? 4 : 6}; overflow:hidden; }
+  .facts { display:flex; gap:38px; margin-top:26px; } .facts b { display:block; font-size:46px; font-weight:700; letter-spacing:-.02em; line-height:1.1; font-variant-numeric:tabular-nums; white-space:nowrap; } .facts small { font-size:20px; font-weight:600; color:var(--ink-2); margin-left:4px; } .facts span { font-size:14px; color:var(--ink-3); text-transform:uppercase; letter-spacing:.09em; font-weight:600; white-space:nowrap; }
+  .why { margin-top:26px; padding-left:16px; border-left:3px solid var(--accent); font-size:18.5px; line-height:1.42; color:var(--ink-2); display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:4; overflow:hidden; } .why b { color:var(--ink); } .why.st { border-color:var(--ink-3); }
+  .chip { display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; border:1px solid; border-radius:20px; padding:6px 13px; } .chip i { width:9px; height:9px; border-radius:50%; }`));
+    cards[`asset/${id}`] = { alt: clip(`${a.name}, ${lower(a.tag)}. ${st ? `Status: ${lower(STATUS_LABEL[st.status] || st.status)}. ` : ''}${facts.map(f => `${f.l}: ${f.v}${f.u === '%' ? '%' : f.u ? ` ${f.u}` : ''}`).join('; ')}${facts.length ? '. ' : ''}${firstSentences(a.details, 1)} With a map of its location.`, 950) };
+    assetCards++;
+  }
+  writeFileSync(join(DIST, 'social', 'cards.json'), JSON.stringify(cards));
+  console.log(`Social cards: daily board, ${assetCards} asset cards.`);
 }
 
 // ── Charts: one page per chart, each with a dated takeaway, the chart, its data and sources ──

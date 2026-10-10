@@ -5,9 +5,10 @@
 //
 // Usage: node scripts/social_post.mjs [--dry-run]
 //   Env: X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET, BSKY_HANDLE, BSKY_APP_PASSWORD,
-//        DRY_RUN=1, LOCAL_SITE (e.g. http://localhost:8765, serving dist/ — needed for chart images), CHROME
+//        DRY_RUN=1, LOCAL_SITE (e.g. http://localhost:8765, serving dist/ — needed for images), CHROME,
+//        PREVIEW_DIR (dry runs save each rendered image there, to check cards before they go out)
 import crypto from 'node:crypto';
-import { readFileSync, writeFileSync, existsSync, mkdtempSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, rmSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
@@ -54,19 +55,34 @@ export function tagFacets(text) { // Bluesky: make #tags clickable
   return out;
 }
 
-// ── Chart images: headless Chrome screenshot of dist/social/<key>.html ──
+// ── Which image a post carries: its own `image` (a chart), or the data card for its type — the daily board for
+// digests, the asset fact card for explainers. `"image": "none"` opts a post out. Shared with validate.mjs ──
+export const CHART_IMAGES = ['fuel-weekly', 'chokepoints-weekly', 'chokepoint-oil-flows', 'hormuz-bypass'];
+export function cardFor(p) {
+  if (p.image === 'none') return null;
+  if (p.image) return p.image;
+  if (p.type === 'digest') return 'daily-board';
+  const m = p.type === 'explainer' && (p.url || '').match(/\/(?:chokepoints|facilities)\/([a-z0-9-]+)\/$/);
+  return m ? `asset/${m[1]}` : null;
+}
+// What the weekly metrics compare: chart, daily-board, asset-card
+export const cardFamily = key => !key ? null : CHART_IMAGES.includes(key) ? 'chart' : key.startsWith('asset/') ? 'asset-card' : key;
+
+// ── Images: headless Chrome screenshot of dist/social/<key>.html (charts and cards, built by scripts/build.mjs) ──
 function findChrome() {
   if (process.env.CHROME) return process.env.CHROME;
   const paths = ['/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'];
   return paths.find(existsSync) || 'google-chrome';
 }
-async function renderImage(key) {
+export async function renderImage(key) {
   const site = process.env.LOCAL_SITE;
   if (!site) { console.log(`  (no LOCAL_SITE; posting without the ${key} image)`); return null; }
-  const out = join(tmpdir(), `social-${key}-${Date.now()}.png`);
+  // A missing page would otherwise be screenshotted as the server's 404 text and posted
+  if (!(await fetch(`${site}/social/${key}.html`).then(r => r.ok, () => false))) { console.log(`  image ${key}: no such card, posting without it`); return null; }
+  const out = join(tmpdir(), `social-${key.replace(/\W+/g, '-')}-${Date.now()}.png`);
   const profile = mkdtempSync(join(tmpdir(), 'chrome-'));
   const chrome = spawn(findChrome(), ['--headless=new', `--user-data-dir=${profile}`, '--no-first-run', '--disable-gpu', ...(process.platform === 'linux' ? ['--no-sandbox'] : []), '--hide-scrollbars',
-    '--window-size=1200,675', '--virtual-time-budget=4000', `--screenshot=${out}`, `${site}/social/${key}.html`], { stdio: 'ignore' });
+    '--window-size=1200,675', '--virtual-time-budget=6000', `--screenshot=${out}`, `${site}/social/${key}.html`], { stdio: 'ignore' });
   for (let i = 0; i < 60 && !(existsSync(out) && readFileSync(out).length > 1000); i++) await new Promise(r => setTimeout(r, 500));
   chrome.kill('SIGKILL'); chrome.unref(); // Chrome can ignore SIGTERM in headless mode
   await new Promise(r => setTimeout(r, 300));
@@ -78,7 +94,7 @@ async function renderImage(key) {
 
 // ── X ──
 let xLinkTypes = new Set(['announcement', 'digest', 'correction']);
-async function postX(p, img, replyToId, creds) {
+async function postX(p, img, alt, replyToId, creds) {
   let mediaId = null;
   if (img) {
     try {
@@ -90,10 +106,10 @@ async function postX(p, img, replyToId, creds) {
       const j = await r.json().catch(() => ({}));
       mediaId = j?.data?.id || j?.media_id_string || null;
       if (!mediaId) console.log(`  X media upload failed (${r.status}); posting text only`);
-      else {
+      else if (alt) {
         const meta = 'https://api.x.com/2/media/metadata';
         await fetch(meta, { method: 'POST', headers: { Authorization: oauthHeader('POST', meta, {}, creds), 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id: mediaId, metadata: { alt_text: { text: p.alt.slice(0, 1000) } } }) }).catch(() => {});
+          body: JSON.stringify({ id: mediaId, metadata: { alt_text: { text: alt.slice(0, 1000) } } }) }).catch(() => {});
       }
     } catch (e) { console.log(`  X media upload error: ${e.message}; posting text only`); }
   }
@@ -125,13 +141,13 @@ async function pageCard(url) { // title/description for the link card, from the 
     return { title: dec(get(/<title>([^<]*)<\/title>/)).slice(0, 300), description: dec(get(/<meta name="description" content="([^"]*)"/)).slice(0, 1000) };
   } catch { return { title: 'Strategic Energy Map', description: '' }; }
 }
-async function postBluesky(p, img, replyRef, creds) {
+async function postBluesky(p, img, alt, replyRef, creds) {
   if (!bskySession) bskySession = await bsky('com.atproto.server.createSession', { identifier: creds.handle, password: creds.password });
   const text = composeText(p, 'bluesky', true);
   const record = { $type: 'app.bsky.feed.post', text, createdAt: new Date().toISOString(), langs: ['en'], facets: [...tagFacets(text), ...linkFacet(text, p.url)] };
   if (img) {
     const { blob } = await bsky('com.atproto.repo.uploadBlob', null, { raw: img, type: 'image/png' });
-    record.embed = { $type: 'app.bsky.embed.images', images: [{ image: blob, alt: p.alt || '', aspectRatio: { width: 1200, height: 675 } }] };
+    record.embed = { $type: 'app.bsky.embed.images', images: [{ image: blob, alt: alt || '', aspectRatio: { width: 1200, height: 675 } }] };
   } else {
     const card = await pageCard(p.url);
     const external = { uri: p.url, title: card.title, description: card.description };
@@ -182,6 +198,7 @@ async function main() {
   const fresh = p => (Date.now() - Date.parse(p.created + 'T00:00:00Z')) / 36e5 < FRESH_HOURS;
   const done = (p, pl) => !!(log.posted[p.id]?.[pl]?.id || log.posted[p.id]?.[pl]?.uri);
   const images = {};
+  let cardAlts;
   // Drip: start at most max_per_run new posts per run, so the queue spreads across the day's scheduled runs.
   // Corrections and posts already out on one platform don't count; they go straight away.
   const perRun = queue.max_per_run || Infinity;
@@ -209,18 +226,23 @@ async function main() {
       if (!dry && wait > 0) { console.log(`Holding ${p.id}: last post was under ${queue.min_gap_minutes} min ago (${Math.ceil(wait / 6e4)} min to go)`); continue; }
       startedThisRun++;
     }
-    if (p.image && !(p.image in images)) images[p.image] = await renderImage(p.image);
-    const img = p.image ? images[p.image] : null;
+    const key = cardFor(p);
+    if (key && !(key in images)) images[key] = await renderImage(key);
+    const img = key ? images[key] : null;
+    // Charts carry the draft's alt text; cards describe themselves (cards.json is written with them by the build)
+    if (img && !p.alt && cardAlts === undefined) cardAlts = await fetch(`${process.env.LOCAL_SITE}/social/cards.json`).then(r => r.json()).catch(() => ({}));
+    const alt = img ? (p.alt || cardAlts?.[key]?.alt || '') : '';
+    if (img && dry && process.env.PREVIEW_DIR) { mkdirSync(process.env.PREVIEW_DIR, { recursive: true }); writeFileSync(join(process.env.PREVIEW_DIR, `${p.id}.png`), img); }
     const parent = p.reply_to ? log.posted[p.reply_to] : null;
     const indent = t => t.replace(/\n/g, '\n     ');
-    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${p.image}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  X:   ${indent(composeText(p, 'x', xLinkTypes.has(p.type)))}\n  Bsky: ${indent(composeText(p, 'bluesky', true))}`);
+    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${key}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  X:   ${indent(composeText(p, 'x', xLinkTypes.has(p.type)))}\n  Bsky: ${indent(composeText(p, 'bluesky', true))}`);
     if (dry) { console.log(`  would post to: ${todo.join(', ')}`); continue; }
     log.posted[p.id] ||= {};
     for (const pl of todo) {
       const prev = log.posted[p.id][pl] || {};
       try {
-        const res = pl === 'x' ? await postX(p, img, parent?.x?.id, creds.x) : await postBluesky(p, img, parent?.bluesky, creds.bluesky);
-        log.posted[p.id][pl] = { ...res, at: new Date().toISOString() };
+        const res = pl === 'x' ? await postX(p, img, alt, parent?.x?.id, creds.x) : await postBluesky(p, img, alt, parent?.bluesky, creds.bluesky);
+        log.posted[p.id][pl] = { ...res, at: new Date().toISOString(), ...(img ? { media: cardFamily(key) } : {}) };
         console.log(`  ✓ ${pl}: ${res.id || res.uri}`);
       } catch (e) {
         log.posted[p.id][pl] = { attempts: (prev.attempts || 0) + 1, error: String(e.message).slice(0, 300), last_try: new Date().toISOString() };

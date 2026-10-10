@@ -191,7 +191,7 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
   "max_per_run": 1,       // new drafts started per Action run (runs hourly 11:17–23:17 UTC)
   "post_hours_utc": [10, 24], // new posts only between these UTC hours (6am–8pm US Eastern); corrections any time
   "min_gap_minutes": 100, // minimum time between new posts, so they land about every 2 hours even when GitHub drops a run
-  "x_links": ["announcement", "digest", "correction"],   // post types that include the link on X (Bluesky: always)
+  "x_links": [],          // post types that include the link on X (Bluesky: always). Empty: X bills link posts ~13x
   "hashtags": ["OOTT", "Oil", "LNG", "Hormuz", "..."],     // approved tags; posts may only use these
   "posts": [
     { "id": "2026-09-28-east-west-restart", "created": "2026-09-28",
@@ -199,7 +199,10 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
       "text": "Saudi Arabia restarted the East-West pipeline at reduced rates after drone strikes shut it on Sep 11 (reported).",
       "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
       "event_id": "2026-09-22-east-west-pipeline-restart",   // required for event posts
-      "image": null, "alt": null,           // image: fuel-weekly | chokepoints-weekly | hormuz-bypass | chokepoint-oil-flows (alt text required)
+      "image": null, "alt": null,           // charts: fuel-weekly | chokepoints-weekly | hormuz-bypass | chokepoint-oil-flows (alt text required).
+                                            // Leave both null on digests and explainers: they get the daily board / the asset's
+                                            // fact card, with alt text, when posted. "daily-board" puts the board on another
+                                            // post; "none" sends a post without its card.
       "not_before": null,                   // optional UTC time ("2026-09-30T15:00Z"): hold the draft until then
       "tags": ["Hormuz", "OOTT"],           // 1–3 from hashtags, most specific first; X uses the first 2
       "reply_to": null }                    // earlier post id (required for corrections)

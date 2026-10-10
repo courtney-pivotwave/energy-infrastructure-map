@@ -59,7 +59,17 @@ jobs:
           CHECK: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'check') && '1' || '' }}
           DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run') && '1' || '' }}
           LOCAL_SITE: http://localhost:8765
+          PREVIEW_DIR: ${{ runner.temp }}/social-preview   # dry runs save the images they would post
         run: node scripts/social_post.mjs
+
+      - name: Upload dry-run images
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run'
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-preview
+          path: ${{ runner.temp }}/social-preview
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Save post log
         if: always()   # keep the log even when a post gave up (that run is marked failed so GitHub emails)

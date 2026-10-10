@@ -34,7 +34,7 @@
           "asset": "habshan-fujairah-pipeline",
           "outlet": "fujairah",
           "spare_mbd": 0.5,
-          "note": "UAE Habshan→Fujairah (ADCOP), ~1.8 mb/d; ~1.1 mb/d already used, leaving up to 0.7 mb/d (IEA). Low end counted."
+          "note": "UAE Habshan→Fujairah (ADCOP), 1.5 mb/d nameplate and up to ~1.8 mb/d; ~1.1 mb/d already used, leaving up to 0.7 mb/d (IEA). Low end counted."
         },
         {
           "asset": "kirkuk-ceyhan-pipeline",

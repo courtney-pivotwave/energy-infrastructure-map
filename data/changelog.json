@@ -3,6 +3,17 @@
   {
    "date": "2026-10-10",
    "kind": "data",
+   "headline": "Corrections: chokepoint oil flows, Habshan–Fujairah capacity, Tuapse status and a tanker attack location",
+   "changes": [
+    "Chokepoint descriptions now give the same pre-crisis oil flows as the What-if model, with their period and source: Hormuz 19.9 million b/d (IEA, 2025); Malacca 23.2, Suez 4.9, Bab el-Mandeb 4.2 and the Turkish Straits 3.7 million b/d (EIA, first half of 2025). The descriptions previously carried older figures (21, 16, 5–6, 6–7 and 3.5)",
+    "Habshan–Fujairah pipeline: capacity recorded as 1.5 million b/d nameplate, with the reported 1.7–1.8 million b/d running rate noted; the What-if model's note now says the same",
+    "Tuapse refinery: added a status entry (damaged since Apr 16 after four drone strikes in two weeks; no restart reported, status after May not verified) and its capacity (about 240,000 b/d)",
+    "Oct 7 tanker attack (Acers): map position moved to 51 nautical miles north of Madinat ash Shamal, Qatar, as UKMTO reported; it had been placed just off the coast"
+   ]
+  },
+  {
+   "date": "2026-10-10",
+   "kind": "data",
    "headline": "Trump announces Russia-US diesel deal as Hormuz flows fall and Gulf of Mexico shut-ins reach 71.5%",
    "changes": [
     "Trump announced Russia would supply diesel to US and global markets in tranches, and that Treasury would temporarily ease sanctions on Russia's energy sector to allow it; the Kremlin confirmed the call but gave no tonnage, and no diesel has been delivered yet",

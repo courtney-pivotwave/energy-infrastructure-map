@@ -255,6 +255,9 @@ body.embed .topbar, body.embed .panel, body.embed .scenario-bar, body.embed .lea
 .card-pin.line i { display: none; }
 .card-pin span { position: absolute; left: 0; top: 36px; transform: translateX(-50%); white-space: nowrap; background: var(--ink); color: #fff; font-size: 14px; font-weight: 600; padding: 5px 9px; border-radius: 5px; }
 .card-pin.line span { top: 14px; }
+.card-pin.event i { left: -46px; top: -46px; width: 92px; height: 92px; border-color: var(--crit); background: rgba(192,57,43,0.13); }
+.card-pin.event b { position: absolute; left: -9px; top: -9px; width: 18px; height: 18px; border-radius: 50%; background: var(--crit); border: 3px solid #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.4); }
+.card-pin.event span { top: 54px; font-size: 16px; padding: 7px 11px; }
 
 /* Document pages (about.html) */
 body.doc { overflow: auto; background: #f7f7f3; }

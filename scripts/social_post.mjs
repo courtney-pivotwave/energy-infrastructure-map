@@ -55,18 +55,22 @@ export function tagFacets(text) { // Bluesky: make #tags clickable
   return out;
 }
 
-// ── Which image a post carries: its own `image` (a chart), or the data card for its type — the daily board for
-// digests, the asset fact card for explainers. `"image": "none"` opts a post out. Shared with validate.mjs ──
+// ── Which image a post carries: its own `image` (a chart or dashboard image), or the data card for its type — the
+// daily board for digests, the asset fact card for explainers, the locator card for events (where the build made
+// one: see scripts/build.mjs). `"image": "none"` opts a post out. Shared with validate.mjs ──
 export const CHART_IMAGES = ['fuel-weekly', 'chokepoints-weekly', 'chokepoint-oil-flows', 'hormuz-bypass'];
+export const DASH_IMAGES = ['status-board', 'importer-exposure', 'pump-price-ranking']; // write their own alt text
 export function cardFor(p) {
   if (p.image === 'none') return null;
   if (p.image) return p.image;
   if (p.type === 'digest') return 'daily-board';
+  if (p.type === 'event') return p.event_id ? `event/${p.event_id}` : null;
   const m = p.type === 'explainer' && (p.url || '').match(/\/(?:chokepoints|facilities)\/([a-z0-9-]+)\/$/);
   return m ? `asset/${m[1]}` : null;
 }
-// What the weekly metrics compare: chart, daily-board, asset-card
-export const cardFamily = key => !key ? null : CHART_IMAGES.includes(key) ? 'chart' : key.startsWith('asset/') ? 'asset-card' : key;
+// What the weekly metrics compare: chart, dashboard-image, daily-board, asset-card, locator-card
+export const cardFamily = key => !key ? null : CHART_IMAGES.includes(key) ? 'chart' : DASH_IMAGES.includes(key) ? 'dashboard-image'
+  : key.startsWith('asset/') ? 'asset-card' : key.startsWith('event/') ? 'locator-card' : key;
 
 // ── Images: headless Chrome screenshot of dist/social/<key>.html (charts and cards, built by scripts/build.mjs) ──
 function findChrome() {

@@ -778,15 +778,20 @@ function priceChart(hist, ref) {
     <div class="note" style="margin-top:0;display:flex;justify-content:space-between"><span>${esc(fmtDate(hist[0][0]))}</span><span>dashed = Feb reference</span><span>${esc(fmtDate(hist[hist.length - 1][0]))}</span></div>`;
 }
 
-// ── Social card crop (?embed=1&bare&card=<id>): one asset framed and labelled, no controls. Used by the asset cards
-// that scripts/build.mjs writes to /social/asset/, which print the map credit themselves ──
+// ── Social card crop (?embed=1&bare&card=<id>): one asset or event framed and labelled, no controls. Used by the
+// cards that scripts/build.mjs writes to /social/asset/ and /social/event/, which print the map credit themselves.
+// &shift=<px> moves the subject right of centre, clear of a text panel laid over the left of the map ──
 const cardAsset = EMBED && REG[params.get('card')];
-if (cardAsset) {
+const cardEvent = EMBED && !cardAsset && events.find(e => e.id === params.get('card'));
+const cardAt = cardAsset ? cardAsset.center : cardEvent && (cardEvent.coords || REG[cardEvent.assets?.[0]]?.center);
+if (cardAt) {
   map.attributionControl.remove();
-  if (cardAsset.coords) map.fitBounds(L.latLngBounds(cardAsset.coords), { padding: [70, 70], maxZoom: 7, animate: false });
-  else map.setView(cardAsset.center, 6, { animate: false });
-  L.marker(cardAsset.center, { interactive: false, zIndexOffset: 1000, icon: L.divIcon({ className: '', iconSize: [0, 0],
-    html: `<div class="card-pin${cardAsset.coords ? ' line' : ''}"><i></i><span>${esc(cardAsset.data.name.replace(/ \(.*\)/, ''))}</span></div>` }) }).addTo(map);
+  if (cardAsset?.coords) map.fitBounds(L.latLngBounds(cardAsset.coords), { padding: [70, 70], maxZoom: 7, animate: false });
+  else map.setView(cardAt, 6, { animate: false });
+  if (+params.get('shift')) map.panBy([-params.get('shift'), 0], { animate: false });
+  const label = cardAsset ? cardAsset.data.name.replace(/ \(.*\)/, '') : new Date(cardEvent.date + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  L.marker(cardAt, { interactive: false, zIndexOffset: 1000, icon: L.divIcon({ className: '', iconSize: [0, 0],
+    html: `<div class="card-pin${cardAsset?.coords ? ' line' : ''}${cardEvent ? ' event' : ''}"><i></i>${cardEvent ? '<b></b>' : ''}<span>${esc(label)}</span></div>` }) }).addTo(map);
 }
 
 // ── Init ──

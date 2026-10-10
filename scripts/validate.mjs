@@ -4,7 +4,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { composeText, TAG_LIMIT, CHART_IMAGES } from './social_post.mjs';
+import { composeText, TAG_LIMIT, CHART_IMAGES, DASH_IMAGES } from './social_post.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [], warnings = [];
@@ -229,7 +229,7 @@ if (social) {
     if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
     // Digests and explainers get their data card automatically (social_post.mjs → cardFor); "image" is for charts,
     // for putting the daily board on another post, or "none" to send a post without its card
-    if (p.image && ![...CHART_IMAGES, 'daily-board', 'none'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
+    if (p.image && ![...CHART_IMAGES, ...DASH_IMAGES, 'daily-board', 'none'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
     if (p.not_before !== undefined && (isNaN(Date.parse(p.not_before)) || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?Z$/.test(p.not_before))) err(`${w}: not_before must be a UTC time like 2026-09-30T15:00Z`);
     if (CHART_IMAGES.includes(p.image) && !p.alt) err(`${w}: chart images need alt text (data cards write their own)`);
     // Posts that go to X without a link must read as complete, and bare domains would be auto-linked (and charged).

@@ -569,6 +569,21 @@
     },
     "at": "2026-10-10T16:14:38.233Z"
    }
+  },
+  "2026-10-10-explainer-tuapse-refinery": {
+   "x": {
+    "id": "2109012850534437322",
+    "at": "2026-10-10T20:07:01.980Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxkc34rilx2x",
+    "cid": "bafyreigjpsujyp4hweplihnnmiopbcrnbb52qnkxtefmkdjkl76pvtmpaa",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxkc34rilx2x",
+     "cid": "bafyreigjpsujyp4hweplihnnmiopbcrnbb52qnkxtefmkdjkl76pvtmpaa"
+    },
+    "at": "2026-10-10T20:07:03.872Z"
+   }
   }
  }
 }

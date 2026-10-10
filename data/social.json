@@ -598,6 +598,36 @@
     "UAE"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-10-digest",
+   "created": "2026-10-10",
+   "type": "digest",
+   "text": "Trump announced a Russia-US diesel deal, with Treasury easing sanctions on Russia's energy sector (reported); no diesel has shipped yet. Brent $102.81, WTI $90.56. Gulf of Mexico shut-ins hit 71.5% of output ahead of Hurricane Isaias.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Russia",
+    "Diesel"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-10-explainer-tuapse-refinery",
+   "created": "2026-10-10",
+   "type": "explainer",
+   "text": "Russia's refining war: Rosneft's Tuapse refinery on the Black Sea (~240,000 b/d) has been offline since April drone strikes; Ukraine struck Gazprom Neft's Omsk refinery, Russia's largest, for a second time on Oct 8.",
+   "url": "https://strategicenergymap.org/facilities/tuapse-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Refining",
+    "Russia"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,13 +1,23 @@
 {
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
-   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. The IMO recorded 9 tanker attacks in the strait in the week of 28 Sep-5 Oct, the highest weekly total since the war began; a chemical tanker (Acers) was separately struck by projectiles on 7 Oct about 51 nautical miles off Qatar, west of the usual attack cluster. Reuters reported, citing officials close to Tehran, that Iran plans to widen threats against ships using routes it hasn't authorized, including Omani-side channels and Gulf of Oman transfer points — a plan that could not be independently verified. President Trump said on 8 Oct the US will not attack Iran before November's midterm elections, that the US blockade remains in force, and that oil is flowing through the strait; he rejected Iran's latest proposal to end the war. Saudi Aramco is in talks to formalize long-term shuttle contracts built on the ship-to-ship transfer system that bypasses the strait, and VLCC freight on the Gulf-to-Asia route hit a record near $1.4 million/day as that shuttle system strains vessel supply. Kpler ship-tracking data and satellite imagery showed a 'major operational recovery' at Saudi Arabia's Yanbu terminal, with Hormuz oil flows averaging a 13.2 mb/d 7-day average through 29 Sep (about 77% of Kpler's own ~17 mb/d pre-war baseline); Vortexa separately put non-Iranian Gulf oil flows at 81% of pre-war levels in September. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
+   "summary": "Effectively closed to normal commercial traffic since 28 Feb: Iran requires permits and fees through its Strait Authority, a US blockade of Iranian ports has been in force since 14 July, and attacks on ships continue. The IMO recorded 9 tanker attacks in the strait in the week of 28 Sep-5 Oct, the highest weekly total since the war began; a chemical tanker (Acers) was separately struck by projectiles on 7 Oct about 51 nautical miles off Qatar, west of the usual attack cluster, and Iran's IRGC said it struck the LPG tanker NV Sunshine on 9 Oct for taking an unauthorized route (IRGC claim, unverified). Reuters reported, citing officials close to Tehran, that Iran plans to widen threats against ships using routes it hasn't authorized, including Omani-side channels and Gulf of Oman transfer points — a plan that could not be independently verified. President Trump said on 8 Oct the US will not attack Iran before November's midterm elections, that the US blockade remains in force, and that oil is flowing through the strait; he rejected Iran's latest proposal to end the war. Saudi Aramco is in talks to formalize long-term shuttle contracts built on the ship-to-ship transfer system that bypasses the strait, and VLCC freight on the Gulf-to-Asia route hit a record near $1.4 million/day as that shuttle system strains vessel supply. Kpler ship-tracking data put Hormuz crude exports at about 8.5 mb/d (roughly 40% below pre-war) in the week to 7 Oct, down from the 13.2 mb/d (about 77% of baseline) Kpler reported for the week to 29 Sep, even as satellite imagery had shown a 'major operational recovery' at Saudi Arabia's Yanbu terminal; Vortexa separately put non-Iranian Gulf oil flows at 81% of pre-war levels in September. Tankers still move mainly under naval escort or shuttle arrangements rather than normal free transit, and many sail with transponders off, so independent counts remain partial.",
    "since": "2026-02-28",
-   "updated": "2026-10-09",
+   "updated": "2026-10-10",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "TradingKey — Crude Oil Price Forecast: WTI Nears $92 as Strait of Hormuz Crisis Offsets Russian Diesel Supply",
+     "url": "https://tradingkey.com/analysis/commodities/oil/262209599-crude-oil-price-forecast-wti-hormuz-crisis-tradingkey",
+     "date": "2026-10-10"
+    },
+    {
+     "name": "CBS News — Live Updates: Iran's Houthi allies kill 3 in strike on Saudi airport as Trump rules out pre-midterms strikes",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis",
+     "date": "2026-10-09"
+    },
     {
      "name": "gCaptain (Reuters) — Attack Risks Rise for Tankers as Iran Vows to Block More Hormuz Routes",
      "url": "https://gcaptain.com/attack-risks-rise-for-tankers-as-iran-vows-to-block-more-hormuz-routes/",
@@ -77,11 +87,16 @@
   },
   "bab-el-mandeb": {
    "status": "disrupted",
-   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces launched a counteroffensive ('Operation Yemen Dawn') around 3-5 Oct, backed by a reported 100 Saudi-led coalition jets, and said they had taken full control of the strait plus Dhubab town, its airport and the road to Mokha; Houthi-aligned media denied the advances, and independent confirmation of territorial or shipping-lane control is not yet available, so the status here is unchanged.",
+   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces launched a counteroffensive ('Operation Yemen Dawn') around 3-5 Oct, backed by a reported 100 Saudi-led coalition jets, and said they had taken full control of the strait plus Dhubab town, its airport and the road to Mokha; on 9 Oct the Saudi-led coalition said it struck 136 further 'high-value' Houthi targets and Yemeni officials additionally claimed Mayyun (Perim) Island, which the Houthis had seized in September, had been retaken. Houthi-aligned media have repeatedly denied the advances, and independent confirmation of territorial or shipping-lane control is not yet available, so the status here is unchanged.",
    "since": "2026-07-20",
-   "updated": "2026-10-07",
+   "updated": "2026-10-10",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "CBS News — Live Updates: Iran's Houthi allies kill 3 in strike on Saudi airport as Trump rules out pre-midterms strikes",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis",
+     "date": "2026-10-09"
+    },
     {
      "name": "The National (UAE) — Yemen government forces claim Bab al-Mandeb gains as Saudi coalition says 100 jets join Houthi offensive",
      "url": "https://www.thenationalnews.com/news/mena/2026/10/05/yemen-government-forces-claim-bab-al-mandeb-gains-as-saudi-coalition-says-100-jets-join-houthi-offensive",
@@ -484,11 +499,21 @@
   },
   "gulf-of-mexico-offshore": {
    "status": "reduced",
-   "summary": "Hurricane Isaias, the first Atlantic hurricane of the 2026 season, forced a sharp, weather-driven (non-war) shut-in: the Marine Minerals Administration said producers had shut in about 62.89% of current Gulf oil output and 57.35% of gas output as of 8 Oct, up from 25.08%/16.37% a day earlier, with staff evacuated from 121 of the Gulf's 371 manned platforms. Isaias was forecast to make landfall near the Mississippi-Alabama-Florida border Friday night. Expected to be temporary; output should recover once the storm passes and platforms are reinspected.",
+   "summary": "Hurricane Isaias, the first Atlantic hurricane of the 2026 season, forced a sharp, weather-driven (non-war) shut-in: the Marine Minerals Administration said producers had shut in about 71.51% of current Gulf oil output by midday 9 October, up from 62.89% a day earlier and 25.08% two days earlier, with staff evacuated from 121 of the Gulf's 371 manned platforms. CNN separately put the precautionary shut-in at about 72% of daily output on 9 October. Isaias was forecast to make landfall near the Mississippi-Alabama-Florida border Friday night. Expected to be temporary; output should recover once the storm passes and platforms are reinspected.",
    "since": "2026-10-07",
-   "updated": "2026-10-09",
+   "updated": "2026-10-10",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "Reuters via BOE Report — About 71.5% of US Gulf oil production shut in ahead of Hurricane Isaias",
+     "url": "https://boereport.com/2026/10/09/about-71-5-of-us-gulf-oil-production-shut-in-ahead-of-hurricane-isaias/",
+     "date": "2026-10-09"
+    },
+    {
+     "name": "CNN — 'Zero tolerance for disruptions.' Hurricane Isaias could mess with America's refining nerve center",
+     "url": "https://edition.cnn.com/2026/10/09/economy/hurricane-isaias-oil-gas-refinery",
+     "date": "2026-10-09"
+    },
     {
      "name": "Reuters via BOE Report — About 63% of US Gulf oil production shut in ahead of Isaias, US agency says",
      "url": "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",

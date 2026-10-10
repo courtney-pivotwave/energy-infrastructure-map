@@ -1903,7 +1903,8 @@
    ],
    "size": 5,
    "details": "Rosneft Black Sea refinery and export terminal.",
-   "geo": "Operations suspended indefinitely after April-May 2026 strikes."
+   "geo": "Operations suspended indefinitely after April-May 2026 strikes.",
+   "verified": "2026-10-10"
   },
   {
    "id": "moscow-refinery",

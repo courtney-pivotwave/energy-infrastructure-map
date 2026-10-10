@@ -147,7 +147,7 @@
    ]
   }
  ],
- "note": "Brent and WTI eased about 1-1.5% on 9 Oct after President Trump said the US will not strike Iran before November's midterm elections, even as Gulf of Mexico shut-ins deepened to 63% of oil output ahead of Hurricane Isaias's landfall and a tanker was hit off Qatar, west of the usual Hormuz attack cluster. TTF and Henry Hub also eased.",
+ "note": "Brent and WTI eased about 1-1.5% on 9 Oct after President Trump said the US will not strike Iran before November's midterm elections, even as Gulf of Mexico shut-ins deepened (to about 71.5% of oil output by 9 Oct) ahead of Hurricane Isaias's landfall and a tanker was hit off Qatar, west of the usual Hormuz attack cluster. Also on 9 Oct, Trump announced a Russia-US diesel supply arrangement and said Treasury would temporarily ease sanctions on Russia's energy sector to allow it; Kremlin confirmed Russia's 'readiness' to supply but gave no tonnage, and no diesel has yet been delivered. TTF and Henry Hub also eased.",
  "note_sources": [
   {
    "name": "Reuters via BOE Report — Trump says US will not attack Iran before midterm elections in November",
@@ -155,14 +155,19 @@
    "date": "2026-10-08"
   },
   {
-   "name": "Reuters via BOE Report — About 63% of US Gulf oil production shut in ahead of Isaias, US agency says",
-   "url": "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",
-   "date": "2026-10-08"
+   "name": "Reuters via BOE Report — About 71.5% of US Gulf oil production shut in ahead of Hurricane Isaias",
+   "url": "https://boereport.com/2026/10/09/about-71-5-of-us-gulf-oil-production-shut-in-ahead-of-hurricane-isaias/",
+   "date": "2026-10-09"
   },
   {
    "name": "gCaptain — Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
    "url": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
    "date": "2026-10-08"
+  },
+  {
+   "name": "CBS News — Trump announces Russia will release diesel to help with skyrocketing costs",
+   "url": "https://www.cbsnews.com/news/trump-russia-release-diesel-oil-iran-skyrocketing-costs/",
+   "date": "2026-10-09"
   }
  ]
 }

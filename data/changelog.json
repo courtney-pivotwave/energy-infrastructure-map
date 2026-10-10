@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-10",
+   "kind": "data",
+   "headline": "Trump announces Russia-US diesel deal as Hormuz flows fall and Gulf of Mexico shut-ins reach 71.5%",
+   "changes": [
+    "Trump announced Russia would supply diesel to US and global markets in tranches, and that Treasury would temporarily ease sanctions on Russia's energy sector to allow it; the Kremlin confirmed the call but gave no tonnage, and no diesel has been delivered yet",
+    "Kpler data showed Hormuz crude exports falling to about 8.5 million b/d (about 40% below pre-war) in the week to Oct 7, down from 13.2 million b/d (77% of baseline) the week before",
+    "US Gulf of Mexico oil shut-ins ahead of Hurricane Isaias climbed further to about 71.5% of output, from 63% a day earlier",
+    "Iran's IRGC said it struck an LPG tanker in the strait for taking an 'unauthorized' route; the Saudi-led coalition said it struck 136 more Houthi targets and claimed Yemeni forces had also retaken Mayyun Island near Bab el-Mandeb (both unverified)",
+    "Ukraine said drones struck Gazprom Neft's Omsk refinery, Russia's largest, for a second time since July"
+   ]
+  },
+  {
    "date": "2026-10-09",
    "kind": "data",
    "headline": "Oil eases on Trump's no-strike pledge as Gulf of Mexico shut-ins deepen to 63%",

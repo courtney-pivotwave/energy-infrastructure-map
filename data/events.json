@@ -1,8 +1,131 @@
 {
- "updated": "2026-10-09",
- "situation_headline": "Oil eased after Trump said the US will not strike Iran before November's midterms, even as Gulf of Mexico shut-ins deepened to 63% of oil output ahead of Hurricane Isaias and a tanker was hit off Qatar, west of the usual Hormuz attack zone.",
+ "updated": "2026-10-10",
+ "situation_headline": "Trump announced a Russia-US diesel deal with a temporary Treasury sanctions waiver as US diesel neared record highs, Hormuz crude exports fell to about 8.5 mb/d (Kpler) and Gulf of Mexico shut-ins rose to about 71.5% of oil output ahead of Hurricane Isaias.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey's 8 August permit halt for Novorossiysk-bound ships have cut flows. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-09-trump-russia-diesel-deal",
+   "date": "2026-10-09",
+   "title": "Trump announces Russia-US diesel deal; Treasury to temporarily ease Russia energy sanctions",
+   "summary": "President Trump said that after a roughly 90-minute call with President Putin, Russia would supply diesel to US and global markets: over 300,000 tonnes \"immediately,\" 500,000 tonnes in November and 1 million tonnes after that, with up to 3 million more tonnes possible depending on Russian refinery conditions. The US Treasury Department said it would temporarily waive sanctions on Russia's energy sector to let the diesel reach the US market. The Kremlin confirmed the call and said Russia \"reaffirmed its readiness to supply oil and oil products to the American and world markets,\" without giving tonnage or dates; no diesel has yet been delivered. Ukraine's President Zelensky called easing sanctions a \"weakness.\" AAA put the US diesel average at $6.28/gallon on 8 October, up from $5.94 a month earlier and near the $6.53 record set 22 September.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "CBS News — Trump announces Russia will release diesel to help with skyrocketing costs",
+     "url": "https://www.cbsnews.com/news/trump-russia-release-diesel-oil-iran-skyrocketing-costs/",
+     "date": "2026-10-09"
+    },
+    {
+     "name": "Al Jazeera — Trump announces Russian diesel deal amid soaring US fuel prices",
+     "url": "https://www.aljazeera.com/economy/2026/10/9/trump-announces-russian-diesel-deal-amid-soaring-us-fuel-prices",
+     "date": "2026-10-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-kpler-hormuz-flows-8-5mbd",
+   "date": "2026-10-09",
+   "title": "Kpler: Hormuz crude exports fall to about 8.5 mb/d, ~40% below pre-war, in week to Oct 7",
+   "summary": "Kpler ship-tracking data showed Hormuz crude exports averaging about 8.5 million barrels per day in the week ended 7 October, roughly 40% below pre-war levels — down from the 13.2 mb/d (about 77% of the pre-war baseline) Kpler had reported for the week to 29 September, as tanker attacks in the strait hit a record weekly pace. Total Middle East crude exports averaged about 15.3 mb/d in the same week, about 10% below pre-war.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [26.57, 56.25],
+   "assets": ["strait-of-hormuz"],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "TradingKey — Crude Oil Price Forecast: WTI Nears $92 as Strait of Hormuz Crisis Offsets Russian Diesel Supply",
+     "url": "https://tradingkey.com/analysis/commodities/oil/262209599-crude-oil-price-forecast-wti-hormuz-crisis-tradingkey",
+     "date": "2026-10-10"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-irgc-strikes-lpg-tanker-nv-sunshine",
+   "date": "2026-10-09",
+   "title": "IRGC says it struck LPG tanker 'NV Sunshine' in Hormuz for using an 'illegal route'",
+   "summary": "Iran's IRGC Navy said it struck the LPG tanker NV Sunshine on 9 October after the vessel \"intended to cross via the illegal route,\" with IRGC adviser Mohammad Reza Naqdi saying Iran has \"full control\" of the strait. No casualties or damage were reported. The claim could not be independently verified; the Trump administration maintains the strait remains open and the US blockade of Iranian ports stays in force. (IRGC claim, unverified.)",
+   "category": "military",
+   "severity": "medium",
+   "coords": [26.57, 56.25],
+   "assets": ["strait-of-hormuz"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "CBS News — Live Updates: Iran's Houthi allies kill 3 in strike on Saudi airport as Trump rules out pre-midterms strikes",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis",
+     "date": "2026-10-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-bab-el-mandeb-mayyun-claim",
+   "date": "2026-10-09",
+   "title": "Saudi-led coalition claims 136 Houthi targets hit, Mayyun Island retaken; Houthis deny",
+   "summary": "The Saudi-led coalition said it struck 136 \"high-value\" Houthi targets in continued air support for the Yemeni government's 'Operation Yemen Dawn' offensive, and Yemeni officials said forces had also retaken Mayyun (Perim) Island, which the Houthis seized in September and which overlooks the Bab el-Mandeb shipping lane. Houthi-aligned media again denied losing ground. Independent confirmation of territorial or shipping-lane control was not available. (Yemeni government/Saudi-led coalition claim, unverified.)",
+   "category": "military",
+   "severity": "medium",
+   "coords": [12.6, 43.3],
+   "assets": ["bab-el-mandeb"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "CBS News — Live Updates: Iran's Houthi allies kill 3 in strike on Saudi airport as Trump rules out pre-midterms strikes",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis",
+     "date": "2026-10-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-omsk-refinery-drone-strike",
+   "date": "2026-10-08",
+   "title": "Ukraine says drones struck Gazprom Neft's Omsk refinery, Russia's largest, for a second time since July",
+   "summary": "Ukraine's military and drone maker Fire Point said FP-1 drones struck Gazprom Neft's Omsk oil refinery — Russia's largest, with a stated capacity of about 22.2 million tonnes a year — on 8 October. Omsk Governor Vitaly Khotsenko confirmed a drone reached the city's northern industrial hub but did not specify any damage; a Gazprom Neft spokesperson said the company was \"still assessing the situation.\" It was the second reported Ukrainian strike on the refinery since July. Separately, Ukraine's Ministry of Defence claimed strikes since late September had taken more than half of Russia's oil refining capacity offline, a claim that could not be independently verified. (Ukrainian military/MoD claims, reported for the strike itself, unverified for the capacity figure.)",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [54.99, 73.37],
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Kyiv Independent — Drones reportedly strike Russia's Omsk oil refinery in Siberia",
+     "url": "https://kyivindependent.com/drones-reportedly-strike-russias-omsk-oil-refinery-in-siberia/",
+     "date": "2026-10-08"
+    },
+    {
+     "name": "Liga.net — Ukraine attacked Russia's largest oil refinery 2,500 km from the border — Fire Point",
+     "url": "https://news.liga.net/en/war/news/ukraine-attacked-russias-largest-oil-refinery-2-500-km-from-the-border-fire-point",
+     "date": "2026-10-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-gulf-mexico-shutin-71pct",
+   "date": "2026-10-09",
+   "title": "US Gulf of Mexico shut-ins climb to about 71.5% of oil output as Isaias nears landfall",
+   "summary": "The Marine Minerals Administration said producers had shut in about 71.51% of current Gulf oil output by midday 9 October, up from 62.89% a day earlier, as Hurricane Isaias approached the Mississippi-Alabama-Florida coast. CNN separately reported operators had shut in about 72% of daily output as a precaution. Officials said the shut-ins reflect evacuation, not storm damage, and output is expected to resume once platforms are reinspected after landfall.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": [29.0, -89.5],
+   "assets": ["gulf-of-mexico-offshore"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via BOE Report — About 71.5% of US Gulf oil production shut in ahead of Hurricane Isaias",
+     "url": "https://boereport.com/2026/10/09/about-71-5-of-us-gulf-oil-production-shut-in-ahead-of-hurricane-isaias/",
+     "date": "2026-10-09"
+    },
+    {
+     "name": "CNN — 'Zero tolerance for disruptions.' Hurricane Isaias could mess with America's refining nerve center",
+     "url": "https://edition.cnn.com/2026/10/09/economy/hurricane-isaias-oil-gas-refinery",
+     "date": "2026-10-09"
+    }
+   ]
+  },
   {
    "id": "2026-10-08-gulf-mexico-shutin-63pct",
    "date": "2026-10-08",

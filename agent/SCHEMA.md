@@ -200,8 +200,9 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
       "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
       "event_id": "2026-09-22-east-west-pipeline-restart",   // required for event posts
       "image": null, "alt": null,           // charts: fuel-weekly | chokepoints-weekly | hormuz-bypass | chokepoint-oil-flows (alt text required).
-                                            // Leave both null on digests and explainers: they get the daily board / the asset's
-                                            // fact card, with alt text, when posted. "daily-board" puts the board on another
+                                            // dashboard images: status-board | importer-exposure | pump-price-ranking (alt written for you).
+                                            // Leave both null on digests, explainers and events: they get the daily board / the asset's
+                                            // fact card / the event's locator card, with alt text, when posted. "daily-board" puts the board on another
                                             // post; "none" sends a post without its card.
       "not_before": null,                   // optional UTC time ("2026-09-30T15:00Z"): hold the draft until then
       "tags": ["Hormuz", "OOTT"],           // 1–3 from hashtags, most specific first; X uses the first 2

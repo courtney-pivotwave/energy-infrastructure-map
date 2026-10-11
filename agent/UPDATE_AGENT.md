@@ -180,13 +180,28 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   is about chokepoint flows or bypass routes, at most once every 14 days per image. `url` is the chart page
   (`/charts/hormuz-bypass/`, `/charts/chokepoint-oil-flows/`); figures must match the page, which is built from
   `scenarios.json` and `status.json`.
+- **Dashboard images**, also `chart` posts, with `url` `https://strategicenergymap.org/dashboard/`:
+  `"image": "status-board"` (every asset not operating normally, and since when), `"importer-exposure"` (who depends
+  most on Hormuz) and `"pump-price-ranking"` (where diesel costs the most, in US dollars a litre). They write their own
+  alt text. Use one on a day with fewer than two qualifying events, so the day still has four posts: at most two a
+  week, and each image at most once every 14 days. The caption quotes 2–3 figures that are on the image (check them
+  on `/dashboard/` or in the data files).
 - **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
 
-**Digest and explainer images are automatic.** Every digest goes out with the *daily board* (benchmark prices against
-the pre-crisis week, Hormuz tanker traffic, assets not operating normally) and every explainer with its asset's *fact
-card* (name, description, figures, live status and a crop of the map). The posting Action draws both from the data
-files at the moment it posts and writes their alt text, so leave `image` and `alt` empty on those drafts and don't
-describe the image in `text`. Chart posts still set `image` and `alt`. `"image": "none"` sends a post without its card.
+**Digest, explainer and event images are automatic.** Every digest goes out with the *daily board* (benchmark prices
+against the pre-crisis week, Hormuz tanker traffic, assets not operating normally), every explainer with its asset's
+*fact card* (name, description, figures, live status and a crop of the map), and an event post with a *locator card*:
+the map zoomed to where it happened, with the event's `title`, date, confidence label and source names. The posting
+Action draws them from the data files at the moment it posts and writes their alt text, so leave `image` and `alt`
+empty on those drafts and don't describe the image in `text`. Chart posts still set `image`, and the four `/charts/`
+images need `alt`. `"image": "none"` sends a post without its card.
+The locator card prints the event record, so before drafting an event post:
+- Check the event's `coords` are where it happened, not just the nearest asset (an attack "51 nautical miles north
+  of" a town belongs 51 miles north of it). A shipping, military or infrastructure event with no `coords` is pinned at
+  its first asset. Market, policy and diplomatic events get a card only if they have `coords`; otherwise the post goes
+  out as text. Don't add `coords` to a price story just to get a card.
+- Make the `title` a plain headline of what happened. A title that reports a claim ("X claims…", or "X says…" on an
+  event that isn't `confirmed`) gets no card, and the post goes out as text.
 The fact card shows the asset's record as it stands, so the explainer's audit matters twice over:
 - Its figures row uses `capacity` where the asset has one. Otherwise it takes a capacity, a length and a start year
   from `details`, and only where `details` states exactly one of each, in the usual form ("~370 km. Capacity ~1.5

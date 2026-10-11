@@ -642,8 +642,91 @@ const shortName = id => REG[id].name.replace(/ \(.*\)/, '');
     cards[`asset/${id}`] = { alt: clip(`${a.name}, ${lower(a.tag)}. ${st ? `Status: ${lower(STATUS_LABEL[st.status] || st.status)}. ` : ''}${facts.map(f => `${f.l}: ${f.v}${f.u === '%' ? '%' : f.u ? ` ${f.u}` : ''}`).join('; ')}${facts.length ? '. ' : ''}${firstSentences(a.details, 1)} With a map of its location.`, 950) };
     assetCards++;
   }
+
+  // 3. Locator cards (light map look): one per event that can be posted and placed. The live map zoomed to where it
+  // happened, with the headline, confidence label and sources. No card for a headline that reports a claim
+  // ("X claims…", or "X says…" unless confirmed): those posts go out as text, like events with no location.
+  mkdirSync(join(DIST, 'social', 'event'), { recursive: true });
+  const claimTitle = e => /\bclaim(s|ed)?\b/i.test(e.title) || (e.confidence !== 'confirmed' && /\b(says?|said)\b/i.test(e.title));
+  const publishers = e => [...new Set((e.sources || []).map(s => String(s.name || '').split(/\s[—–-]\s/)[0].trim()).filter(Boolean))].slice(0, 3);
+  const LOGO_LIGHT = LOGO.replace('#2e2940', '#1a2332');
+  let eventCards = 0;
+  for (const e of events) {
+    if (!['confirmed', 'reported'].includes(e.confidence) || claimTitle(e)) continue;
+    // No coords: a physical event can be pinned at its first asset; a price or policy story has no "where", so no card
+    if (!Array.isArray(e.coords) && !(REG[e.assets?.[0]] && ['shipping', 'military', 'infrastructure'].includes(e.category))) continue;
+    const title = usDates(e.title), src = publishers(e);
+    const related = (e.assets || []).filter(id => REG[id]).slice(0, 2);
+    writeFileSync(join(DIST, 'social', 'event', `${e.id}.html`), `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><style>
+  * { margin:0; box-sizing:border-box; } body { width:1200px; height:675px; position:relative; overflow:hidden; background:#f1ede3; color:#1a2332; font-family:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; }
+  iframe { width:1200px; height:675px; border:0; display:block; }
+  .panel { position:absolute; left:36px; top:36px; bottom:36px; width:452px; background:#fff; border-radius:14px; box-shadow:0 6px 28px rgba(26,35,50,.22); padding:30px 32px; display:flex; flex-direction:column; }
+  .kick { font-weight:600; font-size:15px; letter-spacing:.14em; text-transform:uppercase; color:#c0392b; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .conf { font-size:12.5px; letter-spacing:.08em; padding:6px 9px; border-radius:5px; background:#fdf0d9; color:#8a5a00; border:1px solid #f0d49a; } .conf.confirmed { background:#e3f3ea; color:#17603a; border-color:#b4dcc4; }
+  h1 { font-size:${title.length <= 48 ? 42 : title.length <= 80 ? 35 : 29}px; line-height:1.1; font-weight:700; letter-spacing:-.015em; margin-top:20px; text-wrap:balance; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:7; overflow:hidden; }
+  .rel { margin-top:22px; display:grid; gap:9px; font-size:18px; } .rel small { display:block; font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:#6b7686; font-weight:600; } .rel div { display:flex; align-items:center; gap:10px; font-weight:600; }
+  .pill { font-size:12.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:#fff; padding:4px 8px; border-radius:4px; }
+  .src { margin-top:auto; font-size:15px; color:#6b7686; border-top:1px solid rgba(0,0,0,.1); padding-top:14px; } .src b { color:#1a2332; font-weight:600; }
+  .brand { margin-top:14px; display:flex; align-items:center; gap:10px; font-weight:700; font-size:16px; white-space:nowrap; } .brand span { margin-left:auto; font-weight:500; font-size:13px; color:#6b7686; }
+  .credit { position:absolute; right:10px; bottom:8px; font-size:11.5px; color:#4a5568; background:rgba(255,255,255,.75); padding:2px 6px; border-radius:3px; }
+</style></head><body><iframe src="/?embed=1&amp;bare&amp;card=${esc(e.id)}&amp;shift=230" title="" scrolling="no"></iframe>
+<div class="panel"><div class="kick">${esc(e.category)} · ${esc(fmtShort(e.date))} <span class="conf ${esc(e.confidence)}">${esc(e.confidence)}</span></div>
+  <h1>${esc(title)}</h1>
+  ${related.length ? `<div class="rel"><small>On the map</small>${related.map(id => { const st = statusOf(id); return `<div>${esc(REG[id].name.replace(/ \(.*\)/, ''))}${st ? `<span class="pill" style="background:${STATUS_COLOR[st.status] || '#777'}">${esc(STATUS_LABEL[st.status] || st.status)}</span>` : ''}</div>`; }).join('')}</div>` : ''}
+  ${src.length ? `<div class="src">Source${src.length > 1 ? 's' : ''}: <b>${esc(src.join(', '))}</b></div>` : ''}
+  <div class="brand"${src.length ? '' : ' style="margin-top:auto"'}>${LOGO_LIGHT}Strategic Energy Map<span>strategicenergymap.org</span></div></div>
+<div class="credit">Map: Esri, HERE, Garmin, OpenStreetMap contributors</div></body></html>`);
+    cards[`event/${e.id}`] = { alt: clip(`Map showing where this happened, marked with a pin. ${title}. ${fmtDate(e.date)}. Confidence: ${e.confidence}.${src.length ? ` Sources: ${src.join(', ')}.` : ''}`, 950) };
+    eventCards++;
+  }
+
+  // 4. Dashboard images (dark look), for chart posts: what is not operating normally, who depends on Hormuz, and
+  // where diesel costs the most. Each mirrors a /dashboard/ panel.
+  const dashCard = (title, sub, body, source, css) => darkCard(`
+  <div class="top"><div class="brand">${LOGO}Strategic Energy Map</div><div class="kick">Dashboard · ${esc(fmtShort(statusData.updated))}, ${statusData.updated.slice(0, 4)}</div></div>
+  <h1>${title}</h1><p class="sub">${esc(sub)}</p>${body}
+  <div class="foot"><span>${esc(source)}</span><b>strategicenergymap.org/dashboard</b></div>`, `
+  h1 { font-size:42px; line-height:1.05; font-weight:700; letter-spacing:-.015em; margin-top:24px; } h1 em { font-style:normal; color:var(--disrupted); } .sub { font-size:19px; color:var(--ink-2); margin-top:8px; } ${css}`);
+  {
+    const ORDER = Object.keys(STATUS_LABEL);
+    const list = Object.entries(statusData.assets || {}).filter(([id]) => REG[id]).sort((a, b) => ORDER.indexOf(a[1].status) - ORDER.indexOf(b[1].status) || String(a[1].since || '').localeCompare(String(b[1].since || '')));
+    const shownRows = list.slice(0, 20);
+    writeFileSync(join(DIST, 'social', 'status-board.html'), dashCard(`<em>${list.length}</em> assets not operating normally`, 'Pipelines, terminals, refineries, fields and straits with a live disruption, and when each began',
+      `<div class="grid">${shownRows.map(([id, st]) => `<div class="r"><i style="background:var(--${st.status})"></i><b>${esc(REG[id].name.replace(/ \(.*\)/, ''))}</b><span style="color:var(--${st.status})">${esc(STATUS_LABEL[st.status] || st.status)}</span><small>${st.since ? esc(fmtShort(st.since)) : ''}</small></div>`).join('')}</div>${list.length > shownRows.length ? `<p class="more">+ ${list.length - shownRows.length} more on the dashboard</p>` : ''}`,
+      'Status: sourced per asset on each asset page', `
+  .grid { margin-top:22px; display:grid; grid-template-columns:1fr 1fr; grid-auto-flow:column; grid-template-rows:repeat(${Math.ceil(shownRows.length / 2)}, auto); gap:0 34px; }
+  .r { display:grid; grid-template-columns:12px 1fr auto 58px; align-items:center; gap:10px; height:${shownRows.length > 16 ? 38 : 44}px; border-bottom:1px solid var(--line-2); font-size:17px; }
+  .r i { width:10px; height:10px; border-radius:50%; } .r b { font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } .r span { font-size:14px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; } .r small { font-size:14px; color:var(--ink-3); text-align:right; font-variant-numeric:tabular-nums; }
+  .more { margin-top:10px; font-size:15px; color:var(--ink-3); }`));
+    const cnt = {}; list.forEach(([, st]) => { cnt[st.status] = (cnt[st.status] || 0) + 1; });
+    cards['status-board'] = { alt: clip(`${list.length} mapped assets are not operating normally as of ${fmtDate(statusData.updated)}: ${ORDER.filter(k => cnt[k]).map(k => `${cnt[k]} ${lower(STATUS_LABEL[k])}`).join(', ')}. They include ${shownRows.slice(0, 8).map(([id, st]) => `${REG[id].name.replace(/ \(.*\)/, '')} (${lower(STATUS_LABEL[st.status] || st.status)})`).join(', ')}.`, 950) };
+  }
+  {
+    const hzSc = scenarios.chokepoints?.['strait-of-hormuz'], ex = (hzSc?.exposed || []).slice(0, 5);
+    if (ex.length) {
+      writeFileSync(join(DIST, 'social', 'importer-exposure.html'), dashCard('Who depends most on the Strait of Hormuz', `${n(hzSc.oil_mbd)} million barrels a day of oil passed through before the crisis${hzSc.lng_share_pct ? `, and ${n(hzSc.lng_share_pct, 0)}% of world LNG trade` : ''}`,
+        `<div class="ex">${ex.map((x, i) => `<div class="x"><span>${i + 1}</span><b>${esc(x.country)}</b><p>${esc(clip(x.note, 120))}</p></div>`).join('')}</div>`,
+        `Source: ${publishers(hzSc)[0] || 'IEA'}`, `
+  .ex { margin-top:22px; } .x { display:grid; grid-template-columns:34px 250px 1fr; align-items:baseline; gap:10px; padding:13px 0; border-bottom:1px solid var(--line-2); }
+  .x span { font-size:17px; color:var(--ink-3); font-variant-numeric:tabular-nums; } .x b { font-size:25px; font-weight:700; letter-spacing:-.01em; } .x p { font-size:17.5px; line-height:1.35; color:var(--ink-2); }`));
+      cards['importer-exposure'] = { alt: clip(`Who depends most on the Strait of Hormuz. ${ex.map(x => `${x.country}: ${x.note}`).join(' ')}`, 950) };
+    }
+  }
+  {
+    const rows = fuelEntries.filter(e => e.group !== 'us-region' && e.id !== 'eu' && e.usd_per_litre?.diesel && e.diesel?.pre_crisis).sort((a, b) => b.usd_per_litre.diesel - a.usd_per_litre.diesel).slice(0, 10);
+    if (rows.length) {
+      const max = rows[0].usd_per_litre.diesel;
+      writeFileSync(join(DIST, 'social', 'pump-price-ranking.html'), dashCard('Where diesel costs the most', `US dollars a litre in the week of ${fmtShort(fuel.as_of)}, with the change since the week before the crisis`,
+        `<div class="pp">${rows.map(e => `<div class="p"><b>${esc(e.name)}</b><div class="t"><i style="width:${(e.usd_per_litre.diesel / max * 100).toFixed(1)}%"></i></div><span>$${n(e.usd_per_litre.diesel, 2)}</span><small>${signed(pct(e.diesel.now, e.diesel.pre_crisis))}</small></div>`).join('')}</div>`,
+        'Sources: US EIA · EU Weekly Oil Bulletin · UK DESNZ · ECB exchange rates', `
+  .pp { margin-top:20px; } .p { display:grid; grid-template-columns:210px 1fr 86px 70px; align-items:center; gap:14px; height:40px; font-size:19px; }
+  .p b { font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } .t { height:20px; background:var(--surface-2); border-radius:4px; overflow:hidden; } .t i { display:block; height:100%; background:var(--oil); border-radius:4px; }
+  .p span { font-weight:700; text-align:right; font-variant-numeric:tabular-nums; } .p small { font-size:16px; color:var(--oil); text-align:right; font-variant-numeric:tabular-nums; }`));
+      cards['pump-price-ranking'] = { alt: clip(`Diesel prices in US dollars a litre, week of ${fmtDate(fuel.as_of)}, highest first: ${rows.map(e => `${e.name} $${n(e.usd_per_litre.diesel, 2)} (${signed(pct(e.diesel.now, e.diesel.pre_crisis))} since the week before the crisis)`).join('; ')}.`, 950) };
+    }
+  }
   writeFileSync(join(DIST, 'social', 'cards.json'), JSON.stringify(cards));
-  console.log(`Social cards: daily board, ${assetCards} asset cards.`);
+  console.log(`Social cards: daily board, ${assetCards} asset cards, ${eventCards} locator cards, 3 dashboard images.`);
 }
 
 // ── Charts: one page per chart, each with a dated takeaway, the chart, its data and sources ──

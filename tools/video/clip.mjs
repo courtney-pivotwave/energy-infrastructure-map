@@ -32,6 +32,7 @@ const CLIPS = [
   { id: 'map-tour', scene: 'overview-tour', video: 'tour', from: 43.2, to: 83.2, title: 'A quick tour of the map', url: `${SITE}/?tour=1` },
   { id: 'embed-the-map', scene: 'embedding', video: 'embedding', from: 5.0, to: 40.6, title: 'Embed the live map on your site', url: `${SITE}/about.html#embed`, evergreen: true },
   { id: 'how-its-sourced', scene: 'daily-updates', video: 'daily-updates', from: 27.0, to: 55.8, title: 'How every claim on the map is sourced', url: `${SITE}/about.html`, evergreen: true },
+  { id: 'dashboard', scene: 'dashboard', video: 'dashboard', from: 5.0, to: 50.5, title: 'The 2026 energy crisis in numbers', url: `${SITE}/dashboard/` },
 ];
 
 const ids = process.argv.slice(2);
@@ -94,7 +95,7 @@ for (const c of chosen) {
     recorded,
     evergreen: !!c.evergreen,
     // Read out by screen readers on Bluesky: what the captions in this stretch say
-    alt: `Screen recording of the map with captions: ${said.join(' ')} Ends on a card with the address strategicenergymap.org.`.slice(0, 1000),
+    alt: `Screen recording of the site with captions: ${said.join(' ')} Ends on a card with the address strategicenergymap.org.`.slice(0, 1000),
   };
   console.log(`${(statSync(mp4).size / 1048576).toFixed(1)} MB, ${index.clips[c.id].duration}s`);
 }

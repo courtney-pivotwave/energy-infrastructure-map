@@ -186,6 +186,13 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   alt text. Use one on a day with fewer than two qualifying events, so the day still has four posts: at most two a
   week, and each image at most once every 14 days. The caption quotes 2–3 figures that are on the image (check them
   on `/dashboard/` or in the data files).
+- **Feature clips**: short videos of the map that a person has cut and approved, listed in `media/social/clips.json`
+  (each with a `title`, `url`, `recorded` date and the captions it shows, under `alt`). At most one a week, on a day
+  with fewer than two qualifying events: an `announcement` with `"video": "<clip id>"`, `url` set to the clip's `url`,
+  and `image` and `alt` left empty. The text says in one or two sentences what the clip shows and one thing the viewer
+  can do with it; any figure it quotes must be one the clip's captions state. You can't make or change clips. The
+  validator refuses a clip that isn't listed, one already posted in the past 30 days, a second video within a week,
+  and footage older than 30 days unless the clip is marked `evergreen` (ask for a re-record under Open questions).
 - **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
 
 **Digest, explainer and event images are automatic.** Every digest goes out with the *daily board* (benchmark prices

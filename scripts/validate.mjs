@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // Validates everything in data/ against agent/SCHEMA.md. Exit code 1 on any error.
 // Usage: node scripts/validate.mjs
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { composeText, TAG_LIMIT, CHART_IMAGES, DASH_IMAGES } from './social_post.mjs';
+import { composeText, TAG_LIMIT, CHART_IMAGES, DASH_IMAGES, loadClips } from './social_post.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [], warnings = [];
@@ -201,6 +201,18 @@ if (social) {
   const seen = new Set();
   const seenIds = new Set(Object.keys((existsSync(join(root, 'data', 'social-log.json')) ? JSON.parse(readFileSync(join(root, 'data', 'social-log.json'), 'utf8')) : { posted: {} }).posted));
   const graphemes = t => [...new Intl.Segmenter('en', { granularity: 'grapheme' }).segment(t)].length;
+  // Clips for video posts: each needs its file, and a length and size both platforms take without trouble
+  const clips = loadClips();
+  for (const [id, c] of Object.entries(clips)) {
+    const file = join(root, c.src || '');
+    if (!ID.test(id)) err(`clips.json: bad clip id "${id}"`);
+    if (!c.src || !existsSync(file)) { err(`clips.json (${id}): file ${c.src} is missing`); continue; }
+    if (!(c.duration > 0 && c.duration <= 140)) err(`clips.json (${id}): duration must be 140 seconds or less`);
+    if (statSync(file).size > 50 * 1048576) err(`clips.json (${id}): ${c.src} is over 50 MB`);
+    if (!isDate(c.recorded)) err(`clips.json (${id}): recorded must be YYYY-MM-DD`);
+    if (!c.alt?.trim()) err(`clips.json (${id}): clips need alt text`);
+    if (!(c.width > 0 && c.height > 0)) err(`clips.json (${id}): width and height are required`);
+  }
   (social.posts || []).forEach((p, i) => {
     const w = `social.posts[${i}] (${p.id})`;
     if (!/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(p.id || '')) err(`${w}: id must be YYYY-MM-DD-slug`);
@@ -232,6 +244,21 @@ if (social) {
     if (p.image && ![...CHART_IMAGES, ...DASH_IMAGES, 'daily-board', 'none'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
     if (p.not_before !== undefined && (isNaN(Date.parse(p.not_before)) || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?Z$/.test(p.not_before))) err(`${w}: not_before must be a UTC time like 2026-09-30T15:00Z`);
     if (CHART_IMAGES.includes(p.image) && !p.alt) err(`${w}: chart images need alt text (data cards write their own)`);
+    // Video: only clips a person has cut and committed (media/social/clips.json). Scheduling rules are checked on
+    // drafts not yet posted: footage that shows live figures goes stale, and a clip shouldn't repeat within 30 days.
+    if (p.video !== undefined && p.video !== null) {
+      const c = clips[p.video];
+      if (!c) err(`${w}: unknown video "${p.video}"; clips are listed in media/social/clips.json`);
+      if (p.image && p.image !== 'none') err(`${w}: a post carries a video or an image, not both`);
+      if (c && !seenIds.has(p.id)) {
+        const days = (a, b) => (Date.parse(a) - Date.parse(b)) / 864e5;
+        if (!c.evergreen && days(p.created, c.recorded) > 30) err(`${w}: video "${p.video}" was recorded ${c.recorded} and shows figures from then; re-record and re-cut it before posting it again (tools/video)`);
+        const again = (social.posts || []).slice(0, i).filter(x => x.video === p.video && days(p.created, x.created) < 30).pop();
+        if (again) err(`${w}: video "${p.video}" already went out with ${again.id}; wait 30 days before repeating a clip`);
+        const recent = (social.posts || []).slice(0, i).filter(x => x.video && days(p.created, x.created) < 7).pop();
+        if (recent) err(`${w}: at most one video post a week (${recent.id} went out ${recent.created})`);
+      }
+    }
     // Posts that go to X without a link must read as complete, and bare domains would be auto-linked (and charged).
     // Checked on drafts not yet posted: it only matters when a post goes out.
     if (!xLinks.includes(p.type) && !seenIds.has(p.id)) {

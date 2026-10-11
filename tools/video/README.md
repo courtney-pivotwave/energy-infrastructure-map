@@ -15,6 +15,15 @@ To put renders on the website: `node publish.mjs [id ...]` (default: the videos 
 captions) to `media/` at the repo root. The About page and the map's Tour button render from `videos.json`, so
 re-record, re-publish and commit `media/` to update the site. Each published video adds ~4–12 MB to the repo.
 
+For social posts: `node clip.mjs [id ...]` cuts the short clips defined at the top of `clip.mjs` out of the renders
+and writes them to `media/social/` with `clips.json` (length, recording date, and alt text from the captions in
+that stretch). Each is 720p30 with a silent audio track and ends on a card with the site address, because X posts
+carry no link. Cut on caption boundaries: the `.srt` beside each render has the times. Committing `media/social/`
+is the review step: the posting workflow only sends clips listed in `clips.json`. The validator allows one video
+post a week and no clip twice in 30 days, and wants a clip that shows live figures re-recorded after 30 days
+(`evergreen: true` exempts a how-to).
+Each clip adds ~3–5 MB to the repo.
+
 Flags: `--no-build` (reuse `dist/`), `--draft` (960×540 at 10 fps, to check a storyboard quickly), `--fps 60` (smoother; about twice the render time), `--4k` (3840×2160),
 `--debug` (per-step timings). Other frame rates and 4K get their own filenames (`what-if-hormuz-60fps.mp4`).
 

@@ -628,6 +628,36 @@
     "Russia"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-11-digest",
+   "created": "2026-10-11",
+   "type": "digest",
+   "text": "Hurricane Isaias weakened to post-tropical after landfall near Destin, Fla. Gulf shut-ins eased to about 69% as DOE OK'd a 4M-barrel SPR exchange for Exxon, BP. Brent $102.81; Hormuz exports ~8.5 mb/d, ~40% below pre-war.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SPR",
+    "EnergySecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-11-explainer-cape-of-good-hope",
+   "created": "2026-10-11",
+   "type": "explainer",
+   "text": "The Cape of Good Hope isn't a chokepoint, it's the escape valve: ships skip Suez and Bab el-Mandeb, adding ~3,500 nautical miles and 10-14 days around Africa. In heavy use since Houthi attacks began in 2023.",
+   "url": "https://strategicenergymap.org/chokepoints/cape-of-good-hope/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "RedSea",
+    "Maritime"
+   ],
+   "reply_to": null
   }
  ]
 }

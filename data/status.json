@@ -292,25 +292,6 @@
     }
    ]
   },
-  "abqaiq-oil": {
-   "status": "damaged",
-   "summary": "Drone strikes from Iraq on 27 Jul damaged the Abqaiq processing plant (~7 mb/d), which handles Ghawar crude; the IEA cited them among causes of Saudi supply falling to 6 mb/d in August. Current repair status not verified.",
-   "since": "2026-07-27",
-   "updated": "2026-09-11",
-   "confidence": "reported",
-   "sources": [
-    {
-     "name": "Times of Israel — Israel, Saudi Arabia, Jordan, Iraq attacked by drones despite lull in US-Iran fighting",
-     "url": "https://www.timesofisrael.com/israel-saudi-arabia-jordan-iraq-attacked-by-drones-despite-lull-in-us-iran-fighting/",
-     "date": "2026-07-27"
-    },
-    {
-     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
-     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
-     "date": "2026-09-11"
-    }
-   ]
-  },
   "ghawar-oil": {
    "status": "reduced",
    "summary": "Saudi crude supply was 6.0 mb/d in August (IEA), the lowest in over three decades, as exports are squeezed by Hormuz, the Red Sea blockade and attacks. September exports were recovering via Gulf terminals (>4 mb/d provisional, Kpler).",
@@ -538,7 +519,7 @@
   },
   "abqaiq-processing-plant": {
    "status": "damaged",
-   "summary": "Drones hit the plant in late July: the IEA attributes the strike to Iran-backed militias in Iraq (Reuters), and satellite imagery showed burn scars around four of its six spheroids (Maritime Executive). Aramco has not commented on the site and its repair state is unreported. The East-West pipeline it feeds was carrying about 5.8 mb/d on Oct 6 (Argus).",
+   "summary": "Drones hit the plant on Jul 27. The IEA attributes the strike to Iran-backed militias in Iraq and cites it among the causes of Saudi supply falling to 6 mb/d in August (Reuters); satellite imagery showed burn scars around four of its six spheroids (Maritime Executive). Aramco has not commented on the site and its repair state is unreported. The East-West pipeline it feeds was carrying about 5.8 mb/d on Oct 6 (Argus).",
    "since": "2026-07-27",
    "updated": "2026-10-11",
    "confidence": "reported",
@@ -557,6 +538,11 @@
      "name": "Argus — Saudi East-West pipeline at 5.8mn b/d: energy minister",
      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2887089-saudi-east-west-pipeline-at-5.8mn-b-d-energy-minister",
      "date": "2026-10-06"
+    },
+    {
+     "name": "Times of Israel — Israel, Saudi Arabia, Jordan, Iraq attacked by drones despite lull in US-Iran fighting",
+     "url": "https://www.timesofisrael.com/israel-saudi-arabia-jordan-iraq-attacked-by-drones-despite-lull-in-us-iran-fighting/",
+     "date": "2026-07-27"
     }
    ]
   },

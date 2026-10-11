@@ -1369,7 +1369,7 @@
    "assets": [
     "east-west-pipeline",
     "yanbu-terminal",
-    "abqaiq-oil"
+    "abqaiq-processing-plant"
    ],
    "confidence": "confirmed",
    "sources": [
@@ -1400,7 +1400,7 @@
    "coords": null,
    "assets": [
     "ghawar-oil",
-    "abqaiq-oil",
+    "abqaiq-processing-plant",
     "yanbu-terminal"
    ],
    "confidence": "confirmed",
@@ -1821,7 +1821,7 @@
     49.67
    ],
    "assets": [
-    "abqaiq-oil",
+    "abqaiq-processing-plant",
     "ghawar-oil"
    ],
    "confidence": "confirmed",

@@ -8,6 +8,7 @@
     "Eleven facilities whose notes described damage or shutdowns now have a sourced status: Abqaiq processing plant, Jazan refinery, Primorsk and Ust-Luga ports and the Moscow refinery (damaged); SAMREF refinery, Ras al-Ju'aymah terminal, Mesaieed Industrial City, Mina Abdullah refinery, Shah gas field and Basra Oil Terminal (reduced)",
     "Several earlier notes were out of date: Primorsk and Ust-Luga resumed loading in late March and early April, Basra's exports recovered to about 2.6 million b/d in September, and Shah's production was rising again by May",
     "Abqaiq: the damage from the Jul 27 drone strike is now recorded on the processing plant, where it happened; the Abqaiq oil field no longer carries that status, and the three related events link to the plant",
+    "Abqaiq oil field: removed a '~1 million b/d processing capacity' figure that matched neither the field nor the plant. The plant's capacity is about 7 million b/d; the field's own output was put near 400,000 b/d in the early 2010s, and no current figure is available",
     "Haifa's Bazan refinery was checked and found to be running near capacity, so it has no status entry; its note now says so",
     "Capacities recorded with sources for Jazan, SAMREF, Mina Abdullah, Primorsk, Ust-Luga, the Moscow refinery (about 11 million tonnes a year, not 12) and Bazan",
     "Where no report could be found after a given month, the status entry says so"

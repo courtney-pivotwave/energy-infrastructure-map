@@ -1817,8 +1817,20 @@
     49.67
    ],
    "size": 5,
+   "capacity": {
+    "value": 7,
+    "unit": "mb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "The Maritime Executive — Report: Houthi Strike Took Saudi Refinery Offline Through Mid-August",
+     "url": "https://maritime-executive.com/article/report-houthi-strike-took-saudi-refinery-offline-through-mid-august",
+     "date": "2026-07-30"
+    },
+    "as_of": "2026-07-30",
+    "note": "Maximum processing capacity; the US EIA gave the same figure in 2019"
+   },
    "details": "Aramco's main crude stabilisation plant, ~7 mb/d capacity, processing Ghawar and other Eastern Province crude before export or shipment on the East-West pipeline.",
-   "geo": "The most important single node in Saudi oil: most Eastern Province crude is stabilised here before it is exported from the Gulf or sent west on the East-West pipeline. A drone and missile attack in September 2019 briefly knocked out about 5.7 million bpd of Saudi processing capacity.",
+   "geo": "The most important single node in Saudi oil: most Eastern Province crude is stabilised here before it is exported from the Gulf or sent west on the East-West pipeline. The Sept 2019 attack on Abqaiq was a watershed moment in energy security. Houthi rebels (with alleged Iranian support) used low-cost drones and cruise missiles to temporarily disable ~5% of global oil supply — the single largest disruption in history. It demonstrated that precision-guided munitions available to non-state actors can threaten even the most heavily defended energy infrastructure. Saudi Arabia's $100B+ defense budget could not prevent the attack. Oil spiked 15% overnight. The incident accelerated Saudi investment in air defense and redundancy.",
    "verified": "2026-10-11"
   },
   {
@@ -2313,8 +2325,8 @@
     50.8
    ],
    "size": 12,
-   "details": "Saudi Arabia. Major processing and field complex. ~1M bpd processing capacity. Drone/missile attack in Sept 2019 briefly knocked out ~5.7M bpd.",
-   "geo": "The Sept 2019 attack on Abqaiq was a watershed moment in energy security. Houthi rebels (with alleged Iranian support) used low-cost drones and cruise missiles to temporarily disable ~5% of global oil supply — the single largest disruption in history. It demonstrated that precision-guided munitions available to non-state actors can threaten even the most heavily defended energy infrastructure. Saudi Arabia's $100B+ defense budget could not prevent the attack. Oil spiked 15% overnight. The incident accelerated Saudi investment in air defense and redundancy."
+   "details": "Saudi Arabia (Eastern Province). Saudi Aramco. Onshore oil field discovered in 1940, one of the oldest in the kingdom. Estimates from the early 2010s put its output near 400,000 bpd; no current figure is available. The Abqaiq processing plant beside it is a separate facility with its own entry.",
+   "geo": "Better known for the processing plant that shares its name, which stabilises most Eastern Province crude and was the target of the September 2019 attack and of drone strikes in July 2026. The field itself is a small part of Saudi output."
   },
   {
    "id": "khafji-oil",

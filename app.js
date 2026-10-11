@@ -347,7 +347,8 @@ function panelPadding() { // keep regions clear of whichever panels are open
   if (typeof panels === 'undefined' || isMobile()) return { paddingTopLeft: [0, 100], paddingBottomRight: [0, 70] };
   return { paddingTopLeft: [panels.left ? 240 : 0, 70], paddingBottomRight: [panels.right ? 390 : 0, 10] };
 }
-map.fitBounds(REGIONS[params.get('region')] || REGIONS.world, EMBED ? {} : panelPadding());
+// No animation in embeds: a zoom still in flight would undo the card crop set below (?card=<id>)
+map.fitBounds(REGIONS[params.get('region')] || REGIONS.world, EMBED ? { animate: false } : panelPadding());
 
 // ── Top bar: freshness + market ticker ──
 function renderFreshness(pwDate) {
@@ -775,6 +776,17 @@ function priceChart(hist, ref) {
     ${ref ? `<line x1="0" x2="${W}" y1="${y(ref)}" y2="${y(ref)}" stroke="#8a94a6" stroke-dasharray="3 3"/>` : ''}
     <path d="${d}" fill="none" stroke="#b3261e" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg>
     <div class="note" style="margin-top:0;display:flex;justify-content:space-between"><span>${esc(fmtDate(hist[0][0]))}</span><span>dashed = Feb reference</span><span>${esc(fmtDate(hist[hist.length - 1][0]))}</span></div>`;
+}
+
+// ── Social card crop (?embed=1&bare&card=<id>): one asset framed and labelled, no controls. Used by the asset cards
+// that scripts/build.mjs writes to /social/asset/, which print the map credit themselves ──
+const cardAsset = EMBED && REG[params.get('card')];
+if (cardAsset) {
+  map.attributionControl.remove();
+  if (cardAsset.coords) map.fitBounds(L.latLngBounds(cardAsset.coords), { padding: [70, 70], maxZoom: 7, animate: false });
+  else map.setView(cardAsset.center, 6, { animate: false });
+  L.marker(cardAsset.center, { interactive: false, zIndexOffset: 1000, icon: L.divIcon({ className: '', iconSize: [0, 0],
+    html: `<div class="card-pin${cardAsset.coords ? ' line' : ''}"><i></i><span>${esc(cardAsset.data.name.replace(/ \(.*\)/, ''))}</span></div>` }) }).addTo(map);
 }
 
 // ── Init ──

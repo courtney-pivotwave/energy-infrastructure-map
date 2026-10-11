@@ -4,7 +4,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { composeText, TAG_LIMIT } from './social_post.mjs';
+import { composeText, TAG_LIMIT, CHART_IMAGES } from './social_post.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [], warnings = [];
@@ -227,11 +227,14 @@ if (social) {
     if (!seenIds.has(p.id)) for (const f of ['text', 'alt']) { const m = (p[f] || '').match(dayFirst); if (m) err(`${w}: write dates month first ("${m[0]}" → e.g. "July 20" or "Sep 21") in ${f}`); }
     if (/(^|\s)#\w/.test(text)) err(`${w}: put hashtags in "tags", not in the text`);
     if (/https?:\/\//.test(text)) err(`${w}: put the link in "url", not in the text`);
-    if (p.image && !['fuel-weekly', 'chokepoints-weekly', 'chokepoint-oil-flows', 'hormuz-bypass'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
+    // Digests and explainers get their data card automatically (social_post.mjs → cardFor); "image" is for charts,
+    // for putting the daily board on another post, or "none" to send a post without its card
+    if (p.image && ![...CHART_IMAGES, 'daily-board', 'none'].includes(p.image)) err(`${w}: unknown image "${p.image}"`);
     if (p.not_before !== undefined && (isNaN(Date.parse(p.not_before)) || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?Z$/.test(p.not_before))) err(`${w}: not_before must be a UTC time like 2026-09-30T15:00Z`);
-    if (p.image && !p.alt) err(`${w}: images need alt text`);
-    // Posts that go to X without a link must read as complete, and bare domains would be auto-linked (and charged)
-    if (!xLinks.includes(p.type)) {
+    if (CHART_IMAGES.includes(p.image) && !p.alt) err(`${w}: chart images need alt text (data cards write their own)`);
+    // Posts that go to X without a link must read as complete, and bare domains would be auto-linked (and charged).
+    // Checked on drafts not yet posted: it only matters when a post goes out.
+    if (!xLinks.includes(p.type) && !seenIds.has(p.id)) {
       if (/[:→]\s*$/.test(text)) err(`${w}: posted to X without a link, so the text must not end with ':' or an arrow`);
       if (/\b[\w-]+\.(org|com|net|io|gov|info)\b/i.test(text)) err(`${w}: no domain names in text (X would auto-link and charge for them)`);
     }
@@ -262,6 +265,11 @@ if (social) {
     if (p.reply_to && !seen.has(p.reply_to)) err(`${w}: reply_to must reference an earlier post`);
     seen.add(p.id);
   });
+  // Chart days: Monday's pump-price chart and Thursday's tanker-traffic chart take the explainer's place
+  const utcDay = new Date().toISOString().slice(0, 10); // `today` above allows a day of timezone slack
+  const chartDue = { 1: 'fuel-weekly', 4: 'chokepoints-weekly' }[new Date().getUTCDay()];
+  const todays = (social.posts || []).filter(p => p.created === utcDay);
+  if (chartDue && todays.length && !todays.some(p => p.image === chartDue)) warn(`social.json: today's drafts have no "${chartDue}" chart post (due on ${chartDue === 'fuel-weekly' ? 'Mondays' : 'Thursdays'}, in place of the explainer)`);
 }
 
 // ── source registry (data/sources.json) — changed only via the monthly source review PR ──

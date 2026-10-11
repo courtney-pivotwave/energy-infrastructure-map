@@ -1,0 +1,124 @@
+<!doctype html><meta charset="utf-8"><title>Social card mockups</title>
+<style>
+:root { --bg:#120f1c; --surface:#1a1628; --surface-2:#2e2940; --ink:#fefeff; --ink-2:#d7d3e1; --ink-3:#b0adbb; --line:rgba(254,254,255,.26); --line-2:rgba(254,254,255,.13);
+  --accent:#a98bff; --oil:#ffae5c; --gas:#6fb4ff; --lng:#4fd8d0; --ok:#67d99a; --crit:#ff6680; --closed:#ff6680; --damaged:#ff8a7a; --disrupted:#ff9e5c; --reduced:#ffd56b; --offline:#9a95ad;
+  --font:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace; }
+* { box-sizing:border-box; margin:0; }
+body { background:#e9e9ee; font-family:var(--font); padding:32px; display:grid; gap:14px; justify-content:center; }
+.cap { font:600 15px/1.4 var(--font); color:#1a2332; width:1200px; margin-top:22px; } .cap span { font-weight:400; color:#4a5568; }
+.card { width:1200px; height:675px; position:relative; overflow:hidden; }
+.brand { display:flex; align-items:center; gap:12px; font-weight:700; font-size:19px; letter-spacing:.01em; }
+.kick { font:600 15px/1 var(--font); letter-spacing:.14em; text-transform:uppercase; }
+.num { font-variant-numeric:tabular-nums; }
+
+/* Dark data cards */
+.dark { background:var(--bg); color:var(--ink); padding:40px 44px 0; }
+.dark .top { display:flex; justify-content:space-between; align-items:center; }
+.dark .kick { color:var(--ink-3); }
+.foot { position:absolute; left:44px; right:44px; bottom:0; height:52px; border-top:1px solid var(--line-2); display:flex; justify-content:space-between; align-items:center; font-size:15px; color:var(--ink-3); }
+.foot b { color:var(--ink); font-weight:600; }
+
+/* 1. Daily board */
+.day { margin-top:26px; display:flex; align-items:baseline; gap:18px; }
+.day h1 { font-size:46px; line-height:1; font-weight:700; letter-spacing:-.015em; }
+.day h1 em { font-style:normal; color:var(--closed); }
+.day p { font-size:19px; color:var(--ink-2); }
+.tiles { margin-top:26px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.tile { background:var(--surface); border:1px solid var(--line-2); border-radius:10px; padding:16px 18px 15px; }
+.t-l { font-size:17px; font-weight:600; color:var(--ink-2); display:flex; justify-content:space-between; align-items:baseline; } .t-l span { font:400 13px var(--mono); color:var(--ink-3); }
+.t-v { font-size:44px; font-weight:700; letter-spacing:-.02em; line-height:1.15; margin-top:4px; font-variant-numeric:tabular-nums; }
+.t-d { font-size:17px; color:var(--ink-2); } .t-d b { color:var(--oil); font-weight:700; }
+.t-w { font-size:14.5px; margin-top:3px; font-variant-numeric:tabular-nums; } .up { color:var(--disrupted); } .dn { color:var(--ok); }
+.row2 { margin-top:14px; display:grid; grid-template-columns:1fr 372px; gap:14px; }
+.pan { background:var(--surface); border:1px solid var(--line-2); border-radius:10px; padding:16px 18px; }
+.pan h2 { font-size:17px; font-weight:600; color:var(--ink-2); display:flex; justify-content:space-between; align-items:baseline; } .pan h2 b { color:var(--ink); font-size:19px; } .pan h2 b i { font-style:normal; color:var(--ink-3); font-weight:400; font-size:15px; }
+.pan svg { display:block; margin-top:10px; overflow:visible; }
+.stat-n { font-size:58px; font-weight:700; line-height:1; letter-spacing:-.02em; margin-top:8px; }
+.stat-s { font-size:16px; color:var(--ink-2); margin-top:2px; }
+.bars { display:flex; height:12px; border-radius:6px; overflow:hidden; margin-top:16px; gap:2px; }
+.leg { display:grid; grid-template-columns:1fr 1fr; gap:5px 10px; margin-top:13px; font-size:15.5px; color:var(--ink-2); } .leg i { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:7px; } .leg b { color:var(--ink); }
+
+/* 2. Event locator (light map) */
+.loc { background:#f1ede3 url(social-cards/map-event.png) center/cover; color:#1a2332; }
+.loc .panel { position:absolute; left:36px; top:36px; bottom:36px; width:452px; background:#fff; border-radius:14px; box-shadow:0 6px 28px rgba(26,35,50,.22); padding:30px 32px; display:flex; flex-direction:column; }
+.loc .kick { color:#c0392b; display:flex; align-items:center; gap:12px; }
+.chip { font:600 12.5px/1 var(--font); letter-spacing:.08em; text-transform:uppercase; padding:6px 9px; border-radius:5px; background:#fdf0d9; color:#8a5a00; border:1px solid #f0d49a; }
+.loc h1 { font-size:42px; line-height:1.08; font-weight:700; letter-spacing:-.015em; margin-top:20px; text-wrap:balance; }
+.loc .fact { margin-top:22px; display:flex; align-items:baseline; gap:12px; } .loc .fact b { font-size:54px; font-weight:700; letter-spacing:-.02em; line-height:1; color:#c0392b; } .loc .fact span { font-size:18px; line-height:1.25; color:#4a5568; }
+.loc p { font-size:19px; line-height:1.42; color:#33404f; margin-top:18px; }
+.loc .src { margin-top:auto; font-size:15px; color:#6b7686; border-top:1px solid rgba(0,0,0,.1); padding-top:14px; } .loc .src b { color:#1a2332; font-weight:600; }
+.loc .brand { margin-top:14px; font-size:17px; }
+.pin { position:absolute; left:830px; top:337px; }
+.pin i { position:absolute; left:-46px; top:-46px; width:92px; height:92px; border-radius:50%; border:3px solid #c0392b; background:rgba(192,57,43,.13); }
+.pin i + i { left:-9px; top:-9px; width:18px; height:18px; background:#c0392b; border:3px solid #fff; box-shadow:0 1px 6px rgba(0,0,0,.4); }
+.pin span { position:absolute; left:58px; top:-17px; white-space:nowrap; background:#1a2332; color:#fff; font-size:16px; font-weight:600; padding:7px 11px; border-radius:6px; }
+.credit { position:absolute; right:10px; bottom:8px; font-size:11.5px; color:#4a5568; background:rgba(255,255,255,.75); padding:2px 6px; border-radius:3px; }
+
+/* 3. Asset fact card */
+.asset { padding-right:514px; } .asset .foot { right:514px; }
+.asset .map { position:absolute; right:0; top:0; width:470px; height:675px; background:url(social-cards/map-asset.png) center/cover; }
+.asset .map::before { content:""; position:absolute; inset:0; box-shadow:inset 14px 0 24px -12px rgba(18,15,28,.55); }
+.asset .map .credit { right:8px; }
+.tag { position:absolute; white-space:nowrap; background:#1a2332; color:#fff; font-size:14.5px; font-weight:600; padding:5px 9px; border-radius:5px; }
+.asset h1 { font-size:54px; line-height:1.05; font-weight:700; letter-spacing:-.02em; margin-top:30px; text-wrap:balance; }
+.asset .lede { font-size:22px; line-height:1.4; color:var(--ink-2); margin-top:14px; }
+.facts { display:grid; grid-template-columns:repeat(3,auto); justify-content:start; gap:0 38px; margin-top:30px; }
+.facts div b { display:block; font-size:48px; font-weight:700; letter-spacing:-.02em; line-height:1.1; font-variant-numeric:tabular-nums; } .facts div b small { font-size:20px; font-weight:600; color:var(--ink-2); margin-left:4px; } .facts div span { font-size:15px; color:var(--ink-3); text-transform:uppercase; letter-spacing:.09em; font-weight:600; }
+.share { margin-top:34px; } .why { margin-top:30px; padding-left:16px; border-left:3px solid var(--accent); font-size:19px; line-height:1.42; color:var(--ink-2); } .why b { color:var(--ink); } .share .lbl { font-size:16.5px; color:var(--ink-2); display:flex; justify-content:space-between; } .share .lbl b { color:var(--oil); }
+.share .bar { height:16px; background:var(--surface-2); border-radius:8px; margin-top:8px; overflow:hidden; } .share .bar i { display:block; height:100%; background:var(--oil); border-radius:8px 0 0 8px; }
+.ok { display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; color:var(--ok); border:1px solid rgba(103,217,154,.45); border-radius:20px; padding:6px 13px; } .ok i { width:9px; height:9px; border-radius:50%; background:var(--ok); }
+</style>
+
+<p class="cap">1 · Daily board <span>for the daily digest. Same layout every day, so it becomes a recognisable fixture. Every number is read from the site's data when the post goes out.</span></p>
+<div class="card dark" id="card-daily">
+  <div class="top"><div class="brand"><svg viewBox="0 0 32 32" width="34" height="34"><rect width="32" height="32" rx="7" fill="#2e2940"/><path d="M5 22 C11 12, 17 24, 27 10" fill="none" stroke="#3b8fd9" stroke-width="3" stroke-linecap="round"/><polygon points="16,6 22,17 10,17" fill="#e0493a"/></svg>Strategic Energy Map</div><div class="kick">Daily board · Oct 10, 2026</div></div>
+  <div class="day"><h1>Hormuz closed: <em>day 224</em></h1><p>Prices against the week before the crisis</p></div>
+  <div class="tiles"><div class="tile"><div class="t-l">Brent<span>$/bbl</span></div><div class="t-v">$102.81</div>
+  <div class="t-d"><b>+42%</b> since Feb</div><div class="t-w up">▲ 3.0% this week</div></div><div class="tile"><div class="t-l">WTI<span>$/bbl</span></div><div class="t-v">$90.56</div>
+  <div class="t-d"><b>+35%</b> since Feb</div><div class="t-w up">▲ 1.3% this week</div></div><div class="tile"><div class="t-l">TTF gas<span>€/MWh</span></div><div class="t-v">€77.80</div>
+  <div class="t-d"><b>+143%</b> since Feb</div><div class="t-w up">▲ 6.5% this week</div></div><div class="tile"><div class="t-l">JKM LNG<span>$/MMBtu</span></div><div class="t-v">$25.96</div>
+  <div class="t-d"><b>+141%</b> since Feb</div><div class="t-w up">▲ 0.7% this week</div></div></div>
+  <div class="row2">
+    <div class="pan"><h2>Strait of Hormuz: tankers per day <b class="num">0.9 <i>vs 40 before</i></b></h2>
+      <svg width="664" height="194" viewBox="0 0 664 194">
+        <line x1="0" x2="664" y1="72.75873015873017" y2="72.75873015873017" stroke="#b0adbb" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <line x1="300.30150753768845" x2="300.30150753768845" y1="0" y2="172" stroke="#ff6680" stroke-width="1.5"/>
+        <text x="308.30150753768845" y="13" fill="#ff6680" font-size="14" font-weight="600">Closed Feb 28</text>
+        <text x="664" y="64.75873015873017" fill="#b0adbb" font-size="13.5" text-anchor="end">Average before the closure (Sep–Feb)</text>
+        <path d="M0.0,2.5L1.7,31.9L3.3,46.7L5.0,54.1L6.7,40.8L8.3,36.4L10.0,36.5L11.7,40.4L13.3,41.1L15.0,39.3L16.7,41.4L18.4,53.4L20.0,64.6L21.7,70.2L23.4,78.6L25.0,72.0L26.7,68.1L28.4,56.5L30.0,57.9L31.7,53.0L33.4,48.8L35.0,47.7L36.7,50.9L38.4,52.0L40.0,66.0L41.7,65.6L43.4,60.7L45.0,52.0L46.7,40.4L48.4,39.3L50.1,32.3L51.7,21.8L53.4,15.8L55.1,11.2L56.7,12.6L58.4,21.8L60.1,21.8L61.7,37.9L63.4,47.0L65.1,55.5L66.7,67.4L68.4,84.6L70.1,86.7L71.7,84.2L73.4,80.0L75.1,80.7L76.7,83.2L78.4,81.8L80.1,73.4L81.7,69.9L83.4,73.4L85.1,63.9L86.8,53.4L88.4,39.7L90.1,33.3L91.8,29.1L93.4,26.0L95.1,26.3L96.8,24.6L98.4,28.1L100.1,35.5L101.8,40.4L103.4,48.8L105.1,60.0L106.8,60.7L108.4,68.8L110.1,72.0L111.8,74.1L113.4,68.4L115.1,64.9L116.8,59.3L118.5,55.8L120.1,57.9L121.8,53.7L123.5,49.8L125.1,58.6L126.8,62.8L128.5,65.6L130.1,72.3L131.8,73.4L133.5,76.2L135.1,81.4L136.8,84.2L138.5,86.4L140.1,89.9L141.8,91.6L143.5,93.7L145.1,98.6L146.8,100.7L148.5,101.1L150.2,98.3L151.8,94.1L153.5,96.2L155.2,98.3L156.8,97.9L158.5,97.9L160.2,94.4L161.8,92.7L163.5,95.5L165.2,89.9L166.8,88.1L168.5,88.1L170.2,89.5L171.8,94.1L173.5,95.5L175.2,98.6L176.8,103.9L178.5,103.6L180.2,102.5L181.8,104.3L183.5,106.4L185.2,108.8L186.9,106.0L188.5,107.8L190.2,108.8L191.9,109.2L193.5,102.5L195.2,95.8L196.9,97.6L198.5,97.6L200.2,94.4L201.9,88.5L203.5,89.5L205.2,94.1L206.9,95.8L208.5,95.1L210.2,93.7L211.9,95.1L213.5,98.3L215.2,95.5L216.9,89.5L218.6,89.5L220.2,87.8L221.9,86.4L223.6,88.1L225.2,89.2L226.9,89.9L228.6,93.7L230.2,97.6L231.9,101.4L233.6,103.2L235.2,100.7L236.9,102.5L238.6,101.4L240.2,103.2L241.9,103.9L243.6,96.5L245.2,100.0L246.9,101.1L248.6,101.4L250.3,100.4L251.9,95.1L253.6,88.5L255.3,96.2L256.9,88.5L258.6,87.4L260.3,90.2L261.9,92.0L263.6,93.7L265.3,93.7L266.9,89.2L268.6,92.0L270.3,89.9L271.9,79.7L273.6,81.1L275.3,74.1L276.9,69.5L278.6,66.0L280.3,65.3L281.9,64.9L283.6,63.2L285.3,52.3L287.0,52.0L288.6,52.0L290.3,42.5L292.0,31.9L293.6,28.8L295.3,27.0L297.0,33.3L298.6,39.7L300.3,45.6L302.0,68.1L303.6,90.6L305.3,107.4L307.0,128.1L308.6,143.6L310.3,156.6L312.0,168.8L313.6,170.6L315.3,170.6L317.0,170.6L318.7,170.6L320.3,170.9L322.0,170.9L323.7,171.3L325.3,170.6L327.0,170.9L328.7,170.9L330.3,170.9L332.0,170.9L333.7,170.2L335.3,170.2L337.0,170.9L338.7,170.2L340.3,170.2L342.0,169.5L343.7,169.5L345.3,170.2L347.0,169.9L348.7,169.2L350.4,168.8L352.0,168.5L353.7,168.8L355.4,168.8L357.0,168.1L358.7,167.4L360.4,166.7L362.0,167.8L363.7,167.8L365.4,168.1L367.0,166.4L368.7,167.1L370.4,167.1L372.0,167.4L373.7,166.0L375.4,165.7L377.0,164.3L378.7,165.7L380.4,164.6L382.1,161.5L383.7,162.2L385.4,162.9L387.1,162.9L388.7,163.6L390.4,163.9L392.1,164.3L393.7,167.8L395.4,167.8L397.1,167.8L398.7,167.8L400.4,160.4L402.1,159.0L403.7,159.0L405.4,158.3L407.1,158.3L408.7,159.0L410.4,160.1L412.1,168.1L413.7,169.5L415.4,170.2L417.1,171.3L418.8,170.9L420.4,169.5L422.1,169.2L423.8,168.5L425.4,167.4L427.1,166.7L428.8,166.7L430.4,167.1L432.1,168.1L433.8,167.4L435.4,166.7L437.1,167.1L438.8,167.8L440.4,167.8L442.1,167.4L443.8,167.8L445.4,168.1L447.1,169.2L448.8,169.9L450.5,169.9L452.1,170.2L453.8,170.9L455.5,170.6L457.1,170.2L458.8,169.5L460.5,169.2L462.1,169.2L463.8,169.2L465.5,169.2L467.1,169.2L468.8,169.5L470.5,170.6L472.1,170.2L473.8,169.9L475.5,169.9L477.1,169.9L478.8,169.5L480.5,169.2L482.2,169.2L483.8,166.4L485.5,165.7L487.2,161.5L488.8,161.1L490.5,157.6L492.2,154.4L493.8,147.4L495.5,143.6L497.2,138.7L498.8,139.7L500.5,137.6L502.2,137.2L503.8,139.4L505.5,140.1L507.2,142.2L508.8,142.2L510.5,142.5L512.2,139.4L513.8,138.3L515.5,136.9L517.2,140.4L518.9,144.6L520.5,149.2L522.2,150.9L523.9,156.2L525.5,161.1L527.2,162.9L528.9,164.6L530.5,165.3L532.2,166.4L533.9,166.7L535.5,166.4L537.2,166.4L538.9,167.8L540.5,168.5L542.2,168.8L543.9,169.2L545.5,169.9L547.2,169.9L548.9,170.6L550.6,170.6L552.2,169.9L553.9,169.5L555.6,168.8L557.2,167.8L558.9,168.5L560.6,167.4L562.2,166.4L563.9,167.4L565.6,167.8L567.2,167.1L568.9,167.4L570.6,167.4L572.2,167.8L573.9,168.5L575.6,168.1L577.2,167.4L578.9,168.1L580.6,168.5L582.3,168.1L583.9,167.8L585.6,167.1L587.3,166.0L588.9,166.0L590.6,166.0L592.3,166.0L593.9,166.0L595.6,166.4L597.3,166.4L598.9,167.1L600.6,167.1L602.3,167.8L603.9,167.8L605.6,167.4L607.3,167.8L608.9,168.8L610.6,169.2L612.3,169.5L613.9,169.5L615.6,169.9L617.3,169.9L619.0,169.5L620.6,169.2L622.3,169.5L624.0,169.5L625.6,168.5L627.3,168.1L629.0,168.5L630.6,169.2L632.3,169.5L634.0,169.5L635.6,169.9L637.3,170.2L639.0,170.2L640.6,170.6L642.3,170.6L644.0,170.6L645.6,170.2L647.3,169.2L649.0,169.2L650.7,169.2L652.3,168.8L654.0,168.1L655.7,168.5L657.3,167.4L659.0,168.5L660.7,169.2L662.3,169.5L664.0,169.9L664,172L0,172Z" fill="rgba(111,180,255,.14)"/><path d="M0.0,2.5L1.7,31.9L3.3,46.7L5.0,54.1L6.7,40.8L8.3,36.4L10.0,36.5L11.7,40.4L13.3,41.1L15.0,39.3L16.7,41.4L18.4,53.4L20.0,64.6L21.7,70.2L23.4,78.6L25.0,72.0L26.7,68.1L28.4,56.5L30.0,57.9L31.7,53.0L33.4,48.8L35.0,47.7L36.7,50.9L38.4,52.0L40.0,66.0L41.7,65.6L43.4,60.7L45.0,52.0L46.7,40.4L48.4,39.3L50.1,32.3L51.7,21.8L53.4,15.8L55.1,11.2L56.7,12.6L58.4,21.8L60.1,21.8L61.7,37.9L63.4,47.0L65.1,55.5L66.7,67.4L68.4,84.6L70.1,86.7L71.7,84.2L73.4,80.0L75.1,80.7L76.7,83.2L78.4,81.8L80.1,73.4L81.7,69.9L83.4,73.4L85.1,63.9L86.8,53.4L88.4,39.7L90.1,33.3L91.8,29.1L93.4,26.0L95.1,26.3L96.8,24.6L98.4,28.1L100.1,35.5L101.8,40.4L103.4,48.8L105.1,60.0L106.8,60.7L108.4,68.8L110.1,72.0L111.8,74.1L113.4,68.4L115.1,64.9L116.8,59.3L118.5,55.8L120.1,57.9L121.8,53.7L123.5,49.8L125.1,58.6L126.8,62.8L128.5,65.6L130.1,72.3L131.8,73.4L133.5,76.2L135.1,81.4L136.8,84.2L138.5,86.4L140.1,89.9L141.8,91.6L143.5,93.7L145.1,98.6L146.8,100.7L148.5,101.1L150.2,98.3L151.8,94.1L153.5,96.2L155.2,98.3L156.8,97.9L158.5,97.9L160.2,94.4L161.8,92.7L163.5,95.5L165.2,89.9L166.8,88.1L168.5,88.1L170.2,89.5L171.8,94.1L173.5,95.5L175.2,98.6L176.8,103.9L178.5,103.6L180.2,102.5L181.8,104.3L183.5,106.4L185.2,108.8L186.9,106.0L188.5,107.8L190.2,108.8L191.9,109.2L193.5,102.5L195.2,95.8L196.9,97.6L198.5,97.6L200.2,94.4L201.9,88.5L203.5,89.5L205.2,94.1L206.9,95.8L208.5,95.1L210.2,93.7L211.9,95.1L213.5,98.3L215.2,95.5L216.9,89.5L218.6,89.5L220.2,87.8L221.9,86.4L223.6,88.1L225.2,89.2L226.9,89.9L228.6,93.7L230.2,97.6L231.9,101.4L233.6,103.2L235.2,100.7L236.9,102.5L238.6,101.4L240.2,103.2L241.9,103.9L243.6,96.5L245.2,100.0L246.9,101.1L248.6,101.4L250.3,100.4L251.9,95.1L253.6,88.5L255.3,96.2L256.9,88.5L258.6,87.4L260.3,90.2L261.9,92.0L263.6,93.7L265.3,93.7L266.9,89.2L268.6,92.0L270.3,89.9L271.9,79.7L273.6,81.1L275.3,74.1L276.9,69.5L278.6,66.0L280.3,65.3L281.9,64.9L283.6,63.2L285.3,52.3L287.0,52.0L288.6,52.0L290.3,42.5L292.0,31.9L293.6,28.8L295.3,27.0L297.0,33.3L298.6,39.7L300.3,45.6L302.0,68.1L303.6,90.6L305.3,107.4L307.0,128.1L308.6,143.6L310.3,156.6L312.0,168.8L313.6,170.6L315.3,170.6L317.0,170.6L318.7,170.6L320.3,170.9L322.0,170.9L323.7,171.3L325.3,170.6L327.0,170.9L328.7,170.9L330.3,170.9L332.0,170.9L333.7,170.2L335.3,170.2L337.0,170.9L338.7,170.2L340.3,170.2L342.0,169.5L343.7,169.5L345.3,170.2L347.0,169.9L348.7,169.2L350.4,168.8L352.0,168.5L353.7,168.8L355.4,168.8L357.0,168.1L358.7,167.4L360.4,166.7L362.0,167.8L363.7,167.8L365.4,168.1L367.0,166.4L368.7,167.1L370.4,167.1L372.0,167.4L373.7,166.0L375.4,165.7L377.0,164.3L378.7,165.7L380.4,164.6L382.1,161.5L383.7,162.2L385.4,162.9L387.1,162.9L388.7,163.6L390.4,163.9L392.1,164.3L393.7,167.8L395.4,167.8L397.1,167.8L398.7,167.8L400.4,160.4L402.1,159.0L403.7,159.0L405.4,158.3L407.1,158.3L408.7,159.0L410.4,160.1L412.1,168.1L413.7,169.5L415.4,170.2L417.1,171.3L418.8,170.9L420.4,169.5L422.1,169.2L423.8,168.5L425.4,167.4L427.1,166.7L428.8,166.7L430.4,167.1L432.1,168.1L433.8,167.4L435.4,166.7L437.1,167.1L438.8,167.8L440.4,167.8L442.1,167.4L443.8,167.8L445.4,168.1L447.1,169.2L448.8,169.9L450.5,169.9L452.1,170.2L453.8,170.9L455.5,170.6L457.1,170.2L458.8,169.5L460.5,169.2L462.1,169.2L463.8,169.2L465.5,169.2L467.1,169.2L468.8,169.5L470.5,170.6L472.1,170.2L473.8,169.9L475.5,169.9L477.1,169.9L478.8,169.5L480.5,169.2L482.2,169.2L483.8,166.4L485.5,165.7L487.2,161.5L488.8,161.1L490.5,157.6L492.2,154.4L493.8,147.4L495.5,143.6L497.2,138.7L498.8,139.7L500.5,137.6L502.2,137.2L503.8,139.4L505.5,140.1L507.2,142.2L508.8,142.2L510.5,142.5L512.2,139.4L513.8,138.3L515.5,136.9L517.2,140.4L518.9,144.6L520.5,149.2L522.2,150.9L523.9,156.2L525.5,161.1L527.2,162.9L528.9,164.6L530.5,165.3L532.2,166.4L533.9,166.7L535.5,166.4L537.2,166.4L538.9,167.8L540.5,168.5L542.2,168.8L543.9,169.2L545.5,169.9L547.2,169.9L548.9,170.6L550.6,170.6L552.2,169.9L553.9,169.5L555.6,168.8L557.2,167.8L558.9,168.5L560.6,167.4L562.2,166.4L563.9,167.4L565.6,167.8L567.2,167.1L568.9,167.4L570.6,167.4L572.2,167.8L573.9,168.5L575.6,168.1L577.2,167.4L578.9,168.1L580.6,168.5L582.3,168.1L583.9,167.8L585.6,167.1L587.3,166.0L588.9,166.0L590.6,166.0L592.3,166.0L593.9,166.0L595.6,166.4L597.3,166.4L598.9,167.1L600.6,167.1L602.3,167.8L603.9,167.8L605.6,167.4L607.3,167.8L608.9,168.8L610.6,169.2L612.3,169.5L613.9,169.5L615.6,169.9L617.3,169.9L619.0,169.5L620.6,169.2L622.3,169.5L624.0,169.5L625.6,168.5L627.3,168.1L629.0,168.5L630.6,169.2L632.3,169.5L634.0,169.5L635.6,169.9L637.3,170.2L639.0,170.2L640.6,170.6L642.3,170.6L644.0,170.6L645.6,170.2L647.3,169.2L649.0,169.2L650.7,169.2L652.3,168.8L654.0,168.1L655.7,168.5L657.3,167.4L659.0,168.5L660.7,169.2L662.3,169.5L664.0,169.9" fill="none" stroke="#6fb4ff" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="664" cy="169.8938775510204" r="5" fill="#6fb4ff" stroke="#1a1628" stroke-width="2"/>
+        <line x1="0" x2="664" y1="172" y2="172" stroke="rgba(254,254,255,.26)"/>
+        <text x="0" y="190" fill="#b0adbb" font-size="13.5">Sep 2025</text><text x="664" y="190" fill="#b0adbb" font-size="13.5" text-anchor="end">Oct 4</text>
+      </svg></div>
+    <div class="pan"><h2>Assets not operating normally</h2><div class="stat-n num">19</div><div class="stat-s">pipelines, terminals, refineries and straits</div>
+      <div class="bars"><i style="flex:1;background:var(--closed)"></i><i style="flex:4;background:var(--damaged)"></i><i style="flex:7;background:var(--disrupted)"></i><i style="flex:7;background:var(--reduced)"></i></div>
+      <div class="leg"><span><i style="background:var(--closed)"></i><b>1</b> closed</span><span><i style="background:var(--damaged)"></i><b>4</b> damaged</span><span><i style="background:var(--disrupted)"></i><b>7</b> disrupted</span><span><i style="background:var(--reduced)"></i><b>7</b> reduced</span></div></div>
+  </div>
+  <div class="foot"><span>Prices: close of Oct 9 · Tankers: IMF PortWatch (ships broadcasting position), 7-day average</span><b>strategicenergymap.org</b></div>
+</div>
+
+<p class="cap">2 · Locator card <span>for event posts, which currently go out as bare text. The real map, zoomed to where it happened, with the confidence label and source on the image.</span></p>
+<div class="card loc" id="card-locator">
+  <div class="pin"><i></i><i></i><span>Tanker struck, Oct 7</span></div>
+  <div class="panel">
+    <div class="kick">Shipping · Oct 7 <span class="chip">Reported</span></div>
+    <h1>Chemical tanker struck by projectiles off Qatar</h1>
+    <div class="fact"><b>51</b><span>nautical miles<br>offshore</span></div>
+    <p>Well west of the Strait of Hormuz, where most recent attacks have clustered. No party has claimed responsibility.</p>
+    <div class="src">Source: <b>UKMTO</b>, via gCaptain, Oct 8</div>
+    <div class="brand"><svg viewBox="0 0 32 32" width="34" height="34"><rect width="32" height="32" rx="7" fill="#1a2332"/><path d="M5 22 C11 12, 17 24, 27 10" fill="none" stroke="#3b8fd9" stroke-width="3" stroke-linecap="round"/><polygon points="16,6 22,17 10,17" fill="#e0493a"/></svg>Strategic Energy Map</div>
+  </div>
+  <div class="credit">Map: Esri, HERE, Garmin, OpenStreetMap contributors</div>
+</div>
+
+<p class="cap">3 · Asset fact card <span>for the daily explainer. Dark data panel plus a live crop of the map. Figures come from the asset record, which the agent verifies before each explainer.</span></p>
+<div class="card dark asset" id="card-asset">
+  <div class="top"><div class="brand"><svg viewBox="0 0 32 32" width="34" height="34"><rect width="32" height="32" rx="7" fill="#2e2940"/><path d="M5 22 C11 12, 17 24, 27 10" fill="none" stroke="#3b8fd9" stroke-width="3" stroke-linecap="round"/><polygon points="16,6 22,17 10,17" fill="#e0493a"/></svg>Strategic Energy Map</div><div class="kick" style="color:var(--oil)">Explainer · Oil pipeline</div></div>
+  <h1>Habshan–Fujairah Pipeline</h1>
+  <p class="lede">Carries Abu Dhabi crude overland to the Gulf of Oman, so it can reach tankers without passing through the Strait of Hormuz.</p>
+  <div class="facts"><div><b>1.5<small>mb/d</small></b><span>Capacity</span></div><div><b>370<small>km</small></b><span>Length</span></div><div><b>2012</b><span>In service</span></div></div>
+  <div class="share"><div class="lbl"><span>Share of normal Hormuz oil flow (19.9 mb/d) it could carry</span><b>8%</b></div><div class="bar"><i style="width:7.5%"></i></div></div>
+  <p class="why"><b>Why it matters:</b> Fujairah sits outside the strait on the Gulf of Oman coast, with about 42 million barrels of crude storage, so UAE crude can load without entering the Persian Gulf.</p>
+  <div class="foot"><span class="ok"><i></i>Operating normally</span><span>Figures checked Oct 9 · <b>strategicenergymap.org</b></span></div>
+  <div class="map"><span class="tag" style="left:66px;top:412px">Habshan</span><span class="tag" style="left:262px;top:236px">Fujairah</span><div class="credit">Map: Esri, HERE, Garmin, OSM</div></div>
+</div>

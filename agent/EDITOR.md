@@ -54,7 +54,9 @@ Read these, in this order:
    happen?
 2. `metrics/<week-ending>.json` for the week that just ended (the most recent Sunday), the previous week's file for
    comparison, and `metrics/vercel.json` (Vercel visits, copied by hand; use it only when its `week_ending` is the week
-   you're covering). **If this week's metrics file is missing, stop:** don't write a brief, and say so in your final
+   you're covering). `social.<platform>.by_media` gives the same engagement numbers as `by_type`, grouped by what
+   the post carried (`chart`, `daily-board`, `asset-card`, `no-image`): use it to compare image types.
+   **If this week's metrics file is missing, stop:** don't write a brief, and say so in your final
    message. The "Needs you" check flags it too.
 3. `docs/growth-log.md` (the baseline and weekly history) and `docs/content-ideas.md` (the backlog).
 4. The week's activity: `git log --since=<Monday> --until=<Sunday> origin/main`, `data/changelog.json`, and the drafts

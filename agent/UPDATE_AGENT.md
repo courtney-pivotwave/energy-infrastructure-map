@@ -173,12 +173,26 @@ post that has an entry in `data/social-log.json` (it has already gone out). Fix 
   wasn't verified in the past 14 days.
 - **Mondays and Thursdays: 1 `chart`**: Monday `"image": "fuel-weekly"` (pump prices), Thursday
   `"image": "chokepoints-weekly"` (tanker traffic), with alt text and a caption quoting 2–3 figures from the chart's data.
+  When the weekly brief caps the day's drafts, the chart takes the explainer's place; it is not the post to drop.
+  The validator warns when a Monday's or Thursday's drafts have no chart.
 - **Evergreen charts** from `/charts/`: `"image": "hormuz-bypass"` (Hormuz flow vs bypass capacity) and
   `"image": "chokepoint-oil-flows"` (oil through each chokepoint). Use one in place of the day's explainer when the news
   is about chokepoint flows or bypass routes, at most once every 14 days per image. `url` is the chart page
   (`/charts/hormuz-bypass/`, `/charts/chokepoint-oil-flows/`); figures must match the page, which is built from
   `scenarios.json` and `status.json`.
 - **A `correction`** replying to the original post (`reply_to`) whenever a posted event is corrected or retracted.
+
+**Digest and explainer images are automatic.** Every digest goes out with the *daily board* (benchmark prices against
+the pre-crisis week, Hormuz tanker traffic, assets not operating normally) and every explainer with its asset's *fact
+card* (name, description, figures, live status and a crop of the map). The posting Action draws both from the data
+files at the moment it posts and writes their alt text, so leave `image` and `alt` empty on those drafts and don't
+describe the image in `text`. Chart posts still set `image` and `alt`. `"image": "none"` sends a post without its card.
+The fact card shows the asset's record as it stands, so the explainer's audit matters twice over:
+- Its figures row uses `capacity` where the asset has one. Otherwise it takes a capacity, a length and a start year
+  from `details`, and only where `details` states exactly one of each, in the usual form ("~370 km. Capacity ~1.5
+  million bpd. Commissioned 2012."). Two different capacities in `details` show as none.
+- It prints the asset's `status.json` entry beside its description. If the two disagree, or `details` disagrees with
+  `scenarios.json` (a chokepoint's flow, a bypass route's capacity), fix it in the review PR before explaining the asset.
 
 **Order matters.** The posting Action runs hourly from 11:17 to 23:17 UTC and sends one new draft at a time, in
 queue order, at least `min_gap_minutes` (100) after the previous post, so posts land about every two hours, so append drafts in the order they should go out: digest, events (most important
@@ -198,9 +212,10 @@ dropped, and `max_per_day` (6) caps the total.
   "reopened", check the asset's entry in `data/status.json`. When sources disagree, use the more cautious word
   ("disrupted", "reduced").
 - Digests follow the same rules as event posts: no belligerent statements, even attributed ones.
-- On X, only the post types listed in `x_links` (currently announcement, digest, explainer, correction) carry the
-  link; X charges more for links and gives them less reach. So **event and chart text must read as complete on its own**: no trailing colon,
-  no "see link", no domain names (X auto-links them). Bluesky always gets the link.
+- On X no post carries a link (`x_links` is empty): X charges about 13 times as much for a post with a link and
+  gives it less reach, and every card shows the site's address. So **every post's text must read as complete on its
+  own**: no trailing colon, no "see link", no domain names (X auto-links them and charges for it). Bluesky always
+  gets the link.
 - **Hashtags go in `tags`, never in `text`.** Give every event, digest, explainer and chart post 1–3 tags from
   `social.json → hashtags` that say what's distinctive about *this* post, most specific first (X shows only the
   first two). Vary them: the same three tags on every post reach the same few people.

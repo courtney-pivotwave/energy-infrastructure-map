@@ -61,14 +61,25 @@ export function tagFacets(text) { // Bluesky: make #tags clickable
 export const CHART_IMAGES = ['fuel-weekly', 'chokepoints-weekly', 'chokepoint-oil-flows', 'hormuz-bypass'];
 export const DASH_IMAGES = ['status-board', 'importer-exposure', 'pump-price-ranking']; // write their own alt text
 export function cardFor(p) {
-  if (p.image === 'none') return null;
+  if (p.image === 'none' || p.video) return null; // a post carries a video or an image, not both
   if (p.image) return p.image;
   if (p.type === 'digest') return 'daily-board';
   if (p.type === 'event') return p.event_id ? `event/${p.event_id}` : null;
   const m = p.type === 'explainer' && (p.url || '').match(/\/(?:chokepoints|facilities)\/([a-z0-9-]+)\/$/);
   return m ? `asset/${m[1]}` : null;
 }
-// What the weekly metrics compare: chart, dashboard-image, daily-board, asset-card, locator-card
+// ── Video: a post's `video` names a clip in media/social/clips.json, cut and committed by a person with
+// tools/video/clip.mjs. That commit is the review step, so only listed clips can be posted ──
+export function loadClips() {
+  const file = join(ROOT, 'media/social/clips.json');
+  return existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')).clips || {} : {};
+}
+export function loadClip(id) {
+  const c = loadClips()[id], file = c && join(ROOT, c.src);
+  return c && existsSync(file) ? { ...c, id, buf: readFileSync(file) } : null;
+}
+
+// What the weekly metrics compare: chart, dashboard-image, daily-board, asset-card, locator-card (and video)
 export const cardFamily = key => !key ? null : CHART_IMAGES.includes(key) ? 'chart' : DASH_IMAGES.includes(key) ? 'dashboard-image'
   : key.startsWith('asset/') ? 'asset-card' : key.startsWith('event/') ? 'locator-card' : key;
 
@@ -98,9 +109,39 @@ export async function renderImage(key) {
 
 // ── X ──
 let xLinkTypes = new Set(['announcement', 'digest', 'correction']);
-async function postX(p, img, alt, replyToId, creds) {
-  let mediaId = null;
-  if (img) {
+// Video goes up in pieces: initialize, append ≤4 MB segments, finalize, then wait for X to finish processing it.
+// Any failure throws, so the post is retried on a later run instead of going out without its video.
+export async function xUploadVideo(buf, creds) {
+  const base = 'https://api.x.com/2/media/upload';
+  const call = async (method, url, { params = {}, json, form } = {}) => {
+    const qs = Object.keys(params).length ? `?${new URLSearchParams(params)}` : '';
+    const r = await fetch(url + qs, { method, headers: { Authorization: oauthHeader(method, url, params, creds), ...(json ? { 'Content-Type': 'application/json' } : {}) }, body: json ? JSON.stringify(json) : form });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(`X video upload ${r.status} at ${url.replace(base, '') || '/'}: ${JSON.stringify(j).slice(0, 200)}`);
+    return j;
+  };
+  const id = (await call('POST', `${base}/initialize`, { json: { media_type: 'video/mp4', total_bytes: buf.length, media_category: 'tweet_video' } }))?.data?.id;
+  if (!id) throw new Error('X video upload: no media id returned');
+  const SEG = 4 * 1024 * 1024;
+  for (let i = 0; i * SEG < buf.length; i++) {
+    const form = new FormData();
+    form.append('segment_index', String(i));
+    form.append('media', new Blob([buf.subarray(i * SEG, (i + 1) * SEG)], { type: 'application/octet-stream' }), 'segment');
+    await call('POST', `${base}/${id}/append`, { form });
+  }
+  let info = (await call('POST', `${base}/${id}/finalize`))?.data?.processing_info;
+  for (let waited = 0; info && info.state !== 'succeeded'; ) {
+    if (info.state === 'failed') throw new Error(`X video processing failed: ${JSON.stringify(info.error || info).slice(0, 200)}`);
+    const secs = Math.min(Math.max(info.check_after_secs || 2, 1), 15);
+    if ((waited += secs) > 240) throw new Error('X video processing timed out');
+    await new Promise(r => setTimeout(r, secs * 1000));
+    info = (await call('GET', base, { params: { command: 'STATUS', media_id: id } }))?.data?.processing_info;
+  }
+  return id;
+}
+export async function postX(p, img, alt, replyToId, creds, clip = null) {
+  let mediaId = clip ? await xUploadVideo(clip.buf, creds) : null;
+  if (img && !clip) {
     try {
       const url = 'https://api.x.com/2/media/upload';
       const form = new FormData();
@@ -145,11 +186,16 @@ async function pageCard(url) { // title/description for the link card, from the 
     return { title: dec(get(/<title>([^<]*)<\/title>/)).slice(0, 300), description: dec(get(/<meta name="description" content="([^"]*)"/)).slice(0, 1000) };
   } catch { return { title: 'Strategic Energy Map', description: '' }; }
 }
-async function postBluesky(p, img, alt, replyRef, creds) {
+export async function postBluesky(p, img, alt, replyRef, creds, clip = null) {
   if (!bskySession) bskySession = await bsky('com.atproto.server.createSession', { identifier: creds.handle, password: creds.password });
   const text = composeText(p, 'bluesky', true);
   const record = { $type: 'app.bsky.feed.post', text, createdAt: new Date().toISOString(), langs: ['en'], facets: [...tagFacets(text), ...linkFacet(text, p.url)] };
-  if (img) {
+  if (clip) {
+    // Bluesky's simple route: the clip is stored as a blob and processed once the post exists, so the video
+    // can take a moment to appear. The account's email must be verified for video.
+    const { blob } = await bsky('com.atproto.repo.uploadBlob', null, { raw: clip.buf, type: 'video/mp4' });
+    record.embed = { $type: 'app.bsky.embed.video', video: blob, alt: (clip.alt || '').slice(0, 1000), aspectRatio: { width: clip.width, height: clip.height } };
+  } else if (img) {
     const { blob } = await bsky('com.atproto.repo.uploadBlob', null, { raw: img, type: 'image/png' });
     record.embed = { $type: 'app.bsky.embed.images', images: [{ image: blob, alt: alt || '', aspectRatio: { width: 1200, height: 675 } }] };
   } else {
@@ -237,16 +283,18 @@ async function main() {
     if (img && !p.alt && cardAlts === undefined) cardAlts = await fetch(`${process.env.LOCAL_SITE}/social/cards.json`).then(r => r.json()).catch(() => ({}));
     const alt = img ? (p.alt || cardAlts?.[key]?.alt || '') : '';
     if (img && dry && process.env.PREVIEW_DIR) { mkdirSync(process.env.PREVIEW_DIR, { recursive: true }); writeFileSync(join(process.env.PREVIEW_DIR, `${p.id}.png`), img); }
+    const clip = p.video ? loadClip(p.video) : null;
+    if (p.video && !clip) { console.log(`Holding ${p.id}: video "${p.video}" is not in media/social/clips.json`); continue; }
     const parent = p.reply_to ? log.posted[p.reply_to] : null;
     const indent = t => t.replace(/\n/g, '\n     ');
-    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${key}` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  X:   ${indent(composeText(p, 'x', xLinkTypes.has(p.type)))}\n  Bsky: ${indent(composeText(p, 'bluesky', true))}`);
+    console.log(`\n→ ${p.id} [${p.type}]${img ? ` +image ${key}` : ''}${clip ? ` +video ${clip.id} (${clip.duration}s, ${(clip.buf.length / 1048576).toFixed(1)} MB)` : ''}${p.reply_to ? ` (reply to ${p.reply_to})` : ''}\n  X:   ${indent(composeText(p, 'x', xLinkTypes.has(p.type)))}\n  Bsky: ${indent(composeText(p, 'bluesky', true))}`);
     if (dry) { console.log(`  would post to: ${todo.join(', ')}`); continue; }
     log.posted[p.id] ||= {};
     for (const pl of todo) {
       const prev = log.posted[p.id][pl] || {};
       try {
-        const res = pl === 'x' ? await postX(p, img, alt, parent?.x?.id, creds.x) : await postBluesky(p, img, alt, parent?.bluesky, creds.bluesky);
-        log.posted[p.id][pl] = { ...res, at: new Date().toISOString(), ...(img ? { media: cardFamily(key) } : {}) };
+        const res = pl === 'x' ? await postX(p, img, alt, parent?.x?.id, creds.x, clip) : await postBluesky(p, img, alt, parent?.bluesky, creds.bluesky, clip);
+        log.posted[p.id][pl] = { ...res, at: new Date().toISOString(), ...(clip ? { media: 'video' } : img ? { media: cardFamily(key) } : {}) };
         console.log(`  ✓ ${pl}: ${res.id || res.uri}`);
       } catch (e) {
         log.posted[p.id][pl] = { attempts: (prev.attempts || 0) + 1, error: String(e.message).slice(0, 300), last_try: new Date().toISOString() };

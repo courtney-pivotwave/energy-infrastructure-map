@@ -24,6 +24,7 @@ const VIDEOS = [
   { id: 'embedding', scene: 'embedding', title: 'Embed the live map on your site', site: true },
   { id: 'chokepoints', scene: 'chokepoints', title: 'Ship traffic through the energy chokepoints' },
   { id: 'pump-prices', scene: 'pump-prices', title: 'Pump prices since the crisis began' },
+  { id: 'dashboard', scene: 'dashboard', title: 'The 2026 energy crisis in numbers' },
 ];
 
 const ids = process.argv.slice(2);

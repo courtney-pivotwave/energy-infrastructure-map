@@ -1,0 +1,70 @@
+{
+  "clips": {
+    "what-if-hormuz": {
+      "title": "What if the Strait of Hormuz shut completely?",
+      "src": "media/social/what-if-hormuz.mp4",
+      "poster": "media/social/what-if-hormuz.jpg",
+      "duration": 50.9,
+      "width": 1280,
+      "height": 720,
+      "from_video": "what-if",
+      "url": "https://strategicenergymap.org/",
+      "recorded": "2026-10-02",
+      "evergreen": false,
+      "alt": "Screen recording of the site with captions: In 2025 about 19.9 million barrels a day of oil passed through the Strait of Hormuz: roughly 19% of world demand. The What-if tab lets you close any of six major chokepoints, alone or together. Close Hormuz. Red dashes are tanker and LNG routes that are cut, and 24 terminals, refineries and other assets are left stranded. Green lines are the only bypass routes the model counts: East-West Pipeline and Habshan–Fujairah Pipeline. Net result: a 16.4 mb/d oil shortfall, 15.8% of world demand, even after 3.5 mb/d of pipeline bypass. And 20% of global LNG trade has no way out at all. Ends on a card with the address strategicenergymap.org."
+    },
+    "map-tour": {
+      "title": "A quick tour of the map",
+      "src": "media/social/map-tour.mp4",
+      "poster": "media/social/map-tour.jpg",
+      "duration": 42.6,
+      "width": 1280,
+      "height": 720,
+      "from_video": "tour",
+      "url": "https://strategicenergymap.org/?tour=1",
+      "recorded": "2026-10-03",
+      "evergreen": false,
+      "alt": "Screen recording of the site with captions: Hide the panel whenever you want more room. Jump straight to a region… …and click any asset. Yanbu Terminal: what it does, its current status and related developments, with sources and a confidence label for every claim. The Latest tab is a daily, sourced feed of what’s changing, led by a summary of the situation. Filter it by time window or category… …and click an event to see where it happened. Ends on a card with the address strategicenergymap.org."
+    },
+    "embed-the-map": {
+      "title": "Embed the live map on your site",
+      "src": "media/social/embed-the-map.mp4",
+      "poster": "media/social/embed-the-map.jpg",
+      "duration": 38.2,
+      "width": 1280,
+      "height": 720,
+      "from_video": "embedding",
+      "url": "https://strategicenergymap.org/about.html#embed",
+      "recorded": "2026-10-04",
+      "evergreen": true,
+      "alt": "Screen recording of the site with captions: Want the map in your own article, blog post or lesson? There’s a view made for that. Add ?embed=1 to the address… …and you get just the map: no panels, with a small link back to the full site. Add &region= to choose where it opens: europe… …mideast, asia or americas. Then drop it into any page with an iframe. Ends on a card with the address strategicenergymap.org."
+    },
+    "how-its-sourced": {
+      "title": "How every claim on the map is sourced",
+      "src": "media/social/how-its-sourced.mp4",
+      "poster": "media/social/how-its-sourced.jpg",
+      "duration": 31.4,
+      "width": 1280,
+      "height": 720,
+      "from_video": "daily-updates",
+      "url": "https://strategicenergymap.org/about.html",
+      "recorded": "2026-10-03",
+      "evergreen": true,
+      "alt": "Screen recording of the site with captions: Below it, every development gets a date, a category, a severity colour and a confidence label, with links to its sources. Confirmed means two or more independent sources. Reported, one reputable source. Unverified, a claim by a party to the conflict. Those claims appear only when the claim itself is news: attributed by name, marked unverified, and never turned into facts or figures. On the map, recent events pulse, coloured by severity. Ends on a card with the address strategicenergymap.org."
+    },
+    "dashboard": {
+      "title": "The 2026 energy crisis in numbers",
+      "src": "media/social/dashboard.mp4",
+      "poster": "media/social/dashboard.jpg",
+      "duration": 48.1,
+      "width": 1280,
+      "height": 720,
+      "from_video": "dashboard",
+      "url": "https://strategicenergymap.org/dashboard/",
+      "recorded": "2026-10-11",
+      "evergreen": false,
+      "alt": "Screen recording of the site with captions: Every headline figure of the crisis on one page, each measured against the week before it began. Brent is at $102.81 a barrel, up 42% on that week. Tanker traffic through the Strait of Hormuz is down 98%. Chokepoint traffic: tankers a day through each strait, against the average before the crisis. Select any row to chart it… …here Bab el-Mandeb, down 26%. Prices: weekly pump prices for the US, every EU country and the UK, from official statistics. Compare the countries where fuel has risen most… …or see every price in US dollars a litre. Ends on a card with the address strategicenergymap.org."
+    }
+  },
+  "updated": "2026-10-11"
+}

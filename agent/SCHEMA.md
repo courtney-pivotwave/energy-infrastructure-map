@@ -204,6 +204,7 @@ Target set for agent entries: Japan, South Korea, China, India, Canada, Australi
                                             // Leave both null on digests, explainers and events: they get the daily board / the asset's
                                             // fact card / the event's locator card, with alt text, when posted. "daily-board" puts the board on another
                                             // post; "none" sends a post without its card.
+      "video": null,                        // optional: a clip id from media/social/clips.json, in place of an image
       "not_before": null,                   // optional UTC time ("2026-09-30T15:00Z"): hold the draft until then
       "tags": ["Hormuz", "OOTT"],           // 1–3 from hashtags, most specific first; X uses the first 2
       "reply_to": null }                    // earlier post id (required for corrections)

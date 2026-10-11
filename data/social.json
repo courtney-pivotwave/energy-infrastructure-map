@@ -658,6 +658,21 @@
     "Maritime"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-11-riyadh-airport-attack",
+   "created": "2026-10-11",
+   "type": "event",
+   "text": "A missile killed at least 12, wounded 309 at Riyadh's King Khalid airport Oct 10 (confirmed) — Saudi Arabia's deadliest attack in a decade. Trump says the US may join strikes on the Houthis.",
+   "url": "https://strategicenergymap.org/events/#2026-10-10-riyadh-airport-attack",
+   "event_id": "2026-10-10-riyadh-airport-attack",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "MiddleEast"
+   ],
+   "reply_to": null
   }
  ]
 }

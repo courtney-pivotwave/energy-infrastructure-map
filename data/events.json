@@ -1,8 +1,39 @@
 {
  "updated": "2026-10-11",
- "situation_headline": "Hurricane Isaias weakened to post-tropical after landfall near Destin, Fla.; Gulf of Mexico oil shut-ins eased to about 69% as DOE authorized a 4-million-barrel SPR exchange for ExxonMobil and BP.",
+ "situation_headline": "A missile strike on Riyadh's King Khalid International Airport killed at least 12 and wounded 309 on Oct 10 — Saudi Arabia's deadliest attack in a decade — as Trump weighs joining strikes on the Houthis. Hurricane Isaias weakened after landfall, easing Gulf of Mexico shut-ins to about 69%.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-10-riyadh-airport-attack",
+   "date": "2026-10-10",
+   "title": "Missile strike on Riyadh's King Khalid International Airport kills at least 12, wounds 309",
+   "summary": "Saudi Arabia's General Authority of Civil Aviation said a missile struck King Khalid International Airport in Riyadh on 10 October, killing at least 12 people — four Saudi citizens and eight foreign nationals, including one American — and wounding 309. Multiple independent outlets called it the deadliest attack on Saudi Arabia in more than a decade, and the third attack on the airport that week. The Saudi-led coalition blamed the Houthis and called the strike a war crime; the Houthis had not claimed it as of this writing. Airport operations were suspended while damage was assessed. President Trump said the US was considering joining Saudi-led strikes on the Houthis and that he would reconsider his stated plan to hold off on striking Iran until after November's midterm elections.",
+   "category": "military",
+   "severity": "critical",
+   "coords": [
+    24.9576,
+    46.6988
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Bloomberg — Saudi Arabia Says 12 Dead, 309 Hurt in Riyadh Airport Attack",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-10/saudi-arabia-suspends-operations-at-riyadh-airport-after-attack",
+     "date": "2026-10-10"
+    },
+    {
+     "name": "Al Jazeera — Saudi Arabia says 12 killed, 300 wounded in Houthi attack on Riyadh airport",
+     "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured",
+     "date": "2026-10-10"
+    },
+    {
+     "name": "CBS News — Live Updates: At least 4 dead as weakened Isaias brings threat of floods across the Southeast",
+     "url": "https://www.cbsnews.com/live-updates/isaias-southeastern-u-s-gulf-coast/",
+     "date": "2026-10-10"
+    }
+   ]
+  },
   {
    "id": "2026-10-10-isaias-weakens-gulf-shutin-eases",
    "date": "2026-10-10",

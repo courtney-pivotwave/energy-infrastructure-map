@@ -599,6 +599,21 @@
     },
     "at": "2026-10-11T11:00:54.982Z"
    }
+  },
+  "2026-10-11-explainer-cape-of-good-hope": {
+   "x": {
+    "id": "2109322905813123427",
+    "at": "2026-10-11T16:39:04.927Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxmgw77xnb2x",
+    "cid": "bafyreifg2ecuvg7v6mfqbsxcpb6ifm5ualuiurl7kjitrzbwwolbjcrvc4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxmgw77xnb2x",
+     "cid": "bafyreifg2ecuvg7v6mfqbsxcpb6ifm5ualuiurl7kjitrzbwwolbjcrvc4"
+    },
+    "at": "2026-10-11T16:39:06.856Z"
+   }
   }
  }
 }

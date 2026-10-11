@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -87,9 +87,9 @@
   },
   "bab-el-mandeb": {
    "status": "disrupted",
-   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces launched a counteroffensive ('Operation Yemen Dawn') around 3-5 Oct, backed by a reported 100 Saudi-led coalition jets, and said they had taken full control of the strait plus Dhubab town, its airport and the road to Mokha; on 9 Oct the Saudi-led coalition said it struck 136 further 'high-value' Houthi targets and Yemeni officials additionally claimed Mayyun (Perim) Island, which the Houthis had seized in September, had been retaken. Houthi-aligned media have repeatedly denied the advances, and independent confirmation of territorial or shipping-lane control is not yet available, so the status here is unchanged.",
+   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces launched a counteroffensive ('Operation Yemen Dawn') around 3-5 Oct, backed by a reported 100 Saudi-led coalition jets, and said they had taken full control of the strait plus Dhubab town, its airport and the road to Mokha; on 9 Oct the Saudi-led coalition said it struck 136 further 'high-value' Houthi targets and Yemeni officials additionally claimed Mayyun (Perim) Island, which the Houthis had seized in September, had been retaken. On 10 Oct Houthi media said they repelled the Yemeni-government push on Mayyun and still hold the island, directly contradicting the 9 Oct claim. Both sides' claims are unverified and independent confirmation of territorial or shipping-lane control remains unavailable, so the status here is unchanged.",
    "since": "2026-07-20",
-   "updated": "2026-10-10",
+   "updated": "2026-10-11",
    "confidence": "confirmed",
    "sources": [
     {
@@ -131,6 +131,11 @@
      "name": "Lloyd's List — The Week in Charts: Red Sea shipping stabilises after July's Houthi blockade shock",
      "url": "https://www.lloydslist.com/LL1158141/The-Week-in-Charts-Red-Sea-shipping-stabilises-after-Julys-Houthi-blockade-shock--War-disruption-and-rerouting-fail-to-derail-container-demand",
      "date": "2026-08"
+    },
+    {
+     "name": "CBS News — Live Updates: At least 4 dead as weakened Isaias brings threat of floods across the Southeast",
+     "url": "https://www.cbsnews.com/live-updates/isaias-southeastern-u-s-gulf-coast/",
+     "date": "2026-10-10"
     }
    ]
   },
@@ -149,20 +154,6 @@
      "name": "Lloyd's List — The Week in Charts: Red Sea shipping stabilises after July's Houthi blockade shock",
      "url": "https://www.lloydslist.com/LL1158141/The-Week-in-Charts-Red-Sea-shipping-stabilises-after-Julys-Houthi-blockade-shock--War-disruption-and-rerouting-fail-to-derail-container-demand",
      "date": "2026-08"
-    }
-   ]
-  },
-  "turkish-straits": {
-   "status": "disrupted",
-   "summary": "Since 8 Aug Turkey has not issued Dardanelles transit permits for commercial ships bound for Novorossiysk (and reportedly Ukraine), after attacks on Turkish-owned vessels in the Black Sea; traffic to Bulgarian and Turkish ports continues.",
-   "since": "2026-08-08",
-   "updated": "2026-08-08",
-   "confidence": "reported",
-   "sources": [
-    {
-     "name": "gCaptain (Bloomberg) — Turkey restricts Black Sea ship traffic after surge in attacks",
-     "url": "https://gcaptain.com/turkey-restricts-black-sea-ship-traffic-after-surge-in-attacks/",
-     "date": "2026-08-08"
     }
    ]
   },
@@ -499,30 +490,25 @@
   },
   "gulf-of-mexico-offshore": {
    "status": "reduced",
-   "summary": "Hurricane Isaias, the first Atlantic hurricane of the 2026 season, forced a sharp, weather-driven (non-war) shut-in: the Marine Minerals Administration said producers had shut in about 71.51% of current Gulf oil output by midday 9 October, up from 62.89% a day earlier and 25.08% two days earlier, with staff evacuated from 121 of the Gulf's 371 manned platforms. CNN separately put the precautionary shut-in at about 72% of daily output on 9 October. Isaias was forecast to make landfall near the Mississippi-Alabama-Florida border Friday night. Expected to be temporary; output should recover once the storm passes and platforms are reinspected.",
+   "summary": "Hurricane Isaias made landfall near Destin, Florida, around 8pm ET on 9 October as a Category 2 storm and weakened to post-tropical by 10 October. BSEE's Marine Minerals Administration said shut-ins eased to about 68.76% of current Gulf oil output (about 1.40 million b/d) by midday 10 October, down from a peak of 71.51% on 9 October, with 113 of 371 manned platforms still evacuated (down from 129). Separately, DOE authorized an emergency Strategic Petroleum Reserve exchange of up to 4 million barrels (2 million each to ExxonMobil and BP) to support Gulf Coast refineries. Expected to be temporary; undamaged facilities resume production once post-storm inspections are complete.",
    "since": "2026-10-07",
-   "updated": "2026-10-10",
+   "updated": "2026-10-11",
    "confidence": "confirmed",
    "sources": [
     {
-     "name": "Reuters via BOE Report — About 71.5% of US Gulf oil production shut in ahead of Hurricane Isaias",
-     "url": "https://boereport.com/2026/10/09/about-71-5-of-us-gulf-oil-production-shut-in-ahead-of-hurricane-isaias/",
+     "name": "BSEE — MMA Monitors Gulf of America Oil and Gas Activities in Response to Hurricane Isaias (Oct 10 update)",
+     "url": "https://www.bsee.gov/newsroom/latest-news/statements-and-releases/press-releases/mma-monitors-gulf-response-isaias4",
+     "date": "2026-10-10"
+    },
+    {
+     "name": "BSEE — MMA Monitors Gulf of America Oil and Gas Activities in Response to Hurricane Isaias (Oct 9 update)",
+     "url": "https://www.bsee.gov/newsroom/latest-news/statements-and-releases/press-releases/mma-monitors-gulf-response-isaias3",
      "date": "2026-10-09"
     },
     {
-     "name": "CNN — 'Zero tolerance for disruptions.' Hurricane Isaias could mess with America's refining nerve center",
-     "url": "https://edition.cnn.com/2026/10/09/economy/hurricane-isaias-oil-gas-refinery",
-     "date": "2026-10-09"
-    },
-    {
-     "name": "Reuters via BOE Report — About 63% of US Gulf oil production shut in ahead of Isaias, US agency says",
-     "url": "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",
-     "date": "2026-10-08"
-    },
-    {
-     "name": "Reuters via BOE Report — About 25% of Gulf of Mexico oil output shut in due to Isaias, US agency says",
-     "url": "https://boereport.com/2026/10/07/about-25-of-gulf-of-mexico-oil-output-shut-in-due-to-isaias-us-agency-says/",
-     "date": "2026-10-07"
+     "name": "CBS News — Live Updates: At least 4 dead as weakened Isaias brings threat of floods across the Southeast",
+     "url": "https://www.cbsnews.com/live-updates/isaias-southeastern-u-s-gulf-coast/",
+     "date": "2026-10-10"
     }
    ]
   }

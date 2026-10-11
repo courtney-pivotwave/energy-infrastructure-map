@@ -1818,8 +1818,8 @@
    ],
    "size": 5,
    "details": "Aramco's main crude stabilisation plant, ~7 mb/d capacity, processing Ghawar and other Eastern Province crude before export or shipment on the East-West pipeline.",
-   "geo": "Hit by drones from Iraq on 27 Jul 2026 (IEA-cited). Only the field id abqaiq-oil exists today.",
-   "verified": "2026-10-01"
+   "geo": "The most important single node in Saudi oil: most Eastern Province crude is stabilised here before it is exported from the Gulf or sent west on the East-West pipeline. A drone and missile attack in September 2019 briefly knocked out about 5.7 million bpd of Saudi processing capacity.",
+   "verified": "2026-10-11"
   },
   {
    "id": "jazan-refinery",
@@ -1830,8 +1830,20 @@
     42.6
    ],
    "size": 5,
-   "details": "Red Sea coastal refinery in southwest Saudi Arabia, ~400 kb/d per press reports.",
-   "geo": "Fire after a Houthi drone claim on 9 Aug 2026, with further claimed strikes 13 and 18 Aug; cited by the IEA."
+   "capacity": {
+    "value": 400,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Rigzone (Bloomberg) — Saudis Delay Restart of 400,000 Bpd Refinery",
+     "url": "https://www.rigzone.com/news/wire/saudis_delay_restart_of_400000_bpd_refinery-11-aug-2026-184341-article/",
+     "date": "2026-08-11"
+    },
+    "as_of": "2026-08-11"
+   },
+   "details": "Saudi Arabia (Jazan). Saudi Aramco. ~400,000 bpd. Red Sea coastal refinery in the southwest of the country, with an integrated power complex.",
+   "geo": "Aramco's Red Sea refinery closest to Yemen, which has made it a repeated target: the Houthis have claimed several strikes on it since July 2026.",
+   "verified": "2026-10-11"
   },
   {
    "id": "samref-refinery",
@@ -1842,8 +1854,21 @@
     38.24
    ],
    "size": 5,
-   "details": "Aramco-ExxonMobil refinery at Yanbu on the Red Sea.",
-   "geo": "Hit by Iranian drone on 19 Mar 2026 (OPB/NPR); Yanbu is now the key bypass hub."
+   "capacity": {
+    "value": 400,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Industrial Info Resources — Saudi Oil Loaded from Port at Yanbu after Pipeline Attack",
+     "url": "https://www.industrialinfo.com/news/article/saudi-oil-loaded-from-port-at-yanbu-after-pipeline-attack--362883",
+     "date": "2026-09-24"
+    },
+    "as_of": "2026-09-24",
+    "note": "Design capacity"
+   },
+   "details": "Saudi Arabia (Yanbu). Aramco–ExxonMobil joint venture. ~400,000 bpd. Refinery on the Red Sea coast.",
+   "geo": "Yanbu became the main outlet for Saudi crude once Hormuz closed. SAMREF takes its crude from the East-West pipeline, so an attack on the pipeline cuts the refinery's runs as well as exports.",
+   "verified": "2026-10-11"
   },
   {
    "id": "ras-al-juaymah-terminal",
@@ -1855,7 +1880,8 @@
    ],
    "size": 5,
    "details": "Saudi Gulf crude and LPG export terminal near Ras Tanura.",
-   "geo": "Main Saudi loading point in the September 2026 Gulf export surge."
+   "geo": "With Ras Tanura, one of the two Saudi Gulf terminals that took a surge in crude loadings after the Sep 10 attack on the East-West pipeline (Kpler). Also Aramco's main LPG export point: 5.4 of its 7.1 million tonnes of LPG exports in 2025 left from here (Kpler, via Argus).",
+   "verified": "2026-10-11"
   },
   {
    "id": "mesaieed-industrial-city",
@@ -1866,8 +1892,9 @@
     51.55
    ],
    "size": 5,
-   "details": "Qatari petrochemical, fertiliser and export hub.",
-   "geo": "Attacked on 2 Mar 2026 alongside Ras Laffan, prompting QatarEnergy's production halt."
+   "details": "Qatar. Petrochemical, fertiliser, aluminium and export hub south of Doha. Home to QAFCO's urea plant (5.6 million tonnes a year, per CRU) and the Qatalum smelter (648,000 tonnes a year, per Norsk Hydro).",
+   "geo": "Qatar's second industrial hub after Ras Laffan. Its urea, polymers, methanol and aluminium all leave through the Strait of Hormuz, so its output depends on shipping as much as on the plants themselves.",
+   "verified": "2026-10-11"
   },
   {
    "id": "basra-oil-terminal",
@@ -1879,7 +1906,8 @@
    ],
    "size": 5,
    "details": "Iraq's southern offshore crude export terminals, ~3.3-3.5 mb/d pre-war.",
-   "geo": "Exports halted in March 2026 (force majeure) and partially recovered to ~2 mb/d by August 2026."
+   "geo": "Carries nearly all of Iraq's crude exports, and every cargo has to pass the Strait of Hormuz. When exports stopped in March, Iraq cut Basra's field output to 0.9 mb/d from 3.3 mb/d (Reuters).",
+   "verified": "2026-10-11"
   },
   {
    "id": "primorsk-terminal",
@@ -1890,8 +1918,21 @@
     28.72
    ],
    "size": 5,
-   "details": "Russia's largest Baltic crude export port.",
-   "geo": "Loadings suspended after drone strikes in March 2026; ~40% of Russian export capacity was offline (Reuters)."
+   "capacity": {
+    "value": 1,
+    "unit": "mb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Yahoo Finance (Reuters) — Exclusive: Russia's Primorsk oil terminal lost 40% of storage to drone attacks, satellite images show",
+     "url": "https://finance.yahoo.com/news/exclusive-russias-primorsk-oil-terminal-134821196.html",
+     "date": "2026-04-02"
+    },
+    "as_of": "2026-04-02",
+    "note": "Crude handling capacity"
+   },
+   "details": "Russia (Leningrad region). Transneft. ~1 million bpd of crude. Russia's largest Baltic crude export port, with crude and diesel storage.",
+   "geo": "Russia's main Baltic outlet for crude. Ukrainian drone strikes on Baltic and Black Sea ports in March 2026, together with a pipeline closure and tanker seizures, took about 40% of Russia's oil export capacity offline for a time (Reuters).",
+   "verified": "2026-10-11"
   },
   {
    "id": "ust-luga-terminal",
@@ -1902,8 +1943,21 @@
     28.4
    ],
    "size": 5,
-   "details": "Baltic crude and product export port.",
-   "geo": "Repeatedly struck in March 2026 with loadings halted."
+   "capacity": {
+    "value": 700,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Baird Maritime (Reuters) — Russia resumes oil exports from Ust-Luga port despite drone strikes",
+     "url": "https://www.bairdmaritime.com/shipping/ports/russia-resumes-oil-exports-from-ust-luga-port-despite-drone-strikes",
+     "date": "2026-04-08"
+    },
+    "as_of": "2026-04-08",
+    "note": "Crude loading capacity"
+   },
+   "details": "Russia (Leningrad region). ~700,000 bpd of crude, plus oil products. Baltic export port that also hosts Novatek's gas condensate complex.",
+   "geo": "Russia's second Baltic oil outlet after Primorsk, exporting 32.9 million tonnes in 2025 (Reuters). Ukrainian drones have struck it repeatedly since March 2026.",
+   "verified": "2026-10-11"
   },
   {
    "id": "tuapse-refinery",
@@ -1939,8 +1993,21 @@
     37.8
    ],
    "size": 5,
-   "details": "~12 Mt/yr refinery supplying the Moscow region.",
-   "geo": "Refining paused after the 19-20 Sep 2026 strike (CTP-ISW)."
+   "capacity": {
+    "value": 11,
+    "unit": "mtpa",
+    "basis": "nameplate",
+    "source": {
+     "name": "BOE Report (Reuters) — Ukraine's attacks on Russian energy sites: what has been hit?",
+     "url": "https://boereport.com/2026/10/07/ukraines-attacks-on-russian-energy-sites-what-has-been-hit-3/",
+     "date": "2026-10-07"
+    },
+    "as_of": "2026-10-07",
+    "note": "Processed 11.6 million tonnes in 2024, about 230,000 b/d"
+   },
+   "details": "Russia (Moscow). Gazprom Neft. ~11 million tonnes a year (about 230,000 bpd). Refinery supplying the Moscow region.",
+   "geo": "The main fuel supplier to the Moscow region. It processed 11.6 million tonnes of crude in 2024 (Reuters).",
+   "verified": "2026-10-11"
   },
   {
    "id": "bazan-haifa-refinery",
@@ -1951,8 +2018,20 @@
     35.05
    ],
    "size": 5,
-   "details": "Israel's largest refinery.",
-   "geo": "Supporting infrastructure damaged by an Iranian missile on 19 Mar 2026."
+   "capacity": {
+    "value": 197,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "MEES — Israel Refineries Increase Output In Q2",
+     "url": "https://www.mees.com/2026/8/28/refining-petrochemicals/israel-refineries-increase-output-in-q2/919ac240-a2e1-11f1-9d62-3fd76858707f",
+     "date": "2026-08-28"
+    },
+    "as_of": "2026-08-28"
+   },
+   "details": "Israel (Haifa). Bazan Group. ~197,000 bpd. Israel's largest refinery.",
+   "geo": "Hit twice in March 2026: missile fragments damaged power lines and a gas supply facility it depends on on Mar 19, and a gasoline tank was struck on Mar 30 (Reuters). The operator said most production stayed online, and output averaged 186,500 b/d in the second quarter (MEES). No current disruption found as of October 2026.",
+   "verified": "2026-10-11"
   },
   {
    "id": "mina-abdullah-refinery",
@@ -1963,8 +2042,20 @@
     48.16
    ],
    "size": 5,
-   "details": "Kuwait National Petroleum Co. refinery south of Kuwait City.",
-   "geo": "Targeted on 19 Mar 2026 with Mina al-Ahmadi (OPB/NPR)."
+   "capacity": {
+    "value": 454,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Argus — Refineries in Kuwait, Saudi Arabia hit by drones",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2803125-refineries-in-kuwait-saudi-arabia-hit-by-drones",
+     "date": "2026-03-19"
+    },
+    "as_of": "2026-03-19"
+   },
+   "details": "Kuwait. Kuwait National Petroleum Co. ~454,000 bpd. Refinery on the coast south of Kuwait City.",
+   "geo": "One of Kuwait's three refineries, next to Mina al-Ahmadi, which was hit the same day. Their products are exported through the Strait of Hormuz, which KPC names as the limit on output.",
+   "verified": "2026-10-11"
   },
   {
    "id": "riyadh-refinery",
@@ -2847,7 +2938,8 @@
    ],
    "size": 9,
    "details": "Ultra-sour gas development supplying at least 500 MMcf/d to the UAE grid.",
-   "geo": "Shut after a drone attack in mid-March 2026 (Reuters via Cyprus Mail)."
+   "geo": "One of the world's largest sour gas developments, run by ADNOC with Occidental holding 40%. It supplies about a fifth of the UAE's gas (The National) and about 4.2 million tonnes a year of sulphur.",
+   "verified": "2026-10-11"
   }
  ],
  "routes": [

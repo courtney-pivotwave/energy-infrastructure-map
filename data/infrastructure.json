@@ -927,7 +927,19 @@
      56.3
     ]
    ],
-   "details": "UAE: Habshan (onshore Abu Dhabi) to Fujairah (Gulf of Oman). ~370 km. Capacity ~1.5 million bpd. Commissioned 2012. Allows UAE crude exports to bypass Strait of Hormuz entirely.",
+   "capacity": {
+    "value": 1.5,
+    "unit": "mb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "The Maritime Executive — UAE Instructs ADNOC to Accelerate Pipeline Construction to Bypass Hormuz",
+     "url": "https://maritime-executive.com/article/uae-instructs-adnoc-to-accelerate-pipeline-construction-to-bypass-hormuz",
+     "date": "2026-05-15"
+    },
+    "as_of": "2026-05-15",
+    "note": "Reported running at about 1.7–1.8 mb/d in May 2026; figure as reported in trade press, not an ADNOC filing"
+   },
+   "details": "UAE: Habshan (onshore Abu Dhabi) to Fujairah (Gulf of Oman). ~370 km. Capacity ~1.5 million bpd nameplate; reported running at 1.7–1.8 million bpd in May 2026. Commissioned 2012. Allows UAE crude exports to bypass Strait of Hormuz entirely.",
    "geo": "The UAE's Hormuz insurance policy. Fujairah sits outside the strait on the Gulf of Oman coast, enabling UAE crude to reach tankers without entering the Persian Gulf. Abu Dhabi has also built massive crude storage at Fujairah (~42 million barrels capacity). The US Navy's nearby presence and bilateral defense agreements with the UAE add a security dimension. Fujairah has emerged as the region's second-largest bunkering hub (after Singapore), and ADNOC has expanded the terminal into a major trading and storage complex.",
    "verified": "2026-10-09"
   },
@@ -1805,9 +1817,21 @@
     49.67
    ],
    "size": 5,
+   "capacity": {
+    "value": 7,
+    "unit": "mb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "The Maritime Executive — Report: Houthi Strike Took Saudi Refinery Offline Through Mid-August",
+     "url": "https://maritime-executive.com/article/report-houthi-strike-took-saudi-refinery-offline-through-mid-august",
+     "date": "2026-07-30"
+    },
+    "as_of": "2026-07-30",
+    "note": "Maximum processing capacity; the US EIA gave the same figure in 2019"
+   },
    "details": "Aramco's main crude stabilisation plant, ~7 mb/d capacity, processing Ghawar and other Eastern Province crude before export or shipment on the East-West pipeline.",
-   "geo": "Hit by drones from Iraq on 27 Jul 2026 (IEA-cited). Only the field id abqaiq-oil exists today.",
-   "verified": "2026-10-01"
+   "geo": "The most important single node in Saudi oil: most Eastern Province crude is stabilised here before it is exported from the Gulf or sent west on the East-West pipeline. The Sept 2019 attack on Abqaiq was a watershed moment in energy security. Houthi rebels (with alleged Iranian support) used low-cost drones and cruise missiles to temporarily disable ~5% of global oil supply — the single largest disruption in history. It demonstrated that precision-guided munitions available to non-state actors can threaten even the most heavily defended energy infrastructure. Saudi Arabia's $100B+ defense budget could not prevent the attack. Oil spiked 15% overnight. The incident accelerated Saudi investment in air defense and redundancy.",
+   "verified": "2026-10-11"
   },
   {
    "id": "jazan-refinery",
@@ -1818,8 +1842,20 @@
     42.6
    ],
    "size": 5,
-   "details": "Red Sea coastal refinery in southwest Saudi Arabia, ~400 kb/d per press reports.",
-   "geo": "Fire after a Houthi drone claim on 9 Aug 2026, with further claimed strikes 13 and 18 Aug; cited by the IEA."
+   "capacity": {
+    "value": 400,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Rigzone (Bloomberg) — Saudis Delay Restart of 400,000 Bpd Refinery",
+     "url": "https://www.rigzone.com/news/wire/saudis_delay_restart_of_400000_bpd_refinery-11-aug-2026-184341-article/",
+     "date": "2026-08-11"
+    },
+    "as_of": "2026-08-11"
+   },
+   "details": "Saudi Arabia (Jazan). Saudi Aramco. ~400,000 bpd. Red Sea coastal refinery in the southwest of the country, with an integrated power complex.",
+   "geo": "Aramco's Red Sea refinery closest to Yemen, which has made it a repeated target: the Houthis have claimed several strikes on it since July 2026.",
+   "verified": "2026-10-11"
   },
   {
    "id": "samref-refinery",
@@ -1830,8 +1866,21 @@
     38.24
    ],
    "size": 5,
-   "details": "Aramco-ExxonMobil refinery at Yanbu on the Red Sea.",
-   "geo": "Hit by Iranian drone on 19 Mar 2026 (OPB/NPR); Yanbu is now the key bypass hub."
+   "capacity": {
+    "value": 400,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Industrial Info Resources — Saudi Oil Loaded from Port at Yanbu after Pipeline Attack",
+     "url": "https://www.industrialinfo.com/news/article/saudi-oil-loaded-from-port-at-yanbu-after-pipeline-attack--362883",
+     "date": "2026-09-24"
+    },
+    "as_of": "2026-09-24",
+    "note": "Design capacity"
+   },
+   "details": "Saudi Arabia (Yanbu). Aramco–ExxonMobil joint venture. ~400,000 bpd. Refinery on the Red Sea coast.",
+   "geo": "Yanbu became the main outlet for Saudi crude once Hormuz closed. SAMREF takes its crude from the East-West pipeline, so an attack on the pipeline cuts the refinery's runs as well as exports.",
+   "verified": "2026-10-11"
   },
   {
    "id": "ras-al-juaymah-terminal",
@@ -1843,7 +1892,8 @@
    ],
    "size": 5,
    "details": "Saudi Gulf crude and LPG export terminal near Ras Tanura.",
-   "geo": "Main Saudi loading point in the September 2026 Gulf export surge."
+   "geo": "With Ras Tanura, one of the two Saudi Gulf terminals that took a surge in crude loadings after the Sep 10 attack on the East-West pipeline (Kpler). Also Aramco's main LPG export point: 5.4 of its 7.1 million tonnes of LPG exports in 2025 left from here (Kpler, via Argus).",
+   "verified": "2026-10-11"
   },
   {
    "id": "mesaieed-industrial-city",
@@ -1854,8 +1904,9 @@
     51.55
    ],
    "size": 5,
-   "details": "Qatari petrochemical, fertiliser and export hub.",
-   "geo": "Attacked on 2 Mar 2026 alongside Ras Laffan, prompting QatarEnergy's production halt."
+   "details": "Qatar. Petrochemical, fertiliser, aluminium and export hub south of Doha. Home to QAFCO's urea plant (5.6 million tonnes a year, per CRU) and the Qatalum smelter (648,000 tonnes a year, per Norsk Hydro).",
+   "geo": "Qatar's second industrial hub after Ras Laffan. Its urea, polymers, methanol and aluminium all leave through the Strait of Hormuz, so its output depends on shipping as much as on the plants themselves.",
+   "verified": "2026-10-11"
   },
   {
    "id": "basra-oil-terminal",
@@ -1867,7 +1918,8 @@
    ],
    "size": 5,
    "details": "Iraq's southern offshore crude export terminals, ~3.3-3.5 mb/d pre-war.",
-   "geo": "Exports halted in March 2026 (force majeure) and partially recovered to ~2 mb/d by August 2026."
+   "geo": "Carries nearly all of Iraq's crude exports, and every cargo has to pass the Strait of Hormuz. When exports stopped in March, Iraq cut Basra's field output to 0.9 mb/d from 3.3 mb/d (Reuters).",
+   "verified": "2026-10-11"
   },
   {
    "id": "primorsk-terminal",
@@ -1878,8 +1930,21 @@
     28.72
    ],
    "size": 5,
-   "details": "Russia's largest Baltic crude export port.",
-   "geo": "Loadings suspended after drone strikes in March 2026; ~40% of Russian export capacity was offline (Reuters)."
+   "capacity": {
+    "value": 1,
+    "unit": "mb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Yahoo Finance (Reuters) — Exclusive: Russia's Primorsk oil terminal lost 40% of storage to drone attacks, satellite images show",
+     "url": "https://finance.yahoo.com/news/exclusive-russias-primorsk-oil-terminal-134821196.html",
+     "date": "2026-04-02"
+    },
+    "as_of": "2026-04-02",
+    "note": "Crude handling capacity"
+   },
+   "details": "Russia (Leningrad region). Transneft. ~1 million bpd of crude. Russia's largest Baltic crude export port, with crude and diesel storage.",
+   "geo": "Russia's main Baltic outlet for crude. Ukrainian drone strikes on Baltic and Black Sea ports in March 2026, together with a pipeline closure and tanker seizures, took about 40% of Russia's oil export capacity offline for a time (Reuters).",
+   "verified": "2026-10-11"
   },
   {
    "id": "ust-luga-terminal",
@@ -1890,8 +1955,21 @@
     28.4
    ],
    "size": 5,
-   "details": "Baltic crude and product export port.",
-   "geo": "Repeatedly struck in March 2026 with loadings halted."
+   "capacity": {
+    "value": 700,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Baird Maritime (Reuters) — Russia resumes oil exports from Ust-Luga port despite drone strikes",
+     "url": "https://www.bairdmaritime.com/shipping/ports/russia-resumes-oil-exports-from-ust-luga-port-despite-drone-strikes",
+     "date": "2026-04-08"
+    },
+    "as_of": "2026-04-08",
+    "note": "Crude loading capacity"
+   },
+   "details": "Russia (Leningrad region). ~700,000 bpd of crude, plus oil products. Baltic export port that also hosts Novatek's gas condensate complex.",
+   "geo": "Russia's second Baltic oil outlet after Primorsk, exporting 32.9 million tonnes in 2025 (Reuters). Ukrainian drones have struck it repeatedly since March 2026.",
+   "verified": "2026-10-11"
   },
   {
    "id": "tuapse-refinery",
@@ -1902,8 +1980,20 @@
     39.07
    ],
    "size": 5,
-   "details": "Rosneft Black Sea refinery and export terminal.",
-   "geo": "Operations suspended indefinitely after April-May 2026 strikes.",
+   "capacity": {
+    "value": 240,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "RFE/RL — Russian Black Sea Oil Facility On Fire Again After Ukrainian Strike",
+     "url": "https://www.rferl.org/a/tuapse-russian-oil-port-fire-drone-strike/33744191.html",
+     "date": "2026-04-28"
+    },
+    "as_of": "2026-04-28",
+    "note": "About 12 million tonnes a year; figure as reported, not checked against Global Energy Monitor"
+   },
+   "details": "Russia (Krasnodar Krai). Rosneft. ~240,000 bpd (about 12 million tonnes a year). Refinery on the Black Sea coast with an oil export terminal alongside.",
+   "geo": "An export-oriented plant: its products leave through the adjoining terminal, which RFE/RL describes as Russia's main Black Sea oil export terminal. Ukrainian drones have struck the site repeatedly since 2024, part of a wider campaign against Russian refineries and export terminals.",
    "verified": "2026-10-10"
   },
   {
@@ -1915,8 +2005,21 @@
     37.8
    ],
    "size": 5,
-   "details": "~12 Mt/yr refinery supplying the Moscow region.",
-   "geo": "Refining paused after the 19-20 Sep 2026 strike (CTP-ISW)."
+   "capacity": {
+    "value": 11,
+    "unit": "mtpa",
+    "basis": "nameplate",
+    "source": {
+     "name": "BOE Report (Reuters) — Ukraine's attacks on Russian energy sites: what has been hit?",
+     "url": "https://boereport.com/2026/10/07/ukraines-attacks-on-russian-energy-sites-what-has-been-hit-3/",
+     "date": "2026-10-07"
+    },
+    "as_of": "2026-10-07",
+    "note": "Processed 11.6 million tonnes in 2024, about 230,000 b/d"
+   },
+   "details": "Russia (Moscow). Gazprom Neft. ~11 million tonnes a year (about 230,000 bpd). Refinery supplying the Moscow region.",
+   "geo": "The main fuel supplier to the Moscow region. It processed 11.6 million tonnes of crude in 2024 (Reuters).",
+   "verified": "2026-10-11"
   },
   {
    "id": "bazan-haifa-refinery",
@@ -1927,8 +2030,20 @@
     35.05
    ],
    "size": 5,
-   "details": "Israel's largest refinery.",
-   "geo": "Supporting infrastructure damaged by an Iranian missile on 19 Mar 2026."
+   "capacity": {
+    "value": 197,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "MEES — Israel Refineries Increase Output In Q2",
+     "url": "https://www.mees.com/2026/8/28/refining-petrochemicals/israel-refineries-increase-output-in-q2/919ac240-a2e1-11f1-9d62-3fd76858707f",
+     "date": "2026-08-28"
+    },
+    "as_of": "2026-08-28"
+   },
+   "details": "Israel (Haifa). Bazan Group. ~197,000 bpd. Israel's largest refinery.",
+   "geo": "Hit twice in March 2026: missile fragments damaged power lines and a gas supply facility it depends on on Mar 19, and a gasoline tank was struck on Mar 30 (Reuters). The operator said most production stayed online, and output averaged 186,500 b/d in the second quarter (MEES). No current disruption found as of October 2026.",
+   "verified": "2026-10-11"
   },
   {
    "id": "mina-abdullah-refinery",
@@ -1939,8 +2054,20 @@
     48.16
    ],
    "size": 5,
-   "details": "Kuwait National Petroleum Co. refinery south of Kuwait City.",
-   "geo": "Targeted on 19 Mar 2026 with Mina al-Ahmadi (OPB/NPR)."
+   "capacity": {
+    "value": 454,
+    "unit": "kb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Argus — Refineries in Kuwait, Saudi Arabia hit by drones",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2803125-refineries-in-kuwait-saudi-arabia-hit-by-drones",
+     "date": "2026-03-19"
+    },
+    "as_of": "2026-03-19"
+   },
+   "details": "Kuwait. Kuwait National Petroleum Co. ~454,000 bpd. Refinery on the coast south of Kuwait City.",
+   "geo": "One of Kuwait's three refineries, next to Mina al-Ahmadi, which was hit the same day. Their products are exported through the Strait of Hormuz, which KPC names as the limit on output.",
+   "verified": "2026-10-11"
   },
   {
    "id": "riyadh-refinery",
@@ -1976,7 +2103,7 @@
     26.5,
     56.3
    ],
-   "details": "Connects Persian Gulf to Gulf of Oman. ~21 km at narrowest. ~21 million bpd of oil transits daily (~20% of global supply). Most critical energy chokepoint in the world. Bordered by Iran and Oman.",
+   "details": "Connects Persian Gulf to Gulf of Oman. ~21 km at narrowest. ~19.9 million bpd of oil in 2025, about a fifth of world demand (IEA, from Kpler tracking). Most critical energy chokepoint in the world. Bordered by Iran and Oman.",
    "geo": "Iran's primary source of strategic leverage. Tehran has repeatedly threatened to close the strait during confrontations with the US (1988 tanker war, 2012 nuclear sanctions, 2019-2020 tensions). The US Fifth Fleet (based in Bahrain) maintains a permanent carrier presence specifically to guarantee freedom of navigation. In 2019, Iran seized tankers and attacked others with limpet mines, demonstrating capability without full closure. Saudi Arabia, UAE, and Iraq have invested billions in bypass pipelines (Petroline, Habshan-Fujairah) as insurance. A full closure would trigger a global energy crisis — oil prices could spike to $200+/bbl. The strait's narrow shipping lanes technically pass through Omani and Iranian territorial waters, making the legal framework complex.",
    "verified": "2026-10-04"
   },
@@ -1987,7 +2114,8 @@
     41.1,
     29
    ],
-   "details": "Connects Black Sea to Mediterranean. Bosphorus is ~700m at narrowest. ~3.5 million bpd of oil transits. Governed by 1936 Montreux Convention. Key route for Russian/Kazakh crude exports.",
+   "verified": "2026-10-10",
+   "details": "Connects Black Sea to Mediterranean. Bosphorus is ~700m at narrowest. ~3.7 million bpd of oil in the first half of 2025 (EIA). Governed by 1936 Montreux Convention. Key route for Russian/Kazakh crude exports.",
    "geo": "The 1936 Montreux Convention gives Turkey sovereign control over the straits while guaranteeing civilian maritime passage — and allowing Turkey to restrict military vessel transit during wartime. Turkey has used Montreux to block Russian and other warships from entering the Black Sea since the 2022 Ukraine invasion. Istanbul's 15 million residents live alongside one of the world's busiest oil tanker corridors; a major accident could close the strait and disrupt CPC and other Black Sea crude exports. Turkey's proposed Istanbul Canal (a parallel artificial waterway) would allow Ankara to bypass Montreux restrictions, though the project faces cost and environmental hurdles."
   },
   {
@@ -1997,9 +2125,9 @@
     30,
     32.5
    ],
-   "details": "Connects Mediterranean to Red Sea. ~193 km long. ~5-6 million bpd of oil and refined products. ~12% of global trade. 2021 Ever Given blockage demonstrated fragility. 2024 Houthi attacks diverted significant traffic.",
+   "details": "Connects Mediterranean to Red Sea. ~193 km long. ~4.9 million bpd of oil and refined products through the canal and SUMED pipeline in the first half of 2025, down from 8.8 million in 2023 (EIA). ~12% of global trade. 2021 Ever Given blockage demonstrated fragility. 2024 Houthi attacks diverted significant traffic.",
    "geo": "Egypt's most important strategic asset and revenue source (~$9B/yr in fees). Nationalized by Nasser in 1956, triggering the Suez Crisis — the event that marked the end of British and French imperial power projection. The canal was closed 1967-1975 after the Six-Day War. The 2021 Ever Given blockage (6 days) cost global trade an estimated $54B and exposed the fragility of just-in-time supply chains. Since late 2023, Houthi attacks on Red Sea shipping have diverted 50%+ of Suez traffic around the Cape of Good Hope, adding 10-14 days and ~$1M per voyage. Egypt's canal revenues dropped ~40-50%, creating fiscal stress for an already pressured Egyptian economy.",
-   "verified": "2026-10-02"
+   "verified": "2026-10-10"
   },
   {
    "id": "bab-el-mandeb",
@@ -2008,9 +2136,9 @@
     12.6,
     43.3
    ],
-   "details": "Connects Red Sea to Gulf of Aden. ~29 km wide. ~6-7 million bpd of oil. Gateway to/from Suez Canal from the south. Houthi attacks since late 2023 have forced major rerouting around Cape of Good Hope.",
+   "details": "Connects Red Sea to Gulf of Aden. ~29 km wide. ~4.2 million bpd of oil in the first half of 2025, down from 9.3 million in 2023 (EIA). Gateway to/from Suez Canal from the south. Houthi attacks since late 2023 have forced major rerouting around Cape of Good Hope.",
    "geo": "The Houthi campaign against Red Sea shipping (beginning Nov 2023, citing solidarity with Gaza) has demonstrated how a non-state actor with relatively low-cost anti-ship missiles and drones can disrupt a critical global trade artery. The US-UK Operation Prosperity Guardian has conducted strikes against Houthi positions but has not stopped attacks. Major container lines (Maersk, MSC, Hapag-Lloyd) rerouted around Africa. Insurance premiums for Red Sea transit spiked 10x. Djibouti, on the strait's western shore, hosts military bases from the US, China, France, Japan, and Italy — making it the most concentrated point of great-power military presence globally. The strait's vulnerability has accelerated interest in rail and pipeline alternatives.",
-   "verified": "2026-10-03"
+   "verified": "2026-10-10"
   },
   {
    "id": "strait-of-malacca",
@@ -2019,7 +2147,8 @@
     1.3,
     104
    ],
-   "details": "Connects Indian Ocean to South China Sea. ~2.5 km at narrowest (Phillips Channel). ~16 million bpd of oil. ~25% of global trade. Critical for China, Japan, South Korea energy imports. Piracy risk.",
+   "verified": "2026-10-10",
+   "details": "Connects Indian Ocean to South China Sea. ~2.5 km at narrowest (Phillips Channel). ~23.2 million bpd of oil in the first half of 2025, the most of any chokepoint (EIA). ~25% of global trade. Critical for China, Japan, South Korea energy imports. Piracy risk.",
    "geo": "China's \"Malacca Dilemma\" (coined by Hu Jintao in 2003): ~80% of China's oil imports transit this strait, which is patrolled by the US Navy and bordered by US allies Singapore and Malaysia. In any conflict scenario, a US blockade here could strangle China's energy supply. This vulnerability drives China's massive investment in overland pipelines (Central Asia-China, Myanmar-China), domestic renewables, strategic petroleum reserves (~950 million barrels), and naval expansion. Japan and South Korea face the same dependency. Singapore's position at the strait's southern end underpins its status as Asia's energy trading hub. Piracy, while reduced from its 2000s peak, remains a concern — the strait's shallow, narrow waters make supertankers especially vulnerable."
   },
   {
@@ -2196,8 +2325,8 @@
     50.8
    ],
    "size": 12,
-   "details": "Saudi Arabia. Major processing and field complex. ~1M bpd processing capacity. Drone/missile attack in Sept 2019 briefly knocked out ~5.7M bpd.",
-   "geo": "The Sept 2019 attack on Abqaiq was a watershed moment in energy security. Houthi rebels (with alleged Iranian support) used low-cost drones and cruise missiles to temporarily disable ~5% of global oil supply — the single largest disruption in history. It demonstrated that precision-guided munitions available to non-state actors can threaten even the most heavily defended energy infrastructure. Saudi Arabia's $100B+ defense budget could not prevent the attack. Oil spiked 15% overnight. The incident accelerated Saudi investment in air defense and redundancy."
+   "details": "Saudi Arabia (Eastern Province). Saudi Aramco. Onshore oil field discovered in 1940, one of the oldest in the kingdom. Estimates from the early 2010s put its output near 400,000 bpd; no current figure is available. The Abqaiq processing plant beside it is a separate facility with its own entry.",
+   "geo": "Better known for the processing plant that shares its name, which stabilises most Eastern Province crude and was the target of the September 2019 attack and of drone strikes in July 2026. The field itself is a small part of Saudi output."
   },
   {
    "id": "khafji-oil",
@@ -2822,7 +2951,8 @@
    ],
    "size": 9,
    "details": "Ultra-sour gas development supplying at least 500 MMcf/d to the UAE grid.",
-   "geo": "Shut after a drone attack in mid-March 2026 (Reuters via Cyprus Mail)."
+   "geo": "One of the world's largest sour gas developments, run by ADNOC with Occidental holding 40%. It supplies about a fifth of the UAE's gas (The National) and about 4.2 million tonnes a year of sulphur.",
+   "verified": "2026-10-11"
   }
  ],
  "routes": [

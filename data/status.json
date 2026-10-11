@@ -292,25 +292,6 @@
     }
    ]
   },
-  "abqaiq-oil": {
-   "status": "damaged",
-   "summary": "Drone strikes from Iraq on 27 Jul damaged the Abqaiq processing plant (~7 mb/d), which handles Ghawar crude; the IEA cited them among causes of Saudi supply falling to 6 mb/d in August. Current repair status not verified.",
-   "since": "2026-07-27",
-   "updated": "2026-09-11",
-   "confidence": "reported",
-   "sources": [
-    {
-     "name": "Times of Israel — Israel, Saudi Arabia, Jordan, Iraq attacked by drones despite lull in US-Iran fighting",
-     "url": "https://www.timesofisrael.com/israel-saudi-arabia-jordan-iraq-attacked-by-drones-despite-lull-in-us-iran-fighting/",
-     "date": "2026-07-27"
-    },
-    {
-     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
-     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
-     "date": "2026-09-11"
-    }
-   ]
-  },
   "ghawar-oil": {
    "status": "reduced",
    "summary": "Saudi crude supply was 6.0 mb/d in August (IEA), the lowest in over three decades, as exports are squeezed by Hormuz, the Red Sea blockade and attacks. September exports were recovering via Gulf terminals (>4 mb/d provisional, Kpler).",
@@ -509,6 +490,324 @@
      "name": "CBS News — Live Updates: At least 4 dead as weakened Isaias brings threat of floods across the Southeast",
      "url": "https://www.cbsnews.com/live-updates/isaias-southeastern-u-s-gulf-coast/",
      "date": "2026-10-10"
+    }
+   ]
+  },
+  "tuapse-refinery": {
+   "status": "damaged",
+   "summary": "Struck by Ukrainian drones four times in two weeks (Apr 16, 20 and 28 and May 1), with large fires at the refinery and terminal. Kpler said the strikes could delay its restart and constrain exports even once it resumes. No restart has been reported since; status after May not verified.",
+   "since": "2026-04-16",
+   "updated": "2026-10-10",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "RFE/RL — Russian Black Sea Oil Facility On Fire Again After Ukrainian Strike",
+     "url": "https://www.rferl.org/a/tuapse-russian-oil-port-fire-drone-strike/33744191.html",
+     "date": "2026-04-28"
+    },
+    {
+     "name": "CNN — 'Oil is literally falling from the sky': Russian town fears environmental disaster after Ukrainian drone strikes on refinery",
+     "url": "https://www.cnn.com/2026/04/30/europe/russia-tuapse-oil-refinery-strikes-pollution-intl-cmd",
+     "date": "2026-04-30"
+    },
+    {
+     "name": "Kyiv Independent — Ukrainian drones hammer Russia's Tuapse oil refinery for 4th time",
+     "url": "https://kyivindependent.com/russias-hard-hit-tuapse-oil-refinery-struck-by-ukrainian-drones-for-4th-time-as-fires-ravage-site/",
+     "date": "2026-05-01"
+    }
+   ]
+  },
+  "abqaiq-processing-plant": {
+   "status": "damaged",
+   "summary": "Drones hit the plant on Jul 27. The IEA attributes the strike to Iran-backed militias in Iraq and cites it among the causes of Saudi supply falling to 6 mb/d in August (Reuters); satellite imagery showed burn scars around four of its six spheroids (Maritime Executive). Aramco has not commented on the site and its repair state is unreported. The East-West pipeline it feeds was carrying about 5.8 mb/d on Oct 6 (Argus).",
+   "since": "2026-07-27",
+   "updated": "2026-10-11",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "BOE Report (Reuters) — Saudi oil supply hits more than three-decade low after Houthi attacks, IEA says",
+     "url": "https://boereport.com/2026/09/11/saudi-oil-supply-hits-more-than-three-decade-low-after-houthi-attacks-iea-says/",
+     "date": "2026-09-11"
+    },
+    {
+     "name": "The Maritime Executive — Report: Houthi Strike Took Saudi Refinery Offline Through Mid-August",
+     "url": "https://maritime-executive.com/article/report-houthi-strike-took-saudi-refinery-offline-through-mid-august",
+     "date": "2026-07-30"
+    },
+    {
+     "name": "Argus — Saudi East-West pipeline at 5.8mn b/d: energy minister",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2887089-saudi-east-west-pipeline-at-5.8mn-b-d-energy-minister",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "Times of Israel — Israel, Saudi Arabia, Jordan, Iraq attacked by drones despite lull in US-Iran fighting",
+     "url": "https://www.timesofisrael.com/israel-saudi-arabia-jordan-iraq-attacked-by-drones-despite-lull-in-us-iran-fighting/",
+     "date": "2026-07-27"
+    }
+   ]
+  },
+  "jazan-refinery": {
+   "status": "damaged",
+   "summary": "An attack in late July damaged the refinery's power complex and tank farm, and Aramco shut the plant (Maritime Executive; Bloomberg). A restart planned for Aug 30 followed a fire on Aug 9, and the refinery was struck again on Sep 7–8. It was still shut in early October (Argus, Kpler); no report found after Oct 6.",
+   "since": "2026-07-25",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "The Maritime Executive — Report: Houthi Strike Took Saudi Refinery Offline Through Mid-August",
+     "url": "https://maritime-executive.com/article/report-houthi-strike-took-saudi-refinery-offline-through-mid-august",
+     "date": "2026-07-30"
+    },
+    {
+     "name": "Rigzone (Bloomberg) — Saudis Delay Restart of 400,000 Bpd Refinery",
+     "url": "https://www.rigzone.com/news/wire/saudis_delay_restart_of_400000_bpd_refinery-11-aug-2026-184341-article/",
+     "date": "2026-08-11"
+    },
+    {
+     "name": "The Maritime Executive — Houthi Forces Attack Saudi Aramco's Jazan Refinery",
+     "url": "https://maritime-executive.com/article/houthi-forces-attack-saudi-aramco-s-jazan-refinery",
+     "date": "2026-09-08"
+    },
+    {
+     "name": "Argus — Saudi East-West pipeline at 5.8mn b/d: energy minister",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2887089-saudi-east-west-pipeline-at-5.8mn-b-d-energy-minister",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "Kpler — Media Briefing, 5 October 2026",
+     "url": "https://marketing.kpler.com/hubfs/Media%20Briefings%20pdfs/Kpler%20media%20briefing%2005%20Oct%202026.pdf",
+     "date": "2026-10-05"
+    }
+   ]
+  },
+  "samref-refinery": {
+   "status": "reduced",
+   "summary": "Halved its runs from a design capacity of 400,000 b/d after the Sep 10 drone attack on the East-West pipeline cut its crude supply, and could run at reduced rates until at least October (Industrial Info Resources, Sep 24). A drone that came down in the refinery on Mar 19 did minimal damage (Argus; Reuters sources). No SAMREF-specific report found after Sep 24.",
+   "since": "2026-09-10",
+   "updated": "2026-10-11",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Industrial Info Resources — Saudi Oil Loaded from Port at Yanbu after Pipeline Attack",
+     "url": "https://www.industrialinfo.com/news/article/saudi-oil-loaded-from-port-at-yanbu-after-pipeline-attack--362883",
+     "date": "2026-09-24"
+    },
+    {
+     "name": "Argus — Refineries in Kuwait, Saudi Arabia hit by drones",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2803125-refineries-in-kuwait-saudi-arabia-hit-by-drones",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "The Maritime Executive — Saudi Arabia Loses Patience as Red Sea Terminal and Refinery are Targeted",
+     "url": "https://maritime-executive.com/article/saudi-arabia-loses-patience-as-red-sea-terminal-and-refinery-are-targeted",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "Argus — Saudi East-West pipeline at 5.8mn b/d: energy minister",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2887089-saudi-east-west-pipeline-at-5.8mn-b-d-energy-minister",
+     "date": "2026-10-06"
+    }
+   ]
+  },
+  "ras-al-juaymah-terminal": {
+   "status": "reduced",
+   "summary": "Crude loading is running: Aramco resumed loadings here and at Ras Tanura in the week of Aug 10 (Reuters), and six supertankers loaded about 12 million barrels at the two terminals on Sep 21 (Kpler). LPG exports have been halted since a structural failure in the gas liquids terminal's delivery pipeline on Feb 23, before the war; no LPG cargo had left as of Sep 15 (Argus). No attack on the terminal was found.",
+   "since": "2026-02-23",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Hellenic Shipping News (Kpler data) — Ras Tanura loadings spike after East-West pipeline disruption: Kpler",
+     "url": "https://www.hellenicshippingnews.com/ras-tanura-loadings-spike-after-east-west-pipeline-disruption-kpler/",
+     "date": "2026-09-25"
+    },
+    {
+     "name": "Argus — Saudi Aramco to cut propane exports in 1H27",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2878203-saudi-aramco-to-cut-propane-exports-in-1h27",
+     "date": "2026-09-15"
+    },
+    {
+     "name": "Oilprice.com (Reuters) — Aramco Puts VLCCs Back Into Hormuz After Three-Week Pause",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Aramco-Puts-VLCCs-Back-Into-Hormuz-After-Three-Week-Pause.html",
+     "date": "2026-08-18"
+    }
+   ]
+  },
+  "mesaieed-industrial-city": {
+   "status": "reduced",
+   "summary": "QatarEnergy halted LNG and associated products on Mar 2 after attacks on its facilities at Ras Laffan and Mesaieed, then urea, polymers, methanol and aluminium on Mar 3 (MEED). No damage to the petrochemical or fertiliser plants has been reported, but the site has run well below normal: the Qatalum smelter at about 60% from Mar 12 (Norsk Hydro), and Industries Qatar said on Aug 19 that production cuts remained in place for some products. Status after August not verified.",
+   "since": "2026-03-02",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "MEED — Qatar halts LNG production after attack on facilities",
+     "url": "https://www.meed.com/qatar-halts-lng-production-after-attack-on-facilities",
+     "date": "2026-03-02"
+    },
+    {
+     "name": "MEED — QatarEnergy stops downstream production operations",
+     "url": "https://www.meed.com/qatarenergy-stops-downstream-production-operations",
+     "date": "2026-03-03"
+    },
+    {
+     "name": "Norsk Hydro — Qatalum maintaining scaled down aluminium production",
+     "url": "https://www.hydro.com/en/global/media/news/2026/qatalum-maintaining-scaled-down-aluminium-production/",
+     "date": "2026-03-12"
+    },
+    {
+     "name": "Investing.com — Earnings call transcript: Industries Qatar posts weak H1 2026 results",
+     "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-industries-qatar-posts-weak-h1-2026-results-as-revenue-misses-93CH-4867359?ampMode=1",
+     "date": "2026-08-19"
+    }
+   ]
+  },
+  "mina-abdullah-refinery": {
+   "status": "reduced",
+   "summary": "A drone hit one operating unit on Mar 19, starting a fire that was contained with no injuries (Kuwait Petroleum Corporation; Argus), and operations were temporarily suspended (Wall Street Journal). Satellite analysis on Apr 23 found critical units offline with repairs under way (Kayrros). KPC's chief executive said on Oct 5 that Kuwait's refineries were all working, limited by shipping through Hormuz (Bloomberg). No plant-level run rate has been reported.",
+   "since": "2026-03-19",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Argus — Refineries in Kuwait, Saudi Arabia hit by drones",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2803125-refineries-in-kuwait-saudi-arabia-hit-by-drones",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "Investing.com (Wall Street Journal) — Kuwait Petroleum suspends refinery operations after drone strikes",
+     "url": "https://uk.investing.com/news/commodities-news/kuwait-petroleum-suspends-refinery-operations-after-drone-strikes--wsj-93CH-4568089",
+     "date": "2026-03-19"
+    },
+    {
+     "name": "Kayrros — Data Reveals Significant Damage to Kuwaiti Refineries and KPC",
+     "url": "https://www.kayrros.com/blog/data-reveals-significant-damage-to-kuwaiti-refineries-and-kpc/",
+     "date": "2026-04-23"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Kuwait Oil Output at 75% of Prewar as Hormuz Transits Rise",
+     "url": "https://gcaptain.com/kuwait-oil-output-at-75-of-prewar-as-hormuz-transits-rise/",
+     "date": "2026-10-05"
+    }
+   ]
+  },
+  "shah-gas-field": {
+   "status": "reduced",
+   "summary": "Shut after a drone attack caused a fire on Mar 16 (Reuters). Production was increasing again by early May (MEES), and partner Occidental said on May 6 that constraints there should ease by the end of June, then on Aug 6 that it expected normal international volumes in the third quarter. Whether the plant is back at full rates has not been reported, so it may now be running normally. Status after August not verified.",
+   "since": "2026-03-16",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Cyprus Mail (Reuters) — Attacks on UAE's Fujairah port, Shah gas field add to energy disruptions",
+     "url": "https://cyprus-mail.com/2026/03/17/attacks-on-uaes-fujairah-port-shah-gas-field-add-to-energy-disruptions",
+     "date": "2026-03-17"
+    },
+    {
+     "name": "MEES — Abu Dhabi's Shah Gas Field Production Increasing After Attack",
+     "url": "https://www.mees.com/2026/5/8/oil-gas/abu-dhabis-shah-gas-field-production-increasing-after-attack/e75f8b00-4adc-11f1-8ec1-d1d69b5cdb67",
+     "date": "2026-05-08"
+    },
+    {
+     "name": "Occidental — Q2 2026 earnings call transcript",
+     "url": "https://www.oxy.com/siteassets/documents/investors/quarterly-earnings/oxy2q26transcript.pdf",
+     "date": "2026-08-06"
+    }
+   ]
+  },
+  "basra-oil-terminal": {
+   "status": "reduced",
+   "summary": "Iraq halted its southern terminals around Mar 12 after two tankers were attacked off Basra (Argus), and loadings resumed on Apr 17 (Reuters). Exports recovered from about 0.1 mb/d in May to about 2 mb/d in August and about 2.6 mb/d in September, against 3.3–3.5 mb/d before the war (Bloomberg, citing the oil ministry). No damage to the terminal has been reported. No October figure found.",
+   "since": "2026-04-17",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Argus — Iraq's Somo confirms Basrah tankers hit, oil ports shut",
+     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2800010-iraq-s-somo-confirms-basrah-tankers-hit-oil-ports-shut",
+     "date": "2026-03-12"
+    },
+    {
+     "name": "MarineLink (Reuters) — Iraq resumes oil exports to the south after a month-long stop due to disruptions in Hormuz",
+     "url": "https://www.marinelink.com/blogs/blog/iraq-resumes-oil-exports-to-the-south-after-a-monthlong-stop-due-104592",
+     "date": "2026-04-17"
+    },
+    {
+     "name": "Yahoo Finance (Bloomberg) — Iraq Shifts Oil Strategy by Arranging Tanker to Move Past Hormuz",
+     "url": "https://finance.yahoo.com/energy/articles/iraq-shifts-oil-strategy-arranging-100923807.html",
+     "date": "2026-10-04"
+    }
+   ]
+  },
+  "primorsk-terminal": {
+   "status": "damaged",
+   "summary": "Drone strikes on Mar 22–23 set storage tanks on fire and stopped loadings until Mar 26. Satellite images showed at least eight tanks damaged, at least 40% of the port's storage (Reuters). It is loading: crude shipments were just over 1.1 mb/d in the first half of May (Reuters, LSEG data), with fuel loadings below capacity. Repair of the tanks has not been reported. Status after May not verified.",
+   "since": "2026-03-22",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Yahoo Finance (Reuters) — Exclusive: Russia's Primorsk oil terminal lost 40% of storage to drone attacks, satellite images show",
+     "url": "https://finance.yahoo.com/news/exclusive-russias-primorsk-oil-terminal-134821196.html",
+     "date": "2026-04-02"
+    },
+    {
+     "name": "Baird Maritime (Reuters) — Russia restarts Primorsk oil exports at reduced capacity following drone attack",
+     "url": "https://www.bairdmaritime.com/shipping/ports/russia-restarts-primorsk-oil-exports-at-reduced-capacity-following-drone-attack",
+     "date": "2026-03-26"
+    },
+    {
+     "name": "Baird Maritime (Reuters) — Russia pumps more oil through western ports despite drone attacks",
+     "url": "https://www.bairdmaritime.com/shipping/tankers/russia-pumps-more-oil-through-western-ports-despite-drone-attacks",
+     "date": "2026-05-18"
+    }
+   ]
+  },
+  "ust-luga-terminal": {
+   "status": "damaged",
+   "summary": "Strikes in late March damaged eight product tanks, about a quarter of storage, and some berths, and oil loadings stopped from Mar 25 until Apr 4 (Reuters). Loadings were about 0.6 mb/d in the first half of May (Reuters). On Aug 14 Novatek's gas condensate complex at the port was damaged (Reuters, industry sources). Loading status after May not verified.",
+   "since": "2026-03-25",
+   "updated": "2026-10-11",
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Baird Maritime (Reuters) — Russia resumes oil exports from Ust-Luga port despite drone strikes",
+     "url": "https://www.bairdmaritime.com/shipping/ports/russia-resumes-oil-exports-from-ust-luga-port-despite-drone-strikes",
+     "date": "2026-04-08"
+    },
+    {
+     "name": "Yahoo Finance (Reuters) — Exclusive: Russia's Primorsk oil terminal lost 40% of storage to drone attacks, satellite images show",
+     "url": "https://finance.yahoo.com/news/exclusive-russias-primorsk-oil-terminal-134821196.html",
+     "date": "2026-04-02"
+    },
+    {
+     "name": "Baird Maritime (Reuters) — Russia pumps more oil through western ports despite drone attacks",
+     "url": "https://www.bairdmaritime.com/shipping/tankers/russia-pumps-more-oil-through-western-ports-despite-drone-attacks",
+     "date": "2026-05-18"
+    },
+    {
+     "name": "BOE Report (Reuters) — Ukraine's attacks on Russian energy sites: what has been hit?",
+     "url": "https://boereport.com/2026/10/07/ukraines-attacks-on-russian-energy-sites-what-has-been-hit-3/",
+     "date": "2026-10-07"
+    }
+   ]
+  },
+  "moscow-refinery": {
+   "status": "damaged",
+   "summary": "Stopped processing crude after a drone attack on Sep 20 set both primary distillation units on fire; repairs could take several weeks (Reuters, three industry sources). It had been knocked out by strikes on Jun 16 and 18 and restarted before being hit again. A Reuters list of Oct 7 still shows it halted; no restart has been reported.",
+   "since": "2026-09-20",
+   "updated": "2026-10-11",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Meduza (Reuters) — Ukrainian drone attack halts oil processing at Moscow refinery; repairs could take weeks",
+     "url": "https://meduza.io/en/news/2026/09/21/reuters-ukrainian-drone-attack-halts-oil-processing-at-moscow-refinery-on-final-day-of-russia-s-state-duma-election-repairs-could-take-weeks",
+     "date": "2026-09-21"
+    },
+    {
+     "name": "BOE Report (Reuters) — Ukraine's attacks on Russian energy sites: what has been hit?",
+     "url": "https://boereport.com/2026/10/07/ukraines-attacks-on-russian-energy-sites-what-has-been-hit-3/",
+     "date": "2026-10-07"
     }
    ]
   }

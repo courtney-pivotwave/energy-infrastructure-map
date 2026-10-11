@@ -3,6 +3,20 @@
   {
    "date": "2026-10-11",
    "kind": "data",
+   "headline": "Status added for eleven facilities that were shown as operating normally",
+   "changes": [
+    "Eleven facilities whose notes described damage or shutdowns now have a sourced status: Abqaiq processing plant, Jazan refinery, Primorsk and Ust-Luga ports and the Moscow refinery (damaged); SAMREF refinery, Ras al-Ju'aymah terminal, Mesaieed Industrial City, Mina Abdullah refinery, Shah gas field and Basra Oil Terminal (reduced)",
+    "Several earlier notes were out of date: Primorsk and Ust-Luga resumed loading in late March and early April, Basra's exports recovered to about 2.6 million b/d in September, and Shah's production was rising again by May",
+    "Abqaiq: the damage from the Jul 27 drone strike is now recorded on the processing plant, where it happened; the Abqaiq oil field no longer carries that status, and the three related events link to the plant",
+    "Abqaiq oil field: removed a '~1 million b/d processing capacity' figure that matched neither the field nor the plant. The plant's capacity is about 7 million b/d; the field's own output was put near 400,000 b/d in the early 2010s, and no current figure is available",
+    "Haifa's Bazan refinery was checked and found to be running near capacity, so it has no status entry; its note now says so",
+    "Capacities recorded with sources for Jazan, SAMREF, Mina Abdullah, Primorsk, Ust-Luga, the Moscow refinery (about 11 million tonnes a year, not 12) and Bazan",
+    "Where no report could be found after a given month, the status entry says so"
+   ]
+  },
+  {
+   "date": "2026-10-11",
+   "kind": "data",
    "headline": "Gulf of Mexico shut-ins ease as Isaias weakens; DOE taps reserve for Exxon, BP",
    "changes": [
     "Hurricane Isaias weakened to post-tropical after landfall near Destin, Fla.; Gulf of Mexico oil shut-ins eased to about 69% of output, down from a 71.5% peak",
@@ -10,6 +24,17 @@
     "CENTCOM said it disabled a tanker leaving an Iranian port and gave a running tally of blockade enforcement since July; the figures are the US military's own and unverified",
     "Correction: the Turkish Straits returned to normal shipping in early August after a brief Dardanelles permit halt — this site had left that status as unresolved for two months; it has now been cleared",
     "Houthi media said they repelled a Yemeni-government push to retake Mayyun Island on Oct 10, contradicting the Oct 9 claim that the island had been retaken; both sides' claims remain unverified"
+   ]
+  },
+  {
+   "date": "2026-10-10",
+   "kind": "data",
+   "headline": "Corrections: chokepoint oil flows, Habshan–Fujairah capacity, Tuapse status and a tanker attack location",
+   "changes": [
+    "Chokepoint descriptions now give the same pre-crisis oil flows as the What-if model, with their period and source: Hormuz 19.9 million b/d (IEA, 2025); Malacca 23.2, Suez 4.9, Bab el-Mandeb 4.2 and the Turkish Straits 3.7 million b/d (EIA, first half of 2025). The descriptions previously carried older figures (21, 16, 5–6, 6–7 and 3.5)",
+    "Habshan–Fujairah pipeline: capacity recorded as 1.5 million b/d nameplate, with the reported 1.7–1.8 million b/d running rate noted; the What-if model's note now says the same",
+    "Tuapse refinery: added a status entry (damaged since Apr 16 after four drone strikes in two weeks; no restart reported, status after May not verified) and its capacity (about 240,000 b/d)",
+    "Oct 7 tanker attack (Acers): map position moved to 51 nautical miles north of Madinat ash Shamal, Qatar, as UKMTO reported; it had been placed just off the coast"
    ]
   },
   {

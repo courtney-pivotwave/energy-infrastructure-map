@@ -631,6 +631,23 @@
     "at": "2026-10-12T11:00:27.974Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-12-gem-no2-tanker": {
+   "x": {
+    "id": "2109740483354468825",
+    "at": "2026-10-12T20:18:23.174Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxpdnascp32p",
+    "cid": "bafyreiefk67u6nbg7femcjydaezdv6lj3avf6ri6mxir4q5etiirjhrwxu",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxpdnascp32p",
+     "cid": "bafyreiefk67u6nbg7femcjydaezdv6lj3avf6ri6mxir4q5etiirjhrwxu"
+    },
+    "at": "2026-10-12T20:18:25.129Z",
+    "media": "locator-card"
+   }
   }
  }
 }

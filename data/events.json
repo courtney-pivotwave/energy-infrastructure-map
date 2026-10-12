@@ -1,8 +1,93 @@
 {
- "updated": "2026-10-11",
- "situation_headline": "Hurricane Isaias weakened to post-tropical after landfall near Destin, Fla.; Gulf of Mexico oil shut-ins eased to about 69% as DOE authorized a 4-million-barrel SPR exchange for ExxonMobil and BP.",
+ "updated": "2026-10-12",
+ "situation_headline": "Two more tankers were hit by projectiles in the Strait of Hormuz on 10-11 Oct and a VLCC was struck off the UAE coast on 9 Oct, outside the usual attack zone; Iran's security chief called the US response to its Hormuz-reopening proposal ‘insufficient.’",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-11-iran-rezaei-us-response-insufficient",
+   "date": "2026-10-11",
+   "title": "Iran says US response to its Hormuz-reopening proposal is ‘insufficient’",
+   "summary": "Iran's security chief Mohsen Rezaei, quoted by state media, said Washington's response to Iran's seven conditions for reopening the Strait of Hormuz was ‘insufficient’ and that Tehran would no longer respond to the US through the current channel. He said the US had accepted some of Iran's conditions while others remained unclear. The US replied through Qatari intermediaries; the White House did not immediately respond to Reuters' request for comment. Iran's proposal, presented at the UN General Assembly, would restore normal shipping through the strait within seven days if its conditions were met.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Iran Says US Response To Its Proposal To Reopen Hormuz Was ‘Insufficient’",
+     "url": "https://gcaptain.com/iran-says-us-response-to-its-proposal-to-reopen-hormuz-was-insufficient/",
+     "date": "2026-10-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-11-hormuz-tanker-strike-oct11",
+   "date": "2026-10-11",
+   "title": "Second outbound tanker struck by projectile in Strait of Hormuz in two days",
+   "summary": "UKMTO said an outbound tanker was hit on its port side by an unidentified projectile on 11 October. The company security officer reported damage to the vessel; the crew was reported safe and no environmental impact was reported. UKMTO did not name the vessel or attribute responsibility.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
+     "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
+     "date": "2026-10-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-10-hormuz-tanker-strike-oct10",
+   "date": "2026-10-10",
+   "title": "Outbound tanker hit by projectile, catches fire, in Strait of Hormuz",
+   "summary": "UKMTO said an outbound tanker was struck on its port side by an unknown projectile around 1920 UTC on 10 October and caught fire. The crew was reported safe; the extent of damage and any environmental impact were unknown. The vessel was not named and no party claimed responsibility.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
+     "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
+     "date": "2026-10-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-gem-no2-tanker-struck-uae",
+   "date": "2026-10-09",
+   "title": "Panama-flagged VLCC GEM NO.2 struck by projectile off UAE coast, outside Hormuz",
+   "summary": "The fully laden Panama-flagged crude supertanker GEM NO.2 was hit by an unidentified projectile on 9 October about 13 nautical miles west of Al Jazeera, UAE — outside the Strait of Hormuz itself, where most recent attacks have clustered. A fire aboard was extinguished; the vessel's Panama-based operator could not be reached for comment, and no group claimed responsibility. UKMTO did not name the vessel; maritime security sources identified it to Reuters and Arab News.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters/UKMTO) — Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
+     "url": "https://gcaptain.com/vessel-struck-by-unknown-projectile-off-uae-coast-amid-surge-in-attacks-ukmto-says/",
+     "date": "2026-10-09"
+    },
+    {
+     "name": "Arab News — Oil tanker struck by projectile off UAE coast amid surge in attacks",
+     "url": "https://www.arabnews.com/middle-east/oil-tanker-struck-by-projectile-off-uae-coast-amid-surge-in-attacks-3005496",
+     "date": "2026-10-09"
+    }
+   ]
+  },
   {
    "id": "2026-10-10-isaias-weakens-gulf-shutin-eases",
    "date": "2026-10-10",

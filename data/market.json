@@ -1,34 +1,39 @@
 {
- "as_of": "2026-10-09",
+ "as_of": "2026-10-12",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 102.81,
-   "week_ago": 99.81,
+   "value": 105.6,
+   "week_ago": 102.8,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Eased to about $102.81 on 9 Oct (Trading Economics), down roughly 1.4% from $104.28 the prior day, as President Trump said the US will not strike Iran before November's midterm elections, even as Gulf of Mexico shut-ins deepened to 63% of oil output ahead of Hurricane Isaias. Week-ago is the 2 Oct value from this site's own prior run.",
+   "note": "Rose to about $105.60 on 12 Oct (Trading Economics), up roughly 0.8% on the day, as tanker attacks in the Strait of Hormuz continued (a VLCC struck off the UAE on 9 Oct, two more tankers hit inside the strait 10-11 Oct) and Iran's security chief called the US response to its Hormuz-reopening proposal 'insufficient.' Week-ago is the 5 Oct value from this site's own prior run.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-09"
+    "date": "2026-10-12"
    },
    "extra_sources": [
     {
-     "name": "Reuters via BOE Report — Trump says US will not attack Iran before midterm elections in November",
-     "url": "https://boereport.com/2026/10/08/trump-says-us-will-not-attack-iran-before-midterm-elections-in-november/",
-     "date": "2026-10-08"
+     "name": "gCaptain (Reuters/UKMTO) — Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
+     "url": "https://gcaptain.com/vessel-struck-by-unknown-projectile-off-uae-coast-amid-surge-in-attacks-ukmto-says/",
+     "date": "2026-10-09"
     },
     {
-     "name": "Reuters via BOE Report — About 63% of US Gulf oil production shut in ahead of Isaias, US agency says",
-     "url": "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",
-     "date": "2026-10-08"
+     "name": "gCaptain (Reuters) — More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
+     "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
+     "date": "2026-10-11"
+    },
+    {
+     "name": "gCaptain (Reuters) — Iran Says US Response To Its Proposal To Reopen Hormuz Was ‘Insufficient’",
+     "url": "https://gcaptain.com/iran-says-us-response-to-its-proposal-to-reopen-hormuz-was-insufficient/",
+     "date": "2026-10-11"
     }
    ]
   },
@@ -36,25 +41,35 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 90.56,
-   "week_ago": 89.36,
+   "value": 92.64,
+   "week_ago": 90.63,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Eased to $90.56 on 9 Oct (Trading Economics), down about 1.0% on the day, on the same Trump no-strike-before-midterms news moving Brent, despite deepening Gulf of Mexico shut-ins ahead of Hurricane Isaias. Week-ago is the 2 Oct value from this site's own prior run.",
+   "note": "Rose to about $92.64 on 12 Oct (Trading Economics), up roughly 0.9% on the day, on the same Hormuz tanker-attack and stalled-talks news moving Brent. Week-ago is the 5 Oct value from this site's own prior run.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-09"
+    "date": "2026-10-12"
    },
    "extra_sources": [
     {
-     "name": "Reuters via BOE Report — About 63% of US Gulf oil production shut in ahead of Isaias, US agency says",
-     "url": "https://boereport.com/2026/10/08/about-63-of-us-gulf-oil-production-shut-in-ahead-of-isaias-us-agency-says/",
-     "date": "2026-10-08"
+     "name": "gCaptain (Reuters/UKMTO) — Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
+     "url": "https://gcaptain.com/vessel-struck-by-unknown-projectile-off-uae-coast-amid-surge-in-attacks-ukmto-says/",
+     "date": "2026-10-09"
+    },
+    {
+     "name": "gCaptain (Reuters) — More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
+     "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
+     "date": "2026-10-11"
+    },
+    {
+     "name": "gCaptain (Reuters) — Iran Says US Response To Its Proposal To Reopen Hormuz Was ‘Insufficient’",
+     "url": "https://gcaptain.com/iran-says-us-response-to-its-proposal-to-reopen-hormuz-was-insufficient/",
+     "date": "2026-10-11"
     }
    ]
   },
@@ -62,19 +77,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 77.8,
-   "week_ago": 73.04,
+   "value": 82.88,
+   "week_ago": 74.43,
    "pre_crisis": 32.0,
    "peak": {
     "value": 83.97,
     "date": "2026-09-15",
     "note": "2026 high, the highest since late 2022 (AleaSoft)."
    },
-   "note": "Eased to about €77.80 on 9 Oct (Trading Economics), down about 1.3% on the day. Week-ago is the 2 Oct value from this site's own prior run. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Rose to about €82.88 on 12 Oct (Trading Economics), up roughly 1.8% on the day. Week-ago is the 5 Oct value from this site's own prior run. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-09"
+    "date": "2026-10-12"
    },
    "extra_sources": [
     {
@@ -93,19 +108,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 25.96,
-   "week_ago": 25.79,
+   "value": 25.98,
+   "week_ago": 25.71,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
     "date": "2026-09-14",
     "note": "Assessed at 'high-USD 29s', the highest in about 2.5 years (Global LNG Hub)."
    },
-   "note": "Little changed at $25.96 on 8 Oct (Trading Economics, latest available read), up about 0.3% on the day. Week-ago reuses this site's own 2 Oct run value. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Little changed at $25.98 (Trading Economics, 9 Oct read, latest available), up about 1% on the week. Week-ago reuses this site's own 5 Oct run value. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-08"
+    "date": "2026-10-09"
    },
    "extra_sources": [
     {
@@ -124,14 +139,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.12,
-   "week_ago": 2.93,
+   "value": 3.15,
+   "week_ago": 3.04,
    "pre_crisis": 2.99,
-   "note": "Eased to $3.12 on 9 Oct (Trading Economics), down about 1.5% on the day after five straight sessions of gains. Week-ago is the 2 Oct value from this site's own prior run; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "Rose to about $3.15 on 12 Oct (Trading Economics), up roughly 1% on the day. Week-ago is the 5 Oct value from this site's own prior run; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-09"
+    "date": "2026-10-12"
    },
    "extra_sources": [
     {
@@ -147,27 +162,22 @@
    ]
   }
  ],
- "note": "Brent and WTI eased about 1-1.5% on 9 Oct after President Trump said the US will not strike Iran before November's midterm elections, even as Gulf of Mexico shut-ins deepened (to about 71.5% of oil output by 9 Oct) ahead of Hurricane Isaias's landfall and a tanker was hit off Qatar, west of the usual Hormuz attack cluster. Also on 9 Oct, Trump announced a Russia-US diesel supply arrangement and said Treasury would temporarily ease sanctions on Russia's energy sector to allow it; Kremlin confirmed Russia's 'readiness' to supply but gave no tonnage, and no diesel has yet been delivered. TTF and Henry Hub also eased.",
+ "note": "Brent and WTI rose about 0.8-0.9% on 12 Oct amid continued Hormuz tanker attacks — the VLCC GEM NO.2 struck off the UAE on 9 Oct, and two more unnamed tankers hit inside the strait on 10 and 11 Oct — and Iran's security chief Mohsen Rezaei calling the US response to Iran's Hormuz-reopening proposal 'insufficient.' TTF and Henry Hub also edged up. Gulf of Mexico Isaias-related shut-ins continued easing over the weekend (last confirmed update: 68.76% on 10 Oct).",
  "note_sources": [
   {
-   "name": "Reuters via BOE Report — Trump says US will not attack Iran before midterm elections in November",
-   "url": "https://boereport.com/2026/10/08/trump-says-us-will-not-attack-iran-before-midterm-elections-in-november/",
-   "date": "2026-10-08"
-  },
-  {
-   "name": "Reuters via BOE Report — About 71.5% of US Gulf oil production shut in ahead of Hurricane Isaias",
-   "url": "https://boereport.com/2026/10/09/about-71-5-of-us-gulf-oil-production-shut-in-ahead-of-hurricane-isaias/",
+   "name": "gCaptain (Reuters/UKMTO) — Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
+   "url": "https://gcaptain.com/vessel-struck-by-unknown-projectile-off-uae-coast-amid-surge-in-attacks-ukmto-says/",
    "date": "2026-10-09"
   },
   {
-   "name": "gCaptain — Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
-   "url": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
-   "date": "2026-10-08"
+   "name": "gCaptain (Reuters) — More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
+   "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
+   "date": "2026-10-11"
   },
   {
-   "name": "CBS News — Trump announces Russia will release diesel to help with skyrocketing costs",
-   "url": "https://www.cbsnews.com/news/trump-russia-release-diesel-oil-iran-skyrocketing-costs/",
-   "date": "2026-10-09"
+   "name": "gCaptain (Reuters) — Iran Says US Response To Its Proposal To Reopen Hormuz Was ‘Insufficient’",
+   "url": "https://gcaptain.com/iran-says-us-response-to-its-proposal-to-reopen-hormuz-was-insufficient/",
+   "date": "2026-10-11"
   }
  ]
 }

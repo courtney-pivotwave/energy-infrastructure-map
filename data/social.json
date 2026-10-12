@@ -653,6 +653,49 @@
     "Maritime"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-12-digest",
+   "created": "2026-10-12",
+   "type": "digest",
+   "text": "Iran's security chief called the US Hormuz-reopening response insufficient; two more tankers were hit by projectiles in the strait over the weekend (Oct 10-11). Brent $105.60/bbl (+2.7% w/w); US diesel $6.20/gal (-2.9% w/w).",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Iran"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-12-gem-no2-tanker",
+   "created": "2026-10-12",
+   "type": "event",
+   "text": "The Panama-flagged VLCC GEM NO.2 was hit by an unidentified projectile on Oct 9 about 13 nm west of Al Jazeera, UAE, outside the usual Hormuz attack cluster. Fire extinguished; no group claimed responsibility.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-09-gem-no2-tanker-struck-uae",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-12-fuel-weekly",
+   "created": "2026-10-12",
+   "type": "chart",
+   "text": "Diesel prices since the Strait of Hormuz closed: US +63%, EU average +35%, UK +41% (week of Oct 5 vs week of Feb 23).",
+   "url": "https://strategicenergymap.org/fuel-prices/",
+   "image": "fuel-weekly",
+   "alt": "Bar chart of the change in diesel prices since the week of Feb 23, 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland.",
+   "tags": [
+    "FuelPrices",
+    "Diesel"
+   ],
+   "reply_to": null
   }
  ]
 }

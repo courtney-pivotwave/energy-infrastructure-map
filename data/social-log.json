@@ -682,6 +682,23 @@
     "at": "2026-10-13T18:19:30.846Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-13-explainer-sumed-pipeline": {
+   "x": {
+    "id": "2110147900957171836",
+    "at": "2026-10-13T23:17:19.168Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxs644xuvm2u",
+    "cid": "bafyreibylqhxturmcxgbencec2ocrfz6kojjvbniw6t3xqgykzof4a2etm",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxs644xuvm2u",
+     "cid": "bafyreibylqhxturmcxgbencec2ocrfz6kojjvbniw6t3xqgykzof4a2etm"
+    },
+    "at": "2026-10-13T23:17:21.047Z",
+    "media": "asset-card"
+   }
   }
  }
 }

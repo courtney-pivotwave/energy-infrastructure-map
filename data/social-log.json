@@ -648,6 +648,23 @@
     "at": "2026-10-12T20:18:25.129Z",
     "media": "locator-card"
    }
+  },
+  "2026-10-12-fuel-weekly": {
+   "x": {
+    "id": "2109962408693223549",
+    "at": "2026-10-13T11:00:14.321Z",
+    "media": "chart"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxquw4mlgj22",
+    "cid": "bafyreiavz2cvhcr5lwuquzjjduvkgwsnhi4qu2l2hquxj25udueelc4yli",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxquw4mlgj22",
+     "cid": "bafyreiavz2cvhcr5lwuquzjjduvkgwsnhi4qu2l2hquxj25udueelc4yli"
+    },
+    "at": "2026-10-13T11:00:15.867Z",
+    "media": "chart"
+   }
   }
  }
 }

@@ -903,7 +903,8 @@
     ]
    ],
    "details": "Egypt: Ain Sukhna (Red Sea) to Sidi Kerir (Mediterranean). ~320 km. Capacity ~2.5 million bpd. Commissioned 1977. Bypass route for tankers too large for the Suez Canal. Critical chokepoint alternative.",
-   "geo": "Owned jointly by Egypt, Saudi Arabia, UAE, Kuwait, and Qatar — a rare example of Arab state energy cooperation in shared infrastructure. Provides a critical backup if the Suez Canal is blocked (as demonstrated by the 2021 Ever Given incident). Since late 2023, Houthi attacks on Red Sea shipping have diverted significant tanker traffic around the Cape of Good Hope, but SUMED volumes have also been affected since fewer tankers are transiting the Red Sea at all. Egypt earns ~$300M/yr in transit fees. The pipeline's ownership structure gives Gulf states a direct stake in Egyptian stability."
+   "geo": "Owned jointly by Egypt, Saudi Arabia, UAE, Kuwait, and Qatar — a rare example of Arab state energy cooperation in shared infrastructure. Provides a critical backup if the Suez Canal is blocked (as demonstrated by the 2021 Ever Given incident). Since late 2023, Houthi attacks on Red Sea shipping have diverted significant tanker traffic around the Cape of Good Hope, but SUMED volumes have also been affected since fewer tankers are transiting the Red Sea at all. Egypt earns ~$300M/yr in transit fees. The pipeline's ownership structure gives Gulf states a direct stake in Egyptian stability.",
+   "verified": "2026-10-13"
   },
   {
    "id": "habshan-fujairah-pipeline",
@@ -1601,7 +1602,7 @@
    "size": 5,
    "details": "Saudi Arabia (Red Sea). Terminal for East-West/Petroline crude. Provides Hormuz bypass. Also major NGL and refining hub.",
    "geo": null,
-   "verified": "2026-10-09"
+   "verified": "2026-10-13"
   },
   {
    "id": "sidi-kerir-terminal",

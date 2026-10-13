@@ -696,6 +696,35 @@
     "Diesel"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-13-digest",
+   "created": "2026-10-13",
+   "type": "digest",
+   "text": "UKMTO and JMIC reports disclosed the Oct 11 Hormuz toll was six vessels, not two — the highest single-day total since the war began. Brent $104.64/bbl (-0.9% d/d); US diesel $6.20/gal (week of Oct 5).",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-13-explainer-sumed-pipeline",
+   "created": "2026-10-13",
+   "type": "explainer",
+   "text": "SUMED pipeline, jointly owned by Egypt and four Gulf states, runs 320 km from the Red Sea to the Mediterranean — a bypass for tankers too large for the Suez Canal. Nameplate capacity: 2.5 million b/d, commissioned 1977.",
+   "url": "https://strategicenergymap.org/facilities/sumed-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Pipelines",
+    "Suez"
+   ],
+   "reply_to": null
   }
  ]
 }

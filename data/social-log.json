@@ -716,6 +716,23 @@
     "at": "2026-10-14T11:02:02.735Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-14-riyadh-airport-strike": {
+   "x": {
+    "id": "2110397755021480330",
+    "at": "2026-10-14T15:50:08.972Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxtvlglwt52p",
+    "cid": "bafyreifwevoew2rwwhq6kctamonajablxbhl2dobnwhcmwuwr2mn43twee",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxtvlglwt52p",
+     "cid": "bafyreifwevoew2rwwhq6kctamonajablxbhl2dobnwhcmwuwr2mn43twee"
+    },
+    "at": "2026-10-14T15:50:10.283Z",
+    "media": "locator-card"
+   }
   }
  }
 }

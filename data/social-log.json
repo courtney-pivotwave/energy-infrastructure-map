@@ -733,6 +733,21 @@
     "at": "2026-10-14T15:50:10.283Z",
     "media": "locator-card"
    }
+  },
+  "2026-10-14-saudi-pipeline-expansion": {
+   "x": {
+    "id": "2110464047766499569",
+    "at": "2026-10-14T20:13:34.306Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxuecic3mu22",
+    "cid": "bafyreidnebsspr3x6dtef6qm2h2yckajfg47kegjvcy54lcuqagj3kn4l4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxuecic3mu22",
+     "cid": "bafyreidnebsspr3x6dtef6qm2h2yckajfg47kegjvcy54lcuqagj3kn4l4"
+    },
+    "at": "2026-10-14T20:13:35.697Z"
+   }
   }
  }
 }

@@ -1,29 +1,29 @@
 {
- "as_of": "2026-10-13",
+ "as_of": "2026-10-14",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 104.64,
-   "week_ago": 105.6,
+   "value": 106.55,
+   "week_ago": 104.64,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Eased to about $104.64 on 13 Oct (Trading Economics), down roughly 1% on the day, even as UKMTO/JMIC reports showed the Hormuz attack toll for 11 Oct was six vessels, not two as first reported. Week-ago is the 12 Oct value from this site's own prior run.",
+   "note": "Rose to about $106.55 on 14 Oct (Trading Economics), up roughly 0.8% on the day, as Bloomberg tanker-tracking data showed supertankers avoiding the Fujairah transfer hub near Hormuz and Saudi Arabia and Yemen's Houthis traded strikes. Week-ago is the 13 Oct value from this site's own prior run.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-13"
+    "date": "2026-10-14"
    },
    "extra_sources": [
     {
-     "name": "gCaptain — Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
-     "url": "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz/",
-     "date": "2026-10-12"
+     "name": "gCaptain (Bloomberg) — Supertankers Turn From Gulf Oil Transfer Hub Amid Iran's Attacks",
+     "url": "https://gcaptain.com/supertankers-turn-from-gulf-oil-transfer-hub-amid-irans-attacks/",
+     "date": "2026-10-13"
     }
    ]
   },
@@ -31,25 +31,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 91.81,
-   "week_ago": 92.64,
+   "value": 95.23,
+   "week_ago": 91.81,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Eased to about $91.81 on 13 Oct (Trading Economics), down roughly 2% on the day, tracking Brent. Week-ago is the 12 Oct value from this site's own prior run.",
+   "note": "Rose to about $95.23 on 14 Oct (Trading Economics), up roughly 1.2% on the day, tracking Brent. Week-ago is the 13 Oct value from this site's own prior run.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-13"
+    "date": "2026-10-14"
    },
    "extra_sources": [
     {
-     "name": "gCaptain — Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
-     "url": "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz/",
-     "date": "2026-10-12"
+     "name": "gCaptain (Bloomberg) — Supertankers Turn From Gulf Oil Transfer Hub Amid Iran's Attacks",
+     "url": "https://gcaptain.com/supertankers-turn-from-gulf-oil-transfer-hub-amid-irans-attacks/",
+     "date": "2026-10-13"
     }
    ]
   },
@@ -57,19 +57,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 85.86,
-   "week_ago": 82.88,
+   "value": 85.29,
+   "week_ago": 85.86,
    "pre_crisis": 32.0,
    "peak": {
     "value": 85.86,
     "date": "2026-10-13",
     "note": "New 2026 high, surpassing the prior 83.97 set 15 Sep (AleaSoft)."
    },
-   "note": "Rose to about €85.86 on 13 Oct (Trading Economics), a new 2026 high. Week-ago is the 12 Oct value from this site's own prior run. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Eased to about €85.29 on 14 Oct (Trading Economics), down roughly 2.2% after hitting a new 2026 high the previous day. Week-ago is the 13 Oct value from this site's own prior run. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-13"
+    "date": "2026-10-14"
    },
    "extra_sources": [
     {
@@ -88,19 +88,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 26.09,
-   "week_ago": 25.98,
+   "value": 26.27,
+   "week_ago": 26.09,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
     "date": "2026-09-14",
     "note": "Assessed at 'high-USD 29s', the highest in about 2.5 years (Global LNG Hub)."
    },
-   "note": "Little changed at $26.09 (Trading Economics, 12 Oct read, latest available), up slightly on the day. Week-ago reuses this site's own 12 Oct run value. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Little changed at $26.27 (Trading Economics, 13 Oct read, latest available), up slightly on the day. Week-ago reuses this site's own 13 Oct run value. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-12"
+    "date": "2026-10-13"
    },
    "extra_sources": [
     {
@@ -119,14 +119,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.11,
-   "week_ago": 3.15,
+   "value": 3.29,
+   "week_ago": 3.11,
    "pre_crisis": 2.99,
-   "note": "Eased to about $3.11 on 13 Oct (Trading Economics), down roughly 2% on the day; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price is largely insulated.",
+   "note": "Rose slightly to about $3.29 on 14 Oct (Trading Economics); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-13"
+    "date": "2026-10-14"
    },
    "extra_sources": [
     {
@@ -142,12 +142,17 @@
    ]
   }
  ],
- "note": "Brent and WTI eased about 1-2% on 13 Oct even as delayed UKMTO/JMIC reports showed six vessels — five tankers and a container ship — were struck in the Strait of Hormuz on 11 Oct, a fuller count than the single tanker reported at the time and the highest single-day toll since the war began. TTF hit a new 2026 high. Henry Hub eased slightly.",
+ "note": "Brent and WTI rose about 1% on 14 Oct as Bloomberg tanker-tracking data showed supertankers turning away from the Fujairah transfer hub near Hormuz amid near-daily attacks, and Saudi Arabia and Yemen's Houthis traded strikes after a deadly weekend attack on Riyadh's airport. TTF eased after hitting a new 2026 high the day before. Henry Hub was little changed, insulated from the turmoil.",
  "note_sources": [
   {
-   "name": "gCaptain — Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
-   "url": "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz/",
-   "date": "2026-10-12"
+   "name": "gCaptain (Bloomberg) — Supertankers Turn From Gulf Oil Transfer Hub Amid Iran's Attacks",
+   "url": "https://gcaptain.com/supertankers-turn-from-gulf-oil-transfer-hub-amid-irans-attacks/",
+   "date": "2026-10-13"
+  },
+  {
+   "name": "gCaptain (Reuters) — Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
+   "url": "https://gcaptain.com/saudi-arabia-strikes-houthi-targets-as-red-sea-war-escalates/",
+   "date": "2026-10-13"
   }
  ]
 }

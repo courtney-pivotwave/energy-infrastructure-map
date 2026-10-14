@@ -1,8 +1,134 @@
 {
- "updated": "2026-10-13",
- "situation_headline": "A fuller UKMTO/JMIC count disclosed 12 Oct showed six vessels, not two, were struck in the Strait of Hormuz on 11 Oct — the highest single-day toll since the war began — as Iran's security chief called the US Hormuz-reopening response ‘insufficient.’",
+ "updated": "2026-10-14",
+ "situation_headline": "Trump claims Russia and Ukraine agreed to an energy ceasefire, but Zelensky says Russia struck a gas facility hours later; Brent rose to $106 as supertankers avoid the Fujairah hub and Saudi Arabia traded strikes with Yemen's Houthis after a deadly Riyadh airport attack.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-13-saudi-coalition-strikes-sanaa-energy-sites",
+   "date": "2026-10-13",
+   "title": "Saudi coalition strikes Sanaa fuel depot; Houthis threaten Aramco HQ, refinery",
+   "summary": "Saudi-led coalition aircraft struck Houthi-linked sites in Sanaa, Hodeidah and Dhamar on 13 October, including the Yemen Petroleum Company's Sabah depot on Sanaa's outskirts; YPC said the depot held no fuel stocks, so the strike did not affect oil reserves or supply chains. The coalition said the sites supplied the Houthis' missiles and drones (coalition claim, unverified). Houthi spokesman Yahya Saree threatened a 'harsh and painful' response, naming Saudi Aramco's Dhahran headquarters and a Saudi refinery as possible targets, and warned oil workers to stay away from potential target sites.",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    15.37,
+    44.19
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
+     "url": "https://gcaptain.com/saudi-arabia-strikes-houthi-targets-as-red-sea-war-escalates/",
+     "date": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-fujairah-supertankers-divert",
+   "date": "2026-10-13",
+   "title": "Supertankers divert from Fujairah hub as Hormuz-area attacks mount",
+   "summary": "At least 10 VLCCs and several Suezmax tankers approaching Fujairah, the UAE transfer hub just outside the Strait of Hormuz, stopped or reversed course in the days before 13 October amid near-daily attacks around the strait, tanker-tracking data compiled by Bloomberg showed. Fujairah underpins the shuttle-tanker system that has let Gulf oil exports recover toward pre-war levels, with VLCCs waiting offshore there while shuttle tankers make the riskier transit through the strait to load and transfer cargo; fewer vessels willing to wait risks slowing that bypass route at a time of an already acute global tanker shortage.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    25.1,
+    56.3
+   ],
+   "assets": [
+    "fujairah"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Supertankers Turn From Gulf Oil Transfer Hub Amid Iran's Attacks",
+     "url": "https://gcaptain.com/supertankers-turn-from-gulf-oil-transfer-hub-amid-irans-attacks/",
+     "date": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-saudi-pipeline-expansion-plan",
+   "date": "2026-10-12",
+   "title": "Saudi Arabia studies raising oil pipeline capacity outside Gulf to 10mb/d",
+   "summary": "Saudi Energy Minister Prince Abdulaziz bin Salman said on 12 October the kingdom is studying upgrades to pumping stations that could raise the East-West pipeline's capacity, which carried 5.8 million b/d on 6 October against its 7 mb/d nameplate, to as much as 10 million b/d within two to three years. Separately, Saudi Arabia and Aramco are converting a gas pipeline to carry about 1.2 million b/d of crude within seven to eight weeks, potentially rising to 3 million b/d with further investment, until the line is needed for domestic gas supply next May. The plans aim to expand capacity for routes that bypass the Strait of Hormuz.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "east-west-pipeline"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Saudi Eyes 10 Million Barrels a Day of Oil Pipe Capacity",
+     "url": "https://gcaptain.com/saudi-eyes-10-million-barrels-a-day-of-oil-pipe-capacity/",
+     "date": "2026-10-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-tanker-rates-heavy-crude-americas",
+   "date": "2026-10-12",
+   "title": "Soaring freight rates strand heavy crude in the Americas",
+   "summary": "Freight costs have squeezed heavy-crude exports from the Americas to Asia, Reuters reported on 12 October: a Gulf Coast-to-Asia supertanker cost more than $80 million (about $40/bbl) last week, versus $10-15 million near the start of the year, as ship-to-ship transfers tied to the Hormuz shuttle system tie up vessels worldwide (Signal Maritime data). US refinery utilization has averaged about 93.5% this year, the highest in 28 years (EIA), while heavy crude from Canada, Colombia, Ecuador and Venezuela builds up in storage because freight now costs more than the crude itself for export, and benchmark prices above $100/bbl have split the market between a well-supplied Americas and shortages in Asia and Europe.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Soaring Tanker Rates Leave Americas Awash in Crude Oil",
+     "url": "https://gcaptain.com/soaring-tanker-rates-leave-americas-awash-in-crude-oil/",
+     "date": "2026-10-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-sweden-releases-sea-owl-tanker",
+   "date": "2026-10-12",
+   "title": "Sweden releases sanctioned Russian 'shadow fleet' tanker after 7-month hold",
+   "summary": "Sweden's Transport Agency lifted an operating ban on the EU-sanctioned tanker Sea Owl 1 on 12 October, nearly seven months after the Swedish Coast Guard detained it off Trelleborg on 12 March over flag and documentation irregularities; the vessel had been found falsely flying first the Comoros flag, then an invalid Cameroon registration. The agency said it lifted the order after Equatorial Guinea confirmed the ship is now properly registered there and its certificates checked out; the Coast Guard said the vessel remains EU-sanctioned and is not suspected of a sanctions violation. Sweden continues to hold two other vessels, the Caffa and the Jin Hui, over similar paperwork problems.",
+   "category": "policy",
+   "severity": "low",
+   "coords": [
+    55.38,
+    13.16
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Sweden Releases Sanctioned Russian Shadow Fleet Tanker After Seven-Month Detention",
+     "url": "https://gcaptain.com/sweden-releases-sanctioned-russian-shadow-fleet-tanker-after-seven-month-detention/",
+     "date": "2026-10-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-11-trump-energy-ceasefire-claim",
+   "date": "2026-10-11",
+   "title": "Trump claims Russia-Ukraine energy ceasefire; Zelensky says strikes continued",
+   "summary": "President Trump posted on 11 October that Russia and Ukraine had agreed to an immediate 'ENERGY CEASEFIRE' and that 'both parties have agreed' (Trump claim, unverified); Zelensky told Axios the announcement was 'news for me' and said Ukraine would halt strikes on Russian refineries only if Russia stopped hitting Ukraine's energy grid. Russian Foreign Minister Sergey Lavrov rejected the idea as an attempt by Zelensky to regroup and rearm (Russia claim, unverified). Zelensky said a Shahed drone fired from Russia hit a Ukrainian gas production facility around midnight into 12 October and drones hit at least five other energy-related targets, wounding 33 people nationwide (Ukraine claim, unverified); no independent confirmation of the strikes, such as satellite imagery or a neutral monitor, has been found. Ukrainian officials said they had respected the call for a ceasefire but struck Russian data centres.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Khaleej Times (AFP) — Trump says Russia, Ukraine agree 'energy ceasefire', effective immediately",
+     "url": "https://www.khaleejtimes.com/business/energy/trump-says-russia-ukraine-agree-energy-ceasefire-effective-immediately",
+     "date": "2026-10-11"
+    },
+    {
+     "name": "WUNC / NPR — Russia hits Ukraine gas facilities after Trump claims energy ceasefire",
+     "url": "https://www.wunc.org/2026-10-12/russia-hits-ukraine-gas-facilities-after-trump-claims-energy-ceasefire",
+     "date": "2026-10-12"
+    }
+   ]
+  },
   {
    "id": "2026-10-11-iran-rezaei-us-response-insufficient",
    "date": "2026-10-11",
@@ -60,6 +186,32 @@
      "name": "gCaptain — Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
      "url": "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz/",
      "date": "2026-10-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-10-riyadh-airport-strike",
+   "date": "2026-10-10",
+   "title": "Houthi strike on Riyadh airport kills 13, deadliest Saudi attack in a decade",
+   "summary": "Yemen's Houthis struck Riyadh's King Khalid International Airport over the weekend of 10-11 October, killing at least 13 people, including an American, and wounding more than 300 — the deadliest attack on Saudi Arabia in a decade, per Reuters and Bloomberg reporting. The Houthis said it was retaliation for Saudi strikes on Sanaa airport; the Saudi-led coalition called it 'a full-fledged war crime.' Several oil executives, including from BP and Shell, withdrew from the World Petroleum Congress in Riyadh, and the UK and Australia advised against travel to the city. Trump called the Houthis' actions 'very bad' and said the US may join strikes against them, raising the risk of a wider war.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    24.96,
+    46.7
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Deadly Attacks on Saudi Arabia Risk Wider War That Draws In US",
+     "url": "https://gcaptain.com/deadly-attacks-on-saudi-arabia-risk-wider-war-that-draws-in-us/",
+     "date": "2026-10-12"
+    },
+    {
+     "name": "gCaptain (Reuters) — Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
+     "url": "https://gcaptain.com/saudi-arabia-strikes-houthi-targets-as-red-sea-war-escalates/",
+     "date": "2026-10-13"
     }
    ]
   },

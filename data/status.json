@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -107,11 +107,21 @@
   },
   "bab-el-mandeb": {
    "status": "disrupted",
-   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces launched a counteroffensive ('Operation Yemen Dawn') around 3-5 Oct, backed by a reported 100 Saudi-led coalition jets, and said they had taken full control of the strait plus Dhubab town, its airport and the road to Mokha; on 9 Oct the Saudi-led coalition said it struck 136 further 'high-value' Houthi targets and Yemeni officials additionally claimed Mayyun (Perim) Island, which the Houthis had seized in September, had been retaken. On 10 Oct Houthi media said they repelled the Yemeni-government push on Mayyun and still hold the island, directly contradicting the 9 Oct claim. Both sides' claims are unverified and independent confirmation of territorial or shipping-lane control remains unavailable, so the status here is unchanged.",
+   "summary": "The Houthis have enforced a 'ban' on Saudi-linked shipping since 20 July, hitting ships (Tihamah 12 Aug, Bahri VLCC off Yanbu 24 Aug) and seizing Mocha and Red Sea islands on 10-11 Sep. Tanker transits fell sharply; overall transits were ~15% below pre-ban levels by late August. Saudi-backed Yemeni government forces launched a counteroffensive ('Operation Yemen Dawn') around 3-5 Oct, backed by a reported 100 Saudi-led coalition jets, and said they had taken full control of the strait plus Dhubab town, its airport and the road to Mokha; on 9 Oct the Saudi-led coalition said it struck 136 further 'high-value' Houthi targets and Yemeni officials additionally claimed Mayyun (Perim) Island, which the Houthis had seized in September, had been retaken. On 10 Oct Houthi media said they repelled the Yemeni-government push on Mayyun and still hold the island, directly contradicting the 9 Oct claim. A Houthi missile strike on Riyadh's main airport over the weekend of 10-11 Oct killed at least 13 people, the deadliest attack on Saudi Arabia in a decade, and the Saudi-led coalition responded on 13 Oct with strikes on Houthi-linked sites in Sanaa, Hodeidah and Dhamar, including a Yemen Petroleum Company fuel depot the company said held no stocks; Houthi spokesman Yahya Saree threatened retaliation against Aramco's Dhahran headquarters and a Saudi refinery. Both sides' claims about territorial and shipping-lane control remain unverified and independent confirmation is unavailable, so the status here is unchanged.",
    "since": "2026-07-20",
-   "updated": "2026-10-11",
+   "updated": "2026-10-14",
    "confidence": "confirmed",
    "sources": [
+    {
+     "name": "gCaptain (Reuters) — Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
+     "url": "https://gcaptain.com/saudi-arabia-strikes-houthi-targets-as-red-sea-war-escalates/",
+     "date": "2026-10-13"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Deadly Attacks on Saudi Arabia Risk Wider War That Draws In US",
+     "url": "https://gcaptain.com/deadly-attacks-on-saudi-arabia-risk-wider-war-that-draws-in-us/",
+     "date": "2026-10-12"
+    },
     {
      "name": "CBS News — Live Updates: Iran's Houthi allies kill 3 in strike on Saudi airport as Trump rules out pre-midterms strikes",
      "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis",
@@ -362,11 +372,16 @@
   },
   "fujairah": {
    "status": "disrupted",
-   "summary": "The UAE's main outlet outside Hormuz, fed by the Habshan-Fujairah pipeline (~1.5 mb/d), has been attacked repeatedly (14 and 16 Mar, 4 May). Kpler data showed exports rising to 1.62 mb/d in March from 1.17 mb/d in February as volumes were rerouted there. Status after May not verified.",
+   "summary": "The UAE's main outlet outside Hormuz, fed by the Habshan-Fujairah pipeline (~1.5 mb/d), has been attacked repeatedly (14 and 16 Mar, 4 May). Kpler data showed exports rising to 1.62 mb/d in March from 1.17 mb/d in February as volumes were rerouted there. Fujairah also underpins the shuttle-tanker system that lets Gulf crude bypass the Strait of Hormuz, with VLCCs waiting offshore there while shuttle tankers make the riskier transit to load and transfer cargo. Tanker-tracking data compiled by Bloomberg showed at least 10 VLCCs and several Suezmax tankers approaching Fujairah had stopped or reversed course in the days before 13 Oct amid near-daily attacks around the strait, raising the risk of slower bypass flows at a time of an already acute global tanker shortage.",
    "since": "2026-03-14",
-   "updated": "2026-05-05",
-   "confidence": "confirmed",
+   "updated": "2026-10-14",
+   "confidence": "reported",
    "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Supertankers Turn From Gulf Oil Transfer Hub Amid Iran's Attacks",
+     "url": "https://gcaptain.com/supertankers-turn-from-gulf-oil-transfer-hub-amid-irans-attacks/",
+     "date": "2026-10-13"
+    },
     {
      "name": "Cyprus Mail (Reuters) — Attacks on UAE's Fujairah port, Shah gas field add to energy disruptions",
      "url": "https://cyprus-mail.com/2026/03/17/attacks-on-uaes-fujairah-port-shah-gas-field-add-to-energy-disruptions",

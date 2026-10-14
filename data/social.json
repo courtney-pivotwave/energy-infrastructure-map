@@ -725,6 +725,65 @@
     "Suez"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-14-digest",
+   "created": "2026-10-14",
+   "type": "digest",
+   "text": "Brent rose to about $106.55/bbl and WTI to $95.23 as supertankers avoid the Fujairah hub near Hormuz (Bloomberg tanker-tracking data) and Saudi Arabia traded strikes with Yemen's Houthis. US diesel $6.20/gal (week of Oct 5).",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-14-riyadh-airport-strike",
+   "created": "2026-10-14",
+   "type": "event",
+   "text": "A Houthi strike on Riyadh airport killed at least 13 over the weekend, the deadliest attack on Saudi Arabia in a decade, as the Saudi-Houthi conflict escalates.",
+   "url": "https://strategicenergymap.org/events/#2026-10-10-riyadh-airport-strike",
+   "event_id": "2026-10-10-riyadh-airport-strike",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "EnergySecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-14-saudi-pipeline-expansion",
+   "created": "2026-10-14",
+   "type": "event",
+   "text": "Saudi Arabia is studying raising East-West pipeline capacity from 5.8 to as much as 10 million b/d within 2-3 years, plus a gas-line conversion for 1.2 million b/d more crude, to bypass Hormuz.",
+   "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+   "event_id": "2026-10-12-saudi-pipeline-expansion-plan",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Pipelines",
+    "SaudiArabia"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-14-explainer-jazan-refinery",
+   "created": "2026-10-14",
+   "type": "explainer",
+   "text": "Aramco's Jazan refinery on Saudi Arabia's Red Sea coast, the kingdom's refinery closest to Yemen, has been shut since Houthi strikes in late July knocked out its power complex and tank farm. Nameplate capacity: 400,000 b/d.",
+   "url": "https://strategicenergymap.org/facilities/jazan-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Refining",
+    "Yemen"
+   ],
+   "reply_to": null
   }
  ]
 }

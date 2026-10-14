@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-14",
+   "kind": "data",
+   "headline": "Trump's Russia-Ukraine 'energy ceasefire' claim disputed as Saudi-Houthi fighting escalates",
+   "changes": [
+    "Trump said Russia and Ukraine agreed to an immediate energy ceasefire; Zelensky called it news to him and said Russian drones hit a Ukrainian gas facility and five other energy targets hours later (unverified claims from both sides)",
+    "A Houthi strike on Riyadh's main airport over the weekend killed at least 13 people, the deadliest attack on Saudi Arabia in a decade; the Saudi-led coalition struck Houthi sites in Sanaa on Oct 13, including an empty fuel depot, and the Houthis threatened Aramco's Dhahran headquarters",
+    "Supertankers are turning away from the Fujairah transfer hub near the Strait of Hormuz as attacks continue, risking the shuttle-tanker system that bypasses Hormuz",
+    "Saudi Arabia is studying raising its East-West pipeline's capacity to 10 million barrels a day within 2-3 years",
+    "Brent rose to about $106.55/bbl and WTI to about $95.23/bbl"
+   ]
+  },
+  {
    "date": "2026-10-13",
    "kind": "data",
    "headline": "Hormuz attack toll for Oct 11 was six ships, not two, the highest single day of the war",

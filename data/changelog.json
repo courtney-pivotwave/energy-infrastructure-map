@@ -1,6 +1,19 @@
 {
  "entries": [
   {
+   "date": "2026-10-15",
+   "kind": "data",
+   "headline": "Houthi strike hits Aramco's Dhahran HQ; two more ships sink in the Strait of Hormuz",
+   "changes": [
+    "Houthi missiles and drones struck Saudi Aramco's Dhahran headquarters overnight Oct 13, sparking a fire Reuters sources described across several floors; Riyadh's airport stays closed through Oct 17 after this week's deadly strikes",
+    "The container ship GFS Pride sank in the Strait of Hormuz on Oct 13 (21 crew safe) and the bulk carrier Cape Dao, struck in September, has now sunk too; Iran's naval-mine claim was disputed by a maritime security firm",
+    "US Central Command said it destroyed an Iranian-linked dhow in the Gulf of Oman on Oct 6, alleging it helped target US Navy ships",
+    "Drones hit two cargo ships off Bulgaria's Black Sea coast; one sank with 11 crew still missing",
+    "Trump said Russia would start releasing diesel to global markets before the US midterms; US senators and EU officials pushed back, and analysts doubted it would lower prices",
+    "Brent eased to about $104.63/bbl; AIS-tracked tanker traffic through Hormuz fell to just 0.6 ships a day, 99% below the pre-crisis baseline"
+   ]
+  },
+  {
    "date": "2026-10-14",
    "kind": "data",
    "headline": "Trump's Russia-Ukraine 'energy ceasefire' claim disputed as Saudi-Houthi fighting escalates",

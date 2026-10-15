@@ -1,8 +1,136 @@
 {
- "updated": "2026-10-14",
- "situation_headline": "Trump claims Russia and Ukraine agreed to an energy ceasefire, but Zelensky says Russia struck a gas facility hours later; Brent rose to $106 as supertankers avoid the Fujairah hub and Saudi Arabia traded strikes with Yemen's Houthis after a deadly Riyadh airport attack.",
+ "updated": "2026-10-15",
+ "situation_headline": "Houthi missiles and drones hit Aramco's Dhahran headquarters overnight 13 October, keeping Riyadh's airport shut through 17 October; two more ships sank in the Strait of Hormuz and Brent eased to $104.63.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-14-houthi-strike-aramco-dhahran-hq",
+   "date": "2026-10-13",
+   "title": "Houthi strike hits Aramco's Dhahran headquarters; Riyadh airport shut through Oct 17",
+   "summary": "Houthi missiles, cruise missiles and drones struck targets including Saudi Aramco's Dhahran headquarters complex overnight on 13 October, Reuters reported, citing three people with knowledge of the matter who described a fire spreading across several floors; Saudi Arabia's energy ministry described a 'limited fire.' Aramco did not comment publicly; two sources said operations continued normally with staff working from home. The Houthis said they also targeted Riyadh's King Khalid International Airport and an Aramco refinery in Riyadh, calling the sites legitimate retaliation for Saudi strikes on Yemen (Houthi claim, unverified); no independent report confirmed damage at the refinery. The Saudi-led coalition said it intercepted a Houthi ballistic missile aimed at Riyadh on 14 October. A notice to airmen extended Riyadh airport's closure to 2100 GMT on 17 October after the 10-11 October strikes that killed at least 13 people; Cirium data showed the airport cancelled nearly all scheduled flights, and Etihad and other carriers suspended Riyadh service into late October.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    26.29,
+    50.15
+   ],
+   "assets": [
+    "riyadh-refinery"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Yemen's Houthis Vow More Attacks on Saudi Airports, Oil Facilities After Aramco HQ Hit",
+     "url": "https://gcaptain.com/yemens-houthis-vow-more-attacks-on-saudi-airports-oil-facilities-after-aramco-hq-hit/",
+     "date": "2026-10-14"
+    },
+    {
+     "name": "ProPakistani — Riyadh Airport Closure Extended as Houthi Attacks Continue",
+     "url": "https://propakistani.pk/2026/10/13/riyadh-airport-closure-extended-as-houthi-attacks-continue/",
+     "date": "2026-10-13"
+    },
+    {
+     "name": "Khaleej Times — Nearly Half of Flights Leaving Saudi Cancelled Today, One-Fourth Suspended Tomorrow",
+     "url": "https://www.khaleejtimes.com/business/nearly-half-of-flights-leaving-saudi-cancelled-today-one-fourth-suspended-tomorrow",
+     "date": "2026-10-12"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-gfs-pride-sinks-hormuz",
+   "date": "2026-10-13",
+   "title": "Container ship GFS Pride sinks in Hormuz; bulk carrier Cape Dao also goes down",
+   "summary": "The Singapore-flagged container ship GFS Pride sank in the Strait of Hormuz after being struck by an unidentified projectile on 13 October; Singapore's Maritime and Port Authority confirmed all 21 crew were evacuated safely and condemned the attack as 'unprovoked, unjustifiable, and a breach of international law.' Its sister ship GFS Giselle was damaged in the same wave of attacks but reached a safe anchorage under its own power with all 22 crew safe. Iran's IRGC claimed, without evidence, that the Pride struck a naval mine after using an unauthorized route; maritime security firm Marisks said it found no independent evidence of a mine (Iran claim, unverified). Separately, Reuters reported that the Antigua and Barbuda-flagged bulk carrier Cape Dao — struck near Hormuz on 23 September, when one Indian seafarer was killed — has now sunk as well, weeks after that attack. The IMO has documented more than 100 confirmed maritime security incidents in the strait since the war began, with at least 24 seafarer deaths, and JMIC maintains a SEVERE threat assessment.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Containership Sinks as Hormuz Attacks Spiral Out of Control",
+     "url": "https://gcaptain.com/containership-sinks-as-hormuz-attacks-spiral-out-of-control/",
+     "date": "2026-10-14"
+    },
+    {
+     "name": "gCaptain (Reuters) — Bulk Carrier Sinks Weeks After Deadly Strait of Hormuz Strike",
+     "url": "https://gcaptain.com/bulk-carrier-sinks-weeks-after-deadly-strait-of-hormuz-strike/",
+     "date": "2026-10-14"
+    },
+    {
+     "name": "The National — Fire, Sinking and Reported Scramble for Cargo: What We Know About Ship Lost in Strait of Hormuz",
+     "url": "https://www.thenationalnews.com/news/gulf/2026/10/15/fire-sinking-and-reported-scramble-for-cargo-what-we-know-about-ship-lost-in-strait-of-hormuz/",
+     "date": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-us-destroys-iranian-dhow",
+   "date": "2026-10-06",
+   "title": "CENTCOM says US forces destroyed an Iranian-linked dhow in the Gulf of Oman",
+   "summary": "US Central Command said on 14 October that US forces destroyed an Iranian-affiliated dhow in the Gulf of Oman on 6 October, alleging the vessel was conducting surveillance to help target US Navy ships (CENTCOM claim, unverified); it did not identify the vessel or how it was destroyed, and no independent confirmation of the Iranian affiliation or the surveillance allegation was found. CENTCOM said the crew was removed safely before the vessel was destroyed and that efforts to repatriate them are ongoing. gCaptain noted the IRGC has increasingly used small boats, including unarmed spotters, to help identify commercial ships as targets.",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    24.5,
+    58.5
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "gCaptain — U.S. Forces Destroy Iranian-Linked Dhow Accused of Targeting Navy Ships",
+     "url": "https://gcaptain.com/u-s-forces-destroy-iranian-linked-dhow-accused-of-targeting-navy-ships/",
+     "date": "2026-10-14"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-14-bulgaria-black-sea-drone-strikes",
+   "date": "2026-10-13",
+   "title": "Drones hit two cargo ships off Bulgaria's Black Sea coast; one sinks, 11 missing",
+   "summary": "Two cargo ships were struck by aerial drones early on 13 October near Bulgaria's territorial waters in the western Black Sea, Bulgarian officials said. The Guinea-Bissau-flagged HS Dignity, sailing from Mostaganem, Algeria to Braila, Romania, sank off Krapets; five crew were rescued and 11 remained missing. The Maltese-flagged, Ukrainian-owned Chelsea 3, sailing from Giresun, Turkey to Giurgiulesti, Moldova, caught fire about 18 nautical miles off Byala but stayed afloat. Bulgaria's government summoned Russia's ambassador and said the strikes benefited Russia, since 'there's no logic in Ukraine destroying its own ships' (Bulgaria statement); Russia's ambassador said she had no information from its defense ministry and did not rule out a 'provocation from a third country' (Russia claim, unverified). The incidents follow earlier strikes on ships in Bulgaria's and Romania's exclusive economic zones the same week.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    43.45,
+    28.65
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Bulgaria Points to Russia as Drones Hit More Cargo Ships",
+     "url": "https://gcaptain.com/bulgaria-points-to-russia-as-drones-hit-more-cargo-ships/",
+     "date": "2026-10-13"
+    }
+    ]
+  },
+  {
+   "id": "2026-10-14-trump-russia-diesel-release-deal",
+   "date": "2026-10-13",
+   "title": "Trump says Russia will release diesel to global markets before midterms; allies, senators push back",
+   "summary": "President Trump said Russia agreed to begin releasing Russian diesel onto global markets to help lower fuel prices before the 3 November midterm elections, as part of a package in which he also pressed Ukraine to halt refinery strikes and announced an energy ceasefire (Trump claim; Russia and Ukraine did not independently confirm agreeing to it). Bloomberg reported the first tranche would be about 2.25 million barrels in October — about 1.4 million barrels less than a single day of US diesel consumption — with Russia's deputy prime minister saying monthly exports of 3 million tons would only be possible after December. A bipartisan group of US senators urged Trump to 'reverse course,' saying the US 'should not provide Putin with a financial lifeline,' and EU officials, including Kaja Kallas, warned the move would strengthen Moscow's war effort. A 2022 law bars the US from buying most Russian energy products, and analysts were skeptical the plan would meaningfully lower prices given shipping times of two-plus weeks and Russia's own extended ban on diesel exports following Ukrainian strikes on its refineries.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Trump's Diesel Deal Irks Allies and Is Unlikely to Reduce Prices",
+     "url": "https://gcaptain.com/trumps-diesel-deal-irks-allies-and-is-unlikely-to-reduce-prices/",
+     "date": "2026-10-13"
+    }
+   ]
+  },
   {
    "id": "2026-10-13-saudi-coalition-strikes-sanaa-energy-sites",
    "date": "2026-10-13",

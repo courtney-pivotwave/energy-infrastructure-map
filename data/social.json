@@ -784,6 +784,64 @@
     "Yemen"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-15-digest",
+   "created": "2026-10-15",
+   "type": "digest",
+   "text": "Houthi missiles and drones struck Aramco's Dhahran HQ overnight Oct 13, sparking a fire across several floors; Riyadh's airport stays closed through Oct 17. Brent eased to $104.63/bbl, US diesel $6.18/gal (week of Oct 12).",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Yemen",
+    "EnergySecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-15-gfs-pride-sinks-hormuz",
+   "created": "2026-10-15",
+   "type": "event",
+   "text": "Two more ships went down near Hormuz: container ship GFS Pride sank Oct 13 (21 crew safe), and bulk carrier Cape Dao, hit Sep 23, has now sunk too. A security firm found no evidence for Iran's mine claim on the Pride.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-14-gfs-pride-sinks-hormuz",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Tankers"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-15-bulgaria-black-sea-drones",
+   "created": "2026-10-15",
+   "type": "event",
+   "text": "Drones hit two cargo ships off Bulgaria's coast Oct 13: HS Dignity sank, 11 crew missing; Chelsea 3 caught fire but stayed afloat. Bulgaria blamed Russia; Moscow didn't confirm it.",
+   "url": "https://strategicenergymap.org/events/#2026-10-14-bulgaria-black-sea-drone-strikes",
+   "event_id": "2026-10-14-bulgaria-black-sea-drone-strikes",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "BlackSea",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-15-chokepoints-weekly",
+   "created": "2026-10-15",
+   "type": "chart",
+   "text": "Tanker transits (AIS-visible) fell further this week: Hormuz down to 0.6 ships/day, 99% below baseline, as many sail dark. Bosporus -36%, Bab el-Mandeb -29%, Panama -27%, Malacca -12%; Suez +9%.",
+   "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
+   "image": "chokepoints-weekly",
+   "alt": "Bar chart of 7-day average tanker transits vs pre-crisis baseline, percent change, week ending Oct 11: Strait of Hormuz -99% (0.6/day), Bosporus Strait -36% (14.6/day), Bab el-Mandeb -29% (8.6/day), Panama Canal -27% (9.4/day), Strait of Malacca -12% (74.9/day), Suez Canal +9% (17.0/day).",
+   "tags": [
+    "DataViz",
+    "Shipping"
+   ],
+   "reply_to": null
   }
  ]
 }

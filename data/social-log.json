@@ -799,6 +799,23 @@
     "at": "2026-10-15T15:36:20.290Z",
     "media": "locator-card"
    }
+  },
+  "2026-10-15-bulgaria-black-sea-drones": {
+   "x": {
+    "id": "2110821458322563084",
+    "at": "2026-10-15T19:53:47.711Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxwto2femp2p",
+    "cid": "bafyreiggsft5yz3v7noiug65pz4vdfzee3ibzqsfu5vwoe5k7644gjhif4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxwto2femp2p",
+     "cid": "bafyreiggsft5yz3v7noiug65pz4vdfzee3ibzqsfu5vwoe5k7644gjhif4"
+    },
+    "at": "2026-10-15T19:53:49.856Z",
+    "media": "locator-card"
+   }
   }
  }
 }

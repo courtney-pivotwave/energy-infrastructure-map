@@ -782,6 +782,23 @@
     "at": "2026-10-15T10:58:52.650Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-15-gfs-pride-sinks-hormuz": {
+   "x": {
+    "id": "2110756658980716622",
+    "at": "2026-10-15T15:36:18.389Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxwfbmjdyq2p",
+    "cid": "bafyreifric64mxdebccpe4u7ecipnalowbnt677vok226o22eb5xdq6kfe",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxwfbmjdyq2p",
+     "cid": "bafyreifric64mxdebccpe4u7ecipnalowbnt677vok226o22eb5xdq6kfe"
+    },
+    "at": "2026-10-15T15:36:20.290Z",
+    "media": "locator-card"
+   }
   }
  }
 }

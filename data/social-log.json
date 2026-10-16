@@ -850,6 +850,23 @@
     "at": "2026-10-16T10:59:09.572Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-16-romania-black-sea-tanker-drones": {
+   "x": {
+    "id": "2111115689482150103",
+    "at": "2026-10-16T15:22:57.890Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxyuyojnab2a",
+    "cid": "bafyreieznvqiuuo5kztpilcgiiuqjgyrrwvojil7q26yuprxgaqozotdlm",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxyuyojnab2a",
+     "cid": "bafyreieznvqiuuo5kztpilcgiiuqjgyrrwvojil7q26yuprxgaqozotdlm"
+    },
+    "at": "2026-10-16T15:22:59.635Z",
+    "media": "locator-card"
+   }
   }
  }
 }

@@ -842,6 +842,65 @@
     "Shipping"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-16-digest",
+   "created": "2026-10-16",
+   "type": "digest",
+   "text": "JMIC counted just ~30 US-facilitated transits a day through Hormuz over Oct 11-14, about a fifth of the pre-war rate; the IMO puts the war's toll at 113 confirmed incidents, 24 seafarer deaths. Brent $105.91/bbl, US diesel $6.18/gal (week of Oct 12).",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-16-romania-black-sea-tanker-drones",
+   "created": "2026-10-16",
+   "type": "event",
+   "text": "Drones hit tankers Wine Trader and Yara J off Romania's Black Sea coast Oct 15; 7 of Wine Trader's 12 crew are missing. A NATO official told Reuters the drones appeared Russian-made (unconfirmed).",
+   "url": "https://strategicenergymap.org/events/#2026-10-16-romania-black-sea-tanker-drones",
+   "event_id": "2026-10-16-romania-black-sea-tanker-drones",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "BlackSea",
+    "Tankers"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-16-trump-shadow-fleet-sanctions",
+   "created": "2026-10-16",
+   "type": "event",
+   "text": "The Trump administration may ease sanctions on tankers that carried Russian, Iranian or Venezuelan oil, Reuters reported, to relieve record freight rates squeezing Gulf and US crude exports.",
+   "url": "https://strategicenergymap.org/events/#2026-10-16-trump-shadow-fleet-sanctions-relief",
+   "event_id": "2026-10-16-trump-shadow-fleet-sanctions-relief",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Russia",
+    "Commodities"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-16-explainer-east-west-pipeline",
+   "created": "2026-10-16",
+   "type": "explainer",
+   "text": "Saudi Arabia's East-West Pipeline runs about 1,200 km from Abqaiq to Yanbu on the Red Sea, bypassing Hormuz entirely. Capacity: 7 million b/d. Aramco is now in talks to formalize long-term shuttle contracts on it.",
+   "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Pipelines",
+    "SaudiArabia"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,8 +1,47 @@
 {
- "updated": "2026-10-15",
- "situation_headline": "Houthi missiles and drones hit Aramco's Dhahran headquarters overnight 13 October, keeping Riyadh's airport shut through 17 October; two more ships sank in the Strait of Hormuz and Brent eased to $104.63.",
+ "updated": "2026-10-16",
+ "situation_headline": "CENTCOM said on 15 October the US and partners control the Strait of Hormuz, even as JMIC counted US-facilitated transits at about a fifth of the pre-war rate; drones hit two more tankers off Romania's Black Sea coast, leaving 7 missing, and Brent held near $106.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-16-romania-black-sea-tanker-drones",
+   "date": "2026-10-15",
+   "title": "Drones hit two tankers off Romania's Black Sea coast; 7 missing from Wine Trader",
+   "summary": "Drones struck the tankers Wine Trader (San Marino-flagged) and Yara J (Comoros-flagged) near the mouth of the Danube's Sulina Canal on 15 October, Reuters reported. Five of Wine Trader's 12 crew were rescued and 7 remain missing; Yara J's crew was reported safe. Romanian President Nicusor Dan said the ships were hit by drones but did not say who was responsible; an unnamed NATO military source told Reuters the drones were of Russian origin (reported, single source, not independently confirmed). NATO also reported the bulk carrier Sea Destiny was targeted in Romanian waters and the tanker Dania J at Ukraine's Danube port of Izmail. It is the latest in a string of attacks on shipping near Romania and Bulgaria over the past 10 days, in which Reuters said at least 23 sailors have been reported missing or dead across at least five other vessels.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    45.0,
+    29.85
+   ],
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Two Ships Ablaze off Romanian Black Sea Coast, 7 Sailors Missing",
+     "url": "https://gcaptain.com/two-ships-ablaze-off-romanian-black-sea-coast-7-sailors-missing/",
+     "date": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-16-trump-shadow-fleet-sanctions-relief",
+   "date": "2026-10-14",
+   "title": "Trump administration weighs easing shadow-fleet tanker sanctions as freight rates soar",
+   "summary": "The Trump administration is discussing letting tankers already sanctioned for carrying Russian, Iranian or Venezuelan oil carry non-sanctioned cargo instead, Reuters reported, as record tanker freight rates squeeze exports from the Gulf and the US. Energy Secretary Chris Wright said high freight costs were cutting into demand for US crude; the move follows Trump's temporary lifting of sanctions on Russian diesel exports, which Ukrainian President Volodymyr Zelenskiy, European governments and some Republican senators criticized as a boost to Moscow's war financing. Research group Energy Aspects said easing the shadow-fleet sanctions would add only a few vessels for Strait of Hormuz shuttle runs and is unlikely to broadly cut rates, since insurers remain bound by EU and UK restrictions.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Trump Weighs Lifting Shadow Fleet Sanctions as Tanker Rates Soar",
+     "url": "https://gcaptain.com/trump-weighs-lifting-shadow-fleet-sanctions-as-tanker-rates-soar/",
+     "date": "2026-10-15"
+    }
+   ]
+  },
   {
    "id": "2026-10-14-houthi-strike-aramco-dhahran-hq",
    "date": "2026-10-13",

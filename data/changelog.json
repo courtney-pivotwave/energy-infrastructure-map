@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-16",
+   "kind": "data",
+   "headline": "US military claims control of Hormuz; drones hit two more tankers off Romania",
+   "changes": [
+    "US Central Command said the US and regional partners control the Strait of Hormuz, citing over 40 commercial transits in 24 hours; independent tracking (JMIC) put US-facilitated transits at only about 30 a day over Oct 11-14, roughly a fifth of the pre-war rate",
+    "The IMO put the confirmed toll in the strait since the war began at 113 incidents and at least 24 seafarer deaths as of Oct 14; JMIC separately logged 149 confirmed vessel incidents region-wide since March 1",
+    "Drones hit the tankers Wine Trader and Yara J off Romania's Black Sea coast on Oct 15; 7 of Wine Trader's crew are missing, and an unnamed NATO source said the drones were Russian-made",
+    "The Trump administration is weighing easing sanctions on 'shadow fleet' tankers that have carried Russian, Iranian or Venezuelan oil, to relieve record freight rates squeezing Gulf and US crude exports",
+    "Brent rose to about $105.91/bbl and TTF gas hit a fresh 2026 high near €87.80/MWh"
+   ]
+  },
+  {
    "date": "2026-10-15",
    "kind": "data",
    "headline": "Houthi strike hits Aramco's Dhahran HQ; two more ships sink in the Strait of Hormuz",

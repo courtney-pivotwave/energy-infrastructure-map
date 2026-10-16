@@ -867,6 +867,21 @@
     "at": "2026-10-16T15:22:59.635Z",
     "media": "locator-card"
    }
+  },
+  "2026-10-16-trump-shadow-fleet-sanctions": {
+   "x": {
+    "id": "2111178834066518438",
+    "at": "2026-10-16T19:33:52.649Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxzcze4p6w2a",
+    "cid": "bafyreifx4blnwcjxjmu6yx75ccxei34xca4w35773asvsq2gz5rxlcgjiq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mxzcze4p6w2a",
+     "cid": "bafyreifx4blnwcjxjmu6yx75ccxei34xca4w35773asvsq2gz5rxlcgjiq"
+    },
+    "at": "2026-10-16T19:33:54.287Z"
+   }
   }
  }
 }

@@ -931,6 +931,21 @@
     },
     "at": "2026-10-17T14:13:20.928Z"
    }
+  },
+  "2026-10-17-vlcc-rates-ease-record-highs": {
+   "x": {
+    "id": "2111505860497432961",
+    "at": "2026-10-17T17:13:21.816Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3my3lmzecww2d",
+    "cid": "bafyreigkurcgvhod4vkuyrjb4fsv5hesetnyjt2djm6qxoj2o45yhw3ssy",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3my3lmzecww2d",
+     "cid": "bafyreigkurcgvhod4vkuyrjb4fsv5hesetnyjt2djm6qxoj2o45yhw3ssy"
+    },
+    "at": "2026-10-17T17:13:23.500Z"
+   }
   }
  }
 }

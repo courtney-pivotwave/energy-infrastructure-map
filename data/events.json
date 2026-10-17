@@ -1,8 +1,85 @@
 {
- "updated": "2026-10-16",
- "situation_headline": "CENTCOM said on 15 October the US and partners control the Strait of Hormuz, even as JMIC counted US-facilitated transits at about a fifth of the pre-war rate; drones hit two more tankers off Romania's Black Sea coast, leaving 7 missing, and Brent held near $106.",
+ "updated": "2026-10-17",
+ "situation_headline": "UKMTO: most Hormuz-area attacks go unreported, with only 42 AIS transits in a week against the US's claimed 400. New tracking shows Iran moving LPG and jet fuel past the blockade since July. Brent jumped to about $110 as the IEA sped up emergency releases.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-17-ukmto-hormuz-attacks-underreported",
+   "date": "2026-10-16",
+   "title": "UKMTO: most Hormuz-area tanker attacks go unreported; US and independent transit counts diverge sharply",
+   "summary": "UKMTO's weekly overview, published 16 October, said most vessels struck in the Hormuz region are not reporting incidents to it and that it knows of additional incidents from other sources it cannot yet verify. In its latest reporting period UKMTO logged 12 attacks (10 in the strait, one in the Arabian Gulf, one in the Gulf of Oman); six ships continued their voyage, two were disabled, and the Singapore-flagged containership GFS Pride was lost. Since 6 July, 55 of 74 documented projectile strikes have hit the southern route through the strait. UKMTO counted 254 transits (129 inbound, 125 outbound) in the seven days to 14 October, down from 275 the week before and about 70% below pre-war levels, but only 42 of those were seen directly via AIS; the other 212 came from US-reported 'facilitated' transits that UKMTO said it cannot independently verify. CENTCOM commander Adm. Brad Cooper said separately on 16 October that about 400 merchant ships transited in the prior seven days and that US forces had helped move more than 100 million barrels of crude in that period (CENTCOM claim, unverified) — a figure UKMTO's own count cannot confirm. Iran's army chief, Maj. Gen. Amir Hatami, said on 15 October the strait would stay closed until Iran's rights were respected (Iranian claim, unverified).",
+   "category": "shipping",
+   "severity": "high",
+   "coords": [
+    26.57,
+    56.25
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Fog of War Deepens in Hormuz as UKMTO Says Most Ship Attacks Go Unreported",
+     "url": "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ukmto-says-most-ship-attacks-go-unreported/",
+     "date": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-iea-accelerates-emergency-release",
+   "date": "2026-10-15",
+   "title": "IEA speeds up roughly 100 million barrels of emergency releases, including over 20 million of diesel",
+   "summary": "The IEA's Governing Board agreed on 15 October to accelerate emergency stock releases, including more than 20 million barrels of diesel to be made available 'as soon as possible,' citing the prolonged Strait of Hormuz crisis, diesel shortages and renewed attacks on shipping. Member countries have already released about 330 million of the record 400 million barrels pledged in March, and the board expects the final total to exceed 400 million as some members release more than pledged. The IEA's October Oil Market Report, published the same week, found disruptions cut Middle Eastern refined-product exports to 1.9 million b/d in September from 4.7 million before the war, removing about 1.3 million b/d of diesel and gasoil exports year on year, with observed oil stocks 509 million barrels below pre-war levels; the agency said the diesel shortage could last into 2027 and urged producers with spare refining capacity to raise output.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — IEA Moves to Accelerate Oil Reserve Releases as Hormuz Crisis Drags On",
+     "url": "https://gcaptain.com/iea-moves-to-accelerate-oil-reserve-releases-as-hormuz-crisis-drags-on/",
+     "date": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-iran-evades-blockade-lpg-jet-fuel",
+   "date": "2026-10-16",
+   "title": "Tracking data show Iran shipping LPG and jet fuel past the US blockade since July",
+   "summary": "Reuters reported the first documented cases of Iran moving LPG and jet fuel cargoes past the US naval blockade (imposed 13 April, lifted in June, reimposed 14 July). Tracking group United Against Nuclear Iran counted at least eight gas tankers carrying roughly 4.1 million barrels of Iranian LPG out of the Gulf of Oman since mid-July, some transferring cargo near Shinas and Sohar, Oman; satellite analysis from SynMax showed one tanker carrying Iranian jet fuel reaching Myanmar in September. Six of the eight LPG tankers and the jet fuel tanker are under US sanctions, and most LPG cargoes moved on to Malaysia for further ship-to-ship transfers, likely bound for China, per UANI. Iranian crude exports fell to zero in September, the first such month since Kpler began tracking Iran in 2013. CENTCOM said the blockade is 'ironclad,' reporting that over three months it disabled four vessels and turned back 135; a US Treasury spokesperson said the shipping data 'should be taken with a grain of salt' since vessels can spoof location or identity.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Iran Ships Some LPG, Jet Fuel Despite US Blockade, Data Shows",
+     "url": "https://gcaptain.com/iran-ships-some-lpg-jet-fuel-despite-us-blockade-data-shows/",
+     "date": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-17-vlcc-rates-ease-record-highs",
+   "date": "2026-10-16",
+   "title": "Gulf-to-China VLCC freight rates ease about 8% from record highs",
+   "summary": "Baltic Exchange data showed VLCC freight rates on the Gulf of Oman-to-China route fell to about 776 Worldscale in the week to 16 October, down roughly 8% from about 841 the week before — the highest since the route launched this year — but still close to record levels. Kpler analyst Matthew Wright said demand on the route softened after fresh Middle East attacks and amid higher Middle East Gulf freight rates and lower export volumes. Reuters reported that Trump administration comments about possibly easing sanctions on some shadow-fleet tankers also weighed on rates, a move Sparta Commodities analyst Michael Ryan said would add ships able to carry oil. Ship-to-ship transfers used to move oil out of the Strait of Hormuz have driven up tanker demand through the war; rates also eased from record highs on other routes such as West Africa to Asia.",
+   "category": "market",
+   "severity": "low",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Supertanker Rates Fall from Record Highs",
+     "url": "https://gcaptain.com/supertanker-rates-fall-from-record-highs/",
+     "date": "2026-10-16"
+    }
+   ]
+  },
   {
    "id": "2026-10-16-romania-black-sea-tanker-drones",
    "date": "2026-10-15",

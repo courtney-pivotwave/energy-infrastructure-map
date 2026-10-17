@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-17",
+   "kind": "data",
+   "headline": "UKMTO says most Hormuz tanker attacks go unreported; Iran evaded the blockade with LPG and jet fuel",
+   "changes": [
+    "UKMTO's weekly overview said most ships struck near Hormuz don't report the attack to it, and counted only 42 AIS-tracked transits in the week to Oct 14 against the US military's claim of about 400",
+    "Reuters tracking data showed Iran has moved at least 4.1 million barrels of LPG and one jet-fuel cargo past the US naval blockade since mid-July, even as its crude exports hit zero in September for the first time since 2013",
+    "The IEA agreed to speed up roughly 100 million barrels of emergency oil releases, including over 20 million barrels of diesel, as the diesel shortage from the war risks lasting into 2027",
+    "Gulf-to-China supertanker freight rates eased about 8% from record highs as Middle East demand cooled",
+    "Brent rose to about $109.86/bbl and WTI to about $101.41/bbl"
+   ]
+  },
+  {
    "date": "2026-10-16",
    "kind": "data",
    "headline": "US military claims control of Hormuz; drones hit two more tankers off Romania",

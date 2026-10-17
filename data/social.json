@@ -901,6 +901,65 @@
     "SaudiArabia"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-17-digest",
+   "created": "2026-10-17",
+   "type": "digest",
+   "text": "UKMTO says most Hormuz-area attacks go unreported, counting only 42 AIS-tracked transits this week against the US's claimed 400. New data show Iran shipping LPG and jet fuel past the blockade since July. Brent is near $110/bbl, up from $106 yesterday.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Iran"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-17-iea-accelerates-emergency-release",
+   "created": "2026-10-17",
+   "type": "event",
+   "text": "The IEA agreed to speed up about 100 million barrels of emergency releases, including over 20 million barrels of diesel, citing the Hormuz crisis and a shortage it warned could last into 2027.",
+   "url": "https://strategicenergymap.org/events/#2026-10-17-iea-accelerates-emergency-release",
+   "event_id": "2026-10-17-iea-accelerates-emergency-release",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SPR",
+    "Diesel"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-17-vlcc-rates-ease-record-highs",
+   "created": "2026-10-17",
+   "type": "event",
+   "text": "Gulf-to-China supertanker rates eased about 8% week on week to 776 Worldscale, down from a record 841, as Middle East demand cooled after fresh attacks. Rates stay near record highs.",
+   "url": "https://strategicenergymap.org/events/#2026-10-17-vlcc-rates-ease-record-highs",
+   "event_id": "2026-10-17-vlcc-rates-ease-record-highs",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "Shipping"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-17-explainer-abqaiq",
+   "created": "2026-10-17",
+   "type": "explainer",
+   "text": "Aramco's Abqaiq plant stabilizes most Eastern Province crude before export, with about 7 million bpd of capacity. A 2019 drone strike once knocked it offline, cutting roughly 5% of global oil supply.",
+   "url": "https://strategicenergymap.org/facilities/abqaiq-processing-plant/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

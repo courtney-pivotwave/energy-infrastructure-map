@@ -980,6 +980,21 @@
     "at": "2026-10-18T10:48:30.073Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-18-vitol-fuel-oil-shortage": {
+   "x": {
+    "id": "2111828566212300965",
+    "at": "2026-10-18T14:35:40.853Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3my5tbyorvf2x",
+    "cid": "bafyreig6am6y2m7zoiubmn3tc5yd3lw3wkfc5rninvovmhorx3naib6jb4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3my5tbyorvf2x",
+     "cid": "bafyreig6am6y2m7zoiubmn3tc5yd3lw3wkfc5rninvovmhorx3naib6jb4"
+    },
+    "at": "2026-10-18T14:35:43.105Z"
+   }
   }
  }
 }

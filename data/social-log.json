@@ -995,6 +995,23 @@
     },
     "at": "2026-10-18T14:35:43.105Z"
    }
+  },
+  "2026-10-18-explainer-ras-al-juaymah": {
+   "x": {
+    "id": "2111881787420840365",
+    "at": "2026-10-18T18:07:09.874Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3my6744p6wp2u",
+    "cid": "bafyreigzekuumtmhqlnhumkccwnhpgcoz6zkxe7cgtydiv43z3ytz2imhe",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3my6744p6wp2u",
+     "cid": "bafyreigzekuumtmhqlnhumkccwnhpgcoz6zkxe7cgtydiv43z3ytz2imhe"
+    },
+    "at": "2026-10-18T18:07:11.417Z",
+    "media": "asset-card"
+   }
   }
  }
 }

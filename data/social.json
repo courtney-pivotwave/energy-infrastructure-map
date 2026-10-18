@@ -960,6 +960,49 @@
     "MaritimeSecurity"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-18-digest",
+   "created": "2026-10-18",
+   "type": "digest",
+   "text": "Two tankers were struck northeast of Saudi Arabia's al-Jubail on Oct 16, outside Hormuz, UKMTO said; Iran separately claimed the ships hit mines (unverified). Brent held near $110/bbl over the weekend, up from $72.48 pre-crisis.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Tankers",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-18-vitol-fuel-oil-shortage",
+   "created": "2026-10-18",
+   "type": "event",
+   "text": "Vitol's Asia head said rising Hormuz crude flows won't fix a ship-fuel-oil shortage (reported). Gulf fuel-oil exports are down ~800,000 tons/month; Singapore bunker prices hit their highest since April.",
+   "url": "https://strategicenergymap.org/events/#2026-10-18-vitol-fuel-oil-shortage",
+   "event_id": "2026-10-18-vitol-fuel-oil-shortage",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Shipping",
+    "Refining"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-18-explainer-ras-al-juaymah",
+   "created": "2026-10-18",
+   "type": "explainer",
+   "text": "Saudi Arabia's Ras al-Ju'aymah terminal took a surge in crude loadings after the Sep 10 pipeline attack: tankers loaded ~12 million barrels there Sep 21. It's Aramco's main LPG point, halted since Feb 23.",
+   "url": "https://strategicenergymap.org/facilities/ras-al-juaymah-terminal/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "Commodities"
+   ],
+   "reply_to": null
   }
  ]
 }

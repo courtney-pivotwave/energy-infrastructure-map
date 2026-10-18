@@ -1,8 +1,52 @@
 {
- "updated": "2026-10-17",
- "situation_headline": "UKMTO: most Hormuz-area attacks go unreported, with only 42 AIS transits in a week against the US's claimed 400. New tracking shows Iran moving LPG and jet fuel past the blockade since July. Brent jumped to about $110 as the IEA sped up emergency releases.",
+ "updated": "2026-10-18",
+ "situation_headline": "UKMTO documented new tanker attacks off Saudi Arabia's al-Jubail on Oct 16, outside the strait, as Iran separately claimed two tankers hit mines (unverified); Vitol warned a global ship-fuel-oil shortage will persist despite rising Hormuz crude flows. Brent held near $110 over the weekend.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-18-al-jubail-tanker-attacks",
+   "date": "2026-10-16",
+   "title": "Two tankers struck off Saudi Arabia's al-Jubail; Iran claims mines, UKMTO reports projectile and RPG hits",
+   "summary": "UKMTO reported that two tankers were struck roughly 68 and 78 nautical miles northeast of al-Jubail, Saudi Arabia on 16 October, outside the Strait of Hormuz: an unknown projectile hit the first vessel, and a small boat, likely an Iranian fast-attack craft, fired a rocket-propelled grenade at the second. ISW/CTP assessed the IRGC Navy was likely responsible, consistent with Iran's pattern of striking vessels using routes it has not authorized. Iran's Revolutionary Guards and state media separately said the two tankers, each carrying about 2 million barrels of crude, caught fire after hitting naval mines while on an unauthorized route with navigation systems off (Iranian claim, unverified; Reuters said there was no independent confirmation).",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    27.87,
+    50.6
+   ],
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "ISW/Critical Threats Project — Iran Update, October 17, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-17-2026",
+     "date": "2026-10-17"
+    },
+    {
+     "name": "Reuters via gCaptain — Iran's Guards Say Two Tankers Hit Mines in Strait of Hormuz",
+     "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/",
+     "date": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-18-vitol-fuel-oil-shortage",
+   "date": "2026-10-16",
+   "title": "Vitol: ship-fuel oil shortage will persist despite rising Hormuz crude flows",
+   "summary": "Vitol's Asia head Kieran Gallagher told the Sibcon conference in Singapore on 16 October that rising crude flows through the Strait of Hormuz will not fix a shortage of high-sulfur fuel oil (HSFO) used to power ships, Bloomberg reported. Singapore bunker prices hit their highest level since April as Gulf fuel-oil exports, including from Iran, fell by about 800,000 tons a month and Ukrainian strikes on Russian refineries cut a further 1 million tons a month; refiners are prioritizing higher-margin diesel, and North Asian refiners plan to divert more than 1 million tons of HSFO to feedstock use in November instead of ship fuel.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Bloomberg via gCaptain — Ship-Fuel Crunch to Persist Despite More Oil, Vitol Says",
+     "url": "https://gcaptain.com/ship-fuel-crunch-to-persist-despite-more-oil-vitol-says/",
+     "date": "2026-10-16"
+    }
+   ]
+  },
   {
    "id": "2026-10-17-ukmto-hormuz-attacks-underreported",
    "date": "2026-10-16",
@@ -227,7 +271,7 @@
      "url": "https://gcaptain.com/bulgaria-points-to-russia-as-drones-hit-more-cargo-ships/",
      "date": "2026-10-13"
     }
-    ]
+   ]
   },
   {
    "id": "2026-10-14-trump-russia-diesel-release-deal",

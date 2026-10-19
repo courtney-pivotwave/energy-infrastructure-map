@@ -1029,6 +1029,21 @@
     "at": "2026-10-19T10:51:11.145Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-19-turkey-diesel": {
+   "x": {
+    "id": "2112234584783847902",
+    "at": "2026-10-19T17:29:03.253Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myangwe66z2u",
+    "cid": "bafyreiann4n2kiefjwrc2lva4gtpn3cdvphhjtrqloiwibo7aji2eqyyci",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myangwe66z2u",
+     "cid": "bafyreiann4n2kiefjwrc2lva4gtpn3cdvphhjtrqloiwibo7aji2eqyyci"
+    },
+    "at": "2026-10-19T17:29:05.176Z"
+   }
   }
  }
 }

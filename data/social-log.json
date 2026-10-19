@@ -1044,6 +1044,21 @@
     },
     "at": "2026-10-19T17:29:05.176Z"
    }
+  },
+  "2026-10-19-romania-drones": {
+   "x": {
+    "id": "2112308391104393679",
+    "at": "2026-10-19T22:22:20.026Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myb5tdqv2w2u",
+    "cid": "bafyreiamvecpu5qjl47fendlwr25tz3t7shwpk24lak5jagejxaev4xyqq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myb5tdqv2w2u",
+     "cid": "bafyreiamvecpu5qjl47fendlwr25tz3t7shwpk24lak5jagejxaev4xyqq"
+    },
+    "at": "2026-10-19T22:22:21.758Z"
+   }
   }
  }
 }

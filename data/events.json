@@ -1,8 +1,80 @@
 {
- "updated": "2026-10-18",
- "situation_headline": "UKMTO documented new tanker attacks off Saudi Arabia's al-Jubail on Oct 16, outside the strait, as Iran separately claimed two tankers hit mines (unverified); Vitol warned a global ship-fuel-oil shortage will persist despite rising Hormuz crude flows. Brent held near $110 over the weekend.",
+ "updated": "2026-10-19",
+ "situation_headline": "Iran's Guards claimed two more tankers hit mines in the strait itself on Oct 17 (unverified); Iran reiterated its offer to reopen Hormuz within 7 days and Turkey confirmed it will take diesel under the Russia-US supply deal. Brent eased to about $108 as TTF gas hit a fresh 2026 high.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-19-turkey-diesel",
+   "date": "2026-10-18",
+   "title": "Turkey to take diesel under the Russia-US supply deal",
+   "summary": "Turkish Energy Minister Alparslan Bayraktar said Ankara will take some of the diesel Russia is supplying to global markets under the deal President Trump struck with Vladimir Putin, calling it important for Turkey's energy security after Russia curtailed exports. Volumes and timing weren't disclosed. Ukraine and some US and European officials have criticized the broader Trump-Putin diesel arrangement.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Turkey Will Get Some Diesel From US-Russia Supply Deal",
+     "url": "https://gcaptain.com/turkey-will-get-some-diesel-from-us-russia-supply-deal/",
+     "date": "2026-10-18"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-iran-reiterates-hormuz-reopening-offer",
+   "date": "2026-10-18",
+   "title": "Iran says its offer to reopen Hormuz within seven days still stands",
+   "summary": "Foreign Minister Abbas Araghchi said Iran's proposal to reopen the Strait of Hormuz within seven days of a US acceptance, first made in mid-September, remains open. Iran's conditions include lifting the US blockade of its ports, lifting US sanctions on its oil exports, and ending hostilities on other regional fronts. The US has responded through Qatari mediators; the two sides remain stuck on Washington's demand that Iran also address its nuclear program.",
+   "category": "diplomatic",
+   "severity": "low",
+   "coords": null,
+   "assets": ["strait-of-hormuz"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Iran Urges US To Accept Proposal To Reopen Strait Of Hormuz",
+     "url": "https://gcaptain.com/iran-urges-us-to-accept-proposal-to-reopen-strait-of-hormuz/",
+     "date": "2026-10-18"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-romania-drones",
+   "date": "2026-10-17",
+   "title": "Romanian F-16s shoot down two drones over Black Sea territorial waters",
+   "summary": "Romania's defense ministry said F-16 fighter jets shot down two drones that entered the country's Black Sea territorial waters on 17 October; it did not say who operated them. The incident came days after drones struck two chemical tankers anchored near the Sulina Canal, Ukraine's Danube export route, leaving seven crew still missing; a NATO military source told Reuters the earlier strikes involved Russian drones.",
+   "category": "military",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Romanian Fighter Jets Shoot Down Two Drones Over Territorial Waters",
+     "url": "https://gcaptain.com/romanian-fighter-jets-shoot-down-two-drones-over-territorial-waters/",
+     "date": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-iran-two-tankers-mines-hormuz",
+   "date": "2026-10-17",
+   "title": "Iran's Revolutionary Guards say two more tankers hit mines in the Strait of Hormuz",
+   "summary": "Iran's Revolutionary Guards Navy said two oil tankers, each carrying about 2 million barrels of crude, caught fire after hitting naval mines while crossing the strait; state media said both had switched off tracking and were on a route Iran hadn't authorized. Reuters reported there was no independent confirmation of the claim (Iranian claim, unverified).",
+   "category": "military",
+   "severity": "medium",
+   "coords": null,
+   "assets": ["strait-of-hormuz"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Iran's Guards Say Two Tankers Hit Mines In Strait Of Hormuz",
+     "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/",
+     "date": "2026-10-17"
+    }
+   ]
+  },
   {
    "id": "2026-10-18-al-jubail-tanker-attacks",
    "date": "2026-10-16",

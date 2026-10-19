@@ -1003,6 +1003,64 @@
     "Commodities"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-19-digest",
+   "created": "2026-10-19",
+   "type": "digest",
+   "text": "Iran repeated its offer to reopen Hormuz within 7 days if the US meets its conditions; Turkey said it will take diesel under the Russia-US deal. Brent eased to $108/bbl while EU gas (TTF) hit a fresh 2026 high of €89.56/MWh.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-19-turkey-diesel",
+   "created": "2026-10-19",
+   "type": "event",
+   "text": "Turkey will take some of the diesel Russia is supplying under the Trump-Putin deal, Energy Minister Alparslan Bayraktar said, calling it important for Turkey's energy security after Russia curtailed exports.",
+   "url": "https://strategicenergymap.org/events/#2026-10-19-turkey-diesel",
+   "event_id": "2026-10-19-turkey-diesel",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Turkey",
+    "Diesel"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-19-romania-drones",
+   "created": "2026-10-19",
+   "type": "event",
+   "text": "Romanian F-16s shot down two drones over Black Sea waters on Oct 17, days after drone strikes hit two tankers near Ukraine's Sulina Canal, leaving seven crew still missing.",
+   "url": "https://strategicenergymap.org/events/#2026-10-19-romania-drones",
+   "event_id": "2026-10-19-romania-drones",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "BlackSea",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-19-explainer-strait-of-hormuz",
+   "created": "2026-10-19",
+   "type": "explainer",
+   "text": "Hormuz is only ~21 km wide at its narrowest and normally carries about a fifth of world oil, near 20 million b/d. Closed since February; PortWatch tanker transits are down ~99% from pre-crisis levels.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,23 +1,23 @@
 {
- "as_of": "2026-10-17",
+ "as_of": "2026-10-19",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 109.86,
-   "week_ago": 105.91,
+   "value": 108.14,
+   "week_ago": 105.60,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Jumped to about $109.86 on 17 Oct (Trading Economics), up roughly 3.7% on the day, after UKMTO said most Hormuz-area tanker attacks go unreported and counted far fewer AIS-tracked transits than the US claims, and the IEA moved to accelerate emergency releases. Week-ago is the 16 Oct value from this site's own prior run.",
+   "note": "Eased to about $108.14 on 19 Oct (Trading Economics), down roughly 1.6% on the day, as Iran reiterated its offer to reopen the strait within seven days and Turkey said it will take some diesel under the Russia-US supply deal. Week-ago is this site's 12 Oct reading, exactly 7 days earlier.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-17"
+    "date": "2026-10-19"
    },
    "extra_sources": [
     {
@@ -36,19 +36,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 101.41,
-   "week_ago": 97.70,
+   "value": 101.14,
+   "week_ago": 92.64,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Rose to about $101.41 on 17 Oct (Trading Economics), up roughly 3.5% on the day, tracking Brent higher on the same Hormuz and IEA news. Week-ago is the 16 Oct value from this site's own prior run.",
+   "note": "Little changed at about $101.14 on 19 Oct (Trading Economics), down roughly 0.3% on the day. Week-ago is this site's 12 Oct reading, exactly 7 days earlier.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-17"
+    "date": "2026-10-19"
    },
    "extra_sources": [
     {
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 87.55,
-   "week_ago": 87.80,
+   "value": 89.56,
+   "week_ago": 82.88,
    "pre_crisis": 32.0,
    "peak": {
-    "value": 87.80,
-    "date": "2026-10-16",
-    "note": "New 2026 high, surpassing the prior 85.86 set 13 Oct (Trading Economics)."
+    "value": 89.56,
+    "date": "2026-10-19",
+    "note": "New 2026 high, surpassing the prior 87.80 set 16 Oct (Trading Economics)."
    },
-   "note": "Eased slightly to about €87.55 on 17 Oct (Trading Economics) after setting a fresh 2026 high the day before, still near record levels. Week-ago is the 16 Oct value from this site's own prior run. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Rose to a fresh 2026 high of about €89.56 on 19 Oct (Trading Economics), up roughly 2.3% on the day. Week-ago is this site's 12 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-17"
+    "date": "2026-10-19"
    },
    "extra_sources": [
     {
@@ -94,14 +94,14 @@
    "label": "JKM LNG",
    "unit": "$/MMBtu",
    "value": 29.93,
-   "week_ago": 26.53,
+   "week_ago": 25.96,
    "pre_crisis": 10.75,
    "peak": {
     "value": null,
     "date": "2026-09-14",
     "note": "Assessed at 'high-USD 29s', the highest in about 2.5 years (Global LNG Hub)."
    },
-   "note": "Jumped about 13% to $29.93 on Trading Economics' 16 Oct read, the sharpest daily move on the site this week; no specific driver was found in available reporting, so treat the size of the move with caution. Week-ago reuses this site's own prior run value. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Still $29.93 on Trading Economics as of 19 Oct; the site's JKM read hasn't moved since 16 Oct, so treat it as unchanged rather than newly confirmed. Week-ago is this site's 9 Oct reading, 7 days before that 16 Oct print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.12,
-   "week_ago": 3.18,
+   "value": 3.15,
+   "week_ago": 3.15,
    "pre_crisis": 2.99,
-   "note": "Eased to about $3.12 on 17 Oct (Trading Economics); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Ticked up to about $3.15 on 19 Oct (Trading Economics); pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-17"
+    "date": "2026-10-19"
    },
    "extra_sources": [
     {
@@ -147,22 +147,22 @@
    ]
   }
  ],
- "note": "Brent and WTI jumped after UKMTO said most Hormuz-area tanker attacks go unreported, with only 42 AIS-tracked transits in a week against the US's claimed 400, and the IEA moved to speed up roughly 100 million barrels of emergency releases including over 20 million of diesel. TTF held near its fresh 2026 high and Henry Hub eased slightly. VLCC freight rates eased about 8% week on week from record highs as Middle East demand cooled and Washington weighed easing shadow-fleet tanker sanctions.",
+ "note": "Brent and WTI eased back on 19 Oct after Iran reiterated its offer to reopen the Strait of Hormuz within seven days and Turkey confirmed it will take some diesel under the Russia-US supply deal, though the strait remains effectively closed and Iran's Guards separately claimed two more tankers hit mines there (unverified). TTF set a fresh 2026 high and Henry Hub ticked up.",
  "note_sources": [
   {
-   "name": "gCaptain — Fog of War Deepens in Hormuz as UKMTO Says Most Ship Attacks Go Unreported",
-   "url": "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ukmto-says-most-ship-attacks-go-unreported/",
-   "date": "2026-10-16"
+   "name": "Reuters via gCaptain — Iran Urges US To Accept Proposal To Reopen Strait Of Hormuz",
+   "url": "https://gcaptain.com/iran-urges-us-to-accept-proposal-to-reopen-strait-of-hormuz/",
+   "date": "2026-10-18"
   },
   {
-   "name": "gCaptain — IEA Moves to Accelerate Oil Reserve Releases as Hormuz Crisis Drags On",
-   "url": "https://gcaptain.com/iea-moves-to-accelerate-oil-reserve-releases-as-hormuz-crisis-drags-on/",
-   "date": "2026-10-16"
+   "name": "Reuters via gCaptain — Turkey Will Get Some Diesel From US-Russia Supply Deal",
+   "url": "https://gcaptain.com/turkey-will-get-some-diesel-from-us-russia-supply-deal/",
+   "date": "2026-10-18"
   },
   {
-   "name": "gCaptain (Reuters) — Supertanker Rates Fall from Record Highs",
-   "url": "https://gcaptain.com/supertanker-rates-fall-from-record-highs/",
-   "date": "2026-10-16"
+   "name": "Reuters via gCaptain — Iran's Guards Say Two Tankers Hit Mines In Strait Of Hormuz",
+   "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/",
+   "date": "2026-10-17"
   }
  ]
 }

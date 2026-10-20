@@ -1576,8 +1576,21 @@
     49.3
    ],
    "size": 6,
-   "details": "Iran. Iran's largest oil export terminal. ~5 million bpd capacity. Handles ~90% of Iranian crude exports.",
-   "geo": null
+   "details": "Iran's primary crude oil export terminal since 1960, fed by subsea pipelines from the offshore Aboozar, Forouzan and Dorood fields; its jetties have historically handled about 90% of Iran's crude exports (NIOC). Loading capacity peaked at roughly 7 million b/d, though actual exports ran closer to 1.6 million b/d even before the current war (Al Jazeera). Crude storage is about 30 million barrels after a 2 million-barrel expansion in May 2025 (tanks 25 and 26). No tankers have loaded crude here since late August 2026, the longest idle stretch since the US blockade on Iranian shipping was reimposed on 14 July (Bloomberg).",
+   "geo": "A small island about 28 km (15 nautical miles) off Iran's southern coast and 55 km northwest of the port of Bushehr, Kharg covers about 22 sq km, roughly 8 km long and 4-5 km wide. Its deep-water terminal opened in August 1960 and overtook Abadan as Iran's main oil export point; it was heavily bombed during the 1980s Iran-Iraq war and rebuilt. China has been the leading buyer of Kharg-loaded crude. The US bombed military facilities on the island in March 2026 but has so far spared the oil terminal itself; President Trump said the US chose not to strike the oil infrastructure but would reconsider if shipping through the Strait of Hormuz were further disrupted.",
+   "verified": "2026-10-20",
+   "capacity": {
+    "value": 7,
+    "unit": "mb/d",
+    "basis": "nameplate",
+    "source": {
+     "name": "Al Jazeera — 'The orphan pearl': Inside Kharg, the beating heart of Iran's oil empire",
+     "url": "https://www.aljazeera.com/features/2026/3/11/the-orphan-pearl-inside-kharg-the-beating-heart-of-irans-oil-empire",
+     "date": "2026-03-14"
+    },
+    "as_of": "2026-03-14",
+    "note": "Historical maximum loading capacity; actual exports ran well below it even before the war. Global Energy Monitor has no tracker page for this terminal. Throughput has been near zero since the US blockade was reimposed 14 Jul 2026."
+   }
   },
   {
    "id": "kozmino-bay",
@@ -2137,9 +2150,9 @@
     12.6,
     43.3
    ],
-   "details": "Connects Red Sea to Gulf of Aden. ~29 km wide. ~4.2 million bpd of oil in the first half of 2025, down from 9.3 million in 2023 (EIA). Gateway to/from Suez Canal from the south. Houthi attacks since late 2023 have forced major rerouting around Cape of Good Hope.",
+   "details": "Connects Red Sea to Gulf of Aden. ~29 km wide. EIA's Short-Term Energy Outlook (Aug 2026 edition, published Oct 6) put total oil flow at 8.1 million b/d in Q2 2026 (6.1 million b/d crude and condensate), up sharply from 4.2 million b/d in 1H 2025 and above the 9.3 million b/d seen in 2023, as Saudi Arabia and other Gulf exporters shifted cargoes to Red Sea ports to bypass the Strait of Hormuz blockade. Gateway to/from Suez Canal from the south. Houthi attacks since late 2023 have forced major rerouting around the Cape of Good Hope, though some LNG and container traffic has resumed using it as the Hormuz disruption persists.",
    "geo": "The Houthi campaign against Red Sea shipping (beginning Nov 2023, citing solidarity with Gaza) has demonstrated how a non-state actor with relatively low-cost anti-ship missiles and drones can disrupt a critical global trade artery. The US-UK Operation Prosperity Guardian has conducted strikes against Houthi positions but has not stopped attacks. Major container lines (Maersk, MSC, Hapag-Lloyd) rerouted around Africa. Insurance premiums for Red Sea transit spiked 10x. Djibouti, on the strait's western shore, hosts military bases from the US, China, France, Japan, and Italy — making it the most concentrated point of great-power military presence globally. The strait's vulnerability has accelerated interest in rail and pipeline alternatives.",
-   "verified": "2026-10-10"
+   "verified": "2026-10-20"
   },
   {
    "id": "strait-of-malacca",

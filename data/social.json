@@ -1075,6 +1075,20 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-20-explainer-kharg-island",
+   "created": "2026-10-20",
+   "type": "explainer",
+   "text": "Kharg Island is Iran's main oil export terminal, handling ~90% of its crude exports. Loading capacity once reached 7 million b/d; no tankers have loaded crude since late August, the war's longest idle stretch yet.",
+   "url": "https://strategicenergymap.org/facilities/kharg-island/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "CrudeOil",
+    "Iran"
+   ],
+   "reply_to": null
   }
  ]
 }

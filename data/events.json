@@ -1,8 +1,91 @@
 {
- "updated": "2026-10-19",
- "situation_headline": "Iran's Guards claimed two more tankers hit mines in the strait itself on Oct 17 (unverified); Iran reiterated its offer to reopen Hormuz within 7 days and Turkey confirmed it will take diesel under the Russia-US supply deal. Brent eased to about $108 as TTF gas hit a fresh 2026 high.",
+ "updated": "2026-10-20",
+ "situation_headline": "Iran's oil terminals have sat idle since late August, the longest stretch of the war, as the US moves to let 'dark fleet' tankers rejoin legitimate trade; a tugboat was damaged near Khor Fakkan, UAE, and Brent rose to about $111.50.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-19-wright-dark-fleet-sanctions",
+   "date": "2026-10-19",
+   "title": "US to let sanctioned 'dark fleet' tankers rejoin legitimate oil trade",
+   "summary": "Energy Secretary Chris Wright said the US is running an approval process to let investors buy and refurbish sanctioned oil tankers so they can carry non-sanctioned crude, after Gulf-to-Asia freight rates surged to more than six times pre-war levels. Wright said the vessels \"will not carry sanctioned oil anymore\" and estimated up to 1,600 tankers sit in the global sanctioned fleet; he rejected characterizing the move as lifting sanctions. It follows an Oct 8 Treasury action designating 55 parties tied to Iran's remaining shadow fleet.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Bloomberg via gCaptain — U.S. to Allow Dark-Fleet Tankers to Shed Sanctions, Wright Says",
+     "url": "https://gcaptain.com/u-s-to-allow-dark-fleet-tankers-to-shed-sanctions-wright-says/",
+     "date": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-qatar-lng-red-sea",
+   "date": "2026-10-19",
+   "title": "Qatari LNG cargo takes rare Red Sea route as a tanker is fired on nearby",
+   "summary": "A Qatari LNG carrier loaded in August sailed north through the Red Sea, with ship-tracking data suggesting it was headed to Poland, Bloomberg reported — a route most LNG and container ships have avoided since 2023 in favor of the longer Cape of Good Hope detour. Separately, UKMTO reported a skiff fired on an LNG tanker southeast of Al Mukalla in the Gulf of Aden; the tanker's security team returned fire and the vessel continued its voyage. The cargo moved as European gas prices sit near a four-year high and EU storage is at its lowest for the season in over a decade.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    14.54,
+    49.12
+   ],
+   "assets": [
+    "ras-laffan-lng",
+    "bab-el-mandeb"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Bloomberg via gCaptain — Qatar LNG Cargo Makes Rare Red Sea Journey to Get Gas to Europe",
+     "url": "https://gcaptain.com/qatar-lng-cargo-makes-rare-red-sea-journey-to-get-gas-to-europe/",
+     "date": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-19-russia-arctic-oil-exports",
+   "date": "2026-10-19",
+   "title": "Russian Arctic oil exports to Asia already exceed last year's total",
+   "summary": "Russian crude shipments via the Northern Sea Route reached about 20 million barrels to Asian buyers from the start of the July-October navigation season through mid-October, up nearly 50% on the 13 million barrels shipped in all of 2025, Reuters reported, citing traders and shipping data. Gazprom Neft expects its own Northern Sea Route shipments to rise about 35% in 2026. Traders tied the increase partly to disruption in the Strait of Hormuz and Black Sea pushing some cargoes toward the Arctic route instead, alongside milder ice conditions.",
+   "category": "market",
+   "severity": "low",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters via gCaptain — Russian Oil Exports by Arctic Route Jump Amid World Freight Crisis",
+     "url": "https://gcaptain.com/russian-oil-exports-by-arctic-route-jump-amid-world-freight-crisis/",
+     "date": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-18-tugboat-khor-fakkan",
+   "date": "2026-10-18",
+   "title": "Tugboat damaged by projectiles northeast of Khor Fakkan, UAE",
+   "summary": "UKMTO reported two unknown projectiles struck a tugboat transiting the Strait of Hormuz northeast of Khor Fakkan on Oct 18, damaging the vessel and injuring one crew member; the tugboat continued on its route. The ISW/Critical Threats Project assessed Iran likely carried out the attack. Tugboats support the ship-to-ship transfers that Gulf shippers increasingly use to move cargo around Iran's claimed control of the strait.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    25.4,
+    56.45
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "ISW / Critical Threats Project — Iran Update, October 18, 2026 (citing UKMTO)",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-18-2026",
+     "date": "2026-10-18"
+    }
+   ]
+  },
   {
    "id": "2026-10-19-turkey-diesel",
    "date": "2026-10-18",
@@ -29,7 +112,9 @@
    "category": "diplomatic",
    "severity": "low",
    "coords": null,
-   "assets": ["strait-of-hormuz"],
+   "assets": [
+    "strait-of-hormuz"
+   ],
    "confidence": "confirmed",
    "sources": [
     {
@@ -65,7 +150,9 @@
    "category": "military",
    "severity": "medium",
    "coords": null,
-   "assets": ["strait-of-hormuz"],
+   "assets": [
+    "strait-of-hormuz"
+   ],
    "confidence": "unverified",
    "sources": [
     {

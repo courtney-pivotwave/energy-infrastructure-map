@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-20",
+   "kind": "data",
+   "headline": "Iran's oil terminals sit idle for a ninth week as the US eases 'dark fleet' tanker sanctions",
+   "changes": [
+    "Bloomberg reports no tankers have loaded at Kharg Island, Iran's main export terminal, since late August — the longest idle stretch of the war.",
+    "US Energy Secretary Chris Wright says the US will let investors buy and refurbish sanctioned tankers to carry non-sanctioned crude, easing record Gulf-to-Asia freight rates.",
+    "A tugboat was damaged by projectiles northeast of Khor Fakkan, UAE; UKMTO logged 25 ships targeted in and around the Strait of Hormuz in the first two weeks of October, up from 18 in September.",
+    "A Qatari LNG cargo took a rare Red Sea route toward Europe as a skiff fired on another LNG tanker in the Gulf of Aden.",
+    "Brent rose to about $111.50/bbl; Russian Arctic oil exports to Asia already exceed all of last year's total."
+   ]
+  },
+  {
    "date": "2026-10-19",
    "kind": "data",
    "headline": "Iran reiterates its Hormuz-reopening offer; Turkey to take diesel under the Russia-US deal",

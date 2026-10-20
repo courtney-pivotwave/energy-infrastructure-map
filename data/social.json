@@ -1061,6 +1061,20 @@
     "MaritimeSecurity"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-20-digest",
+   "created": "2026-10-20",
+   "type": "digest",
+   "text": "Iran's oil terminals have sat idle since late August, the longest stretch of the war, as the US eases sanctions on 'dark fleet' tankers. Brent rose to about $111.50/bbl; UKMTO logged 25 Hormuz-area ship attacks in early October, vs 18 in September.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Iran",
+    "OOTT"
+   ],
+   "reply_to": null
   }
  ]
 }

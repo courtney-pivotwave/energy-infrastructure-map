@@ -2,13 +2,13 @@
  "as_of": "2026-10-19",
  "pre_crisis_date": "2026-02-23",
  "fx": {
-  "date": "2026-10-19",
-  "usd_per_eur": 1.1225,
-  "usd_per_gbp": 1.333056231815213,
+  "date": "2026-10-20",
+  "usd_per_eur": 1.1215,
+  "usd_per_gbp": 1.3346741562336364,
   "source": {
    "name": "ECB euro reference rates",
    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
-   "date": "2026-10-19"
+   "date": "2026-10-20"
   }
  },
  "note": "Retail pump prices including taxes. US$/litre conversions use ECB reference rates. Taxes differ widely between countries, so much of the gap between them comes from policy rather than crude costs.",
@@ -23,12 +23,12 @@
    ],
    "currency": "USD",
    "unit": "$/gal",
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "petrol": {
-    "now": 4.331,
-    "week_ago": 4.354,
+    "now": 4.284,
+    "week_ago": 4.331,
     "pre_crisis": 2.937,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -265,14 +265,18 @@
      [
       "2026-10-12",
       4.331
+     ],
+     [
+      "2026-10-19",
+      4.284
      ]
     ]
    },
    "diesel": {
-    "now": 6.179,
-    "week_ago": 6.199,
+    "now": 6.276,
+    "week_ago": 6.179,
     "pre_crisis": 3.809,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -509,17 +513,21 @@
      [
       "2026-10-12",
       6.179
+     ],
+     [
+      "2026-10-19",
+      6.276
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.144,
-    "diesel": 1.632
+    "petrol": 1.132,
+    "diesel": 1.658
    },
    "source": {
     "name": "US EIA weekly retail gasoline and diesel prices",
     "url": "https://www.eia.gov/petroleum/gasdiesel/",
-    "date": "2026-10-12"
+    "date": "2026-10-19"
    },
    "feed": "eia"
   },
@@ -533,12 +541,12 @@
    ],
    "currency": "USD",
    "unit": "$/gal",
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "petrol": {
-    "now": 4.118,
-    "week_ago": 4.147,
+    "now": 4.064,
+    "week_ago": 4.118,
     "pre_crisis": 2.834,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -775,14 +783,18 @@
      [
       "2026-10-12",
       4.118
+     ],
+     [
+      "2026-10-19",
+      4.064
      ]
     ]
    },
    "diesel": {
-    "now": 5.908,
-    "week_ago": 5.951,
+    "now": 5.984,
+    "week_ago": 5.908,
     "pre_crisis": 3.843,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -1019,17 +1031,21 @@
      [
       "2026-10-12",
       5.908
+     ],
+     [
+      "2026-10-19",
+      5.984
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.088,
-    "diesel": 1.561
+    "petrol": 1.074,
+    "diesel": 1.581
    },
    "source": {
     "name": "US EIA weekly retail gasoline and diesel prices",
     "url": "https://www.eia.gov/petroleum/gasdiesel/",
-    "date": "2026-10-12"
+    "date": "2026-10-19"
    },
    "feed": "eia"
   },
@@ -1043,12 +1059,12 @@
    ],
    "currency": "USD",
    "unit": "$/gal",
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "petrol": {
     "now": 4.145,
-    "week_ago": 4.109,
+    "week_ago": 4.145,
     "pre_crisis": 2.675,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -1285,14 +1301,18 @@
      [
       "2026-10-12",
       4.145
+     ],
+     [
+      "2026-10-19",
+      4.145
      ]
     ]
    },
    "diesel": {
-    "now": 6.259,
-    "week_ago": 6.286,
+    "now": 6.352,
+    "week_ago": 6.259,
     "pre_crisis": 3.798,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -1529,17 +1549,21 @@
      [
       "2026-10-12",
       6.259
+     ],
+     [
+      "2026-10-19",
+      6.352
      ]
     ]
    },
    "usd_per_litre": {
     "petrol": 1.095,
-    "diesel": 1.653
+    "diesel": 1.678
    },
    "source": {
     "name": "US EIA weekly retail gasoline and diesel prices",
     "url": "https://www.eia.gov/petroleum/gasdiesel/",
-    "date": "2026-10-12"
+    "date": "2026-10-19"
    },
    "feed": "eia"
   },
@@ -1553,12 +1577,12 @@
    ],
    "currency": "USD",
    "unit": "$/gal",
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "petrol": {
-    "now": 3.851,
-    "week_ago": 3.911,
+    "now": 3.784,
+    "week_ago": 3.851,
     "pre_crisis": 2.532,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -1795,14 +1819,18 @@
      [
       "2026-10-12",
       3.851
+     ],
+     [
+      "2026-10-19",
+      3.784
      ]
     ]
    },
    "diesel": {
-    "now": 5.809,
-    "week_ago": 5.819,
+    "now": 5.903,
+    "week_ago": 5.809,
     "pre_crisis": 3.489,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -2039,17 +2067,21 @@
      [
       "2026-10-12",
       5.809
+     ],
+     [
+      "2026-10-19",
+      5.903
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.017,
-    "diesel": 1.535
+    "petrol": 1.0,
+    "diesel": 1.559
    },
    "source": {
     "name": "US EIA weekly retail gasoline and diesel prices",
     "url": "https://www.eia.gov/petroleum/gasdiesel/",
-    "date": "2026-10-12"
+    "date": "2026-10-19"
    },
    "feed": "eia"
   },
@@ -2063,12 +2095,12 @@
    ],
    "currency": "USD",
    "unit": "$/gal",
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "petrol": {
-    "now": 4.439,
-    "week_ago": 4.417,
+    "now": 4.468,
+    "week_ago": 4.439,
     "pre_crisis": 2.662,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -2305,14 +2337,18 @@
      [
       "2026-10-12",
       4.439
+     ],
+     [
+      "2026-10-19",
+      4.468
      ]
     ]
    },
    "diesel": {
-    "now": 6.302,
-    "week_ago": 6.267,
+    "now": 6.422,
+    "week_ago": 6.302,
     "pre_crisis": 3.683,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -2549,17 +2585,21 @@
      [
       "2026-10-12",
       6.302
+     ],
+     [
+      "2026-10-19",
+      6.422
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.173,
-    "diesel": 1.665
+    "petrol": 1.18,
+    "diesel": 1.697
    },
    "source": {
     "name": "US EIA weekly retail gasoline and diesel prices",
     "url": "https://www.eia.gov/petroleum/gasdiesel/",
-    "date": "2026-10-12"
+    "date": "2026-10-19"
    },
    "feed": "eia"
   },
@@ -2573,12 +2613,12 @@
    ],
    "currency": "USD",
    "unit": "$/gal",
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "petrol": {
-    "now": 5.639,
-    "week_ago": 5.727,
+    "now": 5.557,
+    "week_ago": 5.639,
     "pre_crisis": 4.111,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -2815,14 +2855,18 @@
      [
       "2026-10-12",
       5.639
+     ],
+     [
+      "2026-10-19",
+      5.557
      ]
     ]
    },
    "diesel": {
-    "now": 7.24,
-    "week_ago": 7.229,
+    "now": 7.394,
+    "week_ago": 7.24,
     "pre_crisis": 4.465,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -3059,17 +3103,21 @@
      [
       "2026-10-12",
       7.24
+     ],
+     [
+      "2026-10-19",
+      7.394
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.49,
-    "diesel": 1.913
+    "petrol": 1.468,
+    "diesel": 1.953
    },
    "source": {
     "name": "US EIA weekly retail gasoline and diesel prices",
     "url": "https://www.eia.gov/petroleum/gasdiesel/",
-    "date": "2026-10-12"
+    "date": "2026-10-19"
    },
    "feed": "eia"
   },
@@ -3083,12 +3131,12 @@
    ],
    "currency": "USD",
    "unit": "$/gal",
-   "date": "2026-10-12",
+   "date": "2026-10-19",
    "petrol": {
-    "now": 6.104,
-    "week_ago": 6.227,
+    "now": 6.031,
+    "week_ago": 6.104,
     "pre_crisis": 4.441,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -3325,14 +3373,18 @@
      [
       "2026-10-12",
       6.104
+     ],
+     [
+      "2026-10-19",
+      6.031
      ]
     ]
    },
    "diesel": {
-    "now": 8.091,
-    "week_ago": 8.082,
+    "now": 8.242,
+    "week_ago": 8.091,
     "pre_crisis": 4.944,
-    "date": "2026-10-12",
+    "date": "2026-10-19",
     "history": [
      [
       "2025-09-01",
@@ -3569,17 +3621,21 @@
      [
       "2026-10-12",
       8.091
+     ],
+     [
+      "2026-10-19",
+      8.242
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.613,
-    "diesel": 2.137
+    "petrol": 1.593,
+    "diesel": 2.177
    },
    "source": {
     "name": "US EIA weekly retail gasoline and diesel prices",
     "url": "https://www.eia.gov/petroleum/gasdiesel/",
-    "date": "2026-10-12"
+    "date": "2026-10-19"
    },
    "feed": "eia"
   },
@@ -4083,8 +4139,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.256,
-    "diesel": 2.398
+    "petrol": 2.254,
+    "diesel": 2.396
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -4593,8 +4649,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.093,
-    "diesel": 2.427
+    "petrol": 2.092,
+    "diesel": 2.425
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -5103,8 +5159,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.219,
-    "diesel": 2.621
+    "petrol": 2.217,
+    "diesel": 2.619
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -5613,8 +5669,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.851,
-    "diesel": 2.104
+    "petrol": 1.849,
+    "diesel": 2.102
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -6123,8 +6179,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.024,
-    "diesel": 2.193
+    "petrol": 2.022,
+    "diesel": 2.191
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -6633,8 +6689,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.976,
-    "diesel": 2.269
+    "petrol": 1.974,
+    "diesel": 2.267
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -7143,8 +7199,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.087,
-    "diesel": 2.156
+    "petrol": 2.085,
+    "diesel": 2.154
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -7653,8 +7709,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.984,
-    "diesel": 2.808
+    "petrol": 2.981,
+    "diesel": 2.806
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -8163,8 +8219,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.155,
-    "diesel": 2.26
+    "petrol": 2.153,
+    "diesel": 2.258
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -8673,8 +8729,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.603,
-    "diesel": 2.847
+    "petrol": 2.601,
+    "diesel": 2.844
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -9183,8 +9239,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.483,
-    "diesel": 2.613
+    "petrol": 2.481,
+    "diesel": 2.611
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -9693,8 +9749,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.485,
-    "diesel": 2.548
+    "petrol": 2.483,
+    "diesel": 2.546
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -10203,8 +10259,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.468,
-    "diesel": 2.377
+    "petrol": 2.466,
+    "diesel": 2.375
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -10713,8 +10769,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.969,
-    "diesel": 2.18
+    "petrol": 1.967,
+    "diesel": 2.178
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -11223,8 +11279,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.226,
-    "diesel": 2.429
+    "petrol": 2.224,
+    "diesel": 2.427
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -11733,8 +11789,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.269,
-    "diesel": 2.516
+    "petrol": 2.267,
+    "diesel": 2.513
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -12243,8 +12299,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.181,
-    "diesel": 2.326
+    "petrol": 2.179,
+    "diesel": 2.324
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -12753,8 +12809,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.161,
-    "diesel": 2.475
+    "petrol": 2.159,
+    "diesel": 2.473
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -13263,8 +13319,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.106,
-    "diesel": 2.296
+    "petrol": 2.104,
+    "diesel": 2.293
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -13773,8 +13829,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.504,
-    "diesel": 1.358
+    "petrol": 1.503,
+    "diesel": 1.357
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -14283,8 +14339,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.764,
-    "diesel": 2.786
+    "petrol": 2.761,
+    "diesel": 2.784
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -14793,8 +14849,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.762,
-    "diesel": 2.015
+    "petrol": 1.761,
+    "diesel": 2.013
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -15303,8 +15359,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.368,
-    "diesel": 2.411
+    "petrol": 2.366,
+    "diesel": 2.409
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -15813,8 +15869,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.131,
-    "diesel": 2.291
+    "petrol": 2.129,
+    "diesel": 2.289
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -16323,8 +16379,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.072,
-    "diesel": 2.154
+    "petrol": 2.07,
+    "diesel": 2.152
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -16833,8 +16889,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.977,
-    "diesel": 2.153
+    "petrol": 1.975,
+    "diesel": 2.151
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -17343,8 +17399,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.009,
-    "diesel": 2.12
+    "petrol": 2.007,
+    "diesel": 2.119
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -17853,8 +17909,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.899,
-    "diesel": 2.301
+    "petrol": 1.898,
+    "diesel": 2.299
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
@@ -18371,8 +18427,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.328,
-    "diesel": 2.657
+    "petrol": 2.33,
+    "diesel": 2.66
    },
    "source": {
     "name": "UK DESNZ weekly road fuel prices",

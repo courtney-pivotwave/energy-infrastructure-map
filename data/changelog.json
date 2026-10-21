@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-10-21",
+   "kind": "data",
+   "headline": "Houthis claim fresh strikes on Saudi oil sites as Kpler data show Mideast exports matching pre-war levels",
+   "changes": [
+    "Yemen's Houthis claimed missile and drone strikes on Aramco's Yanbu site, the Shaybah oil field, and airports in Riyadh and Abha; Saudi Arabia has not confirmed the claims.",
+    "Kpler ship-tracking data put total Middle East oil flows, including Hormuz bypass routes via the Gulf of Oman, Fujairah and the Red Sea, at over 24.5 million barrels a day in the week to Oct 18 — edging above the pre-war baseline on this broader measure.",
+    "Brent crude eased to about $110.74/bbl after touching a five-month high near $111.50 on Oct 20; pump prices refreshed from official US, EU and UK feeds.",
+    "The IMO's confirmed toll in the Strait of Hormuz rose to 116 attacks and at least 24 deaths since the war began, up from 113 on Oct 14."
+   ]
+  },
+  {
    "date": "2026-10-20",
    "kind": "data",
    "headline": "Iran's oil terminals sit idle for a ninth week as the US eases 'dark fleet' tanker sanctions",

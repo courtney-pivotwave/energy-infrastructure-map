@@ -1075,6 +1075,49 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-21-digest",
+   "created": "2026-10-21",
+   "type": "digest",
+   "text": "Brent eased to $110.74, off Monday's 5-month high, as Houthis claim (unverified) fresh strikes on Aramco's Yanbu site and the Shaybah field. Kpler data show Mideast oil flows, incl. Hormuz bypass routes, now match pre-war levels.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "SaudiArabia",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-21-event-mideast-exports-kpler",
+   "created": "2026-10-21",
+   "type": "event",
+   "text": "Kpler data show total Mideast oil flows -- Hormuz, Gulf of Oman transfers, Fujairah and Red Sea exports -- topped 24.5M b/d in the week to Oct 18, edging above the pre-war baseline (reported).",
+   "url": "https://strategicenergymap.org/events/#2026-10-21-mideast-exports-prewar-kpler",
+   "event_id": "2026-10-21-mideast-exports-prewar-kpler",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Shipping",
+    "MiddleEast"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-21-explainer-riyadh-refinery",
+   "created": "2026-10-21",
+   "type": "explainer",
+   "text": "Aramco's Riyadh Refinery is the only major refinery serving the Saudi capital: about 126,000 b/d via the East-West Pipeline, not a coastal terminal. Disrupted since a Houthi strike claim sparked a fire on Oct 3.",
+   "url": "https://strategicenergymap.org/facilities/riyadh-refinery/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Refining",
+    "EnergySecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

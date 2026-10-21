@@ -1125,6 +1125,23 @@
     },
     "at": "2026-10-21T15:57:54.032Z"
    }
+  },
+  "2026-10-21-explainer-riyadh-refinery": {
+   "x": {
+    "id": "2113000062859264334",
+    "at": "2026-10-21T20:10:47.552Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myfxfxdkkd2h",
+    "cid": "bafyreigfxg3qhqpdnxd3bdw7jxnq7bq5ppjb4dy3pdf74cvk3mxibwbkvm",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myfxfxdkkd2h",
+     "cid": "bafyreigfxg3qhqpdnxd3bdw7jxnq7bq5ppjb4dy3pdf74cvk3mxibwbkvm"
+    },
+    "at": "2026-10-21T20:10:49.256Z",
+    "media": "asset-card"
+   }
   }
  }
 }

@@ -1110,6 +1110,21 @@
     "at": "2026-10-21T10:59:11.391Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-21-event-mideast-exports-kpler": {
+   "x": {
+    "id": "2112936413805027735",
+    "at": "2026-10-21T15:57:52.308Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myfjbpl3h72e",
+    "cid": "bafyreiefs4vxp2ppicqc4wkqzs2mutl26gtcmx2zm2t247wf245nxiavai",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myfjbpl3h72e",
+     "cid": "bafyreiefs4vxp2ppicqc4wkqzs2mutl26gtcmx2zm2t247wf245nxiavai"
+    },
+    "at": "2026-10-21T15:57:54.032Z"
+   }
   }
  }
 }

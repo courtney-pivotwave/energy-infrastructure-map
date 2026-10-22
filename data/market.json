@@ -1,33 +1,33 @@
 {
- "as_of": "2026-10-21",
+ "as_of": "2026-10-22",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 110.74,
-   "week_ago": 106.55,
+   "value": 111.86,
+   "week_ago": 104.63,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Eased to about $110.74 on 21 Oct (Trading Economics), down slightly from Monday's five-month-high close near $111.50 but still up roughly 3.9% w/w, as Houthi claims of fresh strikes on Saudi energy sites and Kpler data showing Middle East oil flows back at pre-war levels pulled the market in opposite directions. Week-ago is this site's 14 Oct reading, exactly 7 days earlier.",
+   "note": "Climbed to about $111.86 on 22 Oct (Trading Economics), a new five-month high, up roughly 6.9% w/w, on new but still-unconfirmed Houthi claims of strikes on a Saudi oil field and an airport, as UKMTO data showed ship attacks near the Arabian Peninsula have more than doubled in October versus September. Week-ago is this site's 15 Oct reading, exactly 7 days earlier.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-21"
+    "date": "2026-10-22"
    },
    "extra_sources": [
     {
-     "name": "The National — Oil prices hit five-month high as Houthi escalation worsens supply and inflation fears",
-     "url": "https://www.thenationalnews.com/business/energy/2026/10/20/oil-prices-hit-five-month-high-as-more-houthi-attacks-prompt-supply-and-inflation-fears/",
-     "date": "2026-10-20"
+     "name": "Oilprice.com — Oil Prices Surge Above $111 as Houthis Strike Saudi Targets",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-Above-111-as-Houthis-Strike-Saudi-Targets.html",
+     "date": "2026-10-22"
     },
     {
-     "name": "The National — Non-Iran Middle East oil exports recover to prewar levels with Hormuz alternatives",
-     "url": "https://www.thenationalnews.com/business/energy/2026/10/21/non-iran-middle-east-oil-exports-recover-to-prewar-levels-with-hormuz-alternatives/",
+     "name": "gCaptain — Middle East Oil Flows Near Prewar Levels Defy Hormuz Attacks",
+     "url": "https://gcaptain.com/middle-east-oil-flows-near-prewar-levels-defy-hormuz-attacks/",
      "date": "2026-10-21"
     }
    ]
@@ -36,25 +36,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 99.9,
-   "week_ago": 95.23,
+   "value": 99.25,
+   "week_ago": 95.22,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Eased to about $99.90 on 21 Oct (Trading Economics), down slightly from Monday's $100.73 but up roughly 4.9% w/w, tracking Brent. Week-ago is this site's 14 Oct reading, exactly 7 days earlier.",
+   "note": "Climbed to about $99.25 on 22 Oct (Trading Economics), up roughly 4.2% w/w, tracking Brent on fresh Houthi strike claims. Week-ago is this site's 15 Oct reading, exactly 7 days earlier.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-21"
+    "date": "2026-10-22"
    },
    "extra_sources": [
     {
-     "name": "The National — Oil prices hit five-month high as Houthi escalation worsens supply and inflation fears",
-     "url": "https://www.thenationalnews.com/business/energy/2026/10/20/oil-prices-hit-five-month-high-as-more-houthi-attacks-prompt-supply-and-inflation-fears/",
-     "date": "2026-10-20"
+     "name": "Oilprice.com — Oil Prices Surge Above $111 as Houthis Strike Saudi Targets",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-Above-111-as-Houthis-Strike-Saudi-Targets.html",
+     "date": "2026-10-22"
     }
    ]
   },
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 87.86,
-   "week_ago": 85.29,
+   "value": 89.34,
+   "week_ago": 85.32,
    "pre_crisis": 32.0,
    "peak": {
     "value": 89.56,
     "date": "2026-10-19",
     "note": "New 2026 high, surpassing the prior 87.80 set 16 Oct (Trading Economics)."
    },
-   "note": "Eased further to about €87.86 on 21 Oct (Trading Economics), down from the €89.56 2026 high set 19 Oct but still up roughly 3.0% w/w. Week-ago is this site's 14 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Climbed back to about €89.34 on 22 Oct (Trading Economics), just under the €89.56 2026 high set 19 Oct, up roughly 4.7% w/w. Week-ago is this site's 15 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-21"
+    "date": "2026-10-22"
    },
    "extra_sources": [
     {
@@ -93,19 +93,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 29.55,
+   "value": 30.06,
    "week_ago": 26.27,
    "pre_crisis": 10.75,
    "peak": {
-    "value": 30.01,
-    "date": "2026-10-19",
-    "note": "New 2026 high, surpassing the prior 29.93 read since 16 Oct (Trading Economics)."
+    "value": 30.06,
+    "date": "2026-10-21",
+    "note": "New 2026 high, surpassing the prior 30.01 set 19 Oct (Trading Economics)."
    },
-   "note": "Eased to $29.55 as of Trading Economics' 20 Oct print (the site's JKM read lags a day), down from the $30.01 2026 high set 19 Oct but still up roughly 12.5% w/w. Week-ago is this site's 13 Oct reading, 7 days before that 20 Oct print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Rose to $30.06 as of Trading Economics' 21 Oct print (the site's JKM read lags a day), a new 2026 high, up roughly 14.4% w/w. Week-ago is this site's 14 Oct reading, 7 days before that 21 Oct print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-20"
+    "date": "2026-10-21"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.86,
-   "week_ago": 3.29,
+   "value": 2.76,
+   "week_ago": 3.25,
    "pre_crisis": 2.99,
-   "note": "Eased further to about $2.86 on 21 Oct (Trading Economics), down roughly 13.1% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Eased further to about $2.76 on 22 Oct (Trading Economics), down roughly 15.1% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-21"
+    "date": "2026-10-22"
    },
    "extra_sources": [
     {
@@ -147,16 +147,16 @@
    ]
   }
  ],
- "note": "Brent and WTI eased slightly from Monday's five-month highs as Houthis claimed fresh strikes on Saudi Aramco's Yanbu site and the Shaybah oil field (unverified, no Saudi confirmation) while Kpler data showed total Middle East oil flows, including Hormuz bypass routes, matching pre-war levels. TTF and JKM eased off their 19 Oct 2026 highs; Henry Hub continued easing.",
+ "note": "Brent and WTI set fresh five-month highs on 22 October as the Houthis claimed new, still-unconfirmed strikes on a Saudi oil field and an airport, and UKMTO data showed ship attacks near the Arabian Peninsula have more than doubled in October versus September, even as Middle East oil flows hold near pre-war levels on bypass routes. TTF and JKM climbed back toward their 19 Oct 2026 highs, with JKM setting a new one; Henry Hub continued easing.",
  "note_sources": [
   {
-   "name": "Reuters via Times of Israel — Yemen's Houthis claim attacks on Saudi Aramco site, airports and military targets",
-   "url": "https://www.timesofisrael.com/liveblog_entry/yemens-houthis-claim-attacks-on-saudi-aramco-site-airports-and-military-targets/",
-   "date": "2026-10-19"
+   "name": "Oilprice.com — Oil Prices Surge Above $111 as Houthis Strike Saudi Targets",
+   "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-Above-111-as-Houthis-Strike-Saudi-Targets.html",
+   "date": "2026-10-22"
   },
   {
-   "name": "The National — Non-Iran Middle East oil exports recover to prewar levels with Hormuz alternatives",
-   "url": "https://www.thenationalnews.com/business/energy/2026/10/21/non-iran-middle-east-oil-exports-recover-to-prewar-levels-with-hormuz-alternatives/",
+   "name": "gCaptain — Middle East Oil Flows Near Prewar Levels Defy Hormuz Attacks",
+   "url": "https://gcaptain.com/middle-east-oil-flows-near-prewar-levels-defy-hormuz-attacks/",
    "date": "2026-10-21"
   }
  ]

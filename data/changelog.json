@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-10-22",
+   "kind": "data",
+   "headline": "Ship attacks near the Arabian Peninsula more than double in October despite recovering oil flows",
+   "changes": [
+    "UKMTO has recorded 32 attacks on commercial vessels around the Arabian Peninsula so far in October, versus 16 for all of September, even as Middle East oil flows hold near pre-war levels on bypass routes.",
+    "Suez Canal container traffic is back above half of 2023 (pre-crisis) levels for the first time since the Houthi campaign began, per BIMCO/Clarksons data.",
+    "Brent crude climbed to a fresh five-month high near $112/bbl on new, unconfirmed Houthi claims of a strike on a Saudi oil field and an airport; pump prices refreshed from official US, EU and UK feeds."
+   ]
+  },
+  {
    "date": "2026-10-21",
    "kind": "data",
    "headline": "Houthis claim fresh strikes on Saudi oil sites as Kpler data show Mideast exports matching pre-war levels",

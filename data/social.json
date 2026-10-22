@@ -1118,6 +1118,49 @@
     "EnergySecurity"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-22-digest",
+   "created": "2026-10-22",
+   "type": "digest",
+   "text": "UKMTO says ship attacks near the Arabian Peninsula have topped 32 in October, already double September's 16, even as Mideast oil flows hold near pre-war levels. Brent hit a fresh 5-month high near $112/bbl.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-22-event-ukmto-attacks-surge",
+   "created": "2026-10-22",
+   "type": "event",
+   "text": "UKMTO has recorded 32 attacks on commercial vessels near the Arabian Peninsula so far in October, already double September's 16. Most ships in the area now sail with tracking off, it says.",
+   "url": "https://strategicenergymap.org/events/#2026-10-21-ukmto-attacks-surge-october",
+   "event_id": "2026-10-21-ukmto-attacks-surge-october",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Shipping",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-22-chart-chokepoints-weekly",
+   "created": "2026-10-22",
+   "type": "chart",
+   "text": "Tanker transits (AIS-visible) stayed near rock bottom this week: Hormuz still 0.6 ships/day, 99% below baseline, as most sail dark. Turkish Straits -36%, Bab el-Mandeb -18%, Malacca -16%; Suez +2%, Panama flat.",
+   "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
+   "image": "chokepoints-weekly",
+   "alt": "Bar chart of 7-day average tanker transits vs pre-crisis baseline, percent change, week ending Oct 18: Strait of Hormuz -99% (0.6/day), Turkish Straits -36% (14.4/day), Bab el-Mandeb -18% (10.0/day), Strait of Malacca -16% (71.4/day), Panama Canal +0% (13.0/day), Suez Canal +2% (15.9/day).",
+   "tags": [
+    "DataViz",
+    "Hormuz"
+   ],
+   "reply_to": null
   }
  ]
 }

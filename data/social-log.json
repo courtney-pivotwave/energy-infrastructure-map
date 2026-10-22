@@ -1174,6 +1174,23 @@
     "at": "2026-10-22T15:53:30.151Z",
     "media": "locator-card"
    }
+  },
+  "2026-10-22-chart-chokepoints-weekly": {
+   "x": {
+    "id": "2113361719624147396",
+    "at": "2026-10-22T20:07:53.185Z",
+    "media": "chart"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myihpogkc42x",
+    "cid": "bafyreibss6cgfbjcheru3tlzrijcjtc4h7nknz3ibo3dzhsmtpfcl64pre",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myihpogkc42x",
+     "cid": "bafyreibss6cgfbjcheru3tlzrijcjtc4h7nknz3ibo3dzhsmtpfcl64pre"
+    },
+    "at": "2026-10-22T20:07:54.801Z",
+    "media": "chart"
+   }
   }
  }
 }

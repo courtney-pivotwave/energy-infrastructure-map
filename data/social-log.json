@@ -1191,6 +1191,23 @@
     "at": "2026-10-22T20:07:54.801Z",
     "media": "chart"
    }
+  },
+  "2026-10-23-digest": {
+   "x": {
+    "id": "2113585781830799620",
+    "at": "2026-10-23T10:58:13.823Z",
+    "media": "daily-board"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myjzhpweyh2i",
+    "cid": "bafyreiciim4xcwt6rgiacdr2vl73ctqthlzocu73y5xn2ikhwe7cgn2q3m",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myjzhpweyh2i",
+     "cid": "bafyreiciim4xcwt6rgiacdr2vl73ctqthlzocu73y5xn2ikhwe7cgn2q3m"
+    },
+    "at": "2026-10-23T10:58:14.932Z",
+    "media": "daily-board"
+   }
   }
  }
 }

@@ -1190,6 +1190,20 @@
     "Geopolitics"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-23-explainer-ras-laffan-lng",
+   "created": "2026-10-23",
+   "type": "explainer",
+   "text": "Qatar's Ras Laffan is the world's largest LNG export site: 14 trains, ~77 MTPA, shipped through Hormuz. Two trains were destroyed in March (~17% of capacity); QatarEnergy now ships at roughly a third of pre-war volumes.",
+   "url": "https://strategicenergymap.org/facilities/ras-laffan-lng/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "LNG",
+    "Qatar"
+   ],
+   "reply_to": null
   }
  ]
 }

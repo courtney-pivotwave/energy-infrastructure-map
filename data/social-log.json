@@ -1208,6 +1208,21 @@
     "at": "2026-10-23T10:58:14.932Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-23-event-us-diplomats-leave-saudi": {
+   "x": {
+    "id": "2113657997226291268",
+    "at": "2026-10-23T15:45:11.218Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mykjiuovj72x",
+    "cid": "bafyreiezz6qaytbpmxdelpct3qnnqt6dr5abbvv4rdjnazjmxoxscpgxz4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mykjiuovj72x",
+     "cid": "bafyreiezz6qaytbpmxdelpct3qnnqt6dr5abbvv4rdjnazjmxoxscpgxz4"
+    },
+    "at": "2026-10-23T15:45:12.970Z"
+   }
   }
  }
 }

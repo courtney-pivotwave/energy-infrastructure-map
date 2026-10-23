@@ -1161,6 +1161,35 @@
     "Hormuz"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-23-digest",
+   "created": "2026-10-23",
+   "type": "digest",
+   "text": "A Houthi drone strike near Aramco's Shaybah oilfield killed two contractors on Oct 21; Saudi Arabia's ministry says operations were unaffected. Brent hit $114.55/bbl, highest since May, up roughly 8% on the week. US diesel: $6.28/gal.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Oil",
+    "SaudiArabia"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-23-event-us-diplomats-leave-saudi",
+   "created": "2026-10-23",
+   "type": "event",
+   "text": "The US State Department ordered non-emergency diplomats and their families to leave Saudi Arabia on Oct 21, citing escalating Houthi attacks on civilian targets including Riyadh's main airport.",
+   "url": "https://strategicenergymap.org/events/#2026-10-21-us-diplomats-leave-saudi",
+   "event_id": "2026-10-21-us-diplomats-leave-saudi",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "EnergySecurity",
+    "Geopolitics"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,8 +1,49 @@
 {
- "updated": "2026-10-22",
- "situation_headline": "UKMTO: ship attacks near the Arabian Peninsula topped 32 in October, already double September's 16, even as oil flows hold near pre-war levels; Brent climbed to about $112 on new, unconfirmed Houthi strike claims.",
+ "updated": "2026-10-23",
+ "situation_headline": "Brent hit a five-month high near $113 after a Houthi drone strike killed two near Aramco's Shaybah oilfield on Oct 21 (confirmed, no output impact); the US ordered non-emergency diplomats and families out of Saudi Arabia the same day.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-21-shaybah-drone-strike",
+   "date": "2026-10-21",
+   "title": "Houthi drone strike near Aramco's Shaybah oilfield kills two, Saudi ministry says",
+   "summary": "A drone aimed at a processing plant at Saudi Aramco's Shaybah oilfield, in the Eastern Province, was intercepted by Saudi air defences on the night of Oct 21, but its debris struck a contractor's vehicle outside the plant's perimeter and started a fire, Saudi Arabia's Energy Ministry said. A Filipino and a Nepali contractor were killed and a Pakistani and an Indian contractor were injured; the ministry said oilfield operations were unaffected. Arab News and other outlets attributed the strike, and a same-night attack on Dammam's King Fahd International Airport that killed two more people, to the Iran-aligned Houthis, part of a widening campaign against Saudi energy and civilian sites (confirmed).",
+   "category": "military",
+   "severity": "high",
+   "coords": [22.5, 55.5],
+   "assets": ["shaybah-oil"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "The National — Saudi Aramco's Shaybah oil field: Two killed after drone intercepted as missile strikes escalate",
+     "url": "https://www.thenationalnews.com/news/mena/2026/10/21/saudi-aramco-shaybah-houthi-strike/",
+     "date": "2026-10-21"
+    },
+    {
+     "name": "Arab News — Arab states condemn deadly Houthi attacks on Saudi airport and oilfield",
+     "url": "https://www.arabnews.com/saudi-arabia/arab-states-condemn-deadly-houthi-attacks-on-saudi-airport-and-oilfield-3007763",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-us-diplomats-leave-saudi",
+   "date": "2026-10-21",
+   "title": "US orders non-emergency diplomats and families to leave Saudi Arabia",
+   "summary": "The US State Department ordered non-emergency government employees and their families at its missions in Saudi Arabia to depart, spokesperson Tommy Pigott said, citing escalating Houthi attacks on civilian targets including Riyadh's main airport. US officials told Reuters that family members at other Gulf missions may also be told to leave. The Riyadh embassy, already running with reduced staff since an earlier strike, issued a security alert warning of further possible Houthi attacks (confirmed).",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al-Monitor (Reuters) — US orders departure of diplomats from Saudi Arabia amid Houthi strikes",
+     "url": "https://www.al-monitor.com/originals/2026/10/us-orders-departure-diplomats-saudi-arabia-amid-houthi-strikes",
+     "date": "2026-10-21"
+    }
+   ]
+  },
   {
    "id": "2026-10-21-ukmto-attacks-surge-october",
    "date": "2026-10-21",

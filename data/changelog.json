@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-10-23",
+   "kind": "data",
+   "headline": "Brent hits five-month high after fatal drone strike near Saudi oilfield; US pulls diplomats",
+   "changes": [
+    "A Houthi drone strike near Aramco's Shaybah oilfield on Oct 21 killed two contractors and injured two more; Saudi Arabia's Energy Ministry said oilfield operations were unaffected.",
+    "The US ordered non-emergency diplomats and their families to leave Saudi Arabia the same day, citing escalating Houthi attacks on civilian targets.",
+    "Brent crude rose to about $114.55/bbl, its highest since May, up roughly 8% on the week; TTF and JKM gas also set fresh 2026 highs.",
+    "Pump prices refreshed from official US, EU and UK feeds."
+   ]
+  },
+  {
    "date": "2026-10-22",
    "kind": "data",
    "headline": "Ship attacks near the Arabian Peninsula more than double in October despite recovering oil flows",

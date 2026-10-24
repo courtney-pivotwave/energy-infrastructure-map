@@ -1240,6 +1240,21 @@
     "at": "2026-10-24T10:57:59.533Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-24-event-qatarenergy-cheniere": {
+   "x": {
+    "id": "2114002548784824576",
+    "at": "2026-10-24T14:34:18.705Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mymvz26wol23",
+    "cid": "bafyreiclrl5clhi62jy4nex25ypiab6imeyyp4ctzeaudheo6m6cynpzfe",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mymvz26wol23",
+     "cid": "bafyreiclrl5clhi62jy4nex25ypiab6imeyyp4ctzeaudheo6m6cynpzfe"
+    },
+    "at": "2026-10-24T14:34:19.991Z"
+   }
   }
  }
 }

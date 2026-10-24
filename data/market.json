@@ -5,7 +5,7 @@
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 114.55,
+   "value": 116.72,
    "week_ago": 105.91,
    "pre_crisis": 72.48,
    "peak": {
@@ -13,21 +13,21 @@
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Rose to about $114.55 on 23 Oct (Trading Economics), up roughly 8.2% w/w, after a Houthi drone strike killed two near Aramco's Shaybah oilfield on 21 Oct and the US ordered non-emergency diplomats out of Saudi Arabia; Reuters reported Thursday's close was Brent's highest settlement since 4 May. Week-ago is this site's 16 Oct reading, exactly 7 days earlier.",
+   "note": "Settled at $116.72 on 23 Oct, up 3.1% on the day and about 10% w/w, its highest close since 29 Apr, as markets priced in reports the US and Israel are planning renewed strikes on Iran after the Nov 3 midterms and continuing Houthi attacks on Saudi Arabia. Week-ago is this site's 16 Oct reading, exactly 7 days earlier.",
    "source": {
-    "name": "Trading Economics — Brent Crude Oil",
-    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "name": "Rio Times Online — Oil Markets LatAm, Friday, October 23, 2026",
+    "url": "https://www.riotimesonline.com/oil-markets-latam-friday-october-23-2026",
     "date": "2026-10-23"
    },
    "extra_sources": [
     {
-     "name": "Tribune (Reuters) — Oil little changed as supply concern lingers amid Houthi attacks on Saudi Arabia",
-     "url": "https://tribune.com.pk/story/2636462/oil-little-changed-as-supply-concern-lingers-amid-houthi-attacks-on-saudi-arabia",
-     "date": "2026-10-23"
+     "name": "ISW / Critical Threats Project — Iran Update, October 22, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-22-2026",
+     "date": "2026-10-22"
     },
     {
-     "name": "The National — Oil tops $110 as Houthi drone strike near Saudi Shaybah field rattles markets",
-     "url": "https://www.thenationalnews.com/business/energy/2026/10/22/oil-tops-110-as-houthi-drone-strike-near-saudi-shaybah-field-rattles-markets/",
+     "name": "gCaptain — Iran Claims More Ships Struck Near Hormuz as Trump Accuses Tehran of 'Faking Hits'",
+     "url": "https://gcaptain.com/iran-claims-more-ships-struck-near-hormuz-as-trump-accuses-tehran-of-faking-hits/",
      "date": "2026-10-22"
     }
    ]
@@ -36,24 +36,24 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 100.85,
-   "week_ago": 97.70,
+   "value": 103.27,
+   "week_ago": 97.7,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Rose to about $100.85 on 23 Oct (Trading Economics), up roughly 3.2% w/w, tracking Brent higher after the Shaybah strike and the US diplomatic pullout from Saudi Arabia. Week-ago is this site's 16 Oct reading, exactly 7 days earlier.",
+   "note": "Settled at $103.27 on 23 Oct, up 3.8% on the day, tracking Brent higher on reports of planned post-midterm US/Israeli strikes on Iran. Week-ago is this site's 16 Oct reading, exactly 7 days earlier.",
    "source": {
-    "name": "Trading Economics — Crude Oil (WTI)",
-    "url": "https://tradingeconomics.com/commodity/crude-oil",
+    "name": "Rio Times Online — Oil Markets LatAm, Friday, October 23, 2026",
+    "url": "https://www.riotimesonline.com/oil-markets-latam-friday-october-23-2026",
     "date": "2026-10-23"
    },
    "extra_sources": [
     {
-     "name": "Tribune (Reuters) — Oil little changed as supply concern lingers amid Houthi attacks on Saudi Arabia",
-     "url": "https://tribune.com.pk/story/2636462/oil-little-changed-as-supply-concern-lingers-amid-houthi-attacks-on-saudi-arabia",
+     "name": "Trading Economics — Crude Oil (WTI)",
+     "url": "https://tradingeconomics.com/commodity/crude-oil",
      "date": "2026-10-23"
     }
    ]
@@ -62,15 +62,15 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 93.80,
-   "week_ago": 87.80,
+   "value": 93.86,
+   "week_ago": 87.8,
    "pre_crisis": 32.0,
    "peak": {
-    "value": 93.80,
+    "value": 93.86,
     "date": "2026-10-23",
-    "note": "New 2026 high, surpassing the prior 89.56 set 19 Oct (Trading Economics)."
+    "note": "New 2026 high, surpassing the prior 93.80 set 23 Oct (Trading Economics)."
    },
-   "note": "Rose to a fresh 2026 high of about €93.80 on 23 Oct (Trading Economics), up roughly 6.8% w/w, tracking the broader energy-price rally after the Shaybah strike. Week-ago is this site's 16 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Rose to a fresh 2026 high of about €93.86 on 23 Oct (Trading Economics), up roughly 6% w/w, as EU storage fell to 74.62% of capacity — the lowest seasonal level since 2009 — and Middle East LNG shipments stayed about 80% below year-ago levels. Week-ago is this site's 16 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
@@ -93,19 +93,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 30.63,
-   "week_ago": 26.39,
+   "value": 31.42,
+   "week_ago": 26.53,
    "pre_crisis": 10.75,
    "peak": {
-    "value": 30.63,
-    "date": "2026-10-22",
-    "note": "New 2026 high, surpassing the prior 30.06 set 21 Oct (Trading Economics)."
+    "value": 31.42,
+    "date": "2026-10-23",
+    "note": "New 2026 high, surpassing the prior 30.63 set 22 Oct (Trading Economics)."
    },
-   "note": "Rose to $30.63 as of Trading Economics' 22 Oct print (the site's JKM read lags a day), a new 2026 high, up roughly 16.1% w/w. Week-ago is this site's 15 Oct reading, 7 days before that 22 Oct print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Rose to $31.42 as of Trading Economics' 23 Oct print, a new 2026 high, up roughly 18% w/w. Week-ago is this site's 16 Oct reading, 7 days before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-22"
+    "date": "2026-10-23"
    },
    "extra_sources": [
     {
@@ -124,10 +124,10 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.73,
+   "value": 2.64,
    "week_ago": 3.18,
    "pre_crisis": 2.99,
-   "note": "Eased further to about $2.73 on 23 Oct (Trading Economics), down roughly 14.2% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Eased further to about $2.64 on 23 Oct (Trading Economics), down roughly 17% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
@@ -147,17 +147,17 @@
    ]
   }
  ],
- "note": "Brent, WTI, TTF and JKM all set fresh highs on 23 October after a Houthi drone strike killed two near Aramco's Shaybah oilfield on 21 October (confirmed, no output impact) and the US ordered non-emergency diplomats out of Saudi Arabia; Reuters said Thursday's close was Brent's highest settlement since 4 May. Henry Hub continued easing, staying largely insulated from the Gulf turmoil.",
+ "note": "Brent, WTI, TTF and JKM all extended their rally to fresh highs on 23 October on reports the US and Israel are planning renewed strikes on Iran after the Nov 3 midterms (New York Times, via ISW/CTP) and continuing Houthi attacks on Saudi Arabia; Brent's $116.72 settlement was its highest close since 29 Apr. Henry Hub continued easing, staying largely insulated from the Gulf turmoil.",
  "note_sources": [
   {
-   "name": "The National — Saudi Aramco's Shaybah oil field: Two killed after drone intercepted as missile strikes escalate",
-   "url": "https://www.thenationalnews.com/news/mena/2026/10/21/saudi-aramco-shaybah-houthi-strike/",
-   "date": "2026-10-21"
+   "name": "Rio Times Online — Oil Markets LatAm, Friday, October 23, 2026",
+   "url": "https://www.riotimesonline.com/oil-markets-latam-friday-october-23-2026",
+   "date": "2026-10-23"
   },
   {
-   "name": "Tribune (Reuters) — Oil little changed as supply concern lingers amid Houthi attacks on Saudi Arabia",
-   "url": "https://tribune.com.pk/story/2636462/oil-little-changed-as-supply-concern-lingers-amid-houthi-attacks-on-saudi-arabia",
-   "date": "2026-10-23"
+   "name": "ISW / Critical Threats Project — Iran Update, October 22, 2026",
+   "url": "https://www.criticalthreats.org/analysis/iran-update-october-22-2026",
+   "date": "2026-10-22"
   }
  ]
 }

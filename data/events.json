@@ -1,8 +1,69 @@
 {
- "updated": "2026-10-23",
- "situation_headline": "Brent hit a five-month high near $113 after a Houthi drone strike killed two near Aramco's Shaybah oilfield on Oct 21 (confirmed, no output impact); the US ordered non-emergency diplomats and families out of Saudi Arabia the same day.",
+ "updated": "2026-10-24",
+ "situation_headline": "Brent settled at $116.72 on 23 Oct, its highest close since April, on reports the US and Israel are planning renewed Iran strikes after the Nov 3 midterms; QatarEnergy signed a deal for US LNG to offset its war-damaged Ras Laffan plant.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-22-qatarenergy-cheniere-lng-deal",
+   "date": "2026-10-22",
+   "title": "QatarEnergy signs long-term deal for up to 4 mtpa of US LNG from Cheniere",
+   "summary": "QatarEnergy signed two long-term sale-and-purchase agreements with US developer Cheniere Energy for up to 4 million tonnes a year of LNG — 2 mtpa each from Cheniere's Sabine Pass (Louisiana) and Corpus Christi (Texas) terminals — with deliveries running from 2031 through 2054, priced off the Henry Hub benchmark plus a fixed fee. The deal gives QatarEnergy a supply source outside the Gulf after Iranian missile strikes destroyed two LNG trains (12.8 mtpa, about 17% of capacity) at its Ras Laffan complex in March; the company has said repairs could take three to five years and cost roughly $20bn a year in lost revenue. One mtpa of the Sabine Pass volume depends on a final investment decision for an expansion phase there (confirmed).",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "ras-laffan-lng"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — QatarEnergy Signs Long-Term Deal to Buy U.S. LNG as Iran War Disrupts Exports",
+     "url": "https://gcaptain.com/qatarenergy-signs-long-term-deal-to-buy-u-s-lng-as-iran-war-disrupts-exports/",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-us-sanctions-iran-shadow-fleet-law-firm",
+   "date": "2026-10-21",
+   "title": "US sanctions Greek law firm, shipping agents and nine vessels in Iran shadow-fleet crackdown",
+   "summary": "The US Treasury sanctioned the Panama- and Greece-based law firm Karnakis and Karnakis and five associates, ship manager Roxette Maritime Shipping and Trading, and shipping agents Amigoz Singapore and Dubai-based Whales Shipping Line, along with nine vessels they operate, for setting up shell structures and providing port and bunkering services that moved Iranian-origin oil, petrochemicals and steel past US sanctions. The action is part of Treasury's 'Operation Economic Outcast,' launched 24 August to cut off Iran's remaining export revenue; Treasury also opened a Financial Crimes Enforcement Network investigation into a Greek bank's possible ties to Iran, issuing its first Bank Secrecy Act subpoena in that probe. Treasury Secretary Scott Bessent said 'if you are supporting the Iranian regime, we will find you and sanction you' (confirmed: US Treasury action, reported independently).",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — U.S. Sanctions Law Firm, Shipping Agents and Nine Vessels in Iran Shadow Fleet Crackdown",
+     "url": "https://gcaptain.com/u-s-sanctions-law-firm-shipping-agents-and-nine-vessels-in-iran-shadow-fleet-crackdown/",
+     "date": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-nyt-us-israel-plan-iran-strikes-after-midterms",
+   "date": "2026-10-21",
+   "title": "NYT: US, Israel reportedly planning renewed strikes on Iran after Nov 3 midterms",
+   "summary": "The New York Times reported, citing unnamed US officials, that the US and Israeli militaries have drawn up plans for a short, intensive operation against Iran to launch after the 3 November US midterm elections; Defense Secretary Pete Hegseth reportedly discussed the plans with Israeli Prime Minister Netanyahu. Axios had separately reported on 19 October that Israeli jets and refuelling tankers approached the Iranian border before turning back. CENTCOM has not confirmed any new strike plans. President Trump said on 23 October that the US was not negotiating with Tehran and that 'something' would happen 'fairly soon.' Oil benchmarks rose on the reports, with Brent settling at its highest since 29 April (reported: single-outlet report of officials' plans, not yet executed).",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "ISW / Critical Threats Project — Iran Update, October 22, 2026 (citing New York Times, Axios)",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-22-2026",
+     "date": "2026-10-22"
+    },
+    {
+     "name": "Rio Times Online — Oil Markets LatAm, Friday, October 23, 2026",
+     "url": "https://www.riotimesonline.com/oil-markets-latam-friday-october-23-2026",
+     "date": "2026-10-23"
+    }
+   ]
+  },
   {
    "id": "2026-10-21-shaybah-drone-strike",
    "date": "2026-10-21",
@@ -10,8 +71,13 @@
    "summary": "A drone aimed at a processing plant at Saudi Aramco's Shaybah oilfield, in the Eastern Province, was intercepted by Saudi air defences on the night of Oct 21, but its debris struck a contractor's vehicle outside the plant's perimeter and started a fire, Saudi Arabia's Energy Ministry said. A Filipino and a Nepali contractor were killed and a Pakistani and an Indian contractor were injured; the ministry said oilfield operations were unaffected. Arab News and other outlets attributed the strike, and a same-night attack on Dammam's King Fahd International Airport that killed two more people, to the Iran-aligned Houthis, part of a widening campaign against Saudi energy and civilian sites (confirmed).",
    "category": "military",
    "severity": "high",
-   "coords": [22.5, 55.5],
-   "assets": ["shaybah-oil"],
+   "coords": [
+    22.5,
+    55.5
+   ],
+   "assets": [
+    "shaybah-oil"
+   ],
    "confidence": "confirmed",
    "sources": [
     {
@@ -52,7 +118,10 @@
    "category": "shipping",
    "severity": "medium",
    "coords": null,
-   "assets": ["strait-of-hormuz", "bab-el-mandeb"],
+   "assets": [
+    "strait-of-hormuz",
+    "bab-el-mandeb"
+   ],
    "confidence": "confirmed",
    "sources": [
     {
@@ -70,7 +139,11 @@
    "category": "market",
    "severity": "medium",
    "coords": null,
-   "assets": ["strait-of-hormuz", "east-west-pipeline", "habshan-fujairah-pipeline"],
+   "assets": [
+    "strait-of-hormuz",
+    "east-west-pipeline",
+    "habshan-fujairah-pipeline"
+   ],
    "confidence": "reported",
    "sources": [
     {
@@ -88,7 +161,10 @@
    "category": "military",
    "severity": "medium",
    "coords": null,
-   "assets": ["yanbu-terminal", "shaybah-oil"],
+   "assets": [
+    "yanbu-terminal",
+    "shaybah-oil"
+   ],
    "confidence": "unverified",
    "sources": [
     {

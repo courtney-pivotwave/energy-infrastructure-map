@@ -1190,6 +1190,64 @@
     "Geopolitics"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-24-digest",
+   "created": "2026-10-24",
+   "type": "digest",
+   "text": "Brent settled at $116.72 on Oct 23, highest since April, on reports the US and Israel are planning renewed Iran strikes after the Nov 3 midterms. US diesel is $6.28/gal (+$0.10 w/w); Gulf oil flows hold near pre-war levels despite Hormuz attacks.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "OilPrices",
+    "Iran"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-24-event-qatarenergy-cheniere",
+   "created": "2026-10-24",
+   "type": "event",
+   "text": "QatarEnergy signed a deal for up to 4 million tonnes a year of US LNG from Cheniere, 2031-2054, giving it supply outside the Gulf after Iran's strikes knocked out 17% of its Ras Laffan LNG capacity.",
+   "url": "https://strategicenergymap.org/facilities/ras-laffan-lng/",
+   "event_id": "2026-10-22-qatarenergy-cheniere-lng-deal",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "LNG",
+    "Qatar"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-24-event-us-sanctions-shadow-fleet",
+   "created": "2026-10-24",
+   "type": "event",
+   "text": "The US Treasury sanctioned a Greek law firm, two shipping agents and nine vessels for moving Iranian oil, petrochemicals and steel past sanctions, part of its Economic Outcast campaign against Tehran's shadow fleet.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-21-us-sanctions-iran-shadow-fleet-law-firm",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Iran",
+    "SupplyChain"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-24-explainer-habshan-fujairah",
+   "created": "2026-10-24",
+   "type": "explainer",
+   "text": "The UAE's Habshan-Fujairah pipeline moves up to 1.8 million b/d of crude 370km from Abu Dhabi to Fujairah, letting ADNOC bypass Hormuz. It now anchors the shuttle system moving most Gulf crude past the strait.",
+   "url": "https://strategicenergymap.org/facilities/habshan-fujairah-pipeline/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Pipelines",
+    "UAE"
+   ],
+   "reply_to": null
   }
  ]
 }

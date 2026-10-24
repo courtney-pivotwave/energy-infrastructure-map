@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-24",
+   "kind": "data",
+   "headline": "Brent settles at highest since April on reports of planned post-midterm Iran strikes",
+   "changes": [
+    "Brent crude settled at $116.72/bbl on Oct 23, its highest close since April, as markets priced in reports the US and Israel are planning renewed strikes on Iran after the Nov 3 midterms.",
+    "QatarEnergy signed a long-term deal for up to 4 million tonnes a year of US LNG from Cheniere, running 2031-2054, to offset capacity lost at its war-damaged Ras Laffan plant.",
+    "The US Treasury sanctioned a Greek law firm, two shipping agents and nine vessels for helping move Iranian oil, petrochemicals and steel past sanctions.",
+    "A new estimate puts Iran's floating oil stockpile, built up before the US blockade, down to about 29 million barrels from 90 million in mid-July and close to exhausted.",
+    "Pump prices refreshed from official US, EU and UK feeds."
+   ]
+  },
+  {
    "date": "2026-10-23",
    "kind": "data",
    "headline": "Brent hits five-month high after fatal drone strike near Saudi oilfield; US pulls diplomats",

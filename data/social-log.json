@@ -1270,6 +1270,23 @@
     },
     "at": "2026-10-24T18:10:22.628Z"
    }
+  },
+  "2026-10-24-explainer-habshan-fujairah": {
+   "x": {
+    "id": "2114097477787754851",
+    "at": "2026-10-24T20:51:31.651Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mynl3kgjvb22",
+    "cid": "bafyreifogfbg3kung7657moo3jh4onlbt63dyyc4neogboonbztakwmzua",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mynl3kgjvb22",
+     "cid": "bafyreifogfbg3kung7657moo3jh4onlbt63dyyc4neogboonbztakwmzua"
+    },
+    "at": "2026-10-24T20:51:33.295Z",
+    "media": "asset-card"
+   }
   }
  }
 }

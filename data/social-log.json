@@ -1319,6 +1319,21 @@
     },
     "at": "2026-10-25T14:57:26.101Z"
    }
+  },
+  "2026-10-25-event-tanker-rates-asia": {
+   "x": {
+    "id": "2114422922563690595",
+    "at": "2026-10-25T18:24:43.597Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myptdysscm2d",
+    "cid": "bafyreigvptxkiwymqc672x4jf77u5st3m6k3zmv2lsikqfqui4bugvke7a",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myptdysscm2d",
+     "cid": "bafyreigvptxkiwymqc672x4jf77u5st3m6k3zmv2lsikqfqui4bugvke7a"
+    },
+    "at": "2026-10-25T18:24:45.653Z"
+   }
   }
  }
 }

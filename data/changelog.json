@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-25",
+   "kind": "data",
+   "headline": "UAE oil spill, record tanker rates, and Iran's disputed Hormuz damage claim",
+   "changes": [
+    "An oil leak off the UAE coast forced beach closures in Ras Al Khaimah, Sharjah and Umm Al Quwain.",
+    "The IEA says shipping crude from the Gulf to Asia now costs over $37/barrel, more than five times pre-war levels.",
+    "Record tanker rates are pushing US crude exports to Asia toward a seven-year low.",
+    "Saudi Aramco is seeking overseas storage deals abroad to diversify away from Gulf supply risk.",
+    "Iran claimed seven vessels were struck or mined near Hormuz on Oct 21; Trump called it faked, and maritime monitors found no substantiation."
+   ]
+  },
+  {
    "date": "2026-10-24",
    "kind": "data",
    "headline": "Brent settles at highest since April on reports of planned post-midterm Iran strikes",

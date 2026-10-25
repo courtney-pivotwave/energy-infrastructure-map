@@ -1,8 +1,67 @@
 {
- "updated": "2026-10-24",
- "situation_headline": "Brent settled at $116.72 on 23 Oct, its highest close since April, on reports the US and Israel are planning renewed Iran strikes after the Nov 3 midterms; QatarEnergy signed a deal for US LNG to offset its war-damaged Ras Laffan plant.",
+ "updated": "2026-10-25",
+ "situation_headline": "An oil leak off the UAE coast shut beaches in three emirates on 23-24 Oct; the IEA says Hormuz-to-Asia shipping costs now exceed $37/bbl, over 5x pre-war, as Brent holds near 6-month highs on fears of post-midterm Iran strikes.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-24-uae-coast-oil-spill-beach-closures",
+   "date": "2026-10-24",
+   "title": "Oil leak off UAE coast forces beach closures in three emirates",
+   "summary": "The UAE said it was working to contain oil leaking from an unidentified tanker offshore; Ras Al Khaimah closed all its beaches on 24 October, a day after Umm Al Quwain and Sharjah's Al Hamriyah Beach were closed as precautions, with residents in Ajman and Umm Al Quwain reporting unusual odors. The UAE Ministry of Climate Change and Environment said it was assessing the spill's extent and that the odors pose no health risk; no vessel has been identified as the source, and no link to any specific earlier tanker incident has been confirmed (confirmed: UAE government statements, Reuters).",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    25.8,
+    55.95
+   ],
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — UAE Shuts All Beaches As Neighbors Grapple With Oil Spill",
+     "url": "https://gcaptain.com/uae-shuts-all-beaches-as-neighbors-grapple-with-oil-spill/",
+     "date": "2026-10-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-tanker-rates-us-asia-exports",
+   "date": "2026-10-23",
+   "title": "Record tanker rates threaten to push US oil exports to Asia to 7-year low",
+   "summary": "Leasing a tanker for the US Gulf Coast-to-China route hit nearly $60 million by late October, after touching a record $79.6 million earlier in the month, up from under $8 million before the war, Baltic Exchange data show. Valero's head of oil trading, Randy Hawkins, said freight, insurance and ship-to-ship transfer costs tied to the Iran war are now the market's main story; Vortexa data showed November US crude orders for Asia down roughly 50% month over month, which, if it holds, would be a seven-year low. Permian export premiums at the Magellan East Houston hub have fallen from more than $3 to 25 cents over benchmark futures as high freight costs erode US crude's competitiveness in Asia (confirmed: Bloomberg reporting; Baltic Exchange, Kpler and Vortexa data).",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Record Tanker Rates Threaten to Push U.S. Oil Exports to Asia to Seven-Year Low",
+     "url": "https://gcaptain.com/record-tanker-rates-threaten-to-push-u-s-oil-exports-to-asia-to-seven-year-low/",
+     "date": "2026-10-23"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-aramco-seeks-overseas-storage",
+   "date": "2026-10-22",
+   "title": "Aramco seeks overseas storage deals to shore up supply resilience",
+   "summary": "Saudi Aramco CEO Amin Nasser told Al Arabiya the company is negotiating with foreign governments for Aramco to use their strategic oil storage, aiming to double its existing overseas commercial storage in South Korea, Japan, the Netherlands and Egypt's Sidi Kerir hub; he gave no timetable or current capacity figure. Nasser linked the move to continuing Houthi attacks on Saudi energy infrastructure, including the Shaybah oilfield strike that killed two contractors on 21 October, and said Aramco is also studying raising crude flow from the Gulf to the Red Sea from 7 to 10 million b/d (confirmed: Aramco CEO statement, reported by Bloomberg).",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "east-west-pipeline"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Saudi Arabia Seeks Access to Overseas Oil Storage for Aramco",
+     "url": "https://gcaptain.com/saudi-arabia-seeks-access-to-overseas-oil-storage-for-aramco/",
+     "date": "2026-10-22"
+    }
+   ]
+  },
   {
    "id": "2026-10-22-qatarenergy-cheniere-lng-deal",
    "date": "2026-10-22",
@@ -19,6 +78,46 @@
     {
      "name": "gCaptain (Bloomberg) — QatarEnergy Signs Long-Term Deal to Buy U.S. LNG as Iran War Disrupts Exports",
      "url": "https://gcaptain.com/qatarenergy-signs-long-term-deal-to-buy-u-s-lng-as-iran-war-disrupts-exports/",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-iea-gulf-shipping-costs",
+   "date": "2026-10-21",
+   "title": "IEA: Gulf-to-Asia oil shipping costs top $37/bbl, over 5x pre-war",
+   "summary": "The International Energy Agency said freight costs for moving crude from the Middle East Gulf to Asia rose above $37 a barrel by mid-October, more than five times pre-war levels, with a VLCC cargo now costing over $74 million to ship versus under $15 million before the war. The IEA described the improvised network of expanded bypass pipelines, short-haul tanker shuttles and Gulf of Oman ship-to-ship transfers that sustains flows as 'expensive, inefficient and dangerous.' Despite roughly 30 reported attacks on vessels in October, Kpler data cited by the Wall Street Journal put Gulf oil flows, including offshore transfers, at about 82% of pre-war levels, with the share of regional exports bypassing Hormuz entirely rising from about 17% before the war to 40% by September (confirmed: IEA analysis; WSJ/Kpler data).",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — IEA: Gulf Oil Shipping Costs Top $37 Per Barrel, Five Times Pre-War Levels",
+     "url": "https://gcaptain.com/iea-gulf-oil-shipping-costs-top-37-per-barrel-five-times-pre-war-levels/",
+     "date": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-iran-claims-seven-vessels-hormuz",
+   "date": "2026-10-21",
+   "title": "Iran claims seven vessels struck near Hormuz; Trump calls it faked, JMIC finds no substantiation",
+   "summary": "Iran's Revolutionary Guard Navy said four vessels doing ship-to-ship transfers in the northern Persian Gulf were struck simultaneously on 21 October and that three more hit naval mines west of the Strait of Hormuz, without naming any vessel, owner or casualty. President Trump accused Iran on Truth Social of ‘making up fake hits, mines, and everything else’ to raise oil prices before the 3 November midterms. Neither claim is independently verified: UKMTO has issued no matching incident report, and the Joint Maritime Information Center said on 18 October there was 'no substantiation' for recent Iranian mine claims, while continuing to rate the strait's threat level SEVERE (unverified: claims by parties to the conflict).",
+   "category": "military",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "gCaptain — Iran Claims More Ships Struck Near Hormuz as Trump Accuses Tehran of 'Faking Hits'",
+     "url": "https://gcaptain.com/iran-claims-more-ships-struck-near-hormuz-as-trump-accuses-tehran-of-faking-hits/",
      "date": "2026-10-22"
     }
    ]

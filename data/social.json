@@ -1248,6 +1248,70 @@
     "UAE"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-25-digest",
+   "created": "2026-10-25",
+   "type": "digest",
+   "text": "An oil leak off the UAE coast shut beaches in three emirates. The IEA says Gulf-to-Asia shipping now costs over $37/barrel, 5x pre-war. Brent holds near $117/bbl. US diesel: $6.28/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "UAE",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-25-event-iea-gulf-shipping-costs",
+   "created": "2026-10-25",
+   "type": "event",
+   "text": "The IEA says shipping crude from the Gulf to Asia now costs over $37/barrel, more than 5x pre-war levels, as bypass pipelines and Gulf of Oman ship-to-ship transfers keep oil moving at a steep price.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": "2026-10-21-iea-gulf-shipping-costs",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Shipping",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-25-event-tanker-rates-asia",
+   "created": "2026-10-25",
+   "type": "event",
+   "text": "Tanker rates for the US Gulf Coast-to-China route hit nearly $60 million by late October, up from under $8 million before the war. November US crude orders for Asia are down about 50% (Vortexa).",
+   "url": "https://strategicenergymap.org/events/#2026-10-23-tanker-rates-us-asia-exports",
+   "event_id": "2026-10-23-tanker-rates-us-asia-exports",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "CrudeOil"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-25-explainer-samref-refinery",
+   "created": "2026-10-25",
+   "type": "explainer",
+   "text": "Saudi Arabia's SAMREF refinery at Yanbu, an Aramco-ExxonMobil JV, processes about 400,000 b/d via the East-West pipeline. Yanbu is the kingdom's main Hormuz-bypass outlet, now in Houthi attacks' path.",
+   "url": "https://strategicenergymap.org/facilities/samref-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Refining",
+    "SaudiArabia"
+   ],
+   "reply_to": null
   }
  ]
 }

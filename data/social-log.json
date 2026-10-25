@@ -1304,6 +1304,21 @@
     "at": "2026-10-25T10:57:43.852Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-25-event-iea-gulf-shipping-costs": {
+   "x": {
+    "id": "2114370749532131475",
+    "at": "2026-10-25T14:57:24.616Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myphrbkdav2q",
+    "cid": "bafyreid3yb6ujvlvl6yywfd6u3cicn6wv4bhd4gvslb6mui33r4jbzdn3i",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myphrbkdav2q",
+     "cid": "bafyreid3yb6ujvlvl6yywfd6u3cicn6wv4bhd4gvslb6mui33r4jbzdn3i"
+    },
+    "at": "2026-10-25T14:57:26.101Z"
+   }
   }
  }
 }

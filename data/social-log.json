@@ -1368,6 +1368,23 @@
     "at": "2026-10-26T10:56:43.358Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-26-event-jmic-hormuz-transits": {
+   "x": {
+    "id": "2114770014947668127",
+    "at": "2026-10-26T17:23:56.967Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mysaga2zfz2i",
+    "cid": "bafyreignmhz53cba7y4qk4qlpz3gtfqstpy2z2xrtrkt2xyfobabgrz5c4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mysaga2zfz2i",
+     "cid": "bafyreignmhz53cba7y4qk4qlpz3gtfqstpy2z2xrtrkt2xyfobabgrz5c4"
+    },
+    "at": "2026-10-26T17:23:59.085Z",
+    "media": "locator-card"
+   }
   }
  }
 }

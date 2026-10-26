@@ -1,8 +1,54 @@
 {
- "updated": "2026-10-25",
- "situation_headline": "An oil leak off the UAE coast shut beaches in three emirates on 23-24 Oct; the IEA says Hormuz-to-Asia shipping costs now exceed $37/bbl, over 5x pre-war, as Brent holds near 6-month highs on fears of post-midterm Iran strikes.",
+ "updated": "2026-10-26",
+ "situation_headline": "Per JMIC, Hormuz transits are down to about a quarter of normal and nearly 500 ships wait outside the strait; Houthi missiles again targeted the Yanbu area and Riyadh on 24-25 Oct. Brent holds near $116.72, its highest close since April.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-25-jmic-hormuz-transits-fall",
+   "date": "2026-10-25",
+   "title": "JMIC: Hormuz transits fall to about a quarter of normal, ~492 ships now waiting",
+   "summary": "The multinational Joint Maritime Information Center recorded just 101 transits through the Strait of Hormuz over 22-24 October, about a quarter of the roughly 138/day pre-war baseline, and 58 through Bab el-Mandeb over the same period, against a baseline near 61/day. JMIC said about 492 vessels were waiting outside Hormuz as of 25 October — roughly 194 near Fujairah/Khor Fakkan, 178 off Dubai, 55 near Musandam/Sohar and 32 off Bandar Abbas/Qeshm — and expects the backlog to persist. UKMTO separately logged 18,049 anomalous AIS positions in the Gulf in its 23 October weekly overview, and ship-tracker Windward reported 293 vessels affected by GPS jamming on 21 October (confirmed: JMIC, UKMTO, Windward, via Gulf News).",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz",
+    "bab-el-mandeb"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Gulf News — Strait of Hormuz crisis: nearly 500 vessels delayed amid new tanker attack and rising maritime threats",
+     "url": "https://gulfnews.com/world/mena/strait-of-hormuz-crisis-nearly-500-vessels-face-disruption-amid-new-tanker-attack-1.500723273",
+     "date": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-25-houthi-barrage-riyadh-yanbu",
+   "date": "2026-10-25",
+   "title": "Houthi missile barrage hits Riyadh and Yanbu area; King Khalid airport reopens",
+   "summary": "Saudi-led coalition air defenses intercepted Houthi ballistic missiles aimed at Taif and the Yanbu area on 24 October, then a ballistic missile and two drones aimed at Riyadh and a cruise missile toward Khamis Mushait air base on 25 October; falling debris from intercepts injured two people and damaged buildings near Khamis Mushait and Ahad Rafidah. King Khalid International Airport in Riyadh, shut since a Houthi strike killed 13 people on 10 October, broadly reopened on 25 October. No damage to Aramco's Yanbu facilities was reported (confirmed: Saudi-led coalition statements via Reuters and AFP).",
+   "category": "military",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "yanbu-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "RFE/RL — Iran Live Blog (citing Reuters, AFP)",
+     "url": "https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "Gulf News — Middle East war: drone, missile intercepted over Riyadh as King Khalid airport resumes operations",
+     "url": "https://gulfnews.com/world/mena/middle-east-war-drone-missile-intercepted-over-riyadh-as-king-khalid-airport-resumes-operations-1.500722685",
+     "date": "2026-10-25"
+    }
+   ]
+  },
   {
    "id": "2026-10-24-uae-coast-oil-spill-beach-closures",
    "date": "2026-10-24",

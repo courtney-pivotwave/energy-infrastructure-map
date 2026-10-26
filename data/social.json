@@ -1312,6 +1312,69 @@
     "SaudiArabia"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-26-digest",
+   "created": "2026-10-26",
+   "type": "digest",
+   "text": "Hormuz transits fell to about a quarter of normal over Oct 22-24 (JMIC); roughly 492 ships now wait outside the strait. Houthi missiles again targeted Yanbu and Riyadh over the weekend. Brent holds near $116.72/bbl; US diesel: $6.28/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-26-event-jmic-hormuz-transits",
+   "created": "2026-10-26",
+   "type": "event",
+   "text": "JMIC counted just 101 Hormuz transits over Oct 22-24, about a quarter of the ~138/day pre-war baseline. Bab el-Mandeb traffic is also down, to about 58 transits over the same three days.",
+   "url": "https://strategicenergymap.org/events/#2026-10-25-jmic-hormuz-transits-fall",
+   "event_id": "2026-10-25-jmic-hormuz-transits-fall",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Shipping",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-26-event-houthi-yanbu-riyadh",
+   "created": "2026-10-26",
+   "type": "event",
+   "text": "Saudi-led air defenses intercepted Houthi missiles toward Yanbu and Taif on Oct 24, then Riyadh and Khamis Mushait air base on Oct 25. No damage to Aramco facilities was reported.",
+   "url": "https://strategicenergymap.org/events/#2026-10-25-houthi-barrage-riyadh-yanbu",
+   "event_id": "2026-10-25-houthi-barrage-riyadh-yanbu",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "SaudiArabia",
+    "Yemen"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-26-chart-fuel-weekly",
+   "created": "2026-10-26",
+   "type": "chart",
+   "text": "Diesel prices since the Strait of Hormuz closed: US +65%, EU average +34%, UK +41% (week of Oct 19 vs week of Feb 23).",
+   "url": "https://strategicenergymap.org/fuel-prices/",
+   "image": "fuel-weekly",
+   "alt": "Bar chart of the change in diesel prices since the week of Feb 23, 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland.",
+   "video": null,
+   "tags": [
+    "FuelPrices",
+    "GasPrices"
+   ],
+   "reply_to": null
   }
  ]
 }

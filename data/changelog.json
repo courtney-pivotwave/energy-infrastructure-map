@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-10-26",
+   "kind": "data",
+   "headline": "Hormuz traffic falls to a third of normal; Houthi missiles again target Yanbu and Riyadh",
+   "changes": [
+    "JMIC: Strait of Hormuz transits fell to about 101 ships over Oct 22-24, roughly a quarter of the ~138/day pre-war average, with about 492 vessels now waiting outside the strait.",
+    "Bab el-Mandeb traffic also fell, to about 58 transits over the same three days against a baseline near 61/day.",
+    "Saudi-led coalition air defenses intercepted Houthi missiles aimed at the Yanbu area and Taif on Oct 24, then Riyadh and a Khamis Mushait air base on Oct 25; no damage to Aramco facilities was reported.",
+    "Riyadh's King Khalid International Airport, closed since a deadly Houthi strike on Oct 10, broadly reopened Oct 25."
+   ]
+  },
+  {
    "date": "2026-10-25",
    "kind": "data",
    "headline": "UAE oil spill, record tanker rates, and Iran's disputed Hormuz damage claim",

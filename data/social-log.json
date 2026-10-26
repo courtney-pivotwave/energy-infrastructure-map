@@ -1385,6 +1385,23 @@
     "at": "2026-10-26T17:23:59.085Z",
     "media": "locator-card"
    }
+  },
+  "2026-10-26-event-houthi-yanbu-riyadh": {
+   "x": {
+    "id": "2114849856481263915",
+    "at": "2026-10-26T22:41:12.646Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myss5jzh7425",
+    "cid": "bafyreidvbw2h4luwlyxhrpu54zg2ncvaov47zddrd4uoagx5eilbtly7hu",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myss5jzh7425",
+     "cid": "bafyreidvbw2h4luwlyxhrpu54zg2ncvaov47zddrd4uoagx5eilbtly7hu"
+    },
+    "at": "2026-10-26T22:41:14.779Z",
+    "media": "locator-card"
+   }
   }
  }
 }

@@ -1552,8 +1552,9 @@
     50.1
    ],
    "size": 7,
-   "details": "Saudi Arabia. World's largest offshore oil loading facility. ~6+ million bpd capacity. Saudi Aramco's primary export terminal.",
-   "geo": null
+   "verified": "2026-10-27",
+   "details": "Saudi Arabia (Eastern Province, Persian Gulf). World's largest offshore oil loading facility: a Sea Island complex rated around 6 million bpd plus roughly 2.5 million bpd more at two pier terminals. Aramco's primary crude export terminal, and home to the company's oldest and largest refinery, with 550,000 bpd of crude distillation capacity. Exported more than 5 million bpd of crude before the war that began 28 February 2026 (Bloomberg).",
+   "geo": "Ras Tanura sits on a peninsula on Saudi Arabia's Gulf coast, the export point for crude gathered from the kingdom's Eastern Province fields, including Ghawar, via the Abqaiq processing hub. Its size and redundancy, with three separate loading areas plus onshore storage, have made it more resilient to wartime strikes than smaller Gulf sites, though a 2 March 2026 drone strike forced a brief, limited shutdown. It also anchors Saudi Arabia's workaround for the closed Strait of Hormuz: Aramco has sold tens of millions of barrels of Ras Tanura crude for ship-to-ship transfer at Sohar, Oman, loaded onto shuttle tankers that still have to pass through Hormuz to reach open water."
   },
   {
    "id": "mina-al-ahmadi",

@@ -1391,6 +1391,22 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-27-explainer-ras-tanura",
+   "created": "2026-10-27",
+   "type": "explainer",
+   "text": "Ras Tanura is the world's largest offshore oil loading facility, about 6 million b/d, Aramco's main crude export hub. A fire broke out nearby Oct 27 after an attack; damage still unclear.",
+   "url": "https://strategicenergymap.org/facilities/ras-tanura-terminal/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "CrudeOil"
+   ],
+   "reply_to": null
   }
  ]
 }

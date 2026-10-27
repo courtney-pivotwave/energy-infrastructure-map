@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-10-27",
+   "kind": "data",
+   "headline": "Fire near Ras Tanura export terminal; Houthis claim new strikes on pipeline, Riyadh airport",
+   "changes": [
+    "Saudi authorities contained a fire near Ras Tanura, Aramco's largest crude export terminal, after an attack early Oct 27; Bloomberg reported the extent of the damage was unclear and no group had claimed responsibility.",
+    "The Houthis said Oct 26 they struck pumping stations on the East-West pipeline and fired a missile at Riyadh's airport hours after it reopened; Saudi Arabia and Aramco have not confirmed either claim.",
+    "Brent eased to about $114.88 and WTI to $101.21 on 27 Oct after Monday's profit-taking, while TTF (~€94.67) and JKM LNG ($32.20) both set fresh 2026 highs."
+   ]
+  },
+  {
    "date": "2026-10-26",
    "kind": "data",
    "headline": "Hormuz traffic falls to a third of normal; Houthi missiles again target Yanbu and Riyadh",

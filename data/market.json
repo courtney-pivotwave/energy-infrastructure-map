@@ -1,34 +1,34 @@
 {
- "as_of": "2026-10-23",
+ "as_of": "2026-10-27",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 116.72,
-   "week_ago": 105.91,
+   "value": 114.88,
+   "week_ago": 111.5,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Settled at $116.72 on 23 Oct, up 3.1% on the day and about 10% w/w, its highest close since 29 Apr, as markets priced in reports the US and Israel are planning renewed strikes on Iran after the Nov 3 midterms and continuing Houthi attacks on Saudi Arabia. Week-ago is this site's 16 Oct reading, exactly 7 days earlier.",
+   "note": "Eased to about $114.88 on 27 Oct (Trading Economics), down roughly 0.8% on the day but still up about 3% w/w, after Monday's unconfirmed Houthi claims of fresh strikes on the East-West pipeline and Riyadh's airport and a fire near the Ras Tanura export terminal early Tuesday kept a geopolitical premium in the market even as Brent and WTI fell on profit-taking Monday after the prior week's rally. Week-ago is this site's 20 Oct reading, exactly 7 days earlier.",
    "source": {
-    "name": "Rio Times Online — Oil Markets LatAm, Friday, October 23, 2026",
-    "url": "https://www.riotimesonline.com/oil-markets-latam-friday-october-23-2026",
-    "date": "2026-10-23"
+    "name": "Trading Economics — Brent Crude Oil",
+    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "date": "2026-10-27"
    },
    "extra_sources": [
     {
-     "name": "ISW / Critical Threats Project — Iran Update, October 22, 2026",
-     "url": "https://www.criticalthreats.org/analysis/iran-update-october-22-2026",
-     "date": "2026-10-22"
+     "name": "FinanceFeeds — Brent Crude Oil Price $114.60 Monday After Houthi Yanbu Claims",
+     "url": "https://financefeeds.com/brent-crude-oil-price-114-60-monday-after-houthi-yanbu-claims-fed-week-bull-120-bear-108/",
+     "date": "2026-10-26"
     },
     {
-     "name": "gCaptain — Iran Claims More Ships Struck Near Hormuz as Trump Accuses Tehran of 'Faking Hits'",
-     "url": "https://gcaptain.com/iran-claims-more-ships-struck-near-hormuz-as-trump-accuses-tehran-of-faking-hits/",
-     "date": "2026-10-22"
+     "name": "Türkiye Today (Bloomberg) — Oil prices rise as Saudi Ras Tanura hub catches fire after Houthi attack",
+     "url": "https://www.turkiyetoday.com/business/oil-prices-rise-as-saudi-ras-tanura-hub-catches-fire-after-houthi-attack-3231114",
+     "date": "2026-10-27"
     }
    ]
   },
@@ -36,25 +36,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 103.27,
-   "week_ago": 97.7,
+   "value": 101.21,
+   "week_ago": 100.73,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Settled at $103.27 on 23 Oct, up 3.8% on the day, tracking Brent higher on reports of planned post-midterm US/Israeli strikes on Iran. Week-ago is this site's 16 Oct reading, exactly 7 days earlier.",
+   "note": "Eased to about $101.21 on 27 Oct (Trading Economics), down roughly 0.5% on the day and little changed w/w, tracking Brent on the same unconfirmed Houthi claims and the Ras Tanura fire. Week-ago is this site's 20 Oct reading, exactly 7 days earlier.",
    "source": {
-    "name": "Rio Times Online — Oil Markets LatAm, Friday, October 23, 2026",
-    "url": "https://www.riotimesonline.com/oil-markets-latam-friday-october-23-2026",
-    "date": "2026-10-23"
+    "name": "Trading Economics — Crude Oil (WTI)",
+    "url": "https://tradingeconomics.com/commodity/crude-oil",
+    "date": "2026-10-27"
    },
    "extra_sources": [
     {
-     "name": "Trading Economics — Crude Oil (WTI)",
-     "url": "https://tradingeconomics.com/commodity/crude-oil",
-     "date": "2026-10-23"
+     "name": "FinanceFeeds — Brent Crude Oil Price $114.60 Monday After Houthi Yanbu Claims",
+     "url": "https://financefeeds.com/brent-crude-oil-price-114-60-monday-after-houthi-yanbu-claims-fed-week-bull-120-bear-108/",
+     "date": "2026-10-26"
     }
    ]
   },
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 93.86,
-   "week_ago": 87.8,
+   "value": 94.67,
+   "week_ago": 89.32,
    "pre_crisis": 32.0,
    "peak": {
-    "value": 93.86,
-    "date": "2026-10-23",
-    "note": "New 2026 high, surpassing the prior 93.80 set 23 Oct (Trading Economics)."
+    "value": 94.67,
+    "date": "2026-10-27",
+    "note": "New 2026 high, surpassing the prior 93.86 set 23 Oct (Trading Economics)."
    },
-   "note": "Rose to a fresh 2026 high of about €93.86 on 23 Oct (Trading Economics), up roughly 6% w/w, as EU storage fell to 74.62% of capacity — the lowest seasonal level since 2009 — and Middle East LNG shipments stayed about 80% below year-ago levels. Week-ago is this site's 16 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Rose to a fresh 2026 high of about €94.67 on 27 Oct (Trading Economics), up roughly 6% w/w, as European winter gas supply stays tight. Week-ago is this site's 20 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-23"
+    "date": "2026-10-27"
    },
    "extra_sources": [
     {
@@ -93,19 +93,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 31.42,
-   "week_ago": 26.53,
+   "value": 32.2,
+   "week_ago": 30.01,
    "pre_crisis": 10.75,
    "peak": {
-    "value": 31.42,
-    "date": "2026-10-23",
-    "note": "New 2026 high, surpassing the prior 30.63 set 22 Oct (Trading Economics)."
+    "value": 32.2,
+    "date": "2026-10-26",
+    "note": "New 2026 high, surpassing the prior 31.42 set 23 Oct (Trading Economics)."
    },
-   "note": "Rose to $31.42 as of Trading Economics' 23 Oct print, a new 2026 high, up roughly 18% w/w. Week-ago is this site's 16 Oct reading, 7 days before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Rose to $32.20 as of Trading Economics' 26 Oct print, a new 2026 high, up roughly 7% w/w. Week-ago is this site's 19 Oct reading (the site's JKM read lags a day), 7 days before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-23"
+    "date": "2026-10-26"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.64,
-   "week_ago": 3.18,
+   "value": 2.57,
+   "week_ago": 3.0,
    "pre_crisis": 2.99,
-   "note": "Eased further to about $2.64 on 23 Oct (Trading Economics), down roughly 17% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Eased further to about $2.57 on 27 Oct (Trading Economics), down roughly 14% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-23"
+    "date": "2026-10-27"
    },
    "extra_sources": [
     {
@@ -147,17 +147,17 @@
    ]
   }
  ],
- "note": "Brent, WTI, TTF and JKM all extended their rally to fresh highs on 23 October on reports the US and Israel are planning renewed strikes on Iran after the Nov 3 midterms (New York Times, via ISW/CTP) and continuing Houthi attacks on Saudi Arabia; Brent's $116.72 settlement was its highest close since 29 Apr. Henry Hub continued easing, staying largely insulated from the Gulf turmoil.",
+ "note": "Brent and WTI slipped on 26 October on profit-taking after the prior week's rally, even as the Houthis claimed fresh, unconfirmed strikes on the East-West pipeline and Riyadh's airport; a fire then broke out near Saudi Arabia's Ras Tanura export terminal early on 27 October (Bloomberg), with the extent of the damage unclear. TTF and JKM both extended their rallies to fresh 2026 highs on tight winter gas supply. Henry Hub continued easing, staying largely insulated from the Gulf turmoil.",
  "note_sources": [
   {
-   "name": "Rio Times Online — Oil Markets LatAm, Friday, October 23, 2026",
-   "url": "https://www.riotimesonline.com/oil-markets-latam-friday-october-23-2026",
-   "date": "2026-10-23"
+   "name": "Trading Economics — Brent Crude Oil",
+   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "date": "2026-10-27"
   },
   {
-   "name": "ISW / Critical Threats Project — Iran Update, October 22, 2026",
-   "url": "https://www.criticalthreats.org/analysis/iran-update-october-22-2026",
-   "date": "2026-10-22"
+   "name": "Türkiye Today (Bloomberg) — Oil prices rise as Saudi Ras Tanura hub catches fire after Houthi attack",
+   "url": "https://www.turkiyetoday.com/business/oil-prices-rise-as-saudi-ras-tanura-hub-catches-fire-after-houthi-attack-3231114",
+   "date": "2026-10-27"
   }
  ]
 }

@@ -1375,6 +1375,22 @@
     "GasPrices"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-27-digest",
+   "created": "2026-10-27",
+   "type": "digest",
+   "text": "Saudi Arabia contained a fire near Ras Tanura, its top export terminal, after an unclaimed attack; damage unclear. Houthis also claim new strikes on the East-West pipeline and Riyadh's airport, unconfirmed. Brent near $114.88; diesel $6.28/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "SaudiArabia",
+    "OOTT"
+   ],
+   "reply_to": null
   }
  ]
 }

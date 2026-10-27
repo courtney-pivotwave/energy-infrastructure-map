@@ -1,8 +1,58 @@
 {
- "updated": "2026-10-26",
- "situation_headline": "Per JMIC, Hormuz transits are down to about a quarter of normal and nearly 500 ships wait outside the strait; Houthi missiles again targeted the Yanbu area and Riyadh on 24-25 Oct. Brent holds near $116.72, its highest close since April.",
+ "updated": "2026-10-27",
+ "situation_headline": "A fire was contained near Saudi Arabia's Ras Tanura terminal on 27 Oct after an unclaimed attack; damage is unclear. The Houthis also claimed new, unconfirmed strikes on the East-West pipeline and Riyadh's airport on 26 Oct. Brent, TTF and JKM all hit fresh highs this week.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-27-ras-tanura-fire",
+   "date": "2026-10-27",
+   "title": "Fire breaks out near Saudi Arabia's Ras Tanura export terminal after attack",
+   "summary": "Saudi authorities contained a fire near Ras Tanura, Aramco's largest crude export terminal, after an attack in the area early on 27 October; Bloomberg, citing a person familiar with the matter, said the extent of the damage was not immediately clear and that Aramco and Saudi Arabia's energy ministry did not immediately respond to requests for comment (reported: Bloomberg via Türkiye Today, The Edge Malaysia). The Saudi-led coalition separately said it intercepted three ballistic missiles aimed at the Eastern Province and four drones aimed at southern Saudi Arabia the same day, without linking the intercepts to the Ras Tanura incident; no group had claimed responsibility for the attack itself.",
+   "category": "infrastructure",
+   "severity": "high",
+   "coords": [26.6, 50.1],
+   "assets": [
+    "ras-tanura-terminal"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Türkiye Today (Bloomberg) — Oil prices rise as Saudi Ras Tanura hub catches fire after Houthi attack",
+     "url": "https://www.turkiyetoday.com/business/oil-prices-rise-as-saudi-ras-tanura-hub-catches-fire-after-houthi-attack-3231114",
+     "date": "2026-10-27"
+    },
+    {
+     "name": "The Edge Malaysia (Bloomberg) — Aramco Contains Fire Near Ras Tanura Oil Hub After Attack",
+     "url": "https://theedgemalaysia.com/node/823474",
+     "date": "2026-10-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-26-houthi-pipeline-airport-claims",
+   "date": "2026-10-26",
+   "title": "Houthis claim new strikes on East-West pipeline, Riyadh airport hours after reopening",
+   "summary": "Yemen's Houthis said on 26 October they struck pumping stations on Saudi Arabia's East-West pipeline and fired a ballistic missile at Riyadh's King Khalid International Airport, hours after the airport resumed limited flights; Saudi Arabia and Aramco did not confirm either claim (unverified: Houthi claim). The Saudi-led coalition said it intercepted the missile aimed at Riyadh and destroyed Houthi missile launchers near Sanaa. Brent and WTI fell on the day on profit-taking after the previous week's rally, even as the unconfirmed claims kept a geopolitical premium in the market.",
+   "category": "military",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "east-west-pipeline"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Breitbart (Reuters, Anadolu Agency, AFP) — Houthis Claim Attacks on Saudi Oil Pumps and Riyadh Airport",
+     "url": "https://www.breitbart.com/national-security/2026/10/26/houthis-claim-attacks-on-saudi-oil-pumps-and-riyadh-airport/",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "FinanceFeeds — Brent Crude Oil Price $114.60 Monday After Houthi Yanbu Claims",
+     "url": "https://financefeeds.com/brent-crude-oil-price-114-60-monday-after-houthi-yanbu-claims-fed-week-bull-120-bear-108/",
+     "date": "2026-10-26"
+    }
+   ]
+  },
   {
    "id": "2026-10-25-jmic-hormuz-transits-fall",
    "date": "2026-10-25",

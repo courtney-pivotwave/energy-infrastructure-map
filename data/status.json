@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25",
+ "updated": "2026-10-27",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -314,9 +314,9 @@
   },
   "east-west-pipeline": {
    "status": "reduced",
-   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep. Saudi Energy Minister Prince Abdulaziz bin Salman said on 6 Oct that flow had reached 5.8 million bpd — about 83% of its 7 mb/d capacity — with roughly 4 mb/d of that rerouted to Yanbu on the Red Sea to bypass Hormuz, about 4% of global oil supply. Flows were as low as ~2 mb/d in August (Kpler) after Houthi attacks on the Red Sea route. Aramco is also in talks to formalize long-term shuttle contracts built on this bypass system.",
+   "summary": "Shut 11 Sep after drone strikes on pumping stations (launched from Iraq); restarted around 21-22 Sep. Saudi Energy Minister Prince Abdulaziz bin Salman said on 6 Oct that flow had reached 5.8 million bpd — about 83% of its 7 mb/d capacity — with roughly 4 mb/d of that rerouted to Yanbu on the Red Sea to bypass Hormuz, about 4% of global oil supply. Flows were as low as ~2 mb/d in August (Kpler) after Houthi attacks on the Red Sea route. Aramco is also in talks to formalize long-term shuttle contracts built on this bypass system. The Houthis said on 26 Oct they struck the pipeline's pumping stations again; Aramco and Saudi authorities have not confirmed any damage or flow impact (unverified: Houthi claim).",
    "since": "2026-09-10",
-   "updated": "2026-10-09",
+   "updated": "2026-10-27",
    "confidence": "confirmed",
    "sources": [
     {
@@ -338,6 +338,11 @@
      "name": "Egypt Oil & Gas (Bloomberg) — Saudi Arabia Raises East-West Pipeline Oil Flows Above 80% Capacity",
      "url": "https://egyptoil-gas.com/news/saudi-arabia-raises-east-west-pipeline-oil-flows-above-80-capacity/",
      "date": "2026-10-02"
+    },
+    {
+     "name": "Breitbart (Reuters, Anadolu Agency) — Houthis Claim Attacks on Saudi Oil Pumps and Riyadh Airport",
+     "url": "https://www.breitbart.com/national-security/2026/10/26/houthis-claim-attacks-on-saudi-oil-pumps-and-riyadh-airport/",
+     "date": "2026-10-26"
     }
    ]
   },
@@ -503,10 +508,10 @@
   },
   "ras-tanura-terminal": {
    "status": "reduced",
-   "summary": "Loadings are constrained by the Hormuz situation but have partly offset the Yanbu/East-West pipeline outage: Aramco has sold ~60 million barrels of Ras Tanura crude for ship-to-ship transfer at Sohar, Oman this month and next, shipped out via Hormuz by shuttle tanker. Ship-tracking (MarineTraffic, TankerTrackers.com) showed Ras Tanura and Ju'aymah loading ~12–14 mb on 21 Sep, the busiest day since before the war, and the Sohar/Fujairah STS relay is now near capacity.",
+   "summary": "Loadings are constrained by the Hormuz situation but have partly offset the Yanbu/East-West pipeline outage: Aramco has sold ~60 million barrels of Ras Tanura crude for ship-to-ship transfer at Sohar, Oman this month and next, shipped out via Hormuz by shuttle tanker. Ship-tracking (MarineTraffic, TankerTrackers.com) showed Ras Tanura and Ju'aymah loading ~12–14 mb on 21 Sep, the busiest day since before the war, and the Sohar/Fujairah STS relay is now near capacity. A fire broke out near the terminal early on 27 Oct after an attack; Bloomberg reported the extent of the damage was not immediately clear and Aramco had not responded to requests for comment, and no group had claimed responsibility (reported).",
    "since": "2026-03-02",
-   "updated": "2026-09-28",
-   "confidence": "confirmed",
+   "updated": "2026-10-27",
+   "confidence": "reported",
    "sources": [
     {
      "name": "Gulf News — Saudi Arabia loads nearly 12 million barrels in a day as Hormuz tanker traffic adapts",
@@ -527,6 +532,11 @@
      "name": "MarineLink — Saudi Oil Surge Pushes Gulf of Oman Transfers to Capacity",
      "url": "https://www.marinelink.com/news/saudi-oil-surge-pushes-gulf-oman-543259",
      "date": "2026-09-24"
+    },
+    {
+     "name": "Türkiye Today (Bloomberg) — Oil prices rise as Saudi Ras Tanura hub catches fire after Houthi attack",
+     "url": "https://www.turkiyetoday.com/business/oil-prices-rise-as-saudi-ras-tanura-hub-catches-fire-after-houthi-attack-3231114",
+     "date": "2026-10-27"
     }
    ]
   },

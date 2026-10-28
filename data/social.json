@@ -1391,6 +1391,38 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-28-digest",
+   "created": "2026-10-28",
+   "type": "digest",
+   "text": "No official confirmation yet on the extent of Tuesday's Ras Tanura fire or the Houthis' pipeline and airport claims. Brent firmed to about $114.80 and TTF gas hit a fresh 2026 high above €97/MWh. US diesel: $6.35/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Brent",
+    "EnergySecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-28-explainer-ghawar",
+   "created": "2026-10-28",
+   "type": "explainer",
+   "text": "Ghawar, in Saudi Arabia's Eastern Province near Ras Tanura, is the world's largest conventional oil field: ~3.8 million b/d across 280 km, discovered 1948. Its spare capacity makes Saudi Arabia OPEC+'s swing producer.",
+   "url": "https://strategicenergymap.org/facilities/ghawar-oil/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "CrudeOil",
+    "MiddleEast"
+   ],
+   "reply_to": null
   }
  ]
 }

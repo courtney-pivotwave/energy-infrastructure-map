@@ -1453,6 +1453,23 @@
     "at": "2026-10-28T11:01:38.140Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-28-explainer-ghawar": {
+   "x": {
+    "id": "2115491551249838498",
+    "at": "2026-10-28T17:11:04.642Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myxamzzig722",
+    "cid": "bafyreid2dfyzrh57oojxfob34qnfgn5pvwuarkmdfikmjiggotqagher5u",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myxamzzig722",
+     "cid": "bafyreid2dfyzrh57oojxfob34qnfgn5pvwuarkmdfikmjiggotqagher5u"
+    },
+    "at": "2026-10-28T17:11:06.322Z",
+    "media": "asset-card"
+   }
   }
  }
 }

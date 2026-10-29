@@ -1455,6 +1455,22 @@
     "DataViz"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-29-event-uae-spill-gem-no2",
+   "created": "2026-10-29",
+   "type": "event",
+   "text": "Reuters: maritime analysts and satellite imagery name the VLCC GEM NO.2, hit by a projectile off the UAE on Oct 9, as the likely source of the oil spill shutting beaches in three UAE emirates.",
+   "url": "https://strategicenergymap.org/events/#2026-10-24-uae-coast-oil-spill-beach-closures",
+   "event_id": "2026-10-24-uae-coast-oil-spill-beach-closures",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "UAE",
+    "Tankers"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -103,7 +103,7 @@
    "id": "2026-10-24-uae-coast-oil-spill-beach-closures",
    "date": "2026-10-24",
    "title": "Oil leak off UAE coast forces beach closures in three emirates",
-   "summary": "The UAE said it was working to contain oil leaking from an unidentified tanker offshore; Ras Al Khaimah closed all its beaches on 24 October, a day after Umm Al Quwain and Sharjah's Al Hamriyah Beach were closed as precautions, with residents in Ajman and Umm Al Quwain reporting unusual odors. The UAE Ministry of Climate Change and Environment said it was assessing the spill's extent and that the odors pose no health risk; no vessel has been identified as the source, and no link to any specific earlier tanker incident has been confirmed (confirmed: UAE government statements, Reuters).",
+   "summary": "The UAE said it was working to contain oil leaking from an unidentified tanker offshore; Ras Al Khaimah closed all its beaches on 24 October, a day after Umm Al Quwain and Sharjah's Al Hamriyah Beach were closed as precautions, with residents in Ajman and Umm Al Quwain reporting unusual odors. The UAE Ministry of Climate Change and Environment said it was assessing the spill's extent and that the odors pose no health risk; UAE authorities have not named a source vessel (confirmed: UAE government statements, Reuters). Reuters reported on 26 October that maritime analysts, including satellite-imagery firm Orbital Risk Intelligence, identified the likely source as the VLCC GEM NO.2 — struck by an unidentified projectile off the UAE on 9 October — based on Copernicus Sentinel-2 imagery whose slick location and the vessel's scorch damage matched; imagery from 24 October showed the slick widening toward Umm Al Quwain. No official UAE confirmation of the vessel or a spill-volume estimate has been published.",
    "category": "shipping",
    "severity": "medium",
    "coords": [
@@ -117,6 +117,11 @@
      "name": "gCaptain (Reuters) — UAE Shuts All Beaches As Neighbors Grapple With Oil Spill",
      "url": "https://gcaptain.com/uae-shuts-all-beaches-as-neighbors-grapple-with-oil-spill/",
      "date": "2026-10-24"
+    },
+    {
+     "name": "gCaptain (Reuters) — Oil Spill Off UAE Widens, Satellite Images Show, Prompting More Beach Closures",
+     "url": "https://gcaptain.com/oil-spill-off-uae-widens-satellite-images-show-prompting-more-beach-closures/",
+     "date": "2026-10-26"
     }
    ]
   },

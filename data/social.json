@@ -1423,6 +1423,38 @@
     "MiddleEast"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-29-digest",
+   "created": "2026-10-29",
+   "type": "digest",
+   "text": "No official confirmation yet, two days on, of damage from the Ras Tanura fire or the Houthis' pipeline and airport claims (Oct 26). Brent holds near $114.80/bbl; TTF stays at its 2026 high above €97/MWh. US diesel: $6.35/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-29-chart-chokepoints-weekly",
+   "created": "2026-10-29",
+   "type": "chart",
+   "text": "Hormuz tanker transits ran at ~101 over Oct 22-24, about a quarter of the ~138/day pre-war pace, with ~492 ships waiting outside the strait (JMIC). Bab el-Mandeb stayed similarly depressed at 58, against a ~61/day baseline.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": "chokepoints-weekly",
+   "alt": "Bar chart comparing weekly tanker transits through the Strait of Hormuz and Bab el-Mandeb against their pre-crisis daily baselines, both running far below normal.",
+   "video": null,
+   "tags": [
+    "Shipping",
+    "DataViz"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1470,6 +1470,23 @@
     "at": "2026-10-28T17:11:06.322Z",
     "media": "asset-card"
    }
+  },
+  "2026-10-29-digest": {
+   "x": {
+    "id": "2115759140853481570",
+    "at": "2026-10-29T10:54:22.934Z",
+    "media": "daily-board"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myz42f7tqy23",
+    "cid": "bafyreihiv44slkdpqo2aqdfdauuchcc6yrcouev6a2hjvhm6vi4a6zdkiq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3myz42f7tqy23",
+     "cid": "bafyreihiv44slkdpqo2aqdfdauuchcc6yrcouev6a2hjvhm6vi4a6zdkiq"
+    },
+    "at": "2026-10-29T10:54:24.922Z",
+    "media": "daily-board"
+   }
   }
  }
 }

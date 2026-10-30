@@ -1,8 +1,48 @@
 {
- "updated": "2026-10-29",
- "situation_headline": "No official confirmation yet, two days on, of damage from the 27 Oct Ras Tanura fire or the Houthis' 26 Oct East-West pipeline/Riyadh airport claims. Brent holds near $114.80/bbl; TTF gas remains at its highest level this year, above €97/MWh.",
+ "updated": "2026-10-30",
+ "situation_headline": "UKMTO confirmed a tanker was hit by small-boat explosives in the Strait of Hormuz on 29 Oct; Iran separately claimed mine strikes on four tankers (unverified). Brent is near $113.50/bbl; TTF closed above €100/MWh for the first time this year.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-29-ukmto-tanker-explosives-khasab",
+   "date": "2026-10-29",
+   "title": "Tanker hit by small-boat explosives in Strait of Hormuz, UKMTO says",
+   "summary": "UKMTO said a small boat came alongside a tanker about 25 nautical miles northeast of Oman's Khasab, in the Strait of Hormuz, and attached two explosive devices to its hull on 29 October. The blasts started a fire in the engine room that briefly disabled the vessel; UKMTO said the fire was extinguished, the crew were safe, there was no environmental impact, and the ship continued to its next port of call (confirmed: UKMTO via Reuters/Arab News). No group claimed responsibility.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [26.47, 56.58],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Arab News (Reuters) — Fire-hit tanker continues journey after being attacked in Strait of Hormuz, UKMTO says",
+     "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930",
+     "date": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-29-iran-fourth-tanker-mine-claim",
+   "date": "2026-10-29",
+   "title": "Iran's Guards and army claim mine strikes on four tankers in and near Hormuz",
+   "summary": "Iran's Revolutionary Guards said three tankers caught fire after striking mines in the Strait of Hormuz on 29 October, and Iran's regular army separately said a fourth vessel struck a mine further east while operating in what it called a \"restricted and dangerous area\" (IRGC and army claims, unverified). Neither claim has been independently confirmed by UKMTO, a tracker or any other independent source.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Arab News (Reuters) — Fire-hit tanker continues journey after being attacked in Strait of Hormuz, UKMTO says",
+     "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930",
+     "date": "2026-10-30"
+    }
+   ]
+  },
   {
    "id": "2026-10-27-ras-tanura-fire",
    "date": "2026-10-27",

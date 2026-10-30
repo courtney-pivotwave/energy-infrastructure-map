@@ -1455,6 +1455,22 @@
     "DataViz"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-30-digest",
+   "created": "2026-10-30",
+   "type": "digest",
+   "text": "UKMTO confirmed a tanker was hit by small-boat explosives in the Strait of Hormuz on Oct 29; crew safe. Iran separately claims mine strikes on 4 tankers (unverified). Brent near $113.50; TTF above €100/MWh for the first time this year.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
   }
  ]
 }

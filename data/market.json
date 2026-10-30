@@ -1,33 +1,33 @@
 {
- "as_of": "2026-10-28",
+ "as_of": "2026-10-30",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 114.8,
-   "week_ago": 110.74,
+   "value": 113.54,
+   "week_ago": 114.55,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Firmed to about $114.80 on 28 Oct (Trading Economics), up roughly 0.8% on the day and about 4% w/w, as the Ras Tanura fire's damage stayed unconfirmed a day on and the Houthis' East-West pipeline/Riyadh airport claims remained unverified, keeping a geopolitical premium in the market. Week-ago is this site's 21 Oct reading, exactly 7 days earlier.",
+   "note": "Rose to about $113.54 on 30 Oct (Trading Economics), up roughly 2.5% on the day though about 1% below this site's 23 Oct reading, after UKMTO reported a tanker was hit by explosives attached by a small boat 25nm northeast of Khasab, Oman on 29 October, and Iran's Revolutionary Guards and army separately claimed mine strikes on three tankers and a fourth (unverified); Ras Tanura's damage and the Houthis' East-West pipeline/Riyadh airport claims from 26-27 Oct also remain unconfirmed. Week-ago is this site's 23 Oct reading, exactly 7 days earlier.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-28"
+    "date": "2026-10-30"
    },
    "extra_sources": [
     {
-     "name": "Rigzone (Bloomberg) — Aramco Contains Fire Near Ras Tanura Oil Hub",
-     "url": "https://www.rigzone.com/news/wire/aramco_contains_fire_near_ras_tanura_oil_hub-27-oct-2026-184944-article/",
-     "date": "2026-10-27"
+     "name": "Arab News (Reuters) — Fire-hit tanker continues journey after being attacked in Strait of Hormuz, UKMTO says",
+     "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930",
+     "date": "2026-10-30"
     },
     {
-     "name": "Türkiye Today (Bloomberg) — Oil prices rise as Saudi Ras Tanura hub catches fire after Houthi attack",
-     "url": "https://www.turkiyetoday.com/business/oil-prices-rise-as-saudi-ras-tanura-hub-catches-fire-after-houthi-attack-3231114",
+     "name": "Rigzone (Bloomberg) — Aramco Contains Fire Near Ras Tanura Oil Hub",
+     "url": "https://www.rigzone.com/news/wire/aramco_contains_fire_near_ras_tanura_oil_hub-27-oct-2026-184944-article/",
      "date": "2026-10-27"
     }
    ]
@@ -36,19 +36,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 101.4,
-   "week_ago": 99.9,
+   "value": 104.19,
+   "week_ago": 100.85,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Firmed to about $101.40 on 28 Oct (Trading Economics), up roughly 1.5% on the day and w/w, tracking Brent on the same unresolved Ras Tanura and Houthi claims. Week-ago is this site's 21 Oct reading, exactly 7 days earlier.",
+   "note": "Rose to about $104.19 on 30 Oct (Trading Economics), up roughly 2.1% on the day and about 3% w/w, tracking Brent on the new Hormuz tanker attack and Iran's mine claims. Week-ago is this site's 23 Oct reading, exactly 7 days earlier.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-28"
+    "date": "2026-10-30"
    },
    "extra_sources": [
     {
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 97.93,
-   "week_ago": 87.86,
+   "value": 102.89,
+   "week_ago": 93.8,
    "pre_crisis": 32.0,
    "peak": {
-    "value": 97.93,
-    "date": "2026-10-28",
-    "note": "New 2026 high, surpassing the prior 94.67 set 27 Oct (Trading Economics)."
+    "value": 102.89,
+    "date": "2026-10-30",
+    "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Rose to a fresh 2026 high of about €97.93 on 28 Oct (Trading Economics), up roughly 11% w/w, as European winter gas supply stays tight. Week-ago is this site's 21 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Rose above €100/MWh for the first time this year to about €102.89 on 30 Oct (Trading Economics), up roughly 5% on the day and about 10% w/w, as tight European winter gas supply combined with the new Hormuz tanker attack to lift the LNG-exposed benchmark. Week-ago is this site's 23 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-28"
+    "date": "2026-10-30"
    },
    "extra_sources": [
     {
@@ -93,19 +93,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 31.74,
-   "week_ago": 29.55,
+   "value": 32.04,
+   "week_ago": 30.06,
    "pre_crisis": 10.75,
    "peak": {
     "value": 32.2,
     "date": "2026-10-26",
     "note": "New 2026 high, surpassing the prior 31.42 set 23 Oct (Trading Economics)."
    },
-   "note": "Eased to $31.74 as of Trading Economics' 27 Oct print, down about 1.4% from the 26 Oct high but still up roughly 7% w/w. Week-ago is this site's 20 Oct reading (the site's JKM read lags a day), 7 days before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Eased slightly to $32.04 as of Trading Economics' 29 Oct print, down about 1% on the day but still up roughly 6.6% w/w, tracking the wider gas rally. Week-ago is this site's 22 Oct reading (the site's JKM read lags a day), 7 days before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-27"
+    "date": "2026-10-29"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.07,
-   "week_ago": 2.86,
+   "value": 2.9,
+   "week_ago": 2.73,
    "pre_crisis": 2.99,
-   "note": "Rebounded to about $3.07 on 28 Oct (Trading Economics), up roughly 2% on the day and 7% w/w, though still within its recent range; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Eased to about $2.90 on 30 Oct (Trading Economics), down roughly 1.7% on the day but still up about 6% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-28"
+    "date": "2026-10-30"
    },
    "extra_sources": [
     {
@@ -147,17 +147,17 @@
    ]
   }
  ],
- "note": "Brent and WTI firmed on 28 October, a day after a fire broke out near Saudi Arabia's Ras Tanura export terminal following an attack; the extent of the damage remains unconfirmed, and the Houthis' East-West pipeline and Riyadh airport claims remain unverified. TTF extended its rally to a fresh 2026 high above €97/MWh on tight European winter gas supply, while JKM eased slightly from Monday's high. Henry Hub rebounded but stays largely insulated from the Gulf turmoil.",
+ "note": "Brent and WTI rose on 30 October after UKMTO reported a tanker was hit by explosives attached by a small boat in the Strait of Hormuz on 29 October, and Iran's Revolutionary Guards and army separately claimed mine strikes on three tankers and a fourth (unverified). TTF closed above €100/MWh for the first time this year on the same news plus tight European winter supply. Henry Hub eased but stays largely insulated from the Gulf turmoil. Ras Tanura's damage and the Houthis' 26-27 Oct claims remain unconfirmed.",
  "note_sources": [
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "date": "2026-10-28"
+   "date": "2026-10-30"
   },
   {
-   "name": "Rigzone (Bloomberg) — Aramco Contains Fire Near Ras Tanura Oil Hub",
-   "url": "https://www.rigzone.com/news/wire/aramco_contains_fire_near_ras_tanura_oil_hub-27-oct-2026-184944-article/",
-   "date": "2026-10-27"
+   "name": "Arab News (Reuters) — Fire-hit tanker continues journey after being attacked in Strait of Hormuz, UKMTO says",
+   "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930",
+   "date": "2026-10-30"
   }
  ]
 }

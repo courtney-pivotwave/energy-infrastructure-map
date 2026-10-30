@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-10-30",
+   "kind": "data",
+   "headline": "Confirmed tanker attack in the Strait of Hormuz; Iran claims mine strikes on four more ships",
+   "changes": [
+    "UKMTO confirmed a tanker was hit by explosives attached by a small boat about 25 nautical miles northeast of Khasab, Oman, on Oct 29; the crew were safe and the vessel continued its voyage, and no group claimed responsibility.",
+    "Iran's Revolutionary Guards and army separately claimed mine strikes on three tankers and then a fourth in and near the strait; neither claim has been independently confirmed.",
+    "Brent crude rose to about $113.54/bbl and European TTF gas closed above €100/MWh for the first time this year.",
+    "Ras Tanura's fire damage and the Houthis' Oct 26-27 East-West pipeline/Riyadh airport claims remain unconfirmed."
+   ]
+  },
+  {
    "date": "2026-10-27",
    "kind": "data",
    "headline": "Fire near Ras Tanura export terminal; Houthis claim new strikes on pipeline, Riyadh airport",

@@ -1471,6 +1471,22 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-30-explainer-ras-laffan-lng",
+   "created": "2026-10-30",
+   "type": "explainer",
+   "text": "Qatar's Ras Laffan complex ships 77 MTPA of LNG, a fifth of world supply, and every cargo exits through the Strait of Hormuz, where a tanker was hit by explosives Oct 29. Two expansions underway would lift capacity to 126 MTPA.",
+   "url": "https://strategicenergymap.org/facilities/ras-laffan-lng/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "LNG",
+    "Qatar"
+   ],
+   "reply_to": null
   }
  ]
 }

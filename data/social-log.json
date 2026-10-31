@@ -1555,6 +1555,21 @@
     "at": "2026-10-31T16:07:14.594Z",
     "media": "locator-card"
    }
+  },
+  "2026-10-31-event-qatari-mediation": {
+   "x": {
+    "id": "2116621164462362652",
+    "at": "2026-10-31T19:59:45.324Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mz73hgsyjl23",
+    "cid": "bafyreigzwn7fzm7esnddkqjvjbws2nbgpfrmfonqxnnrdff5vg6azdcepe",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mz73hgsyjl23",
+     "cid": "bafyreigzwn7fzm7esnddkqjvjbws2nbgpfrmfonqxnnrdff5vg6azdcepe"
+    },
+    "at": "2026-10-31T19:59:47.027Z"
+   }
   }
  }
 }

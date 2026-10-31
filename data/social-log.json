@@ -1538,6 +1538,23 @@
     "at": "2026-10-31T10:59:35.296Z",
     "media": "daily-board"
    }
+  },
+  "2026-10-31-event-oman-rescues-riti": {
+   "x": {
+    "id": "2116562642856800449",
+    "at": "2026-10-31T16:07:12.780Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mz6ohmaga42d",
+    "cid": "bafyreic3m6ddreb3uvj2utwkjkk5ogaqmnxcijdaos6pkmtunhwzho7wb4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mz6ohmaga42d",
+     "cid": "bafyreic3m6ddreb3uvj2utwkjkk5ogaqmnxcijdaos6pkmtunhwzho7wb4"
+    },
+    "at": "2026-10-31T16:07:14.594Z",
+    "media": "locator-card"
+   }
   }
  }
 }

@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-10-31",
+   "kind": "data",
+   "headline": "Record month of Hormuz ship attacks per IMO; Oman rescues 25 crew; Qatar pushes new peace proposal",
+   "changes": [
+    "The IMO recorded at least 30 ships hit in the Hormuz region in October through Oct 27, double September's rate and the worst month of the war.",
+    "Oman's navy rescued 25 crew from the tanker RITI after an attack and fire off its coast on Oct 30; UKMTO separately logged a tanker fire off Iran's Lavan Island the same day.",
+    "Qatari mediators returned to Tehran with a revised proposal; Iran is expected to respond by the end of the week, per CBS and Axios.",
+    "Axios and AP reported the US has also warned Gulf allies to prepare for an intensified campaign after the Nov 3 midterms, corroborating earlier NYT reporting.",
+    "Kpler data put October Hormuz oil flows down about 2% from September, falling further to 7.3 million bpd (40% below the pre-war baseline) in the week to Oct 28."
+   ]
+  },
+  {
    "date": "2026-10-30",
    "kind": "data",
    "headline": "Confirmed tanker attack in the Strait of Hormuz; Iran claims mine strikes on four more ships",

@@ -1471,6 +1471,70 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-10-31-digest",
+   "created": "2026-10-31",
+   "type": "digest",
+   "text": "IMO: at least 30 ships hit in the Hormuz region in October through Oct 27, double September's rate, the worst month of the war. Oman's navy rescued 25 crew from a burning tanker Oct 30. Brent near $113.50; US diesel $6.35/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Oman",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-31-event-oman-rescues-riti",
+   "created": "2026-10-31",
+   "type": "event",
+   "text": "Oman's navy evacuated 25 crew from the tanker RITI after it was attacked and caught fire off Oman's coast on Oct 30, Oman's Maritime Security Centre said. No casualties reported; no group has claimed responsibility.",
+   "url": "https://strategicenergymap.org/events/#2026-10-30-oman-rescues-riti",
+   "event_id": "2026-10-30-oman-rescues-riti",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "Oman"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-31-event-qatari-mediation",
+   "created": "2026-10-31",
+   "type": "event",
+   "text": "Qatari mediators returned to Tehran on Oct 30 with a revised proposal to end the Iran-US war; CBS reports signs of progress, with Iran expected to respond by the end of the week (reported).",
+   "url": "https://strategicenergymap.org/events/#2026-10-30-qatari-mediation-revised-proposal",
+   "event_id": "2026-10-30-qatari-mediation-revised-proposal",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "MiddleEast",
+    "Geopolitics"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-10-31-explainer-east-west-pipeline",
+   "created": "2026-10-31",
+   "type": "explainer",
+   "text": "Saudi Arabia's East-West pipeline moves up to 7 million b/d from Abqaiq to Yanbu on the Red Sea, bypassing Hormuz entirely. It ran near 5.8 million b/d in early October as the Gulf's tanker-shuttle system strains.",
+   "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Pipelines",
+    "SaudiArabia"
+   ],
+   "reply_to": null
   }
  ]
 }

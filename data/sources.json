@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01",
+ "updated": "2026-11-01",
  "note": "Trusted-source registry. Changed only through the monthly source review (agent/SOURCE_REVIEW.md), via pull request.",
  "sources": [
   {
@@ -18,7 +18,7 @@
    ],
    "notes": "Daily chokepoint transit counts from AIS; the map's live feed.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "kpler",
@@ -37,7 +37,7 @@
    ],
    "notes": "Commercial ship-tracking; usually cited via Reuters/Bloomberg. State crude-only vs total liquids. Sixth Street made a >$1B minority growth-equity investment (June 2026, ~$3.7-4B valuation); Five Arrows exited; Kpler management retains majority control.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "vortexa",
@@ -115,7 +115,7 @@
    ],
    "notes": "Shipping news and vessel data.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "global-energy-monitor",
@@ -132,9 +132,9 @@
    "governs": [
     "asset-capacity-party-operators"
    ],
-   "notes": "Open infrastructure trackers (CC BY 4.0). Figures can lag operator announcements; note the tracker's update date.",
+   "notes": "Open infrastructure trackers (CC BY 4.0). Figures can lag operator announcements; note the tracker's update date. Its Global Oil & Gas Infrastructure Tracker page showed inconsistent \"last updated\" vintages on different parts of the same page (e.g. \"most recent release March 2025\" next to a citation referencing a \"June 2026 release\") as of this review; check the specific tracker’s own freshness field rather than the page chrome.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "iea",
@@ -155,7 +155,7 @@
    ],
    "notes": "Oil and Gas Market Reports, published monthly on schedule. US officials have publicly pressured IEA over its energy-transition forecasts (2026); this is a political dispute over forward-looking analysis, not a factual or editorial-independence finding, and doesn't affect the fixed historical baseline figures the map cites from IEA. Note: iea.org blocks automated fetches (403) for this project's tools; that's an access quirk, not evidence it stopped publishing.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "eia",
@@ -177,7 +177,7 @@
    "affiliation": "US government",
    "notes": "Statistics agency of a party to the conflict: verifiable statistics are fine; conflict-period estimates need independent verification.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "ec-oil-bulletin",
@@ -195,7 +195,7 @@
    ],
    "notes": "EU member-state pump prices.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "uk-desnz",
@@ -213,7 +213,7 @@
    ],
    "notes": "UK pump prices.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "ecb",
@@ -231,7 +231,7 @@
    ],
    "notes": "FX for converting pump prices.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "fred",
@@ -297,7 +297,7 @@
    ],
    "notes": "Brent settlements (usually cited via Reuters/Bloomberg).",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "cme",
@@ -342,7 +342,7 @@
    ],
    "notes": "Co-publishes the Iran Update with ISW.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "ukmto",
@@ -437,7 +437,7 @@
    "affiliation": "Qatari state-funded",
    "notes": "Most-cited outlet in the data so far. Qatari state-funded; corroborate claims about Gulf states and Qatar-involved diplomacy.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "npr",
@@ -452,7 +452,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "pbs",
@@ -467,7 +467,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "opb",
@@ -482,7 +482,7 @@
    ],
    "notes": "Usually syndicating NPR/AP stories; cite the original where possible.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "nbc-news",
@@ -497,7 +497,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "cbs-news",
@@ -543,7 +543,7 @@
    ],
    "notes": "Corroborate before relying on it.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "rte",
@@ -558,7 +558,7 @@
    ],
    "notes": "Irish public broadcaster.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "euronews",
@@ -573,7 +573,7 @@
    ],
    "notes": "Portugal-based ALPAC Capital, an investment fund with ties to Hungary's Orbán government, holds an 88% controlling stake (since July 2022). No new editorial-independence incident found this cycle; disclosed here for transparency.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "the-national",
@@ -703,7 +703,7 @@
    "affiliation": "Israeli outlet",
    "notes": "Israeli outlet; Israel is a party. Corroborate.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "moscow-times",
@@ -765,9 +765,9 @@
    "covers": [
     "news"
    ],
-   "notes": "",
+   "notes": "2019: acquired by Andreas Neocleous (founder of a Cypriot law firm whose partner was convicted of bribing a former deputy attorney general); OCCRP reported that articles about his conviction disappeared from the site within days of the sale (occrp.org, \"Founder Of Disgraced Cypriot Law Firm Buys The Cyprus Mail\"). No further incidents found since; current listed owners are Elias and Panayiotis Neocleous.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "outlook-business",
@@ -811,9 +811,9 @@
     "markets",
     "prices"
    ],
-   "notes": "",
+   "notes": "Privately held; majority owner CEO Adrian Binks together with General Atlantic (Hg Capital exited its minority stake by 2024). Publishes its benchmark methodologies openly; an IOSCO-compliant Price Reporting Agency with periodic independent (PwC) assurance review of its compliance framework and a stated editorial corrections process. No credibility incidents found.",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "sp-global",
@@ -844,7 +844,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "tradewinds",
@@ -875,7 +875,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "rigzone",
@@ -890,7 +890,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "boe-report",
@@ -905,7 +905,7 @@
    ],
    "notes": "Often republishes Reuters/Bloomberg; cite the original where possible. Acquired by Stack Technologies Ltd. from Grobes Media Inc. (Nov 2022); no further ownership change found.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "energynow",
@@ -951,7 +951,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "workboat",
@@ -981,7 +981,7 @@
    ],
    "notes": "Trade press on hydrocarbon processing and refining. Tiered paywall: a handful of free technical articles a month, then a paid \"Full Data Access\" plan for the archive — similar to Upstream's model.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "pipeline-journal",
@@ -996,7 +996,7 @@
    ],
    "notes": "",
    "added": "2026-09-30",
-   "last_reviewed": null
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "global-lng-hub",
@@ -1133,7 +1133,7 @@
    ],
    "notes": "Advocacy organisation; attribute analysis, never the sole source for a fact.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "aramco",
@@ -1151,7 +1151,7 @@
    ],
    "notes": "Governing for its own capacity figures. Aramco's claimed spare/maximum sustained capacity (~1.5 mb/d spare, 12 mb/d max) is disputed by industry sources, who estimate spare capacity closer to ~1 mb/d; corroborate any surge-capacity claim independently. Nameplate/asset capacity figures for specific facilities are not in question.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "qatarenergy",
@@ -1169,7 +1169,7 @@
    ],
    "notes": "Governing for its own capacity figures. The Washington Post (12 Jun 2026, citing Western intelligence officials) alleged secret Qatar-Iran talks to protect the Ras Laffan complex in exchange for halting gas production; Qatar's government denied this the same day. Unresolved and not corroborated by a second independent source — treat QatarEnergy's stated rationale for operational or force-majeure decisions as an attributed claim needing independent corroboration, separate from its asset-capacity figures (which remain governing).",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "adnoc",
@@ -1185,9 +1185,9 @@
    "governs": [
     "asset-capacity"
    ],
-   "notes": "Governing for its own capacity figures. A Global Witness investigation (reported independently, including by the BBC) found ADNOC's CEO used his COP28 presidency (2023) to pursue ~$100B in oil/gas deals — a conflict-of-interest finding about lobbying conduct, not about the accuracy of ADNOC's asset-capacity figures.",
+   "notes": "Governing for its own capacity figures. A Global Witness investigation (reported independently, including by the BBC) found ADNOC's CEO used his COP28 presidency (2023) to pursue ~$100B in oil/gas deals — a conflict-of-interest finding about lobbying conduct, not about the accuracy of ADNOC's asset-capacity figures. Note: adnoc.ae blocks automated fetches (403) for this project’s tools, like iea.org; that’s an access quirk, not evidence it stopped publishing.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "cheniere",
@@ -1205,7 +1205,7 @@
    ],
    "notes": "Governing for its own capacity figures.",
    "added": "2026-09-30",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "cpc",
@@ -1419,7 +1419,7 @@
    ],
    "notes": "US business-news network. As of Jan 2026, spun off from Comcast/NBCUniversal into Versant Media Group (Nasdaq: VSNT), a separate public company; Brian L. Roberts retains ~33% voting control (~1% equity) via dual-class shares but it is no longer a Comcast/NBCUniversal property. Long-criticized for amplifying market cycles and for on-air stock-picking segments (e.g. Jim Cramer) underperforming benchmarks; no record found of fabrication or retraction. Fine for markets/earnings/macro reporting; corroborate opinion and stock-pick segments.",
    "added": "2026-10-01",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "axsmarine",
@@ -1465,9 +1465,9 @@
     "news"
    ],
    "affiliation": "Independent Russian outlet (Russia designates it \"foreign agent\"/\"undesirable\")",
-   "notes": "Independent of the Russian state; based in Riga since 2014 specifically to operate outside Russian government control. Reader-crowdfunded and grant-funded; broke the Ivan Golunov fabricated-drug-charge story. Candidate rather than trusted: Proekt (an independent outlet) criticized Meduza in Dec 2022 for running unverified claims from unnamed officials, and no published corrections policy was found.",
+   "notes": "Independent of the Russian state; based in Riga since 2014 specifically to operate outside Russian government control. Reader-crowdfunded and grant-funded; broke the Ivan Golunov fabricated-drug-charge story. Candidate rather than trusted: does have a published corrections policy (\"Meduza’s Editorial Code,\" approved 2019-11-08, meduza.io/en/pages/codex) requiring prompt correction of errors with readers told what changed and why — this review corrects the prior note, which said no such policy was found. The remaining gap is a demonstrated track record of corrections in practice, which this review could not confirm or deny either way. Proekt (an independent outlet) criticized Meduza in Dec 2022 for running unverified claims from unnamed officials. Continued 2026 legal pressure (an arrest warrant reported for editor-in-chief Ivan Kolpakov; founder Galina Timchenko sentenced in absentia) corroborates its independence from the Russian state.",
    "added": "2026-10-01",
-   "last_reviewed": "2026-10-01"
+   "last_reviewed": "2026-11-01"
   },
   {
    "id": "sanaa-center",
@@ -1500,6 +1500,670 @@
    "notes": "Gulf business news; transparently owned by London Stock Exchange Group (via its Refinitiv acquisition), with no Gulf-state ownership stake, unlike other Gulf outlets already in this registry. Candidate rather than trusted: no explicit editorial-standards or corrections policy was found on the site.",
    "added": "2026-10-01",
    "last_reviewed": "2026-10-01"
+  },
+  {
+   "id": "maritime-executive",
+   "name": "The Maritime Executive",
+   "domains": [
+    "maritime-executive.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "shipping",
+    "flows",
+    "assets"
+   ],
+   "notes": "US maritime-industry trade publication (The Maritime Executive, LLC). Widely read in shipping circles but no corrections policy or ownership-structure disclosure found on site; many articles carry a house byline ('marex') rather than a named reporter.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "baird-maritime",
+   "name": "Baird Maritime",
+   "domains": [
+    "bairdmaritime.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "shipping",
+    "flows"
+   ],
+   "notes": "Australian maritime-industry trade publication (Baird Publications, est. 1978). Frequently republishes Reuters wire copy under Reuters byline; no corrections policy or ownership disclosure found on site.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "rferl",
+   "name": "Radio Free Europe/Radio Liberty",
+   "domains": [
+    "rferl.org"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "US government-funded (grant via the U.S. Agency for Global Media); statutory editorial firewall bars government interference",
+   "notes": "Nonprofit broadcaster funded by a US federal grant; has a published code (Standards of Ethical Journalism) and a legally mandated editorial firewall, but its US-government funding is directly relevant given its heavy Russia/Ukraine coverage — use with attribution/corroboration on that beat.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "ewn",
+   "name": "Eyewitness News",
+   "domains": [
+    "ewn.co.za"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "notes": "South African digital news outlet linked to the Primedia radio group (702/CapeTalk). The cited article was a republished AFP wire story; no independent corrections policy or ownership page could be confirmed (About page 404’d on fetch).",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "bsee",
+   "name": "Bureau of Safety and Environmental Enforcement",
+   "domains": [
+    "bsee.gov"
+   ],
+   "type": "government-agency",
+   "status": "trusted",
+   "covers": [
+    "assets",
+    "flows"
+   ],
+   "affiliation": "US government agency (Department of the Interior)",
+   "notes": "US federal regulator for offshore oil & gas safety/environment; press releases are primary-source operational data (e.g. Gulf platform evacuation and production shut-in statistics during storms).",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "egypt-oil-gas",
+   "name": "Egypt Oil & Gas",
+   "domains": [
+    "egyptoil-gas.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "flows",
+    "news",
+    "assets"
+   ],
+   "notes": "Cairo-based energy-sector trade publication covering Egyptian and regional oil & gas. No ownership disclosure or formal corrections policy found. Its About page showed unrelated gambling-site links mixed into the body copy when checked this review (2026-11), suggesting possible spam/SEO injection on the site — worth re-checking next cycle.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "meed",
+   "name": "MEED (Middle East Economic Digest)",
+   "domains": [
+    "meed.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "markets",
+    "flows"
+   ],
+   "notes": "Long-running (since 1957) Dubai-based MENA business/energy trade publication, published by MEED Media FZ LLC, part of GlobalData plc (UK-listed). No Gulf-state ownership found; subscriber-paywalled content with no visible public corrections policy.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "turkiye-today",
+   "name": "Türkiye Today",
+   "domains": [
+    "turkiyetoday.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "Privately owned by Ihlas Media Group (Turkey)",
+   "notes": "Launched June 2024 under Ihlas Media Group, a private Turkish conglomerate; English-language outlet that states it reports with 'a distinctly Turkish perspective.' No independent corrections policy found; cited article aggregated Bloomberg/AFP/Masirah TV reporting.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "the-edge-malaysia",
+   "name": "The Edge Malaysia",
+   "domains": [
+    "theedgemalaysia.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "markets",
+    "news"
+   ],
+   "notes": "Established Malaysian business/financial publication (The Edge Media Group), owned by Tan Sri Tong Kooi Ong. Transparent ownership and a long track record, but site's own About page showed no mission/editorial/corrections content when checked, and the cited piece was an unbylined wire repost.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "breitbart",
+   "name": "Breitbart News",
+   "domains": [
+    "breitbart.com"
+   ],
+   "type": "media",
+   "status": "avoid",
+   "covers": [
+    "news"
+   ],
+   "affiliation": "US-based; editorially aligned with a US political faction",
+   "notes": "Rated 'Low' factual credibility / a 'questionable source' by Media Bias/Fact Check, and rated untrustworthy by NewsGuard despite a published corrections policy — independent raters say significant errors persist. Needs independent corroboration before use; avoid as a standalone source.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "rio-times",
+   "name": "The Rio Times",
+   "domains": [
+    "riotimesonline.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "markets"
+   ],
+   "notes": "Brazil-focused English-language outlet, founded 2009, wholly owned by Publisher/Editor-in-Chief Matthias Camenzind. States an in-house editorial-review process and links a published Editorial Standards and Corrections Policy; funded by memberships/sponsored posts rather than programmatic ads. Reputable-looking but an independent track record with other outlets wasn’t confirmed this review.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "tradingkey",
+   "name": "TradingKey",
+   "domains": [
+    "tradingkey.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "markets",
+    "prices"
+   ],
+   "notes": "Financial-markets news/analysis platform run by Finsights Media Pte. Ltd. (Singapore); not a brokerage or primary data vendor. Cited piece was explicitly 'translated using AI and reviewed for clarity' — flag the AI-translation step when citing.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "bol-news",
+   "name": "BOL News",
+   "domains": [
+    "bolnews.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "notes": "Pakistani broadcaster/digital outlet (BOL Media Network). Founder Shoaib Shaikh, also tied to Axact (the company behind a 2015 fake-diploma-mill exposé), was arrested in that scandal and BOL's licenses were briefly suspended; current ownership is disputed/unclear in public reporting. Use with attribution given the unresolved ownership history.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "theprint",
+   "name": "ThePrint",
+   "domains": [
+    "theprint.in"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news"
+   ],
+   "notes": "Indian digital outlet founded by veteran editor Shekhar Gupta (Printline Media Pvt. Ltd.); named individual investors (incl. Nandan Nilekani, N.R. Narayana Murthy, the late Ratan Tata, Kiran Mazumdar-Shaw) disclosed on its About page; states a non-partisan editorial stance and a journalists’ code of ethics.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "business-today-in",
+   "name": "Business Today",
+   "domains": [
+    "businesstoday.in"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "markets"
+   ],
+   "notes": "Major Indian business-media brand published by Living Media India Limited, part of the long-established India Today Group (also operates print, TV and events).",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "kurdistan24",
+   "name": "Kurdistan 24",
+   "domains": [
+    "kurdistan24.net"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "Linked to the Kurdistan Democratic Party (KDP)/Barzani family; some listings give the Kurdistan Regional Government as owner",
+   "notes": "Erbil-based English/Kurdish broadcaster. Independent and encyclopedia sources describe its founder as close to the Barzani family and list the KDP (or KRG) as owner in various places; the outlet’s own About page did not state ownership. Cited reporting properly attributed Reuters/AFP/Axios for sourcing.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "industrial-info-resources",
+   "name": "Industrial Info Resources",
+   "domains": [
+    "industrialinfo.com"
+   ],
+   "type": "tracker",
+   "status": "trusted",
+   "covers": [
+    "assets",
+    "flows",
+    "markets"
+   ],
+   "notes": "Industrial/energy market-intelligence provider operating since 1983; states a primary-research methodology (direct plant-operator contact, human verification, 'no AI generation, no web scraping') and continuously re-verifies project/asset data.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "mees",
+   "name": "MEES (Middle East Economic Survey)",
+   "domains": [
+    "mees.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "flows",
+    "markets",
+    "news"
+   ],
+   "notes": "Weekly energy-intelligence publication tracing to Beirut in 1957 (founder Fuad W. Itayim), now published by Middle East Petroleum and Economic Publications (Cyprus) Ltd. Long-standing reputation in the oil industry as an authority on Gulf energy policy, but content is subscriber-paywalled and a current corrections policy could not be confirmed this review.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "financefeeds",
+   "name": "FinanceFeeds",
+   "domains": [
+    "financefeeds.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "markets",
+    "prices"
+   ],
+   "notes": "Online financial-markets/fintech trade-press outlet covering forex, CFDs, commodities and crypto. Ownership/corporate entity could not be confirmed this review; single-citation domain so far.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "propakistani",
+   "name": "ProPakistani",
+   "domains": [
+    "propakistani.pk"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "notes": "Independent Pakistani digital publisher (investor-funded, byline’d reporting); no published corrections policy found, so corroborate specifics.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "wunc",
+   "name": "WUNC Public Radio",
+   "domains": [
+    "wunc.org"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "notes": "NPR member station (UNC-affiliated, listener-supported, CPB-funded); the cited piece is NPR wire copy syndicated on WUNC’s site, not original WUNC reporting. Same category as the existing OPB entry.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "whalesbook",
+   "name": "WhalesBook",
+   "domains": [
+    "whalesbook.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "markets",
+    "news"
+   ],
+   "notes": "Indian financial-news/data platform (WhalesBook Private Limited) with byline’d articles but no visible editorial standards or corrections policy; the one cited article referenced 'Hurricane Isaias' (a 2020 storm name) in an October 2026 context and named no primary source for the stated SPR release — corroborate before citing.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "liga-net",
+   "name": "LIGA.net",
+   "domains": [
+    "news.liga.net"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "Ukrainian outlet",
+   "notes": "Ukraine is a party to the conflicts covered. Published by Ligamedia, part of the LIGA Group (Kyiv); English articles are machine-translated from Ukrainian per the site’s own disclosure. Corroborate battle-damage/translated claims, as with the existing Kyiv Independent and Ukrainska Pravda entries.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "cnn",
+   "name": "CNN",
+   "domains": [
+    "cnn.com",
+    "edition.cnn.com"
+   ],
+   "type": "media",
+   "status": "trusted",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "notes": "Major international TV/digital news network (Warner Bros. Discovery) with transparent corporate ownership and a long track record other outlets rely on. cnn.com returned HTTP 451 (geo-blocked) to this review’s automated fetches; content was verified via syndicated copies carrying the same CNN byline.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "aol",
+   "name": "AOL",
+   "domains": [
+    "aol.com"
+   ],
+   "type": "aggregator",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "notes": "General web portal; the cited article was republished Reuters wire copy, not original AOL reporting. Prefer the original wire source.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "wlox",
+   "name": "WLOX",
+   "domains": [
+    "wlox.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news"
+   ],
+   "notes": "US local TV affiliate (Biloxi, MS) owned by the publicly traded Gray Media; ownership is transparent but no specific corrections policy or outside-reliance track record was found for this station.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "mansfield-energy",
+   "name": "Mansfield Energy",
+   "domains": [
+    "mansfield.energy"
+   ],
+   "type": "company",
+   "status": "use-with-care",
+   "covers": [
+    "prices",
+    "markets"
+   ],
+   "notes": "Fuel marketer's own market-commentary blog, not independent press; its own disclaimer says the commentary is informational only, not a trading recommendation. Corroborate pricing/market claims against Argus, S&P Global or EIA.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "sbs-korea",
+   "name": "SBS News (South Korea)",
+   "domains": [
+    "news.sbs.co.kr"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "notes": "Major commercial Korean broadcaster; independent sources gave conflicting detail on its controlling shareholder, and the cited article is machine-translated from Korean per the site’s own disclosure — corroborate specifics against other outlets.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "us-treasury",
+   "name": "U.S. Department of the Treasury",
+   "domains": [
+    "home.treasury.gov"
+   ],
+   "type": "government-agency",
+   "status": "use-with-care",
+   "covers": [
+    "policy"
+   ],
+   "affiliation": "US government",
+   "notes": "Party to the conflict: sanctions-designation facts (named entities, legal basis) are verifiable from the official release, but characterizations of adversary regimes or sanctions effectiveness need independent corroboration — same treatment as the existing US DOE entry.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "internazionale",
+   "name": "Internazionale",
+   "domains": [
+    "internazionale.it"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "notes": "Independent Italian weekly magazine (est. 1993, no state ties found); the cited item was a Reuters wire story machine-translated via DeepL — prefer the original Reuters article where possible.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "cyprus-shipping-news",
+   "name": "Cyprus Shipping News",
+   "domains": [
+    "cyprusshippingnews.com"
+   ],
+   "type": "trade-press",
+   "status": "use-with-care",
+   "covers": [
+    "shipping"
+   ],
+   "notes": "Maritime trade newsletter with sponsor/advertiser ties and an events business; no owner/editor name disclosed on-site. The cited item was BIMCO's syndicated 'Shipping Number of the Week' — the underlying analysis credit belongs to BIMCO.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "ynetnews",
+   "name": "Ynetnews",
+   "domains": [
+    "ynetnews.com"
+   ],
+   "type": "media",
+   "status": "use-with-care",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "Israeli outlet",
+   "notes": "Israel is a party to the conflicts covered. English-language arm of Yedioth Ahronoth’s Ynet; corroborate claims about Iran, the Houthis, or regional military matters, as with the existing Times of Israel and Jerusalem Post entries.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "hydro",
+   "name": "Norsk Hydro",
+   "domains": [
+    "hydro.com"
+   ],
+   "type": "company",
+   "status": "trusted",
+   "covers": [
+    "assets"
+   ],
+   "notes": "Operator’s own press releases (e.g. on its Qatalum JV with QAMCO); treated like the existing Aramco/QatarEnergy/ADNOC/Cheniere entries as a primary source for its own facility status.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "investing-com",
+   "name": "Investing.com",
+   "domains": [
+    "investing.com",
+    "uk.investing.com"
+   ],
+   "type": "aggregator",
+   "status": "use-with-care",
+   "covers": [
+    "markets",
+    "prices"
+   ],
+   "notes": "Ad-supported financial data/news aggregator (Fusion Media Limited); one cited article disclosed it was “generated with AI support and reviewed by an editor.” Comparable treatment to the existing Yahoo Finance/Trading Economics entries — corroborate anything beyond routine market data.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "kayrros",
+   "name": "Kayrros",
+   "domains": [
+    "kayrros.com"
+   ],
+   "type": "tracker",
+   "status": "trusted",
+   "covers": [
+    "assets",
+    "flows"
+   ],
+   "notes": "Independent satellite/geospatial energy-analytics firm, comparable to the existing Vortexa/Windward/TankerTrackers entries. Acquired by Energy Aspects (per its own site) — not a conflict-party tie.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "oxy",
+   "name": "Occidental Petroleum",
+   "domains": [
+    "oxy.com"
+   ],
+   "type": "company",
+   "status": "trusted",
+   "covers": [
+    "assets",
+    "markets"
+   ],
+   "notes": "Operator’s own investor-relations materials (earnings transcripts/filings); treated like the existing Aramco/Cheniere entries as a primary source for its own production and financial figures.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "lseg",
+   "name": "LSEG (London Stock Exchange Group) Data & Analytics",
+   "domains": [
+    "lseg.com"
+   ],
+   "type": "tracker",
+   "status": "candidate",
+   "covers": [
+    "flows",
+    "shipping",
+    "prices"
+   ],
+   "notes": "Vessel-tracking and oil-flow data, cited directly by Reuters alongside Kpler in 2026 Hormuz/Russian-crude coverage (e.g. \"New shipping data from monitoring agencies LSEG and Kpler…\", May 28, 2026). Launched its own real-time Vessel Tracking API in March 2026 (built on Kinéis satellite AIS + Wood Mackenzie Vesseltracker). Publicly listed (LSE: LSEG); no party-to-conflict ownership.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "istories",
+   "name": "iStories (Important Stories / Важные истории)",
+   "domains": [
+    "istories.media"
+   ],
+   "type": "nonprofit-investigative",
+   "status": "candidate",
+   "covers": [
+    "news",
+    "accountability"
+   ],
+   "affiliation": "Independent Russian outlet (Russia designates it “foreign agent” and “undesirable organization”)",
+   "notes": "Non-profit founded 2020 by ex-Novaya Gazeta journalists, modeled on ProPublica; based in Latvia since Russia blocked and raided it (2021-2022) and issued in-absentia arrest warrants for staff (2024). Energy-relevant investigations include Rosneft’s Pirelli stake purchase (removed from its site after a Rosneft-won Russian court order, itself evidence of adversarial reporting) and Russian oil-spill disasters. Also a partner on the Panama Papers, FinCEN Files, Pandora Papers and Cyprus Confidential. Candidate for both independent Russia coverage and the planned corruption/business-conduct feed.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "acled",
+   "name": "ACLED (Armed Conflict Location & Event Data Project)",
+   "domains": [
+    "acleddata.com"
+   ],
+   "type": "nonprofit",
+   "status": "candidate",
+   "covers": [
+    "conflict",
+    "shipping"
+   ],
+   "notes": "Academic-origin non-profit conflict-event database; runs a dedicated Red Sea attacks dashboard, used independently of Sana’a Center (e.g. The National combines ACLED with Houthi Ministry of Health data for Yemen casualty counts). Funding is disclosed and diversified (UN CRAF’d, German Federal Foreign Office, Dutch MFA) but includes an active US State Department Bureau of Conflict and Stabilization Operations contract (~$14.4M through Sept 2026) — the US is a party to one of this map’s conflicts, so flag that funding even though the contract is for global data collection, not Yemen-specific.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "uani",
+   "name": "United Against Nuclear Iran (UANI) Tanker Tracker",
+   "domains": [
+    "unitedagainstnucleariran.com"
+   ],
+   "type": "tracker",
+   "status": "candidate",
+   "covers": [
+    "shipping",
+    "flows"
+   ],
+   "affiliation": "US advocacy group with an explicit anti-Iran-regime, pro-sanctions mission",
+   "notes": "Satellite/AIS-based tracker of Iran-linked tankers (“ghost fleet”); directly quoted and relied on by Reuters in 2026 reporting. Useful tracking data, but Reuters itself labels it a “U.S. advocacy group” — comparable to FDD already in this registry. Attribute explicitly and never use as the sole source for a sanctions-evasion claim.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
+  },
+  {
+   "id": "bbc-persian",
+   "name": "BBC Persian",
+   "domains": [
+    "bbc.com"
+   ],
+   "type": "media",
+   "status": "candidate",
+   "covers": [
+    "news",
+    "conflict"
+   ],
+   "affiliation": "UK public broadcaster (BBC World Service)",
+   "notes": "Persian-language service at bbc.com/persian; same public-broadcaster/editorial-independence model as NPR and PBS, already trusted here. UK is not a party to this map’s conflicts. Iran’s government has publicly called it “not an independent media network” and the BBC brought Iran’s harassment of Persian-service staff and their families to the UN Human Rights Council (2018) — evidence the outlet is adversarial to, not controlled by, Iran. Fills the registry’s current gap: no independent Iran-focused outlet at all. Not yet used (candidate) — the domain bbc.com is broad, so if promoted, scope citations to the Persian service specifically.",
+   "added": "2026-11-01",
+   "last_reviewed": "2026-11-01"
   }
  ]
 }

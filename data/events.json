@@ -1,8 +1,48 @@
 {
- "updated": "2026-10-31",
- "situation_headline": "The IMO says at least 30 ships were hit in the Hormuz region in October, double September's rate; Oman's navy rescued 25 crew from a burning tanker on 30 Oct and UKMTO logged a separate tanker fire off Iran's Lavan Island. Qatari mediators returned to Tehran with a revised proposal. Brent held near $113.50/bbl.",
+ "updated": "2026-11-01",
+ "situation_headline": "Qatari-mediated talks in Tehran and Doha ended Oct 31 without a deal to resume direct US-Iran negotiations; Iran's FM says talks aren't needed unless Washington accepts its terms. Iran's navy also made a new, unverified mine claim east of Hormuz.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-10-31-qatari-mediation-stalls",
+   "date": "2026-10-31",
+   "title": "Qatari mediation stalls; Iran says no talks unless US accepts its terms",
+   "summary": "Qatari mediators held more than 12 hours of talks with Iranian officials in Tehran on Oct 30 and in Doha on Oct 31 while staying in contact with Washington, per the ISW/CTP Iran Update. A diplomatic source said the US and Iran have not agreed to resume direct talks, and no date has been set for a US delegation to Doha. Iran's foreign minister said Tehran is studying Qatar's proposals but sees no need for talks unless the US accepts Iran's terms.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "ISW/CTP — Iran Update, October 31, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-31-2026",
+     "date": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-31-iran-artesh-mine-claim",
+   "date": "2026-10-31",
+   "title": "Iran's regular navy claims another tanker hit mines east of the strait",
+   "summary": "Iran's Artesh (regular army) Navy said a tanker caught fire on Oct 31 after striking mines east of the Strait of Hormuz. The ISW/CTP Iran Update said the claim could not be matched to UKMTO's logged incidents from Oct 28 and 30, and assessed that Iran's mine claims have often been misleading.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "ISW/CTP — Iran Update, October 31, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-31-2026",
+     "date": "2026-10-31"
+    }
+   ]
+  },
   {
    "id": "2026-10-30-imo-october-attack-toll",
    "date": "2026-10-30",
@@ -50,7 +90,10 @@
    "summary": "UKMTO reported a separate incident on 30 October in which an unknown projectile struck a tanker about 40 nautical miles south of Iran's Lavan Island, sparking a fire; the crew were reported safe. No group claimed responsibility, and the incident is distinct from the RITI attack off Oman the same day (confirmed: UKMTO, via AFP).",
    "category": "shipping",
    "severity": "medium",
-   "coords": [26.11, 53.32],
+   "coords": [
+    26.11,
+    53.32
+   ],
    "assets": [
     "strait-of-hormuz"
    ],
@@ -111,7 +154,10 @@
    "summary": "UKMTO said a small boat came alongside a tanker about 25 nautical miles northeast of Oman's Khasab, in the Strait of Hormuz, and attached two explosive devices to its hull on 29 October. The blasts started a fire in the engine room that briefly disabled the vessel; UKMTO said the fire was extinguished, the crew were safe, there was no environmental impact, and the ship continued to its next port of call (confirmed: UKMTO via Reuters/Arab News). No group claimed responsibility.",
    "category": "shipping",
    "severity": "medium",
-   "coords": [26.47, 56.58],
+   "coords": [
+    26.47,
+    56.58
+   ],
    "assets": [
     "strait-of-hormuz"
    ],
@@ -151,7 +197,10 @@
    "summary": "Saudi authorities contained a fire near Ras Tanura, Aramco's largest crude export terminal, after an attack in the area early on 27 October; Bloomberg, citing a person familiar with the matter, said the extent of the damage was not immediately clear and that Aramco and Saudi Arabia's energy ministry did not immediately respond to requests for comment (reported: Bloomberg via Türkiye Today, The Edge Malaysia). The Saudi-led coalition separately said it intercepted three ballistic missiles aimed at the Eastern Province and four drones aimed at southern Saudi Arabia the same day, without linking the intercepts to the Ras Tanura incident; no group had claimed responsibility for the attack itself.",
    "category": "infrastructure",
    "severity": "high",
-   "coords": [26.6, 50.1],
+   "coords": [
+    26.6,
+    50.1
+   ],
    "assets": [
     "ras-tanura-terminal"
    ],

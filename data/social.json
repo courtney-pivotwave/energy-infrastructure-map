@@ -1535,6 +1535,38 @@
     "SaudiArabia"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-01-digest",
+   "created": "2026-11-01",
+   "type": "digest",
+   "text": "No breakthrough: Qatari-mediated talks in Tehran and Doha ended Oct 31 without a deal to resume US-Iran talks; Iran's FM says none are needed unless Washington meets its terms. Brent held near $113.50/bbl, US diesel $6.35/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Iran",
+    "MiddleEast"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-01-explainer-bab-el-mandeb",
+   "created": "2026-11-01",
+   "type": "explainer",
+   "text": "Bab el-Mandeb links the Red Sea to the Gulf of Aden. It carried ~9.3 million b/d of oil in 2023; Houthi attacks cut that to ~4.2 million by early 2025 (EIA). Disrupted since July 20 under a Houthi ban on Saudi shipping.",
+   "url": "https://strategicenergymap.org/chokepoints/bab-el-mandeb/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "RedSea",
+    "Shipping"
+   ],
+   "reply_to": null
   }
  ]
 }

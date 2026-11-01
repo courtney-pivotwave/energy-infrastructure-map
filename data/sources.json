@@ -2111,7 +2111,7 @@
     "accountability"
    ],
    "affiliation": "Independent Russian outlet (Russia designates it “foreign agent” and “undesirable organization”)",
-   "notes": "Non-profit founded 2020 by ex-Novaya Gazeta journalists, modeled on ProPublica; based in Latvia since Russia blocked and raided it (2021-2022) and issued in-absentia arrest warrants for staff (2024). Energy-relevant investigations include Rosneft’s Pirelli stake purchase (removed from its site after a Rosneft-won Russian court order, itself evidence of adversarial reporting) and Russian oil-spill disasters. Also a partner on the Panama Papers, FinCEN Files, Pandora Papers and Cyprus Confidential. Candidate for both independent Russia coverage and the planned corruption/business-conduct feed.",
+   "notes": "Non-profit founded 2020 by ex-Novaya Gazeta journalists (owner/editor Roman Anin), modeled on ProPublica; based in Latvia since Russia blocked and raided it (2021-2022) and issued in-absentia arrest warrants for staff (2024) — Anin himself was stripped of Russian citizenship and sentenced in absentia (8.5 years, reported Dec 2025) over his reporting, confirming an adversarial relationship with the Russian state, not control by it. Funded by reader donations and grants from outside Russia (its “undesirable organization” designation bars domestic donations), not by an oligarch or corporate media group. A member center of OCCRP and, since Nov 2023, an ICIJ partner (Pandora Papers consortium, alongside 69 other media partners) — independent evidence other investigative outlets rely on its work. The Moscow Times (trusted here) covers it regularly as a legitimate exiled outlet. Energy-relevant investigations include Rosneft’s Pirelli stake purchase (removed from its site after a Rosneft-won Russian court order, itself evidence of adversarial reporting) and Russian oil-spill disasters. Also a partner on the Panama Papers, FinCEN Files and Cyprus Confidential. Candidate for both independent Russia coverage and the planned corruption/business-conduct feed; no direct evidence found yet of reliance by a wire service (Reuters/Bloomberg) specifically.",
    "added": "2026-11-01",
    "last_reviewed": "2026-11-01"
   },
@@ -2150,18 +2150,18 @@
   },
   {
    "id": "bbc-persian",
-   "name": "BBC Persian",
+   "name": "BBC / BBC Persian",
    "domains": [
     "bbc.com"
    ],
    "type": "media",
-   "status": "candidate",
+   "status": "trusted",
    "covers": [
     "news",
     "conflict"
    ],
    "affiliation": "UK public broadcaster (BBC World Service)",
-   "notes": "Persian-language service at bbc.com/persian; same public-broadcaster/editorial-independence model as NPR and PBS, already trusted here. UK is not a party to this map’s conflicts. Iran’s government has publicly called it “not an independent media network” and the BBC brought Iran’s harassment of Persian-service staff and their families to the UN Human Rights Council (2018) — evidence the outlet is adversarial to, not controlled by, Iran. Fills the registry’s current gap: no independent Iran-focused outlet at all. Not yet used (candidate) — the domain bbc.com is broad, so if promoted, scope citations to the Persian service specifically.",
+   "notes": "Persian-language service at bbc.com/persian; same public-broadcaster/editorial-independence model as NPR and PBS, already trusted here. UK is not a party to this map’s conflicts. Iran’s government has publicly called it “not an independent media network” and the BBC brought Iran’s harassment of Persian-service staff and their families to the UN Human Rights Council (2018) — evidence the outlet is adversarial to, not controlled by, Iran. Fills the registry’s current gap: no independent Iran-focused outlet at all. Promoted from candidate to trusted during this review's owner sign-off (2026-11-01); the registered domain bbc.com covers the whole BBC, not just the Persian service.",
    "added": "2026-11-01",
    "last_reviewed": "2026-11-01"
   }

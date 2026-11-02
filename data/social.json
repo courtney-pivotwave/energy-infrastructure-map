@@ -1615,6 +1615,22 @@
     "Qatar"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-02-event-al-mayeda-lng-attack",
+   "created": "2026-11-02",
+   "type": "event",
+   "text": "Qatar's LNG carrier Al Mayeda was hit by an unidentified projectile near Hormuz on Oct 30, hours after Iran had reportedly cleared its passage. Crew safe; ship stayed operational.",
+   "url": "https://strategicenergymap.org/events/#2026-10-30-al-mayeda-lng-attack",
+   "event_id": "2026-10-30-al-mayeda-lng-attack",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "EnergySecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

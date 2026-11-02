@@ -92,6 +92,32 @@
    ]
   },
   {
+   "id": "2026-10-30-al-mayeda-lng-attack",
+   "date": "2026-10-30",
+   "title": "LNG carrier Al Mayeda struck near Hormuz hours after Iran granted safe passage",
+   "summary": "The Marshall Islands-flagged LNG carrier Al Mayeda, owned by Qatar's Nakilat and carrying Qatari gas to Pakistan, was hit by an unidentified projectile near the Strait of Hormuz on Oct 30, hours after Iran had reportedly cleared its passage following Pakistani negotiations (Bloomberg, citing people familiar with the matter). All 25 crew, including six Indian nationals, were unharmed; Nakilat said the vessel remained operational, and it turned back into the Gulf. Qatar's foreign ministry condemned the attack and said it had opened an investigation; Saudi Arabia also condemned it. No group has claimed responsibility. It is the second Qatari LNG carrier struck since the war began, after the Al Rekayyat on Jul 7.",
+   "category": "shipping",
+   "severity": "critical",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz",
+    "ras-laffan-lng"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
+     "url": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval/",
+     "date": "2026-11-01"
+    },
+    {
+     "name": "Arab News Pakistan — Qatar, Saudi Arabia condemn attack on Pakistan-bound LNG tanker in Gulf waters",
+     "url": "https://arabnews.pk/pakistan/qatar-saudi-arabia-condemn-attack-on-pakistan-bound-lng-tanker-in-gulf-waters-3005850",
+     "date": "2026-11-01"
+    }
+   ]
+  },
+  {
    "id": "2026-10-30-imo-october-attack-toll",
    "date": "2026-10-30",
    "title": "IMO: at least 30 ships hit in Hormuz region in October, double September's rate",

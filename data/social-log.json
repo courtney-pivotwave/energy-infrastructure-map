@@ -1638,6 +1638,23 @@
     "at": "2026-11-02T10:59:24.562Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-02-event-ukmto-hormuz-strike": {
+   "x": {
+    "id": "2117357885768577324",
+    "at": "2026-11-02T20:47:13.449Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mze725k37n2d",
+    "cid": "bafyreihfu2kqg5ecpb4xvz6xwve5cqshfvar34ncjhbftdu3oaixwcinp4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mze725k37n2d",
+     "cid": "bafyreihfu2kqg5ecpb4xvz6xwve5cqshfvar34ncjhbftdu3oaixwcinp4"
+    },
+    "at": "2026-11-02T20:47:15.536Z",
+    "media": "locator-card"
+   }
   }
  }
 }

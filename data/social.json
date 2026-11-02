@@ -1567,6 +1567,54 @@
     "Shipping"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-02-digest",
+   "created": "2026-11-02",
+   "type": "digest",
+   "text": "Oil fell more than 3% Monday after Trump said he wants more time for Iran diplomacy ahead of Tuesday's US midterms. Brent traded near $109/bbl. UKMTO reported another vessel struck in the Strait of Hormuz on Nov 1.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "OilPrices",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-02-event-ukmto-hormuz-strike",
+   "created": "2026-11-02",
+   "type": "event",
+   "text": "UKMTO said a vessel was struck by an unknown projectile in the Strait of Hormuz on Nov 1, with the mayday relayed by a nearby merchant ship. No casualties or claim of responsibility reported so far.",
+   "url": "https://strategicenergymap.org/events/#2026-11-01-ukmto-hormuz-projectile-strike",
+   "event_id": "2026-11-01-ukmto-hormuz-projectile-strike",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "Tankers"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-02-explainer-north-field-south-pars",
+   "created": "2026-11-02",
+   "type": "explainer",
+   "text": "Qatar's North Field and Iran's South Pars are one shared offshore reservoir, the world's largest gas field: Qatar's side holds ~24.7 trillion m³, Iran's ~14. It underpins Qatar's LNG exports, ~30% of global supply.",
+   "url": "https://strategicenergymap.org/facilities/north-field-south-pars-gas/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "LNG",
+    "Qatar"
+   ],
+   "reply_to": null
   }
  ]
 }

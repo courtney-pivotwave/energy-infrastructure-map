@@ -1,8 +1,56 @@
 {
- "updated": "2026-11-01",
- "situation_headline": "Qatari-mediated talks in Tehran and Doha ended Oct 31 without a deal to resume direct US-Iran negotiations; Iran's FM says talks aren't needed unless Washington accepts its terms. Iran's navy also made a new, unverified mine claim east of Hormuz.",
+ "updated": "2026-11-02",
+ "situation_headline": "UKMTO reported another vessel struck by an unknown projectile in the Strait of Hormuz on Nov 1, a day after a Qatari LNG carrier bound for Pakistan was hit nearby. Trump signaled he wants more time for Iran diplomacy before Tuesday's US midterms; Brent fell more than 3% on Nov 2.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-02-trump-diplomacy-pause-midterms",
+   "date": "2026-11-01",
+   "title": "Trump signals more time for Iran diplomacy before US midterms; oil drops 3%+",
+   "summary": "Axios reported, citing sources, that Trump told Israeli PM Netanyahu by phone he wants to give diplomacy with Tehran more time before considering further strikes. Secretary of State Rubio said Oct 31 no decision had been made on new strikes and that Trump prefers a diplomatic resolution; Trump told reporters the US would end the war \"one way or the other.\" Brent and WTI each fell more than 3% on Nov 2, two days before the Nov 3 US midterm elections.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "The National — Oil prices slide more than 3% as Trump signals more time for Iran diplomacy",
+     "url": "https://www.thenationalnews.com/business/2026/11/02/oil-prices-slide-more-than-3-as-trump-signals-more-time-for-iran-diplomacy/",
+     "date": "2026-11-02"
+    },
+    {
+     "name": "Trading Economics — Brent Crude Oil",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "date": "2026-11-02"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-01-ukmto-hormuz-projectile-strike",
+   "date": "2026-11-01",
+   "title": "UKMTO reports another vessel struck by unknown projectile in Strait of Hormuz",
+   "summary": "The UK Maritime Trade Operations agency said a vessel was struck by an unknown projectile in the Strait of Hormuz on Nov 1, with the mayday call relayed by the master of a nearby merchant vessel. No casualties, damage extent, or responsible party have been reported.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Asharq Al-Awsat — UKMTO: Vessel Struck in Strait of Hormuz",
+     "url": "https://english.aawsat.com/world/5336401-ukmto-vessel-struck-strait-hormuz",
+     "date": "2026-11-01"
+    },
+    {
+     "name": "The National — Oil prices slide more than 3% as Trump signals more time for Iran diplomacy",
+     "url": "https://www.thenationalnews.com/business/2026/11/02/oil-prices-slide-more-than-3-as-trump-signals-more-time-for-iran-diplomacy/",
+     "date": "2026-11-02"
+    }
+   ]
+  },
   {
    "id": "2026-10-31-qatari-mediation-stalls",
    "date": "2026-10-31",

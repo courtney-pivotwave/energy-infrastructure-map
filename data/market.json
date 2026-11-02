@@ -1,34 +1,34 @@
 {
- "as_of": "2026-10-30",
+ "as_of": "2026-11-02",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 113.54,
-   "week_ago": 114.55,
+   "value": 108.82,
+   "week_ago": 113.54,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Rose to about $113.54 on 30 Oct (Trading Economics), up roughly 2.5% on the day though about 1% below this site's 23 Oct reading, after UKMTO reported a tanker was hit by explosives attached by a small boat 25nm northeast of Khasab, Oman on 29 October, and Iran's Revolutionary Guards and army separately claimed mine strikes on three tankers and a fourth (unverified); Ras Tanura's damage and the Houthis' East-West pipeline/Riyadh airport claims from 26-27 Oct also remain unconfirmed. Week-ago is this site's 23 Oct reading, exactly 7 days earlier.",
+   "note": "Fell to about $108.82 on 2 Nov (Trading Economics), down roughly 4% on the day and about 4% w/w, after Trump signaled he wants more time for Iran diplomacy before considering further strikes and Secretary of State Rubio said no decision had been made on new strikes (The National, citing Axios/CBS); the remarks came two days before the 3 Nov US midterms. UKMTO reported a separate vessel struck by an unknown projectile in the strait on 1 Nov, a day after the LNG carrier Al Mayeda was hit nearby. Week-ago is this site's 30 Oct reading, 3 days earlier.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-10-30"
+    "date": "2026-11-02"
    },
    "extra_sources": [
     {
-     "name": "Arab News (Reuters) — Fire-hit tanker continues journey after being attacked in Strait of Hormuz, UKMTO says",
-     "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930",
-     "date": "2026-10-30"
+     "name": "The National — Oil prices slide more than 3% as Trump signals more time for Iran diplomacy",
+     "url": "https://www.thenationalnews.com/business/2026/11/02/oil-prices-slide-more-than-3-as-trump-signals-more-time-for-iran-diplomacy/",
+     "date": "2026-11-02"
     },
     {
-     "name": "Rigzone (Bloomberg) — Aramco Contains Fire Near Ras Tanura Oil Hub",
-     "url": "https://www.rigzone.com/news/wire/aramco_contains_fire_near_ras_tanura_oil_hub-27-oct-2026-184944-article/",
-     "date": "2026-10-27"
+     "name": "gCaptain (Bloomberg) — Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
+     "url": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval/",
+     "date": "2026-11-01"
     }
    ]
   },
@@ -36,19 +36,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 104.19,
-   "week_ago": 100.85,
+   "value": 99.8,
+   "week_ago": 104.19,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Rose to about $104.19 on 30 Oct (Trading Economics), up roughly 2.1% on the day and about 3% w/w, tracking Brent on the new Hormuz tanker attack and Iran's mine claims. Week-ago is this site's 23 Oct reading, exactly 7 days earlier.",
+   "note": "Fell to about $99.80 on 2 Nov (Trading Economics), down roughly 4% on the day, tracking Brent on Trump's diplomacy signal ahead of the 3 Nov US midterms. Week-ago is this site's 30 Oct reading, 3 days earlier.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-10-30"
+    "date": "2026-11-02"
    },
    "extra_sources": [
     {
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 102.89,
-   "week_ago": 93.8,
+   "value": 100.59,
+   "week_ago": 102.89,
    "pre_crisis": 32.0,
    "peak": {
     "value": 102.89,
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Rose above €100/MWh for the first time this year to about €102.89 on 30 Oct (Trading Economics), up roughly 5% on the day and about 10% w/w, as tight European winter gas supply combined with the new Hormuz tanker attack to lift the LNG-exposed benchmark. Week-ago is this site's 23 Oct reading, exactly 7 days earlier. Pre-crisis €32.00 is derived from RTÉ's figure of +€14.52 to €46.52 on 2 March.",
+   "note": "Eased to about €100.59 on 2 Nov (Trading Economics), down roughly 3% on the day, off the €102.89 record close set 30 Oct, as the wider oil-led selloff on Trump's diplomacy remarks offset tight European winter supply. Week-ago is this site's 30 Oct reading, 3 days earlier.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-10-30"
+    "date": "2026-11-02"
    },
    "extra_sources": [
     {
@@ -93,19 +93,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 32.04,
-   "week_ago": 30.06,
+   "value": 32.84,
+   "week_ago": 32.04,
    "pre_crisis": 10.75,
    "peak": {
-    "value": 32.2,
-    "date": "2026-10-26",
-    "note": "New 2026 high, surpassing the prior 31.42 set 23 Oct (Trading Economics)."
+    "value": 32.84,
+    "date": "2026-10-30",
+    "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Eased slightly to $32.04 as of Trading Economics' 29 Oct print, down about 1% on the day but still up roughly 6.6% w/w, tracking the wider gas rally. Week-ago is this site's 22 Oct reading (the site's JKM read lags a day), 7 days before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Rose to a new 2026 high of $32.84 as of Trading Economics' 30 Oct print, up about 2.5% on the day; no fresher print was available as of 2 Nov. Week-ago is this site's 29 Oct reading, 1 day before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-29"
+    "date": "2026-10-30"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.9,
-   "week_ago": 2.73,
+   "value": 2.943,
+   "week_ago": 2.9,
    "pre_crisis": 2.99,
-   "note": "Eased to about $2.90 on 30 Oct (Trading Economics), down roughly 1.7% on the day but still up about 6% w/w; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Rose to about $2.94 on 2 Nov (Trading Economics), up roughly 1.6% on the day; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-10-30"
+    "date": "2026-11-02"
    },
    "extra_sources": [
     {
@@ -147,17 +147,22 @@
    ]
   }
  ],
- "note": "Brent and WTI rose on 30 October after UKMTO reported a tanker was hit by explosives attached by a small boat in the Strait of Hormuz on 29 October, and Iran's Revolutionary Guards and army separately claimed mine strikes on three tankers and a fourth (unverified). TTF closed above €100/MWh for the first time this year on the same news plus tight European winter supply. Henry Hub eased but stays largely insulated from the Gulf turmoil. Ras Tanura's damage and the Houthis' 26-27 Oct claims remain unconfirmed.",
+ "note": "Brent and WTI each fell more than 3% on 2 November after Trump signaled, per Axios, that he wants more time for Iran diplomacy before considering further strikes; Secretary of State Rubio said a day earlier that no decision had been made on new strikes. TTF eased off its 30 October record close in the same broad selloff. The drop followed UKMTO's report of a vessel struck by an unknown projectile in the Strait of Hormuz on 1 November, a day after the Qatari LNG carrier Al Mayeda was hit nearby despite reported Iranian safe-passage clearance; its crew were unharmed and the ship remained operational. The remarks and the selloff came two days before the 3 November US midterm elections.",
  "note_sources": [
+  {
+   "name": "The National — Oil prices slide more than 3% as Trump signals more time for Iran diplomacy",
+   "url": "https://www.thenationalnews.com/business/2026/11/02/oil-prices-slide-more-than-3-as-trump-signals-more-time-for-iran-diplomacy/",
+   "date": "2026-11-02"
+  },
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "date": "2026-10-30"
+   "date": "2026-11-02"
   },
   {
-   "name": "Arab News (Reuters) — Fire-hit tanker continues journey after being attacked in Strait of Hormuz, UKMTO says",
-   "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930",
-   "date": "2026-10-30"
+   "name": "gCaptain (Bloomberg) — Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
+   "url": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval/",
+   "date": "2026-11-01"
   }
  ]
 }

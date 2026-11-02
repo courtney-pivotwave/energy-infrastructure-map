@@ -1621,6 +1621,23 @@
     "at": "2026-11-01T17:08:34.285Z",
     "media": "asset-card"
    }
+  },
+  "2026-11-02-digest": {
+   "x": {
+    "id": "2117209950220849238",
+    "at": "2026-11-02T10:59:22.949Z",
+    "media": "daily-board"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzd66yusff2i",
+    "cid": "bafyreifp4jtt7awqzvtw6hrwfprtjdpnjpa7xvl3bvbnf2z26nmoenpt34",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzd66yusff2i",
+     "cid": "bafyreifp4jtt7awqzvtw6hrwfprtjdpnjpa7xvl3bvbnf2z26nmoenpt34"
+    },
+    "at": "2026-11-02T10:59:24.562Z",
+    "media": "daily-board"
+   }
   }
  }
 }

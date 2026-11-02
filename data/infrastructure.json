@@ -1661,9 +1661,21 @@
     51.55
    ],
    "size": 8,
-   "details": "Qatar. QatarEnergy LNG. World's largest LNG export complex, ~77 MTPA across 14 trains, expanding toward ~142 MTPA with the North Field East and South projects. Every cargo must exit through the Strait of Hormuz.",
+   "details": "Qatar. QatarEnergy LNG. World's largest LNG export complex, ~77 MTPA across 14 trains, expanding to 126 MTPA via the North Field East and South projects (6 new trains). Every cargo must exit through the Strait of Hormuz.",
    "geo": "Qatar's entire LNG export capacity sits behind Hormuz, with no pipeline bypass — unlike Saudi or Emirati crude. That makes Ras Laffan the single largest point of LNG exposure in the world: roughly a fifth of global LNG supply. Long-term contracts with China, India, Japan, Korea, and (since 2022) Germany and other European buyers mean a Hormuz disruption hits Asian and European gas markets at the same time.",
-   "verified": "2026-10-07"
+   "verified": "2026-11-02",
+   "capacity": {
+    "value": 77,
+    "unit": "mtpa",
+    "basis": "nameplate",
+    "source": {
+     "name": "QatarEnergy LNG — Corporate Structure",
+     "url": "https://www.qatarenergylng.qa/AboutUs/Corporate-Structure",
+     "date": "2026-11-02"
+    },
+    "as_of": "2026-11-02",
+    "note": "Expanding to 126 MTPA via North Field East (+32 MTPA, 4 trains) and North Field South (+16 MTPA, 2 trains); operator's own total does not fully reconcile with the two increments."
+   }
   },
   {
    "id": "sabine-pass-lng",

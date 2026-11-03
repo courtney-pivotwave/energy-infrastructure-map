@@ -1655,6 +1655,23 @@
     "at": "2026-11-02T20:47:15.536Z",
     "media": "locator-card"
    }
+  },
+  "2026-11-02-explainer-north-field-south-pars": {
+   "x": {
+    "id": "2117571843829780915",
+    "at": "2026-11-03T10:57:25.030Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzfokfuko32z",
+    "cid": "bafyreigs6dodcak36raniormh4c62rdmjcebpratvyblkgzdgm5sgurra4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzfokfuko32z",
+     "cid": "bafyreigs6dodcak36raniormh4c62rdmjcebpratvyblkgzdgm5sgurra4"
+    },
+    "at": "2026-11-03T10:57:27.035Z",
+    "media": "asset-card"
+   }
   }
  }
 }

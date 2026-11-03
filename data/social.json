@@ -1615,6 +1615,36 @@
     "Qatar"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-03-digest",
+   "created": "2026-11-03",
+   "type": "digest",
+   "text": "The US struck Iran's Qeshm Island in the Strait of Hormuz on Nov 3; officials called it a defensive response to Iranian fire on US assets, Reuters reports. Brent is back near $106/bbl after Monday's steep selloff; US diesel holds near $6.35/gal.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "tags": [
+    "Hormuz",
+    "Iran"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-03-explainer-strait-of-hormuz",
+   "created": "2026-11-03",
+   "type": "explainer",
+   "text": "Hormuz is ~21 km wide at its narrowest but carried ~19.9 million b/d of oil in 2025, a fifth of world demand. Shut since Feb 28; the US struck Iran's Qeshm Island, inside the strait, on Nov 3.",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "MaritimeSecurity",
+    "EnergySecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

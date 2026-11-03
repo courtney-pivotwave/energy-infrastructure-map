@@ -1,34 +1,34 @@
 {
- "as_of": "2026-11-02",
+ "as_of": "2026-11-03",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 108.82,
-   "week_ago": 113.54,
+   "value": 105.88,
+   "week_ago": 108.82,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Fell to about $108.82 on 2 Nov (Trading Economics), down roughly 4% on the day and about 4% w/w, after Trump signaled he wants more time for Iran diplomacy before considering further strikes and Secretary of State Rubio said no decision had been made on new strikes (The National, citing Axios/CBS); the remarks came two days before the 3 Nov US midterms. UKMTO reported a separate vessel struck by an unknown projectile in the strait on 1 Nov, a day after the LNG carrier Al Mayeda was hit nearby. Week-ago is this site's 30 Oct reading, 3 days earlier.",
+   "note": "Rebounded to about $105.88 on 3 Nov (Trading Economics), up roughly 1% on the day, after a US official confirmed to Reuters that US forces struck Iran's Qeshm Island, which officials called a defensive response to Iranian fire on US assets; both benchmarks had fallen more than 7% the prior session as Trump signaled more time for diplomacy (Reuters, via NTD). A senior Iranian official told Reuters the two sides remain far from a deal. Week-ago is this site's 2 Nov reading, 1 day earlier.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-11-02"
+    "date": "2026-11-03"
    },
    "extra_sources": [
     {
-     "name": "The National — Oil prices slide more than 3% as Trump signals more time for Iran diplomacy",
-     "url": "https://www.thenationalnews.com/business/2026/11/02/oil-prices-slide-more-than-3-as-trump-signals-more-time-for-iran-diplomacy/",
-     "date": "2026-11-02"
+     "name": "Reuters, via NTD — Oil Prices Rise After Report of US Strike on Iran's Qeshm Island",
+     "url": "https://www.ntd.com/oil-prices-rise-after-report-of-us-strike-on-irans-qeshm-island_1183044.html",
+     "date": "2026-11-03"
     },
     {
-     "name": "gCaptain (Bloomberg) — Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
-     "url": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval/",
-     "date": "2026-11-01"
+     "name": "CNBC — US strikes Iran's Qeshm Island as Vance seeks settlement",
+     "url": "https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html",
+     "date": "2026-11-03"
     }
    ]
   },
@@ -36,19 +36,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 99.8,
-   "week_ago": 104.19,
+   "value": 97.68,
+   "week_ago": 99.8,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Fell to about $99.80 on 2 Nov (Trading Economics), down roughly 4% on the day, tracking Brent on Trump's diplomacy signal ahead of the 3 Nov US midterms. Week-ago is this site's 30 Oct reading, 3 days earlier.",
+   "note": "Rebounded to about $97.68 on 3 Nov (Trading Economics), up roughly 1.3% on the day, tracking Brent after the reported US strike on Iran's Qeshm Island, following a more than 7% drop the prior session. Week-ago is this site's 2 Nov reading, 1 day earlier.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-11-02"
+    "date": "2026-11-03"
    },
    "extra_sources": [
     {
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 100.59,
-   "week_ago": 102.89,
+   "value": 97.08,
+   "week_ago": 100.59,
    "pre_crisis": 32.0,
    "peak": {
     "value": 102.89,
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Eased to about €100.59 on 2 Nov (Trading Economics), down roughly 3% on the day, off the €102.89 record close set 30 Oct, as the wider oil-led selloff on Trump's diplomacy remarks offset tight European winter supply. Week-ago is this site's 30 Oct reading, 3 days earlier.",
+   "note": "Rose to about €97.08 on 3 Nov (Trading Economics), up roughly 2.3% on the day, tracking the oil-led rebound after the reported Qeshm Island strike, but still below the €102.89 record close set 30 Oct. Week-ago is this site's 2 Nov reading, 1 day earlier.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-02"
+    "date": "2026-11-03"
    },
    "extra_sources": [
     {
@@ -93,19 +93,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 32.84,
-   "week_ago": 32.04,
+   "value": 31.7,
+   "week_ago": 32.84,
    "pre_crisis": 10.75,
    "peak": {
     "value": 32.84,
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Rose to a new 2026 high of $32.84 as of Trading Economics' 30 Oct print, up about 2.5% on the day; no fresher print was available as of 2 Nov. Week-ago is this site's 29 Oct reading, 1 day before that print. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
+   "note": "Fell to $31.70 as of Trading Economics' 2 Nov print, down about 3.5% on the day, off the $32.84 record set 30 Oct; no fresher print was available as of 3 Nov. Week-ago is this site's 30 Oct reading, 3 days earlier. Pre-crisis is the IMF Asia LNG February 2026 monthly average, not a JKM daily print.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-10-30"
+    "date": "2026-11-02"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.943,
-   "week_ago": 2.9,
+   "value": 2.9026,
+   "week_ago": 2.943,
    "pre_crisis": 2.99,
-   "note": "Rose to about $2.94 on 2 Nov (Trading Economics), up roughly 1.6% on the day; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Rose to about $2.90 on 3 Nov (Trading Economics), up roughly 1.6% on the day; pre-crisis is the EIA spot price on 27 Feb (FRED). US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-11-02"
+    "date": "2026-11-03"
    },
    "extra_sources": [
     {
@@ -147,22 +147,22 @@
    ]
   }
  ],
- "note": "Brent and WTI each fell more than 3% on 2 November after Trump signaled, per Axios, that he wants more time for Iran diplomacy before considering further strikes; Secretary of State Rubio said a day earlier that no decision had been made on new strikes. TTF eased off its 30 October record close in the same broad selloff. The drop followed UKMTO's report of a vessel struck by an unknown projectile in the Strait of Hormuz on 1 November, a day after the Qatari LNG carrier Al Mayeda was hit nearby despite reported Iranian safe-passage clearance; its crew were unharmed and the ship remained operational. The remarks and the selloff came two days before the 3 November US midterm elections.",
+ "note": "Brent, WTI and TTF all rebounded modestly on 3 November after a US official confirmed to Reuters that US forces struck Iran's Qeshm Island in the Strait of Hormuz, in what officials called a defensive response to Iranian fire on US assets. Both oil benchmarks had fallen more than 7% the prior session after Trump signaled he wants more time for Iran diplomacy before considering further strikes. A senior Iranian official told Reuters the two sides remain far from a deal; the moves came on the day of the 3 November US midterm elections.",
  "note_sources": [
   {
-   "name": "The National — Oil prices slide more than 3% as Trump signals more time for Iran diplomacy",
-   "url": "https://www.thenationalnews.com/business/2026/11/02/oil-prices-slide-more-than-3-as-trump-signals-more-time-for-iran-diplomacy/",
-   "date": "2026-11-02"
+   "name": "Reuters, via NTD — Oil Prices Rise After Report of US Strike on Iran's Qeshm Island",
+   "url": "https://www.ntd.com/oil-prices-rise-after-report-of-us-strike-on-irans-qeshm-island_1183044.html",
+   "date": "2026-11-03"
+  },
+  {
+   "name": "CNBC — US strikes Iran's Qeshm Island as Vance seeks settlement",
+   "url": "https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html",
+   "date": "2026-11-03"
   },
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "date": "2026-11-02"
-  },
-  {
-   "name": "gCaptain (Bloomberg) — Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
-   "url": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval/",
-   "date": "2026-11-01"
+   "date": "2026-11-03"
   }
  ]
 }

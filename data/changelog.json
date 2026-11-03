@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-03",
+   "kind": "data",
+   "headline": "US strikes Iran's Qeshm Island; oil rebounds on US midterm election day",
+   "changes": [
+    "A US official confirmed to Reuters that US forces struck Iran's Qeshm Island in the Strait of Hormuz on Nov 3, calling it a defensive response to Iranian fire on US assets.",
+    "Brent, WTI and TTF all rebounded modestly after Monday's steep selloff; a senior Iranian official told Reuters the two sides remain far from a deal.",
+    "Refreshed the Strait of Hormuz status summary, re-checked its reference figures, and refreshed benchmark prices."
+   ]
+  },
+  {
    "date": "2026-11-02",
    "kind": "data",
    "headline": "Oil drops 3%+ as Trump signals more time for Iran diplomacy before midterms",

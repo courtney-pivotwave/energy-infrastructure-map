@@ -118,7 +118,7 @@
    "id": "2026-11-03-us-strikes-qeshm-island",
    "date": "2026-11-03",
    "title": "US forces strike Iran's Qeshm Island, officials call it defensive",
-   "summary": "A US official confirmed to Reuters that US forces struck Iran's Qeshm Island, the largest island in the Strait of Hormuz, on Nov 3. Officials described it as a defensive response to Iran firing surface-to-air missiles at US assets; the Wall Street Journal reported the US has carried out periodic, unannounced \"limited strikes\" for several weeks to avoid signaling a return to major combat. A senior Iranian official told Reuters the two sides remain far from a deal and that Iran would respond forcefully to further US action; Iran's parliament speaker said Tehran had given Washington a \"strong response\" and the \"ball is in the US court.\" No casualties or specific targets were independently confirmed.",
+   "summary": "A US official confirmed to Reuters that US forces struck Iran's Qeshm Island, the largest island in the Strait of Hormuz, on Nov 3. Officials described it as a defensive response to Iran firing surface-to-air missiles at US assets; the Wall Street Journal reported the US has carried out periodic, unannounced \"limited strikes\" for several weeks to avoid signaling a return to major combat. President Trump told Fox News on Nov 3 the strike hit an Iranian anti-aircraft facility, calling it a \"minor attack\" that \"wasn't war.\" A senior Iranian official told Reuters the two sides remain far from a deal and that Iran would respond forcefully to further US action; Iran's parliament speaker said Tehran had given Washington a \"strong response\" and the \"ball is in the US court.\" No casualties have been independently confirmed.",
    "category": "military",
    "severity": "high",
    "coords": [
@@ -139,6 +139,11 @@
      "name": "CNBC — US strikes Iran's Qeshm Island as Vance seeks settlement",
      "url": "https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html",
      "date": "2026-11-03"
+    },
+    {
+     "name": "Al Jazeera — Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
+     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
+     "date": "2026-11-04"
     }
    ]
   },

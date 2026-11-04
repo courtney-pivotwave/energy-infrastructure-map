@@ -1492,8 +1492,9 @@
     56.3
    ],
    "size": 6,
-   "details": "UAE. World's second-largest bunkering port. Major oil storage hub outside Strait of Hormuz. ~9 million cubic meters of storage capacity.",
-   "geo": null
+   "details": "UAE, on the Gulf of Oman about 70 nautical miles outside the Strait of Hormuz. World's second-largest bunkering (ship refueling) port after Singapore and Rotterdam, and the Middle East's largest commercial oil storage hub, with about 18 million cubic meters of crude, products and fuel-oil storage capacity (Reuters, 14 Mar 2026), roughly double the figure previously listed here. Receives crude via the Abu Dhabi Crude Oil Pipeline (~1.5 million b/d), one of the few routes that reaches export markets without transiting Hormuz.",
+   "geo": "Fujairah sits on the Gulf of Oman side of the UAE, outside the Strait of Hormuz, making it a key hub for cargo and bunkering that bypasses the strait entirely. Crude arriving via the Abu Dhabi Crude Oil Pipeline can be loaded onto tankers here without ever entering Hormuz, and its storage tanks let traders and refiners hold crude, products and fuel oil through periods when shipping through the strait is disrupted. Growing ADNOC storage investment has drawn more trade to this bypass route as the Hormuz crisis has continued.",
+   "verified": "2026-11-04"
   },
   {
    "id": "singapore",

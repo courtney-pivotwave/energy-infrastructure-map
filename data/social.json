@@ -1693,6 +1693,22 @@
     "Shipping"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-04-explainer-fujairah",
+   "created": "2026-11-04",
+   "type": "explainer",
+   "text": "Fujairah sits on the Gulf of Oman, about 70 nautical miles outside the Strait of Hormuz. It stores about 18 million cubic meters of crude, products and fuel oil, fed partly by an Abu Dhabi pipeline that bypasses Hormuz.",
+   "url": "https://strategicenergymap.org/facilities/fujairah/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "UAE",
+    "Shipping"
+   ],
+   "reply_to": null
   }
  ]
 }

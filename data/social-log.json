@@ -1723,6 +1723,23 @@
     "at": "2026-11-04T10:58:02.470Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-04-event-irgc-sam-missile-intercept": {
+   "x": {
+    "id": "2118050516307464273",
+    "at": "2026-11-04T18:39:29.437Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mziytlozcy24",
+    "cid": "bafyreigd6eqepo5rpp3upblearfncu2aieh4tcqiueyo5kuzodptk4m7gi",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mziytlozcy24",
+     "cid": "bafyreigd6eqepo5rpp3upblearfncu2aieh4tcqiueyo5kuzodptk4m7gi"
+    },
+    "at": "2026-11-04T18:39:31.455Z",
+    "media": "locator-card"
+   }
   }
  }
 }

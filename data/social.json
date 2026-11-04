@@ -1645,6 +1645,54 @@
     "EnergySecurity"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-04-digest",
+   "created": "2026-11-04",
+   "type": "digest",
+   "text": "Trump confirmed the Nov 3 US strike on Iran's Qeshm Island hit an anti-aircraft facility, calling it a minor attack. Iran's Rezaei called the US reply to Hormuz reopening terms unconvincing. Brent eased to about $102/bbl, US diesel $6.29/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Iran",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-04-event-irgc-sam-missile-intercept",
+   "created": "2026-11-04",
+   "type": "event",
+   "text": "Iran's Guards fired a SAM at a US jet near Qeshm Island on Nov 2; the jet returned fire. Separately, US forces intercepted an Iranian missile aimed at commercial shipping in the strait.",
+   "url": "https://strategicenergymap.org/events/#2026-11-02-irgc-sam-us-jet-missile-intercept",
+   "event_id": "2026-11-02-irgc-sam-us-jet-missile-intercept",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "MiddleEast"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-04-event-ukmto-limah-strike",
+   "created": "2026-11-04",
+   "type": "event",
+   "text": "UKMTO said two unidentified projectiles struck a tanker's engine room on Nov 3 off Oman's Limah, near the Strait of Hormuz. No casualties reported; no group has claimed responsibility.",
+   "url": "https://strategicenergymap.org/events/#2026-11-03-ukmto-tanker-struck-limah",
+   "event_id": "2026-11-03-ukmto-tanker-struck-limah",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Oman",
+    "Shipping"
+   ],
+   "reply_to": null
   }
  ]
 }

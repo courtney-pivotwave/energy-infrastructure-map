@@ -1693,6 +1693,36 @@
     "Shipping"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-05-digest",
+   "created": "2026-11-05",
+   "type": "digest",
+   "text": "Brent fell to about $96/bbl Nov 5, down ~16% this week, after Democrats won Congress in Tuesday's midterms; Trump and Vance both tied the losses to the Iran war's gas prices. Iran's claim of tankers mined near Hormuz is unverified.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "OilPrices",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-05-chart-chokepoints-weekly",
+   "created": "2026-11-05",
+   "type": "chart",
+   "text": "Tanker traffic through energy chokepoints stayed near rock bottom in the week to Oct 25: Hormuz averaged under 1 ship a day, 98% below baseline (IMF PortWatch). Turkish Straits -30%, Bab el-Mandeb -21%.",
+   "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
+   "image": "chokepoints-weekly",
+   "alt": "Bar chart of 7-day average tanker transits vs pre-crisis baseline, percent change, week ending Oct 25: Strait of Hormuz -98% (0.9/day), Turkish Straits -30% (15.9/day), Bab el-Mandeb -21% (9.6/day), Strait of Malacca -10% (75.9/day).",
+   "video": null,
+   "tags": [
+    "DataViz",
+    "Hormuz"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,8 +1,36 @@
 {
- "updated": "2026-11-04",
- "situation_headline": "Trump confirmed the Nov 3 strike on Iran's Qeshm Island hit an anti-aircraft facility, calling it a \"minor attack\"; Iran's Rezaei called the US reply to Iran's Hormuz terms \"unconvincing.\" New IRGC tanker-mine claims remain unverified. Oil eased to about $102/bbl Nov 4.",
+ "updated": "2026-11-05",
+ "situation_headline": "Oil tumbled to one-month lows after Democrats won control of Congress in the Nov 3 midterms; Trump and Vance linked the losses to the Iran war's effect on gas prices. Brent eased further to about $96/bbl on Nov 5. Iran's tanker-mine claims remain unverified.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-04-midterms-oil-tumbles",
+   "date": "2026-11-04",
+   "title": "Oil tumbles as Democrats win Congress; Trump, Vance link losses to Iran war",
+   "summary": "Democrats won control of both the House and Senate in the Nov 3 midterms. Vice President Vance said \"the reason we lost is the war,\" and President Trump called it \"largely true\" that the Iran war, through higher gasoline prices, cost Republicans votes. Brent crude extended its slide, closing below $100/bbl on Nov 4 for the first time since late September and easing further to about $96/bbl on Nov 5 (Trading Economics), down roughly 16% for the week as traders priced in reduced political pressure to keep the war going. Trump told the Financial Times Washington has no immediate plans for new strikes on Iran.",
+   "category": "policy",
+   "severity": "high",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "CBS News — Live updates: Iran war, US midterms and the Strait of Hormuz",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
+     "date": "2026-11-05"
+    },
+    {
+     "name": "Gulf News — Trump warns of 'heavy hit' as Iran says Americans voted no to war",
+     "url": "https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100",
+     "date": "2026-11-05"
+    },
+    {
+     "name": "Trading Economics — Brent Crude Oil",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+     "date": "2026-11-05"
+    }
+   ]
+  },
   {
    "id": "2026-11-04-irgc-mine-claims-tankers",
    "date": "2026-11-04",

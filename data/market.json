@@ -1,42 +1,42 @@
 {
- "as_of": "2026-11-04",
+ "as_of": "2026-11-05",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 102.18,
-   "week_ago": 114.8,
+   "value": 96.06,
+   "week_ago": 113.54,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Eased to about $102.18 on 4 Nov (Trading Economics), down roughly 1.4% on the day, as Iran's Rezaei called the US reply to its Hormuz-reopening terms “unconvincing” and new unverified IRGC tanker-mine claims kept risk elevated without a confirmed supply disruption. That's down from Tuesday's modest rebound after Monday's 7.6% selloff. Week-ago is this site's 28 Oct reading.",
+   "note": "Extended its slide to about $96.06 on 5 Nov (Trading Economics), up $1.44 (1.5%) on the day but down roughly 16% for the week, after closing below $100 on 4 Nov for the first time since late September as Democrats' Nov 3 midterm win fed bets on reduced political pressure to continue the Iran war. Week-ago is this site's 30 Oct reading.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    }
   },
   {
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 95.3,
-   "week_ago": 101.4,
+   "value": 88.59,
+   "week_ago": 104.19,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Eased to about $95.30 on 4 Nov (Trading Economics), down roughly 1% on the day, tracking Brent lower after Tuesday's modest rebound. Week-ago is this site's 28 Oct reading.",
+   "note": "Fell to about $88.59 on 5 Nov (Trading Economics), down roughly 16% for the week, tracking Brent lower after the midterm-driven selloff and resumed Gulf exports. Week-ago is this site's 30 Oct reading.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "extra_sources": [
     {
@@ -50,19 +50,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 87.71,
-   "week_ago": 97.93,
+   "value": 88.61,
+   "week_ago": 102.89,
    "pre_crisis": 32.0,
    "peak": {
     "value": 102.89,
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Fell to about €87.71 on 4 Nov (Trading Economics), down roughly 4% on the day, pulling back further from the €102.89 record close set 30 Oct. Week-ago is this site's 28 Oct reading.",
+   "note": "Eased to about €88.61/MWh on 5 Nov (Trading Economics), down from the 30 Oct record, tracking the broader pullback in energy prices.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "extra_sources": [
     {
@@ -81,19 +81,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 31.76,
-   "week_ago": 31.74,
+   "value": 31.62,
+   "week_ago": 32.04,
    "pre_crisis": 10.75,
    "peak": {
     "value": 32.84,
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Rose slightly to $31.76 as of Trading Economics' 3 Nov print, up about 0.2% on the day; no fresher print was available as of 4 Nov. Week-ago is this site's 28 Oct reading.",
+   "note": "Eased slightly to $31.62 as of Trading Economics' 4 Nov print, down about 0.5% on the day; no fresher print was available as of 5 Nov. Week-ago is this site's 30 Oct reading.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-11-03"
+    "date": "2026-11-04"
    },
    "extra_sources": [
     {
@@ -112,14 +112,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.9,
-   "week_ago": 3.07,
+   "value": 2.94,
+   "week_ago": 2.9,
    "pre_crisis": 2.99,
-   "note": "Little changed at about $2.90 on 4 Nov (Trading Economics); US LNG feedgas and exports are near records, but the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Little changed at about $2.94 on 5 Nov (Trading Economics); the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "extra_sources": [
     {
@@ -135,17 +135,17 @@
    ]
   }
  ],
- "note": "Oil and European gas eased on 4 November after Iran's security chief, Mohsen Rezaei, called the US reply to Iran's seven conditions for reopening the Strait of Hormuz “unconvincing,” a day after President Trump confirmed the US strike on Iran's Qeshm Island hit an anti-aircraft facility, calling it a “minor attack.” New Iranian claims of tankers destroyed by mines in the strait remain unverified and inconsistent between accounts.",
+ "note": "Oil and European gas extended their slide on 5 November after Democrats won control of Congress in the Nov 3 US midterms; Vice President Vance and President Trump both linked the Republican losses to the Iran war's effect on gasoline prices. Brent closed below $100/bbl on 4 Nov for the first time since late September. New Iranian claims of tankers destroyed by mines in the strait remain unverified.",
  "note_sources": [
   {
-   "name": "Al Jazeera — Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
-   "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
-   "date": "2026-11-04"
+   "name": "CBS News — Live updates: Iran war, US midterms and the Strait of Hormuz",
+   "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
+   "date": "2026-11-05"
   },
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "date": "2026-11-04"
+   "date": "2026-11-05"
   }
  ]
 }

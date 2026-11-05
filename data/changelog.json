@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-11-05",
+   "kind": "data",
+   "headline": "Oil tumbles to one-month low after Democrats win Congress in US midterms",
+   "changes": [
+    "Democrats won control of both the House and Senate in the Nov 3 midterms; Trump and Vance both said the Iran war, through gasoline prices, cost Republicans votes.",
+    "Brent crude closed below $100/bbl on Nov 4 for the first time since late September and eased further to about $96/bbl on Nov 5, down roughly 16% for the week.",
+    "Trump told the Financial Times Washington has no immediate plans for new strikes on Iran.",
+    "EU pump prices (Weekly Oil Bulletin) and FX rates refreshed to Nov 2 and Nov 4 readings."
+   ]
+  },
+  {
    "date": "2026-11-04",
    "kind": "data",
    "headline": "US confirms Qeshm Island strike target; Iran calls US reply 'unconvincing'",

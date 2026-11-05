@@ -1740,6 +1740,23 @@
     "at": "2026-11-04T18:39:31.455Z",
     "media": "locator-card"
    }
+  },
+  "2026-11-04-event-ukmto-limah-strike": {
+   "x": {
+    "id": "2118297421025358095",
+    "at": "2026-11-05T11:00:36.130Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzkpnwqi7525",
+    "cid": "bafyreifif72ltsfo3bnbytytbceo7lvw3kpchx4ypaelvlv62rvglyz4ta",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzkpnwqi7525",
+     "cid": "bafyreifif72ltsfo3bnbytytbceo7lvw3kpchx4ypaelvlv62rvglyz4ta"
+    },
+    "at": "2026-11-05T11:00:37.614Z",
+    "media": "locator-card"
+   }
   }
  }
 }

@@ -1739,6 +1739,22 @@
     "Diesel"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-06-explainer-fujairah",
+   "created": "2026-11-06",
+   "type": "explainer",
+   "text": "Fujairah, near the Strait of Hormuz on the UAE coast, is the world's 4th-largest bunkering port with ~18M cubic meters of oil storage and a pipeline moving 1.5M b/d of crude past the strait.",
+   "url": "https://strategicenergymap.org/facilities/fujairah/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "UAE",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

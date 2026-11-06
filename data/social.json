@@ -1723,6 +1723,22 @@
     "Hormuz"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-06-digest",
+   "created": "2026-11-06",
+   "type": "digest",
+   "text": "Oil swung hard this week: Brent crashed ~9% on Nov 4, then rebounded to near $98/bbl by Nov 6 as Rapidan Energy Group put 80% odds on renewed US-Iran fighting. US diesel: $6.29/gal, ~65% above pre-crisis.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Brent",
+    "Diesel"
+   ],
+   "reply_to": null
   }
  ]
 }

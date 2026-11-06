@@ -1,11 +1,11 @@
 {
- "as_of": "2026-11-05",
+ "as_of": "2026-11-06",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 96.06,
+   "value": 98.19,
    "week_ago": 113.54,
    "pre_crisis": 72.48,
    "peak": {
@@ -13,18 +13,30 @@
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Extended its slide to about $96.06 on 5 Nov (Trading Economics), up $1.44 (1.5%) on the day but down roughly 16% for the week, after closing below $100 on 4 Nov for the first time since late September as Democrats' Nov 3 midterm win fed bets on reduced political pressure to continue the Iran war. Week-ago is this site's 30 Oct reading.",
+   "note": "Choppy: fell almost 9% on 4 Nov after the midterm result, rebounded 3.9% to a $98.29 settlement on 5 Nov (Bloomberg, via Rigzone), then eased slightly to about $98.19 on 6 Nov (Trading Economics), down about 13.5% from a week earlier. Rapidan Energy Group's Bob McNally told CNBC he sees an 80% probability that US-Iran fighting resumes, which he said could push both benchmarks back above $100.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-11-05"
-   }
+    "date": "2026-11-06"
+   },
+   "extra_sources": [
+    {
+     "name": "Rigzone (Bloomberg) — Oil Rebounds After Sharp Iran War Selloff",
+     "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
+     "date": "2026-11-05"
+    },
+    {
+     "name": "CNBC — Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections",
+     "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
+     "date": "2026-11-06"
+    }
+   ]
   },
   {
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 88.59,
+   "value": 90.63,
    "week_ago": 104.19,
    "pre_crisis": 67.02,
    "peak": {
@@ -32,17 +44,17 @@
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Fell to about $88.59 on 5 Nov (Trading Economics), down roughly 16% for the week, tracking Brent lower after the midterm-driven selloff and resumed Gulf exports. Week-ago is this site's 30 Oct reading.",
+   "note": "Rebounded 2.7% to a $90.52 settlement on 5 Nov (Bloomberg, via Rigzone) after the midterm-driven selloff, little changed at about $90.63 on 6 Nov (Trading Economics), down about 13% from a week earlier.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-11-05"
+    "date": "2026-11-06"
    },
    "extra_sources": [
     {
-     "name": "Rigzone (Bloomberg) — Aramco Contains Fire Near Ras Tanura Oil Hub",
-     "url": "https://www.rigzone.com/news/wire/aramco_contains_fire_near_ras_tanura_oil_hub-27-oct-2026-184944-article/",
-     "date": "2026-10-27"
+     "name": "Rigzone (Bloomberg) — Oil Rebounds After Sharp Iran War Selloff",
+     "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
+     "date": "2026-11-05"
     }
    ]
   },
@@ -50,7 +62,7 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 88.61,
+   "value": 87.37,
    "week_ago": 102.89,
    "pre_crisis": 32.0,
    "peak": {
@@ -58,11 +70,11 @@
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Eased to about €88.61/MWh on 5 Nov (Trading Economics), down from the 30 Oct record, tracking the broader pullback in energy prices.",
+   "note": "Eased further to about €87.37/MWh on 6 Nov (Trading Economics), down roughly 15% from the 30 Oct record, tracking oil's pullback from this week's highs.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-05"
+    "date": "2026-11-06"
    },
    "extra_sources": [
     {
@@ -89,11 +101,12 @@
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Eased slightly to $31.62 as of Trading Economics' 4 Nov print, down about 0.5% on the day; no fresher print was available as of 5 Nov. Week-ago is this site's 30 Oct reading.",
+   "value": 31.57,
+   "note": "Eased slightly to $31.57 as of Trading Economics' 5 Nov print, down about 1.5% from a week earlier; no fresher print was available as of 6 Nov.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "extra_sources": [
     {
@@ -112,14 +125,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 2.94,
+   "value": 3.0,
    "week_ago": 2.9,
    "pre_crisis": 2.99,
-   "note": "Little changed at about $2.94 on 5 Nov (Trading Economics); the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Little changed at about $3.00 on 6 Nov (Trading Economics); the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-11-05"
+    "date": "2026-11-06"
    },
    "extra_sources": [
     {
@@ -135,16 +148,21 @@
    ]
   }
  ],
- "note": "Oil and European gas extended their slide on 5 November after Democrats won control of Congress in the Nov 3 US midterms; Vice President Vance and President Trump both linked the Republican losses to the Iran war's effect on gasoline prices. Brent closed below $100/bbl on 4 Nov for the first time since late September. New Iranian claims of tankers destroyed by mines in the strait remain unverified.",
+ "note": "Oil and gas whipsawed into 6 November: Brent fell almost 9% on 4 Nov after Democrats won Congress in the midterms, then rebounded 3.9% to $98.29 on 5 Nov (Bloomberg, via Rigzone) as traders weighed a reported Iranian nuclear proposal sent via Qatar against Rapidan Energy Group's Bob McNally, who told CNBC he sees an 80% probability that US-Iran fighting resumes. UKMTO logged a new tanker strike off Qatar's coast on 4 Nov, and Iran's Guards and army made fresh, inconsistent mine claims near the strait on 5 Nov.",
  "note_sources": [
   {
-   "name": "CBS News — Live updates: Iran war, US midterms and the Strait of Hormuz",
-   "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
+   "name": "Rigzone (Bloomberg) — Oil Rebounds After Sharp Iran War Selloff",
+   "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
    "date": "2026-11-05"
   },
   {
-   "name": "Trading Economics — Brent Crude Oil",
-   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "name": "CNBC — Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections",
+   "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
+   "date": "2026-11-06"
+  },
+  {
+   "name": "Al Jazeera — Iran says tankers struck in Hormuz amid fears of new US attack",
+   "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack",
    "date": "2026-11-05"
   }
  ]

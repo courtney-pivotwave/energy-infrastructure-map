@@ -1,8 +1,103 @@
 {
- "updated": "2026-11-05",
- "situation_headline": "Oil tumbled to one-month lows after Democrats won control of Congress in the Nov 3 midterms; Trump and Vance linked the losses to the Iran war's effect on gas prices. Brent eased further to about $96/bbl on Nov 5. Iran's tanker-mine claims remain unverified.",
+ "updated": "2026-11-06",
+ "situation_headline": "Oil swung from a 9% Nov 4 plunge to near $98/bbl by Nov 6, as a reported Iranian nuclear proposal sent via Qatar met Rapidan's 80%-odds call on renewed US-Iran fighting. UKMTO logged a new tanker strike near Qatar; Iran's mine claims remain unverified.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-06-oil-swings-escalation-risk",
+   "date": "2026-11-06",
+   "title": "Oil swings on escalation risk; Rapidan sees 80% odds of renewed Iran fighting",
+   "summary": "Brent fell almost 9% on Nov 4 after Democrats' midterm win, rebounded 3.9% to a $98.29 settlement on Nov 5, then eased slightly to about $98.19 on Nov 6 (Bloomberg, via Rigzone; Trading Economics). Rapidan Energy Group's Bob McNally told CNBC he sees an 80% probability that US-Iran military fighting resumes, citing the unresolved dispute over Iran's nuclear program, and said both benchmarks could climb back above $100/bbl if tensions flare; Lombard Odier's Samy Chaar and Luca Bindelli were reported to share that view.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Rigzone (Bloomberg) — Oil Rebounds After Sharp Iran War Selloff",
+     "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
+     "date": "2026-11-05"
+    },
+    {
+     "name": "CNBC — Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections",
+     "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
+     "date": "2026-11-06"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-iran-nuclear-proposal-qatar",
+   "date": "2026-11-05",
+   "title": "Iran sends nuclear proposal to US via Qatar, Reuters reports",
+   "summary": "A senior Iranian official told Reuters that Iran has sent a new proposal on its nuclear program to Washington through Qatari mediators, per Bloomberg's report of the Reuters account, as markets priced in hopes of easing tensions. The New York Times separately reported Iran is reviewing proposals mediators have presented on the nuclear issue. Qatar's foreign ministry has said both sides remain committed to the mediation process.",
+   "category": "diplomatic",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Rigzone (Bloomberg) — Oil Rebounds After Sharp Iran War Selloff",
+     "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
+     "date": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-nyt-us-forces-combat-ready",
+   "date": "2026-11-04",
+   "title": "NYT: thousands of US forces positioned to resume major combat against Iran",
+   "summary": "The New York Times reported on Nov 4, citing unnamed Pentagon officials, that thousands of US air and naval forces are positioned to resume major combat operations against Iran if President Trump orders it. Iranian leaders warned of repercussions if the US or Israel take further military action; Iran's Supreme Leader Mojtaba Khamenei said there should be \"not the slightest inclination toward submission\" to Washington, and IRGC Ground Force commander Brig. Gen. Mohammad Karami said continued Iranian action would bring further \"victories.\"",
+   "category": "military",
+   "severity": "high",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Iran says tankers struck in Hormuz amid fears of new US attack",
+     "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack",
+     "date": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-irgc-army-mine-claims-continue",
+   "date": "2026-11-05",
+   "title": "Iran's Guards, army claim more tankers hit mines near Hormuz; tolls diverge again",
+   "summary": "Iran's Revolutionary Guards told Fars News that a tanker struck a mine on an \"illegal passageway\" south of the Strait of Hormuz and caught fire, and that a supertanker and the tugboat that approached to help also caught fire. Iran's army separately told IRNA that one tanker hit a mine early on Nov 5 east of the strait and two more around midday, revising an earlier same-day count of three. Neither account has been independently confirmed, continuing a pattern of inconsistent Iranian tolls.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": ["strait-of-hormuz"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Al Jazeera — Iran says tankers struck in Hormuz amid fears of new US attack",
+     "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack",
+     "date": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-ukmto-tanker-struck-madinat-ash-shamal",
+   "date": "2026-11-04",
+   "title": "UKMTO: tanker struck by projectiles north of Qatar's Madinat ash-Shamal",
+   "summary": "The UK Maritime Trade Operations agency said a tanker was struck by two unidentified projectiles about 50 nautical miles north of Madinat ash-Shamal, Qatar, at 23:20 GMT on Nov 4. UKMTO did not identify the vessel or its flag, and no group claimed responsibility. UKMTO said most ships now decline to report attacks at all, so its count likely understates the true toll.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [26.96, 51.21],
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Iran says tankers struck in Hormuz amid fears of new US attack",
+     "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack",
+     "date": "2026-11-05"
+    }
+   ]
+  },
   {
    "id": "2026-11-04-midterms-oil-tumbles",
    "date": "2026-11-04",

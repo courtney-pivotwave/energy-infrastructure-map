@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-11-06",
+   "kind": "data",
+   "headline": "Oil swings on escalation risk as Iran reportedly sends nuclear proposal via Qatar",
+   "changes": [
+    "Brent fell almost 9% on Nov 4, rebounded 3.9% to $98.29 on Nov 5, then eased to about $98 on Nov 6, as Rapidan Energy Group's Bob McNally put the odds of renewed US-Iran fighting at 80%.",
+    "A senior Iranian official told Reuters Iran sent a new nuclear-program proposal to Washington via Qatar; the New York Times separately reported Iran is reviewing mediators' proposals.",
+    "The New York Times reported thousands of US forces are positioned to resume major combat against Iran on Trump's order; Iran's Guards and army made fresh, inconsistent claims of tankers hit by mines near the strait.",
+    "UKMTO logged a new tanker strike off Qatar's coast.",
+    "Corrected the Fujairah hub's storage capacity and bunkering-port ranking in the facility reference data."
+   ]
+  },
+  {
    "date": "2026-11-05",
    "kind": "data",
    "headline": "Oil tumbles to one-month low after Democrats win Congress in US midterms",

@@ -1825,6 +1825,23 @@
     "at": "2026-11-07T10:55:01.392Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-07-explainer-ras-laffan-lng": {
+   "x": {
+    "id": "2119110338733858828",
+    "at": "2026-11-07T16:50:50.879Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzqe63gnfd2v",
+    "cid": "bafyreibdoikzztf7nofj3ovcmxhzxheqf46dp7bevwe3vgmcpizsmz37mi",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzqe63gnfd2v",
+     "cid": "bafyreibdoikzztf7nofj3ovcmxhzxheqf46dp7bevwe3vgmcpizsmz37mi"
+    },
+    "at": "2026-11-07T16:50:52.760Z",
+    "media": "asset-card"
+   }
   }
  }
 }

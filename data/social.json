@@ -1739,6 +1739,38 @@
     "Diesel"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-07-digest",
+   "created": "2026-11-07",
+   "type": "digest",
+   "text": "New, separate US strike hit an Iranian air-defense system on Qeshm Island Nov 6, Trump said (reported); no casualties. Iran is still weighing a Qatari-mediated nuclear proposal. Brent held near $98/bbl, off about 13% from a week ago.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Iran",
+    "EnergySecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-07-explainer-ras-laffan-lng",
+   "created": "2026-11-07",
+   "type": "explainer",
+   "text": "Qatar's Ras Laffan is the world's largest LNG export site: ~77 mtpa across 14 trains, all shipped via the Strait of Hormuz. Two trains (17%) are still offline after a March strike; QatarEnergy targets ~142 mtpa by 2030.",
+   "url": "https://strategicenergymap.org/facilities/ras-laffan-lng/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "LNG",
+    "Qatar"
+   ],
+   "reply_to": null
   }
  ]
 }

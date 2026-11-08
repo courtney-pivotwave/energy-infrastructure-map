@@ -1859,6 +1859,21 @@
     "at": "2026-11-08T10:53:36.258Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-08-event-velos-sapphire-tanker-attack": {
+   "x": {
+    "id": "2119476156080570721",
+    "at": "2026-11-08T17:04:28.377Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzsvfejjt723",
+    "cid": "bafyreicph5wmajyhtaryjo2kf6b3j423t4wpgvbztpgppnvstmk5uhzcqy",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzsvfejjt723",
+     "cid": "bafyreicph5wmajyhtaryjo2kf6b3j423t4wpgvbztpgppnvstmk5uhzcqy"
+    },
+    "at": "2026-11-08T17:04:29.789Z"
+   }
   }
  }
 }

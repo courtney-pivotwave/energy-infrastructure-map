@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-11-08",
+   "kind": "data",
+   "headline": "US disables a blockade-running cargo ship as Iran's oil exports near zero",
+   "changes": [
+    "US Central Command said it fired on and disabled a St Kitts-flagged cargo ship in the Gulf of Oman on Nov 7 for repeatedly trying to break the US naval blockade on Iran; CENTCOM said it is standing up a new task force to counter Iranian arms smuggling over land borders and the Caspian Sea.",
+    "A seafarer died when an explosion, believed to be a missile attack, hit the products tanker MT Velos Sapphire in the Gulf on Nov 5, its manager Velos Tankers said; no party has claimed responsibility.",
+    "Bloomberg vessel-tracking data showed Iran loaded no crude for export in September or October, the first such gap since the war began; analyst Fereidun Fesharaki (FGE) said a near-term deal to end the war remains unlikely.",
+    "No change to the Strait of Hormuz's closed status; Brent held near $98/bbl."
+   ]
+  },
+  {
    "date": "2026-11-07",
    "kind": "data",
    "headline": "Trump: new US strike hit Iranian air defenses on Qeshm Island, calls it 'minor'",

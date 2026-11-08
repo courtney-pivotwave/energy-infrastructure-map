@@ -1,8 +1,62 @@
 {
- "updated": "2026-11-07",
- "situation_headline": "Trump said US forces hit an Iranian air-defense system on Qeshm Island Nov 6, a new and separate strike from the Nov 2 one there, calling it 'minor'; no casualties reported. Iran was still weighing a Qatari-mediated nuclear proposal as Brent held near $98/bbl.",
+ "updated": "2026-11-08",
+ "situation_headline": "US forces disabled a cargo ship breaching the Iran blockade in the Gulf of Oman on Nov 7 and said they're forming a task force against Iranian arms smuggling. A seafarer died in a suspected missile attack on a tanker in the Gulf on Nov 5, and Iran's crude exports have fallen near zero. Brent held near $98/bbl.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-07-us-disables-cargo-vessel-gulf-of-oman",
+   "date": "2026-11-07",
+   "title": "US forces disable cargo ship breaching Iran blockade in Gulf of Oman",
+   "summary": "US Central Command said a US military aircraft fired precision munitions at the stern of a St Kitts-flagged cargo ship in the Gulf of Oman on Nov 7, disabling it after its crew repeatedly ignored warnings not to breach the US naval blockade on Iran; the vessel had called at an Iranian port. CENTCOM reported no casualties and said it is forming a new task force to counter Iran's movement of weapons and other sanctioned materials across its land borders and the Caspian Sea. President Trump has separately threatened a renewed offensive against Iran, which has threatened retaliation against Gulf energy infrastructure.",
+   "category": "military",
+   "severity": "high",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters, via gCaptain — US Military Says It Disabled Cargo Vessel In Gulf Of Oman",
+     "url": "https://gcaptain.com/us-military-says-it-disabled-cargo-vessel-in-gulf-of-oman/",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-iran-exports-near-zero-fge",
+   "date": "2026-11-06",
+   "title": "Iranian oil exports near zero under US blockade; FGE sees deal unlikely soon",
+   "summary": "Bloomberg vessel-tracking data showed Iran loaded no crude for export in September or October, the first such gap since the war began in February, as the US naval blockade has throttled flows. The nonprofit United Against Nuclear Iran counted at least 54 tankers carrying Iranian oil and petroleum products idling offshore, plus about 11 LPG carriers that have passed the blockade. FGE Chairman Emeritus Fereidun Fesharaki told Bloomberg TV a near-term deal to end the war is unlikely — \"we are even worse than we were before the June MOU\" — and estimated roughly 200,000-300,000 b/d of Iranian oil still reaches the market via Iraq, an unconfirmed routing he did not detail further.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Bloomberg TV, via gCaptain — Iran Oil Exports Near Zero But Peace Deal Not Likely, FGE Says",
+     "url": "https://gcaptain.com/iran-oil-exports-near-zero-but-peace-deal-not-likely-fge-says/",
+     "date": "2026-11-06"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-velos-sapphire-tanker-attack",
+   "date": "2026-11-05",
+   "title": "Seafarer killed in suspected missile attack on tanker in the Gulf",
+   "summary": "One seafarer was killed when an explosion, believed to have been caused by a missile attack, struck the Marshall Islands-flagged products tanker MT Velos Sapphire as it sailed unladen toward Bahrain in the Gulf on Nov 5, its manager Velos Tankers said. The crew extinguished the resulting fire; no pollution was reported, and the vessel was taken to Khalifa Bin Salman Port in Bahrain for an investigation into the hull damage. No party has claimed responsibility.",
+   "category": "shipping",
+   "severity": "high",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters, via gCaptain — Seafarer Killed in Suspected Missile Attack on Tanker in Gulf",
+     "url": "https://gcaptain.com/seafarer-killed-in-suspected-missile-attack-on-tanker-in-gulf/",
+     "date": "2026-11-06"
+    }
+   ]
+  },
   {
    "id": "2026-11-06-us-strikes-qeshm-air-defense",
    "date": "2026-11-06",

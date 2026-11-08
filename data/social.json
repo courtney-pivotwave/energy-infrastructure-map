@@ -1771,6 +1771,54 @@
     "Qatar"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-08-digest",
+   "created": "2026-11-08",
+   "type": "digest",
+   "text": "US Central Command said it disabled a cargo ship in the Gulf of Oman on Nov 7 for repeatedly trying to break the Iran blockade, and is forming a task force against Iranian arms smuggling. Brent held near $98/bbl, off about 13% on the week.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "MiddleEast",
+    "SupplyChain"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-08-event-velos-sapphire-tanker-attack",
+   "created": "2026-11-08",
+   "type": "event",
+   "text": "A seafarer died when an explosion, believed to be a missile strike, hit tanker MT Velos Sapphire in the Gulf on Nov 5, its manager said (reported). No party has claimed responsibility.",
+   "url": "https://strategicenergymap.org/events/#2026-11-05-velos-sapphire-tanker-attack",
+   "event_id": "2026-11-05-velos-sapphire-tanker-attack",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-08-event-iran-exports-near-zero",
+   "created": "2026-11-08",
+   "type": "event",
+   "text": "Iran loaded no crude for export in September or October, Bloomberg data showed — the first such gap since the war began. FGE's Fereidun Fesharaki says a deal to end the war remains unlikely (reported).",
+   "url": "https://strategicenergymap.org/events/#2026-11-06-iran-exports-near-zero-fge",
+   "event_id": "2026-11-06-iran-exports-near-zero-fge",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "OOTT",
+    "Iran"
+   ],
+   "reply_to": null
   }
  ]
 }

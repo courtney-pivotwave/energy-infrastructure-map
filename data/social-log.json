@@ -1874,6 +1874,21 @@
     },
     "at": "2026-11-08T17:04:29.789Z"
    }
+  },
+  "2026-11-08-event-iran-exports-near-zero": {
+   "x": {
+    "id": "2119538268308119985",
+    "at": "2026-11-08T21:11:17.089Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mztd6pmyke2d",
+    "cid": "bafyreihfjmbrrcku3ubzuenicq3kvtg2wrftm5w2ltggjcj3eu7udu2rsa",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mztd6pmyke2d",
+     "cid": "bafyreihfjmbrrcku3ubzuenicq3kvtg2wrftm5w2ltggjcj3eu7udu2rsa"
+    },
+    "at": "2026-11-08T21:11:18.964Z"
+   }
   }
  }
 }

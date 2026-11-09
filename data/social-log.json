@@ -1906,6 +1906,21 @@
     "at": "2026-11-09T10:56:19.755Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-09-event-egypt-gas-cuts": {
+   "x": {
+    "id": "2119904726007640100",
+    "at": "2026-11-09T21:27:27.420Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzvukkvckn22",
+    "cid": "bafyreibl33nw7uwy4ybjo672p2x7c4lm6crelfaieyg5wgffst53svr7ny",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzvukkvckn22",
+     "cid": "bafyreibl33nw7uwy4ybjo672p2x7c4lm6crelfaieyg5wgffst53svr7ny"
+    },
+    "at": "2026-11-09T21:27:29.738Z"
+   }
   }
  }
 }

@@ -1,8 +1,90 @@
 {
- "updated": "2026-11-08",
- "situation_headline": "US forces disabled a cargo ship breaching the Iran blockade in the Gulf of Oman on Nov 7 and said they're forming a task force against Iranian arms smuggling. A seafarer died in a suspected missile attack on a tanker in the Gulf on Nov 5, and Iran's crude exports have fallen near zero. Brent held near $98/bbl.",
+ "updated": "2026-11-09",
+ "situation_headline": "Iraq said it reached understandings with the US to keep exporting crude through Hormuz, and traders sought licenses to return sanctioned tankers to service, while Iran's Guards claimed fresh tanker mine strikes near Hormuz. Brent eased to about $97/bbl.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-08-iraq-us-understandings-hormuz-exports",
+   "date": "2026-11-08",
+   "title": "Iraq says it reached understandings with US to keep oil exports moving through Hormuz",
+   "summary": "Iraqi Foreign Minister Fuad Hussein told Al Jazeera that Baghdad has reached understandings with Washington to keep Iraqi crude moving through the Strait of Hormuz via a shipping lane near Oman. He put Iraq's combined losses from the Iran war and the export disruptions at $60 billion. Iraqi energy officials said exports recovered in October to about 3.5 million barrels a day, up from 2.65 million bpd in September, after a sharp drop the month before. Reuters could not independently confirm the terms of the arrangement.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "basra-oil-terminal",
+    "rumaila-oil"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters, via gCaptain — Iraq Has Reached Understandings With US To Allow Oil Exports Through Hormuz",
+     "url": "https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/",
+     "date": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-egypt-gas-cuts-fertilizer-33pct",
+   "date": "2026-11-08",
+   "title": "Egypt deepens gas cuts to fertilizer plants to 33% as import costs squeeze budget",
+   "summary": "Abu Qir Fertilizers disclosed to the Egyptian Exchange that its natural gas allocation was cut 33%, effective Nov 8, up from a 20% cut announced about a week earlier; KIMA and other producers reported similar reductions. Egypt's government has been diverting gas away from industry to cut costly LNG imports as wartime energy prices strain its budget, alongside a 30% cut to the government's own fuel use and a 20% cut to its electricity use. Misr Fertilizers Production Co. (MOPCO) said its own operations continue uninterrupted.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Egypt Oil & Gas — Government Cuts Gas Supplies to Abu Qir Fertilizers by 33%",
+     "url": "https://egyptoil-gas.com/news/government-cuts-gas-supplies-to-abu-qir-fertilizers-by-33/",
+     "date": "2026-11-09"
+    },
+    {
+     "name": "Egypt Oil & Gas — MOPCO Reports Uninterrupted Operations Despite Reported Gas Supply Cuts to Fertilizer Plants",
+     "url": "https://egyptoil-gas.com/news/mopco-reports-uninterrupted-operations-despite-reported-gas-supply-cuts-to-fertilizer-plants/",
+     "date": "2026-11-03"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-traders-seek-sanctioned-tanker-licenses",
+   "date": "2026-11-08",
+   "title": "Trafigura, Vitol, Mercuria, ADNOC seek US licenses for sanctioned tankers",
+   "summary": "Bloomberg reported that at least four companies — Trafigura, Vitol, Mercuria and Abu Dhabi National Oil Co. — are in talks with the US Treasury for licenses to buy or lease US-blacklisted tankers, covering about 50 of the roughly 1,600 vessels currently under US sanctions (462 of them crude tankers, as of Nov 4). No decisions have been finalized, and any license would apply only to US sanctions; the EU and UK maintain separate lists. The move follows Energy Secretary Chris Wright's October announcement letting investors refurbish idled sanctioned tankers for legal crude transport, part of the response to a shortage of vessels and record freight rates since the war disrupted shipping.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Bloomberg, via gCaptain — Oil Traders In Talks With US To Get Sanctioned Ships Back To Sea",
+     "url": "https://gcaptain.com/oil-traders-in-talks-with-us-to-get-sanctioned-ships-back-to-sea/",
+     "date": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-irgc-mine-claims-blasts-not-us",
+   "date": "2026-11-07",
+   "title": "Iran's Guards claim two more tankers mined near Hormuz; state media suggests blasts weren't US strikes",
+   "summary": "Iran's Revolutionary Guards Navy said two oil tankers caught fire after hitting mines on an \"unauthorized route\" through the Strait of Hormuz on Nov 7, and Fars News later reported a third tanker suffered an explosion and caught fire (IRGC and Fars claims, unverified). Blasts were separately heard across southern Iran that evening, including on Qeshm Island, where Tasnim reported two missile impacts with no official damage assessment; Iranian state television said no missile strikes on Iranian territory had been confirmed and suggested the explosions could be linked to Iran's own military activity in the strait rather than a US attack. Reuters said it could not independently confirm any of the reported strikes. Separately, UKMTO reported an incident involving a bulk carrier and military forces about 18 nautical miles east of Khor Fakkan, UAE, with damage unknown — the same area and day as the US military's disabling of a cargo vessel reported Nov 7, though it is unclear if they are the same incident.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Reuters, via gCaptain — Iran Suggests Blasts Are Not US Attacks As Both Sides Report Ships Hit",
+     "url": "https://gcaptain.com/iran-suggests-blasts-are-not-us-attacks-as-both-sides-report-ships-hit/",
+     "date": "2026-11-08"
+    }
+   ]
+  },
   {
    "id": "2026-11-07-us-disables-cargo-vessel-gulf-of-oman",
    "date": "2026-11-07",
@@ -18,6 +100,11 @@
      "name": "Reuters, via gCaptain — US Military Says It Disabled Cargo Vessel In Gulf Of Oman",
      "url": "https://gcaptain.com/us-military-says-it-disabled-cargo-vessel-in-gulf-of-oman/",
      "date": "2026-11-07"
+    },
+    {
+     "name": "Euronews — US forces strike commercial vessel in Gulf of Oman after crew 'ignored repeated warnings'",
+     "url": "https://www.euronews.com/2026/11/08/us-forces-strike-commercial-vessel-in-gulf-of-oman-after-crew-ignored-repeated-warnings",
+     "date": "2026-11-08"
     }
    ]
   },
@@ -64,8 +151,13 @@
    "summary": "President Trump said US forces carried out a new, limited strike on Nov 6 targeting an Iranian air-defense system on Qeshm Island in the Strait of Hormuz, distinct from a separate US strike there on Nov 2. Speaking after arriving in West Palm Beach, Florida, Trump called the action \"minor\" and said it knocked out the system in \"about 15 minutes, maybe five.\" Iranian state media reported two explosions in Qeshm's Suza area; no casualties were reported, and the Pentagon did not detail the target. CENTCOM has not ordered a return to major combat, and the strike came as Tehran reviewed a Qatari-mediated proposal on its nuclear program.",
    "category": "military",
    "severity": "medium",
-   "coords": [26.75, 55.95],
-   "assets": ["strait-of-hormuz"],
+   "coords": [
+    26.75,
+    55.95
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
    "confidence": "reported",
    "sources": [
     {
@@ -142,7 +234,9 @@
    "category": "military",
    "severity": "low",
    "coords": null,
-   "assets": ["strait-of-hormuz"],
+   "assets": [
+    "strait-of-hormuz"
+   ],
    "confidence": "unverified",
    "sources": [
     {
@@ -159,7 +253,10 @@
    "summary": "The UK Maritime Trade Operations agency said a tanker was struck by two unidentified projectiles about 50 nautical miles north of Madinat ash-Shamal, Qatar, at 23:20 GMT on Nov 4. UKMTO did not identify the vessel or its flag, and no group claimed responsibility. UKMTO said most ships now decline to report attacks at all, so its count likely understates the true toll.",
    "category": "shipping",
    "severity": "medium",
-   "coords": [26.96, 51.21],
+   "coords": [
+    26.96,
+    51.21
+   ],
    "assets": [],
    "confidence": "reported",
    "sources": [

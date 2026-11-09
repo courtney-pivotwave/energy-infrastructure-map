@@ -1819,6 +1819,70 @@
     "Iran"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-09-digest",
+   "created": "2026-11-09",
+   "type": "digest",
+   "text": "Iraq's foreign minister said Baghdad reached understandings with the US to keep crude moving through Hormuz via a lane near Oman, putting the war's cost to Iraq at $60 billion. Brent eased to about $97/bbl, down ~11% on the week.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Iraq",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-09-event-egypt-gas-cuts",
+   "created": "2026-11-09",
+   "type": "event",
+   "text": "Egypt deepened natural gas cuts to fertilizer plants to 33%, up from 20% a week earlier, as wartime import costs strain its budget, Abu Qir Fertilizers disclosed (confirmed).",
+   "url": "https://strategicenergymap.org/events/#2026-11-08-egypt-gas-cuts-fertilizer-33pct",
+   "event_id": "2026-11-08-egypt-gas-cuts-fertilizer-33pct",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "EnergyCrisis",
+    "Commodities"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-09-event-sanctioned-tanker-licenses",
+   "created": "2026-11-09",
+   "type": "event",
+   "text": "Trafigura, Vitol, Mercuria and ADNOC are seeking US licenses to bring about 50 of the roughly 1,600 US-sanctioned tankers back into legitimate oil trade, Bloomberg reports.",
+   "url": "https://strategicenergymap.org/events/#2026-11-08-traders-seek-sanctioned-tanker-licenses",
+   "event_id": "2026-11-08-traders-seek-sanctioned-tanker-licenses",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "Shipping"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-09-explainer-basra-oil-terminal",
+   "created": "2026-11-09",
+   "type": "explainer",
+   "text": "Iraq's Basra Oil Terminal ships nearly all the country's crude, pre-war capacity ~3.3-3.5 million b/d. Exports hit ~3.5 million b/d in October after Iraq secured a new US understanding on moving crude through Hormuz.",
+   "url": "https://strategicenergymap.org/facilities/basra-oil-terminal/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Iraq",
+    "Shipping"
+   ],
+   "reply_to": null
   }
  ]
 }

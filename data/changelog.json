@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-11-09",
+   "kind": "data",
+   "headline": "Iraq secures US understanding on Hormuz exports; Egypt deepens gas cuts",
+   "changes": [
+    "Iraq's foreign minister said Baghdad reached understandings with Washington to keep Iraqi crude moving through the Strait of Hormuz via a shipping lane near Oman, putting the war's cost to Iraq at $60 billion; October exports recovered to about 3.5 million barrels a day.",
+    "Trafigura, Vitol, Mercuria and ADNOC are seeking US Treasury licenses to bring about 50 of the roughly 1,600 US-sanctioned tankers back into legitimate trade, Bloomberg reported.",
+    "Egypt deepened cuts to natural gas supplied to fertilizer plants to 33%, from 20% a week earlier, as wartime energy costs strain its budget.",
+    "Iran's Revolutionary Guards claimed two more tankers hit mines near Hormuz, and state media suggested weekend blasts in southern Iran were tied to Iran's own military activity rather than a US strike; none of this was independently confirmed.",
+    "No change to the Strait of Hormuz's closed status; Brent eased to about $97/bbl."
+   ]
+  },
+  {
    "date": "2026-11-08",
    "kind": "data",
    "headline": "US disables a blockade-running cargo ship as Iran's oil exports near zero",

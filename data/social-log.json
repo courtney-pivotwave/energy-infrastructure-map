@@ -1921,6 +1921,21 @@
     },
     "at": "2026-11-09T21:27:29.738Z"
    }
+  },
+  "2026-11-09-event-sanctioned-tanker-licenses": {
+   "x": {
+    "id": "2120108642988892300",
+    "at": "2026-11-10T10:57:45.005Z"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzxbth7xij2i",
+    "cid": "bafyreih7abxr5eujpyx62yslos3snvft2yk2jbw4cv5klzjy7rwpxzpfau",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzxbth7xij2i",
+     "cid": "bafyreih7abxr5eujpyx62yslos3snvft2yk2jbw4cv5klzjy7rwpxzpfau"
+    },
+    "at": "2026-11-10T10:57:46.239Z"
+   }
   }
  }
 }

@@ -1936,6 +1936,23 @@
     },
     "at": "2026-11-10T10:57:46.239Z"
    }
+  },
+  "2026-11-09-explainer-basra-oil-terminal": {
+   "x": {
+    "id": "2120225191313674394",
+    "at": "2026-11-10T18:40:52.446Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzy3plv7t32h",
+    "cid": "bafyreibvh4l3bsei5npzdrtas3jr7py4izlqewjuiiksqrjnivu5hhtt3y",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzy3plv7t32h",
+     "cid": "bafyreibvh4l3bsei5npzdrtas3jr7py4izlqewjuiiksqrjnivu5hhtt3y"
+    },
+    "at": "2026-11-10T18:40:55.208Z",
+    "media": "asset-card"
+   }
   }
  }
 }

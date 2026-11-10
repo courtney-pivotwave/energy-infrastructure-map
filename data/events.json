@@ -1,8 +1,50 @@
 {
- "updated": "2026-11-09",
- "situation_headline": "Iraq said it reached understandings with the US to keep exporting crude through Hormuz, and traders sought licenses to return sanctioned tankers to service, while Iran's Guards claimed fresh tanker mine strikes near Hormuz. Brent eased to about $97/bbl.",
+ "updated": "2026-11-10",
+ "situation_headline": "The IMO said 25 seafarers have died in Middle East shipping attacks since the war began and urged stronger protection for crews and sea lanes, as Brent eased further to about $90/bbl.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-09-imo-warns-shipping-attacks",
+   "date": "2026-11-09",
+   "title": "IMO warns of mounting seafarer toll from attacks on shipping near Hormuz, Red Sea, Black Sea",
+   "summary": "The International Maritime Organization said at least 130 incidents involving commercial vessels have been confirmed since the Iran war began, with 25 seafarers killed in the Middle East, most recently aboard the tanker Velos Sapphire. It also condemned Houthi attacks in the Red Sea and Bab al-Mandab and Russian attacks on shipping and ports supporting Ukraine's Black Sea corridor, and called on member states to keep shipping lanes open and avoid unlawful acts endangering vessels and crews.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz",
+    "bab-el-mandeb"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — IMO Warns of Mounting Human Toll as Attacks on Commercial Shipping Continue",
+     "url": "https://gcaptain.com/imo-warns-of-mounting-human-toll-as-attacks-on-commercial-shipping-continue/",
+     "date": "2026-11-09"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-russia-arctic-lng2-heavy-lift-ships",
+   "date": "2026-11-09",
+   "title": "Russia takes ownership of two Chinese heavy-lift ships that supplied its sanctioned Arctic LNG 2 project",
+   "summary": "The heavy-lift carriers Bright and Glory, previously owned by China's Guangdong Nan Feng Shipping and used to ferry modules for Novatek's sanctioned Arctic LNG 2 project, now show as Russian-flagged and owned by Russia's Eco Shipping LLC on AIS and the Equasis vessel registry. The ships had sailed with transponders off across the Northern Sea Route in September to deliver power-generation modules to the project's Utrenniy terminal; bringing them under Russian ownership gives Moscow more direct control of the project's shipping logistics as it tries to keep LNG trains running under Western sanctions.",
+   "category": "policy",
+   "severity": "low",
+   "coords": [
+    68.97,
+    33.09
+   ],
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Malte Humpert) — Russia Takes Control of Two Chinese Heavy-Lift Ships Used for Arctic LNG 2 Deliveries",
+     "url": "https://gcaptain.com/russia-takes-control-of-two-chinese-heavy-lift-ships-used-for-arctic-lng-2-deliveries/",
+     "date": "2026-11-09"
+    }
+   ]
+  },
   {
    "id": "2026-11-08-iraq-us-understandings-hormuz-exports",
    "date": "2026-11-08",

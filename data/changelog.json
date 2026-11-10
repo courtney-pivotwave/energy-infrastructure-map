@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-10",
+   "kind": "data",
+   "headline": "IMO warns on shipping attacks as oil extends its slide",
+   "changes": [
+    "The International Maritime Organization said at least 130 vessel incidents have been confirmed since the Iran war began and 25 seafarers killed, most recently aboard the tanker Velos Sapphire, and called for stronger protection of crews and shipping lanes near Hormuz, the Red Sea and the Black Sea.",
+    "Russia took ownership of two Chinese heavy-lift ships, Bright and Glory, that had delivered equipment to its sanctioned Arctic LNG 2 project, AIS and vessel-registry data showed.",
+    "Brent, WTI and TTF gas all extended last week's pullback, down 13-15% from a week earlier, with Brent at about $90/bbl."
+   ]
+  },
+  {
    "date": "2026-11-09",
    "kind": "data",
    "headline": "Iraq secures US understanding on Hormuz exports; Egypt deepens gas cuts",

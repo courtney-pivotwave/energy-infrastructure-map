@@ -1883,6 +1883,38 @@
     "Shipping"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-10-digest",
+   "created": "2026-11-10",
+   "type": "digest",
+   "text": "The IMO said 25 seafarers have died in Middle East shipping attacks since the war began and called for stronger protection of crews and sea lanes. Brent eased further to about $90/bbl, down 15% from a week ago.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Maritime",
+    "OilPrices"
+   ],
+   "reply_to": null,
+   "event_id": null
+  },
+  {
+   "id": "2026-11-10-explainer-jazan-refinery",
+   "created": "2026-11-10",
+   "type": "explainer",
+   "text": "Saudi Aramco's Jazan refinery on the Red Sea has processed no crude since Houthi strikes damaged its power complex and tank farm, forcing a shutdown on Jul 25. Nameplate capacity: 400,000 b/d.",
+   "url": "https://strategicenergymap.org/facilities/jazan-refinery/",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "SaudiArabia",
+    "RedSea"
+   ],
+   "reply_to": null,
+   "event_id": null
   }
  ]
 }

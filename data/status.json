@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -1108,6 +1108,30 @@
      "name": "BOE Report (Reuters) — Ukraine's attacks on Russian energy sites: what has been hit?",
      "url": "https://boereport.com/2026/10/07/ukraines-attacks-on-russian-energy-sites-what-has-been-hit-3/",
      "date": "2026-10-07"
+    }
+   ]
+  },
+  "kirishi-refinery": {
+   "status": "disrupted",
+   "summary": "A Ukrainian drone attack overnight Nov 8-9 sparked a fire at the refinery; regional governor Aleksandr Drozdenko said the fire was extinguished and that 113 drones were downed over the region. NASA satellite thermal data and the open-source analyst group Astra corroborated a blaze at the site. No output impact has been independently confirmed. The refinery was previously knocked offline for weeks after a May 2026 strike damaged three of its four crude distillation units.",
+   "since": "2026-11-09",
+   "updated": "2026-11-11",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Kyiv Independent — Ukrainian forces reportedly strike Russia's second-largest oil refinery in overnight drone attack",
+     "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/",
+     "date": "2026-11-09"
+    },
+    {
+     "name": "Ukrainska Pravda — Drones attack Russia's second-largest oil refinery, sparking fire",
+     "url": "https://www.pravda.com.ua/eng/news/2026/11/09/8061870/index.amp",
+     "date": "2026-11-09"
+    },
+    {
+     "name": "The Moscow Times (Reuters) — Leningrad region's Kirishi oil refinery halts operations after drone strike",
+     "url": "https://www.themoscowtimes.com/2026/05/06/leningrad-regions-kirishi-oil-refinery-halts-operations-after-drone-strike-reuters-a92696",
+     "date": "2026-05-06"
     }
    ]
   }

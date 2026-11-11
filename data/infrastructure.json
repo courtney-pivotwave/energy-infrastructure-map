@@ -2023,6 +2023,31 @@
    "verified": "2026-10-11"
   },
   {
+   "id": "kirishi-refinery",
+   "name": "Kirishi refinery (Kirishinefteorgsintez / KINEF)",
+   "kind": "refinery",
+   "coords": [
+    59.4847,
+    32.0542
+   ],
+   "size": 5,
+   "capacity": {
+    "value": 350,
+    "unit": "kb/d",
+    "basis": "effective",
+    "source": {
+     "name": "Reuters, via The Moscow Times — Leningrad region's Kirishi oil refinery halts operations after drone strike",
+     "url": "https://www.themoscowtimes.com/2026/05/06/leningrad-regions-kirishi-oil-refinery-halts-operations-after-drone-strike-reuters-a92696",
+     "date": "2026-05-06"
+    },
+    "as_of": "2026-05-06",
+    "note": "Reuters' figure is a 2024 throughput estimate (about 7% of Russia's refining), not a nameplate capacity; coordinates are Global Energy Monitor's, but GEM's own capacity figure couldn't be fetched this run (gem.wiki returned HTTP 403) and hasn't been cross-checked."
+   },
+   "details": "Russia (Kirishi, Leningrad region), about 120 km southeast of St. Petersburg. Owned by Surgutneftegaz through its Kirishinefteorgsintez (KINEF) subsidiary. Russia's second-largest refinery by throughput, producing gasoline, diesel and other refined products; subject to Western sanctions.",
+   "geo": "Struck repeatedly by Ukrainian drones through 2026: a May 2026 attack damaged three of its four crude distillation units and halted processing for weeks, and an overnight attack on Nov 8-9 set the refinery on fire again, with Russian officials reporting 113 drones downed over the region. No independent confirmation yet of the Nov 9 strike's effect on output.",
+   "verified": "2026-11-11"
+  },
+  {
    "id": "bazan-haifa-refinery",
    "name": "Bazan refinery (Haifa)",
    "kind": "refinery",

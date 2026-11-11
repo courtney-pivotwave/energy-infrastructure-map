@@ -1,11 +1,11 @@
 {
- "as_of": "2026-11-10",
+ "as_of": "2026-11-11",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 90.47,
+   "value": 93.43,
    "week_ago": 105.88,
    "pre_crisis": 72.48,
    "peak": {
@@ -13,22 +13,22 @@
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Fell further to about $90.47 on 10 Nov (Trading Economics), down roughly 15% from $105.88 a week earlier (3 Nov), extending the week's slide as Iraq's reported Hormuz understanding and the sanctioned-tanker license talks continued to weigh on the market; no new escalation was reported Monday.",
+   "note": "Rebounded to about $93.43 on 11 Nov (Trading Economics), up roughly 2% on the day, after Monday's session settled 5.85% lower at $92.57 on ICE (Xinhua); still down about 12% from $105.88 on Nov 3. Reuters reported a record 37 tanker attacks in the Strait of Hormuz in October, even as Iraq's reported Hormuz understanding and sanctioned-tanker license talks keep weighing on the risk premium.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-11-10"
+    "date": "2026-11-11"
    },
    "extra_sources": [
     {
-     "name": "Rigzone (Bloomberg) — Oil Rebounds After Sharp Iran War Selloff",
-     "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
-     "date": "2026-11-05"
+     "name": "The Star (Xinhua) — Crude futures settle lower",
+     "url": "https://www.thestar.com.my/news/world/2026/11/10/crude-futures-settle-lower",
+     "date": "2026-11-10"
     },
     {
-     "name": "CNBC — Oil prices rise as investors weigh renewed U.S.-Iran conflict risks after midterm elections",
-     "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
-     "date": "2026-11-06"
+     "name": "Oilprice.com, via Yahoo Finance — Oil Prices Rise As Iran Peace Optimism Fades",
+     "url": "https://finance.yahoo.com/energy/articles/oil-prices-rise-iran-peace-054500318.html",
+     "date": "2026-11-10"
     }
    ]
   },
@@ -36,7 +36,7 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 85.17,
+   "value": 87.12,
    "week_ago": 97.68,
    "pre_crisis": 67.02,
    "peak": {
@@ -44,17 +44,17 @@
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Fell further to about $85.17 on 10 Nov (Trading Economics), down roughly 13% from $97.68 a week earlier (3 Nov).",
+   "note": "Rebounded to about $87.12 on 11 Nov (Trading Economics), up roughly 1.5% on the day, after Monday's session settled 4.38% lower at $86.85 on Nymex (Xinhua); still down about 11% from $97.68 on Nov 3.",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-11-10"
+    "date": "2026-11-11"
    },
    "extra_sources": [
     {
-     "name": "Rigzone (Bloomberg) — Oil Rebounds After Sharp Iran War Selloff",
-     "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
-     "date": "2026-11-05"
+     "name": "The Star (Xinhua) — Crude futures settle lower",
+     "url": "https://www.thestar.com.my/news/world/2026/11/10/crude-futures-settle-lower",
+     "date": "2026-11-10"
     }
    ]
   },
@@ -62,7 +62,7 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 82.63,
+   "value": 86.91,
    "week_ago": 97.08,
    "pre_crisis": 32.0,
    "peak": {
@@ -70,11 +70,11 @@
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Fell further to about €82.63/MWh on 10 Nov (Trading Economics), down roughly 15% from €97.08 a week earlier (3 Nov), tracking oil's broader pullback.",
+   "note": "Ticked up to about €86.91/MWh on 11 Nov (Trading Economics), up roughly 2.6% on the day but still down about 10% from €97.08 on Nov 3, tracking oil's rebound after Monday's slide.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-10"
+    "date": "2026-11-11"
    },
    "extra_sources": [
     {
@@ -93,7 +93,7 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 31.35,
+   "value": 31.34,
    "week_ago": 31.7,
    "pre_crisis": 10.75,
    "peak": {
@@ -101,11 +101,11 @@
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Little changed at $31.35 as of Trading Economics' 9 Nov print, down slightly from $31.70 a week earlier (2 Nov).",
+   "note": "Little changed at $31.34 as of Trading Economics' 10 Nov print, down slightly from $31.70 a week earlier (2 Nov).",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-11-09"
+    "date": "2026-11-10"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.24,
+   "value": 3.31,
    "week_ago": 2.9026,
    "pre_crisis": 2.99,
-   "note": "Ticked up to about $3.24 on 10 Nov (Trading Economics), up from $2.90 a week earlier (3 Nov); the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Edged up to about $3.31 on 11 Nov (Trading Economics), up from $2.90 on Nov 3; the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-11-10"
+    "date": "2026-11-11"
    },
    "extra_sources": [
     {
@@ -147,16 +147,21 @@
    ]
   }
  ],
- "note": "Oil and gas extended their slide into 10 November: Brent fell to about $90.47/bbl, WTI to about $85.17/bbl and TTF to about €82.63/MWh, all down 13-15% from a week earlier, continuing the pullback since Iraq said it reached understandings with the US to keep exporting through Hormuz and traders sought US licenses to return sanctioned tankers to legitimate trade. No new escalation was reported Monday; the IMO instead called for stronger protection of merchant crews given the rising toll from attacks near Hormuz, the Red Sea and the Black Sea.",
+ "note": "Oil and gas rebounded on 11 November after Monday's sharp slide: Brent rose to about $93.43/bbl, WTI to about $87.12/bbl and TTF to about €86.91/MWh, all up roughly 2% on the day but still down about 10-12% from Nov 3. Reuters reported a record 37 tanker attacks in the Strait of Hormuz in October, citing Washington Institute for Near East Policy data, and Ukrainian drones set fire to Russia's second-largest refinery at Kirishi on Nov 9 — both adding to the risk premium even as Iraq's reported Hormuz understanding and sanctioned-tanker license talks weigh the other way.",
  "note_sources": [
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "date": "2026-11-11"
+  },
+  {
+   "name": "Oilprice.com, via Yahoo Finance — Oil Prices Rise As Iran Peace Optimism Fades",
+   "url": "https://finance.yahoo.com/energy/articles/oil-prices-rise-iran-peace-054500318.html",
    "date": "2026-11-10"
   },
   {
-   "name": "gCaptain — IMO Warns of Mounting Human Toll as Attacks on Commercial Shipping Continue",
-   "url": "https://gcaptain.com/imo-warns-of-mounting-human-toll-as-attacks-on-commercial-shipping-continue/",
+   "name": "Kyiv Independent — Ukrainian forces reportedly strike Russia's second-largest oil refinery in overnight drone attack",
+   "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/",
    "date": "2026-11-09"
   }
  ]

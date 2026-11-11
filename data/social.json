@@ -1915,6 +1915,38 @@
    ],
    "reply_to": null,
    "event_id": null
+  },
+  {
+   "id": "2026-11-11-digest",
+   "created": "2026-11-11",
+   "type": "digest",
+   "text": "Brent rebounded to about $93/bbl Wednesday after Monday's sharp slide. Ukrainian drones set fire to Russia's second-largest refinery at Kirishi, and Reuters reported a record 37 tanker attacks in the Strait of Hormuz in October (reported).",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Brent",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-11-explainer-tuapse-refinery",
+   "created": "2026-11-11",
+   "type": "explainer",
+   "text": "Rosneft's Tuapse refinery on Russia's Black Sea coast processes about 240,000 b/d. Ukrainian drones have hit it repeatedly since 2024, last damaging 3 of 4 crude units in May 2026.",
+   "url": "https://strategicenergymap.org/facilities/tuapse-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "BlackSea",
+    "Russia"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-11",
+   "kind": "data",
+   "headline": "Record October tanker attacks in Hormuz; Russia's Kirishi refinery hit again",
+   "changes": [
+    "Reuters reported a record 37 vessel attacks in the Strait of Hormuz in October, citing Washington Institute for Near East Policy data.",
+    "Ukrainian drones set fire to Russia's Kirishi refinery, its second-largest, on Nov 9; Russian officials said the fire was extinguished and no output impact has been independently confirmed.",
+    "Brent, WTI and TTF gas all rebounded after Monday's sharp slide, with Brent back to about $93/bbl, still down roughly 10-12% from Nov 3."
+   ]
+  },
+  {
    "date": "2026-11-10",
    "kind": "data",
    "headline": "IMO warns on shipping attacks as oil extends its slide",

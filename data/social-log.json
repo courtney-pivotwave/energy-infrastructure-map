@@ -1953,6 +1953,23 @@
     "at": "2026-11-10T18:40:55.208Z",
     "media": "asset-card"
    }
+  },
+  "2026-11-10-digest": {
+   "x": {
+    "id": "2120470826566775256",
+    "at": "2026-11-11T10:56:56.398Z",
+    "media": "daily-board"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzzsawgdiy26",
+    "cid": "bafyreigcmwydrn574qshrtebox4pq3rexacnztwh444u7w6kvml6o3pfti",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzzsawgdiy26",
+     "cid": "bafyreigcmwydrn574qshrtebox4pq3rexacnztwh444u7w6kvml6o3pfti"
+    },
+    "at": "2026-11-11T10:56:58.333Z",
+    "media": "daily-board"
+   }
   }
  }
 }

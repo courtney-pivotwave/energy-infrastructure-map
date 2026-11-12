@@ -1,8 +1,109 @@
 {
- "updated": "2026-11-11",
- "situation_headline": "Reuters reported a record 37 tanker attacks in the Strait of Hormuz in October, and Ukrainian drones set fire to Russia's second-largest refinery at Kirishi on Nov 9, even as Brent rebounded to about $93/bbl after Monday's sharp slide.",
+ "updated": "2026-11-12",
+ "situation_headline": "Reuters reported Ukrainian strikes have cut Russia's oil refining capacity by about 30% since late October, and UKMTO logged a fresh tanker strike near the Strait of Hormuz, while Brent eased to about $92/bbl and Poland's Orlen became the first QatarEnergy customer to cancel a long-term LNG contract.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-11-orlen-terminates-qatarenergy-lng-contract",
+   "date": "2026-11-11",
+   "title": "Poland's Orlen ends long-term LNG contract with QatarEnergy, citing war disruption",
+   "summary": "Polish energy company Orlen said it terminated one of its long-term LNG supply contracts with QatarEnergy, originally set to run to 2034, because QatarEnergy could not deliver the gas due to disruption from the Middle East conflict. Orlen said the deal — worth about €570 million ($637 million) this year — stays in force for a further 60 days and that it keeps a second, separate supply contract with Qatar; it has separately signed new LNG deals with projects in Texas and Louisiana. It is the first such contract annulment by a QatarEnergy customer since the war began.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "ras-laffan-lng"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Qatar Loses First LNG Customer Since War Disrupted Flows",
+     "url": "https://gcaptain.com/qatar-loses-first-lng-customer-since-war-disrupted-flows/",
+     "date": "2026-11-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-imo-chief-solas-enforcement-hormuz",
+   "date": "2026-11-11",
+   "title": "IMO chief urges stricter enforcement of shipping-safety rules in the Strait of Hormuz",
+   "summary": "IMO Secretary-General Arsenio Dominguez called on flag, port and coastal states to more strictly enforce international maritime safety rules, including SOLAS, in the Strait of Hormuz, citing substandard ships, vessels hiding their IMO numbers, and ships sailing under fraudulent registrations. He urged shipowners to stop commercial activity that exposes seafarers to unacceptable risk and renewed his call for a political solution. The IMO said it had verified 133 incidents involving merchant vessels as of Nov 10, with 25 seafarers killed, following an IMO Council meeting (Nov 2-6) that condemned attacks on shipping.",
+   "category": "policy",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — IMO Chief Calls for Strict Enforcement of SOLAS Rules in Strait of Hormuz",
+     "url": "https://gcaptain.com/imo-chief-calls-for-strict-enforcement-of-solas-rules-in-strait-of-hormuz/",
+     "date": "2026-11-11"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-adnoc-vessel-ukmto-tanker-strike-hormuz",
+   "date": "2026-11-10",
+   "title": "ADNOC vessel damaged in Gulf attack as UKMTO reports fresh tanker strike near Hormuz",
+   "summary": "ADNOC Logistics & Services said one of its vessels was damaged in an attack in Gulf waters on the afternoon of Nov 10; the company gave no vessel name or details on the extent of damage. Separately, UKMTO reported a tanker was struck by an unidentified projectile about 19 nautical miles northeast of Limah, Oman, near the Strait of Hormuz, at 1338 UTC; the vessel's master reported all crew safe with no environmental impact. UKMTO did not establish the projectile's origin, and it is unclear whether the two incidents are connected.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [
+    26.16,
+    56.67
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain — ADNOC Vessel Damaged in Gulf Attack as UKMTO Reports Fresh Tanker Strike Near Hormuz",
+     "url": "https://gcaptain.com/adnoc-vessel-damaged-in-gulf-attack-as-ukmto-reports-fresh-tanker-strike-near-hormuz/",
+     "date": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-russia-refining-capacity-cut-30pct",
+   "date": "2026-11-10",
+   "title": "Reuters: Ukrainian strikes have cut Russia's oil refining capacity by about 30%",
+   "summary": "Reuters reported, citing two industry sources, that Ukrainian drone attacks since late October — when a truce on energy strikes collapsed — have disrupted or caused emergencies at nine of Russia's 35 major refineries, cutting roughly 300,000 tonnes a day (about 2.2 million barrels) of capacity, around 30% of total primary capacity of about 930,000 tonnes a day. Refinery throughput was about 700,000 tonnes a day at the end of October; sources estimated the actual drop in crude processing at up to 200,000 tonnes a day. Named plants include refineries in Ryazan, Yaroslavl and the Volga region; Russia's second-largest refinery, Kirishi, was separately struck and set on fire on Nov 9.",
+   "category": "infrastructure",
+   "severity": "high",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Reuters) — Recent Ukrainian Attacks Have Reduced Russia's Oil Processing Capacity By 30%, Sources Say",
+     "url": "https://gcaptain.com/recent-ukrainian-attacks-have-reduced-russias-oil-processing-capacity-by-30-sources-say/",
+     "date": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-qatar-lng-loadings-half-prewar",
+   "date": "2026-11-10",
+   "title": "Qatar's LNG loadings climb to roughly half pre-war pace",
+   "summary": "Bloomberg reported, citing Kpler and Copernicus ship-tracking data, that LNG loadings from Qatar's Ras Laffan terminal have risen to a 10-day moving average of 13-15 cargoes so far in November, up from about 11 in October and roughly half the pre-war pace. Eleven laden Qatari LNG tankers exited the Strait of Hormuz in the 10 days through Nov 8. Both loadings and Hormuz-transit figures rely on ship-tracking data that is hard to verify independently, since many vessels do not transmit their positions.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "ras-laffan-lng"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Qatar LNG Loadings Pick Up to Around Half of Pre-War Levels",
+     "url": "https://gcaptain.com/qatar-lng-loadings-pick-up-to-around-half-of-pre-war-levels/",
+     "date": "2026-11-10"
+    }
+   ]
+  },
   {
    "id": "2026-11-10-record-hormuz-tanker-attacks-october",
    "date": "2026-11-10",

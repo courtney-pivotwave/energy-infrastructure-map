@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-12",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -472,9 +472,9 @@
   },
   "ras-laffan-lng": {
    "status": "damaged",
-   "summary": "Two of 14 LNG trains and a GTL plant were destroyed on 19 Mar (12.8 mtpa, ~17% of capacity, 3-5 years to repair); the remaining trains provide about 83% of operational capacity, with 3-4 kept running at low rates for a faster restart. Exports depend on Hormuz: QatarEnergy restarted shipments in September using older 'mother' tankers that sail loaded, often dark, and transfer cargo to 'daughter' vessels waiting in the Gulf of Oman, with Qatar recalling leased-out ships, chartering outside tonnage at roughly 10x normal freight and recruiting Indonesian crews at double-to-triple pay. Deliveries reached about a third of prewar levels by late September — April-September exports were down almost 90% year on year — at an estimated cost to Qatar of roughly $1bn a week (Bloomberg); the IMF estimates Qatar's economy could contract 15.6% this year. On 19 October a Qatari LNG cargo loaded in August sailed through the Red Sea, with ship-tracking data suggesting it was headed to Poland (Bloomberg) — a route most vessels have avoided since 2023 — while UKMTO reported a skiff fired on an LNG tanker in the Gulf of Aden near Al Mukalla the same day; the vessel's security team returned fire and it continued its voyage.",
+   "summary": "Two of 14 LNG trains and a GTL plant were destroyed on 19 Mar (12.8 mtpa, ~17% of capacity, 3-5 years to repair); the remaining trains provide about 83% of operational capacity, with 3-4 kept running at low rates for a faster restart. Exports depend on Hormuz: QatarEnergy restarted shipments in September using older 'mother' tankers that sail loaded, often dark, and transfer cargo to 'daughter' vessels waiting in the Gulf of Oman, with Qatar recalling leased-out ships, chartering outside tonnage at roughly 10x normal freight and recruiting Indonesian crews at double-to-triple pay. Deliveries reached about a third of prewar levels by late September — April-September exports were down almost 90% year on year — at an estimated cost to Qatar of roughly $1bn a week (Bloomberg); the IMF estimates Qatar's economy could contract 15.6% this year. On 19 October a Qatari LNG cargo loaded in August sailed through the Red Sea, with ship-tracking data suggesting it was headed to Poland (Bloomberg) — a route most vessels have avoided since 2023 — while UKMTO reported a skiff fired on an LNG tanker in the Gulf of Aden near Al Mukalla the same day; the vessel's security team returned fire and it continued its voyage. Bloomberg reported Nov 10, citing Kpler and Copernicus ship-tracking data, that loadings have since risen to a 10-day moving average of 13-15 cargoes so far in November — roughly half the pre-war pace, up from about 11 in October — with 11 laden tankers exiting the Strait of Hormuz in the 10 days through Nov 8. Poland's Orlen said Nov 11 it had terminated one of its long-term LNG contracts with QatarEnergy (running to 2034, worth about €570m this year) over the delivery disruption, the first such cancellation by a QatarEnergy customer; Orlen keeps a second supply contract with Qatar.",
    "since": "2026-03-19",
-   "updated": "2026-10-20",
+   "updated": "2026-11-12",
    "confidence": "confirmed",
    "sources": [
     {
@@ -496,6 +496,16 @@
      "name": "gCaptain (Bloomberg) — Qatar Rewrites Its Gas Playbook With Old Tankers and New Tactics",
      "url": "https://gcaptain.com/qatar-rewrites-its-gas-playbook-with-old-tankers-and-new-tactics/",
      "date": "2026-10-14"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Qatar LNG Loadings Pick Up to Around Half of Pre-War Levels",
+     "url": "https://gcaptain.com/qatar-lng-loadings-pick-up-to-around-half-of-pre-war-levels/",
+     "date": "2026-11-10"
+    },
+    {
+     "name": "gCaptain (Bloomberg) — Qatar Loses First LNG Customer Since War Disrupted Flows",
+     "url": "https://gcaptain.com/qatar-loses-first-lng-customer-since-war-disrupted-flows/",
+     "date": "2026-11-11"
     }
    ]
   },

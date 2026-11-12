@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-11-12",
+   "kind": "data",
+   "headline": "Russia's refining capacity down ~30% on Ukrainian strikes; Qatar's first LNG contract cancellation",
+   "changes": [
+    "Reuters reported Ukrainian drone attacks since late October have disrupted or caused emergencies at nine Russian refineries, cutting about 30% of the country's oil refining capacity, citing industry sources.",
+    "UKMTO reported a fresh tanker strike near the Strait of Hormuz, and ADNOC said one of its vessels was damaged in a separate Gulf attack, both on Nov 10.",
+    "Qatar's LNG loadings have climbed to roughly half the pre-war pace, even as Poland's Orlen became the first QatarEnergy customer to cancel a long-term LNG contract over the war's disruption.",
+    "The IMO's chief called for stricter enforcement of ship-safety rules in the Strait of Hormuz, citing 133 verified incidents and 25 seafarer deaths since the war began.",
+    "Brent eased to about $92/bbl and WTI to about $86/bbl, both down slightly on the day; US diesel held near $6.13/gal, down from $6.29 a week earlier."
+   ]
+  },
+  {
    "date": "2026-11-11",
    "kind": "data",
    "headline": "Record October tanker attacks in Hormuz; Russia's Kirishi refinery hit again",

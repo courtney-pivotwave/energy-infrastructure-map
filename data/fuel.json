@@ -2,13 +2,13 @@
  "as_of": "2026-11-09",
  "pre_crisis_date": "2026-02-23",
  "fx": {
-  "date": "2026-11-10",
-  "usd_per_eur": 1.1214,
-  "usd_per_gbp": 1.3422706325932132,
+  "date": "2026-11-11",
+  "usd_per_eur": 1.1127,
+  "usd_per_gbp": 1.330694348106867,
   "source": {
    "name": "ECB euro reference rates",
    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
-   "date": "2026-11-10"
+   "date": "2026-11-11"
   }
  },
  "note": "Retail pump prices including taxes. US$/litre conversions use ECB reference rates. Taxes differ widely between countries, so much of the gap between them comes from policy rather than crude costs.",
@@ -3817,12 +3817,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.929,
-    "week_ago": 1.954,
+    "now": 1.877,
+    "week_ago": 1.929,
     "pre_crisis": 1.637,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -4071,14 +4071,18 @@
      [
       "2026-11-02",
       1.929
+     ],
+     [
+      "2026-11-09",
+      1.877
      ]
     ]
    },
    "diesel": {
-    "now": 2.154,
-    "week_ago": 2.146,
+    "now": 2.097,
+    "week_ago": 2.153,
     "pre_crisis": 1.594,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -4326,18 +4330,22 @@
      ],
      [
       "2026-11-02",
-      2.154
+      2.153
+     ],
+     [
+      "2026-11-09",
+      2.097
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.163,
-    "diesel": 2.415
+    "petrol": 2.089,
+    "diesel": 2.333
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -4351,12 +4359,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.747,
-    "week_ago": 1.772,
+    "now": 1.67,
+    "week_ago": 1.747,
     "pre_crisis": 1.509,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -4605,14 +4613,18 @@
      [
       "2026-11-02",
       1.747
+     ],
+     [
+      "2026-11-09",
+      1.67
      ]
     ]
    },
    "diesel": {
-    "now": 2.148,
-    "week_ago": 2.132,
+    "now": 2.087,
+    "week_ago": 2.148,
     "pre_crisis": 1.546,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -4861,17 +4873,21 @@
      [
       "2026-11-02",
       2.148
+     ],
+     [
+      "2026-11-09",
+      2.087
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.959,
-    "diesel": 2.409
+    "petrol": 1.858,
+    "diesel": 2.322
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -4885,12 +4901,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.914,
-    "week_ago": 1.953,
+    "now": 1.844,
+    "week_ago": 1.914,
     "pre_crisis": 1.504,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -5139,14 +5155,18 @@
      [
       "2026-11-02",
       1.914
+     ],
+     [
+      "2026-11-09",
+      1.844
      ]
     ]
    },
    "diesel": {
-    "now": 2.398,
-    "week_ago": 2.375,
+    "now": 2.357,
+    "week_ago": 2.398,
     "pre_crisis": 1.627,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -5395,17 +5415,21 @@
      [
       "2026-11-02",
       2.398
+     ],
+     [
+      "2026-11-09",
+      2.357
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.146,
-    "diesel": 2.689
+    "petrol": 2.052,
+    "diesel": 2.623
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -5419,12 +5443,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.605,
-    "week_ago": 1.625,
+    "now": 1.582,
+    "week_ago": 1.605,
     "pre_crisis": 1.218,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -5673,14 +5697,18 @@
      [
       "2026-11-02",
       1.605
+     ],
+     [
+      "2026-11-09",
+      1.582
      ]
     ]
    },
    "diesel": {
-    "now": 1.893,
-    "week_ago": 1.89,
+    "now": 1.896,
+    "week_ago": 1.893,
     "pre_crisis": 1.228,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -5929,17 +5957,21 @@
      [
       "2026-11-02",
       1.893
+     ],
+     [
+      "2026-11-09",
+      1.896
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.8,
-    "diesel": 2.123
+    "petrol": 1.76,
+    "diesel": 2.11
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -5953,12 +5985,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
     "now": 1.749,
-    "week_ago": 1.791,
+    "week_ago": 1.749,
     "pre_crisis": 1.471,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -6207,14 +6239,18 @@
      [
       "2026-11-02",
       1.749
+     ],
+     [
+      "2026-11-09",
+      1.749
      ]
     ]
    },
    "diesel": {
-    "now": 2.015,
-    "week_ago": 2.005,
+    "now": 2.025,
+    "week_ago": 2.015,
     "pre_crisis": 1.494,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -6463,17 +6499,21 @@
      [
       "2026-11-02",
       2.015
+     ],
+     [
+      "2026-11-09",
+      2.025
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.961,
-    "diesel": 2.26
+    "petrol": 1.946,
+    "diesel": 2.253
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -6487,12 +6527,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.716,
-    "week_ago": 1.73,
+    "now": 1.699,
+    "week_ago": 1.716,
     "pre_crisis": 1.312,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -6741,14 +6781,18 @@
      [
       "2026-11-02",
       1.716
+     ],
+     [
+      "2026-11-09",
+      1.699
      ]
     ]
    },
    "diesel": {
-    "now": 2.002,
-    "week_ago": 2.005,
+    "now": 2.0,
+    "week_ago": 2.002,
     "pre_crisis": 1.406,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -6997,17 +7041,21 @@
      [
       "2026-11-02",
       2.002
+     ],
+     [
+      "2026-11-09",
+      2.0
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.924,
-    "diesel": 2.245
+    "petrol": 1.89,
+    "diesel": 2.225
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -7021,12 +7069,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.765,
-    "week_ago": 1.798,
+    "now": 1.653,
+    "week_ago": 1.765,
     "pre_crisis": 1.372,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -7275,14 +7323,18 @@
      [
       "2026-11-02",
       1.765
+     ],
+     [
+      "2026-11-09",
+      1.653
      ]
     ]
    },
    "diesel": {
-    "now": 1.981,
-    "week_ago": 1.95,
+    "now": 1.899,
+    "week_ago": 1.981,
     "pre_crisis": 1.363,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -7531,17 +7583,21 @@
      [
       "2026-11-02",
       1.981
+     ],
+     [
+      "2026-11-09",
+      1.899
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.979,
-    "diesel": 2.221
+    "petrol": 1.839,
+    "diesel": 2.113
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -7555,12 +7611,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.498,
-    "week_ago": 2.525,
+    "now": 2.391,
+    "week_ago": 2.498,
     "pre_crisis": 1.938,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -7809,14 +7865,18 @@
      [
       "2026-11-02",
       2.498
+     ],
+     [
+      "2026-11-09",
+      2.391
      ]
     ]
    },
    "diesel": {
-    "now": 2.529,
-    "week_ago": 2.502,
+    "now": 2.435,
+    "week_ago": 2.529,
     "pre_crisis": 1.78,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -8065,17 +8125,21 @@
      [
       "2026-11-02",
       2.529
+     ],
+     [
+      "2026-11-09",
+      2.435
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.801,
-    "diesel": 2.836
+    "petrol": 2.66,
+    "diesel": 2.709
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -8089,12 +8153,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.863,
-    "week_ago": 1.887,
+    "now": 1.805,
+    "week_ago": 1.863,
     "pre_crisis": 1.453,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -8343,14 +8407,18 @@
      [
       "2026-11-02",
       1.863
+     ],
+     [
+      "2026-11-09",
+      1.805
      ]
     ]
    },
    "diesel": {
-    "now": 2.113,
-    "week_ago": 2.101,
+    "now": 2.084,
+    "week_ago": 2.113,
     "pre_crisis": 1.391,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -8599,17 +8667,21 @@
      [
       "2026-11-02",
       2.113
+     ],
+     [
+      "2026-11-09",
+      2.084
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.089,
-    "diesel": 2.37
+    "petrol": 2.008,
+    "diesel": 2.319
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -8623,12 +8695,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.205,
-    "week_ago": 2.346,
+    "now": 2.144,
+    "week_ago": 2.205,
     "pre_crisis": 1.713,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -8877,14 +8949,18 @@
      [
       "2026-11-02",
       2.205
+     ],
+     [
+      "2026-11-09",
+      2.144
      ]
     ]
    },
    "diesel": {
-    "now": 2.433,
-    "week_ago": 2.547,
+    "now": 2.485,
+    "week_ago": 2.433,
     "pre_crisis": 1.738,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -9133,17 +9209,21 @@
      [
       "2026-11-02",
       2.433
+     ],
+     [
+      "2026-11-09",
+      2.485
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.473,
-    "diesel": 2.728
+    "petrol": 2.386,
+    "diesel": 2.765
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -9157,12 +9237,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.158,
-    "week_ago": 2.181,
+    "now": 2.088,
+    "week_ago": 2.158,
     "pre_crisis": 1.71,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -9411,14 +9491,18 @@
      [
       "2026-11-02",
       2.158
+     ],
+     [
+      "2026-11-09",
+      2.088
      ]
     ]
    },
    "diesel": {
-    "now": 2.371,
-    "week_ago": 2.352,
+    "now": 2.178,
+    "week_ago": 2.371,
     "pre_crisis": 1.65,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -9667,17 +9751,21 @@
      [
       "2026-11-02",
       2.371
+     ],
+     [
+      "2026-11-09",
+      2.178
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.42,
-    "diesel": 2.659
+    "petrol": 2.323,
+    "diesel": 2.423
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -9691,12 +9779,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.128,
-    "week_ago": 2.167,
+    "now": 2.067,
+    "week_ago": 2.128,
     "pre_crisis": 1.824,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -9945,14 +10033,18 @@
      [
       "2026-11-02",
       2.128
+     ],
+     [
+      "2026-11-09",
+      2.067
      ]
     ]
    },
    "diesel": {
-    "now": 2.282,
-    "week_ago": 2.298,
+    "now": 2.253,
+    "week_ago": 2.282,
     "pre_crisis": 1.733,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -10201,17 +10293,21 @@
      [
       "2026-11-02",
       2.282
+     ],
+     [
+      "2026-11-09",
+      2.253
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.386,
-    "diesel": 2.559
+    "petrol": 2.3,
+    "diesel": 2.507
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -10225,12 +10321,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.125,
-    "week_ago": 2.143,
+    "now": 2.042,
+    "week_ago": 2.125,
     "pre_crisis": 1.738,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -10479,14 +10575,18 @@
      [
       "2026-11-02",
       2.125
+     ],
+     [
+      "2026-11-09",
+      2.042
      ]
     ]
    },
    "diesel": {
-    "now": 2.139,
-    "week_ago": 2.127,
+    "now": 2.099,
+    "week_ago": 2.139,
     "pre_crisis": 1.548,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -10735,17 +10835,21 @@
      [
       "2026-11-02",
       2.139
+     ],
+     [
+      "2026-11-09",
+      2.099
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.383,
-    "diesel": 2.399
+    "petrol": 2.272,
+    "diesel": 2.336
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -10759,12 +10863,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
     "now": 1.75,
-    "week_ago": 1.754,
+    "week_ago": 1.75,
     "pre_crisis": 1.462,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -11013,14 +11117,18 @@
      [
       "2026-11-02",
       1.75
+     ],
+     [
+      "2026-11-09",
+      1.75
      ]
     ]
    },
    "diesel": {
     "now": 1.978,
-    "week_ago": 1.93,
+    "week_ago": 1.978,
     "pre_crisis": 1.521,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -11269,17 +11377,21 @@
      [
       "2026-11-02",
       1.978
+     ],
+     [
+      "2026-11-09",
+      1.978
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.962,
-    "diesel": 2.218
+    "petrol": 1.947,
+    "diesel": 2.201
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -11293,12 +11405,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.966,
-    "week_ago": 1.97,
+    "now": 1.958,
+    "week_ago": 1.966,
     "pre_crisis": 1.739,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -11547,14 +11659,18 @@
      [
       "2026-11-02",
       1.966
+     ],
+     [
+      "2026-11-09",
+      1.958
      ]
     ]
    },
    "diesel": {
-    "now": 2.122,
-    "week_ago": 2.126,
+    "now": 2.119,
+    "week_ago": 2.122,
     "pre_crisis": 1.737,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -11803,17 +11919,21 @@
      [
       "2026-11-02",
       2.122
+     ],
+     [
+      "2026-11-09",
+      2.119
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.205,
-    "diesel": 2.38
+    "petrol": 2.179,
+    "diesel": 2.358
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -11827,12 +11947,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.001,
-    "week_ago": 2.006,
+    "now": 1.995,
+    "week_ago": 2.001,
     "pre_crisis": 1.655,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -12081,14 +12201,18 @@
      [
       "2026-11-02",
       2.001
+     ],
+     [
+      "2026-11-09",
+      1.995
      ]
     ]
    },
    "diesel": {
-    "now": 2.238,
-    "week_ago": 2.247,
+    "now": 2.218,
+    "week_ago": 2.238,
     "pre_crisis": 1.702,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -12337,17 +12461,21 @@
      [
       "2026-11-02",
       2.238
+     ],
+     [
+      "2026-11-09",
+      2.218
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.244,
-    "diesel": 2.51
+    "petrol": 2.22,
+    "diesel": 2.468
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -12361,12 +12489,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.868,
-    "week_ago": 1.932,
+    "now": 1.846,
+    "week_ago": 1.868,
     "pre_crisis": 1.532,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -12615,14 +12743,18 @@
      [
       "2026-11-02",
       1.868
+     ],
+     [
+      "2026-11-09",
+      1.846
      ]
     ]
    },
    "diesel": {
-    "now": 2.099,
-    "week_ago": 2.083,
+    "now": 2.083,
+    "week_ago": 2.099,
     "pre_crisis": 1.528,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -12871,17 +13003,21 @@
      [
       "2026-11-02",
       2.099
+     ],
+     [
+      "2026-11-09",
+      2.083
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.095,
-    "diesel": 2.354
+    "petrol": 2.054,
+    "diesel": 2.318
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -12895,12 +13031,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.87,
-    "week_ago": 1.927,
+    "now": 1.843,
+    "week_ago": 1.87,
     "pre_crisis": 1.458,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -13149,14 +13285,18 @@
      [
       "2026-11-02",
       1.87
+     ],
+     [
+      "2026-11-09",
+      1.843
      ]
     ]
    },
    "diesel": {
-    "now": 2.223,
-    "week_ago": 2.222,
+    "now": 2.225,
+    "week_ago": 2.223,
     "pre_crisis": 1.615,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -13405,17 +13545,21 @@
      [
       "2026-11-02",
       2.223
+     ],
+     [
+      "2026-11-09",
+      2.225
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.097,
-    "diesel": 2.493
+    "petrol": 2.051,
+    "diesel": 2.476
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -13429,12 +13573,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.759,
-    "week_ago": 1.746,
+    "now": 1.627,
+    "week_ago": 1.759,
     "pre_crisis": 1.457,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -13683,14 +13827,18 @@
      [
       "2026-11-02",
       1.759
+     ],
+     [
+      "2026-11-09",
+      1.627
      ]
     ]
    },
    "diesel": {
-    "now": 2.11,
-    "week_ago": 2.054,
+    "now": 1.987,
+    "week_ago": 2.11,
     "pre_crisis": 1.465,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -13939,17 +14087,21 @@
      [
       "2026-11-02",
       2.11
+     ],
+     [
+      "2026-11-09",
+      1.987
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.973,
-    "diesel": 2.366
+    "petrol": 1.81,
+    "diesel": 2.211
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -13963,12 +14115,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
     "now": 1.34,
     "week_ago": 1.34,
     "pre_crisis": 1.34,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -14216,6 +14368,10 @@
      ],
      [
       "2026-11-02",
+      1.34
+     ],
+     [
+      "2026-11-09",
       1.34
      ]
     ]
@@ -14224,7 +14380,7 @@
     "now": 1.21,
     "week_ago": 1.21,
     "pre_crisis": 1.21,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -14473,17 +14629,21 @@
      [
       "2026-11-02",
       1.21
+     ],
+     [
+      "2026-11-09",
+      1.21
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.503,
-    "diesel": 1.357
+    "petrol": 1.491,
+    "diesel": 1.346
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -14497,12 +14657,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.284,
-    "week_ago": 2.313,
+    "now": 2.196,
+    "week_ago": 2.284,
     "pre_crisis": 2.062,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -14751,14 +14911,18 @@
      [
       "2026-11-02",
       2.284
+     ],
+     [
+      "2026-11-09",
+      2.196
      ]
     ]
    },
    "diesel": {
-    "now": 2.468,
-    "week_ago": 2.469,
+    "now": 2.361,
+    "week_ago": 2.468,
     "pre_crisis": 1.873,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -15007,17 +15171,21 @@
      [
       "2026-11-02",
       2.468
+     ],
+     [
+      "2026-11-09",
+      2.361
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.561,
-    "diesel": 2.768
+    "petrol": 2.443,
+    "diesel": 2.627
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -15031,12 +15199,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.456,
-    "week_ago": 1.467,
+    "now": 1.384,
+    "week_ago": 1.456,
     "pre_crisis": 1.377,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -15285,14 +15453,18 @@
      [
       "2026-11-02",
       1.456
+     ],
+     [
+      "2026-11-09",
+      1.384
      ]
     ]
    },
    "diesel": {
-    "now": 1.812,
-    "week_ago": 1.781,
+    "now": 1.753,
+    "week_ago": 1.812,
     "pre_crisis": 1.424,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -15541,17 +15713,21 @@
      [
       "2026-11-02",
       1.812
+     ],
+     [
+      "2026-11-09",
+      1.753
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.633,
-    "diesel": 2.032
+    "petrol": 1.54,
+    "diesel": 1.951
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -15565,12 +15741,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 2.006,
-    "week_ago": 2.04,
+    "now": 1.922,
+    "week_ago": 2.006,
     "pre_crisis": 1.686,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -15819,14 +15995,18 @@
      [
       "2026-11-02",
       2.006
+     ],
+     [
+      "2026-11-09",
+      1.922
      ]
     ]
    },
    "diesel": {
-    "now": 2.205,
-    "week_ago": 2.189,
+    "now": 2.135,
+    "week_ago": 2.205,
     "pre_crisis": 1.6,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -16075,17 +16255,21 @@
      [
       "2026-11-02",
       2.205
+     ],
+     [
+      "2026-11-09",
+      2.135
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.25,
-    "diesel": 2.473
+    "petrol": 2.139,
+    "diesel": 2.376
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -16099,12 +16283,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.881,
-    "week_ago": 1.886,
+    "now": 1.844,
+    "week_ago": 1.881,
     "pre_crisis": 1.546,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -16353,14 +16537,18 @@
      [
       "2026-11-02",
       1.881
+     ],
+     [
+      "2026-11-09",
+      1.844
      ]
     ]
    },
    "diesel": {
-    "now": 2.071,
-    "week_ago": 2.037,
+    "now": 2.033,
+    "week_ago": 2.039,
     "pre_crisis": 1.607,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -16608,18 +16796,22 @@
      ],
      [
       "2026-11-02",
-      2.071
+      2.039
+     ],
+     [
+      "2026-11-09",
+      2.033
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.109,
-    "diesel": 2.322
+    "petrol": 2.052,
+    "diesel": 2.262
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -16633,12 +16825,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.785,
-    "week_ago": 1.82,
+    "now": 1.691,
+    "week_ago": 1.785,
     "pre_crisis": 1.474,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -16887,14 +17079,18 @@
      [
       "2026-11-02",
       1.785
+     ],
+     [
+      "2026-11-09",
+      1.691
      ]
     ]
    },
    "diesel": {
-    "now": 1.979,
-    "week_ago": 1.97,
+    "now": 1.965,
+    "week_ago": 1.979,
     "pre_crisis": 1.467,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -17143,17 +17339,21 @@
      [
       "2026-11-02",
       1.979
+     ],
+     [
+      "2026-11-09",
+      1.965
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.002,
-    "diesel": 2.219
+    "petrol": 1.882,
+    "diesel": 2.186
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -17167,12 +17367,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.675,
-    "week_ago": 1.732,
+    "now": 1.634,
+    "week_ago": 1.675,
     "pre_crisis": 1.42,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -17421,14 +17621,18 @@
      [
       "2026-11-02",
       1.675
+     ],
+     [
+      "2026-11-09",
+      1.634
      ]
     ]
    },
    "diesel": {
-    "now": 1.941,
-    "week_ago": 1.909,
+    "now": 1.95,
+    "week_ago": 1.941,
     "pre_crisis": 1.46,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -17677,17 +17881,21 @@
      [
       "2026-11-02",
       1.941
+     ],
+     [
+      "2026-11-09",
+      1.95
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.878,
-    "diesel": 2.177
+    "petrol": 1.818,
+    "diesel": 2.17
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -17701,12 +17909,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
     "now": 1.73,
-    "week_ago": 1.751,
+    "week_ago": 1.73,
     "pre_crisis": 1.471,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -17955,14 +18163,18 @@
      [
       "2026-11-02",
       1.73
+     ],
+     [
+      "2026-11-09",
+      1.73
      ]
     ]
    },
    "diesel": {
     "now": 1.898,
-    "week_ago": 1.888,
+    "week_ago": 1.898,
     "pre_crisis": 1.423,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -18211,17 +18423,21 @@
      [
       "2026-11-02",
       1.898
+     ],
+     [
+      "2026-11-09",
+      1.898
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.94,
-    "diesel": 2.128
+    "petrol": 1.925,
+    "diesel": 2.112
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -18235,12 +18451,12 @@
    ],
    "currency": "EUR",
    "unit": "€/l",
-   "date": "2026-11-02",
+   "date": "2026-11-09",
    "petrol": {
-    "now": 1.555,
-    "week_ago": 1.56,
+    "now": 1.437,
+    "week_ago": 1.555,
     "pre_crisis": 1.434,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -18489,14 +18705,18 @@
      [
       "2026-11-02",
       1.555
+     ],
+     [
+      "2026-11-09",
+      1.437
      ]
     ]
    },
    "diesel": {
-    "now": 2.061,
-    "week_ago": 2.037,
+    "now": 1.954,
+    "week_ago": 2.061,
     "pre_crisis": 1.571,
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "history": [
      [
       "2025-09-01",
@@ -18745,17 +18965,21 @@
      [
       "2026-11-02",
       2.061
+     ],
+     [
+      "2026-11-09",
+      1.954
      ]
     ]
    },
    "usd_per_litre": {
-    "petrol": 1.744,
-    "diesel": 2.311
+    "petrol": 1.599,
+    "diesel": 2.174
    },
    "source": {
     "name": "European Commission Weekly Oil Bulletin (prices with taxes)",
     "url": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
-    "date": "2026-11-02"
+    "date": "2026-11-09"
    },
    "feed": "eu-oil-bulletin"
   },
@@ -19291,8 +19515,8 @@
     ]
    },
    "usd_per_litre": {
-    "petrol": 2.291,
-    "diesel": 2.66
+    "petrol": 2.271,
+    "diesel": 2.637
    },
    "source": {
     "name": "UK DESNZ weekly road fuel prices",

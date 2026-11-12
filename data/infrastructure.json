@@ -2060,15 +2060,15 @@
     "unit": "kb/d",
     "basis": "nameplate",
     "source": {
-     "name": "Argus — Refineries in Kuwait, Saudi Arabia hit by drones",
-     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2803125-refineries-in-kuwait-saudi-arabia-hit-by-drones",
-     "date": "2026-03-19"
+     "name": "Kuwait National Petroleum Co. (KNPC) — Mina Abdullah Refinery",
+     "url": "https://www.knpc.com/en/our-business/crude-oil-refining/mina-abdullah-refinery",
+     "date": "2026-11-12"
     },
-    "as_of": "2026-03-19"
+    "as_of": "2026-11-12"
    },
    "details": "Kuwait. Kuwait National Petroleum Co. ~454,000 bpd. Refinery on the coast south of Kuwait City.",
    "geo": "One of Kuwait's three refineries, next to Mina al-Ahmadi, which was hit the same day. Their products are exported through the Strait of Hormuz, which KPC names as the limit on output.",
-   "verified": "2026-10-11"
+   "verified": "2026-11-12"
   },
   {
    "id": "riyadh-refinery",

@@ -1,33 +1,33 @@
 {
- "as_of": "2026-11-11",
+ "as_of": "2026-11-12",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 93.43,
-   "week_ago": 105.88,
+   "value": 91.98,
+   "week_ago": 94.62,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Rebounded to about $93.43 on 11 Nov (Trading Economics), up roughly 2% on the day, after Monday's session settled 5.85% lower at $92.57 on ICE (Xinhua); still down about 12% from $105.88 on Nov 3. Reuters reported a record 37 tanker attacks in the Strait of Hormuz in October, even as Iraq's reported Hormuz understanding and sanctioned-tanker license talks keep weighing on the risk premium.",
+   "note": "Eased to about $91.98 on 12 Nov (Trading Economics), down roughly 0.8% on the day and about 3% from $94.62 a week earlier (Nov 5). Reuters reported Ukrainian strikes have cut Russia's oil refining capacity by about 30% since late October, and UKMTO logged a fresh tanker strike near the Strait of Hormuz on Nov 10, even as Iraq's reported Hormuz understanding and sanctioned-tanker license talks keep weighing on the risk premium.",
    "source": {
     "name": "Trading Economics — Brent Crude Oil",
     "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-11-11"
+    "date": "2026-11-12"
    },
    "extra_sources": [
     {
-     "name": "The Star (Xinhua) — Crude futures settle lower",
-     "url": "https://www.thestar.com.my/news/world/2026/11/10/crude-futures-settle-lower",
-     "date": "2026-11-10"
+     "name": "pandaforecast — Brent Falls 18% in a Week as Trump Plays Down New Iran Strikes",
+     "url": "https://pandaforecast.com/financial-news/oil-prices-fall-trump-iran-strikes-midterms/",
+     "date": "2026-11-05"
     },
     {
-     "name": "Oilprice.com, via Yahoo Finance — Oil Prices Rise As Iran Peace Optimism Fades",
-     "url": "https://finance.yahoo.com/energy/articles/oil-prices-rise-iran-peace-054500318.html",
+     "name": "gCaptain (Reuters) — Recent Ukrainian Attacks Have Reduced Russia's Oil Processing Capacity By 30%, Sources Say",
+     "url": "https://gcaptain.com/recent-ukrainian-attacks-have-reduced-russias-oil-processing-capacity-by-30-sources-say/",
      "date": "2026-11-10"
     }
    ]
@@ -36,25 +36,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 87.12,
-   "week_ago": 97.68,
+   "value": 85.72,
+   "week_ago": 88.12,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Rebounded to about $87.12 on 11 Nov (Trading Economics), up roughly 1.5% on the day, after Monday's session settled 4.38% lower at $86.85 on Nymex (Xinhua); still down about 11% from $97.68 on Nov 3.",
+   "note": "Eased to about $85.72 on 12 Nov (Trading Economics), down roughly 0.9% on the day and about 3% from $88.12 a week earlier (Nov 5).",
    "source": {
     "name": "Trading Economics — Crude Oil (WTI)",
     "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-11-11"
+    "date": "2026-11-12"
    },
    "extra_sources": [
     {
-     "name": "The Star (Xinhua) — Crude futures settle lower",
-     "url": "https://www.thestar.com.my/news/world/2026/11/10/crude-futures-settle-lower",
-     "date": "2026-11-10"
+     "name": "pandaforecast — Brent Falls 18% in a Week as Trump Plays Down New Iran Strikes",
+     "url": "https://pandaforecast.com/financial-news/oil-prices-fall-trump-iran-strikes-midterms/",
+     "date": "2026-11-05"
     }
    ]
   },
@@ -62,7 +62,7 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 86.91,
+   "value": 89.81,
    "week_ago": 97.08,
    "pre_crisis": 32.0,
    "peak": {
@@ -70,11 +70,11 @@
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Ticked up to about €86.91/MWh on 11 Nov (Trading Economics), up roughly 2.6% on the day but still down about 10% from €97.08 on Nov 3, tracking oil's rebound after Monday's slide.",
+   "note": "Rose to about €89.81/MWh on 12 Nov (Trading Economics), up roughly 3.6% on the day but still down about 7.5% from €97.08 on Nov 3, decoupling somewhat from oil's pullback.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-11"
+    "date": "2026-11-12"
    },
    "extra_sources": [
     {
@@ -93,7 +93,7 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 31.34,
+   "value": 31.33,
    "week_ago": 31.7,
    "pre_crisis": 10.75,
    "peak": {
@@ -101,11 +101,11 @@
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Little changed at $31.34 as of Trading Economics' 10 Nov print, down slightly from $31.70 a week earlier (2 Nov).",
+   "note": "Essentially flat at $31.33 as of Trading Economics' 11 Nov print, down slightly from $31.70 a week earlier (2 Nov).",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-11-10"
+    "date": "2026-11-11"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.31,
+   "value": 3.3,
    "week_ago": 2.9026,
    "pre_crisis": 2.99,
-   "note": "Edged up to about $3.31 on 11 Nov (Trading Economics), up from $2.90 on Nov 3; the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Rose to about $3.30 on 12 Nov (Trading Economics), up roughly 2.6% on the day and from $2.90 on Nov 3; the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-11-11"
+    "date": "2026-11-12"
    },
    "extra_sources": [
     {
@@ -147,22 +147,32 @@
    ]
   }
  ],
- "note": "Oil and gas rebounded on 11 November after Monday's sharp slide: Brent rose to about $93.43/bbl, WTI to about $87.12/bbl and TTF to about €86.91/MWh, all up roughly 2% on the day but still down about 10-12% from Nov 3. Reuters reported a record 37 tanker attacks in the Strait of Hormuz in October, citing Washington Institute for Near East Policy data, and Ukrainian drones set fire to Russia's second-largest refinery at Kirishi on Nov 9 — both adding to the risk premium even as Iraq's reported Hormuz understanding and sanctioned-tanker license talks weigh the other way.",
+ "note": "Oil eased on 12 November while gas firmed: Brent fell to about $91.98/bbl and WTI to about $85.72/bbl, down roughly 1% on the day, while TTF rose to about €89.81/MWh. Reuters reported Ukrainian strikes have cut Russia's oil refining capacity by about 30% since late October, citing industry sources, and UKMTO reported a fresh tanker strike near the Strait of Hormuz on Nov 10 alongside an attack on an ADNOC vessel in the Gulf. Qatar's LNG loadings have climbed to roughly half the pre-war pace (Bloomberg/Kpler), even as Poland's Orlen became the first QatarEnergy customer to cancel a long-term LNG contract over the disruption.",
  "note_sources": [
   {
    "name": "Trading Economics — Brent Crude Oil",
    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   {
-   "name": "Oilprice.com, via Yahoo Finance — Oil Prices Rise As Iran Peace Optimism Fades",
-   "url": "https://finance.yahoo.com/energy/articles/oil-prices-rise-iran-peace-054500318.html",
+   "name": "gCaptain (Reuters) — Recent Ukrainian Attacks Have Reduced Russia's Oil Processing Capacity By 30%, Sources Say",
+   "url": "https://gcaptain.com/recent-ukrainian-attacks-have-reduced-russias-oil-processing-capacity-by-30-sources-say/",
    "date": "2026-11-10"
   },
   {
-   "name": "Kyiv Independent — Ukrainian forces reportedly strike Russia's second-largest oil refinery in overnight drone attack",
-   "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/",
-   "date": "2026-11-09"
+   "name": "gCaptain — ADNOC Vessel Damaged in Gulf Attack as UKMTO Reports Fresh Tanker Strike Near Hormuz",
+   "url": "https://gcaptain.com/adnoc-vessel-damaged-in-gulf-attack-as-ukmto-reports-fresh-tanker-strike-near-hormuz/",
+   "date": "2026-11-10"
+  },
+  {
+   "name": "gCaptain (Bloomberg) — Qatar LNG Loadings Pick Up to Around Half of Pre-War Levels",
+   "url": "https://gcaptain.com/qatar-lng-loadings-pick-up-to-around-half-of-pre-war-levels/",
+   "date": "2026-11-10"
+  },
+  {
+   "name": "gCaptain (Bloomberg) — Qatar Loses First LNG Customer Since War Disrupted Flows",
+   "url": "https://gcaptain.com/qatar-loses-first-lng-customer-since-war-disrupted-flows/",
+   "date": "2026-11-11"
   }
  ]
 }

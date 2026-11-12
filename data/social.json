@@ -1947,6 +1947,38 @@
     "Russia"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-12-digest",
+   "created": "2026-11-12",
+   "type": "digest",
+   "text": "Reuters reports Ukrainian strikes have cut Russia's oil refining capacity by about 30% since late October (reported). UKMTO logged a fresh tanker strike near the Strait of Hormuz. Brent eased to about $92/bbl, down about 3% from a week ago.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Refining",
+    "Russia"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-12-explainer-mina-abdullah-refinery",
+   "created": "2026-11-12",
+   "type": "explainer",
+   "text": "Kuwait's Mina Abdullah refinery has a nameplate capacity of 454,000 b/d (KNPC). A March drone strike knocked a unit offline; KPC says Kuwait's refineries are all running, limited mainly by shipping via Hormuz.",
+   "url": "https://strategicenergymap.org/facilities/mina-abdullah-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Kuwait",
+    "OilPrices"
+   ],
+   "reply_to": null
   }
  ]
 }

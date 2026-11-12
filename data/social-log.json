@@ -2004,6 +2004,23 @@
     "at": "2026-11-12T10:59:06.531Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-11-explainer-tuapse-refinery": {
+   "x": {
+    "id": "2120954045728694542",
+    "at": "2026-11-12T18:57:04.801Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n255kfksou2j",
+    "cid": "bafyreigjm23tyd4hyfuy62zuh4zinf7l3s7rmx5zrsrg36bshwviuq6dmq",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n255kfksou2j",
+     "cid": "bafyreigjm23tyd4hyfuy62zuh4zinf7l3s7rmx5zrsrg36bshwviuq6dmq"
+    },
+    "at": "2026-11-12T18:57:07.069Z",
+    "media": "asset-card"
+   }
   }
  }
 }

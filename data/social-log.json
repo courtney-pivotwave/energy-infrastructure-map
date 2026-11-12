@@ -1987,6 +1987,23 @@
     "at": "2026-11-11T18:42:30.424Z",
     "media": "asset-card"
    }
+  },
+  "2026-11-11-digest": {
+   "x": {
+    "id": "2120833751554863108",
+    "at": "2026-11-12T10:59:04.454Z",
+    "media": "daily-board"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n24cto7mze26",
+    "cid": "bafyreie42ssxsr3jgdo4dosqdtkioih5o6onbrl2whwo4freb7eor2qn5e",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n24cto7mze26",
+     "cid": "bafyreie42ssxsr3jgdo4dosqdtkioih5o6onbrl2whwo4freb7eor2qn5e"
+    },
+    "at": "2026-11-12T10:59:06.531Z",
+    "media": "daily-board"
+   }
   }
  }
 }

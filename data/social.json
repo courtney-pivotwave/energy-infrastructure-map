@@ -1979,6 +1979,38 @@
     "OilPrices"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-13-digest",
+   "created": "2026-11-13",
+   "type": "digest",
+   "text": "A Liberia-flagged tanker caught fire off the UAE on Nov 11 after a strike, one of four Gulf and Hormuz tanker attacks UKMTO logged in 48 hours; crews were reported safe. Brent rose to about $95/bbl, up roughly 4% on the week.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "Hormuz"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-13-explainer-habshan-fujairah",
+   "created": "2026-11-13",
+   "type": "explainer",
+   "text": "The UAE's Habshan-Fujairah pipeline carries Abu Dhabi crude 370 km overland to the Gulf of Oman, bypassing Hormuz. Capacity is about 1.5 million b/d; ADNOC runs it near 1.7-1.8 million b/d.",
+   "url": "https://strategicenergymap.org/facilities/habshan-fujairah-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Pipelines",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

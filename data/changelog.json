@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-13",
+   "kind": "data",
+   "headline": "Fresh wave of Gulf tanker attacks sends Brent back above $95",
+   "changes": [
+    "UKMTO and a JMIC advisory reported four tanker attacks near the Strait of Hormuz and the UAE coast within about 48 hours, including the crude tanker Dominica Prosperity, which caught fire off Ras Al Khaimah on Nov 11 with all 22 crew evacuated safely.",
+    "Brent rose to about $95.44/bbl and WTI to about $88.12/bbl, both up roughly 3% on the day, reversing part of the prior week's pullback.",
+    "The Habshan-Fujairah pipeline, the UAE's main route for bypassing Hormuz, was re-checked against its governing sources; its figures hold."
+   ]
+  },
+  {
    "date": "2026-11-12",
    "kind": "data",
    "headline": "Russia's refining capacity down ~30% on Ukrainian strikes; Qatar's first LNG contract cancellation",

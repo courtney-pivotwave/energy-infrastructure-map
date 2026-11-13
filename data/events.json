@@ -1,8 +1,28 @@
 {
- "updated": "2026-11-12",
- "situation_headline": "Reuters reported Ukrainian strikes have cut Russia's oil refining capacity by about 30% since late October, and UKMTO logged a fresh tanker strike near the Strait of Hormuz, while Brent eased to about $92/bbl and Poland's Orlen became the first QatarEnergy customer to cancel a long-term LNG contract.",
+ "updated": "2026-11-13",
+ "situation_headline": "UKMTO logged four tanker attacks near the Strait of Hormuz and the UAE coast within about 48 hours, including a crude carrier set ablaze off Ras Al Khaimah on Nov 11, and Brent rose back to about $95/bbl on the renewed violence.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-11-dominica-prosperity-tanker-ablaze-uae",
+   "date": "2026-11-11",
+   "title": "Crude tanker set ablaze off UAE in fresh wave of Gulf and Hormuz attacks",
+   "summary": "The Liberia-flagged crude tanker Dominica Prosperity caught fire after an unidentified projectile struck its engine room about 14 nautical miles northwest of Ras Al Khaimah's Mina Saqr port on Nov 11, UKMTO reported; the UAE Coast Guard evacuated all 22 crew, 19 of them Indian nationals, with no casualties, India's shipping minister said. Reuters, citing ship manager MARISKS, named the operator as South Korea's Sinokor Maritime. A JMIC advisory issued Nov 12 grouped the strike with two further attacks in the same window: the tanker Fujairah Energy, hit while eastbound in the Gulf on Nov 10 with several crew injured, and the NCC Fajr, struck transiting the Strait of Hormuz north of Khasab, Oman, on Nov 11, with its crew reported safe. None of the projectiles' origin has been established.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": [26.05, 56.03],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "gCaptain — Tanker Ablaze Off UAE as More Attacks Rattle Gulf Shipping",
+     "url": "https://gcaptain.com/tanker-ablaze-off-uae-as-more-attacks-rattle-gulf-shipping/",
+     "date": "2026-11-12"
+    }
+   ]
+  },
   {
    "id": "2026-11-11-orlen-terminates-qatarenergy-lng-contract",
    "date": "2026-11-11",

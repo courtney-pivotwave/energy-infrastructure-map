@@ -2021,6 +2021,23 @@
     "at": "2026-11-12T18:57:07.069Z",
     "media": "asset-card"
    }
+  },
+  "2026-11-12-digest": {
+   "x": {
+    "id": "2121195509201391903",
+    "at": "2026-11-13T10:56:34.167Z",
+    "media": "daily-board"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n26t643yel23",
+    "cid": "bafyreie4xnjbxvcgoj2633xresftr3x4d65zgplznloqf2lt4louqnnlmi",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n26t643yel23",
+     "cid": "bafyreie4xnjbxvcgoj2633xresftr3x4d65zgplznloqf2lt4louqnnlmi"
+    },
+    "at": "2026-11-13T10:56:35.916Z",
+    "media": "daily-board"
+   }
   }
  }
 }

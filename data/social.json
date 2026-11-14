@@ -2011,6 +2011,38 @@
     "MaritimeSecurity"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-14-digest",
+   "created": "2026-11-14",
+   "type": "digest",
+   "text": "The IEA says Gulf crude exports recovered to about 82% of pre-war levels in October, even as UKMTO counted Hormuz transits still down 65% last week. Brent held near $95/bbl, up about 4% on the week, after a fresh wave of tanker attacks.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-14-explainer-ghawar-oil",
+   "created": "2026-11-14",
+   "type": "explainer",
+   "text": "Saudi Arabia's Ghawar field, discovered in 1948, is the world's largest conventional oil field: about 3.8 million b/d, over 30% of the kingdom's output. Gulf crude exports are near 82% of pre-war levels, per the IEA.",
+   "url": "https://strategicenergymap.org/facilities/ghawar-oil/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "SaudiArabia",
+    "OilPrices"
+   ],
+   "reply_to": null
   }
  ]
 }

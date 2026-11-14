@@ -1,8 +1,44 @@
 {
- "updated": "2026-11-13",
- "situation_headline": "UKMTO logged four tanker attacks near the Strait of Hormuz and the UAE coast within about 48 hours, including a crude carrier set ablaze off Ras Al Khaimah on Nov 11, and Brent rose back to about $95/bbl on the renewed violence.",
+ "updated": "2026-11-14",
+ "situation_headline": "The IEA says Gulf crude exports recovered to about 82% of pre-war levels in October even as UKMTO counted Hormuz transits still down 65%; Iran claimed fresh tanker mine strikes on Nov 12-13, and Brent held near $95/bbl.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-13-iea-gulf-exports-82pct-ukmto-transits-down-65pct",
+   "date": "2026-11-13",
+   "title": "IEA: Gulf oil exports recover to 82% of pre-war crude levels in October; UKMTO says Hormuz transits still down 65%",
+   "summary": "The IEA's Oil Market Report said Gulf crude exports excluding Oman rose to about 15 million b/d in October, roughly 82% of pre-war volumes, as total Gulf oil exports reached 18.4 million b/d (about 74% of normal); refined-product and LPG exports stayed near half pre-war levels. The agency said global oil supply should exceed demand by 1.7 million b/d in the fourth quarter, reversing its earlier deficit forecast, as oil-on-water inventories rose 86 million barrels to their highest level since January. UKMTO's latest weekly assessment counted 139 outbound and 169 inbound Hormuz transits — a mix of AIS-tracked movements and unverifiable US-reported \"facilitated\" transits — about 65% below pre-conflict levels, and logged eight maritime security incidents, seven of them tanker attacks (five in the strait, two in the Arabian Gulf, one in the Gulf of Oman); none of the vessels sank.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": ["strait-of-hormuz"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Gulf Oil Exports Recover as Hormuz Shipping Struggles",
+     "url": "https://gcaptain.com/gulf-oil-exports-recover-as-hormuz-shipping-struggles/",
+     "date": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-irgc-lng-tanker-mine-claim-hormuz",
+   "date": "2026-11-13",
+   "title": "Iran claims LNG tanker hit mine in Hormuz; no independent confirmation",
+   "summary": "Iran's Revolutionary Guards navy said on Nov 13 that a tanker carrying LNG struck a naval mine and exploded in the Strait of Hormuz after using an \"unauthorized and dangerous route,\" per Iranian state media (IRGC claim, unverified; no vessel name, flag or independent confirmation given). It followed an IRGC claim the previous day, Nov 12, that four oil tankers had been hit by explosions in the strait after ignoring warnings to avoid restricted areas (also unverified). Reuters reported at least 10 ships were hit in the first 10 days of November, after a record 37 attacks in October per Washington Institute for Near East Policy data — the highest monthly total since the war began in late February.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": ["strait-of-hormuz"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "gCaptain — Iran Says Tanker Carrying LNG Hit Mine, Suffered Explosion in Hormuz",
+     "url": "https://gcaptain.com/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-in-hormuz/",
+     "date": "2026-11-13"
+    }
+   ]
+  },
   {
    "id": "2026-11-11-dominica-prosperity-tanker-ablaze-uae",
    "date": "2026-11-11",

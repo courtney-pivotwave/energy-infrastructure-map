@@ -2106,6 +2106,23 @@
     "at": "2026-11-14T21:30:58.289Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-14-explainer-ghawar-oil": {
+   "x": {
+    "id": "2121919777459384362",
+    "at": "2026-11-15T10:54:33.185Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2dtydarya2v",
+    "cid": "bafyreih7kbn6zew6qlq2g3bu45rn4owdi6kzxauptt6rwzl6ix7szkevcm",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2dtydarya2v",
+     "cid": "bafyreih7kbn6zew6qlq2g3bu45rn4owdi6kzxauptt6rwzl6ix7szkevcm"
+    },
+    "at": "2026-11-15T10:54:34.836Z",
+    "media": "asset-card"
+   }
   }
  }
 }

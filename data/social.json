@@ -2043,6 +2043,38 @@
     "OilPrices"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-15-digest",
+   "created": "2026-11-15",
+   "type": "digest",
+   "text": "Hapag-Lloyd and Maersk began routing some Asia-Europe strings through the Suez Canal again, ending months on the Cape detour, as Brent held near $95/bbl. The US also extended its Jones Act oil-shipping waiver another 90 days.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Suez",
+    "Russia"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-15-explainer-suez-canal",
+   "created": "2026-11-15",
+   "type": "explainer",
+   "text": "The Suez Canal links the Mediterranean and Red Sea over ~193 km, carrying about 4.9 million b/d of oil and products (EIA), down from 8.8 million in 2023. Carriers are now returning some Asia-Europe strings to it.",
+   "url": "https://strategicenergymap.org/chokepoints/suez-canal/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "RedSea",
+    "Suez"
+   ],
+   "reply_to": null
   }
  ]
 }

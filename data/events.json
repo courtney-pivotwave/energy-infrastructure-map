@@ -1,8 +1,80 @@
 {
- "updated": "2026-11-14",
- "situation_headline": "The IEA says Gulf crude exports recovered to about 82% of pre-war levels in October even as UKMTO counted Hormuz transits still down 65%; Iran claimed fresh tanker mine strikes on Nov 12-13, and Brent held near $95/bbl.",
+ "updated": "2026-11-15",
+ "situation_headline": "Hapag-Lloyd and Maersk began routing some Asia-Europe strings back through the Suez Canal, easing months of Cape of Good Hope diversions, as Washington extended its Jones Act shipping waiver for oil and fertilizer another 90 days.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-14-jones-act-waiver-90-day-extension",
+   "date": "2026-11-14",
+   "title": "Trump extends Jones Act waiver for oil and fertilizer shipping another 90 days",
+   "summary": "The Trump administration extended a Jones Act waiver letting foreign-flagged vessels move crude oil, gasoline, jet fuel, naphtha, LNG, fertilizer and other covered cargoes between US ports, for a further 90 days starting at 12:00am Monday, with no gap after the prior waiver expires. The administration cited high energy costs tied to the Iran war and Russian refinery damage; about 338 waiver voyages and roughly 90 million barrels of mostly refined fuel have moved between US ports since the waiver was first issued in March. Shipbuilders, labor unions and some lawmakers oppose the extension, arguing it undermines US-flag shipping.",
+   "category": "policy",
+   "severity": "low",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Trump To Extend Shipping Waiver For Oil, Fertilizer For 90 Days",
+     "url": "https://gcaptain.com/trump-to-extend-shipping-waiver-for-oil-fertilizer-for-90-days/",
+     "date": "2026-11-14"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-14-irgc-tanker-mine-fire-eastern-hormuz",
+   "date": "2026-11-14",
+   "title": "Iran claims tanker fire after mine strike in eastern Strait of Hormuz; no independent confirmation",
+   "summary": "Iran's navy said an oil tanker caught fire on Nov 14 after hitting a naval mine in the eastern Strait of Hormuz, per Iranian state media (IRGC/navy claim, unverified). Reuters said it could not immediately verify the report; no vessel name, flag or casualty information was given. It follows an IRGC claim the day before that an LNG tanker hit a mine and exploded in the strait.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": ["strait-of-hormuz"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "gCaptain — Oil Tanker On Fire After Hitting Mine In Hormuz",
+     "url": "https://gcaptain.com/oil-tanker-on-fire-after-hitting-mine-in-hormuz/",
+     "date": "2026-11-14"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-suez-canal-carriers-resume-transits",
+   "date": "2026-11-13",
+   "title": "Hapag-Lloyd, Maersk resume some Asia-Europe strings through the Suez Canal",
+   "summary": "Hapag-Lloyd and its Gemini alliance partner Maersk have begun shifting some Asia-Europe container strings back through the Suez Canal after months on the Cape of Good Hope diversion, with five Far East-South Europe services, one Far East-North Europe service and two India-Europe connections now routed via Suez; other northern European services still sail via the Cape. The India-Europe ME1/IOS service switched on Nov 2, with its first westbound departure from Salalah on Nov 4 and first eastbound sailing from Tangier around Nov 12-13. Hapag-Lloyd reported Q3 net profit of $999 million (vs. $172 million a year earlier) on freight rates up 28% to $1,808/TEU, and raised its full-year EBITDA guidance to $4.6-5.0 billion, citing tight capacity and elevated rates even as it still warned of geopolitical volatility.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": ["suez-canal"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain — Hapag-Lloyd Profit Surges as Freight Rates Rise, Red Sea Services Return",
+     "url": "https://gcaptain.com/hapag-lloyd-profit-surges-as-freight-rates-rise-red-sea-services-return/",
+     "date": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-13-iea-russia-oil-revenue-5-month-high",
+   "date": "2026-11-13",
+   "title": "IEA: Russia's October oil export revenue hits five-month high as Gulf war lifts prices",
+   "summary": "The IEA said Russia's crude and petroleum-product export revenue reached about $21.2 billion in October, up roughly 65% year on year and the highest since May, with crude making up more than 80% of the total as Urals and ESPO blends topped $100/bbl. Crude export volumes held flat month on month at 5.33 million b/d (about 4% above a year earlier); petroleum-product exports rose to 1.49 million b/d, the highest since June but still about a third below year-earlier levels. The IEA linked the higher prices to the Iran war, including near-daily Hormuz tanker attacks and Houthi strikes on Saudi energy infrastructure, which lifted demand for Russian crude that reaches China and India without transiting Hormuz; Ukrainian drone strikes on refineries including Kirishi and Omsk cut Russian refining runs earlier in the month.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "gCaptain (Bloomberg) — Russia Oil Revenues Hit Five-Month High on Crude Rally, IEA Says",
+     "url": "https://gcaptain.com/russia-oil-revenues-hit-five-month-high-on-crude-rally-iea-says/",
+     "date": "2026-11-13"
+    }
+   ]
+  },
   {
    "id": "2026-11-13-iea-gulf-exports-82pct-ukmto-transits-down-65pct",
    "date": "2026-11-13",

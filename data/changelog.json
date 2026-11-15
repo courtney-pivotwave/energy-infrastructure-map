@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-11-15",
+   "kind": "data",
+   "headline": "Major carriers restore some Suez Canal routes as US extends oil-shipping waiver",
+   "changes": [
+    "Hapag-Lloyd and Maersk began routing several Asia-Europe container strings back through the Suez Canal, ending months of diversion around the Cape of Good Hope.",
+    "The Trump administration extended its Jones Act waiver letting foreign-flagged ships carry oil, fuel and fertilizer between US ports for another 90 days.",
+    "The IEA said Russia's October oil export revenue hit a five-month high as the Gulf war lifted crude prices.",
+    "Iran's navy claimed another tanker caught fire after hitting a mine in the Strait of Hormuz on Nov 14; no independent confirmation."
+   ]
+  },
+  {
    "date": "2026-11-14",
    "kind": "data",
    "headline": "Gulf oil exports near pre-war levels even as Hormuz ship transits lag, IEA says",

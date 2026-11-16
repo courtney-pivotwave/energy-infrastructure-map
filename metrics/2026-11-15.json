@@ -1,0 +1,840 @@
+{
+ "week": {
+  "start": "2026-11-09",
+  "end": "2026-11-15"
+ },
+ "generated": "2026-11-16T19:31:11.861Z",
+ "sources": {
+  "repo": "ok",
+  "github": "ok",
+  "bluesky": "ok",
+  "x": "ok",
+  "google": "not configured: add the GSC_SERVICE_ACCOUNT secret",
+  "bing": "not configured: add the BING_WEBMASTER_KEY secret",
+  "vercel": "manual: last entered for the week ending 2026-09-29"
+ },
+ "site": {
+  "pages_in_sitemap": 136,
+  "events_total": 201,
+  "events_dated_this_week": 15,
+  "changelog_entries_this_week": 7
+ },
+ "agents": {
+  "daily_update_days": [
+   "2026-11-09",
+   "2026-11-10",
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "daily_update_runs": "7/7",
+  "other_commits": [],
+  "prs_open": [
+   {
+    "number": 10,
+    "title": "Review: Riyadh airport attack kills at least 12",
+    "branch": "review/2026-10-11",
+    "opened": "2026-10-11",
+    "waiting_days": 36,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/10"
+   },
+   {
+    "number": 12,
+    "title": "Review: Expand Kharg Island page, refresh Bab el-Mandeb flows",
+    "branch": "review/2026-10-20",
+    "opened": "2026-10-20",
+    "waiting_days": 27,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/12"
+   },
+   {
+    "number": 13,
+    "title": "Review: Correct Ras Laffan LNG expansion-capacity figure",
+    "branch": "review/2026-10-23",
+    "opened": "2026-10-23",
+    "waiting_days": 24,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/13"
+   },
+   {
+    "number": 14,
+    "title": "Review: Expand Ras Tanura terminal entry, add explainer",
+    "branch": "review/2026-10-27",
+    "opened": "2026-10-27",
+    "waiting_days": 20,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/14"
+   },
+   {
+    "number": 15,
+    "title": "Review: UAE oil spill source identified as GEM NO.2",
+    "branch": "review/2026-10-29",
+    "opened": "2026-10-29",
+    "waiting_days": 18,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/15"
+   },
+   {
+    "number": 16,
+    "title": "Review: Ras Laffan LNG capacity audit",
+    "branch": "review/2026-10-30",
+    "opened": "2026-10-30",
+    "waiting_days": 17,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/16"
+   },
+   {
+    "number": 17,
+    "title": "Source review: November 2026",
+    "branch": "review/sources-2026-11",
+    "opened": "2026-11-01",
+    "waiting_days": 15,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/17"
+   },
+   {
+    "number": 18,
+    "title": "Review: Al Mayeda LNG carrier struck near Hormuz, Ras Laffan capacity correction",
+    "branch": "review/2026-11-02",
+    "opened": "2026-11-02",
+    "waiting_days": 14,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/18"
+   },
+   {
+    "number": 19,
+    "title": "Review: Correct Fujairah storage capacity; confirm Qeshm strike target",
+    "branch": "review/2026-11-04",
+    "opened": "2026-11-04",
+    "waiting_days": 12,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/19"
+   },
+   {
+    "number": 20,
+    "title": "Review: Correct Fujairah storage capacity and bunkering rank",
+    "branch": "review/2026-11-06",
+    "opened": "2026-11-06",
+    "waiting_days": 10,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/20"
+   },
+   {
+    "number": 21,
+    "title": "Review: Add Kirishi refinery after repeated drone strikes",
+    "branch": "review/2026-11-11",
+    "opened": "2026-11-11",
+    "waiting_days": 5,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/21"
+   },
+   {
+    "number": 22,
+    "title": "Review: Add Ryazan refinery after drone strike",
+    "branch": "review/2026-11-16",
+    "opened": "2026-11-16",
+    "waiting_days": 0,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/22"
+   }
+  ],
+  "prs_closed_this_week": [],
+  "validator": "pass"
+ },
+ "social": {
+  "drafted_by_type": {
+   "digest": 7,
+   "event": 2,
+   "explainer": 7
+  },
+  "posted": 16,
+  "posted_same_day": 5,
+  "posts": [
+   {
+    "id": "2026-11-09-digest",
+    "type": "digest",
+    "created": "2026-11-09",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Iraq",
+     "OilPrices"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2119745888734048580",
+     "posted_at": "2026-11-09T10:56:17.813Z",
+     "metrics": {
+      "impressions": 0,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzurbwn5pn22",
+     "posted_at": "2026-11-09T10:56:19.755Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-09-event-egypt-gas-cuts",
+    "type": "event",
+    "created": "2026-11-09",
+    "url": "https://strategicenergymap.org/events/#2026-11-08-egypt-gas-cuts-fertilizer-33pct",
+    "tags": [
+     "EnergyCrisis",
+     "Commodities"
+    ],
+    "media": "no-image",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2119904726007640100",
+     "posted_at": "2026-11-09T21:27:27.420Z",
+     "metrics": {
+      "impressions": 0,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzvukkvckn22",
+     "posted_at": "2026-11-09T21:27:29.738Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-09-event-sanctioned-tanker-licenses",
+    "type": "event",
+    "created": "2026-11-09",
+    "url": "https://strategicenergymap.org/events/#2026-11-08-traders-seek-sanctioned-tanker-licenses",
+    "tags": [
+     "Tankers",
+     "Shipping"
+    ],
+    "media": "no-image",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2120108642988892300",
+     "posted_at": "2026-11-10T10:57:45.005Z",
+     "metrics": {
+      "impressions": 4,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzxbth7xij2i",
+     "posted_at": "2026-11-10T10:57:46.239Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-09-explainer-basra-oil-terminal",
+    "type": "explainer",
+    "created": "2026-11-09",
+    "url": "https://strategicenergymap.org/facilities/basra-oil-terminal/",
+    "tags": [
+     "Iraq",
+     "Shipping"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2120225191313674394",
+     "posted_at": "2026-11-10T18:40:52.446Z",
+     "metrics": {
+      "impressions": 2,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzy3plv7t32h",
+     "posted_at": "2026-11-10T18:40:55.208Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-10-digest",
+    "type": "digest",
+    "created": "2026-11-10",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Maritime",
+     "OilPrices"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2120470826566775256",
+     "posted_at": "2026-11-11T10:56:56.398Z",
+     "metrics": {
+      "impressions": 0,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3mzzsawgdiy26",
+     "posted_at": "2026-11-11T10:56:58.333Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-10-explainer-jazan-refinery",
+    "type": "explainer",
+    "created": "2026-11-10",
+    "url": "https://strategicenergymap.org/facilities/jazan-refinery/",
+    "tags": [
+     "SaudiArabia",
+     "RedSea"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2120587983124365367",
+     "posted_at": "2026-11-11T18:42:28.726Z",
+     "metrics": {
+      "impressions": 6,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n22mbec2o326",
+     "posted_at": "2026-11-11T18:42:30.424Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-11-digest",
+    "type": "digest",
+    "created": "2026-11-11",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Brent",
+     "OOTT"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2120833751554863108",
+     "posted_at": "2026-11-12T10:59:04.454Z",
+     "metrics": {
+      "impressions": 17,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n24cto7mze26",
+     "posted_at": "2026-11-12T10:59:06.531Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-11-explainer-tuapse-refinery",
+    "type": "explainer",
+    "created": "2026-11-11",
+    "url": "https://strategicenergymap.org/facilities/tuapse-refinery/",
+    "tags": [
+     "BlackSea",
+     "Russia"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2120954045728694542",
+     "posted_at": "2026-11-12T18:57:04.801Z",
+     "metrics": {
+      "impressions": 0,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n255kfksou2j",
+     "posted_at": "2026-11-12T18:57:07.069Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-12-digest",
+    "type": "digest",
+    "created": "2026-11-12",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Refining",
+     "Russia"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2121195509201391903",
+     "posted_at": "2026-11-13T10:56:34.167Z",
+     "metrics": {
+      "impressions": 0,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n26t643yel23",
+     "posted_at": "2026-11-13T10:56:35.916Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-12-explainer-mina-abdullah-refinery",
+    "type": "explainer",
+    "created": "2026-11-12",
+    "url": "https://strategicenergymap.org/facilities/mina-abdullah-refinery/",
+    "tags": [
+     "Kuwait",
+     "OilPrices"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2121310051805581319",
+     "posted_at": "2026-11-13T18:31:43.267Z",
+     "metrics": {
+      "impressions": 4,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n27mly2emf2e",
+     "posted_at": "2026-11-13T18:31:45.316Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-13-digest",
+    "type": "digest",
+    "created": "2026-11-13",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Tankers",
+     "Hormuz"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2121557085217239153",
+     "posted_at": "2026-11-14T10:53:20.672Z",
+     "metrics": {
+      "impressions": 1,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2bdhb6bhl26",
+     "posted_at": "2026-11-14T10:53:22.624Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-13-explainer-habshan-fujairah",
+    "type": "explainer",
+    "created": "2026-11-13",
+    "url": "https://strategicenergymap.org/facilities/habshan-fujairah-pipeline/",
+    "tags": [
+     "Pipelines",
+     "MaritimeSecurity"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2121651827976323165",
+     "posted_at": "2026-11-14T17:09:49.058Z",
+     "metrics": {
+      "impressions": 4,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2byihgv2t2h",
+     "posted_at": "2026-11-14T17:09:51.474Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-14-digest",
+    "type": "digest",
+    "created": "2026-11-14",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Hormuz",
+     "OOTT"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2121717543672959301",
+     "posted_at": "2026-11-14T21:30:56.913Z",
+     "metrics": {
+      "impressions": 31,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2ch3f3o2q2v",
+     "posted_at": "2026-11-14T21:30:58.289Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-14-explainer-ghawar-oil",
+    "type": "explainer",
+    "created": "2026-11-14",
+    "url": "https://strategicenergymap.org/facilities/ghawar-oil/",
+    "tags": [
+     "SaudiArabia",
+     "OilPrices"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2121919777459384362",
+     "posted_at": "2026-11-15T10:54:33.185Z",
+     "metrics": {
+      "impressions": 3,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2dtydarya2v",
+     "posted_at": "2026-11-15T10:54:34.836Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-15-digest",
+    "type": "digest",
+    "created": "2026-11-15",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Suez",
+     "Russia"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2122022572145393736",
+     "posted_at": "2026-11-15T17:43:01.380Z",
+     "metrics": {
+      "impressions": 3,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2eksqff3j2j",
+     "posted_at": "2026-11-15T17:43:03.312Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-15-explainer-suez-canal",
+    "type": "explainer",
+    "created": "2026-11-15",
+    "url": "https://strategicenergymap.org/chokepoints/suez-canal/",
+    "tags": [
+     "RedSea",
+     "Suez"
+    ],
+    "media": "no-image",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2122099750396637501",
+     "posted_at": "2026-11-15T22:49:41.993Z",
+     "metrics": {
+      "impressions": 2,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2f3x56zbo2j",
+     "posted_at": "2026-11-15T22:49:43.835Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   }
+  ],
+  "failed": [],
+  "bluesky": {
+   "followers": 51,
+   "following": 61,
+   "posts_all_time": 135,
+   "interactions": 5,
+   "likes": 3,
+   "reposts": 2,
+   "replies": 0,
+   "quotes": 0,
+   "by_type": {
+    "digest": {
+     "posts": 7,
+     "likes": 3,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    },
+    "event": {
+     "posts": 2,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "explainer": {
+     "posts": 7,
+     "likes": 0,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    }
+   },
+   "by_media": {
+    "daily-board": {
+     "posts": 7,
+     "likes": 3,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    },
+    "no-image": {
+     "posts": 3,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "asset-card": {
+     "posts": 6,
+     "likes": 0,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    }
+   }
+  },
+  "x": {
+   "followers": 7,
+   "impressions": 77,
+   "link_clicks": 0,
+   "likes": 0,
+   "reposts": 0,
+   "replies": 0,
+   "quotes": 0,
+   "by_type": {
+    "digest": {
+     "posts": 7,
+     "impressions": 52,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "event": {
+     "posts": 2,
+     "impressions": 4,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "explainer": {
+     "posts": 7,
+     "impressions": 21,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    }
+   },
+   "by_media": {
+    "daily-board": {
+     "posts": 7,
+     "impressions": 52,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "no-image": {
+     "posts": 3,
+     "impressions": 6,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "asset-card": {
+     "posts": 6,
+     "impressions": 19,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    }
+   }
+  }
+ },
+ "search": {
+  "google": null,
+  "bing": null
+ },
+ "traffic": {
+  "vercel": {
+   "week_ending": "2026-09-29",
+   "visitors": 70,
+   "page_views": 96,
+   "bounce_rate": 0.81,
+   "top_pages": {
+    "/": 52,
+    "/chokepoints/strait-of-hormuz": 7,
+    "/facilities": 6,
+    "/events": 4
+   },
+   "referrers": {
+    "google.com": 6,
+    "bing.com": 1,
+    "t.co": 1
+   },
+   "note": "Sep 29 baseline from docs/growth-log.md (7 days to Sep 29; includes the owner's own visits).",
+   "how": "Vercel → energy-infrastructure-map → Analytics, last 7 days, production. Replace the numbers and set week_ending to the Sunday the week ends on. Copied by hand because Vercel's analytics API isn't available for this project.",
+   "current": false
+  }
+ }
+}

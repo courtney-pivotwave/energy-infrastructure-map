@@ -2107,6 +2107,22 @@
     "Diesel"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-16-event-ryazan-refinery",
+   "created": "2026-11-16",
+   "type": "event",
+   "text": "A drone strike on Nov 15 halted the main unit at Russia's Ryazan refinery (about 48% of capacity). A second unit has been down since Oct 24. Reuters: repairs may not finish before December (reported).",
+   "url": "https://strategicenergymap.org/facilities/ryazan-refinery/",
+   "event_id": "2026-11-15-ryazan-refinery-drone-strike",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Russia",
+    "Refining"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -2023,6 +2023,31 @@
    "verified": "2026-10-11"
   },
   {
+   "id": "ryazan-refinery",
+   "name": "Ryazan refinery (Rosneft)",
+   "kind": "refinery",
+   "coords": [
+    54.59,
+    39.74
+   ],
+   "size": 4,
+   "capacity": {
+    "value": 13.1,
+    "unit": "mtpa",
+    "basis": "effective",
+    "source": {
+     "name": "Ukrinform (Reuters) — Ryazan oil refinery suspends operations after drone attack",
+     "url": "https://www.ukrinform.net/rubric-ato/4060389-ryazan-oil-refinery-suspends-operations-after-drone-attack-reuters.html",
+     "date": "2026-11-15"
+    },
+    "as_of": "2024-12-31",
+    "note": "Processed 13.1 million tonnes in 2024, about 4.9% of Russia's total refining (Reuters); no current nameplate figure sourced yet"
+   },
+   "details": "Russia (Ryazan Oblast, ~200 km southeast of Moscow). Rosneft. Processed 13.1 million tonnes of crude in 2024 (about 4.9% of Russia's refining). One of Rosneft's largest plants, supplying gasoline, diesel and fuel oil to the Moscow region and beyond.",
+   "geo": "An inland refinery about 200 km southeast of Moscow, repeatedly targeted by Ukrainian long-range drones through 2026 as part of a wider campaign against Russian refining capacity.",
+   "verified": "2026-11-16"
+  },
+  {
    "id": "bazan-haifa-refinery",
    "name": "Bazan refinery (Haifa)",
    "kind": "refinery",

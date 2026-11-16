@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -1158,6 +1158,20 @@
      "name": "BOE Report (Reuters) — Ukraine's attacks on Russian energy sites: what has been hit?",
      "url": "https://boereport.com/2026/10/07/ukraines-attacks-on-russian-energy-sites-what-has-been-hit-3/",
      "date": "2026-10-07"
+    }
+   ]
+  },
+  "ryazan-refinery": {
+   "status": "damaged",
+   "summary": "A Ukrainian drone strike and fire on Nov 15 halted the primary crude unit, about 48% of capacity; industry sources told Reuters repairs could keep it idle into December, with no product loadings planned before Dec 1. A separate unit, 26% of capacity, had already been down since an Oct 24 drone strike (reported).",
+   "since": "2026-10-24",
+   "updated": "2026-11-16",
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Ukrinform (Reuters) — Ryazan oil refinery suspends operations after drone attack",
+     "url": "https://www.ukrinform.net/rubric-ato/4060389-ryazan-oil-refinery-suspends-operations-after-drone-attack-reuters.html",
+     "date": "2026-11-15"
     }
    ]
   }

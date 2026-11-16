@@ -2075,6 +2075,38 @@
     "Suez"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-16-digest",
+   "created": "2026-11-16",
+   "type": "digest",
+   "text": "No major change since Nov 15: Hormuz stays closed to normal traffic and Bab el-Mandeb disrupted. Brent held near $95/bbl (Nov 13) and US diesel eased to $6.13/gal, still 61% above pre-crisis.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "OilPrices",
+    "Commodities"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-16-chart-fuel-weekly",
+   "created": "2026-11-16",
+   "type": "chart",
+   "text": "Diesel prices since the Strait of Hormuz closed: US +61%, EU average +32%, UK +40% (week of Nov 9 vs week of Feb 23).",
+   "url": "https://strategicenergymap.org/fuel-prices/",
+   "event_id": null,
+   "image": "fuel-weekly",
+   "alt": "Bar chart of the change in diesel prices since the week of Feb 23, 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland.",
+   "video": null,
+   "tags": [
+    "FuelPrices",
+    "Diesel"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-11-17",
+   "kind": "data",
+   "headline": "Yemeni forces pull back from Bab el-Mandeb; Houthis retake strait-overlooking positions",
+   "changes": [
+    "Yemeni government-aligned forces withdrew from the Bab el-Mandeb area on Nov 15, letting the Houthis retake Perim Island and the Ras Menhali peninsula overlooking the strait's southern approach — reversing their early-October counteroffensive gains.",
+    "The tanker On Phoenix was struck by a projectile off Oman on Nov 16 while exiting the Strait of Hormuz; the crew was unharmed.",
+    "Saudi Arabia confirmed a brief fire on its East-West pipeline on Nov 9, and the Houthis made fresh unverified claims of strikes on the pipeline on Nov 12 and 15.",
+    "Brent eased to about $92.6/bbl and TTF to about €84/MWh as recovering Gulf exports offset the renewed attacks."
+   ]
+  },
+  {
    "date": "2026-11-15",
    "kind": "data",
    "headline": "Major carriers restore some Suez Canal routes as US extends oil-shipping waiver",

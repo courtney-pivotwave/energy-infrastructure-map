@@ -2107,6 +2107,54 @@
     "Diesel"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-17-digest",
+   "created": "2026-11-17",
+   "type": "digest",
+   "text": "Yemeni forces pulled back from Bab el-Mandeb on Nov 15; the Houthis retook Perim Island and the strait's southern approach. Brent eased to about $92.6/bbl as Gulf exports keep recovering.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Yemen",
+    "RedSea"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-17-event-tanker-on-phoenix",
+   "created": "2026-11-17",
+   "type": "event",
+   "text": "UKMTO: the tanker On Phoenix was struck by a projectile off Oman on Nov 16 exiting the Strait of Hormuz, sparking an engine-room fire. Crew unharmed, voyage continued (reported).",
+   "url": "https://strategicenergymap.org/events/#2026-11-16-tanker-on-phoenix-struck-oman",
+   "event_id": "2026-11-16-tanker-on-phoenix-struck-oman",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "Tankers"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-17-explainer-bab-el-mandeb",
+   "created": "2026-11-17",
+   "type": "explainer",
+   "text": "Bab el-Mandeb, between Yemen and Djibouti, is the Red Sea's southern gate: ~4.2 million b/d of oil passed through before the Houthi campaign (EIA). Yemeni forces just withdrew; Houthis retook Perim Island.",
+   "url": "https://strategicenergymap.org/chokepoints/bab-el-mandeb/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "MaritimeSecurity",
+    "RedSea"
+   ],
+   "reply_to": null
   }
  ]
 }

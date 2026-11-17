@@ -1,8 +1,103 @@
 {
- "updated": "2026-11-16",
- "situation_headline": "No major change since Nov 15: the Strait of Hormuz remains closed to normal commercial traffic and Bab el-Mandeb stays disrupted, while carriers continue restoring some Suez Canal routings and Brent holds near $95/bbl.",
+ "updated": "2026-11-17",
+ "situation_headline": "Yemeni forces withdrew from the Bab el-Mandeb area on Nov 15, letting the Houthis retake positions overlooking the strait's southern approach, as Hormuz tanker attacks continue and Brent eases to about $92.6/bbl on recovering Gulf exports.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-16-tanker-on-phoenix-struck-oman",
+   "date": "2026-11-16",
+   "title": "Tanker On Phoenix struck by projectile off Oman near Hormuz exit",
+   "summary": "UKMTO said the Panama-flagged tanker On Phoenix was struck by an unknown projectile about three nautical miles off the Omani coast while exiting the Strait of Hormuz on 16 November, sparking an engine-room fire; the crew was unharmed and the vessel continued its voyage. Iran's Revolutionary Guards separately claimed unrelated tanker mine strikes in the strait around the same time without naming vessels; no independent confirmation was found for those claims.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": ["strait-of-hormuz"],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "SpazioCrypto — Brent Below $92 as Hormuz Attacks Fail to Lift Oil Prices (citing UKMTO advisory 207-26)",
+     "url": "https://en.spaziocrypto.com/macroeconomics/brent-falls-below-92-hormuz-attacks-oil-price/",
+     "date": "2026-11-17"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-15-houthis-retake-bab-el-mandeb-positions",
+   "date": "2026-11-15",
+   "title": "Yemeni forces withdraw from Bab el-Mandeb area; Houthis retake Perim Island positions",
+   "summary": "Yemeni government-aligned Southern Armed Forces announced on 15 November they had withdrawn from Dhubab Airport and the Bab el-Mandeb area to reinforce Aden; CTP-ISW assessed this was a likely response to a Houthi offensive in southeastern Lahij on 12 November that threatened the Mokha-Aden supply route. The pullback let the Houthis reoccupy Ras Menhali peninsula and Perim (Mayyun) Island, which overlook the strait's southern approach, according to satellite-imagery analysis reported by The Maritime Executive — reversing the Yemeni government's early-October claim to have retaken the island during 'Operation Yemen Dawn.' Commercial shipping through the strait has continued without a reported rise in attacks since the handover.",
+   "category": "military",
+   "severity": "high",
+   "coords": [12.6667, 43.4167],
+   "assets": ["bab-el-mandeb"],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 15, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-15-2026-6afa2b8bbe2ed",
+     "date": "2026-11-15"
+    },
+    {
+     "name": "The Maritime Executive — Houthis Recapture Positions Overlooking Bab el Mandeb",
+     "url": "https://maritime-executive.com/article/houthis-recapture-positions-overlooking-the-bab-el-mandeb",
+     "date": "2026-11-15"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-15-houthi-pipeline-two-stations-claim",
+   "date": "2026-11-15",
+   "title": "Houthis claim drone strikes on two more East-West pipeline pumping stations",
+   "summary": "The Houthis said on 15 November they launched drones at two pumping stations on Saudi Arabia's East-West pipeline; CTP-ISW said it could not verify the claim. The Houthis separately claimed missile and drone strikes the same day on King Khalid International Airport and a 'financial center' in Riyadh, which Saudi Joint Forces Command said it intercepted along with drones near Mecca and Medina (Houthi claims, unverified).",
+   "category": "infrastructure",
+   "severity": "low",
+   "coords": null,
+   "assets": ["east-west-pipeline"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 15, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-15-2026-6afa2b8bbe2ed",
+     "date": "2026-11-15"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-12-houthi-pipeline-yanbu-claim",
+   "date": "2026-11-12",
+   "title": "Houthis claim new strikes on East-West pipeline pumping station and Yanbu facility",
+   "summary": "Yemen's Houthis said they struck a pumping station on Saudi Arabia's East-West pipeline and an oil facility at Yanbu on 12 November; a Houthi military spokesperson separately denied targeting Mecca. Saudi Arabia did not immediately respond, and Reuters found no independent confirmation of damage to either site (Houthi claim, unverified).",
+   "category": "infrastructure",
+   "severity": "low",
+   "coords": null,
+   "assets": ["east-west-pipeline", "yanbu-terminal"],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "bdnews24 (Reuters) — Houthis claim attacks on Saudi pipeline, Yanbu facility",
+     "url": "https://bdnews24.com/world/middle-east/3owqsboxcw",
+     "date": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-saudi-pipeline-fire-medina",
+   "date": "2026-11-09",
+   "title": "Saudi Arabia reports limited fire on East-West pipeline in Medina region",
+   "summary": "Saudi Arabia's Energy Ministry said the East-West pipeline was hit in the Medina region on 9 November, causing a brief fire that was extinguished; the Saudi Press Agency reported no injuries or fatalities and said pipeline operations were unaffected. No party was identified as responsible.",
+   "category": "infrastructure",
+   "severity": "low",
+   "coords": null,
+   "assets": ["east-west-pipeline"],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — Saudi Arabia reports new attack on key East-West pipeline",
+     "url": "https://www.aljazeera.com/news/2026/11/9/saudi-arabia-reports-new-attack-on-key-east-west-pipeline",
+     "date": "2026-11-09"
+    }
+   ]
+  },
   {
    "id": "2026-11-14-jones-act-waiver-90-day-extension",
    "date": "2026-11-14",

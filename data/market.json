@@ -1,29 +1,29 @@
 {
- "as_of": "2026-11-13",
+ "as_of": "2026-11-17",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 95.44,
-   "week_ago": 98.19,
+   "value": 92.61,
+   "week_ago": 92.57,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Rose to about $95.44 on 13 Nov (Trading Economics), up roughly 3.8% on the day but still about 2.8% below $98.19 a week earlier (Nov 6), after UKMTO and JMIC reported four tanker attacks near Hormuz and the UAE coast in about 48 hours, including a crude tanker set ablaze off Ras Al Khaimah on Nov 11.",
+   "note": "Eased to about $92.61/bbl by 09:10 GMT on 17 Nov (Reuters), little changed from the $92.57 settlement on 9 Nov, as a projected Q4 supply surplus from recovering Middle East exports offset a fresh tanker attack near Hormuz on 16 Nov; ANZ analysts put strait throughput at about 49% of pre-war levels.",
    "source": {
-    "name": "Trading Economics — Brent Crude Oil",
-    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-    "date": "2026-11-13"
+    "name": "Reuters, via Euronext — Oil prices caught between rising Mideast exports and tanker attacks",
+    "url": "https://live.euronext.com/en/financial-news/oil-prices-caught-between-rising-mideast-exports-and-tanker-attacks",
+    "date": "2026-11-17"
    },
    "extra_sources": [
     {
-     "name": "gCaptain — Tanker Ablaze Off UAE as More Attacks Rattle Gulf Shipping",
-     "url": "https://gcaptain.com/tanker-ablaze-off-uae-as-more-attacks-rattle-gulf-shipping/",
-     "date": "2026-11-12"
+     "name": "SpazioCrypto — Brent Below $92 as Hormuz Attacks Fail to Lift Oil Prices",
+     "url": "https://en.spaziocrypto.com/macroeconomics/brent-falls-below-92-hormuz-attacks-oil-price/",
+     "date": "2026-11-17"
     },
     {
      "name": "gCaptain (Reuters) — Recent Ukrainian Attacks Have Reduced Russia's Oil Processing Capacity By 30%, Sources Say",
@@ -36,19 +36,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 88.12,
-   "week_ago": 90.63,
+   "value": 85.73,
+   "week_ago": 86.85,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Rose to about $88.12 on 13 Nov (Trading Economics), up roughly 2.8% on the day but still about 2.8% below $90.63 a week earlier (Nov 6), tracking Brent's rebound on the fresh Gulf tanker attacks.",
+   "note": "Eased to about $85.73/bbl by 09:10 GMT on 17 Nov (Reuters), close to the $86.85 settlement on 9 Nov, tracking Brent as recovering Gulf exports offset renewed Hormuz tanker attacks.",
    "source": {
-    "name": "Trading Economics — Crude Oil (WTI)",
-    "url": "https://tradingeconomics.com/commodity/crude-oil",
-    "date": "2026-11-13"
+    "name": "Reuters, via Euronext — Oil prices caught between rising Mideast exports and tanker attacks",
+    "url": "https://live.euronext.com/en/financial-news/oil-prices-caught-between-rising-mideast-exports-and-tanker-attacks",
+    "date": "2026-11-17"
    },
    "extra_sources": [
     {
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 91.4,
-   "week_ago": 87.37,
+   "value": 84.18,
+   "week_ago": 91.4,
    "pre_crisis": 32.0,
    "peak": {
     "value": 102.89,
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Rose to about €91.40/MWh on 13 Nov (Trading Economics), up roughly 1.8% on the day and about 4.6% above €87.37 a week earlier (Nov 6).",
+   "note": "Eased to about €84.18/MWh on 17 Nov (Trading Economics), down from €91.40/MWh on 13 Nov.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-13"
+    "date": "2026-11-17"
    },
    "extra_sources": [
     {
@@ -93,19 +93,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 31.37,
-   "week_ago": 31.57,
+   "value": 27.58,
+   "week_ago": 31.37,
    "pre_crisis": 10.75,
    "peak": {
     "value": 32.84,
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Essentially flat at $31.37 as of Trading Economics' 12 Nov print, little changed from $31.57 a week earlier (Nov 6).",
+   "note": "Fell about 12% to $27.58 as of Trading Economics' 16 Nov print, down from $31.37 on 12-13 Nov.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-11-12"
+    "date": "2026-11-17"
    },
    "extra_sources": [
     {
@@ -124,14 +124,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.2684,
-   "week_ago": 3.0,
+   "value": 3.12,
+   "week_ago": 3.2684,
    "pre_crisis": 2.99,
-   "note": "Eased to about $3.27 on 13 Nov (Trading Economics), down roughly 2.1% on the day but still up about 9% from $3.00 a week earlier (Nov 6); the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Eased further to about $3.12 on 17 Nov (Trading Economics), down from $3.27 on 13 Nov; the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-11-13"
+    "date": "2026-11-17"
    },
    "extra_sources": [
     {
@@ -147,32 +147,27 @@
    ]
   }
  ],
- "note": "Oil rebounded on 13 November: Brent rose to about $95.44/bbl and WTI to about $88.12/bbl, up roughly 3% on the day, while TTF firmed to about €91.40/MWh. UKMTO and JMIC reported four tanker attacks near the Strait of Hormuz and the UAE coast within about 48 hours, including a crude tanker set ablaze off Ras Al Khaimah on Nov 11, reversing some of the prior week's pullback. Qatar's LNG loadings have climbed to roughly half the pre-war pace (Bloomberg/Kpler), even as Poland's Orlen became the first QatarEnergy customer to cancel a long-term LNG contract over the disruption.",
+ "note": "Oil eased back on 17 November: Brent slipped to about $92.61/bbl and WTI to about $85.73/bbl (Reuters, 09:10 GMT), while TTF fell to about €84.18/MWh and JKM dropped roughly 12% to $27.58. Recovering Middle East exports and the IEA's forecast Q4 supply surplus offset a fresh tanker attack near the Strait of Hormuz on 16 November (the tanker On Phoenix, struck off Oman); ANZ analysts put Hormuz throughput at about 49% of pre-war levels. In Yemen, government-aligned forces withdrew from the Bab el-Mandeb area on 15 November, letting the Houthis retake positions overlooking the strait's southern approach.",
  "note_sources": [
   {
-   "name": "Trading Economics — Brent Crude Oil",
-   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "date": "2026-11-13"
+   "name": "Reuters, via Euronext — Oil prices caught between rising Mideast exports and tanker attacks",
+   "url": "https://live.euronext.com/en/financial-news/oil-prices-caught-between-rising-mideast-exports-and-tanker-attacks",
+   "date": "2026-11-17"
   },
   {
-   "name": "gCaptain — Tanker Ablaze Off UAE as More Attacks Rattle Gulf Shipping",
-   "url": "https://gcaptain.com/tanker-ablaze-off-uae-as-more-attacks-rattle-gulf-shipping/",
-   "date": "2026-11-12"
+   "name": "SpazioCrypto — Brent Below $92 as Hormuz Attacks Fail to Lift Oil Prices",
+   "url": "https://en.spaziocrypto.com/macroeconomics/brent-falls-below-92-hormuz-attacks-oil-price/",
+   "date": "2026-11-17"
   },
   {
-   "name": "gCaptain (Reuters) — Recent Ukrainian Attacks Have Reduced Russia's Oil Processing Capacity By 30%, Sources Say",
-   "url": "https://gcaptain.com/recent-ukrainian-attacks-have-reduced-russias-oil-processing-capacity-by-30-sources-say/",
-   "date": "2026-11-10"
+   "name": "Critical Threats Project / ISW — Iran Update, November 15, 2026",
+   "url": "https://www.criticalthreats.org/analysis/iran-update-november-15-2026-6afa2b8bbe2ed",
+   "date": "2026-11-15"
   },
   {
-   "name": "gCaptain (Bloomberg) — Qatar LNG Loadings Pick Up to Around Half of Pre-War Levels",
-   "url": "https://gcaptain.com/qatar-lng-loadings-pick-up-to-around-half-of-pre-war-levels/",
-   "date": "2026-11-10"
-  },
-  {
-   "name": "gCaptain (Bloomberg) — Qatar Loses First LNG Customer Since War Disrupted Flows",
-   "url": "https://gcaptain.com/qatar-loses-first-lng-customer-since-war-disrupted-flows/",
-   "date": "2026-11-11"
+   "name": "The Maritime Executive — Houthis Recapture Positions Overlooking Bab el Mandeb",
+   "url": "https://maritime-executive.com/article/houthis-recapture-positions-overlooking-the-bab-el-mandeb",
+   "date": "2026-11-15"
   }
  ]
 }

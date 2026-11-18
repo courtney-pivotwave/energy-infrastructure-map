@@ -1,34 +1,29 @@
 {
- "as_of": "2026-11-17",
+ "as_of": "2026-11-18",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 92.61,
-   "week_ago": 92.57,
+   "value": 91.99,
+   "week_ago": 93.43,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Eased to about $92.61/bbl by 09:10 GMT on 17 Nov (Reuters), little changed from the $92.57 settlement on 9 Nov, as a projected Q4 supply surplus from recovering Middle East exports offset a fresh tanker attack near Hormuz on 16 Nov; ANZ analysts put strait throughput at about 49% of pre-war levels.",
+   "note": "Fell to about $91.99/bbl by 09:20 GMT on 18 Nov (Reuters), down 1.2% on the day and on track for a ~20% monthly decline, as US crude stocks rose 5.28 million barrels (EIA, week to 13 Nov) and Middle East exports kept recovering. Losses were limited by a fresh round of US-Iran strikes: the US hit an IRGC missile site on Qeshm Island on 17 Nov after an Iranian drone attack on the US base in Bahrain, and Houthi drones targeted East-West pipeline pumping stations.",
    "source": {
-    "name": "Reuters, via Euronext — Oil prices caught between rising Mideast exports and tanker attacks",
-    "url": "https://live.euronext.com/en/financial-news/oil-prices-caught-between-rising-mideast-exports-and-tanker-attacks",
-    "date": "2026-11-17"
+    "name": "Reuters, via Investing.com — Oil prices fall as higher US crude stocks temper supply risks",
+    "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544",
+    "date": "2026-11-18"
    },
    "extra_sources": [
     {
-     "name": "SpazioCrypto — Brent Below $92 as Hormuz Attacks Fail to Lift Oil Prices",
-     "url": "https://en.spaziocrypto.com/macroeconomics/brent-falls-below-92-hormuz-attacks-oil-price/",
+     "name": "The National — US jets strike IRGC missile launch site on Iran's Qeshm Island in 'self-defence'",
+     "url": "https://www.thenationalnews.com/news/us/2026/11/17/us-jets-strike-irgc-missile-launch-site-on-irans-qeshm-island-in-self-defence/",
      "date": "2026-11-17"
-    },
-    {
-     "name": "gCaptain (Reuters) — Recent Ukrainian Attacks Have Reduced Russia's Oil Processing Capacity By 30%, Sources Say",
-     "url": "https://gcaptain.com/recent-ukrainian-attacks-have-reduced-russias-oil-processing-capacity-by-30-sources-say/",
-     "date": "2026-11-10"
     }
    ]
   },
@@ -36,19 +31,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 85.73,
-   "week_ago": 86.85,
+   "value": 84.34,
+   "week_ago": 87.12,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "Eased to about $85.73/bbl by 09:10 GMT on 17 Nov (Reuters), close to the $86.85 settlement on 9 Nov, tracking Brent as recovering Gulf exports offset renewed Hormuz tanker attacks.",
+   "note": "Fell to about $84.34/bbl by 18 Nov (Reuters), down 2% on the day, correcting more than Brent as WTI arbitrage trades to Asia and Northwest Europe stay shut; US crude and gasoline stockpiles rose in the week to 13 Nov (EIA).",
    "source": {
-    "name": "Reuters, via Euronext — Oil prices caught between rising Mideast exports and tanker attacks",
-    "url": "https://live.euronext.com/en/financial-news/oil-prices-caught-between-rising-mideast-exports-and-tanker-attacks",
-    "date": "2026-11-17"
+    "name": "Reuters, via Investing.com — Oil prices fall as higher US crude stocks temper supply risks",
+    "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544",
+    "date": "2026-11-18"
    },
    "extra_sources": [
     {
@@ -62,19 +57,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 84.18,
-   "week_ago": 91.4,
+   "value": 82.66,
+   "week_ago": 86.91,
    "pre_crisis": 32.0,
    "peak": {
     "value": 102.89,
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Eased to about €84.18/MWh on 17 Nov (Trading Economics), down from €91.40/MWh on 13 Nov.",
+   "note": "Fell 3.2% to about €82.66/MWh on 18 Nov (Trading Economics), extending its pullback from the late-October highs.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-17"
+    "date": "2026-11-18"
    },
    "extra_sources": [
     {
@@ -93,19 +88,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 27.58,
-   "week_ago": 31.37,
+   "value": 27.77,
+   "week_ago": 31.34,
    "pre_crisis": 10.75,
    "peak": {
     "value": 32.84,
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Fell about 12% to $27.58 as of Trading Economics' 16 Nov print, down from $31.37 on 12-13 Nov.",
+   "note": "Little changed at about $27.77/MMBtu on Trading Economics' 18 Nov print, up slightly from $27.58 a day earlier.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-11-17"
+    "date": "2026-11-18"
    },
    "extra_sources": [
     {
@@ -124,14 +119,14 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.12,
-   "week_ago": 3.2684,
+   "value": 3.21,
+   "week_ago": 3.31,
    "pre_crisis": 2.99,
-   "note": "Eased further to about $3.12 on 17 Nov (Trading Economics), down from $3.27 on 13 Nov; the US price stays largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Held near $3.21/MMBtu on 18 Nov (Trading Economics), little changed and still largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
-    "date": "2026-11-17"
+    "date": "2026-11-18"
    },
    "extra_sources": [
     {
@@ -147,27 +142,27 @@
    ]
   }
  ],
- "note": "Oil eased back on 17 November: Brent slipped to about $92.61/bbl and WTI to about $85.73/bbl (Reuters, 09:10 GMT), while TTF fell to about €84.18/MWh and JKM dropped roughly 12% to $27.58. Recovering Middle East exports and the IEA's forecast Q4 supply surplus offset a fresh tanker attack near the Strait of Hormuz on 16 November (the tanker On Phoenix, struck off Oman); ANZ analysts put Hormuz throughput at about 49% of pre-war levels. In Yemen, government-aligned forces withdrew from the Bab el-Mandeb area on 15 November, letting the Houthis retake positions overlooking the strait's southern approach.",
+ "note": "Oil extended its slide on 18 November: Brent fell to about $91.99/bbl (-1.2%) and WTI to $84.34 (-2%) by 09:20 GMT (Reuters), as US crude and gasoline stockpiles rose in the week to 13 Nov and recovering Middle East exports pointed to a Q4 supply surplus; both benchmarks were on track for a roughly 20% monthly decline. The losses were capped by a fresh round of US-Iran strikes — Iran's IRGC claimed a drone attack on the US base in Bahrain on 17 Nov, which CENTCOM said it intercepted, and the US then struck an IRGC missile site on Qeshm Island in the Strait of Hormuz the same day — plus Houthi drones aimed at Saudi Arabia's East-West pipeline pumping stations. TTF fell 3.2% to about €82.66/MWh and JKM was little changed near $27.77; Henry Hub held near $3.21, still largely insulated from the Gulf and Red Sea turmoil.",
  "note_sources": [
   {
-   "name": "Reuters, via Euronext — Oil prices caught between rising Mideast exports and tanker attacks",
-   "url": "https://live.euronext.com/en/financial-news/oil-prices-caught-between-rising-mideast-exports-and-tanker-attacks",
+   "name": "Reuters, via Investing.com — Oil prices fall as higher US crude stocks temper supply risks",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544",
+   "date": "2026-11-18"
+  },
+  {
+   "name": "Trading Economics — EU Natural Gas (TTF)",
+   "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+   "date": "2026-11-18"
+  },
+  {
+   "name": "The National — US jets strike IRGC missile launch site on Iran's Qeshm Island in 'self-defence'",
+   "url": "https://www.thenationalnews.com/news/us/2026/11/17/us-jets-strike-irgc-missile-launch-site-on-irans-qeshm-island-in-self-defence/",
    "date": "2026-11-17"
   },
   {
-   "name": "SpazioCrypto — Brent Below $92 as Hormuz Attacks Fail to Lift Oil Prices",
-   "url": "https://en.spaziocrypto.com/macroeconomics/brent-falls-below-92-hormuz-attacks-oil-price/",
+   "name": "Critical Threats Project / ISW — Iran Update, November 17, 2026",
+   "url": "https://www.criticalthreats.org/analysis/iran-update-november-17-2026",
    "date": "2026-11-17"
-  },
-  {
-   "name": "Critical Threats Project / ISW — Iran Update, November 15, 2026",
-   "url": "https://www.criticalthreats.org/analysis/iran-update-november-15-2026-6afa2b8bbe2ed",
-   "date": "2026-11-15"
-  },
-  {
-   "name": "The Maritime Executive — Houthis Recapture Positions Overlooking Bab el Mandeb",
-   "url": "https://maritime-executive.com/article/houthis-recapture-positions-overlooking-the-bab-el-mandeb",
-   "date": "2026-11-15"
   }
  ]
 }

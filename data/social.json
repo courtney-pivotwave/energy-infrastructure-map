@@ -2155,6 +2155,38 @@
     "RedSea"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-18-digest",
+   "created": "2026-11-18",
+   "type": "digest",
+   "text": "Iran claimed a drone strike on the US base in Bahrain on Nov 17; the US said it hit an IRGC missile site on Qeshm Island in response (reported). Brent eased to about $92/bbl and WTI to $84 on Nov 18.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-18-explainer-strait-of-hormuz",
+   "created": "2026-11-18",
+   "type": "explainer",
+   "text": "The Strait of Hormuz, between Iran and Oman, is the world's top energy chokepoint: ~20 million b/d of oil, a fifth of global demand. Closed since February; throughput is near 49% of pre-war levels (ANZ).",
+   "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "MaritimeSecurity",
+    "OOTT"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -2223,6 +2223,23 @@
     "at": "2026-11-17T19:51:36.764Z",
     "media": "locator-card"
    }
+  },
+  "2026-11-17-explainer-bab-el-mandeb": {
+   "x": {
+    "id": "2123006564659257378",
+    "at": "2026-11-18T10:53:03.465Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2lfcgmrfa2d",
+    "cid": "bafyreicevzgbs4yzjpxafhfyca2c45um5kfwqfw47ggddehtnlk6kvrpdu",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2lfcgmrfa2d",
+     "cid": "bafyreicevzgbs4yzjpxafhfyca2c45um5kfwqfw47ggddehtnlk6kvrpdu"
+    },
+    "at": "2026-11-18T10:53:05.447Z",
+    "media": "asset-card"
+   }
   }
  }
 }

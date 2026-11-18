@@ -8,6 +8,7 @@
  "countries_pct": { "US": 34, "SG": 22, "CN": 5, "DE": 4, "GB": 2 },
  "devices_pct": { "desktop": 86, "mobile": 14 },
  "change_vs_previous_7_days": { "visitors_pct": -3, "page_views_pct": -4, "bounce_rate_pts": 1 },
+ "likely_automated": { "visitors": 93, "page_views": 99, "why": "Singapore, up 323% on the week before: no referrer on any visit, 100% desktop, 95% Windows, one page per visit, spread across deep chokepoint and facility pages. Real visitors are likely nearer 322." },
  "note": "Vercel's 'Last 7 days' view as of Nov 17 (about Nov 10–16), one day off the metrics week of Nov 9–15. Includes the owner's own visits unless opted out with ?notrack=1. Bounce rate overstates leaving: map interactions don't count as page views.",
  "how": "Vercel → energy-infrastructure-map → Analytics, last 7 days, production. Replace the numbers and set week_ending to the Sunday the week ends on. Copied by hand because Vercel's analytics API isn't available for this project."
 }

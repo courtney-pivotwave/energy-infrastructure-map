@@ -1,10 +1,13 @@
 {
- "week_ending": "2026-09-29",
- "visitors": 70,
- "page_views": 96,
- "bounce_rate": 0.81,
- "top_pages": { "/": 52, "/chokepoints/strait-of-hormuz": 7, "/facilities": 6, "/events": 4 },
- "referrers": { "google.com": 6, "bing.com": 1, "t.co": 1 },
- "note": "Sep 29 baseline from docs/growth-log.md (7 days to Sep 29; includes the owner's own visits).",
+ "week_ending": "2026-11-15",
+ "visitors": 415,
+ "page_views": 503,
+ "bounce_rate": 0.89,
+ "top_pages": { "/chokepoints/strait-of-hormuz": 137, "/dashboard": 71, "/": 55, "/events": 42, "/chokepoints/bab-el-mandeb": 26, "/facilities/east-west-pipeline": 10, "/chokepoints/panama-canal": 8 },
+ "referrers": { "google.com": 30, "bing.com": 23, "duckduckgo.com": 15, "baidu.com": 11, "facebook.com": 4, "perplexity.ai": 4, "search.yahoo.com": 3 },
+ "countries_pct": { "US": 34, "SG": 22, "CN": 5, "DE": 4, "GB": 2 },
+ "devices_pct": { "desktop": 86, "mobile": 14 },
+ "change_vs_previous_7_days": { "visitors_pct": -3, "page_views_pct": -4, "bounce_rate_pts": 1 },
+ "note": "Vercel's 'Last 7 days' view as of Nov 17 (about Nov 10–16), one day off the metrics week of Nov 9–15. Includes the owner's own visits unless opted out with ?notrack=1. Bounce rate overstates leaving: map interactions don't count as page views.",
  "how": "Vercel → energy-infrastructure-map → Analytics, last 7 days, production. Replace the numbers and set week_ending to the Sunday the week ends on. Copied by hand because Vercel's analytics API isn't available for this project."
 }

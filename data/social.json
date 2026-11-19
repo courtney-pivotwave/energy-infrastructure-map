@@ -2187,6 +2187,38 @@
     "OOTT"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-19-digest",
+   "created": "2026-11-19",
+   "type": "digest",
+   "text": "Iran's drones hit a Kuwaiti air base on Nov 18, a day after the US struck an IRGC site on Qeshm Island; Kuwait says it intercepted the attack. Iran's navy also claimed a new, unverified Hormuz mine strike. Brent settled near $92/bbl.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Kuwait",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-19-chart-chokepoints-weekly",
+   "created": "2026-11-19",
+   "type": "chart",
+   "text": "Tanker traffic through energy chokepoints, 7-day average to Nov 15: Strait of Hormuz down 99% to 0.4/day, Bab el-Mandeb down 27% to 8.9/day, Suez Canal down 4% to 15.0/day (IMF PortWatch).",
+   "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
+   "event_id": null,
+   "image": "chokepoints-weekly",
+   "alt": "Bar chart of the change in 7-day average daily tanker transits vs the Sep 2025-Feb 2026 baseline for the Strait of Hormuz, Turkish Straits, Bab el-Mandeb, Strait of Malacca, Suez Canal and Panama Canal.",
+   "video": null,
+   "tags": [
+    "Tankers",
+    "DataViz"
+   ],
+   "reply_to": null
   }
  ]
 }

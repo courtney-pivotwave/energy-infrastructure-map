@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-19",
+   "kind": "data",
+   "headline": "Iran strikes Kuwait air base, claims new Hormuz mine strike",
+   "changes": [
+    "Iran's military said it targeted a Kuwaiti air base with drones on Nov 18, which Kuwait said it intercepted; Bahrain reported repelling further Iranian attacks the same day.",
+    "Iran's navy claimed a new, unverified mine strike on a ship taking an \"unauthorized route\" through the Strait of Hormuz.",
+    "Brent crude settled near $92/bbl as rising US crude stocks offset the renewed Gulf tensions."
+   ]
+  },
+  {
    "date": "2026-11-18",
    "kind": "data",
    "headline": "US strikes IRGC missile site on Qeshm Island after Iran targets US base in Bahrain",

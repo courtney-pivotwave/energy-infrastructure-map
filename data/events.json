@@ -1,8 +1,28 @@
 {
- "updated": "2026-11-18",
- "situation_headline": "Iran's IRGC claimed a drone strike on the US base in Bahrain on Nov 17; the US said it struck an IRGC missile site on Qeshm Island, in the Strait of Hormuz, in response. Brent extended its slide to about $92/bbl on Nov 18 as US crude stocks rose.",
+ "updated": "2026-11-19",
+ "situation_headline": "Iran struck Kuwait's Ali al-Salem air base and claimed a new Hormuz mine strike on Nov 18, a day after the US hit an IRGC missile site on Qeshm Island; Brent settled near $92/bbl as rising US crude stocks offset the Gulf tensions.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-18-irgc-hormuz-mine-claim-kuwait-strikes",
+   "date": "2026-11-18",
+   "title": "Iran strikes Kuwait air base; IRGC claims new Hormuz mine strike",
+   "summary": "Iran's Artesh said its drones targeted Patriot air-defense systems and launchers at Kuwait's Ali al-Salem Air Base on 18 November; Kuwait's Army General Staff said its air defenses intercepted the drones, with no reported damage or casualties. Bahrain's Defense Force separately said it repelled several further Iranian aerial attacks the same day. Iran's IRGC Navy also claimed a vessel struck a naval mine and exploded on an \"unauthorized route\" through the Strait of Hormuz on 18 November, without naming the ship or giving casualty details; CTP-ISW said it has not observed evidence that Iran has successfully re-mined the strait's southern transit route (IRGC claim, unverified).",
+   "category": "military",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 18, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-18-2026",
+     "date": "2026-11-18"
+    }
+   ]
+  },
   {
    "id": "2026-11-17-us-strikes-qeshm-island-irgc-missile-site",
    "date": "2026-11-17",

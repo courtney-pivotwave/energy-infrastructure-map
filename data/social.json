@@ -2219,6 +2219,38 @@
     "DataViz"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-20-digest",
+   "created": "2026-11-20",
+   "type": "digest",
+   "text": "A Houthi missile hit a tower in Riyadh's financial district on Nov 19. The group also claimed unverified strikes on Jubail's petrochemical complex and Jizan. Brent near $92/bbl as Reuters reports Russian oil refining down ~45% since late Oct.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "SaudiArabia",
+    "Refining"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-20-explainer-riyadh-refinery",
+   "created": "2026-11-20",
+   "type": "explainer",
+   "text": "Aramco's Riyadh Refinery, the capital's only major refinery, runs ~126,000 b/d via the East-West pipeline, not a coastal terminal. Disrupted since an Oct 3 strike, as Houthi missiles keep targeting Riyadh.",
+   "url": "https://strategicenergymap.org/facilities/riyadh-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Pipelines",
+    "SaudiArabia"
+   ],
+   "reply_to": null
   }
  ]
 }

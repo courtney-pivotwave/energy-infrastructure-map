@@ -1,8 +1,52 @@
 {
- "updated": "2026-11-19",
- "situation_headline": "Iran struck Kuwait's Ali al-Salem air base and claimed a new Hormuz mine strike on Nov 18, a day after the US hit an IRGC missile site on Qeshm Island; Brent settled near $92/bbl as rising US crude stocks offset the Gulf tensions.",
+ "updated": "2026-11-20",
+ "situation_headline": "A Houthi missile hit a tower in Riyadh's financial district on Nov 19; the group also claimed unverified strikes on a Jubail petrochemical complex and Jizan. Reuters reports Ukrainian strikes have cut Russian oil refining by about 45% since late October. Brent settled near $92/bbl.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-19-houthi-jubail-jizan-claims-riyadh-tower",
+   "date": "2026-11-19",
+   "title": "Houthis claim strikes on Jubail petrochemical complex, Jizan; missile hits Riyadh tower",
+   "summary": "Yemen's Houthis said on 18-19 November they struck the Saudi Petrochemical Company (Sadaf) complex in Jubail, Eastern Province, and an unspecified \"sensitive target\" in Jizan province, home to Aramco's Jazan refinery; CTP-ISW said it could not confirm either claim (Houthi claims, unverified). Separately, a missile damaged the Public Investment Fund tower in Riyadh's King Abdullah Financial District on 19 November, Saudi officials and Reuters reported (three sources); the Houthis had claimed missile and drone attacks on Riyadh's airport and financial district that day but did not immediately claim the tower itself. No energy facility was reported hit in the Riyadh strike.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "jubail-industrial-complex",
+    "jazan-refinery"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 19, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-19-2026",
+     "date": "2026-11-19"
+    },
+    {
+     "name": "The National — Saudi Arabia says Houthi attack hit wealth fund PIF tower in Riyadh",
+     "url": "https://www.thenationalnews.com/news/gulf/2026/11/19/saudi-sovereign-wealth-fund-tower-in-riyadh-damaged-in-houthi-strike/",
+     "date": "2026-11-19"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-russia-refinery-processing-down-45pct",
+   "date": "2026-11-18",
+   "title": "Ukrainian drone strikes cut Russian oil refining by about 45% since late October, Reuters reports",
+   "summary": "Industry sources told Reuters that Ukrainian drone attacks have cut Russia's combined crude processing by about 45% since late October, with operations disrupted or halted at 15 of the country's 35 major refineries, up from nine a week earlier. Combined processing fell to roughly 400,000 tonnes a day (about 3 million b/d), from more than 700,000 tonnes a day at the end of October; named plants include refineries at Ryazan, Yaroslavl and Kirishi plus sites in the Volga region. November's monthly average remains above 500,000 tonnes a day, 5-10% below the September-October level. Russia's energy ministry did not respond to Reuters' request for comment.",
+   "category": "infrastructure",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Reuters, via TimesLIVE — Ukraine drone strikes wiped out 45% of Russia's oil refining in November",
+     "url": "https://www.timeslive.co.za/news/world/2026-11-18-ukraine-drone-strikes-wiped-out-45-of-russias-oil-refining-in-november/",
+     "date": "2026-11-18"
+    }
+   ]
+  },
   {
    "id": "2026-11-18-irgc-hormuz-mine-claim-kuwait-strikes",
    "date": "2026-11-18",

@@ -34,6 +34,12 @@ const fmtMonth = d => new Date(d + '-01T00:00:00Z').toLocaleDateString('en-US', 
 const n = (v, dp = 1) => (v == null || isNaN(v)) ? '—' : Number(v).toFixed(dp);
 const pct = (a, b) => (a != null && b) ? (a - b) / b * 100 : null;
 const signed = (p, dp = 0) => p == null ? '—' : `${p >= 0 ? '+' : '−'}${Math.abs(p).toFixed(dp)}%`;
+// Sentences, without splitting decimals ("~1.5 million") or initials mid-sentence
+const sentences = t => String(t || '').trim().split(/(?<!\b(?:Co|Inc|Corp|Ltd|St|Mt|No|vs|approx|U\.S|e\.g|i\.e)\.)(?<=[.!?])\s+(?=[A-Z~("'])/).filter(Boolean);
+// Stored summaries still carry some day-first dates ("11 Sep"); pages and previews go to a US audience, month first
+const usDates = t => String(t || '')
+  .replace(/\b(\d{1,2})[-–](\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)([a-z]*)\b/g, '$3$4 $1–$2') // "21-22 Sep" → "Sep 21–22"
+  .replace(/(?<![\d–-])\b(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)([a-z]*)\b/g, '$2$3 $1');
 const firstSentences = (t, k = 2) => (String(t || '').match(/[^.!?]+[.!?]+(\s|$)/g) || [t]).slice(0, k).join('').trim();
 const lower = s => s.charAt(0).toLowerCase() + s.slice(1);
 const events = (eventsData.events || []).slice().sort((a, b) => b.date.localeCompare(a.date));
@@ -59,6 +65,63 @@ const hasPage = id => REG[id]?.type === 'chokepoint' || (REG[id]?.type === 'faci
   (REG[id].geo || ((statusOf(id) || eventsFor(id).length) && String(REG[id].details || '').length >= 250)));
 const urlFor = id => REG[id]?.type === 'chokepoint' ? `/chokepoints/${id}/` : hasPage(id) ? `/facilities/${id}/` : `/facilities/#${id}`;
 const link = id => REG[id] ? `<a href="${urlFor(id)}">${esc(REG[id].name)}</a>` : esc(id);
+
+// ── What a facility is, in words a search result can show: kind, place or route, and capacity. Used for the
+// facility pages' titles, descriptions and opening answer. Only figures the data states plainly: the structured
+// `capacity`, or a single current figure in `details` (not a range, a past peak, a plan, or a figure in brackets
+// about one part of a hub). Ports and hubs need the word "capacity" beside it, so a throughput doesn't pass for one ──
+const KIND = { 'Oil pipeline': 'oil pipeline', 'Gas pipeline': 'gas pipeline', 'LNG terminal': 'LNG terminal', 'Port / transit hub': 'energy hub',
+  Refinery: 'refinery', 'Production site': 'production site', 'Oil field': 'oil field', 'Gas field': 'gas field' };
+const capacityPhrase = a => {
+  const words = (v, u) => {
+    v = Number(v);
+    if (u === 'mb/d') return `${+v.toFixed(2)} million b/d`;
+    if (u === 'kb/d') return v >= 1000 ? `${+(v / 1000).toFixed(2)} million b/d` : `${Math.round(v * 1000).toLocaleString('en-US')} b/d`;
+    if (u === 'b/d') return `${Math.round(v).toLocaleString('en-US')} b/d`;
+    if (u === 'bcm/y') return `${+v.toFixed(1)} bcm a year`;
+    if (u === 'mtpa') return `${+v.toFixed(1)} million tonnes a year`;
+    return null;
+  };
+  if (a.capacity) return words(a.capacity.value, a.capacity.unit);
+  const t = String(a.details || '').replace(/\([^)]*\)/g, m => ' '.repeat(m.length)); // ignore bracketed asides
+  const hub = a.tag === 'Port / transit hub';
+  const found = [...new Set([...t.matchAll(/(?<![\d.]\s?[-–]\s?)~?(\d[\d.,]*)(\+?)\s*(M|K)?\s*(million bpd|million b\/d|mb\/d|kb\/d|bpd|b\/d|bcm\/yr|bcm\/year|bcm\/y|mtpa)(?![\w/])(?!\s?[-–]\s?\d)/gi)].flatMap(m => {
+    const before = t.slice(Math.max(0, m.index - 70), m.index), after = t.slice(m.index + m[0].length, m.index + m[0].length + 30);
+    if (/\b(peak|peaked|historically|once|was|were|estimat|adding|expanding|expansion|planned|target|drawdown|release|potential)/i.test(before + ' ' + after.split(/[.;]/)[0])) return [];
+    if (hub && !/capacity/i.test(before.slice(-25) + after)) return [];
+    let v = parseFloat(m[1].replace(/,/g, '')), u = m[4].toLowerCase();
+    if (m[3]?.toUpperCase() === 'M') v *= 1e6; else if (m[3]?.toUpperCase() === 'K') v *= 1e3;
+    if (u.startsWith('million b') || u === 'mb/d') return [words(v, 'mb/d')];
+    if (u === 'kb/d') return [words(v, 'kb/d')];
+    if (u === 'bpd' || u === 'b/d') return [v >= 1e6 ? words(v / 1e6, 'mb/d') : words(v, 'b/d')];
+    return [words(v, u.startsWith('bcm') ? 'bcm/y' : 'mtpa')];
+  }))];
+  return found.length === 1 ? found[0] : null; // two different figures: say neither
+};
+// "Egypt: …", "Saudi Arabia. Saudi Aramco. …", "Louisiana, USA. …" → the place, when the description opens with one
+const placeOf = a => {
+  const d = String(a.details || '');
+  const m = d.match(/^([A-Z][A-Za-z'’]+(?:[ -][A-Z][A-Za-z'’]+)*(?:, USA)?(?: \([^)]{2,40}\))?)\s*[:.]\s/);
+  return m && m[1].length <= 40 && !/\b(Refinery|Pipeline|Field|Terminal|Port|Group|Company|Corporation|Aramco|Rosneft|ADNOC|BP|Shell|Major|Strategic|Southern|Northern|Spur|Multiple|Refined)\b/.test(m[1]) ? m[1] : null;
+};
+// Pipelines: "Russia (Yamal Peninsula) through Belarus and Poland to Germany" → "Russia to Germany"
+const routeOf = a => {
+  if (!a.tag.endsWith('pipeline')) return null;
+  const place = placeOf(a), d = String(a.details || '');
+  const first = (place ? d.slice(d.indexOf(place) + place.length).replace(/^\s*[:.]\s*/, '') : d).split(/\.\s/)[0].replace(/\s*\([^)]*\)/g, '');
+  const m = first.match(/^([A-Z][A-Za-z' -]{1,30}?)\s+(?:through\s+[^.]+?\s+)?to\s+([A-Za-z][A-Za-z' -]{1,30}?)(?:\s+(?:via|at)\b|,|$)/);
+  return m && !/\b(from|spur|branch)\b/i.test(m[1]) ? `${m[1].trim()} to ${m[2].trim()}` : null;
+};
+const describeFacility = a => {
+  // "Port / transit hub" covers ports, terminals, storage and Abqaiq's processing plant: say which, from the name
+  const hubKind = n => /processing (facility|plant)/i.test(n) ? 'crude processing plant' : /reserve/i.test(n) ? 'emergency oil reserve'
+    : /terminal/i.test(n) ? 'oil terminal' : /\bport\b/i.test(n) ? 'oil port' : 'energy hub';
+  const kind = a.tag === 'Port / transit hub' ? hubKind(a.name) : KIND[a.tag] || lower(a.tag), route = routeOf(a), cap = capacityPhrase(a);
+  // A place the name already gives ("Mina Abdullah refinery (Kuwait)") isn't repeated
+  const p = placeOf(a), place = p && !a.name.toLowerCase().includes(p.split(/[ (]/)[0].toLowerCase()) ? p : null;
+  const named = /\b(pipeline|refinery|refineries|terminal|field|fields|port|plant|facility|hub|complex|LNG|basin|corridor|stream|reserve|sands|belt)\b/i.test(a.name);
+  return { kind, place, route, cap, named };
+};
 
 function sourcesHTML(sources, label = 'Sources') {
   const seen = new Set();
@@ -290,9 +353,28 @@ for (const id of facilityIds) {
   if (!hasPage(id)) continue;
   const a = REG[id], st = statusOf(id), evs = eventsFor(id), roles = scenarioRoles(id);
   const near = facilityIds.filter(x => x !== id).map(x => [x, haversine(a.center, REG[x].center)]).sort((p, q) => p[1] - q[1]).slice(0, 6);
+  // What it is, in one sentence: kind, route or place, capacity. Then why it matters, or its live status.
+  const d = describeFacility(a);
+  const producer = /field|production/.test(d.kind);
+  const inPlace = d.place && (/^(Netherlands|UAE|US|UK|United |Philippines)\b/.test(d.place) ? `the ${d.place}` : d.place);
+  const what = `${a.name} is ${/^([aeiou]|LNG)/i.test(d.kind) ? 'an' : 'a'} ${d.kind}${d.route ? ` running from ${d.route}` : inPlace ? ` in ${inPlace}` : ''}${d.cap ? `, ${producer ? 'producing' : 'with capacity of'} about ${d.cap}` : ''}.`;
+  const plainRoles = roles.map(r => r.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&'));
+  const why = a.geo ? sentences(a.geo)[0] : sentences(a.details).slice(1, 2).join(' ');
   const lead = st
-    ? `${a.name} is currently ${lower(STATUS_LABEL[st.status])}${st.since ? ` (since ${fmtDate(st.since)})` : ''}: ${st.summary}`
-    : firstSentences(a.details, 2);
+    ? `${a.name} is currently ${lower(STATUS_LABEL[st.status])}${st.since ? ` (since ${fmtDate(st.since)})` : ''}: ${usDates(st.summary)}`
+    : [what, why, plainRoles[0]].filter(Boolean).join(' ');
+  // Search results show about 155 characters: whole sentences up to that. A disrupted asset leads with its status and
+  // what happened; anything else with what it is.
+  const SINCE = { closed: 'has been closed', damaged: 'has been damaged', offline: 'has been offline', disrupted: 'has been disrupted', reduced: 'has been running below normal' };
+  const summary = st ? `${a.name} ${SINCE[st.status] || `has been ${lower(STATUS_LABEL[st.status] || st.status)}`}${st.since ? ` since ${fmtDate(st.since)}` : ''}. ${usDates(sentences(st.summary)[0])} ${what.replace(`${a.name} is `, 'It is ')}` : lead;
+  // Whole sentences up to about 200 characters (Google shows ~155 and cuts the rest with an ellipsis)
+  const parts = sentences(summary);
+  let description = parts.reduce((out, x) => !out || (out + ' ' + x).length <= 200 ? (out ? `${out} ${x}` : x) : out, '');
+  // Too short to say much: add the start of the next sentence, cut at a word
+  const next = parts.find(x => !description.includes(x));
+  if (description.length < 110 && next) description += ' ' + next.slice(0, 165 - description.length).replace(/\s+\S*$/, '').replace(/[,;:—–-]$/, '') + '…';
+  const where = d.route || d.place;
+  const title = `${a.name}${st ? ` (${lower(STATUS_LABEL[st.status])})` : ''}: ${[d.named ? null : d.kind, where, d.cap].filter(Boolean).join(', ')}${d.named && !where && !d.cap ? '' : ' — '}map and status | Strategic Energy Map`;
   const lastmod = [st?.updated, evs[0]?.date].filter(Boolean).sort().pop() || null;
   const body = `
 <p class="kicker">${esc(a.tag)} ${statusChip(st)}</p>
@@ -306,8 +388,7 @@ ${evs.length ? `<section><h2>Recent developments</h2>${evs.slice(0, 10).map(e =>
 <section><h2>Nearby</h2><ul class="near">${near.map(([x, d]) => `<li>${link(x)} <small>${esc(REG[x].tag)} · ~${Math.round(d)} km</small></li>`).join('')}</ul></section>`;
   write(`/facilities/${id}/`, layout({
     path: `/facilities/${id}/`, lastmod,
-    title: `${a.name}${st ? ` (${STATUS_LABEL[st.status].toLowerCase()})` : ''}: ${a.tag === 'LNG terminal' ? a.tag : a.tag.toLowerCase()} status and context | Strategic Energy Map`,
-    description: lead.slice(0, 300),
+    title, description,
     crumbs: [{ name: 'Facilities', url: '/facilities/' }, { name: a.name, url: `/facilities/${id}/` }],
     jsonld: [placeLd(a.name, a.center, firstSentences(a.details, 1))], body,
   }));
@@ -506,12 +587,9 @@ const shortName = id => REG[id].name.replace(/ \(.*\)/, '');
 {
   const fmtShort = d => new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
   const clip = (t, k) => { const s = String(t || '').trim(); return s.length > k ? s.slice(0, k).replace(/\s+\S*$/, '').replace(/[,;:]$/, '') + '…' : s; };
-  // Sentences, without splitting decimals ("~1.5 million bpd")
-  const sents = t => String(t || '').trim().split(/(?<=[.!?])\s+(?=[A-Z~("'])/).filter(Boolean);
+  const sents = sentences; // shared with the facility pages (top of file), as is usDates
   // As many whole sentences as fit in k characters; a first sentence longer than that is cut at a word
   const fit = (list, k) => { let out = ''; for (const x of list) { if ((out + ' ' + x).trim().length > k) break; out = (out + ' ' + x).trim(); } return out || clip(list[0], k); };
-  // Stored summaries still carry some day-first dates ("28 Feb"); cards go to a US audience, month first
-  const usDates = t => String(t || '').replace(/(?<![\d–-])\b(\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)([a-z]*)\b/g, '$2$3 $1');
   const LOGO = '<svg viewBox="0 0 32 32" width="34" height="34"><rect width="32" height="32" rx="7" fill="#2e2940"/><path d="M5 22 C11 12, 17 24, 27 10" fill="none" stroke="#3b8fd9" stroke-width="3" stroke-linecap="round"/><polygon points="16,6 22,17 10,17" fill="#e0493a"/></svg>';
   // Palette: the dashboard's "Aubergine" (dashboard.css)
   const darkCard = (body, css = '') => `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex"><style>

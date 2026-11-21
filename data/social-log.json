@@ -2359,6 +2359,23 @@
     "at": "2026-11-21T17:58:21.333Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-21-explainer-east-west-pipeline": {
+   "x": {
+    "id": "2124281223614714338",
+    "at": "2026-11-21T23:18:05.889Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2uadgmu7d2o",
+    "cid": "bafyreiawlx7my6kpouqvoyvlhpjw4dj6eqk7wmngmrtqsj7ztdjko5sg6u",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2uadgmu7d2o",
+     "cid": "bafyreiawlx7my6kpouqvoyvlhpjw4dj6eqk7wmngmrtqsj7ztdjko5sg6u"
+    },
+    "at": "2026-11-21T23:18:07.829Z",
+    "media": "asset-card"
+   }
   }
  }
 }

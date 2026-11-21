@@ -1,8 +1,55 @@
 {
- "updated": "2026-11-20",
- "situation_headline": "A Houthi missile hit a tower in Riyadh's financial district on Nov 19; the group also claimed unverified strikes on a Jubail petrochemical complex and Jizan. Reuters reports Ukrainian strikes have cut Russian oil refining by about 45% since late October. Brent settled near $92/bbl.",
+ "updated": "2026-11-21",
+ "situation_headline": "CENTCOM expanded the US naval blockade of Iran on Nov 18 to cover ship-to-ship oil transfers at sea. Houthis claimed new strikes on Jizan port and a power plant on Nov 20 (unverified). Brent held near $92/bbl.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-20-houthi-shuqaiq-jizan-port-claim-saudi-strikes-houthi-power",
+   "date": "2026-11-20",
+   "title": "Houthis claim strikes on Jizan port, Shuqaiq power plant; Saudi coalition hits Houthi sites near Bab el-Mandeb",
+   "summary": "Houthi military spokesman Yahya Saree said on 20 November the group struck a power plant at al-Shuqaiq and the port at Jizan, Saudi Arabia (Houthi claim, unverified); Saudi Arabia's Energy Ministry reported no energy-facility impact. Separately, the Saudi-led Joint Forces Command said it struck Houthi missile- and drone-related sites in Hudaydah and Sanaa the same day; Houthi media and a Yemen analyst said some of the strikes hit Houthi-held power stations at Qahza and Mokha, near the Bab el-Mandeb chokepoint. CTP-ISW assessed the Saudi strikes likely targeted energy infrastructure but said it could not independently confirm which facilities were hit.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "jazan-refinery",
+    "bab-el-mandeb"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 20, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-20-2026",
+     "date": "2026-11-20"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-centcom-blockade-ship-to-ship-transfers",
+   "date": "2026-11-18",
+   "title": "US expands Iran naval blockade to cover ship-to-ship oil transfers at sea",
+   "summary": "US Central Command's Joint Maritime Information Center (JMIC) issued guidance on 18 November that a vessel receiving cargo via a ship-to-ship transfer from a vessel subject to the blockade can be treated as evading it, even if that vessel never enters Iranian ports or coastal waters; such ships may be stopped, boarded, diverted, seized, or ordered back to the Iranian port the cargo originated from, and noncompliance \"may result in rapid escalation to disabling or destructive fire\" (JMIC guidance, as quoted). The US said it will not interfere with neutral shipping to and from non-Iranian destinations. The move extends blockade enforcement, in force since 14 July, to the ship-to-ship transfer networks that tracking groups say Iran has used to move crude, LPG and jet fuel past the blockade line.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz",
+    "kharg-island"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "The Maritime Executive — U.S. Naval Blockade Now Covers Vessels That Load Iranian Cargo at Sea",
+     "url": "https://maritime-executive.com/article/u-s-naval-blockade-now-covers-vessels-that-load-iranian-cargo-at-sea",
+     "date": "2026-11-18"
+    },
+    {
+     "name": "gCaptain — U.S. Targets Ship-to-Ship Transfers in Expanded Iran Maritime Blockade",
+     "url": "https://gcaptain.com/u-s-targets-ship-to-ship-transfers-in-expanded-iran-maritime-blockade/",
+     "date": "2026-11-18"
+    }
+   ]
+  },
   {
    "id": "2026-11-19-houthi-jubail-jizan-claims-riyadh-tower",
    "date": "2026-11-19",

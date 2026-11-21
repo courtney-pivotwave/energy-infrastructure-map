@@ -2251,6 +2251,38 @@
     "SaudiArabia"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-21-digest",
+   "created": "2026-11-21",
+   "type": "digest",
+   "text": "The US expanded its naval blockade of Iran on Nov 18 to cover ship-to-ship oil transfers at sea. Houthis claimed new strikes on Jizan port and a power plant on Nov 20 (unverified). Brent held near $92/bbl.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Iran",
+    "Hormuz"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-21-explainer-east-west-pipeline",
+   "created": "2026-11-21",
+   "type": "explainer",
+   "text": "Saudi Arabia's East-West Pipeline moves crude 1,200 km from Abqaiq to Yanbu on the Red Sea, capacity 7 million b/d, the kingdom's main bypass if Hormuz shuts. A Nov 9 strike briefly hit it; flows stay reduced.",
+   "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Pipelines",
+    "EnergySecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-21",
+   "kind": "data",
+   "headline": "US widens Iran blockade to ship-to-ship oil transfers; Houthis claim new Saudi strikes",
+   "changes": [
+    "US Central Command said on Nov 18 it is expanding its naval blockade of Iran so that ships receiving Iranian-origin cargo at sea can be treated as evading it, even without entering Iranian waters — closing off a route trackers say Iran has used to move oil past the blockade.",
+    "Yemen's Houthis claimed strikes on Jizan port and a power plant on Nov 20; the Saudi-led coalition said it hit Houthi sites in Hudaydah and Sanaa the same day, and Houthi media reported some of those strikes hit power stations near the Bab el-Mandeb chokepoint (unverified claims).",
+    "Checked Saudi Arabia's East-West Pipeline against Aramco's latest results: its 7 million b/d capacity still holds."
+   ]
+  },
+  {
    "date": "2026-11-20",
    "kind": "data",
    "headline": "Houthi missile hits Riyadh tower; Russian oil refining down 45% on Ukraine strikes",

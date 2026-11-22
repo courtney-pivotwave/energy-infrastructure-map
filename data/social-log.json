@@ -2393,6 +2393,23 @@
     "at": "2026-11-22T10:57:39.613Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-22-event-kharg-tanker-convoy": {
+   "x": {
+    "id": "2124571401197654462",
+    "at": "2026-11-22T18:31:09.556Z",
+    "media": "locator-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2warbkhz32j",
+    "cid": "bafyreihym4bloyoqdyzbyhrqufpedfhucne76qmad6izsfgzwtmekwcusm",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2warbkhz32j",
+     "cid": "bafyreihym4bloyoqdyzbyhrqufpedfhucne76qmad6izsfgzwtmekwcusm"
+    },
+    "at": "2026-11-22T18:31:11.839Z",
+    "media": "locator-card"
+   }
   }
  }
 }

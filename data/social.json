@@ -2283,6 +2283,54 @@
     "EnergySecurity"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-22-digest",
+   "created": "2026-11-22",
+   "type": "digest",
+   "text": "Iran attacked four US-linked bases in Bahrain on Nov 21; Bahrain says all were intercepted. Iran is also staging a 14-tanker convoy at Kharg Island to test the US blockade. Brent rose to about $92.57/bbl.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Iran",
+    "MaritimeSecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-22-event-kharg-tanker-convoy",
+   "created": "2026-11-22",
+   "type": "event",
+   "text": "Iranian media say Iran has loaded 14+ tankers at Kharg Island to try to run the US naval blockade. Independent tracking confirms the staging, but analysts doubt a breakout is imminent.",
+   "url": "https://strategicenergymap.org/events/#2026-11-20-iran-stages-tanker-convoy-kharg-island",
+   "event_id": "2026-11-20-iran-stages-tanker-convoy-kharg-island",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Tankers",
+    "EnergySecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-22-explainer-cpc-pipeline",
+   "created": "2026-11-22",
+   "type": "explainer",
+   "text": "The CPC Pipeline moves Kazakh crude ~1,510 km to Novorossiysk on Russia's Black Sea coast, capacity ~1.4 million b/d, over 80% of Kazakhstan's oil exports. Ukrainian drones have repeatedly hit that coast this month.",
+   "url": "https://strategicenergymap.org/facilities/cpc-pipeline/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Kazakhstan",
+    "BlackSea"
+   ],
+   "reply_to": null
   }
  ]
 }

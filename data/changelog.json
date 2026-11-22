@@ -1,6 +1,18 @@
 {
  "entries": [
   {
+   "date": "2026-11-22",
+   "kind": "data",
+   "headline": "Iran attacks US bases in Bahrain, stages tanker convoy to test blockade",
+   "changes": [
+    "Iran launched drone and missile attacks on US-linked bases in Bahrain on Nov 21; Bahrain confirmed the attacks and said its air defenses intercepted them, with no injuries reported.",
+    "Iranian media say Iran has loaded and crewed at least 14 tankers at Kharg Island to try to run the US naval blockade; independent ship-tracking confirms tankers are staging there, though analysts are skeptical a breakout is imminent.",
+    "New, unverified Iranian tanker-mine claims and UKMTO-reported projectile strikes hit shipping near the Strait of Hormuz on Nov 21.",
+    "Checked the CPC Pipeline (Kazakhstan to Russia's Black Sea coast) against recent reporting: its ~1.4 million b/d capacity still holds.",
+    "Brent crude rose to about $92.57/bbl, TTF gas to about €88/MWh."
+   ]
+  },
+  {
    "date": "2026-11-21",
    "kind": "data",
    "headline": "US widens Iran blockade to ship-to-ship oil transfers; Houthis claim new Saudi strikes",

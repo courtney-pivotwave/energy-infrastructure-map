@@ -1,29 +1,29 @@
 {
- "as_of": "2026-11-19",
+ "as_of": "2026-11-20",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 91.98,
-   "week_ago": 95.82,
+   "value": 92.57,
+   "week_ago": 95.84,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "ICE Brent (January contract) settled at $91.98/bbl on 19 Nov, up 3 cents on the day (DTN, citing settlement data), down from $95.82 a week earlier (12 Nov) as EIA data showing US crude and gasoline stock builds offset supply-risk premium from the Qeshm/Kuwait strikes and reports of tankers mined east of Hormuz.",
+   "note": "ICE Brent (January contract) rose to about $92.57/bbl on 20 Nov, up 64 cents on the day (Trading Economics), from $91.98 the day before, as Iran's attacks on US-linked bases in Bahrain and new unverified tanker-mine claims near Hormuz offset bearish US inventory data; still down from $95.84 a week earlier (13 Nov).",
    "source": {
-    "name": "DTN — WTI Stuck Beneath $85 as Glut Fears Offset Supply Risks",
-    "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/11/19/wti-stuck-beneath-85-glut-fears",
-    "date": "2026-11-19"
+    "name": "Trading Economics — Brent Crude Oil",
+    "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "date": "2026-11-20"
    },
    "extra_sources": [
     {
-     "name": "The National — US jets strike IRGC missile launch site on Iran's Qeshm Island in 'self-defence'",
-     "url": "https://www.thenationalnews.com/news/us/2026/11/17/us-jets-strike-irgc-missile-launch-site-on-irans-qeshm-island-in-self-defence/",
-     "date": "2026-11-17"
+     "name": "Euronews — Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
+     "url": "https://www.euronews.com/2026/11/21/iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready-to-break-the-us-blockade",
+     "date": "2026-11-21"
     }
    ]
   },
@@ -31,25 +31,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 83.21,
-   "week_ago": 88.74,
+   "value": 83.41,
+   "week_ago": 88.56,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "NYMEX WTI (December contract, expiring) settled at $83.21/bbl on 19 Nov, down 5 cents on the day (DTN), after an EIA report showing larger-than-expected builds to US crude and gasoline stockpiles in the week to 13 Nov.",
+   "note": "WTI rose to about $83.41/bbl on 20 Nov (Trading Economics), up from $83.21 the day before, still down from $88.56 a week earlier (13 Nov) after an EIA report showing larger-than-expected builds to US crude and gasoline stockpiles in the week to 13 Nov.",
    "source": {
-    "name": "DTN — WTI Stuck Beneath $85 as Glut Fears Offset Supply Risks",
-    "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/11/19/wti-stuck-beneath-85-glut-fears",
-    "date": "2026-11-19"
+    "name": "Trading Economics — Crude Oil (WTI)",
+    "url": "https://tradingeconomics.com/commodity/crude-oil",
+    "date": "2026-11-20"
    },
    "extra_sources": [
     {
-     "name": "pandaforecast — Brent Falls 18% in a Week as Trump Plays Down New Iran Strikes",
-     "url": "https://pandaforecast.com/financial-news/oil-prices-fall-trump-iran-strikes-midterms/",
-     "date": "2026-11-05"
+     "name": "DTN — WTI Stuck Beneath $85 as Glut Fears Offset Supply Risks",
+     "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/11/19/wti-stuck-beneath-85-glut-fears",
+     "date": "2026-11-19"
     }
    ]
   },
@@ -57,15 +57,15 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 85.69,
-   "week_ago": 92.26,
+   "value": 88.45,
+   "week_ago": 91.0,
    "pre_crisis": 32.0,
    "peak": {
     "value": 102.89,
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "Up 1.5% to about €85.69/MWh on 20 Nov (Trading Economics), still below the €92.26 ICE front-month high for November set 12 Nov (GMK Center).",
+   "note": "Up 4.7% to about €88.45/MWh on 20 Nov (Trading Economics), from about €91/MWh a week earlier (13 Nov), still below the €92.26 ICE front-month high for November set 12 Nov (GMK Center), as colder weather forecasts lifted heating demand.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
@@ -93,15 +93,15 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 27.52,
-   "week_ago": 31.34,
+   "value": 28.42,
+   "week_ago": 27.52,
    "pre_crisis": 10.75,
    "peak": {
     "value": 32.84,
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Up 3.9% to about $27.52/MMBtu on Trading Economics' 19 Nov print, still well off the late-October highs.",
+   "note": "Up 3.3% to about $28.42/MMBtu on Trading Economics' 20 Nov print, from $27.52 the day before, still well off the late-October highs.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
@@ -124,10 +124,10 @@
    "id": "henry-hub",
    "label": "Henry Hub",
    "unit": "$/MMBtu",
-   "value": 3.17,
-   "week_ago": 3.4,
+   "value": 3.41,
+   "week_ago": 3.2,
    "pre_crisis": 2.99,
-   "note": "Held near $3.17/MMBtu on 20 Nov (Trading Economics), little changed and still largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "Rose to about $3.41/MMBtu on 20 Nov (Trading Economics), up from about $3.2 a week earlier (13 Nov, Global LNG Hub) on colder weather forecasts and stronger heating demand; still largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
@@ -147,26 +147,26 @@
    ]
   }
  ],
- "note": "Brent (January contract) settled little changed at $91.98/bbl on 19 Nov, down from $95.82 a week earlier, while WTI (December) settled at $83.21, both pressured by an EIA report showing larger-than-expected builds in US crude and gasoline stockpiles for the week to 13 Nov. Gains were capped by renewed Gulf tensions — a Houthi missile hit the PIF tower in Riyadh's financial district on 19 Nov, and the Houthis separately claimed unverified strikes on a Jubail petrochemical complex and Jizan — plus Reuters reporting that Ukrainian drone strikes have cut Russian oil refining by about 45% since late October. TTF rose to about €85.69/MWh on 20 Nov and JKM to $27.52; Henry Hub held near $3.17, still largely insulated from the Gulf and Red Sea turmoil.",
+ "note": "Brent (January contract) rose to about $92.57/bbl on 20 Nov, up from $91.98 the day before but still down from $95.84 a week earlier, while WTI rose to $83.41. Iran launched drone and missile attacks on US-linked bases in Bahrain on 21 Nov, and is staging a 14-tanker convoy at Kharg Island to try to run the US naval blockade, per Iranian media and independent ship-tracking (Windward, UANI); new unverified tanker-mine claims and UKMTO-reported projectile strikes hit shipping near Hormuz the same day. Those gains offset bearish signals from an EIA report showing larger-than-expected US crude and gasoline stock builds for the week to 13 Nov, and from Reuters reporting that Ukrainian drone strikes have cut Russian oil refining by about 45% since late October. TTF rose to about €88.45/MWh on 20 Nov and JKM to $28.42; Henry Hub rose to about $3.41 on colder weather forecasts, still largely insulated from the Gulf and Red Sea turmoil.",
  "note_sources": [
   {
-   "name": "DTN — WTI Stuck Beneath $85 as Glut Fears Offset Supply Risks",
-   "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/11/19/wti-stuck-beneath-85-glut-fears",
-   "date": "2026-11-19"
-  },
-  {
-   "name": "Trading Economics — EU Natural Gas (TTF)",
-   "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+   "name": "Trading Economics — Brent Crude Oil",
+   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
    "date": "2026-11-20"
   },
   {
-   "name": "The National — Saudi Arabia says Houthi attack hit wealth fund PIF tower in Riyadh",
-   "url": "https://www.thenationalnews.com/news/gulf/2026/11/19/saudi-sovereign-wealth-fund-tower-in-riyadh-damaged-in-houthi-strike/",
-   "date": "2026-11-19"
+   "name": "Euronews — Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
+   "url": "https://www.euronews.com/2026/11/21/iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready-to-break-the-us-blockade",
+   "date": "2026-11-21"
   },
   {
-   "name": "Critical Threats Project / ISW — Iran Update, November 19, 2026",
-   "url": "https://www.criticalthreats.org/analysis/iran-update-november-19-2026",
+   "name": "The Maritime Executive — Reports Claim Iran Is Preparing Oil Convoy to Test U.S. Blockade",
+   "url": "https://maritime-executive.com/article/reports-claim-iran-is-preparing-oil-convoy-to-test-u-s-blockade",
+   "date": "2026-11-20"
+  },
+  {
+   "name": "DTN — WTI Stuck Beneath $85 as Glut Fears Offset Supply Risks",
+   "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/11/19/wti-stuck-beneath-85-glut-fears",
    "date": "2026-11-19"
   },
   {

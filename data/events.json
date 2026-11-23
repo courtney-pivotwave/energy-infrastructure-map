@@ -1,8 +1,86 @@
 {
- "updated": "2026-11-22",
- "situation_headline": "Iran attacked four US-linked bases in Bahrain on Nov 21 and is staging a 14-tanker convoy at Kharg Island to test the US blockade; new tanker attacks hit near Hormuz the same day. Brent held near $92.57/bbl.",
+ "updated": "2026-11-23",
+ "situation_headline": "The IEA says the war has cost 2.8bn barrels of Gulf oil exports since February; UKMTO recorded a 15% weekly drop in Hormuz tanker transits for Nov 12-18. Iran and Bahrain continue exchanging strikes near Hormuz. Brent holds near $92.57/bbl.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-22-houthi-rabigh-refinery-claim",
+   "date": "2026-11-22",
+   "title": "Houthis claim strike on Saudi Arabia's Rabigh refinery",
+   "summary": "Yemen's Houthi movement said on 22 November it struck the Petro Rabigh oil refinery and petrochemical complex in Rabigh, Mecca Province, with unspecified projectiles (Houthi claim, unverified, via a Houthi-affiliated Telegram channel). Saudi authorities and Aramco, which holds the majority stake in the Aramco-Sumitomo Chemical joint venture, made no statement on the claim, and no independent report confirmed damage or an output impact.",
+   "category": "military",
+   "severity": "low",
+   "coords": [22.80, 39.03],
+   "assets": [],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 22, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-22-2026",
+     "date": "2026-11-22"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-21-houthi-bab-el-mandeb-fortifications-claim",
+   "date": "2026-11-21",
+   "title": "Houthis reportedly fortifying Bab el-Mandeb coast with radar, launch sites",
+   "summary": "Unnamed military and local sources told Qatari-owned media on 21 November that Yemen's Houthi movement is building tunnels and berms along the Bab el-Mandeb coast, installing radar to detect passing vessels, and may be preparing missile and drone launch sites on Jabal Kahbub overlooking the strait (unverified, sourced to anonymous contacts). Critical Threats Project/ISW, which relayed the report, said it could not independently verify it; if accurate, consolidated Houthi control of the coastal terrain would let the group threaten shipping at closer range.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "bab-el-mandeb"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 21, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-21-2026",
+     "date": "2026-11-21"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-19-iea-weo-hormuz-oil-losses",
+   "date": "2026-11-19",
+   "title": "IEA: war has cost 2.8 billion barrels of Gulf oil exports since February",
+   "summary": "The International Energy Agency's World Energy Outlook 2026, released 19 November, estimated that disruption through the Strait of Hormuz has cost about 2.8 billion barrels of cumulative Middle East oil export losses since the US-Israel-Iran war began in late February (confirmed, IEA). The IEA said global oil demand is on track to fall by about 2.7 million b/d in 2026 because of high fuel prices and disruption to energy-intensive industries, even as global production rose 2.3 million b/d in October to 105.4 million b/d as Gulf exports partly recovered. Under a conditional \"Low Hormuz\" scenario the agency modeled, not a forecast, shipping needs through the strait could fall to 8.5 million b/d by 2030 and under 2 million b/d by 2035 if the disruption accelerates a shift to electrification and other fuels.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "International Business Times — IEA: Iran War Is Worst Oil Supply Disruption on Record",
+     "url": "https://www.ibtimes.com/iea-worst-oil-supply-disruption-iran-war-3809973",
+     "date": "2026-11-19"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-ukmto-hormuz-transits-fall",
+   "date": "2026-11-18",
+   "title": "Hormuz tanker transits fall 15% week-on-week, UKMTO data shows",
+   "summary": "UKMTO data reported by Al Jazeera on 22 November showed 263 ships transited the Strait of Hormuz in the week of 12-18 November, 15% fewer than the previous week and 20% fewer than the week before that; of those, only 37 were oil tankers, down from 52 the prior week (confirmed, UKMTO). Before the war, about 135 ships a day passed through the strait. Al Jazeera separately reported that UKMTO logged two tankers struck by unidentified projectiles near Oman on 21 November.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — What's behind Iran's escalation of attacks in the Gulf?",
+     "url": "https://aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf",
+     "date": "2026-11-22"
+    }
+   ]
+  },
   {
    "id": "2026-11-21-iran-attacks-bahrain-bases-hormuz-tankers",
    "date": "2026-11-21",

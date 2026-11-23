@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-11-23",
+   "kind": "data",
+   "headline": "IEA: war has cost 2.8 billion barrels of Gulf oil exports since February",
+   "changes": [
+    "The IEA's World Energy Outlook 2026 estimates the war has cost about 2.8 billion barrels of cumulative Gulf oil export losses since late February.",
+    "UKMTO data shows Hormuz tanker transits fell 15% week-on-week in the week of Nov 12-18, with oil tankers down to 37 from 52 the week before.",
+    "Houthis claimed new strikes on Saudi Arabia's Rabigh refinery and reported fortifying the Bab el-Mandeb coast with radar and launch sites (both unverified).",
+    "Checked the SAMREF refinery at Yanbu against recent reporting: its 400,000 b/d capacity still holds."
+   ]
+  },
+  {
    "date": "2026-11-22",
    "kind": "data",
    "headline": "Iran attacks US bases in Bahrain, stages tanker convoy to test blockade",

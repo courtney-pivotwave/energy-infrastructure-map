@@ -2331,6 +2331,38 @@
     "BlackSea"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-23-digest",
+   "created": "2026-11-23",
+   "type": "digest",
+   "text": "The IEA says the war has cost 2.8bn barrels of Gulf oil exports since February; UKMTO recorded a 15% weekly drop in Hormuz tanker transits for Nov 12-18. Iran and Bahrain continue exchanging strikes near Hormuz. Brent holds near $92.57/bbl.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-23-chart-fuel-weekly",
+   "created": "2026-11-23",
+   "type": "chart",
+   "text": "Diesel prices since the Strait of Hormuz closed: US +56%, EU average +29%, UK +39% (week of Nov 16 vs week of Feb 23).",
+   "url": "https://strategicenergymap.org/fuel-prices/",
+   "event_id": null,
+   "image": "fuel-weekly",
+   "alt": "Bar chart of the change in diesel prices since the week of Feb 23, 2026 for the US, UK, EU average, Germany, France, Italy, Spain, the Netherlands and Poland.",
+   "video": null,
+   "tags": [
+    "Diesel",
+    "FuelPrices"
+   ],
+   "reply_to": null
   }
  ]
 }

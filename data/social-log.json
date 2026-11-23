@@ -2410,6 +2410,23 @@
     "at": "2026-11-22T18:31:11.839Z",
     "media": "locator-card"
    }
+  },
+  "2026-11-22-explainer-cpc-pipeline": {
+   "x": {
+    "id": "2124819350775377938",
+    "at": "2026-11-23T10:56:25.412Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2xxt2gkam2o",
+    "cid": "bafyreibzewl75kdxuv3xohhyztcaf4rtg427ul7u464vs4e2hqdhjvkntu",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2xxt2gkam2o",
+     "cid": "bafyreibzewl75kdxuv3xohhyztcaf4rtg427ul7u464vs4e2hqdhjvkntu"
+    },
+    "at": "2026-11-23T10:56:27.221Z",
+    "media": "asset-card"
+   }
   }
  }
 }

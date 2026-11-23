@@ -1,0 +1,875 @@
+{
+ "week": {
+  "start": "2026-11-16",
+  "end": "2026-11-22"
+ },
+ "generated": "2026-11-23T21:14:41.530Z",
+ "sources": {
+  "repo": "ok",
+  "github": "ok",
+  "bluesky": "ok",
+  "x": "ok",
+  "google": "not configured: add the GSC_SERVICE_ACCOUNT secret",
+  "bing": "not configured: add the BING_WEBMASTER_KEY secret",
+  "vercel": "manual: last entered for the week ending 2026-11-15"
+ },
+ "site": {
+  "pages_in_sitemap": 136,
+  "events_total": 218,
+  "events_dated_this_week": 13,
+  "changelog_entries_this_week": 6
+ },
+ "agents": {
+  "daily_update_days": [
+   "2026-11-16",
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22"
+  ],
+  "daily_update_runs": "7/7",
+  "other_commits": [],
+  "prs_open": [
+   {
+    "number": 10,
+    "title": "Review: Riyadh airport attack kills at least 12",
+    "branch": "review/2026-10-11",
+    "opened": "2026-10-11",
+    "waiting_days": 43,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/10"
+   },
+   {
+    "number": 12,
+    "title": "Review: Expand Kharg Island page, refresh Bab el-Mandeb flows",
+    "branch": "review/2026-10-20",
+    "opened": "2026-10-20",
+    "waiting_days": 34,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/12"
+   },
+   {
+    "number": 13,
+    "title": "Review: Correct Ras Laffan LNG expansion-capacity figure",
+    "branch": "review/2026-10-23",
+    "opened": "2026-10-23",
+    "waiting_days": 31,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/13"
+   },
+   {
+    "number": 14,
+    "title": "Review: Expand Ras Tanura terminal entry, add explainer",
+    "branch": "review/2026-10-27",
+    "opened": "2026-10-27",
+    "waiting_days": 27,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/14"
+   },
+   {
+    "number": 15,
+    "title": "Review: UAE oil spill source identified as GEM NO.2",
+    "branch": "review/2026-10-29",
+    "opened": "2026-10-29",
+    "waiting_days": 25,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/15"
+   },
+   {
+    "number": 16,
+    "title": "Review: Ras Laffan LNG capacity audit",
+    "branch": "review/2026-10-30",
+    "opened": "2026-10-30",
+    "waiting_days": 24,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/16"
+   },
+   {
+    "number": 17,
+    "title": "Source review: November 2026",
+    "branch": "review/sources-2026-11",
+    "opened": "2026-11-01",
+    "waiting_days": 22,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/17"
+   },
+   {
+    "number": 18,
+    "title": "Review: Al Mayeda LNG carrier struck near Hormuz, Ras Laffan capacity correction",
+    "branch": "review/2026-11-02",
+    "opened": "2026-11-02",
+    "waiting_days": 21,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/18"
+   },
+   {
+    "number": 19,
+    "title": "Review: Correct Fujairah storage capacity; confirm Qeshm strike target",
+    "branch": "review/2026-11-04",
+    "opened": "2026-11-04",
+    "waiting_days": 19,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/19"
+   },
+   {
+    "number": 20,
+    "title": "Review: Correct Fujairah storage capacity and bunkering rank",
+    "branch": "review/2026-11-06",
+    "opened": "2026-11-06",
+    "waiting_days": 17,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/20"
+   },
+   {
+    "number": 21,
+    "title": "Review: Add Kirishi refinery after repeated drone strikes",
+    "branch": "review/2026-11-11",
+    "opened": "2026-11-11",
+    "waiting_days": 12,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/21"
+   },
+   {
+    "number": 22,
+    "title": "Review: Add Ryazan refinery after drone strike",
+    "branch": "review/2026-11-16",
+    "opened": "2026-11-16",
+    "waiting_days": 7,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/22"
+   },
+   {
+    "number": 23,
+    "title": "Facility pages: titles and descriptions that say what the asset is",
+    "branch": "facility-titles",
+    "opened": "2026-11-18",
+    "waiting_days": 5,
+    "url": "https://github.com/courtney-pivotwave/energy-infrastructure-map/pull/23"
+   }
+  ],
+  "prs_closed_this_week": [],
+  "validator": "pass"
+ },
+ "social": {
+  "drafted_by_type": {
+   "digest": 7,
+   "chart": 2,
+   "event": 2,
+   "explainer": 5
+  },
+  "posted": 15,
+  "posted_same_day": 11,
+  "posts": [
+   {
+    "id": "2026-11-16-digest",
+    "type": "digest",
+    "created": "2026-11-16",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "OilPrices",
+     "Commodities"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2122281941215175081",
+     "posted_at": "2026-11-16T10:53:39.741Z",
+     "metrics": {
+      "impressions": 1,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2gefnzqzo2f",
+     "posted_at": "2026-11-16T10:53:40.935Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-16-chart-fuel-weekly",
+    "type": "chart",
+    "created": "2026-11-16",
+    "url": "https://strategicenergymap.org/fuel-prices/",
+    "tags": [
+     "FuelPrices",
+     "Diesel"
+    ],
+    "media": "chart",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2122435171211485360",
+     "posted_at": "2026-11-16T21:02:32.608Z",
+     "metrics": {
+      "impressions": 6,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2hgggq2r62v",
+     "posted_at": "2026-11-16T21:02:34.744Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-17-digest",
+    "type": "digest",
+    "created": "2026-11-17",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Yemen",
+     "RedSea"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2122645787733881268",
+     "posted_at": "2026-11-17T10:59:27.500Z",
+     "metrics": {
+      "impressions": 2,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2iv6xa3fv23",
+     "posted_at": "2026-11-17T10:59:29.527Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-17-event-tanker-on-phoenix",
+    "type": "event",
+    "created": "2026-11-17",
+    "url": "https://strategicenergymap.org/events/#2026-11-16-tanker-on-phoenix-struck-oman",
+    "tags": [
+     "Hormuz",
+     "Tankers"
+    ],
+    "media": "locator-card",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2122779698707263785",
+     "posted_at": "2026-11-17T19:51:34.374Z",
+     "metrics": {
+      "impressions": 5,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2jswh5qrl23",
+     "posted_at": "2026-11-17T19:51:36.764Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-17-explainer-bab-el-mandeb",
+    "type": "explainer",
+    "created": "2026-11-17",
+    "url": "https://strategicenergymap.org/chokepoints/bab-el-mandeb/",
+    "tags": [
+     "MaritimeSecurity",
+     "RedSea"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2123006564659257378",
+     "posted_at": "2026-11-18T10:53:03.465Z",
+     "metrics": {
+      "impressions": 6,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2lfcgmrfa2d",
+     "posted_at": "2026-11-18T10:53:05.447Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-18-digest",
+    "type": "digest",
+    "created": "2026-11-18",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Hormuz",
+     "OOTT"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2123135303443677594",
+     "posted_at": "2026-11-18T19:24:37.148Z",
+     "metrics": {
+      "impressions": 34,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2mbv6cawn2v",
+     "posted_at": "2026-11-18T19:24:39.230Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-18-explainer-strait-of-hormuz",
+    "type": "explainer",
+    "created": "2026-11-18",
+    "url": "https://strategicenergymap.org/chokepoints/strait-of-hormuz/",
+    "tags": [
+     "MaritimeSecurity",
+     "OOTT"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2123368910036844729",
+     "posted_at": "2026-11-19T10:52:53.299Z",
+     "metrics": {
+      "impressions": 17,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2nvr2mg4m2u",
+     "posted_at": "2026-11-19T10:52:55.471Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-19-digest",
+    "type": "digest",
+    "created": "2026-11-19",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Kuwait",
+     "OilPrices"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2123499055531917807",
+     "posted_at": "2026-11-19T19:30:02.401Z",
+     "metrics": {
+      "impressions": 8,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2osnrxovz2k",
+     "posted_at": "2026-11-19T19:30:04.916Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-19-chart-chokepoints-weekly",
+    "type": "chart",
+    "created": "2026-11-19",
+    "url": "https://strategicenergymap.org/charts/chokepoint-tanker-traffic/",
+    "tags": [
+     "Tankers",
+     "DataViz"
+    ],
+    "media": "chart",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2123732188520706138",
+     "posted_at": "2026-11-20T10:56:25.658Z",
+     "metrics": {
+      "impressions": 7,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2qggbsp4l23",
+     "posted_at": "2026-11-20T10:56:26.887Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-20-digest",
+    "type": "digest",
+    "created": "2026-11-20",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "SaudiArabia",
+     "Refining"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2123855618809200896",
+     "posted_at": "2026-11-20T19:06:53.741Z",
+     "metrics": {
+      "impressions": 11,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2rbtcpxz42s",
+     "posted_at": "2026-11-20T19:06:55.324Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-20-explainer-riyadh-refinery",
+    "type": "explainer",
+    "created": "2026-11-20",
+    "url": "https://strategicenergymap.org/facilities/riyadh-refinery/",
+    "tags": [
+     "Pipelines",
+     "SaudiArabia"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 1,
+    "x": {
+     "id": "2124094100764766458",
+     "posted_at": "2026-11-21T10:54:32.306Z",
+     "metrics": {
+      "impressions": 3,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2swrtrx7e23",
+     "posted_at": "2026-11-21T10:54:34.273Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-21-digest",
+    "type": "digest",
+    "created": "2026-11-21",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Iran",
+     "Hormuz"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2124200749240656320",
+     "posted_at": "2026-11-21T17:58:19.211Z",
+     "metrics": {
+      "impressions": 3,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2tohmu4k72j",
+     "posted_at": "2026-11-21T17:58:21.333Z",
+     "metrics": {
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-21-explainer-east-west-pipeline",
+    "type": "explainer",
+    "created": "2026-11-21",
+    "url": "https://strategicenergymap.org/facilities/east-west-pipeline/",
+    "tags": [
+     "Pipelines",
+     "EnergySecurity"
+    ],
+    "media": "asset-card",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2124281223614714338",
+     "posted_at": "2026-11-21T23:18:05.889Z",
+     "metrics": {
+      "impressions": 6,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2uadgmu7d2o",
+     "posted_at": "2026-11-21T23:18:07.829Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-22-digest",
+    "type": "digest",
+    "created": "2026-11-22",
+    "url": "https://strategicenergymap.org/",
+    "tags": [
+     "Iran",
+     "MaritimeSecurity"
+    ],
+    "media": "daily-board",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2124457267978293348",
+     "posted_at": "2026-11-22T10:57:38.069Z",
+     "metrics": {
+      "impressions": 10,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2vhgbufwf23",
+     "posted_at": "2026-11-22T10:57:39.613Z",
+     "metrics": {
+      "likes": 1,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   },
+   {
+    "id": "2026-11-22-event-kharg-tanker-convoy",
+    "type": "event",
+    "created": "2026-11-22",
+    "url": "https://strategicenergymap.org/events/#2026-11-20-iran-stages-tanker-convoy-kharg-island",
+    "tags": [
+     "Tankers",
+     "EnergySecurity"
+    ],
+    "media": "locator-card",
+    "days_after_draft": 0,
+    "x": {
+     "id": "2124571401197654462",
+     "posted_at": "2026-11-22T18:31:09.556Z",
+     "metrics": {
+      "impressions": 5,
+      "link_clicks": null,
+      "likes": 0,
+      "reposts": 0,
+      "replies": 0,
+      "quotes": 0
+     }
+    },
+    "bluesky": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n2warbkhz32j",
+     "posted_at": "2026-11-22T18:31:11.839Z",
+     "metrics": {
+      "likes": 2,
+      "reposts": 1,
+      "replies": 0,
+      "quotes": 0
+     }
+    }
+   }
+  ],
+  "failed": [],
+  "bluesky": {
+   "followers": 52,
+   "following": 61,
+   "posts_all_time": 150,
+   "interactions": 6,
+   "likes": 5,
+   "reposts": 1,
+   "replies": 0,
+   "quotes": 0,
+   "by_type": {
+    "digest": {
+     "posts": 7,
+     "likes": 1,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "chart": {
+     "posts": 2,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "event": {
+     "posts": 2,
+     "likes": 2,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    },
+    "explainer": {
+     "posts": 4,
+     "likes": 2,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    }
+   },
+   "by_media": {
+    "daily-board": {
+     "posts": 7,
+     "likes": 1,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "chart": {
+     "posts": 2,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "locator-card": {
+     "posts": 2,
+     "likes": 2,
+     "reposts": 1,
+     "replies": 0,
+     "quotes": 0
+    },
+    "asset-card": {
+     "posts": 4,
+     "likes": 2,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    }
+   }
+  },
+  "x": {
+   "followers": 6,
+   "impressions": 124,
+   "link_clicks": 0,
+   "likes": 0,
+   "reposts": 0,
+   "replies": 0,
+   "quotes": 0,
+   "by_type": {
+    "digest": {
+     "posts": 7,
+     "impressions": 69,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "chart": {
+     "posts": 2,
+     "impressions": 13,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "event": {
+     "posts": 2,
+     "impressions": 10,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "explainer": {
+     "posts": 4,
+     "impressions": 32,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    }
+   },
+   "by_media": {
+    "daily-board": {
+     "posts": 7,
+     "impressions": 69,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "chart": {
+     "posts": 2,
+     "impressions": 13,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "locator-card": {
+     "posts": 2,
+     "impressions": 10,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    },
+    "asset-card": {
+     "posts": 4,
+     "impressions": 32,
+     "link_clicks": 0,
+     "likes": 0,
+     "reposts": 0,
+     "replies": 0,
+     "quotes": 0
+    }
+   }
+  }
+ },
+ "search": {
+  "google": null,
+  "bing": null
+ },
+ "traffic": {
+  "vercel": {
+   "week_ending": "2026-11-15",
+   "visitors": 415,
+   "page_views": 503,
+   "bounce_rate": 0.89,
+   "top_pages": {
+    "/chokepoints/strait-of-hormuz": 137,
+    "/dashboard": 71,
+    "/": 55,
+    "/events": 42,
+    "/chokepoints/bab-el-mandeb": 26,
+    "/facilities/east-west-pipeline": 10,
+    "/chokepoints/panama-canal": 8
+   },
+   "referrers": {
+    "google.com": 30,
+    "bing.com": 23,
+    "duckduckgo.com": 15,
+    "baidu.com": 11,
+    "facebook.com": 4,
+    "perplexity.ai": 4,
+    "search.yahoo.com": 3
+   },
+   "countries_pct": {
+    "US": 34,
+    "SG": 22,
+    "CN": 5,
+    "DE": 4,
+    "GB": 2
+   },
+   "devices_pct": {
+    "desktop": 86,
+    "mobile": 14
+   },
+   "change_vs_previous_7_days": {
+    "visitors_pct": -3,
+    "page_views_pct": -4,
+    "bounce_rate_pts": 1
+   },
+   "likely_automated": {
+    "visitors": 93,
+    "page_views": 99,
+    "why": "Singapore, up 323% on the week before: no referrer on any visit, 100% desktop, 95% Windows, one page per visit, spread across deep chokepoint and facility pages. Real visitors are likely nearer 322."
+   },
+   "note": "Vercel's 'Last 7 days' view as of Nov 17 (about Nov 10–16), one day off the metrics week of Nov 9–15. Includes the owner's own visits unless opted out with ?notrack=1. Bounce rate overstates leaving: map interactions don't count as page views.",
+   "how": "Vercel → energy-infrastructure-map → Analytics, last 7 days, production. Replace the numbers and set week_ending to the Sunday the week ends on. Copied by hand because Vercel's analytics API isn't available for this project.",
+   "current": false
+  }
+ }
+}

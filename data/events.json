@@ -113,7 +113,7 @@
    "id": "2026-11-21-iran-attacks-bahrain-bases-hormuz-tankers",
    "date": "2026-11-21",
    "title": "Iran attacks US-linked bases in Bahrain; new tanker attacks hit near Hormuz",
-   "summary": "Iran launched two waves of drone and missile attacks on US-linked bases in Bahrain on 21 November, including Sheikh Isa Air Base; Bahrain's government confirmed the attacks and said its air defenses intercepted them, with a fire reported at a nearby civilian industrial compound and no injuries (confirmed, via Bahrain's government, reported by Euronews). Iran's Revolutionary Guards' claim to have hit Patriot air-defense batteries and a radar system was not confirmed by Bahrain or the US (IRGC claim, unverified). UKMTO separately reported two tankers struck by unidentified projectiles in or near the Strait of Hormuz the same day, and Iran's navy said a further tanker hit a naval mine and caught fire (IRGC claim, unverified). Qatari mediators held further talks with Iranian officials on 20-21 November; Foreign Minister Abbas Araghchi said reopening the strait remains possible if the US ends its naval blockade, lifts sanctions and acknowledges \"past mistakes.\"",
+   "summary": "Iran launched two waves of drone and missile attacks on US-linked bases in Bahrain on 21 November, including Sheikh Isa Air Base; Bahrain's government confirmed the attacks and said its air defenses intercepted them, with a fire reported at a nearby civilian industrial compound. Correction: Bahrain's Interior Ministry said that attack injured two people; this entry originally reported no injuries (confirmed, via Bahrain's government; correction per CTP-ISW's 23 November Iran Update). Iran's Revolutionary Guards' claim to have hit Patriot air-defense batteries and a radar system was not confirmed by Bahrain or the US (IRGC claim, unverified). UKMTO separately reported two tankers struck by unidentified projectiles in or near the Strait of Hormuz the same day, and Iran's navy said a further tanker hit a naval mine and caught fire (IRGC claim, unverified). Qatari mediators held further talks with Iranian officials on 20-21 November; Foreign Minister Abbas Araghchi said reopening the strait remains possible if the US ends its naval blockade, lifts sanctions and acknowledges \"past mistakes.\"",
    "category": "military",
    "severity": "high",
    "coords": [
@@ -129,6 +129,11 @@
      "name": "Euronews — Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
      "url": "https://www.euronews.com/2026/11/21/iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready-to-break-the-us-blockade",
      "date": "2026-11-21"
+    },
+    {
+     "name": "CTP-ISW — Iran Update, November 23, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-23-2026",
+     "date": "2026-11-23"
     }
    ]
   },

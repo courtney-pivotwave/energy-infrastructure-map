@@ -2444,6 +2444,23 @@
     "at": "2026-11-23T22:39:36.199Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-23-chart-fuel-weekly": {
+   "x": {
+    "id": "2125182432190058579",
+    "at": "2026-11-24T10:59:10.702Z",
+    "media": "chart"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n32iguzugf22",
+    "cid": "bafyreid5g2xteaind7x4awu2dksrmjjmoos34j5u4xgevctn76dqdrlq5m",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n32iguzugf22",
+     "cid": "bafyreid5g2xteaind7x4awu2dksrmjjmoos34j5u4xgevctn76dqdrlq5m"
+    },
+    "at": "2026-11-24T10:59:11.971Z",
+    "media": "chart"
+   }
   }
  }
 }

@@ -1,8 +1,33 @@
 {
- "updated": "2026-11-23",
- "situation_headline": "The IEA says the war has cost 2.8bn barrels of Gulf oil exports since February; UKMTO recorded a 15% weekly drop in Hormuz tanker transits for Nov 12-18. Iran and Bahrain continue exchanging strikes near Hormuz. Brent holds near $92.57/bbl.",
+ "updated": "2026-11-24",
+ "situation_headline": "Oil fell sharply on Nov 23 (Brent $89.37, WTI $80.17) as traders unwound hedges against a feared US escalation and Trump signaled more time for Iran diplomacy; Iran-Bahrain strikes continue near Hormuz and tanker transits remain well below pre-war levels.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-23-oil-prices-fall-trump-iran-diplomacy",
+   "date": "2026-11-23",
+   "title": "Brent falls 3.5% to $89.37 as traders unwind Iran-escalation hedges",
+   "summary": "Brent crude settled down 3.5% at $89.37/bbl and WTI down 4.5% at $80.17/bbl on 23 November, as traders unwound hedges taken against a feared weekend escalation by US forces against Iran, after President Trump signaled more time for diplomacy with Tehran while saying he could resume the war next year if talks fail (confirmed, Rigzone via Reuters pricing). Brent is now down about 24% from a late-October high above $117. Kpler data cited by Gulf News put Middle East crude exports at 18.99 million b/d in October, above the pre-war average of 18.56 million b/d, even as Hormuz-specific flows slipped toward about 10 million b/d by 10 November from 13.4 million at the start of the month, as rising global supply forecasts added to the bearish tone.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Rigzone (Reuters) — Oil Falls as Trump Signals Iran Talks",
+     "url": "https://www.rigzone.com/news/wire/oil_falls_as_trump_signals_iran_talks-23-nov-2026-185152-article/",
+     "date": "2026-11-23"
+    },
+    {
+     "name": "Gulf News — Brent Drops to $88, WTI at $79: Why Oil Is Sliding Despite Iran's Tanker Attacks",
+     "url": "https://gulfnews.com/business/energy/brent-drops-to-88-wti-at-79-why-oil-is-sliding-despite-irans-tanker-attacks-1.500758802",
+     "date": "2026-11-24"
+    }
+   ]
+  },
   {
    "id": "2026-11-22-houthi-rabigh-refinery-claim",
    "date": "2026-11-22",
@@ -10,7 +35,10 @@
    "summary": "Yemen's Houthi movement said on 22 November it struck the Petro Rabigh oil refinery and petrochemical complex in Rabigh, Mecca Province, with unspecified projectiles (Houthi claim, unverified, via a Houthi-affiliated Telegram channel). Saudi authorities and Aramco, which holds the majority stake in the Aramco-Sumitomo Chemical joint venture, made no statement on the claim, and no independent report confirmed damage or an output impact.",
    "category": "military",
    "severity": "low",
-   "coords": [22.80, 39.03],
+   "coords": [
+    22.8,
+    39.03
+   ],
    "assets": [],
    "confidence": "unverified",
    "sources": [
@@ -88,7 +116,10 @@
    "summary": "Iran launched two waves of drone and missile attacks on US-linked bases in Bahrain on 21 November, including Sheikh Isa Air Base; Bahrain's government confirmed the attacks and said its air defenses intercepted them, with a fire reported at a nearby civilian industrial compound and no injuries (confirmed, via Bahrain's government, reported by Euronews). Iran's Revolutionary Guards' claim to have hit Patriot air-defense batteries and a radar system was not confirmed by Bahrain or the US (IRGC claim, unverified). UKMTO separately reported two tankers struck by unidentified projectiles in or near the Strait of Hormuz the same day, and Iran's navy said a further tanker hit a naval mine and caught fire (IRGC claim, unverified). Qatari mediators held further talks with Iranian officials on 20-21 November; Foreign Minister Abbas Araghchi said reopening the strait remains possible if the US ends its naval blockade, lifts sanctions and acknowledges \"past mistakes.\"",
    "category": "military",
    "severity": "high",
-   "coords": [25.9183, 50.6042],
+   "coords": [
+    25.9183,
+    50.6042
+   ],
    "assets": [
     "strait-of-hormuz"
    ],

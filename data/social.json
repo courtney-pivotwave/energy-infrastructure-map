@@ -2363,6 +2363,38 @@
     "FuelPrices"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-24-digest",
+   "created": "2026-11-24",
+   "type": "digest",
+   "text": "Oil tumbled Nov 23: Brent settled at $89.37/bbl (-3.5%), WTI at $80.17 (-4.5%), as traders unwound bets on a wider US-Iran clash after Trump signaled more time for talks. Hormuz transits are still down 15% w/w; US diesel is $5.94/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "OilPrices",
+    "OOTT"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-24-explainer-moscow-refinery",
+   "created": "2026-11-24",
+   "type": "explainer",
+   "text": "Russia's Kapotnya refinery in Moscow, ~230,000 b/d of the capital's fuel, has been offline since a Sep 20 drone strike; no restart reported. Ukrainian strikes have cut Russia's refining capacity ~45% since late October.",
+   "url": "https://strategicenergymap.org/facilities/moscow-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Refining",
+    "Russia"
+   ],
+   "reply_to": null
   }
  ]
 }

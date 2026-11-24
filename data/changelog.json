@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-24",
+   "kind": "data",
+   "headline": "Oil prices tumble as traders bet against a wider US-Iran escalation",
+   "changes": [
+    "Brent settled down 3.5% at $89.37/bbl and WTI down 4.5% at $80.17/bbl on Nov 23, as traders unwound hedges taken against a feared weekend US escalation against Iran after Trump signaled more time for diplomacy.",
+    "Corrected the Nov 21 Bahrain attack entry: Bahrain's Interior Ministry says two people were injured, not zero as first reported.",
+    "Checked the Moscow (Kapotnya) refinery entry against the latest reporting: still offline since a Sep 20 drone strike, with no restart reported."
+   ]
+  },
+  {
    "date": "2026-11-23",
    "kind": "data",
    "headline": "IEA: war has cost 2.8 billion barrels of Gulf oil exports since February",

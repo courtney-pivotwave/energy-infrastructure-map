@@ -2395,6 +2395,38 @@
     "Russia"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-25-digest",
+   "created": "2026-11-25",
+   "type": "digest",
+   "text": "Brent rebounded 2.3% to $91.40/bbl on Nov 24 (WTI $82.05, +2.4%) as reports of fresh Hormuz tanker attacks offset diplomacy hopes. MarineTraffic data show Gulf vessel traffic down about 40% week-on-week. US diesel is $5.70/gal.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "OilPrices"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-25-explainer-samref-refinery",
+   "created": "2026-11-25",
+   "type": "explainer",
+   "text": "SAMREF, Aramco's 400,000 b/d JV refinery with ExxonMobil at Yanbu runs on East-West pipeline crude, the main bypass around Hormuz. It halved output after a Sep 10 drone strike and remains reduced.",
+   "url": "https://strategicenergymap.org/facilities/samref-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Pipelines",
+    "SaudiArabia"
+   ],
+   "reply_to": null
   }
  ]
 }

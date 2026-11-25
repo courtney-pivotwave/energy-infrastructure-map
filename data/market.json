@@ -1,11 +1,11 @@
 {
- "as_of": "2026-11-23",
+ "as_of": "2026-11-24",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 89.37,
+   "value": 91.40,
    "week_ago": 92.44,
    "pre_crisis": 72.48,
    "peak": {
@@ -13,11 +13,11 @@
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Brent (January contract) settled down 3.5% at $89.37/bbl on 23 Nov (Rigzone, citing Reuters pricing), from about $92.57 a week ago, as traders unwound hedges against a feared weekend US escalation against Iran after Trump signaled more time for diplomacy (while saying he could resume the war next year if talks fail). Brent is down about 24% from a late-October high above $117 (Gulf News).",
+   "note": "Brent (January contract) settled up 2.3% at $91.40/bbl on 24 Nov (Bloomberg, via Rigzone), partly reversing the prior day's selloff, as reports of fresh Hormuz tanker attacks offset lingering hopes for more Iran diplomacy in thin pre-Thanksgiving trading; week_ago uses the nearest confirmed settlement, 16 Nov.",
    "source": {
-    "name": "Rigzone (Reuters) — Oil Falls as Trump Signals Iran Talks",
-    "url": "https://www.rigzone.com/news/wire/oil_falls_as_trump_signals_iran_talks-23-nov-2026-185152-article/",
-    "date": "2026-11-23"
+    "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
+    "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
+    "date": "2026-11-24"
    },
    "extra_sources": [
     {
@@ -36,7 +36,7 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 80.17,
+   "value": 82.05,
    "week_ago": 85.72,
    "pre_crisis": 67.02,
    "peak": {
@@ -44,11 +44,11 @@
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "WTI (January contract) settled down 4.5% at $80.17/bbl on 23 Nov (Rigzone, citing Reuters pricing), from about $85.72 a week ago, its lowest close since August, on the same unwinding of Iran-escalation hedges plus a forecast supply surplus.",
+   "note": "WTI (January contract) settled up 2.4% at $82.05/bbl on 24 Nov (Bloomberg, via Rigzone), tracking Brent's rebound; week_ago uses the nearest confirmed settlement, 16 Nov.",
    "source": {
-    "name": "Rigzone (Reuters) — Oil Falls as Trump Signals Iran Talks",
-    "url": "https://www.rigzone.com/news/wire/oil_falls_as_trump_signals_iran_talks-23-nov-2026-185152-article/",
-    "date": "2026-11-23"
+    "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
+    "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
+    "date": "2026-11-24"
    },
    "extra_sources": [
     {
@@ -152,16 +152,16 @@
    ]
   }
  ],
- "note": "Brent settled down 3.5% at $89.37/bbl and WTI down 4.5% at $80.17/bbl on 23 Nov as traders unwound hedges against a feared weekend US escalation against Iran, after Trump signaled more time for diplomacy with Tehran (Rigzone, citing Reuters pricing). Brent is down about 24% from a late-October high above $117. Kpler data cited by Gulf News put Middle East crude exports at 18.99 million b/d in October, above the pre-war average of 18.56 million b/d, even as Hormuz-specific flows slipped toward about 10 million b/d by 10 Nov from 13.4 million at the start of the month. TTF rose about 3% to roughly €91/MWh on colder weather forecasts; JKM and Henry Hub were little changed.",
+ "note": "Brent climbed 2.3% to $91.40/bbl and WTI rose 2.4% to $82.05/bbl on 24 Nov, partly reversing the prior day's selloff, as reports of renewed Hormuz tanker attacks offset lingering Iran-diplomacy hopes in thin pre-Thanksgiving trading (Bloomberg, via Rigzone). MarineTraffic data cited by Al Jazeera showed vessels entering and exiting the Gulf fell to 125 in the week of 17-23 Nov from 226 in the week of 1-7 Nov, a roughly 40% drop. TTF, JKM and Henry Hub were little changed from 23 Nov.",
  "note_sources": [
   {
-   "name": "Rigzone (Reuters) — Oil Falls as Trump Signals Iran Talks",
-   "url": "https://www.rigzone.com/news/wire/oil_falls_as_trump_signals_iran_talks-23-nov-2026-185152-article/",
-   "date": "2026-11-23"
+   "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
+   "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
+   "date": "2026-11-24"
   },
   {
-   "name": "Gulf News — Brent Drops to $88, WTI at $79: Why Oil Is Sliding Despite Iran's Tanker Attacks",
-   "url": "https://gulfnews.com/business/energy/brent-drops-to-88-wti-at-79-why-oil-is-sliding-despite-irans-tanker-attacks-1.500758802",
+   "name": "Al Jazeera — Hormuz oil traffic is down 40 percent: Are Iran's tanker attacks working?",
+   "url": "https://www.aljazeera.com/news/2026/11/24/hormuz-oil-traffic-is-down-40-percent-are-irans-tanker-attacks-working",
    "date": "2026-11-24"
   },
   {

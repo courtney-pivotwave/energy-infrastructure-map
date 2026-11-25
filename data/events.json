@@ -1,8 +1,68 @@
 {
- "updated": "2026-11-24",
- "situation_headline": "Oil fell sharply on Nov 23 (Brent $89.37, WTI $80.17) as traders unwound hedges against a feared US escalation and Trump signaled more time for Iran diplomacy; Iran-Bahrain strikes continue near Hormuz and tanker transits remain well below pre-war levels.",
+ "updated": "2026-11-25",
+ "situation_headline": "Oil rebounded on Nov 24 (Brent $91.40, +2.3%) after reports of fresh Hormuz tanker attacks offset Iran-diplomacy hopes; MarineTraffic data show Gulf vessel transits down about 40% week-on-week as attacks continue.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-24-brent-rebounds-hormuz-attack-reports",
+   "date": "2026-11-24",
+   "title": "Brent rebounds 2.3% to $91.40 as Hormuz attack reports offset diplomacy hopes",
+   "summary": "Brent crude settled up 2.3% at $91.40/bbl and WTI up 2.4% at $82.05/bbl on 24 November, partly reversing the prior day's selloff, as reports of renewed Hormuz tanker attacks offset lingering Iran-diplomacy hopes in thin pre-Thanksgiving trading (confirmed, Bloomberg via Rigzone). Analysts also pointed to oversupply concerns from the IEA's latest surplus forecasts as a cap on the rebound.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
+     "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
+     "date": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-hormuz-transits-fall-40pct-marinetraffic",
+   "date": "2026-11-24",
+   "title": "Hormuz-area Gulf vessel traffic down about 40% week-on-week, MarineTraffic data shows",
+   "summary": "MarineTraffic data cited by Al Jazeera showed vessels entering and exiting the Gulf fell to 125 in the week of 17-23 November from 226 in the week of 1-7 November, a drop of more than 40% (reported, MarineTraffic via Al Jazeera). The figure is steeper than UKMTO's 15% week-on-week decline reported five days earlier for a different weekly window, underscoring that Iran's continuing tanker attacks keep weighing on traffic through the strait.",
+   "category": "shipping",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Al Jazeera — Hormuz oil traffic is down 40 percent: Are Iran's tanker attacks working?",
+     "url": "https://www.aljazeera.com/news/2026/11/24/hormuz-oil-traffic-is-down-40-percent-are-irans-tanker-attacks-working",
+     "date": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-irgc-navy-mine-claim-east-hormuz",
+   "date": "2026-11-24",
+   "title": "Iran's navy, IRGC claim tankers hit mines east of Hormuz; no independent confirmation",
+   "summary": "Iran's navy and IRGC separately said tankers struck mines and caught fire east of the Strait of Hormuz, in a zone Iran calls restricted; army chief Amir Hatami and IRGC navy chief Ali Ozmaei said Iran is tightening control of the strait (IRGC/navy claims, unverified, per Tasnim News Agency). No independent outlet or tracker confirmed the claim as of this writing.",
+   "category": "military",
+   "severity": "low",
+   "coords": null,
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Tasnim News Agency — Iran's navy, IRGC statements on tanker mine claims east of Hormuz",
+     "url": "https://www.tasnimnews.ir/en/news/2026/11/24/3757033",
+     "date": "2026-11-24"
+    }
+   ]
+  },
   {
    "id": "2026-11-23-oil-prices-fall-trump-iran-diplomacy",
    "date": "2026-11-23",

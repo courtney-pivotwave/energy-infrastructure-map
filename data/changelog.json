@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-25",
+   "kind": "data",
+   "headline": "Oil rebounds as Hormuz vessel traffic drops about 40% week-on-week",
+   "changes": [
+    "Brent settled up 2.3% at $91.40/bbl and WTI up 2.4% at $82.05/bbl on Nov 24, partly reversing the prior day's selloff, as reports of fresh Hormuz tanker attacks offset lingering Iran-diplomacy hopes.",
+    "MarineTraffic data cited by Al Jazeera show vessels entering and exiting the Gulf fell to 125 in the week of Nov 17-23 from 226 in the week of Nov 1-7, a drop of more than 40%.",
+    "Logged Iran's navy and IRGC claim that tankers hit mines east of the strait on Nov 24 — unverified, no independent confirmation found."
+   ]
+  },
+  {
    "date": "2026-11-24",
    "kind": "data",
    "headline": "Oil prices tumble as traders bet against a wider US-Iran escalation",

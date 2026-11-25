@@ -2478,6 +2478,23 @@
     "at": "2026-11-24T21:12:32.927Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-24-explainer-moscow-refinery": {
+   "x": {
+    "id": "2125544375639761331",
+    "at": "2026-11-25T10:57:24.744Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n34ysngnk422",
+    "cid": "bafyreial777d4qiypnjhdpvb7tiuipcl2bhry7sfbrv37yaumpf6ad4lde",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n34ysngnk422",
+     "cid": "bafyreial777d4qiypnjhdpvb7tiuipcl2bhry7sfbrv37yaumpf6ad4lde"
+    },
+    "at": "2026-11-25T10:57:25.959Z",
+    "media": "asset-card"
+   }
   }
  }
 }

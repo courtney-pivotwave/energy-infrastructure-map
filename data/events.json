@@ -1,8 +1,81 @@
 {
- "updated": "2026-11-25",
- "situation_headline": "Oil rebounded on Nov 24 (Brent $91.40, +2.3%) after reports of fresh Hormuz tanker attacks offset Iran-diplomacy hopes; MarineTraffic data show Gulf vessel transits down about 40% week-on-week as attacks continue.",
+ "updated": "2026-11-26",
+ "situation_headline": "Brent jumped 3.5% to $94.61 on Nov 25 after Houthis claimed a missile strike on Saudi Arabia's Ras Tanura refinery, with ISW assessing satellite imagery as showing a likely hit; Saudi officials separately confirmed a projectile caused minor damage at Jizan port.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-25-oil-jumps-ras-tanura-claim",
+   "date": "2026-11-25",
+   "title": "Brent jumps 3.5% to $94.61 after Houthi claim of Ras Tanura refinery strike",
+   "summary": "Brent crude settled up 3.5% at $94.61/bbl and WTI up 2% at $83.68/bbl on 25 November, after Yemen's Houthis said they struck Saudi Arabia's Ras Tanura refinery and export complex with a missile (confirmed settlement, via CNBC citing Bloomberg pricing). PVM analyst Tamas Varga said the Houthi statement drove the rally and traders were also covering short positions ahead of the US Thanksgiving holiday; gains were capped by a larger-than-expected US crude inventory build (+1.1 million barrels in the week to 20 November) and continuing oversupply concerns.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "ras-tanura-refinery",
+    "ras-tanura-terminal"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
+     "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
+     "date": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-houthi-ras-tanura-strike-claim",
+   "date": "2026-11-25",
+   "title": "Houthis claim missile strike on Saudi Arabia's Ras Tanura refinery; satellite imagery shows smoke plume",
+   "summary": "Houthi military spokesperson Yahya Sarea said Yemeni forces struck Saudi Arabia's Ras Tanura refinery and export complex, the kingdom's largest, with a ballistic missile (Houthi claim, unverified). Critical Threats Project/ISW reviewed satellite imagery showing a large smoke plume near the site and assessed it as likely confirming a strike, though the exact cause and extent of any damage are not independently established; Saudi authorities and Aramco made no public statement on the claim.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    26.6,
+    50.1
+   ],
+   "assets": [
+    "ras-tanura-refinery",
+    "ras-tanura-terminal"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 25, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-25-2026",
+     "date": "2026-11-25"
+    },
+    {
+     "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
+     "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
+     "date": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-25-jizan-port-struck-jeddah-claimed",
+   "date": "2026-11-25",
+   "title": "Saudi officials confirm projectile hit Jizan port; Houthis also claim Jeddah strike",
+   "summary": "Saudi Joint Forces Command spokesperson Maj. Gen. Turki al-Maliki said an unspecified projectile struck Jizan port on 25 November, causing minor damage (reported, Saudi government statement via ISW/CTP). The Houthis, who a day earlier struck Hudaydah-area targets and warned they would hit \"all\" Saudi Red Sea ports, also claimed a strike on Jeddah port; Saudi authorities did not confirm that claim, and no independent report found it (Houthi claim, unverified).",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    16.73,
+    42.6
+   ],
+   "assets": [
+    "jazan-refinery"
+   ],
+   "confidence": "reported",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 25, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-25-2026",
+     "date": "2026-11-25"
+    }
+   ]
+  },
   {
    "id": "2026-11-24-brent-rebounds-hormuz-attack-reports",
    "date": "2026-11-24",

@@ -1,34 +1,34 @@
 {
- "as_of": "2026-11-24",
+ "as_of": "2026-11-25",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 91.40,
-   "week_ago": 92.44,
+   "value": 94.61,
+   "week_ago": 91.95,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Brent (January contract) settled up 2.3% at $91.40/bbl on 24 Nov (Bloomberg, via Rigzone), partly reversing the prior day's selloff, as reports of fresh Hormuz tanker attacks offset lingering hopes for more Iran diplomacy in thin pre-Thanksgiving trading; week_ago uses the nearest confirmed settlement, 16 Nov.",
+   "note": "Brent (January contract) settled up 3.5% at $94.61/bbl on 25 Nov (CNBC, citing Bloomberg pricing), after Yemen's Houthis said they struck Saudi Arabia's Ras Tanura refinery; week_ago is the 18 Nov settlement, $91.95 (Reuters).",
    "source": {
-    "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
-    "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
-    "date": "2026-11-24"
+    "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
+    "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
+    "date": "2026-11-25"
    },
    "extra_sources": [
     {
-     "name": "Gulf News — Brent Drops to $88, WTI at $79: Why Oil Is Sliding Despite Iran's Tanker Attacks",
-     "url": "https://gulfnews.com/business/energy/brent-drops-to-88-wti-at-79-why-oil-is-sliding-despite-irans-tanker-attacks-1.500758802",
+     "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
+     "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
      "date": "2026-11-24"
     },
     {
-     "name": "Newsquawk — Crude Wrap (Brent F7 settles $3.40 lower at $92.44/bbl)",
-     "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-z6-settles-usd-284-lower-at-8572bbl-brent-f7-settles-usd-340-lower-at-9244bbl",
-     "date": "2026-11-16"
+     "name": "Newsquawk — Crude Wrap (Brent F7 settles $1.19 lower at $91.95/bbl)",
+     "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-f7-settles-usd-275-lower-at-usd-8326bbl",
+     "date": "2026-11-18"
     }
    ]
   },
@@ -36,25 +36,25 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 82.05,
-   "week_ago": 85.72,
+   "value": 83.68,
+   "week_ago": 83.26,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "WTI (January contract) settled up 2.4% at $82.05/bbl on 24 Nov (Bloomberg, via Rigzone), tracking Brent's rebound; week_ago uses the nearest confirmed settlement, 16 Nov.",
+   "note": "WTI (January contract) settled up 2% at $83.68/bbl on 25 Nov (CNBC, citing Bloomberg pricing), tracking Brent's rebound; week_ago is the 18 Nov settlement, $83.26 (Reuters).",
    "source": {
-    "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
-    "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
-    "date": "2026-11-24"
+    "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
+    "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
+    "date": "2026-11-25"
    },
    "extra_sources": [
     {
-     "name": "Newsquawk — Crude Wrap (WTI Z6 settles $2.84 lower at $85.72/bbl)",
-     "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-z6-settles-usd-284-lower-at-8572bbl-brent-f7-settles-usd-340-lower-at-9244bbl",
-     "date": "2026-11-16"
+     "name": "Newsquawk — Crude Wrap (WTI F7 settles $2.75 lower at $83.26/bbl)",
+     "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-f7-settles-usd-275-lower-at-usd-8326bbl",
+     "date": "2026-11-18"
     }
    ]
   },
@@ -62,19 +62,19 @@
    "id": "ttf",
    "label": "TTF gas",
    "unit": "€/MWh",
-   "value": 91.0,
-   "week_ago": 88.45,
+   "value": 87.06,
+   "week_ago": 91.0,
    "pre_crisis": 32.0,
    "peak": {
     "value": 102.89,
     "date": "2026-10-30",
     "note": "New 2026 high, the first close above €100/MWh, surpassing the prior 97.93 set 28 Oct (Trading Economics)."
    },
-   "note": "TTF rose about 3% to roughly €91/MWh on 23 Nov (Trading Economics), up from about €88.45/MWh on 20 Nov, on colder weather forecasts; still below the €102.89 2026 high set 30 Oct.",
+   "note": "Eased to about €87.06/MWh on 25 Nov (Trading Economics), from about €91/MWh on 23 Nov; still below the €102.89 2026 high set 30 Oct.",
    "source": {
     "name": "Trading Economics — EU Natural Gas (TTF)",
     "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-    "date": "2026-11-23"
+    "date": "2026-11-25"
    },
    "extra_sources": [
     {
@@ -98,19 +98,19 @@
    "id": "jkm",
    "label": "JKM LNG",
    "unit": "$/MMBtu",
-   "value": 28.64,
-   "week_ago": 28.42,
+   "value": 28.07,
+   "week_ago": 28.64,
    "pre_crisis": 10.75,
    "peak": {
     "value": 32.84,
     "date": "2026-10-30",
     "note": "New 2026 high, surpassing the prior 32.20 set 26 Oct (Trading Economics)."
    },
-   "note": "Up slightly to about $28.64/MMBtu on Trading Economics' 23 Nov print, from $28.42 on 20 Nov, still well off the late-October highs.",
+   "note": "Eased about 2.6% to $28.07/MMBtu on Trading Economics' 25 Nov print, from $28.64 on 23 Nov, still well off the late-October highs.",
    "source": {
     "name": "Trading Economics — LNG Japan/Korea (JKM)",
     "url": "https://tradingeconomics.com/commodity/liquefied-natural-gas-japan-korea",
-    "date": "2026-11-23"
+    "date": "2026-11-25"
    },
    "extra_sources": [
     {
@@ -132,7 +132,7 @@
    "value": 3.18,
    "week_ago": 3.41,
    "pre_crisis": 2.99,
-   "note": "Eased to about $3.18/MMBtu on 23 Nov (Trading Economics), from about $3.41 on 20 Nov; still largely insulated from the Hormuz and Red Sea turmoil.",
+   "note": "About $3.18/MMBtu as of 23 Nov (Trading Economics); no later confirmed print found this run. Still largely insulated from the Hormuz and Red Sea turmoil.",
    "source": {
     "name": "Trading Economics — US Natural Gas (Henry Hub futures)",
     "url": "https://tradingeconomics.com/commodity/natural-gas",
@@ -152,22 +152,22 @@
    ]
   }
  ],
- "note": "Brent climbed 2.3% to $91.40/bbl and WTI rose 2.4% to $82.05/bbl on 24 Nov, partly reversing the prior day's selloff, as reports of renewed Hormuz tanker attacks offset lingering Iran-diplomacy hopes in thin pre-Thanksgiving trading (Bloomberg, via Rigzone). MarineTraffic data cited by Al Jazeera showed vessels entering and exiting the Gulf fell to 125 in the week of 17-23 Nov from 226 in the week of 1-7 Nov, a roughly 40% drop. TTF, JKM and Henry Hub were little changed from 23 Nov.",
+ "note": "Brent climbed 3.5% to $94.61/bbl and WTI rose 2% to $83.68/bbl on 25 Nov after Yemen's Houthis said they struck Saudi Arabia's Ras Tanura refinery and export terminal (CNBC, citing Bloomberg pricing); ISW/CTP assessed satellite imagery as showing a likely hit, though Saudi officials made no public confirmation. Saudi officials separately confirmed a projectile caused minor damage at Jizan port the same day. TTF and JKM eased slightly from 23 Nov; Henry Hub was little changed.",
  "note_sources": [
   {
-   "name": "Rigzone (Bloomberg) — Oil Climbs Despite Growing Oversupply Fears",
-   "url": "https://www.rigzone.com/news/oil_climbs_despite_growing_oversupply_fears-24-nov-2026-185160-article",
-   "date": "2026-11-24"
+   "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
+   "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
+   "date": "2026-11-25"
   },
   {
-   "name": "Al Jazeera — Hormuz oil traffic is down 40 percent: Are Iran's tanker attacks working?",
-   "url": "https://www.aljazeera.com/news/2026/11/24/hormuz-oil-traffic-is-down-40-percent-are-irans-tanker-attacks-working",
-   "date": "2026-11-24"
+   "name": "Critical Threats Project / ISW — Iran Update, November 25, 2026",
+   "url": "https://www.criticalthreats.org/analysis/iran-update-november-25-2026",
+   "date": "2026-11-25"
   },
   {
    "name": "Trading Economics — EU Natural Gas (TTF)",
    "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
-   "date": "2026-11-23"
+   "date": "2026-11-25"
   }
  ]
 }

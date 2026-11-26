@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-11-26",
+   "kind": "data",
+   "headline": "Oil jumps on Houthi claim of Ras Tanura refinery strike; Jizan port confirmed hit",
+   "changes": [
+    "Brent settled up 3.5% at $94.61/bbl and WTI up 2% at $83.68/bbl on Nov 25, after Yemen's Houthis said they struck Saudi Arabia's Ras Tanura refinery with a missile.",
+    "Logged the Houthi claim: satellite imagery reviewed by ISW/CTP showed a smoke plume consistent with a strike, though Saudi officials made no public confirmation.",
+    "Saudi officials confirmed a projectile caused minor damage at Jizan port on Nov 25; the Houthis also claimed a strike on Jeddah port, which Saudi authorities did not confirm.",
+    "Refreshed the Ras Tanura terminal and Jazan refinery status entries with the new claims and sources."
+   ]
+  },
+  {
    "date": "2026-11-25",
    "kind": "data",
    "headline": "Oil rebounds as Hormuz vessel traffic drops about 40% week-on-week",

@@ -2512,6 +2512,23 @@
     "at": "2026-11-25T20:28:49.870Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-25-explainer-samref-refinery": {
+   "x": {
+    "id": "2125906207982354534",
+    "at": "2026-11-26T10:55:12.286Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n37j5muy4g2n",
+    "cid": "bafyreicwmt57x64pddbiz4pxp2jvy4ygh3uriprit37jr7437xix5oqmo4",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n37j5muy4g2n",
+     "cid": "bafyreicwmt57x64pddbiz4pxp2jvy4ygh3uriprit37jr7437xix5oqmo4"
+    },
+    "at": "2026-11-26T10:55:15.716Z",
+    "media": "asset-card"
+   }
   }
  }
 }

@@ -2459,6 +2459,38 @@
     "DataViz"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-27-digest",
+   "created": "2026-11-27",
+   "type": "digest",
+   "text": "Brent settled at $96.57/bbl on Nov 26, its highest close since Nov 6, on last week's Houthi-claimed Ras Tanura strike (reported). WTI didn't settle (Thanksgiving holiday). Hormuz traffic: ~0.3 tankers/day, still down 99%.",
+   "url": "https://strategicenergymap.org/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Hormuz",
+    "EnergySecurity"
+   ],
+   "reply_to": null
+  },
+  {
+   "id": "2026-11-27-explainer-jazan-refinery",
+   "created": "2026-11-27",
+   "type": "explainer",
+   "text": "Aramco's Jazan refinery, Saudi Arabia's Red Sea plant closest to Yemen, runs about 400,000 b/d. Shut since late July after Houthi strikes damaged its power complex; a Houthi-claimed strike hit Jizan port on Nov 25.",
+   "url": "https://strategicenergymap.org/facilities/jazan-refinery/",
+   "event_id": null,
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "RedSea",
+    "Refining"
+   ],
+   "reply_to": null
   }
  ]
 }

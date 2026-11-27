@@ -1,6 +1,16 @@
 {
  "entries": [
   {
+   "date": "2026-11-27",
+   "kind": "data",
+   "headline": "Brent hits highest close since Nov 6 as Iran claims new Hormuz mine strikes",
+   "changes": [
+    "Brent crude settled up 1.2% at $96.57/bbl on Nov 26, its highest close since Nov 6; WTI did not settle because of the US Thanksgiving holiday.",
+    "Logged Iran's Revolutionary Guards' claim that two tankers, including a supertanker, hit mines and caught fire near Oman's Khasab in the Strait of Hormuz — unverified, with no independent confirmation found.",
+    "Refreshed the Strait of Hormuz status entry with the Nov 26 price move and mine claim."
+   ]
+  },
+  {
    "date": "2026-11-26",
    "kind": "data",
    "headline": "Oil jumps on Houthi claim of Ras Tanura refinery strike; Jizan port confirmed hit",

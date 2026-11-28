@@ -2580,6 +2580,23 @@
     "at": "2026-11-27T19:57:57.290Z",
     "media": "daily-board"
    }
+  },
+  "2026-11-27-explainer-jazan-refinery": {
+   "x": {
+    "id": "2126632261508288531",
+    "at": "2026-11-28T11:00:16.958Z",
+    "media": "asset-card"
+   },
+   "bluesky": {
+    "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n3ekejz6vm2i",
+    "cid": "bafyreien6qrvpap7nyczpt2ti7utpntjbvly6p42cbd55q7rmbgpehd5fe",
+    "root": {
+     "uri": "at://did:plc:q4ftjekb2e6bfoztr3eozief/app.bsky.feed.post/3n3ekejz6vm2i",
+     "cid": "bafyreien6qrvpap7nyczpt2ti7utpntjbvly6p42cbd55q7rmbgpehd5fe"
+    },
+    "at": "2026-11-28T11:00:18.178Z",
+    "media": "asset-card"
+   }
   }
  }
 }

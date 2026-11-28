@@ -2491,6 +2491,37 @@
     "Refining"
    ],
    "reply_to": null
+  },
+  {
+   "id": "2026-11-28-digest",
+   "created": "2026-11-28",
+   "type": "digest",
+   "text": "A Houthi strike killed a worker and halted some operations at Saudi Arabia's Jazan refinery Nov 26. Brent settled at $95.44/bbl Nov 27, its first weekly gain in November (+3%); WTI closed at $83.08.",
+   "url": "https://strategicenergymap.org/",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Refining",
+    "OOTT"
+   ],
+   "reply_to": null,
+   "event_id": null
+  },
+  {
+   "id": "2026-11-28-explainer-abqaiq-processing-plant",
+   "created": "2026-11-28",
+   "type": "explainer",
+   "text": "Aramco's Abqaiq plant stabilizes up to 7 million b/d of Eastern Province crude before export — the most important node in Saudi oil. Drones hit it July 27; Aramco never said how much capacity was lost.",
+   "url": "https://strategicenergymap.org/facilities/abqaiq-processing-plant/",
+   "image": null,
+   "alt": null,
+   "video": null,
+   "tags": [
+    "Pipelines",
+    "EnergySecurity"
+   ],
+   "reply_to": null
   }
  ]
 }

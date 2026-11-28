@@ -1,34 +1,34 @@
 {
- "as_of": "2026-11-26",
+ "as_of": "2026-11-27",
  "benchmarks": [
   {
    "id": "brent",
    "label": "Brent",
    "unit": "$/bbl",
-   "value": 96.57,
-   "week_ago": 91.98,
+   "value": 95.44,
+   "week_ago": 92.69,
    "pre_crisis": 72.48,
    "peak": {
     "value": 126,
     "date": "2026-04-30",
     "note": "Futures intraday wartime high (Wikipedia chronology). Physical Dated Brent (EIA spot via FRED) peaked at $138.21 on 2026-04-07 and was $114.89 on 2026-09-22."
    },
-   "note": "Brent (January contract) settled up $1.96 (1.2%) at $96.57/bbl on 26 Nov (Reuters), its highest close since 6 Nov, as the Ras Tanura claim continued to weigh and Iran's IRGC claimed fresh mine strikes on tankers near Hormuz; week_ago is the 19 Nov settlement, $91.98 (QNA, citing Thursday's close).",
+   "note": "Brent (January contract) settled down $1.13 (1.2%) at $95.44/bbl on 27 Nov in a holiday-shortened session (CNBC, citing Reuters), but posted its first weekly gain in November, up about 3%, as the market continued pricing in the Houthi strike that killed a worker and halted some operations at Aramco's Jazan refinery on 26 Nov and continuing Hormuz-area attacks; week_ago is the 20 Nov settlement, roughly $92.69 (Political, citing Reuters).",
    "source": {
-    "name": "Global Banking & Finance (Reuters) — Oil rises on supply concerns as Iran claims mine strikes on ships",
-    "url": "https://www.globalbankingandfinance.com/oil-rises-supply-concerns-iran-claims-mine-strikes-ships/",
-    "date": "2026-11-26"
+    "name": "CNBC — Brent oil posts weekly gain on Middle East supply fears",
+    "url": "https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html",
+    "date": "2026-11-27"
    },
    "extra_sources": [
+    {
+     "name": "Political — Oil Posts First Weekly Gain of November as Attacks on Tankers and Saudi Facilities Revive Supply Fears",
+     "url": "https://political.org/2026/11/27/oil-posts-first-weekly-gain-of-november-as-attacks-on-tankers-and-saudi-facilities-revive-supply-fears/",
+     "date": "2026-11-27"
+    },
     {
      "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
      "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
      "date": "2026-11-25"
-    },
-    {
-     "name": "QNA — Oil prices end largely unchanged as Brent edges higher and US crude slips",
-     "url": "https://qna.org.qa/en/News-Area/News/2026-11/20/oil-prices-end-largely-unchanged-as-brent-edges-higher-and-us-crude-slips",
-     "date": "2026-11-20"
     }
    ]
   },
@@ -36,19 +36,19 @@
    "id": "wti",
    "label": "WTI",
    "unit": "$/bbl",
-   "value": 83.68,
-   "week_ago": 83.26,
+   "value": 83.08,
+   "week_ago": 83.41,
    "pre_crisis": 67.02,
    "peak": {
     "value": 114.58,
     "date": "2026-04-07",
     "note": "EIA Cushing spot high via FRED."
    },
-   "note": "WTI did not settle on 26 Nov because of the US Thanksgiving holiday; it traded around $84.84/bbl intraday (Reuters). Value held at the 25 Nov settlement, $83.68, tracking Brent's prior-day rebound; week_ago is the 18 Nov settlement, $83.26 (Reuters).",
+   "note": "WTI settled at $83.08/bbl on 27 Nov, down 60 cents (0.7%) from the 25 Nov close (no Thursday settlement for the US Thanksgiving holiday), per CNBC. CNBC separately reported WTI down 0.4% on the week; no outlet found this run gave the 20 Nov settlement directly, so week_ago, ~$83.41, is implied from that weekly change rather than independently sourced.",
    "source": {
-    "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
-    "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
-    "date": "2026-11-25"
+    "name": "CNBC — Brent oil posts weekly gain on Middle East supply fears",
+    "url": "https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html",
+    "date": "2026-11-27"
    },
    "extra_sources": [
     {
@@ -152,22 +152,17 @@
    ]
   }
  ],
- "note": "Brent settled up 1.2% at $96.57/bbl on 26 Nov, its highest close since 6 Nov, as markets kept pricing in last week's Houthi-claimed Ras Tanura refinery strike and Iran's IRGC claimed two more tankers hit mines near Oman's Khasab in the Strait of Hormuz (Reuters; IRGC claim unverified). WTI did not settle because of the US Thanksgiving holiday and is held at its 25 Nov print. TTF, JKM and Henry Hub are unchanged from 23-25 Nov; no later confirmed print found this run.",
+ "note": "Brent posted its first weekly gain in November (+3%) as the Jazan refinery strike and continued Hormuz-area tanker attacks offset supply-surplus expectations; OPEC+ was reported set to hold Q1 2027 output targets steady at its 29 Nov meeting (CNBC).",
  "note_sources": [
   {
-   "name": "Global Banking & Finance (Reuters) — Oil rises on supply concerns as Iran claims mine strikes on ships",
-   "url": "https://www.globalbankingandfinance.com/oil-rises-supply-concerns-iran-claims-mine-strikes-ships/",
+   "name": "CNBC — Brent oil posts weekly gain on Middle East supply fears",
+   "url": "https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html",
+   "date": "2026-11-27"
+  },
+  {
+   "name": "The Jerusalem Post (Reuters) — Houthi attack on Saudi Aramco's Jazan refinery kills worker, halts some operations",
+   "url": "https://www.jpost.com/middle-east/article-916252",
    "date": "2026-11-26"
-  },
-  {
-   "name": "CNBC — Oil climbs after Houthis say they attacked Saudi refinery",
-   "url": "https://www.cnbc.com/2026/11/25/oil-wti-brent-hormuz-middle-east.html",
-   "date": "2026-11-25"
-  },
-  {
-   "name": "Critical Threats Project / ISW — Iran Update, November 25, 2026",
-   "url": "https://www.criticalthreats.org/analysis/iran-update-november-25-2026",
-   "date": "2026-11-25"
   }
  ]
 }

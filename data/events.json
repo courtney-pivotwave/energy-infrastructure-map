@@ -1,8 +1,108 @@
 {
- "updated": "2026-11-27",
- "situation_headline": "Brent settled at $96.57/bbl on Nov 26, its highest close since Nov 6, on last week's Houthi-claimed strike on Saudi Arabia's Ras Tanura refinery, which satellite imagery reviewed by ISW/CTP showed as a likely hit; WTI did not settle because of the US Thanksgiving holiday.",
+ "updated": "2026-11-28",
+ "situation_headline": "A Houthi strike killed a worker and halted some operations at Aramco's Jazan refinery on Nov 26; Brent eased to $95.44 on Nov 27 but logged its first weekly gain in November. Baghdad ordered a federal takeover of Kurdish-secured oil fields and border crossings on Nov 24; Erbil rejected it.",
  "situation_summary": "US-Israeli strikes on Iran on 28 February 2026 set off a regional war. Iran closed the Strait of Hormuz, and it has not reopened to normal traffic, cutting off most Gulf oil and LNG exports; the IEA calls it the largest supply disruption in oil-market history. Retaliatory strikes damaged Gulf energy assets: Qatar lost ~17% of its LNG capacity for 3-5 years at Ras Laffan, Israel hit South Pars, and Saudi (Ras Tanura, SAMREF, Abqaiq, Jazan), Emirati (Fujairah, Shah, Habshan) and Kuwaiti (Mina al-Ahmadi) facilities were hit. An 8 April ceasefire and a 17 June US-Iran MoU briefly revived traffic and pushed oil back to pre-war levels, but the truce collapsed on 7-8 July. Since then the US has blockaded Iranian ports (from 14 July), Iran runs a permit-and-toll regime, and tanker attacks continue. The second front is the Red Sea: the Houthis declared a ban on Saudi shipping from 20 July, struck tankers and the Jazan refinery, and seized Mocha on 10 September. Drones from Iraq hit Abqaiq (27 July) and shut the East-West bypass pipeline (10-11 September); it restarted at reduced rates around 22 September and by 28 September flows had recovered to roughly 3.5 mb/d, about half its 7 mb/d capacity. Saudi Arabia has also offset the outage by selling roughly 60 million barrels for ship-to-ship transfer at Sohar, Oman, pushing STS capacity there and at Fujairah to its limit and tightening the VLCC market. In the Black Sea, Ukrainian strikes on Russian ports and refineries (Baltic ports in March, Novorossiysk/CPC, Tuapse, Moscow) and Turkey briefly halted Novorossiysk-bound transit permits in early August before resuming them two days later. Policy responses include a record 400 mb IEA stock release (US 172 mb), the UAE's exit from OPEC (1 May) and US consideration of diesel export curbs. US LNG exports are at records as new trains start up (Golden Pass, Corpus Christi Stage 3), and Panama Canal and Trans Mountain flows to Asia have risen. As of 1 October Brent was around $99-100 (pre-crisis ~$72.5) and TTF ~€73/MWh (pre-crisis ~€32). Iran offered at the UN to reopen the strait within a week if the US lifted its naval blockade; Trump rejected the offer on 26 September. By late September, JPMorgan and Goldman Sachs estimated regional oil flows had recovered close to pre-war volumes even as tanker attacks and reporting gaps persist, while Trump and Iran continued trading claims over sanctions relief and the sequencing of any reopening.",
  "events": [
+  {
+   "id": "2026-11-27-brent-weekly-gain-jizan-hormuz",
+   "date": "2026-11-27",
+   "title": "Brent settles at $95.44, logs first November weekly gain, after Jazan refinery strike",
+   "summary": "Brent crude futures settled down $1.13 (1.2%) at $95.44/bbl on 27 November in a holiday-shortened session, but still posted their first weekly gain in November, up about 3% (confirmed settlement, per CNBC/Reuters). WTI settled at $83.08, down about 1% from the prior settlement (no Thursday close for the US Thanksgiving holiday). The market continued to price in the Houthi strike that killed a worker and halted some operations at Aramco's Jazan refinery on 26 November, plus continuing Iranian attacks on Hormuz-area shipping; OPEC+ was reported set to keep Q1 2027 output targets unchanged at its Sunday meeting.",
+   "category": "market",
+   "severity": "medium",
+   "coords": null,
+   "assets": [
+    "jazan-refinery",
+    "strait-of-hormuz"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "CNBC — Brent oil posts weekly gain on Middle East supply fears",
+     "url": "https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html",
+     "date": "2026-11-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-jazan-refinery-strike-worker-killed",
+   "date": "2026-11-26",
+   "title": "Houthi strike kills worker, halts some operations at Aramco's Jazan refinery",
+   "summary": "Saudi Arabia's Energy Ministry said a hostile aerial projectile struck Aramco's Jazan refinery on 26 November, killing a Nepalese worker and wounding several others and forcing a temporary halt to some operations; a fire was brought under control and emergency teams were assessing damage (confirmed, Saudi Energy Ministry via Saudi Press Agency, Reuters). The Saudi-led coalition said Yemen's Houthi movement carried out the attack and said it had destroyed a ballistic-missile launch platform in Hudaydah it said was used to launch it (coalition claim, unverified); the strike came a day after the Houthis claimed attacks on Ras Tanura, Jeddah and Jizan port.",
+   "category": "military",
+   "severity": "high",
+   "coords": [
+    16.73,
+    42.6
+   ],
+   "assets": [
+    "jazan-refinery"
+   ],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "The Jerusalem Post (Reuters) — Houthi attack on Saudi Aramco's Jazan refinery kills worker, halts some operations",
+     "url": "https://www.jpost.com/middle-east/article-916252",
+     "date": "2026-11-26"
+    },
+    {
+     "name": "aNewz (Reuters) — Houthi strike kills Nepalese worker at Saudi Aramco refinery",
+     "url": "https://anewz.tv/region/middle-east/27347/houthi-strike-kills-nepalese-worker-at-saudi-aramco-refinery/news",
+     "date": "2026-11-27"
+    },
+    {
+     "name": "CNBC — Brent oil posts weekly gain on Middle East supply fears",
+     "url": "https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html",
+     "date": "2026-11-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-26-centcom-disables-pacific-archer-gulf-of-oman",
+   "date": "2026-11-26",
+   "title": "CENTCOM says it disabled bulk carrier Pacific Archer off Bandar Abbas under Iran blockade",
+   "summary": "US Central Command said a US aircraft disabled the Palau-flagged bulk carrier Pacific Archer in the Gulf of Oman on 26 November after it left Bandar Abbas and ignored US Navy warnings not to breach the naval blockade on Iran; CENTCOM said it was the first such disabling it has announced since 7 November (CENTCOM claim via its own statement, unverified — no independent report of the incident found this run).",
+   "category": "military",
+   "severity": "medium",
+   "coords": [
+    25.5,
+    57.5
+   ],
+   "assets": [
+    "strait-of-hormuz"
+   ],
+   "confidence": "unverified",
+   "sources": [
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 27, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-27-2026",
+     "date": "2026-11-27"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-24-iraq-orders-federal-takeover-kurdish-oil-fields",
+   "date": "2026-11-24",
+   "title": "Baghdad orders federal takeover of Kurdish-secured oil fields, border crossings",
+   "summary": "Iraqi Prime Minister Ali al-Zaidi ordered the federal Oil Ministry to take over management of oilfields in Kirkuk, Nineveh, Salahuddin and Diyala provinces that are in disputed territory but under Kurdish security control, directed the Border Ports Authority to take over all Kurdish-region crossings, and barred the Kurdistan Regional Government from approving oil exports except through the federal ministry, following an oil-smuggling investigation at the North Oil Company (confirmed; Reuters, Al Jazeera). Iraq's Federal Supreme Court issued a ruling the next day affirming federal authority over borders, oil exports and revenues. The KRG called the move unconstitutional and rejected it; thousands protested in Erbil on 26 November, and Baghdad denied reports of troop movements toward the region. Iraq's federal presidencies have agreed to a national dialogue on 1 December.",
+   "category": "policy",
+   "severity": "medium",
+   "coords": null,
+   "assets": [],
+   "confidence": "confirmed",
+   "sources": [
+    {
+     "name": "Al Jazeera — How an oil feud is deepening rift between Baghdad and Iraq's Kurdish region",
+     "url": "https://www.aljazeera.com/news/2026/11/26/how-an-oil-feud-is-deepening-rift-between-baghdad-and-iraqs-kurdish-region",
+     "date": "2026-11-26"
+    },
+    {
+     "name": "Critical Threats Project / ISW — Iran Update, November 27, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-27-2026",
+     "date": "2026-11-27"
+    }
+   ]
+  },
   {
    "id": "2026-11-26-oil-settles-96-hormuz-mines",
    "date": "2026-11-26",

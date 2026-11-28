@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "assets": {
   "strait-of-hormuz": {
    "status": "closed",
@@ -1048,7 +1048,7 @@
   },
   "jazan-refinery": {
    "status": "damaged",
-   "summary": "An attack in late July damaged the refinery's power complex and tank farm, and Aramco shut the plant (Maritime Executive; Bloomberg). A restart planned for Aug 30 followed a fire on Aug 9, and the refinery was struck again on Sep 7–8. It was still shut in early October (Argus, Kpler); no report found after Oct 6. Saudi Joint Forces Command spokesperson Maj. Gen. Turki al-Maliki confirmed on 25 Nov that an unspecified projectile struck Jizan port, causing minor damage; Yemen's Houthis claimed the strike as part of a wider threat against Saudi Red Sea ports (reported, per ISW/CTP citing Saudi officials).",
+   "summary": "An attack in late July damaged the refinery's power complex and tank farm, and Aramco shut the plant (Maritime Executive; Bloomberg). A restart planned for Aug 30 followed a fire on Aug 9, and the refinery was struck again on Sep 7–8. It was still shut in early October (Argus, Kpler); no report found after Oct 6. Saudi Joint Forces Command spokesperson Maj. Gen. Turki al-Maliki confirmed on 25 Nov that an unspecified projectile struck Jizan port, causing minor damage (reported, per ISW/CTP citing Saudi officials). A hostile aerial projectile then struck the refinery itself on 26 Nov, killing a Nepalese worker and wounding several others and forcing a temporary halt to some operations; Saudi Arabia's Energy Ministry confirmed the strike and the Saudi-led coalition blamed the Houthis (confirmed; Reuters, via The Jerusalem Post and aNewz).",
    "since": "2026-07-25",
    "updated": "2026-11-26",
    "confidence": "confirmed",
@@ -1082,6 +1082,16 @@
      "name": "Critical Threats Project / ISW — Iran Update, November 25, 2026",
      "url": "https://www.criticalthreats.org/analysis/iran-update-november-25-2026",
      "date": "2026-11-25"
+    },
+    {
+     "name": "The Jerusalem Post (Reuters) — Houthi attack on Saudi Aramco's Jazan refinery kills worker, halts some operations",
+     "url": "https://www.jpost.com/middle-east/article-916252",
+     "date": "2026-11-26"
+    },
+    {
+     "name": "aNewz (Reuters) — Houthi strike kills Nepalese worker at Saudi Aramco refinery",
+     "url": "https://anewz.tv/region/middle-east/27347/houthi-strike-kills-nepalese-worker-at-saudi-aramco-refinery/news",
+     "date": "2026-11-27"
     }
    ]
   },

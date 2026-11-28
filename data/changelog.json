@@ -1,6 +1,17 @@
 {
  "entries": [
   {
+   "date": "2026-11-28",
+   "kind": "data",
+   "headline": "Houthi strike kills worker at Saudi refinery; Brent logs first November weekly gain",
+   "changes": [
+    "A Houthi strike killed a worker and halted some operations at Aramco's Jazan refinery on Nov 26; Saudi Arabia's Energy Ministry confirmed the strike and a Saudi-led coalition statement blamed the Houthis.",
+    "Brent settled at $95.44/bbl on Nov 27, its first weekly gain in November (+3%), even as it eased from Thursday's close; WTI settled at $83.08.",
+    "Logged a CENTCOM claim (not yet independently confirmed) that it disabled a bulk carrier, the Pacific Archer, off Bandar Abbas under the Iran naval blockade.",
+    "Logged Baghdad's order for a federal takeover of Kurdish-secured oil fields and border crossings, which Erbil rejects; both sides have agreed to a national dialogue on Dec 1."
+   ]
+  },
+  {
    "date": "2026-11-27",
    "kind": "data",
    "headline": "Brent hits highest close since Nov 6 as Iran claims new Hormuz mine strikes",
